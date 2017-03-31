@@ -18,31 +18,22 @@
 <plist version="1.0">
     <dict>
         <key>Protocol</key>
-        <string>onedrive</string>
+        <string>irods</string>
         <key>Vendor</key>
-        <string>personal</string>
+        <string>taac</string>
         <key>Description</key>
-        <string>OneDrive Personal</string>
-        <key>Scheme</key>
-        <string>https</string>
-        <key>Default Hostname</key>
-        <string>api.onedrive.com</string>
+        <string>Texas Advanced Computing Center (TACC)</string>
         <key>Hostname Configurable</key>
         <false/>
-        <key>Default Port</key>
-        <string>443</string>
         <key>Port Configurable</key>
         <false/>
-        <key>Context</key>
-        <string>/v1.0</string>
-        <key>OAuth Authorization Url</key>
-        <string>https://login.live.com/oauth20_authorize.srf</string>
-        <key>OAuth Token Url</key>
-        <string>https://login.live.com/oauth20_token.srf</string>
-        <key>Scopes</key>
-        <array>
-            <string>onedrive.readwrite</string>
-            <string>wl.offline_access</string>
-        </array>
+        <key>Default Hostname</key>
+        <string>irods.wrangler.tacc.utexas.edu</string>
+        <key>Region</key>
+        <string>taccWranglerZ</string>
+        <key>Default Port</key>
+        <string>1247</string>
+        <key>Authorization</key>
+        <string>PAM</string>
     </dict>
 </plist>
