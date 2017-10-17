@@ -18,7 +18,7 @@
 <plist version="1.0">
     <dict>
         <key>Protocol</key>
-        <string>sds</string>
+        <string>dracoon</string>
         <key>Vendor</key>
         <string>dracoon-ad</string>
         <key>Description</key>
@@ -36,6 +36,6 @@
         <key>Port Configurable</key>
         <true/>
         <key>Authorization</key>
-        <string>ad</string>
+        <string>active_directory</string>
     </dict>
 </plist>
