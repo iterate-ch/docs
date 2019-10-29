@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2002-2018 iterate GmbH. All rights reserved.
+  ~ Copyright (c) 2002-2019 iterate GmbH. All rights reserved.
   ~ https://cyberduck.io/
   ~
   ~ This program is free software; you can redistribute it and/or modify
@@ -20,24 +19,24 @@
         <key>Protocol</key>
         <string>s3</string>
         <key>Vendor</key>
-        <string>s3-cn-northwest-1</string>
-        <key>Scheme</key>
-        <string>https</string>
+        <string>scaleway-fr-par</string>
         <key>Description</key>
-        <string>S3 China (Ningxia)</string>
+        <string>Scaleway Object Storage (FR-PAR)</string>
+        <key>Default Hostname</key>
+        <string>s3.fr-par.scw.cloud</string>
         <key>Default Port</key>
         <string>443</string>
-        <key>Default Hostname</key>
-        <string>s3.cn-northwest-1.amazonaws.com.cn</string>
-        <key>Hostname Configurable</key>
-        <false/>
-        <key>Port Configurable</key>
-        <false/>
-        <key>Username Configurable</key>
-        <true/>
+        <key>Username Placeholder</key>
+        <string>Access Key</string>
+        <key>Password Placeholder</key>
+        <string>Secret Key</string>
         <key>Authorization</key>
         <string>AWS4HMACSHA256</string>
         <key>Region</key>
-        <string>cn-northwest-1</string>
+        <string>fr-par</string>
+        <key>Regions</key>
+        <array>
+            <string>fr-par</string>
+        </array>
     </dict>
 </plist>

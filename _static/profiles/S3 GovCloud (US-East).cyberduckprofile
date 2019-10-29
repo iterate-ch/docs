@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (c) 2002-2018 iterate GmbH. All rights reserved.
+  ~ Copyright (c) 2002-2019 iterate GmbH. All rights reserved.
   ~ https://cyberduck.io/
   ~
   ~ This program is free software; you can redistribute it and/or modify
@@ -19,24 +20,24 @@
         <key>Protocol</key>
         <string>s3</string>
         <key>Vendor</key>
-        <string>poc</string>
+        <string>s3-us-gov-west-1</string>
+        <key>Scheme</key>
+        <string>https</string>
         <key>Description</key>
-        <string>Scaleway Object Storage (ams1)</string>
-        <key>Default Hostname</key>
-        <string>s3.nl-ams.scw.cloud</string>
+        <string>S3 GovCloud (US-East)</string>
         <key>Default Port</key>
         <string>443</string>
-        <key>Username Placeholder</key>
-        <string>Access Key</string>
-        <key>Password Placeholder</key>
-        <string>Secret Key</string>
+        <key>Default Hostname</key>
+        <string>s3.us-gov-east-1.amazonaws.com</string>
+        <key>Hostname Configurable</key>
+        <false/>
+        <key>Port Configurable</key>
+        <false/>
+        <key>Username Configurable</key>
+        <true/>
         <key>Authorization</key>
         <string>AWS4HMACSHA256</string>
         <key>Region</key>
-        <string>nl-ams</string>
-        <key>Regions</key>
-        <array>
-            <string>nl-ams</string>
-        </array>
+        <string>us-gov-east-1</string>
     </dict>
 </plist>
