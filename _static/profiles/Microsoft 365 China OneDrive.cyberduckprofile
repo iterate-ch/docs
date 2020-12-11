@@ -20,25 +20,23 @@
         <key>Protocol</key>
         <string>onedrive</string>
         <key>Vendor</key>
-        <string>office365-de-sharepoint</string>
+        <string>microsoft365-cn-onedrive</string>
         <key>Description</key>
-        <string>Microsoft Office 365 Deutschland Sharepoint</string>
+        <string>Microsoft365 China OneDrive</string>
         <key>Scheme</key>
         <string>https</string>
         <key>Default Hostname</key>
-        <string>graph.microsoft.de</string>
+        <string>microsoftgraph.chinacloudapi.cn</string>
         <key>Hostname Configurable</key>
         <false/>
         <key>Default Port</key>
         <string>443</string>
         <key>Port Configurable</key>
         <false/>
-        <key>Context</key>
-        <string>/v1.0</string>
         <key>OAuth Authorization Url</key>
-        <string>https://login.microsoftonline.de/common/oauth2/authorize?resource=https://graph.microsoft.de/</string>
+        <string>https://login.chinacloudapi.cn/common/oauth2/authorize</string>
         <key>OAuth Token Url</key>
-        <string>https://login.microsoftonline.de/common/oauth2/token</string>
+        <string>https://login.chinacloudapi.cn/common/oauth2/token</string>
         <key>OAuth Client ID</key>
         <string>94b1c0a7-e1b5-4c8b-8f3e-7341cd2c3e13</string>
         <key>OAuth Redirect Url</key>
