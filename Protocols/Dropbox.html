@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Dropbox &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Dropbox</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#multiple-accounts">Multiple Accounts</a></li>
+<li><a class="reference internal" href="#oauth-reset">OAuth Reset</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cyberduck-cli">Cyberduck CLI</a></li>
+<li><a class="reference internal" href="#additional-information">Additional Information</a><ul>
+<li><a class="reference internal" href="#shared-folders">Shared Folders</a></li>
+<li><a class="reference internal" href="#search">Search</a></li>
+<li><a class="reference internal" href="#share">Share</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#restricted-content">Restricted Content</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Dropbox</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Protocols/Dropbox.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="dropbox">
+<h1>Dropbox<a class="headerlink" href="#dropbox" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Access your <a class="reference external" href="https://db.tt/49NiK95I">Dropbox</a> without syncing to your computer.</p>
+</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Download <a class="reference external" href="https://mountainduck.io/">Mountain Duck</a> as an alternative to <em>Dropbox Client</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li><p>You will be asked to link Cyberduck to your Dropbox account on your first connection attempt.
+<img alt="Dropbox Link" src="../_images/Dropbox_Link.png" /></p></li>
+<li><p>Log in to Dropbox and paste the authorization code obtained to the login prompt.
+<img alt="Dropbox Authorization Code" src="../_images/Dropbox_Authorization_Code.png" /></p></li>
+</ol>
+<div class="section" id="multiple-accounts">
+<h2>Multiple Accounts<a class="headerlink" href="#multiple-accounts" title="Permalink to this headline">¶</a></h2>
+<p>You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.</p>
+</div>
+<div class="section" id="oauth-reset">
+<h2>OAuth Reset<a class="headerlink" href="#oauth-reset" title="Permalink to this headline">¶</a></h2>
+<p>If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark you can reset the OAuth token by deleting the entries related to <code class="docutils literal notranslate"><span class="pre">https://Dropbox</span> <span class="pre">(user)&#64;api.dropboxapi.com</span></code> out of the <em>Windows Credential Manager</em> or on macOS out of <em>Keychain Access.app</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cyberduck-cli">
+<h1>Cyberduck CLI<a class="headerlink" href="#cyberduck-cli" title="Permalink to this headline">¶</a></h1>
+<p>You can list the root contents of your Dropbox with <a class="reference external" href="https://duck.sh/">Cyberduck CLI</a> using</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>duck --list dropbox:/
+</pre></div>
+</div>
+<p>Refer to the <a class="reference internal" href="../CLI/index.html"><span class="doc std std-doc">Cyberduck CLI</span></a> documentation for more operations. For subsequent invocations make sure to include the <code class="docutils literal notranslate"><span class="pre">--username</span></code> parameter and set it to the email address registered with Dropbox to allow the lookup of previously saved OAuth tokens.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="additional-information">
+<h1>Additional Information<a class="headerlink" href="#additional-information" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="shared-folders">
+<h2>Shared Folders<a class="headerlink" href="#shared-folders" title="Permalink to this headline">¶</a></h2>
+<p>If you want to access folders that are shared with you through Dropbox you have to add the desired folder to your own drive at the webpage of Dropbox. To do that open your Dropbox Account within a web browser and navigate to the <em>Shared</em> section. Add the desired file or folder to your own drive by clicking on the <em>Add</em> button beside the file or folder.</p>
+</div>
+<div class="section" id="search">
+<h2>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This only applies to Cyberduck.</p>
+</div>
+<p>You can <a class="reference external" href="../Cyberduck/Browser#FilterSearch">search recursively</a> for files fast without browsing folders first.</p>
+</div>
+<div class="section" id="share">
+<h2>Share<a class="headerlink" href="#share" title="Permalink to this headline">¶</a></h2>
+<p>You can share an URL to provide access to a document in your Dropbox from <em>File → Share…</em>. Optionally set a password required to download the file. Choose <em>Cancel</em> to create a public URL with no password protection.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="restricted-content">
+<h2>Restricted Content<a class="headerlink" href="#restricted-content" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The file cannot be transferred because the content is restricted. For example, sometimes there are legal restrictions due to copyright claims.</p>
+</div></blockquote>
+<p>Downloads may fail when Dropbox returns a <code class="docutils literal notranslate"><span class="pre">409</span> <span class="pre">Conflict</span> <span class="pre">(restricted_content)</span></code> error reply for files considered restricted.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

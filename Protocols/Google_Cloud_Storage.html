@@ -1,0 +1,417 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Google Cloud Storage &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Google Cloud Storage</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#interoperable-access">Interoperable Access</a></li>
+<li><a class="reference internal" href="#oauth-2-0-access">OAuth 2.0 Access</a><ul>
+<li><a class="reference internal" href="#oauth-reset">OAuth Reset</a></li>
+<li><a class="reference internal" href="#custom-oauth-client-id">Custom OAuth Client ID</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cyberduck-cli">Cyberduck CLI</a></li>
+<li><a class="reference internal" href="#creating-a-bucket">Creating a Bucket</a></li>
+<li><a class="reference internal" href="#storage-class">Storage Class</a></li>
+<li><a class="reference internal" href="#bucket-access-logging">Bucket Access Logging</a></li>
+<li><a class="reference internal" href="#folders">Folders</a></li>
+<li><a class="reference internal" href="#files">Files</a><ul>
+<li><a class="reference internal" href="#metadata">Metadata</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#acls">ACLs</a><ul>
+<li><a class="reference internal" href="#default-acls">Default ACLs</a></li>
+<li><a class="reference internal" href="#granting-access-to-selected-users">Granting Access to Selected Users</a></li>
+<li><a class="reference internal" href="#granting-access-to-google-app-domain">Granting Access to Google App Domain</a></li>
+<li><a class="reference internal" href="#granting-access-to-members-of-google-group">Granting Access to Members of Google Group</a></li>
+<li><a class="reference internal" href="#permissions">Permissions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#website-configuration">Website Configuration</a><ul>
+<li><a class="reference internal" href="#index-file">Index File</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Google Cloud Storage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Protocols/Google_Cloud_Storage.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="google-cloud-storage">
+<h1>Google Cloud Storage<a class="headerlink" href="#google-cloud-storage" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://cloud.google.com/storage/docs">Google Cloud Storage</a> is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with <a class="reference internal" href="S3/index.html"><span class="doc std std-doc">S3</span></a>.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="interoperable-access">
+<h2>Interoperable Access<a class="headerlink" href="#interoperable-access" title="Permalink to this headline">¶</a></h2>
+<p>For interoperable access please use an S3-compatible protocol (like Amazon S3, not Google Storage) with the server set to <code class="docutils literal notranslate"><span class="pre">storage.googleapis.com</span></code>.</p>
+<p>You need to obtain the login credentials (Access Key and Secret) from the <a class="reference external" href="https://console.cloud.google.com/">Google Cloud Platform</a> settings for “Storage”. Please navigate to the <a class="reference external" href="https://console.cloud.google.com/storage/settings">storage settings</a>. Open the <em>Interoperability</em>-tab and enable <em>Interoperable Access</em>. After enabling you may now create a new key. For more information refer to the <a class="reference external" href="https://cloud.google.com/storage/docs/migrating">Google Storage Documentation</a>.</p>
+<p>In the login prompt of Cyberduck you enter the <em>Access Key</em> for the username and <em>Secret</em> for the password. This allows you to connect to one project configured in your account.</p>
+</div>
+<div class="section" id="oauth-2-0-access">
+<h2>OAuth 2.0 Access<a class="headerlink" href="#oauth-2-0-access" title="Permalink to this headline">¶</a></h2>
+<p>You must obtain the project ID (<code class="docutils literal notranslate"><span class="pre">x-goog-project-id</span></code>) of your project from the Google Cloud Platform under <em>Storage Access</em> from the Google Cloud Storage tab. <a class="reference external" href="https://console.cloud.google.com/storage/settings">Direct link to Google Cloud Storage settings.</a></p>
+<p><img alt="Project ID Bookmark Configuration" src="../_images/Project_ID_Bookmark_Configuration.png" /></p>
+<p>In the login prompt of Cyberduck, you enter the <code class="docutils literal notranslate"><span class="pre">x-goog-project-id</span></code> for the username and enter the <em>Authorization Code</em> retrieved from the website where you grant Cyberduck access to your account.</p>
+<p><img alt="Cyberduck OAuth Permissions" src="../_images/Google_Storage_OAuth_Token.png" /></p>
+<p>You access the page with the authorization code from the link displayed in the login prompt. Click it to open it in a web browser window. You only need to get the authorization code from the website on the first login attempt. Subsequent OAuth authentications will use a refresh token retrieved from the service.</p>
+<div class="section" id="oauth-reset">
+<h3>OAuth Reset<a class="headerlink" href="#oauth-reset" title="Permalink to this headline">¶</a></h3>
+<p>If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark you can reset the OAuth token by deleting the entries related to <code class="docutils literal notranslate"><span class="pre">https://Google</span> <span class="pre">Cloud</span> <span class="pre">Storage</span> <span class="pre">(user)</span></code> out of the <em>Windows Credential Manager</em> or on macOS out of <em>Keychain Access.app</em>.</p>
+</div>
+<div class="section" id="custom-oauth-client-id">
+<h3>Custom OAuth Client ID<a class="headerlink" href="#custom-oauth-client-id" title="Permalink to this headline">¶</a></h3>
+<p>You can register a <a class="reference internal" href="../Google_Client_ID.html"><span class="doc std std-doc">custom OAuth 2.0 client ID</span></a> with Google to operate independently of our registered client ID.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cyberduck-cli">
+<h1>Cyberduck CLI<a class="headerlink" href="#cyberduck-cli" title="Permalink to this headline">¶</a></h1>
+<p>You can list all buckets with <a class="reference external" href="https://duck.sh/">Cyberduck CLI</a> using</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>duck --username &lt;projectid&gt; --list gs:/`
+</pre></div>
+</div>
+<p>Refer to the <span class="xref myst">Cyberduck CLI</span> documentation for more operations.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="creating-a-bucket">
+<h1>Creating a Bucket<a class="headerlink" href="#creating-a-bucket" title="Permalink to this headline">¶</a></h1>
+<p>When connecting the first time, you must first create a new bucket with <em>File → New Folder… (macOS <code class="docutils literal notranslate"><span class="pre">⌘N</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+N</span></code>)</em>. You can choose the default bucket region in <em>Preferences (macOS <code class="docutils literal notranslate"><span class="pre">⌘,</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+,</span></code>) → Google Storage</em>. The following multi-regions are supported to select from:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">us.</span></code> Data centers in the United States.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eu.</span></code> Data centers within member states of the European Union.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">asia.</span></code> Data centers in Asia.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="storage-class">
+<h1>Storage Class<a class="headerlink" href="#storage-class" title="Permalink to this headline">¶</a></h1>
+<p>You can set the default <a class="reference external" href="https://cloud.google.com/storage/docs/storage-classes#descriptions">storage class</a> for new files uploaded in <em>Preferences (macOS <code class="docutils literal notranslate"><span class="pre">⌘,</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+,</span></code>) → Google Storage → Default Storage Class</em>. A minimum storage duration applies to data stored using one of these storage classes. You can delete the data before it has been stored for this duration, but at the time of deletion you are charged as if the data was stored for the minimum duration. Available options are</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">STANDARD</span></code>. Standard Storage. No minimum storage duration.</p></li>
+<li><p>MULTI_REGIONAL. Equivalent to Standard Storage, except Multi-Regional Storage can only be used for objects stored in multi-regions or dual-regions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REGIONAL</span></code>. Equivalent to Standard Storage, except Regional Storage can only be used for objects stored in regions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NEARLINE</span></code>. Nearline Storage is a better choice than Standard Storage in scenarios where slightly lower availability, a 30-day minimum storage duration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COLDLINE</span></code>. Coldline Storage is a very-low-cost, highly durable storage service for storing infrequently accessed data. Coldline Storage is a better choice than Standard Storage or Nearline Storage in scenarios where slightly lower availability, a 90-day minimum storage duration.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="bucket-access-logging">
+<h1>Bucket Access Logging<a class="headerlink" href="#bucket-access-logging" title="Permalink to this headline">¶</a></h1>
+<p>When this option is enabled in the <em>Google Cloud Storage</em> panel of the Info (<em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>)</em>) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to root in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.</p>
+<p><img alt="Access Log Configuration" src="../_images/Google_Storage_Access_Log_Configuration.png" /></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="folders">
+<h1>Folders<a class="headerlink" href="#folders" title="Permalink to this headline">¶</a></h1>
+<p>Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the mime-type <code class="docutils literal notranslate"><span class="pre">application/x-directory</span></code>. Directory placeholder objects created in <em>Google Storage Manager</em> are <a class="reference external" href="https://groups.google.com/group/gs-discussion/browse_thread/thread/fb90359bd714c717/44094e60372427d4#44094e60372427d4">not supported</a>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="files">
+<h1>Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="metadata">
+<h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<p>You can edit standard HTTP headers <a class="reference external" href="../Cyberduck/Info#MetadataHTTPHeaders">add</a> custom HTTP headers to files to store <a class="reference external" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html">metadata</a>. Choose <em>File → Info → Google Storage</em> to edit headers.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="acls">
+<h1>ACLs<a class="headerlink" href="#acls" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="default-acls">
+<h2>Default ACLs<a class="headerlink" href="#default-acls" title="Permalink to this headline">¶</a></h2>
+<p>You can set a <a class="reference external" href="https://cloud.google.com/storage/docs/access-control/lists#predefined-acl">default ACL</a> set on new files uploaded and buckets created in <em>Preferences (macOS <code class="docutils literal notranslate"><span class="pre">⌘,</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+,</span></code>) → Google Storage → Default ACL</em>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="text-align:center head"><p>Applies to Buckets</p></th>
+<th class="text-align:center head"><p>Applies to Files</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">private</span></code></p></td>
+<td class="text-align:center"><p>✅</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public-read</span></code></p></td>
+<td class="text-align:center"><p>✅</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public-read-write</span></code></p></td>
+<td class="text-align:center"><p>✅</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">authenticated-read</span></code></p></td>
+<td class="text-align:center"><p>✅</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">bucket-owner-read</span></code></p></td>
+<td class="text-align:center"><p>❌</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">bucket-owner-full-control</span></code></p></td>
+<td class="text-align:center"><p>❌</p></td>
+<td class="text-align:center"><p>✅</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="granting-access-to-selected-users">
+<h2>Granting Access to Selected Users<a class="headerlink" href="#granting-access-to-selected-users" title="Permalink to this headline">¶</a></h2>
+<p>You can give access to a specific user to a document by granting <code class="docutils literal notranslate"><span class="pre">READ</span></code> access to the email address registered with Google. The <em>Authenticated URL</em> from the <em>ACL</em> tab in the <em>Info</em> window with the format <code class="docutils literal notranslate"><span class="pre">https://sandbox.google.com/storage/&lt;container&gt;/&lt;file&gt;</span></code> will verify access to the resource using the Google Account login credentials.</p>
+<p><img alt="Google Storage ACLs" src="../_images/Google_Storage_ACLs.png" /></p>
+<p>The link will redirect to the file only after the user has successfully logged in to their Google Account and is listed in the ACL you have just edited.</p>
+</div>
+<div class="section" id="granting-access-to-google-app-domain">
+<h2>Granting Access to Google App Domain<a class="headerlink" href="#granting-access-to-google-app-domain" title="Permalink to this headline">¶</a></h2>
+<p>Google Apps customers can associate their email accounts with an Internet domain name. When you do this, each email account takes the form username&#64;yourdomain.com. You can specify a scope by using any Internet domain name that is associated with a Google Apps account.</p>
+</div>
+<div class="section" id="granting-access-to-members-of-google-group">
+<h2>Granting Access to Members of Google Group<a class="headerlink" href="#granting-access-to-members-of-google-group" title="Permalink to this headline">¶</a></h2>
+<p>Every Google group has a unique email address that is associated with the group. For example, the Google Storage for Developers group has the following email address: gs-discussion&#64;googlegroups.com. You can find the email address that is associated with a Google group by clicking About this group, which appears on the homepage of every Google group.</p>
+</div>
+<div class="section" id="permissions">
+<h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h2>
+<p>The following permissions can be given to grantees:</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Bucket</p></th>
+<th class="head"><p>Files</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">READ</span></code></p></td>
+<td><p>Allows grantee to list the files in the bucket</p></td>
+<td><p>Allows grantee to download the file and its metadata</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">WRITE</span></code></p></td>
+<td><p>Allows grantee to create, overwrite, and delete any file in the bucket</p></td>
+<td><p>Not applicable</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">FULL_CONTROL</span></code></p></td>
+<td><p>Allows grantee all permissions on the bucket</p></td>
+<td><p>Allows grantee all permissions on the object</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="website-configuration">
+<h1>Website Configuration<a class="headerlink" href="#website-configuration" title="Permalink to this headline">¶</a></h1>
+<p>To host a static website on Google Cloud Storage, It is possible to define a bucket as a <em>Website Endpoint</em>. The configuration in <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → Distribution</em> allows you to enable website configuration. Choose <em>Website Configuration (HTTP)</em> from <em>Delivery Method</em> and define an index document name that is searched for and returned when requests are made to the root or the subfolder in your bucket.</p>
+<p>Website Configuration parameters will only affect requests directed to CNAME aliases of a bucket.</p>
+<div class="section" id="index-file">
+<h2>Index File<a class="headerlink" href="#index-file" title="Permalink to this headline">¶</a></h2>
+<p>Simulates directory index behavior at both bucket and “directory” levels. The file specified is served for requests to the website endpoint as the main page for the bucket and for requests to “directories” contained by the bucket.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="limitations">
+<h1>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>No content distribution (<a class="reference internal" href="../CDN/index.html"><span class="doc std std-doc">CDN</span></a>) configuration.</p></li>
+<li><p>Torrent URLs are not supported.</p></li>
+<li><p>Signed URLs are not supported.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cloud.google.com/storage/docs/faq">Google Cloud Storage - Frequently Asked Questions</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
