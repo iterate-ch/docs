@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File Locking &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">File Locking</a></li>
+<li><a class="reference internal" href="#native-server-side-locking">Native server-side locking</a></li>
+<li><a class="reference internal" href="#pseudo-locking-for-protocols-with-no-native-lock-support-using-lock-owner-files">Pseudo locking for protocols with no native lock support using lock owner files</a><ul>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#error-message-when-opening-locked-documents">Error message when opening locked documents</a></li>
+<li><a class="reference internal" href="#resolution">Resolution</a></li>
+<li><a class="reference internal" href="#preferences">Preferences</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File Locking</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Mountain_Duck/Locking.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="file-locking">
+<h1>File Locking<a class="headerlink" href="#file-locking" title="Permalink to this headline">¶</a></h1>
+<p>Mountain Duck supports locking files to prevent conflicting edits from other while a document is open in an editor.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="native-server-side-locking">
+<h1>Native server-side locking<a class="headerlink" href="#native-server-side-locking" title="Permalink to this headline">¶</a></h1>
+<p>File locking is natively supported for the following protocols:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../Protocols/Dropbox.html"><span class="doc std std-doc">Dropbox for Business</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/OneDrive.html"><span class="doc std std-doc">Microsoft OneDrive</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/SharePoint.html"><span class="doc std std-doc">Microsoft SharePoint</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/WebDAV/index.html"><span class="doc std std-doc">WebDAV</span></a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some WebDAV implementations including <span class="xref myst">ownCloud</span> and <span class="xref myst">NextCloud</span> may not support locing documents. Make sure to select <em>Nextcloud &amp; ownCloud</em> in the bookmark configuration to make use of pseudo locking.</p>
+</div>
+<p>Files opend from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="pseudo-locking-for-protocols-with-no-native-lock-support-using-lock-owner-files">
+<h1>Pseudo locking for protocols with no native lock support using lock owner files<a class="headerlink" href="#pseudo-locking-for-protocols-with-no-native-lock-support-using-lock-owner-files" title="Permalink to this headline">¶</a></h1>
+<p>For connectionc other than <a class="reference internal" href="../Protocols/WebDAV/index.html"><span class="doc std std-doc">WebDAV</span></a>, we support detecting files opened by others by looking for owner lock files uploading to the server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Support is currently limited to files edited in <em>Microsoft Word, Microsoft Excel, and Microsoft Powerpoint</em> on macOS and Windows.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>When a previously saved file is opend for editing, for printing, or for review, Word creates a temporary file that has a .doc file name extension. This filename extension begins with a tilde (~) that is followed by a dollar sign ($) that is followed by the remainder of the original file name. This temporary file holds the login name of the person who opens the file. This temporary file is called the “owner file”.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://support.microsoft.com/en-us/help/211632/description-of-how-word-creates-temporary-files">Description of how Word creates temporary files</a></p></li>
+<li><p><a class="reference external" href="https://support.microsoft.com/en-us/help/313472/the-document-is-locked-for-editing-by-another-user-error-message-when">The document is locked for editing by another user error message when you try to open a document in Word</a></p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="error-message-when-opening-locked-documents">
+<h1>Error message when opening locked documents<a class="headerlink" href="#error-message-when-opening-locked-documents" title="Permalink to this headline">¶</a></h1>
+<p>Attempting to open a locked document, an error message is displayed notifying the document can only be opened in read-only mode. Samples of error messages from different applications.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-0-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">Read</span> <span class="pre">Only.</span> <span class="pre">To</span> <span class="pre">save</span> <span class="pre">a</span> <span class="pre">copy</span> <span class="pre">of</span> <span class="pre">this</span> <span class="pre">document,</span> <span class="pre">click</span> <span class="pre">Duplicate</span></code></p>
+<a class="reference internal image-reference" href="../_images/Read_Only_Microsoft_Word_macOS.png"><img alt="Send Command" src="../_images/Read_Only_Microsoft_Word_macOS.png" style="width: 500px;" /></a>
+<p><strong>Libre Office</strong><br/>
+<code class="docutils literal notranslate"><span class="pre">Document</span> <span class="pre">...</span> <span class="pre">is</span> <span class="pre">locked</span> <span class="pre">for</span> <span class="pre">editing</span> <span class="pre">by...</span> <span class="pre">.</span> <span class="pre">Open</span> <span class="pre">document</span> <span class="pre">read-only</span> <span class="pre">or</span> <span class="pre">open</span> <span class="pre">a</span> <span class="pre">copy</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">document</span> <span class="pre">for</span> <span class="pre">editing.</span></code></p>
+<a class="reference internal image-reference" href="../_images/Document_in_Use_Libre_Office_macOS.png"><img alt="Send Command" src="../_images/Document_in_Use_Libre_Office_macOS.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/Read_Only_Mode_Libre_Office_macOS.png"><img alt="Send Comman" src="../_images/Read_Only_Mode_Libre_Office_macOS.png" style="width: 400px;" /></a>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><a class="reference internal image-reference" href="../_images/File_in_Use_Microsoft_Word_Windows.png"><img alt="Send Command" src="../_images/File_in_Use_Microsoft_Word_Windows.png" style="width: 400px;" /></a>
+<p>Choose <em>Receive notification when the original copy is available</em> to open the document in read-only mode and get an alert when the other user has closed the document.</p>
+<a class="reference internal image-reference" href="../_images/Microsoft_Word_Read-Only_Edit_Windows.png"><img alt="Send Command" src="../_images/Microsoft_Word_Read-Only_Edit_Windows.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/Microsoft_Word_File_Now_Available_Windows.png"><img alt="Send Command" src="../_images/Microsoft_Word_File_Now_Available_Windows.png" style="width: 400px;" /></a>
+<p><strong>Microsoft Excel</strong><br/>
+<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">in</span> <span class="pre">Use:</span> <span class="pre">File</span> <span class="pre">is</span> <span class="pre">locked</span> <span class="pre">for</span> <span class="pre">editing</span> <span class="pre">by</span> <span class="pre">...</span> <span class="pre">.</span> <span class="pre">Open</span> <span class="pre">'Read-Only'</span> <span class="pre">or</span> <span class="pre">click</span> <span class="pre">'Notify'</span> <span class="pre">to</span> <span class="pre">open</span> <span class="pre">read-only</span> <span class="pre">and</span> <span class="pre">receive</span> <span class="pre">notification</span> <span class="pre">when</span> <span class="pre">the</span> <span class="pre">document</span> <span class="pre">is</span> <span class="pre">no</span> <span class="pre">longer</span> <span class="pre">in</span> <span class="pre">use.</span></code></p>
+<a class="reference internal image-reference" href="../_images/Read_Only_Microsoft_Excel_Windows.png"><img alt="Send Command" src="../_images/Read_Only_Microsoft_Excel_Windows.png" style="width: 400px;" /></a>
+<p>Choose <em>Notify</em> to open the document in read-only mode and get an alert when the other user has closed the document.</p>
+<a class="reference internal image-reference" href="../_images/Microsoft_Excel_File_Now_Available_Notification_Windows.png"><img alt="Send Command" src="../_images/Microsoft_Excel_File_Now_Available_Notification_Windows.png" style="width: 400px;" /></a>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="resolution">
+<h1>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h1>
+<p>If you get a warning that the document is <em>Read-Only</em>, ask other users to close the document. If the <em>Read-Only</em> warning prevails, these are the steps to follow.</p>
+<ul class="simple">
+<li><p>If you are connecting to a WebDAV server with lock support, ask the server administrator to clean up locks on the server.</p></li>
+<li><p>For all other servers, delete the file named <code class="docutils literal notranslate"><span class="pre">~$...</span></code>.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h1>
+<p>Locking is disabled by default. Refer to <a class="reference internal" href="Preferences.html"><span class="doc std std-doc">Preferences</span></a> to enable it in <em>Connection → Locking → Lock Files</em>.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
