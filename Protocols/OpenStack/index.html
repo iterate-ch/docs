@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Swift (OpenStack Object Storage) &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,34 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Swift (OpenStack Object Storage)</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#authentication-context-path">Authentication Context Path</a><ul>
+<li><a class="reference internal" href="#authetication-with-devauth-for-context-v1-0">Authetication with <code class="docutils literal notranslate"><span class="pre">devauth</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v1.0</span></code></a></li>
+<li><a class="reference internal" href="#authentication-with-swauth">Authentication with <code class="docutils literal notranslate"><span class="pre">swauth</span></code></a></li>
+<li><a class="reference internal" href="#authentication-with-keystone-2-0-for-context-v2-0-tokens">Authentication with <code class="docutils literal notranslate"><span class="pre">Keystone</span> <span class="pre">2.0</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v2.0/tokens</span></code></a></li>
+<li><a class="reference internal" href="#authentication-with-keystone-3-0-for-context-v3-tokens">Authentication with <code class="docutils literal notranslate"><span class="pre">Keystone</span> <span class="pre">3.0</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v3/tokens</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#regions">Regions</a></li>
+<li><a class="reference internal" href="#container">Container</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cyberduck-cli">Cyberduck CLI</a></li>
+<li><a class="reference internal" href="#providers">Providers</a></li>
+<li><a class="reference internal" href="#temporary-urls">Temporary URLs</a></li>
+<li><a class="reference internal" href="#large-uploads">Large Uploads</a></li>
+<li><a class="reference internal" href="#distribution-cdn">Distribution (CDN)</a></li>
+<li><a class="reference internal" href="#preferences">Preferences</a><ul>
+<li><a class="reference internal" href="#large-upload-segment-size">Large Upload Segment Size</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#multiple-openstack-swift-containers-in-different-regions-with-the-same-name">Multiple OpenStack Swift containers in different regions with the same name</a></li>
+<li><a class="reference internal" href="#in-finder-app-creating-a-new-top-level-folder-in-openstack-swift-will-not-allow-to-rename-it-from-untitled-folder">In Finder.app, creating a new top-level folder in OpenStack Swift will not allow to rename it from <code class="docutils literal notranslate"><span class="pre">untitled</span> <span class="pre">folder</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +165,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Swift (OpenStack Object Storage)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +184,135 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="swift-openstack-object-storage">
+<h1>Swift (OpenStack Object Storage)<a class="headerlink" href="#swift-openstack-object-storage" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p>Connect to a <a class="reference external" href="http://docs.openstack.org/Swift/latest">Swift (OpenStack Object Storage)</a> installation. Choose <em>Swift (OpenStack Object Storage)</em> from the list of protocols.</p>
+<div class="section" id="authentication-context-path">
+<h2>Authentication Context Path<a class="headerlink" href="#authentication-context-path" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="authetication-with-devauth-for-context-v1-0">
+<h3>Authetication with <code class="docutils literal notranslate"><span class="pre">devauth</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v1.0</span></code><a class="headerlink" href="#authetication-with-devauth-for-context-v1-0" title="Permalink to this headline">¶</a></h3>
+<p>Legacy authentication option.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/Openstack%20Swift%20(v1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (v1) profile</em> for preconfigured settings.</p></li>
+</ul>
+</div>
+<div class="section" id="authentication-with-swauth">
+<h3>Authentication with <code class="docutils literal notranslate"><span class="pre">swauth</span></code><a class="headerlink" href="#authentication-with-swauth" title="Permalink to this headline">¶</a></h3>
+<p>Legacy authentication option.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Swauth).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Swauth HTTPS) profile</em> for preconfigured settings.</p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Swauth%20HTTP).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Swauth HTTP)</em> profile for preconfigured settings.</p></li>
+</ul>
+</div>
+<div class="section" id="authentication-with-keystone-2-0-for-context-v2-0-tokens">
+<h3>Authentication with <code class="docutils literal notranslate"><span class="pre">Keystone</span> <span class="pre">2.0</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v2.0/tokens</span></code><a class="headerlink" href="#authentication-with-keystone-2-0-for-context-v2-0-tokens" title="Permalink to this headline">¶</a></h3>
+<p>To get the login tokens from an OpenStack Identity service no configuration change is needed. You will get prompted to provide the tenant name with a <em>Provide additional login credentials</em> prompt or can provide it with the username in the format <code class="docutils literal notranslate"><span class="pre">&lt;tenant&gt;:&lt;user&gt;</span></code>.</p>
+<p>Bundled by default since Cyberduck version 4.4.4.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Keystone%202).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Keystone 2) profile</em> for preconfigured settings.</p></li>
+</ul>
+<p>If you have a Swift installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Keystone%202%20HTTP).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Keystone 2 HTTP) profile</em> for preconfigured settings.</p></li>
+</ul>
+</div>
+<div class="section" id="authentication-with-keystone-3-0-for-context-v3-tokens">
+<h3>Authentication with <code class="docutils literal notranslate"><span class="pre">Keystone</span> <span class="pre">3.0</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v3/tokens</span></code><a class="headerlink" href="#authentication-with-keystone-3-0-for-context-v3-tokens" title="Permalink to this headline">¶</a></h3>
+<p>Bundled by default since Cyberduck version 4.8.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Keystone 3) profile</em> for preconfigured settings.</p></li>
+</ul>
+<p>If you have a Swift installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Keystone%203%20HTTP).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Openstack Swift (Keystone 3 HTTP) profile</em> for preconfigured settings.</p></li>
+</ul>
+<p>You will get prompted to provide the project name with a <em>Provide additional login credentials prompt</em> or can provide it with the username in the format <code class="docutils literal notranslate"><span class="pre">&lt;project&gt;:&lt;user&gt;</span></code>.</p>
+</div>
+</div>
+<div class="section" id="regions">
+<h2>Regions<a class="headerlink" href="#regions" title="Permalink to this headline">¶</a></h2>
+<p>Multiple regions are supported when authenticating with a Keystone (2.0) identity endpoint. Containers from all regions are displayed in the browser. Choose <em>View → Column → Region</em> to display the region in the browser.</p>
+</div>
+<div class="section" id="container">
+<h2>Container<a class="headerlink" href="#container" title="Permalink to this headline">¶</a></h2>
+<p>On your first login, you will need to create at least one container (folder) to put your content in. Choose <em>File → New Folder (MacOS <code class="docutils literal notranslate"><span class="pre">⌘N</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+N</span></code>)</em> and specify a name. After the container has been created, you may start adding your content to the storage platform.</p>
+<p><img alt="Create Container" src="../../_images/Create_Container.png" /></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cyberduck-cli">
+<h1>Cyberduck CLI<a class="headerlink" href="#cyberduck-cli" title="Permalink to this headline">¶</a></h1>
+<p>Connect with <a class="reference external" href="https://duck.sh/">Cyberduck CLI</a> usingthe default connection profile using authentication with <code class="docutils literal notranslate"><span class="pre">Keystone</span> <span class="pre">2.0</span></code> for context <code class="docutils literal notranslate"><span class="pre">/v2.0/tokens</span></code> with</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>duck --username OS_TENANT_ID:OS_USERNAME --password PASSWORD  --list swift://SWIFT_KEYSTONE_AUTH_SERVER/CONTAINERNAME
+</pre></div>
+</div>
+<p>Refer to the <a class="reference internal" href="../../CLI/index.html"><span class="doc std std-doc">Cyberduck CLI</span></a> documentation for more operations.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="providers">
+<h1>Providers<a class="headerlink" href="#providers" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="CloudFiles.html"><span class="doc std std-doc">Rackspace Cloud Files (US &amp; UK)</span></a> with <a class="reference internal" href="../../CDN/Akamai.html"><span class="doc std std-doc">Akamai CDN</span></a></p></li>
+<li><p><a class="reference internal" href="Internap.html"><span class="doc std std-doc">Internap AgileFILES</span></a></p></li>
+<li><p><a class="reference internal" href="Cloud.ca.html"><span class="doc std std-doc">Cloud.ca Object Store</span></a></p></li>
+<li><p><a class="reference internal" href="IBM_COS.html"><span class="doc std std-doc">IBM Cloud Object Storage (COS)</span></a></p></li>
+<li><p><a class="reference internal" href="Memset.html"><span class="doc std std-doc">Memset Memstore Object Storage</span></a></p></li>
+<li><p><a class="reference internal" href="Enter_Cloud_Suite.html"><span class="doc std std-doc">Enter Cloud Suite</span></a></p></li>
+<li><p><a class="reference internal" href="Oracle_Cloud.html"><span class="doc std std-doc">Oracle Storage Cloud Service</span></a></p></li>
+<li><p><a class="reference internal" href="Oktawave.html"><span class="doc std std-doc">Oktawave Cloud Storage</span></a></p></li>
+<li><p><a class="reference internal" href="SwiftStack.html"><span class="doc std std-doc">SwiftStack</span></a></p></li>
+<li><p><a class="reference internal" href="Cloudwatt.html"><span class="doc std std-doc">Cloudwatt</span></a></p></li>
+<li><p><a class="reference external" href="https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/">RunAbove</a></p></li>
+<li><p><a class="reference internal" href="Cloud_A.html"><span class="doc std std-doc">Cloud A</span></a></p></li>
+<li><p><a class="reference internal" href="AURO.html"><span class="doc std std-doc">AURO</span></a></p></li>
+<li><p><a class="reference internal" href="OVH.html"><span class="doc std std-doc">OVH</span></a></p></li>
+<li><p><a class="reference internal" href="HubiC.html"><span class="doc std std-doc">HubiC (OVH)</span></a></p></li>
+<li><p><a class="reference internal" href="Zetta.IO.html"><span class="doc std std-doc">Zetta.IO</span></a></p></li>
+<li><p><a class="reference internal" href="Selectel.html"><span class="doc std std-doc">Selectel Cloud Storage</span></a></p></li>
+<li><p><a class="reference internal" href="EMC.html"><span class="doc std std-doc">EMC Elastic Cloud Storage</span></a></p></li>
+<li><p><a class="reference internal" href="Infomaniak.html"><span class="doc std std-doc">Infomaniak</span></a></p></li>
+<li><p><a class="reference internal" href="IDrive_Cloud.html"><span class="doc std std-doc">IDrive® Cloud</span></a></p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="temporary-urls">
+<h1>Temporary URLs<a class="headerlink" href="#temporary-urls" title="Permalink to this headline">¶</a></h1>
+<p>A private object stored in OpenStack Swift can be made publicly available for a limited time using a signed URL. The signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the signed URL from <em>Edit → Copy URL→ Signed URL</em>.</p>
+<ul class="simple">
+<li><p><strong>Rackspace</strong> A value must be set on your account metadata for <code class="docutils literal notranslate"><span class="pre">X-Account-Meta-Temp-Url-Key</span></code>.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="large-uploads">
+<h1>Large Uploads<a class="headerlink" href="#large-uploads" title="Permalink to this headline">¶</a></h1>
+<p>Supported using Static Large Object segmentation. Files larger than 2GB are uploaded in segments using the default threshold. The upload chunk size is 100MB by default with a maximum of 5 concurrent connections. The number of connections used can be limited using the toggle in the lower right of the transfer window.</p>
+<p>Large uploads can be resumed when interrupted.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="distribution-cdn">
+<h1>Distribution (CDN)<a class="headerlink" href="#distribution-cdn" title="Permalink to this headline">¶</a></h1>
+<p>You can CDN enable the container using <em>File → Info → Distribution (CDN)</em> if supported by the provider.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="large-upload-segment-size">
+<h2>Large Upload Segment Size<a class="headerlink" href="#large-upload-segment-size" title="Permalink to this headline">¶</a></h2>
+<p>You can set the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOption">hidden option</a> <code class="docutils literal notranslate"><span class="pre">openstack.upload.largeobject.size</span></code> for the segment size in <code class="docutils literal notranslate"><span class="pre">bytes</span></code> (Issue #9134).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><del>Authentication failure with ec2-credentials</del> (Issue #7754)</p></li>
+</ul>
+<div class="section" id="multiple-openstack-swift-containers-in-different-regions-with-the-same-name">
+<h2>Multiple OpenStack Swift containers in different regions with the same name<a class="headerlink" href="#multiple-openstack-swift-containers-in-different-regions-with-the-same-name" title="Permalink to this headline">¶</a></h2>
+<p>Browsing containers will be erratic. As a workaround, browse a region by using a <a class="reference internal" href="../../Cyberduck/Profiles.html"><span class="doc std std-doc">connection profile</span></a> limited to a single region as with <a class="reference external" href="CloudFiles#ProfilesforaSingleRegion">Rackspace Cloudfiles region profiles</a>.</p>
+</div>
+<div class="section" id="in-finder-app-creating-a-new-top-level-folder-in-openstack-swift-will-not-allow-to-rename-it-from-untitled-folder">
+<h2>In Finder.app, creating a new top-level folder in OpenStack Swift will not allow to rename it from <code class="docutils literal notranslate"><span class="pre">untitled</span> <span class="pre">folder</span></code><a class="headerlink" href="#in-finder-app-creating-a-new-top-level-folder-in-openstack-swift-will-not-allow-to-rename-it-from-untitled-folder" title="Permalink to this headline">¶</a></h2>
+<p><del>Because OpenStack Swift does not allow to rename containers this operation will fail.</del></br>As of Cyberduck version 2.2 the new bucket is created only after renaming in Finder. Make sure to choose a filename with no whitespace.</p>
+</div>
+</div>
+
 
            </div>
            
