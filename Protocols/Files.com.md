@@ -19,8 +19,8 @@ Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
 
 - Protocol: `FTP-SSL (Explicit AUTH TLS)`
 - Server: `app.files.com`
-- Username: Your Files.com username.
-- Password: Your Files.com password.
+- Username: `Your Files.com username`
+- Password: `Your Files.com password`
 
 ### WebDAV
 
@@ -28,8 +28,8 @@ Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `<subdomain>.files.com`
-- Username: Your Files.com username.
-- Password: Your Files.com password.
+- Username: `Your Files.com username`
+- Password: `Your Files.com password`
 
 # References
 
