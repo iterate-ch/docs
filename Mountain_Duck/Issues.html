@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Known Issues &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Known Issues</a></li>
+<li><a class="reference internal" href="#performance-considerations">Performance Considerations</a></li>
+<li><a class="reference internal" href="#characters-to-avoid">Characters to avoid</a></li>
+<li><a class="reference internal" href="#id1">Known Issues</a><ul>
+<li><a class="reference internal" href="#can-only-open-single-pdf-in-adobe-acrobat-reader">Can only open single PDF in Adobe Acrobat Reader</a></li>
+<li><a class="reference internal" href="#rsync-fails-with-error">rsync fails with error</a></li>
+<li><a class="reference internal" href="#high-cpu-usage-when-working-with-sublime-text">High CPU usage when working with Sublime Text</a></li>
+<li><a class="reference internal" href="#sharing-a-mounted-drive-in-local-network">Sharing a mounted drive in local network</a></li>
+<li><a class="reference internal" href="#changes-from-server-not-immediately-visible">Changes from server not immediately visible</a></li>
+<li><a class="reference internal" href="#cache-uses-a-lot-of-disk-space">Cache uses a lot of disk space</a></li>
+<li><a class="reference internal" href="#missing-sync-status-icons">Missing sync status icons</a></li>
+<li><a class="reference internal" href="#operating-system-specific-issues">Operating system specific issues</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interoperability">Interoperability</a><ul>
+<li><a class="reference internal" href="#hosting-service-providers">Hosting Service Providers</a></li>
+<li><a class="reference internal" href="#third-party-software">Third party software</a><ul>
+<li><a class="reference internal" href="#kaspersky-internet-security">Kaspersky Internet Security</a></li>
+<li><a class="reference internal" href="#eset-cyber-security-pro">Eset Cyber Security Pro</a></li>
+<li><a class="reference internal" href="#bitdefender">Bitdefender</a></li>
+<li><a class="reference internal" href="#sophos-endpoint-protection">Sophos Endpoint Protection</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backups">Backups</a></li>
+<li><a class="reference internal" href="#bug-reports-and-feature-requests">Bug Reports and Feature Requests</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Known Issues</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Mountain_Duck/Issues.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="performance-considerations">
+<h1>Performance Considerations<a class="headerlink" href="#performance-considerations" title="Permalink to this headline">¶</a></h1>
+<p>To reduce the number of requests to the remote server for mounted volumes, we recommend the following settings when running in <em>Online</em> connect mode.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-0-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Choose <em>View → Hide Preview</em> (⌘⇧P)</p></li>
+<li><p>Disable <em>View → Show View Options → Show icon preview</em></p></li>
+</ul>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Choose <em>File Explorer → Folder Options</em>.</p>
+<ul class="simple">
+<li><p>Check <em>Always show icons, never thumbnails</em></p></li>
+<li><p>Check <em>Display File Icon on thumbnails</em></p></li>
+<li><p>Uncheck <em>Show preview handlers in preview pane</em></p></li>
+</ul>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="characters-to-avoid">
+<h1>Characters to avoid<a class="headerlink" href="#characters-to-avoid" title="Permalink to this headline">¶</a></h1>
+<p>The following characters should be avoided within file and folder names.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-1-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-1-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">:</span></code> (colon)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> (forward slash)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash)</p></li>
+</ul>
+</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> (less than)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> (greater than)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:</span></code> (colon)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (double quote)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> (forward slash)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">|</span></code> (vertical bar or pipe)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">?</span></code> (question mark)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> (asterik)</p></li>
+</ul>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Known Issues<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="can-only-open-single-pdf-in-adobe-acrobat-reader">
+<h2>Can only open single PDF in Adobe Acrobat Reader<a class="headerlink" href="#can-only-open-single-pdf-in-adobe-acrobat-reader" title="Permalink to this headline">¶</a></h2>
+<p>This is a known bug in Adobe Acrobat Reader when opening documents from a network volume. As a workaround uncheck <em>edit → Preferences… → Security (Enhanced) → Enable Protected Mode at startup</em>.</p>
+<ul class="simple">
+<li><p>Adobe Documentation: <a class="reference external" href="https://helpx.adobe.com/reader/11/using/protected-mode-windows.html">Protected mode (Windows)</a></p></li>
+</ul>
+</div>
+<div class="section" id="rsync-fails-with-error">
+<h2>rsync fails with error<a class="headerlink" href="#rsync-fails-with-error" title="Permalink to this headline">¶</a></h2>
+<p>If your server does not accept the creation of <code class="docutils literal notranslate"><span class="pre">.</span></code> temporary files you might need to add the <code class="docutils literal notranslate"><span class="pre">--inplace</span></code> when running <code class="docutils literal notranslate"><span class="pre">rsync</span></code>.</p>
+</div>
+<div class="section" id="high-cpu-usage-when-working-with-sublime-text">
+<h2>High CPU usage when working with Sublime Text<a class="headerlink" href="#high-cpu-usage-when-working-with-sublime-text" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>When working with Sublime Text we recommend turning off indexing by adding the following setting to your user preferences in Sublime Text. <br/>
+<code class="docutils literal notranslate"><span class="pre">&quot;index_files&quot;:</span> <span class="pre">false</span></code></p></li>
+<li><p>You might want to <a class="reference external" href="https://www.sublimetext.com/docs/git_integration.html">turn off Git support in Sublime</a> which has caused high CPU usage for some users when scanning <code class="docutils literal notranslate"><span class="pre">.git</span></code> folders. <br/>
+<code class="docutils literal notranslate"><span class="pre">&quot;show_git_status&quot;:</span> <span class="pre">false</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="sharing-a-mounted-drive-in-local-network">
+<h2>Sharing a mounted drive in local network<a class="headerlink" href="#sharing-a-mounted-drive-in-local-network" title="Permalink to this headline">¶</a></h2>
+<p>It is not possible to share a mounted drive within the local network.</p>
+</div>
+<div class="section" id="changes-from-server-not-immediately-visible">
+<h2>Changes from server not immediately visible<a class="headerlink" href="#changes-from-server-not-immediately-visible" title="Permalink to this headline">¶</a></h2>
+<p>The directory listing in <em>Finder.app</em> or <em>File Explorer</em> may become out of date when another application is addin , removing, or modifying files on the server. You can force <em>File Explorer</em> to refresh the directory listing with <code class="docutils literal notranslate"><span class="pre">F5</span></code>. On the Mac, choose <em>Reload</em> from the <a class="reference external" href="index#FinderExtensionWindowsFileExplorerExtension"><em>Finder Extension</em></a> menu. Enable <em>Sync → Index files</em> in <em>Preferences</em> to look for remote file changes every 10 minutes.</p>
+</div>
+<div class="section" id="cache-uses-a-lot-of-disk-space">
+<h2>Cache uses a lot of disk space<a class="headerlink" href="#cache-uses-a-lot-of-disk-space" title="Permalink to this headline">¶</a></h2>
+<p>The cache directory is located in <code class="docutils literal notranslate"><span class="pre">%LocalAppData%\Cyberduck\Cache</span></code> on Windows or in <code class="docutils literal notranslate"><span class="pre">~/Library/Group</span> <span class="pre">Containers/G69SCX94XU.duck/Library/Application</span> <span class="pre">Support/duck</span></code> on macOS by default. You can <a class="reference external" href="Preferences#SyncCacheLocation">choose another disk</a> for storage of files to be stored in the local cache. You can clear files cached on local disk with the <em>Delete on local disk</em> <a class="reference external" href="Sync#DeleteonLocalDisk">context menu</a> option.</p>
+<a class="reference internal image-reference" href="../_images/Custom_Location_Sync_Cache.png"><img alt="Send Command" src="../_images/Custom_Location_Sync_Cache.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="missing-sync-status-icons">
+<h2>Missing sync status icons<a class="headerlink" href="#missing-sync-status-icons" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-2-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-2-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-2-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Finder</strong><br/>
+When you have other applications installed that register a Finder Extension (macOS) for the volume mounted, the status icon may not appear. This has been reported for the following applications:</p>
+<ul class="simple">
+<li><p><em>Araxis Merge</em></p></li>
+<li><p><em>BetterZip</em></p></li>
+<li><p><em>Sophos</em>. Documented in <a class="reference external" href="https://community.sophos.com/kb/en-us/132136">SAV for Mac OS - Sophos Finder Extension Known Issues</a></p></li>
+</ul>
+<p>Please check in <em>System Preferences → Extension → Finder</em> for other applications that may override the badge icons.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If none of those applications are in use, a Finder re-launch can make the badge icons appear again.</p>
+</div>
+</div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Windows</strong><br/>
+Windows has a limitation on the number of applications that can register for bagde icons in FIle Explorer. You will need to either uninstall other applications or edit your registry key <code class="docutils literal notranslate"><span class="pre">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers</span></code>.
+You can find this well documented by Microsoft at <a class="reference external" href="https://support.office.com/en-us/article/sync-icon-overlays-are-missing-from-onedrive-and-onedrive-for-business-b25070ab-2226-4ad8-b1fc-ae28cc44ecd2">Sync icon overlays are missing</a>.</p>
+</div></div>
+</div>
+<div class="section" id="operating-system-specific-issues">
+<h2>Operating system specific issues<a class="headerlink" href="#operating-system-specific-issues" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-3-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-3-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-3-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Finder.app does not show files prefixed with <code class="docutils literal notranslate"><span class="pre">.</span></code> on remote volumes</strong><br/>
+You can work around this by setting <code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">com.apple.finder</span> <span class="pre">AppleShowAllFiles</span> <span class="pre">YES</span></code> in a <em>Terminal.app</em> window and restart <em>Finder.app</em> using <em>→ Force Quit … → Finder → Relaunch</em>. If you are running macOS Sierra (10.12) you can choose <code class="docutils literal notranslate"><span class="pre">⌘⇧.</span></code> to toggle files starting with a dot to show in Finder.app.</p>
+<p><strong>Original document can’t be changed (Preview.app)</strong><br/>
+Files opened in Preview.app and edited cannot be saved at the original location but the message “The original document can’t be changed, so a duplicate with your changes has been created” is displayed in the title bar. As a workaround, you can set a custom mount point in <em>Preferences → Connection → Mount Location</em> for volumes such as a <code class="docutils literal notranslate"><span class="pre">~/Volumes/</span></code> folder in your home directory.</p>
+<p><strong>Enable application icon in Dock</strong><br/>
+As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">io.mountainduck</span> <span class="pre">application.dock.icon.enable</span> <span class="pre">true</span></code></p>
+<p><strong>Mounted volumes do not appear on the desktop</strong><br/>
+Navigate to volumes using <code class="docutils literal notranslate"><span class="pre">⌘⇧C</span></code> in a <em>Finder.app</em> window or choose <em>Finder → Preferences … → General → Show these items on the desktop: Connected Servers</em> to make the volume appear on the desktop. Mounted volumes are also listed in the <em>Finder.app</em> sidebar in <em>Favorites</em>.</p>
+<p><strong>Search in Finder.app (Spotlight)</strong><br/>
+The Spotlight indexer does not work on remote volumes</p>
+<p><strong>Multiple Mountain Duck Finder Extensions processes</strong><br/>
+The system may launch additionla copies of <em>Mountain Duck Finder Extension</em> whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.</p>
+<p><strong>Connection Interrupted</strong><br/>
+It may be that Finder closes the connection because Mountain Duck hasn’t answered fast enough on the request of Finder. Although Finder indicates that the server connection is interrupted it isn’t as Mountain Duck is still connected to the server.</p>
+<p>This is an issue within the operating system that can occur to any network drive.</p>
+<p><del> <strong>Additional <code class="docutils literal notranslate"><span class="pre">._*</span></code> files saved on remote volumes</strong> </del> <br/>
+<del> The <code class="docutils literal notranslate"><span class="pre">._*</span></code> files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata con be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contein this information. You can delete metadata on files using <code class="docutils literal notranslate"><span class="pre">xattr</span> <span class="pre">-d</span> <span class="pre">&lt;filename&gt;</span></code>. </del></p>
+<p>As of version <a class="reference external" href="https://mountainduck.io/changelog/">2.1</a>, extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a <em>Terminal.app</em> window</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">io.mounteinduck</span> <span class="pre">fs.filesnames.metadata.enable</span> <span class="pre">false</span></code></p>
+<p>If you want to delete metadata files, you can open a <em>Terminal.app</em> window and enter <code class="docutils literal notranslate"><span class="pre">dot_clean</span> <span class="pre">-m</span> <span class="pre">&lt;folder&gt;</span></code>.</p>
+</div><div aria-labelledby="tab-3-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>File system driver isn’t set up properly</strong><br/>
+Error: <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">volume</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">accessed</span> <span class="pre">for</span> <span class="pre">which</span> <span class="pre">a</span> <span class="pre">file</span> <span class="pre">system</span> <span class="pre">driver</span> <span class="pre">is</span> <span class="pre">required</span> <span class="pre">that</span> <span class="pre">has</span> <span class="pre">not</span> <span class="pre">yet</span> <span class="pre">been</span> <span class="pre">loaded</span></code></p>
+<p>If you get this error message you most likely haven’t restarted your system after the installation or update of Mountain Duck. Restart your system to resolve this error. If a system restart doesn’t resolve the error try to repair Mountain Duck followed by an application reinstall if this doesn’t work either. Additionally, make sure no antivirus software is interfering with the operation of Mountain Duck.</p>
+<p><strong>Missing files in Windows Explorer</strong><br/>
+Windows has a limitation on the maximum path length. It might happen that Mountain Duck exceeds this maximum for long file names when trying to create placeholders in the local cache. If Mountain Duck is unable to create a placeholder file for a remote file it will not appear in the Windows Explorer listing.</p>
+<p>To work around this Windows limitaion you can enable long path support in Windows 10 as of version 1607.</p>
+<ol class="simple">
+<li><p>Open the <em>Local Group Policy editor</em> (search for <em>Edit Group Policy</em>)</p></li>
+<li><p>Navigate to <em>Local Computer Policy → Computer Configuration → Administrative Templates → System → Filesystem</em></p></li>
+<li><p>Double-click the <em>Enable NTFS long paths</em> option and select <em>Enabled</em></p></li>
+</ol>
+<p>Please refer to <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation">Maximum Path Length Limitation</a>.</p>
+<p><strong>Multiple File Versions</strong><br/>
+This is expected behavior within the <em>Online</em> mode as Windows Explorer will first create an empty file followed by writing to the file. Due to this process, you’ll see two versions within the versioning on your server. Within the <em>Smart Synchronization</em> mode the empty file won’t be synced and the uppload is deferred until the file has been fully copied.</p>
+<p><strong>Windows Search Indexer</strong><br/>
+The Windows Search indexer does not work on networks drives.</p>
+<p><strong>Windows sessions</strong><br/>
+Mountain Duck requires an interactive user logon session. This separation is done to ensure that each in a multi-user scenario has access to all available Windows drive letters (Otherwise this would be limited to 26 drive letters, shared across all users). Bookmarks are mounted in your regular and elevated user session only - there is no way for other logged-in users or non-interactive services to access your drive. There are no persistent mounts created for anyone to use and cannot work across user sessions - mounts for user A are not visible nor accessible by user B even on the same machine.</p>
+<p><strong>Windwos service has no access to a mounted drive</strong><br/>
+Please make sure you have not checked <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">whether</span> <span class="pre">user</span> <span class="pre">is</span> <span class="pre">logged</span> <span class="pre">on</span> <span class="pre">or</span> <span class="pre">not</span></code> on the scheduled task configuration.</p>
+<p><strong>A Windows service has no access to a mounted drive</strong><br/>
+See Windows sessions above. Services do not have access to logged-in user drives.</p>
+<p><strong>Mountain Duck Tooltip persists on screen</strong><br/>
+You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.</p>
+</div></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="interoperability">
+<h1>Interoperability<a class="headerlink" href="#interoperability" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="hosting-service-providers">
+<h2>Hosting Service Providers<a class="headerlink" href="#hosting-service-providers" title="Permalink to this headline">¶</a></h2>
+<p>A list of known providers that fail to work with Mountain Duck due to interoperability issues.</p>
+<ul class="simple">
+<li><p><em>OwnCube:</em> Their deployment does not work and we discourage this product.</p></li>
+<li><p><em>Bitnami ownCloud:</em> PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to <a class="reference external" href="https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/">Disable PHP-FPM</a> and <a class="reference external" href="../Protocols/WebDAV/index#0bytefilesonWebDAVserver"></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="third-party-software">
+<h2>Third party software<a class="headerlink" href="#third-party-software" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="kaspersky-internet-security">
+<h3>Kaspersky Internet Security<a class="headerlink" href="#kaspersky-internet-security" title="Permalink to this headline">¶</a></h3>
+<p>Make sure to uninstall Kaspersky Internet Security with its kernel extensions causing kernel panics prior to mounting a volume.</p>
+</div>
+<div class="section" id="eset-cyber-security-pro">
+<h3>Eset Cyber Security Pro<a class="headerlink" href="#eset-cyber-security-pro" title="Permalink to this headline">¶</a></h3>
+<p>Make sure not connections on the loopback interface are blocked.</p>
+</div>
+<div class="section" id="bitdefender">
+<h3>Bitdefender<a class="headerlink" href="#bitdefender" title="Permalink to this headline">¶</a></h3>
+<p>Be aware that Bitdefender may interfere with connections.</p>
+</div>
+<div class="section" id="sophos-endpoint-protection">
+<h3>Sophos Endpoint Protection<a class="headerlink" href="#sophos-endpoint-protection" title="Permalink to this headline">¶</a></h3>
+<p>May interfere with installation.</p>
+</div>
+</div>
+<div class="section" id="backups">
+<h2>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-4-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-4-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-4-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Time Machine</strong><br/>
+Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks mounted using Apple File Protocol (AFP). See <a class="reference external" href="https://support.apple.com/en-us/HT202784">Backup disks you can use with Time Machine</a>.</p>
+</div><div aria-labelledby="tab-4-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Windows Backup</strong><br/>
+Volumes mounted with Mountain Duck cannot be used by <em>Windows Backup</em>. It can on ly save backups on destinations that are located within your local system or within your local network.</p>
+</div></div>
+</div>
+<div class="section" id="bug-reports-and-feature-requests">
+<h2>Bug Reports and Feature Requests<a class="headerlink" href="#bug-reports-and-feature-requests" title="Permalink to this headline">¶</a></h2>
+<p>To get help with bugs, feature requests, or other issues please refer to the <a class="reference internal" href="../Support.html"><span class="doc std std-doc">support page</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
