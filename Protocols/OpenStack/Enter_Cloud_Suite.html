@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Enter Cloud Suite Object Storage &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,13 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Enter Cloud Suite Object Storage</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#connection-profile">Connection Profile</a></li>
+<li><a class="reference internal" href="#manual-configuration">Manual Configuration</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +144,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Enter Cloud Suite Object Storage</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +163,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="enter-cloud-suite-object-storage">
+<h1>Enter Cloud Suite Object Storage<a class="headerlink" href="#enter-cloud-suite-object-storage" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://www.entercloudsuite.com/en/">Enter Cloud Suite Object Storage</a> Pay-Per-Use Storage provides IaaS public object storage that you can use to archive large amounts of data in a variety of formats in the cloud. You only pay for the space and time you use – starting at 0.075€ per Gb per month – and can even archive data for very short periods of time.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connection-profile">
+<h2>Connection Profile<a class="headerlink" href="#connection-profile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/Enter%20Cloud%20Suite.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Enter Cloud Suite (Keystone) Profile</em> for preconfigured settings.</p></li>
+</ul>
+<p>Use <code class="docutils literal notranslate"><span class="pre">email</span></code> for the username, the tenant id prompted for the Tenant ID and password to login. See <a class="reference external" href="https://cm.entercloudsuite.com/project/access_and_security/">API Access</a>.</p>
+<p><img alt="Enter Cloud Suite" src="../../_images/entercloudsuite.com.png" /></p>
+</div>
+<div class="section" id="manual-configuration">
+<h2>Manual Configuration<a class="headerlink" href="#manual-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Enter the following information in the <a class="reference internal" href="../../Cyberduck/Bookmarks.html"><span class="doc std std-doc">bookmark</span></a>:</p>
+<ul class="simple">
+<li><p>Protocol: <code class="docutils literal notranslate"><span class="pre">Swift</span> <span class="pre">(OpenStack</span> <span class="pre">Object</span> <span class="pre">Storage)</span></code></p></li>
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">api.entercloudsuite.com</span></code></p></li>
+<li><p>Port: <code class="docutils literal notranslate"><span class="pre">443</span></code></p></li>
+<li><p>Username: <em>Enter Cloud Suite</em> <code class="docutils literal notranslate"><span class="pre">credentials</span> <span class="pre">email</span></code></p></li>
+<li><p>Password: <em>Enter Cloud Suite</em> <code class="docutils literal notranslate"><span class="pre">credentials</span> <span class="pre">password</span></code></p></li>
+<li><p>Tenant: <code class="docutils literal notranslate"><span class="pre">Tenant</span> <span class="pre">ID</span></code> from the <a class="reference external" href="https://cm.entercloudsuite.com/project/access_and_security/">OpenStack RC File</a>.</p></li>
+</ul>
+</div>
+</div>
+
 
            </div>
            

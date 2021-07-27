@@ -73,7 +73,6 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [Oracle Storage Cloud Service](Oracle_Cloud)
 - [Oktawave Cloud Storage](Oktawave)
 - [SwiftStack](SwiftStack)
-- [Cloudwatt](Cloudwatt)
 - [RunAbove](https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/)
 - [Cloud A](Cloud_A)
 - [AURO](AURO)
