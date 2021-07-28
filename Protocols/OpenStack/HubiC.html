@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Connecting &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,13 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Connecting</a><ul>
+<li><a class="reference internal" href="#oauth-2-0-authentication">OAuth 2.0 authentication</a></li>
+<li><a class="reference internal" href="#gateway-for-authentication">Gateway for Authentication</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a></li>
 </ul>
 </div>
             
@@ -138,7 +144,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Connecting</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +163,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <p>hubiC</p>
+<blockquote>
+<div><p>hubiC, the online storage solution, was developed by the OVH group, a French company specialised in data hosting. Datacentres in France: Roubaix, Gravelines and Strasbourg.</p>
+</div></blockquote>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p>hubiC is using <a class="reference internal" href="index.html"><span class="doc std std-doc">OpenStack Swift</span></a> APIs for its storage service but requires additional authentication using OAuth 2.0 to access the service.</p>
+<div class="section" id="oauth-2-0-authentication">
+<h2>OAuth 2.0 authentication<a class="headerlink" href="#oauth-2-0-authentication" title="Permalink to this headline">¶</a></h2>
+<p>Connect using the OAuth 2.0 connection profile:</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/hubiC.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">hubiC</span> <span class="pre">Cyberduck</span> <span class="pre">Connection</span> <span class="pre">Profile</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="gateway-for-authentication">
+<h2>Gateway for Authentication<a class="headerlink" href="#gateway-for-authentication" title="Permalink to this headline">¶</a></h2>
+<p>Use the <a class="reference internal" href="index.html"><span class="doc std std-doc">Openstack Swift (v1) profile</span></a> together with an authentication gateway.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/oderwat/hubic2swiftgate">HubiC to OpenStack Swift Gateway</a></p></li>
+<li><p><a class="reference external" href="https://github.com/gierschv/node-hubic-swiftauth">Node hubiC Swift Authentication</a></p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Interoperability with hubiC (OVH) (Issue #7764)</p></li>
+</ul>
+</div>
+
 
            </div>
            

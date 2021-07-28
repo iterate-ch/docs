@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>IDrive® Cloud &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,17 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">IDrive® Cloud</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#connection-profile">Connection Profile</a><ul>
+<li><a class="reference internal" href="#s3">S3</a></li>
+<li><a class="reference internal" href="#openstack-swift">OpenStack Swift</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a></li>
 </ul>
 </div>
             
@@ -138,7 +148,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>IDrive® Cloud</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +167,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="idrive-cloud">
+<h1>IDrive® Cloud<a class="headerlink" href="#idrive-cloud" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://www.idrive.com/cloud/">IDrive® Cloud</a> is an S3 compatible cloud object storage solution. We provide a scalable, low-cost infrastructure for unlimited data storage. A platform-as-a-service, IDrive® Cloud can be used for various purposes like securely archiving data, hosting a web or mobile applications, or even as robust storage for data analytics.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connection-profile">
+<h2>Connection Profile<a class="headerlink" href="#connection-profile" title="Permalink to this headline">¶</a></h2>
+<p>Double-click on the downloaded file to activate the connection profile.</p>
+<div class="section" id="s3">
+<h3>S3<a class="headerlink" href="#s3" title="Permalink to this headline">¶</a></h3>
+<p>Create S3 Access Keys from the IDrive® Cloud Console.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://or.object-store.api.idrivecloud.io/v1/1dfd88d37b544d778bff5a9ad469d08c/cyberduck-profiles/Openstack%20S3.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>IDrive® Cloud S3 Oregon region profile</em> for preconfigured settings for authentication.</p></li>
+</ul>
+<p><strong>How to create a S3 Access Key</strong></br>
+Keys can be generated in the <em>Settings</em> section of the <em>Profile Details</em> within the <em>IDrive® Cloud Console</em>:</p>
+<ul class="simple">
+<li><p>Click on your username and select <em>Settings</em></p></li>
+<li><p>Navigate to the Profile tab and click on <em>Create New Access Key</em>. The generated <em>S3 Access Key</em> will be displayed in the <em>User Keys List</em>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can have a maximum of 2 pairs of S3 Access Key and Secret.</p>
+</div>
+</div>
+<div class="section" id="openstack-swift">
+<h3>OpenStack Swift<a class="headerlink" href="#openstack-swift" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>{downloadDownload the OpenStack Swift (Keystone 3) profile for preconfigured settings for authentication.</p></li>
+</ul>
+<p>Enter the following authentication credentials to the bookmark:</p>
+<ul class="simple">
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">identity.api.idrivecloud.io</span></code></p></li>
+<li><p>Project:Domain:Username: <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">project,</span> <span class="pre">domain,</span> <span class="pre">and</span> <span class="pre">username</span> <span class="pre">separated</span> <span class="pre">by</span> <span class="pre">:</span></code></p></li>
+<li><p>Password: <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">Password</span></code></p></li>
+</ul>
+<p><strong>How to get the API Password</strong></br>
+The API Password can be obtained from <em>Swift API Password</em> section of <em>IDrive® Cloud console</em>.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.idrive.com/cloud/guides/default">IDrive® Cloud documentation</a></p></li>
+</ul>
+</div>
+
 
            </div>
            

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>OVH Public Cloud Storage &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,16 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OVH Public Cloud Storage</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#connection-profile">Connection Profile</a></li>
+<li><a class="reference internal" href="#manual-configuration">Manual Configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cyberduck-cli">Cyberduck CLI</a></li>
+<li><a class="reference internal" href="#containers">Containers</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
 </ul>
 </div>
             
@@ -138,7 +147,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>OVH Public Cloud Storage</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +166,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="ovh-public-cloud-storage">
+<h1>OVH Public Cloud Storage<a class="headerlink" href="#ovh-public-cloud-storage" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>With the <a class="reference external" href="https://www.ovh.com/us/public-cloud/storage/object-storage/">OVH Object Storage</a> cloud solution, you only pay for what you use with no limitation when it comes to size and duration. Thanks to the OpenStack Swift technology, you can store your high-performance data in the OVH cloud environment and instantly access it at any time. This solution is perfect for web projects and can be used to make your objects available through HTTP.</p>
+</div></blockquote>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><span class="xref myst">hubiC (OVH)</span></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p><em>OVH Public Cloud Storage</em> is using <a class="reference internal" href="index.html"><span class="doc std std-doc">OpenStack Swift</span></a> APIs for its storage service.</p>
+<div class="section" id="connection-profile">
+<h2>Connection Profile<a class="headerlink" href="#connection-profile" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference download external" download="" href="Download&lt;&gt;https://svn.cyberduck.io/trunk/profiles/OVH%20Public%20Cloud%20Storage.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download&lt;&gt;https://svn.cyberduck.io/trunk/profiles/OVH%20Public%20Cloud%20Storage.cyberduckprofile</span></code></a>  the <em>OVH Public Cloud Storage Connection Profile</em> for preconfigured settings.</p>
+</div>
+<div class="section" id="manual-configuration">
+<h2>Manual Configuration<a class="headerlink" href="#manual-configuration" title="Permalink to this headline">¶</a></h2>
+<p>You will need to create a new user in the <a class="reference external" href="https://www.ovh.com/manager/cloud/">OVH manager</a> in <em>Cloud → Servers → Project → OpenStack</em>. Choose <em>Download OpenStack configuration file</em> (<code class="docutils literal notranslate"><span class="pre">openrc.sh</span></code>) and open it in a text editor. Copy the values <code class="docutils literal notranslate"><span class="pre">OS_TENANT_ID:OS_USERNAME</span></code> for the username from the file.</p>
+<ul class="simple">
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">auth.cloud.ovh.net</span></code></p></li>
+<li><p>Port: <code class="docutils literal notranslate"><span class="pre">443</span></code></p></li>
+<li><p>Username: <code class="docutils literal notranslate"><span class="pre">OS_TENANT_ID:OS_USERNAME</span></code></p></li>
+<li><p>Password: <code class="docutils literal notranslate"><span class="pre">Password</span></code>. You will find the password in the user list in <em>Project → OpenStack</em>.</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cyberduck-cli">
+<h1>Cyberduck CLI<a class="headerlink" href="#cyberduck-cli" title="Permalink to this headline">¶</a></h1>
+<p>To use connection profile must be <a class="reference external" href="../../CLI/index#Profiles">installed</a> to connect with following parameters using <a class="reference external" href="https://duck.sh/">Cyberduck CLI</a>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>duck --username OS_TENANT_ID:OS_USERNAME --password PROJECT_USER_PASSWORD --region BHS3 --list ovh://CONTAINERNAME
+</pre></div>
+</div>
+<p>Alternatively, connect with the default connection profile by setting the authentication hostname with</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>duck --username OS_TENANT_ID:OS_USERNAME --password PROJECT_USER_PASSWORD --region BHS3 --list swift://auth.cloud.ovh.net/CONTAINERNAME
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="containers">
+<h1>Containers<a class="headerlink" href="#containers" title="Permalink to this headline">¶</a></h1>
+<p>You can choose the region when creating a new container with <em>File → New Folder…</em>.</p>
+<p><img alt="OVH Public Cloud Storage" src="../../_images/OVH_Public_Cloud_Storage.png" /></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.ovh.com/us/en/storage/manage_object_storage_with_cyberduck/">Manage Object Storage with Cyberduck</a></p></li>
+<li><p><a class="reference external" href="https://docs.ovh.com/us/en/public-cloud/configure_user_access_to_horizon/">Configure user access to Horizon</a></p></li>
+</ul>
+</div>
+
 
            </div>
            
