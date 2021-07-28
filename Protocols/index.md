@@ -38,7 +38,7 @@ Advanced configuration for SSH connections using public key authentication and c
 ## [OpenStack Object Storage](OpenStack/index)
 Connect to cloud storage providers using OpenStack Swift for the storage protocol. Includes support for [Rackspace Cloud Files](OpenStack/CloudFiles).
 
-- [OpenStack Providers](OpenStack/index#Providers)
+- [OpenStack Providers](OpenStack/index#ThirdPartyProviders)
 
 ## [Windows Azure](Azure)
 
