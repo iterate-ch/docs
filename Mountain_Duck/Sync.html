@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Smart Synchronization &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Smart Synchronization</a></li>
+<li><a class="reference internal" href="#bookmark-options">Bookmark Options</a></li>
+<li><a class="reference internal" href="#status-of-files">Status of files</a><ul>
+<li><a class="reference internal" href="#up-to-date">Up to Date</a></li>
+<li><a class="reference internal" href="#in-sync">In Sync</a></li>
+<li><a class="reference internal" href="#online-only">Online Only</a></li>
+<li><a class="reference internal" href="#sync-in-progress">Sync in Progress</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#context-menu-options">Context Menu Options</a><ul>
+<li><a class="reference internal" href="#select-files-and-folders-to-always-keep-offline">Select files and folders to always keep offline</a><ul>
+<li><a class="reference internal" href="#keep-offline">Keep Offline</a></li>
+<li><a class="reference internal" href="#delete-on-local-disk">Delete on Local Disk</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sync-conflicts">Sync Conflicts</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Smart Synchronization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Mountain_Duck/Sync.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="smart-synchronization">
+<h1>Smart Synchronization<a class="headerlink" href="#smart-synchronization" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/Disk_Syncing.png"><img alt="Send Command" src="../_images/Disk_Syncing.png" style="width: 200px;" /></a>
+<p>The smart sync feature allows making files available offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as connection is available.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="bookmark-options">
+<h1>Bookmark Options<a class="headerlink" href="#bookmark-options" title="Permalink to this headline">¶</a></h1>
+<p>You can change the synchronization options for a bookmark in <em>Connect Mode</em>.</p>
+<ul class="simple">
+<li><p><em>Default:</em> Use setting from <em>Preferences</em></p></li>
+<li><p><em>Online:</em> Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.</p></li>
+<li><p><em>Smart Synchronization:</em> Files opened are made available for later offline access. You can explicitly make files available offline using the <a class="reference external" href="Sync#Selectfilesandfolderstoalwayskeepoffline">context menu</a>.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="status-of-files">
+<h1>Status of files<a class="headerlink" href="#status-of-files" title="Permalink to this headline">¶</a></h1>
+<p>Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please make sure to enable the Mountain Duck <span class="xref myst">Integration</span> in <em>System Preferences → Extensions → Finder</em> on macOS.</p>
+</div>
+<div class="section" id="up-to-date">
+<h2>Up to Date<a class="headerlink" href="#up-to-date" title="Permalink to this headline">¶</a></h2>
+<p>The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as <em>Online Only</em> and are not downloaded automatically. Files copied to a volume are kept cached by default.</p>
+</div>
+<div class="section" id="in-sync">
+<h2>In Sync<a class="headerlink" href="#in-sync" title="Permalink to this headline">¶</a></h2>
+<p>The file or directory is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.</p>
+</div>
+<div class="section" id="online-only">
+<h2>Online Only<a class="headerlink" href="#online-only" title="Permalink to this headline">¶</a></h2>
+<p>The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.</p>
+</div>
+<div class="section" id="sync-in-progress">
+<h2>Sync in Progress<a class="headerlink" href="#sync-in-progress" title="Permalink to this headline">¶</a></h2>
+<p>The file or directory is currently synced with the server or cloud storage.</p>
+<a class="reference internal image-reference" href="../_images/Mountain_Duck_Screenshot_Finder_Dark.png"><img alt="Send Command" src="../_images/Mountain_Duck_Screenshot_Finder_Dark.png" style="width: 500px;" /></a>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="context-menu-options">
+<h1>Context Menu Options<a class="headerlink" href="#context-menu-options" title="Permalink to this headline">¶</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">macOS only</p>
+<p>Please make sure to enable the Mountain Duck <a class="reference external" href="index#FinderExtensionWindowsFileExplorerExtensionFinder">Integration</a> in <em>System Preferences → Extensions → Finder Extensions</em>.</p>
+</div>
+<div class="section" id="select-files-and-folders-to-always-keep-offline">
+<h2>Select files and folders to always keep offline<a class="headerlink" href="#select-files-and-folders-to-always-keep-offline" title="Permalink to this headline">¶</a></h2>
+<p>You can choose to make files and folders available offline in the context menu. Those files and folders are located within an obfuscated synchronization cache and can’t be accessed outside of your bookmark. You need an active connection to the bookmark to see the offline folders. That means that you have to connect to your server once while you have access to an active internet connection. If you don’t disconnect the bookmark and the connection to the server isn’t interrupted otherwise you can still access the files that are located within the local synchronization cache. As soon as you are connected to the internet again, all changes are transferred to the server in the background.</p>
+<a class="reference internal image-reference" href="../_images/Sync_Context_Menu_macOS.png"><img alt="Send Command" src="../_images/Sync_Context_Menu_macOS.png" style="width: 500px;" /></a>
+<p>To reach the context menu right-click on a file or folder in File Explorer (Windows) or FInder (macOS). Refer to <a class="reference external" href="Interface#ContextMenuinFinderandWindowsFileExplorer">Finder Extension &amp; Windows File Explorer Extension</a>.</p>
+<div class="section" id="keep-offline">
+<h3>Keep Offline<a class="headerlink" href="#keep-offline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Choose <em>Mountian Duck → Keep Offline on Local Disk</em> to make the file available offline. The status of the file will change to <em>In Sync</em>. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.</p></li>
+</ul>
+</div>
+<div class="section" id="delete-on-local-disk">
+<h3>Delete on Local Disk<a class="headerlink" href="#delete-on-local-disk" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Choose <em>Mountain Duck →Delete on Local Disk</em> to delete the offline copy. The status of the file will change to <em>Online Only</em>. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Choosing this option won’t prevent Mountain Duck from downloading there files and folders into the synchronization cache again.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="sync-conflicts">
+<h1>Sync Conflicts<a class="headerlink" href="#sync-conflicts" title="Permalink to this headline">¶</a></h1>
+<p>A conflict may be caused by two or more users editing the same files at the same time or while on the road before the files are synced. We do not merge changes to files like version control systems do. The file with conflicting edits will be renamed with the current time added to the filename. You will have to compare the changes manually and delete the duplicate file afterwards.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Error Cause</p></th>
+<th class="head"><p>Error State (Overlay Icon)</p></th>
+<th class="head"><p>Remarks</p></th>
+<th class="text-align:right head"><p>Manual Conflict Resolution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Indexing folder</p></td>
+<td><p>Missing permission</p></td>
+<td><p>Sync Error for files with<br/> pending write</p></td>
+<td><p>Other files are removed from<br/> local cache</p></td>
+<td class="text-align:right"><p>Context menu with options<br/> <em>Retry</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

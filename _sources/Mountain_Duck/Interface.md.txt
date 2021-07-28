@@ -56,7 +56,7 @@ Version 4.0 or later required.
 Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the status bar menu by their assigned labels.
 
 ```{image} _images/Taskbar_Menu_Bookmark_Groups_Large_Icons_Windows.png
-:alt: Sand Command
+:alt: Send Command
 :width: 400px
 ```
 
