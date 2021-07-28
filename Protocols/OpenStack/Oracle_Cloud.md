@@ -8,7 +8,7 @@ Oracle Cloud Infrastructure
 
 > [Oracle Cloud Infrastructure (OCI)](https://oracle.com/cloud) provides two separate Object Storage solutions: *OCI Object Storage* and *OCI Object Storage Classic*. Both of them can be accessed using Cyberduck.
 
-![Oracle Cloud Marketplace Badge](_images/clou-mrktplc-badge.png)
+![Oracle Cloud Marketplace Badge](_images/cloud-mrktplc-badge.png)
 
 # OCI Object Storage
 
@@ -17,8 +17,8 @@ Oracle Cloud Infrastructure
 For connecting to OCI Object Storage, Cyberduck version 6.4.0 or later is required. You need to use the [OCI Amazon S3 Compatible API](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/s3compatibleapi.htm).
 
 Follow these instructions:
-- Create an Amazon S3 Compatibility API key by following the instructions within the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/Content/Identity/Tasks/managingcredentials.htm#Working2).
-- Download the connection profile for the [region](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) you want to use:
+1. Create an Amazon S3 Compatibility API key by following the instructions within the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/Content/Identity/Tasks/managingcredentials.htm#Working2).
+2. Download the connection profile for the [region](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) you want to use:
 	- {download}`OCI Object Storage (ap-sydney-1).cyberduckprofile<https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-sydney-1).cyberduckprofile>`
 	- {download}`OCI Object Storage (ap-melbourne-1).cyberduckprofile<https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-melbourne-1).cyberduckprofile>`
 	- {download}`OCI Object Storage (sa-saopaulo-1).cyberduckprofile<https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(sa-saopaulo-1).cyberduckprofile>`
@@ -37,14 +37,13 @@ Follow these instructions:
 	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
 	- {download}`OCI Object Storage (us-ashburn-1).cyberduckprofile<https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile>`
 	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/oraclecloud/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
-
-- Open the downloaded profile by double-clicking on it in Finder or Explorer. It will be opened by Cyberduck. On macOS, the connection profile will be opened automatically in edit mode. On Windows, you may need to edit the bookmark manually.
-- Set a nickname (e.g. *OCI Ashburn*)
-- Update the entry in the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))
-- Enter the *Access Key* that you obtained while creating *Amazon S3 Compatible API Key*
-- Save the profile
-- When you try to connect, you will be prompted for a *Secret Key*
-- Enter the *Secret Key* that you obtained while creating *Amazon S3 Compatible API Key*
+3. Open the downloaded profile by double-clicking on it in Finder or Explorer. It will be opened by Cyberduck. On macOS, the connection profile will be opened automatically in edit mode. On Windows, you may need to edit the bookmark manually.
+4. Set a nickname (e.g. *OCI Ashburn*)
+5. Update the entry in the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))
+6. Enter the *Access Key* that you obtained while creating *Amazon S3 Compatible API Key*
+7. Save the profile
+8. When you try to connect, you will be prompted for a *Secret Key*
+9. Enter the *Secret Key* that you obtained while creating *Amazon S3 Compatible API Key*
 
 ```{important}
 For adding a region profile, you need to download the profile for that region. Duplicating a profile and only changing the region endpoint will not work and will result in `Listing directory / failed errors`.
