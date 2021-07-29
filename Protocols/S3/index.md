@@ -40,7 +40,7 @@ If you have an S3 installation without SSL configured, you need an optional conn
 
 An incomplete list of known providers that require the use of AWS2
 - Riak Cloud Storage
-- [EMC Elastic Cloud Storage](https://trac.cyberduck.io/wiki/help/en/howto/emc)
+- [EMC Elastic Cloud Storage](EMC)
 
 **HTTP**</br>
 - {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
@@ -169,6 +169,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Z1 Storage](Z1)
 - [Pilvio](Pilvio)
 - [IDrive® Cloud](IDrive_Cloud#S3)
+- [EMC Elastic Cloud Storage](EMC)
 
 # File System
 
@@ -219,15 +220,69 @@ To toggle CloudFront access logging, select the the [Distribution](../../CDN/Clo
 
 ## Versions
 
+[Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has `s3:PutBucketVersioning` permission permits users to modify the versioning configuration of a bucket.
+
+You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*.
+
+### Revert
+
+To revert to a previous version and make it the current, choose *File → Revert*.
+
+### Multi-Factor Authentication (MFA) Delete
+
+To enable *Multi-Factor Authentication (MFA) Delete*, you need to purchase a compatible [authentication device](http://aws.amazon.com/mfa/). Toggle MFA in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. When enabled, you are prompted for the device number and one-time token in the login prompt. Never reenter a token in the prompt already used before. A token is only valid for a single request. Wait for the previous token to disappear from the device screen and request a new token from the device.
+
+![MFA Credentials](_images/MFA_Credentials.png)
+
+### References
+
+- [Using versioning in S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html#MultiFactorAuthenticationDelete)
+
 ## Folders
 
-Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type application/x-directory.
+Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type `application/x-directory`.
 
 ### Supported Third Party Folder Placeholder Formats
 
 - Folders created with [AWS Management Console](http://aws.amazon.com/console/).
 
 ## File Transfers
+
+### Transfer Acceleration
+
+When enabled for the bucket, downloads, and uploads using the S3 Transfer Acceleration endpoints to transfer data through CloudFront’s globally distributed edge locations. The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods ("."). You do **not** need to enter transfer accelerated endpoints manually. When using Transfer Acceleration, additional data transfer charges may apply to connect to `s3-accelerate.dualstack.amazonaws.com`.
+
+![Transfer Acceleration](_images/Amazon_S3_Transfer_Acceleration.png)
+
+#### Permissions
+
+Make sure the user has `s3:GetAccelerateConfiguration` permission permits users to return the Transfer Acceleration state of a bucket.
+
+### Checksums
+
+Files are verified both by AWS when the file is received and compared with the `SHA256` checksum sent with the request. Additionally, the checksum returned by AWS for the uploaded file is compared with the checksum computed locally if enabled in *Transfers → Checksum → Uploads → Verify checksum*.
+
+### Multipart Uploads
+
+Files larger than 100MB are uploaded in parts with up to 10 parallel connections as 10MB parts. Given these sizes, the file size limit is 100GB with a maximum of 10'000 parts allowed by S3. The number of connections used can be limited using the toggle in the lower right of the transfer window.
+
+Multipart uploads can be resumed later when interrupted. Make sure the user has the permission `s3:ListBucketMultipartUploads`.
+
+#### Unfinished multipart uploads
+
+You can view unfinished multipart uploads in the browser by choosing *View → Show Hidden Files*.
+
+#### Options
+
+You can set options with the following [hidden configuration options](../../Cyberduck/Preferences#HiddenConfigurationOptions).
+
+Part size for multipart uploads
+
+	s3.upload.multipart.size=10485760
+
+Threshold to use multipart uploads is set to 100MB by default
+
+	s3.upload.multipart.threshold=104857600
 
 # Storage Class
 
@@ -242,6 +297,10 @@ You have the option to store files using the *Reduced Redundancy Storage (RRS)* 
 - Glacier Deep Archive
 
 ## Lifecycle Configuration
+
+Specify after how many days a file in a bucket should be moved to Amazon Glacier or deleted.
+
+![Lifecycle Configuration](_images/Lifecycle-Configuration-for-S3-Windows.png)
 
 ## Restore from Glacier
 
@@ -312,14 +371,151 @@ The following permissions can be given to grantees:
 
 # Public URLs
 
+You can access all URLs (including from [CDN](../../CDN/CloudFront) configurations) from the menu *Edit → Copy URL and File → Open URL*.
+
+![Copy URLs](_images/Copy_URLs.png)
+
+## Pre-signed Temporary URLs
+
+A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from *Edit → Copy URL→ Signed URL* or *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*.
+
+There are pre-signed URLs that expire in one hour, 24 hours (using the preference `s3.url.expire.seconds`), a week, and a month. You can change the [hidden preference](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.url.expire.seconds` from the default `86400` (24 hours).
+
+```{important}
+It is required that your AWS credentials are saved in keychain. Refer to [Passwords](../../Cyberduck/Connection#Passwords).
+```
+
+### Force use of AWS2 Signature
+
+Using the AWS4 signature version used in Cyberduck version 5.0 and later, pre-signed URLs cannot have an expiry date later than a week. You can revert by setting the default signature version to AWS2 by using the *S3 AWS2 Signature Version (HTTP) connection profile*.
+
+```{note}
+This deprecated signature version is not compatible with new regions such as `eu-central-1`.
+```
+
+## BitTorrent URLs
+
+Use *File → Info (macOS `⌘I` Window `Alt+Return`) → S3* to copy the BitTorrent URL of a selected file. The ACL of the object must allow anonymous read. One important thing to note is that the `.torrent` file describing an Amazon S3 object is generated on-demand, the first time the Torrent URL is requested. Generating the `.torrent` for an object takes time proportional to the size of that object. For large objects, this time can be significant. Therefore, before publishing a `?torrent` link, we suggest making the first request for it yourself. Amazon S3 might take several minutes to respond to this first request, as it generates the `.torrent` file. Unless you update the object in question, subsequent requests for the `.torrent` will be fast.
+
 # Metadata
+
+You can edit standard HTTP headers and add [custom HTTP headers](../../Cyberduck/Info#MetadataHTTPHeaders) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
+
+## Default Metadata
+
+Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#HiddenConfigurationOptions) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
+
+	s3.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
+
+## Cache Control Setting
+
+This option lets you control how long a client accessing objects from your S3 bucket will cache the content and thus lowering the number of access to your S3 storage. In conjunction with Amazon CloudFront, it controls the time an object stays in an edge location until it expires. After the object expires, CloudFront must go back to the origin server the next time that edge location needs to serve that object. By default, all objects automatically expire after 24 hours when no custom `Cache-Control` header is set.
+
+The default setting is `Cache-Control: public,max-age=2052000` when choosing to add a custom `Cache-Control` header in the [Info](../../Cyberduck/Info) panel which translates to a cache expiration of one month (one month in seconds equals more or less `60*60*24*30`).
+
+Use the [hidden configuration option](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.cache.seconds` to set a custom default value
+
+	s3.cache.seconds=2052000
+
+## References
+
+- [Amazon CloudFront and Your Live System](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html)
+- Read more about [Amazon CloudFront Object Expiration](http://docs.amazonwebservices.com/AmazonCloudFront/latest/DeveloperGuide/index.html?Expiration.html)
+
+```{tip}
+Use `curl -I <http://<bucketname>.s3.amazonaws.com/<key>` to debug HTTP headers.
+```
 
 # Server Side Encryption (SSE)
 
+[Server-side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) for stored files is supported and can be enabled by default for all uploads in the S3 preferences or for individual files in the *File → Info (macOS `⌘I` WIndows `Alt+Return`) → S3*. AWS handles key management and key protection for you.
+
+## Defaults
+
+Choose *Preferences → S3 → Server Side Encryption* to change the default.
+
+- *None* will not encrypt files (Default).
+- *SSE-S3* will encrypt files using *AES-256* with a default key provided by S3.
+- *SSE-KMS* will encrypt files with the default key stored in AWS Key Management Service (KMS).
+
+You can override these default settings in the *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3* panel per bucket.
+
+## Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
+
+When changing the setting for a folder or bucket you are prompted to confirm the recursive operation on all files contained in the selected bucket or folder.
+
+## Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)
+
+Among the default `SSE-S3 (AES-256)`, the server-side encryption (SSE) dropdown list allows choosing from all private keys managed in AWS Key Management Service (KMS).
+
+### Permissions
+
+This requires the `kms:ListKeys` and `kms:ListAliases` permission for the AWS credentials used to connect to S3.
+
+![AWS SSE-KMS Private Key Selection](_images/AWS_SSE-KMS_Private_Key_Selection.png)
+
+When changing the setting for a folder or bucket you are prompted to confirm the recursive operation on all files contained in the selected bucket or folder.
+
+## Prevent Uploads of Unencrypted Files
+
+Refer to the AWS Security Blog
+
+- [How to Prevent Uploads of Unencrypted Objects to Amazon S3](https://aws.amazon.com/blogs/security/how-to-prevent-uploads-of-unencrypted-objects-to-amazon-s3/)
+
 # CloudFront CDN
+
+Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. Refer to [Amazon CloudFront distribution](../../CDN/CloudFront) for help about setting up distributions.
 
 # Website Configuration
 
+To host a static website on S3, It is possible to define an Amazon S3 bucket as a *Website Endpoint*. The configuration in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Distribution* allows you to enable website configuration. Choose *Website Configuration (HTTP)* from *Delivery Method* and define an index document name that is searched for and returned when requests are made to the root or the subfolder of your website.
+
+To access this website functionality, Amazon S3 exposes a new website endpoint for each region (US Standard, US West, EU, or Asia Pacific). For example, `s3-website-ap-southeast-1.amazonaws.com` is the endpoint for the Asia Pacific Region. The location is displayed in the *Where* field following the *Origin*.
+
+![S3 Website Configuration](_images/S3-Website_Configuration.png)
+
+To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront#WebsiteConfigurationEndpointDistributionswithCloudFronCDN).
+
+## References
+
+- [Host Your Static Website on Amazon S3](http://aws.typepad.com/aws/2011/02/host-your-static-website-on-amazon-s3.html)
+- [Amazon S3 adds new features for hosting static websites](http://aws.amazon.com/about-aws/whats-new/2011/02/17/Amazon-S3-Website-Features/)
+
 # Known Issues
 
+## Disable use of Virtual Host Style Requests
+
+Set the [hidden preference](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles) with the property set in `Properties`.
+
+- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
+
+## Moved Permanently but no Location Header
+
+Make sure the IAM user has the permission `s3:GetBucketLocation` to read the bucket location.
+
+## Writing Files to S3 Compatible Third Party Service Provider may Fail
+
+The S3 interoperable service must support [multipart uploads](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html).
+
+## S3 Delete Marker
+
+When overwriting files some applications (like Windows File Explorer) will delete files prior to writing the new file. Thus we also forward this delete operation to S3 resulting in the delete marker being set. You can overwrite files with command-line tools which typically do not delete files prior to overwriting.
+
+## In Finder.app, Creating a new Top-Level Folder in S3 Fails with `Interoperability failure. Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`
+
+A bucket name in S3 cannot have whitespace in the filename. Because a new folder created with Finder.app is named `Untitled Folder` the operation fails. As a workaround, create a new bucket with `mkdir` in *Terminal.app*.
+
+```[note]
+The bucket can be created within the Smart Synchronization mode as the folder only gets uploaded after it is renamed. Make sure to choose a filename with no whitespace. For the additional restrictions of the bucket name, refer to the [AWS bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html).
+```
+
+
+## Saving a file in TextEdit.app will Attempt to Create a Folder `/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
+
+<del>You will get the error message `Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`.</del> As of Mountain Duck version 2.1, `.DS_Store` files are only saved in a temporary location and not stored on the mounted remote volume.
+
 # References
+
+- [Grant access to user-specific folders in an Amazon S3 bucket](http://blogs.aws.amazon.com/security/post/Tx1P2T3LFXXCNB5/Writing-IAM-policies-Grant-access-to-user-specific-folders-in-an-Amazon-S3-bucke)
+- [Amazon Simple Storage Service FAQs](http://aws.amazon.com/s3/faqs/)
+- [Amazon Simple Storage Service Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/developing-s3.html)
