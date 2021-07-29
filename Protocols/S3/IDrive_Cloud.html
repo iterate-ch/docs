@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>IBM Cloud Object Storage (COS) &mdash; Wikitest  documentation</title>
+  <title>IDrive® Cloud &mdash; Wikitest  documentation</title>
   
 
   
@@ -90,13 +90,15 @@
             
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">IBM Cloud Object Storage (COS)</a></li>
+<li><a class="reference internal" href="#">IDrive® Cloud</a></li>
 <li><a class="reference internal" href="#connecting">Connecting</a><ul>
-<li><a class="reference internal" href="#credentials">Credentials</a></li>
-<li><a class="reference internal" href="#connection-profiles">Connection Profiles</a></li>
+<li><a class="reference internal" href="#connection-profile">Connection Profile</a><ul>
+<li><a class="reference internal" href="#s3">S3</a></li>
+<li><a class="reference internal" href="#openstack-swift">OpenStack Swift</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#buckets">Buckets</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#references">References</a></li>
 </ul>
 </div>
@@ -146,13 +148,13 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>IBM Cloud Object Storage (COS)</li>
+      <li>IDrive® Cloud</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/Protocols/OpenStack/IBM_COS.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Protocols/S3/IDrive_Cloud.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,48 +167,54 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="tex2jax_ignore mathjax_ignore section" id="ibm-cloud-object-storage-cos">
-<h1>IBM Cloud Object Storage (COS)<a class="headerlink" href="#ibm-cloud-object-storage-cos" title="Permalink to this headline">¶</a></h1>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.ibm.com/cloud/info/softlayer-is-now-ibm-cloud"><strong>Softlayer is now IBM Cloud.</strong></a></p></li>
-<li><p><a class="reference external" href="https://www.ibm.com/cloud/blog/announcements/bluemix-is-now-ibm-cloudMore"><strong>IBM Bluemix has been rebranded as IBM Cloud within October 2017.</strong></a></p></li>
-</ul>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="idrive-cloud">
+<h1>IDrive® Cloud<a class="headerlink" href="#idrive-cloud" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><p>A highly scalable cloud <a class="reference external" href="https://www.ibm.com/cloud/object-storage">storage service</a>, designed for high durability, resiliency, and security.</p>
+<div><p><a class="reference external" href="https://www.idrive.com/cloud/">IDrive® Cloud</a> is an S3 compatible cloud object storage solution. We provide a scalable, low-cost infrastructure for unlimited data storage. A platform-as-a-service, IDrive® Cloud can be used for various purposes like securely archiving data, hosting a web or mobile applications, or even as robust storage for data analytics.</p>
 </div></blockquote>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="connecting">
 <h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="credentials">
-<h2>Credentials<a class="headerlink" href="#credentials" title="Permalink to this headline">¶</a></h2>
-<p>Obtain HMAC <a class="reference external" href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main">credentials</a>.</p>
-<blockquote>
-<div><p>Users can create a set of HMAC credentials as part of a Service Credential with the use of the advanced configuration parameter {“HMAC”:true} during credential creation in the console.</p>
-</div></blockquote>
-</div>
-<div class="section" id="connection-profiles">
-<h2>Connection Profiles<a class="headerlink" href="#connection-profiles" title="Permalink to this headline">¶</a></h2>
-<p>Using <a class="reference external" href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-endpoints">Cross Region Endpoints</a></p>
+<div class="section" id="connection-profile">
+<h2>Connection Profile<a class="headerlink" href="#connection-profile" title="Permalink to this headline">¶</a></h2>
+<p>Double-click on the downloaded file to activate the connection profile.</p>
+<div class="section" id="s3">
+<h3>S3<a class="headerlink" href="#s3" title="Permalink to this headline">¶</a></h3>
+<p>Create S3 Access Keys from the IDrive® Cloud Console.</p>
 <ul class="simple">
-<li><p><strong>us-geo:</strong> <a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/IBM%20COS%20(us-geo).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>IBM COS (us-geo) Connection Profile</em> for preconfigured settings.</p></li>
-<li><p><strong>eu-geo:</strong> <a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/IBM%20COS%20(eu-geo).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>IBM COS (eu-geo) Connection Profile</em> for preconfigured settings.</p></li>
-<li><p><strong>ap-geo:</strong> <a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/IBM%20COS%20(ap-geo).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>IBM COS (ap-geo) Connection Profile</em> for preconfigured settings.</p></li>
+<li><p><a class="reference download external" download="" href="https://or.object-store.api.idrivecloud.io/v1/1dfd88d37b544d778bff5a9ad469d08c/cyberduck-profiles/Openstack%20S3.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>IDrive® Cloud S3 Oregon region profile</em> for preconfigured settings for authentication.</p></li>
 </ul>
+<p><strong>How to create a S3 Access Key</strong></br>
+Keys can be generated in the <em>Settings</em> section of the <em>Profile Details</em> within the <em>IDrive® Cloud Console</em>:</p>
+<ul class="simple">
+<li><p>Click on your username and select <em>Settings</em></p></li>
+<li><p>Navigate to the Profile tab and click on <em>Create New Access Key</em>. The generated <em>S3 Access Key</em> will be displayed in the <em>User Keys List</em>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can have a maximum of 2 pairs of S3 Access Key and Secret.</p>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="buckets">
-<h1>Buckets<a class="headerlink" href="#buckets" title="Permalink to this headline">¶</a></h1>
-<p>When creating a bucket you can choose the <a class="reference external" href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-classes">storage class</a>.</p>
+<div class="section" id="openstack-swift">
+<h3>OpenStack Swift<a class="headerlink" href="#openstack-swift" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>OpenStack Swift (Keystone 3) profile</em> for preconfigured settings for authentication.</p></li>
+</ul>
+<p>Enter the following authentication credentials to the bookmark:</p>
+<ul class="simple">
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">identity.api.idrivecloud.io</span></code></p></li>
+<li><p>Project:Domain:Username: <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">project,</span> <span class="pre">domain,</span> <span class="pre">and</span> <span class="pre">username</span> <span class="pre">separated</span> <span class="pre">by</span> <span class="pre">:</span></code></p></li>
+<li><p>Password: <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">Password</span></code></p></li>
+</ul>
+<p><strong>How to get the API Password</strong></br>
+The API Password can be obtained from <em>Swift API Password</em> section of <em>IDrive® Cloud console</em>.</p>
+</div>
+</div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="references">
 <h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://cloud.ibm.com/docs/services/cloud-object-storage/tutorials?topic=cloud-object-storage-cyberduck">Transfer files with Cyberduck</a></p></li>
-<li><p><a class="reference external" href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints">Endpoints and storage locations</a></p></li>
-<li><p><a class="reference external" href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-compare-ftp">Comparing IBM Cloud Object Storage to FTP</a></p></li>
+<li><p><a class="reference external" href="https://www.idrive.com/cloud/guides/default">IDrive® Cloud documentation</a></p></li>
 </ul>
 </div>
 

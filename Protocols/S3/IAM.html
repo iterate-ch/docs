@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>AWS Identity &amp; Access Management (IAM) &mdash; Wikitest  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">AWS Identity &amp; Access Management (IAM)</a></li>
+<li><a class="reference internal" href="#console">Console</a></li>
+<li><a class="reference internal" href="#iam-tools-setup">IAM Tools Setup</a></li>
+<li><a class="reference internal" href="#create-a-new-iam-user">Create a new IAM User</a></li>
+<li><a class="reference internal" href="#attach-a-policy">Attach a Policy</a><ul>
+<li><a class="reference internal" href="#restrict-access-to-a-specific-bucket">Restrict access to a Specific Bucket</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#connecting">Connecting</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Wikitest</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>AWS Identity &amp; Access Management (IAM)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Protocols/S3/IAM.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="aws-identity-access-management-iam">
+<h1>AWS Identity &amp; Access Management (IAM)<a class="headerlink" href="#aws-identity-access-management-iam" title="Permalink to this headline">¶</a></h1>
+<p>IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="console">
+<h1>Console<a class="headerlink" href="#console" title="Permalink to this headline">¶</a></h1>
+<p>You can manage IAM users using the <a class="reference external" href="https://console.aws.amazon.com/iam/home">AWS Console</a>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="iam-tools-setup">
+<h1>IAM Tools Setup<a class="headerlink" href="#iam-tools-setup" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p>Download the <a class="reference external" href="https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html">IAM Command Line Toolkit</a>. Unzip the download and move the folder <code class="docutils literal notranslate"><span class="pre">IAMCli-1.2.0</span></code> into the <code class="docutils literal notranslate"><span class="pre">bin</span></code> folder in your user home directory.</p></li>
+<li><p>In a Terminal.app window, set the home environment for IAM</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  echo &#39;export JAVA_HOME=`/usr/libexec/java_home`&#39; &gt;&gt; ~/.bash_profile
+  echo &#39;export AWS_IAM_HOME=~/bin/IAMCli-1.2.0&#39; &gt;&gt; ~/.bash_profile
+</pre></div>
+</div>
+</li>
+<li><p>Set the environment variable to point to the credentials file.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  echo &#39;export AWS_CREDENTIAL_FILE=$AWS_IAM_HOME/aws-credential.template&#39; &gt;&gt; ~/.bash_profile
+</pre></div>
+</div>
+</li>
+<li><p>Add the path to the IAM programs to your path</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  echo &#39;export PATH=$AWS_IAM_HOME/bin:$PATH&#39; &gt;&gt; ~/.bash_profile
+</pre></div>
+</div>
+</li>
+<li><p>Update the environment of the current shell (alternatively open a new Terminal.app window).</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  . ~/.bash_profile
+</pre></div>
+</div>
+</li>
+<li><p>Edit the credentials file <code class="docutils literal notranslate"><span class="pre">aws-credential.template</span></code> with your AWS identifiers.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="create-a-new-iam-user">
+<h1>Create a new IAM User<a class="headerlink" href="#create-a-new-iam-user" title="Permalink to this headline">¶</a></h1>
+<p>Add a new IAM user and generate the access credentials. This will print out the <em>Access Key ID</em> and <em>Secret Access Key</em> to use when logging in with Cyberduck.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>iam-usercreate -u &lt;username&gt;;iam-useraddkey -u &lt;username&gt;
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="attach-a-policy">
+<h1>Attach a Policy<a class="headerlink" href="#attach-a-policy" title="Permalink to this headline">¶</a></h1>
+<p>Add a new policy for the user. This example gives the user access to all of your S3 resources.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>iam-useraddpolicy  -u &lt;username&gt; -e Allow -a s3:* -r arn:aws:s3:::* -o -p `uuidgen`
+</pre></div>
+</div>
+<div class="section" id="restrict-access-to-a-specific-bucket">
+<h2>Restrict access to a Specific Bucket<a class="headerlink" href="#restrict-access-to-a-specific-bucket" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Allow user to list contents of the bucket.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  iam-useraddpolicy  -u &lt;username&gt; -e Allow -a s3:ListBucket -r arn:aws:s3:::bucketname -o -p `uuidgen`
+</pre></div>
+</div>
+</li>
+<li><p>Allow users to download files in the bucket.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  iam-useraddpolicy  -u &lt;username&gt; -e Allow -a s3:GetObject -r arn:aws:s3:::bucketname/* -o -p `uuidgen`
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p>When you only have access to a specific bucket in the AWS account and don’t have the permission to list all buckets, make sure to put <code class="docutils literal notranslate"><span class="pre">bucketname.s3.amazonaws.com</span></code> in the <em>Server</em> field of the bookmark.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="http://aws.amazon.com/documentation/iam/">AWS Identity and Access Management (IAM) Documentation</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, sphinx-action Test Suite.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

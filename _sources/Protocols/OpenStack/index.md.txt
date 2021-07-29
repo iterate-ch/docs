@@ -62,15 +62,14 @@ Connect with [Cyberduck CLI](https://duck.sh/) usingthe default connection profi
 
 Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 
-# Providers
+# Third Party Providers
 
 - [Rackspace Cloud Files (US & UK)](CloudFiles) with [Akamai CDN](../../CDN/Akamai)
 - [Internap AgileFILES](Internap)
 - [Cloud.ca Object Store](Cloud.ca)
-- [IBM Cloud Object Storage (COS)](IBM_COS)
 - [Memset Memstore Object Storage](Memset)
 - [Enter Cloud Suite](Enter_Cloud_Suite)
-- [Oracle Storage Cloud Service](Oracle_Cloud)
+- [Oracle Storage Cloud Service](../S3/Oracle_Cloud#OCIObjectStorageClassic)
 - [Oktawave Cloud Storage](Oktawave)
 - [SwiftStack](SwiftStack)
 - [RunAbove](https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/)
@@ -82,7 +81,7 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [Selectel Cloud Storage](Selectel)
 - [EMC Elastic Cloud Storage](EMC)
 - [Infomaniak](Infomaniak)
-- [IDrive® Cloud](IDrive_Cloud)
+- [IDrive® Cloud](../S3/IDrive_Cloud#OpenStackSwift)
 
 # Temporary URLs
 
