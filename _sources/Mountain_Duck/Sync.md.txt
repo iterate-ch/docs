@@ -28,7 +28,7 @@ Please make sure to enable the Mountain Duck [Integration]() in *System Preferen
 
 ```{image} _images/overlay_uptodate.png
 :alt: Send Command
-:Width: 50px
+:width: 50px
 ```
 
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
@@ -120,7 +120,7 @@ Choosing this option won't prevent Mountain Duck from downloading there files an
 :height: 300
 ```
 
-![Video](_videos/KeepOffline.mp4)
+![Keep Offline](_videos/KeepOffline.mp4)
 
 
 # Sync Conflicts

@@ -505,7 +505,7 @@ When overwriting files some applications (like Windows File Explorer) will delet
 
 A bucket name in S3 cannot have whitespace in the filename. Because a new folder created with Finder.app is named `Untitled Folder` the operation fails. As a workaround, create a new bucket with `mkdir` in *Terminal.app*.
 
-```[note]
+```{note}
 The bucket can be created within the Smart Synchronization mode as the folder only gets uploaded after it is renamed. Make sure to choose a filename with no whitespace. For the additional restrictions of the bucket name, refer to the [AWS bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html).
 ```
 

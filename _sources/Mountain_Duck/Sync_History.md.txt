@@ -24,7 +24,7 @@ The *Recent Files* area shows the last 20 items that Mountain DUck uses for one 
 
 ```{image} _images/delete.png
 :alt: Send Command
-:wigth: 50px
+:width: 50px
 ```
 
 A file or folder has been deleted either *by you* or *on the server*
