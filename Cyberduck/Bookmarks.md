@@ -74,7 +74,7 @@ Drag the proxy icon in the browser window title bar to the bookmark drwaer or to
 
 Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the plus button to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
-```{imgae} _images/Add_Bookmark.png
+```{image} _images/Add_Bookmark.png
 :alt: Send Command
 :width: 400px
 ```

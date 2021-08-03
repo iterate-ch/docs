@@ -42,7 +42,7 @@ To edit file type associations choose *File → Info* for a given file type in t
 
 Select *Always use default editor* in *Preferences → Editor* if you always want to use the default editor set regardless of the file type.
 
-```{images} _images/Editor_Preferences.png
+```{image} _images/Editor_Preferences.png
 :alt: Send Command
 :width: 500px
 ```

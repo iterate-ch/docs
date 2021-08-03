@@ -182,7 +182,7 @@ Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity
 
 ```{image} _images/Activity.png
 :alt: Send Command
-:500px
+:width: 500px
 ```
 
 # Problems

@@ -195,12 +195,12 @@ Enable the *Index Files* option in [*Preferences → Sync*](Preferences#SyncInde
 - *Create Download Share:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Create Upload Share:* Create an URL to share with someone else to allow uploading files to the selected folder.
 
-Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](./Cyberduck/Bookmarks#HTTPURL) and [temporary signed URLs in S3](./Protocols/S3/Index#PublicURLs).
+Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../Cyberduck/Bookmarks#HTTPURL) and [temporary signed URLs in S3](../Protocols/S3/Index#PublicURLs).
 
 - *Copy URL*
 - *Open URL*
 
-[Read more](./Cyberduck/Share) about sharing options.
+[Read more](../Cyberduck/Share) about sharing options.
 
 ```{image} _images/Mountain_Duck_Finder_Context_Menu.png
 :alt: Send Command
@@ -226,7 +226,7 @@ This feature is not supported in the version available in the Mac App Store.
 
 # Info Panel
 
-Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Windows](./Cyberduck/Info).
+Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Windows](../Cyberduck/Info).
 
 ```{image} _images/Info_Window_CDN.png
 :alt: Send Command
@@ -247,7 +247,7 @@ Right-click on a file and choose *Info* to change permissions, ACLs, metadata, a
 
 # New Encrypted Vault...
 
-Create a new Cryptomator vault. [Read more](./Cryptomator) about client-side encryption.
+Create a new Cryptomator vault. [Read more](../Cryptomator) about client-side encryption.
 
 # Lock/Unlock Vault
 
