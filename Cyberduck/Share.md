@@ -10,13 +10,13 @@ Many storage providers have an option to share a file with a third party without
 || **Download Share** || **Upload Share** |
 | --- | --- | --- | --- |
 | **Protocol** | **Folder** | **File** | **Folder** |
-| S3 | ❌ | ✔ | ❌ |
-| B2 | ❌ | ✔ | ❌ |
-| Nextcloud | ✔ | ✔ | ✔ |
-| OneDrive | ✔ | ✔ | ❌ |
-| Google Drive | ✔ | ✔ | ❌ |
-| Dropbox | ❌ | ✔ | ❌ |
-| DRACOON | ✔ | ✔ | ✔ |
+| S3 | ❌ | ✅ | ❌ |
+| B2 | ❌ | ✅ | ❌ |
+| Nextcloud | ✅ | ✅ | ✅ |
+| OneDrive | ✅ | ✅ | ❌ |
+| Google Drive | ✅ | ✅ | ❌ |
+| Dropbox | ❌ | ✅ | ❌ |
+| DRACOON | ✅ | ✅ | ✅ |
 
 # Providers with support to share a file using a public, password protected or temporary URL
 
