@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Connection Profiles &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,13 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Connection Profiles</a></li>
+<li><a class="reference internal" href="#technical-file-format-specification">Technical file format specification</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#disk-icon-template">Disk icon template</a></li>
 </ul>
 </div>
             
@@ -138,7 +144,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Connection Profiles</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +163,120 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="connection-profiles">
+<h1>Connection Profiles<a class="headerlink" href="#connection-profiles" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="Connection#ConnectionProfiles">Connection profiles</a> (<code class="docutils literal notranslate"><span class="pre">.cyberduckprofile</span></code>) are documents describing connection settings for a hosting provider.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="../Protocols/S3/index#Third-PartyProviders">Third-Party S3 providers</a></p></li>
+<li><p><a class="reference external" href="../Protocols/OpenStack/index#Providers">OpenStack Providers</a></p></li>
+</ul>
+<p>These files (<a class="reference external" href="http://en.wikipedia.org/wiki/Property_list">XML Property List Format</a>) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.</p>
+<p><a class="reference external" href="mailto:support&#37;&#52;&#48;cyberduck&#46;io">Contact us</a> if you are a service provider and need assistance in setting this up.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="technical-file-format-specification">
+<h1>Technical file format specification<a class="headerlink" href="#technical-file-format-specification" title="Permalink to this headline">¶</a></h1>
+<p>Connection profile files are (<a class="reference external" href="http://en.wikipedia.org/wiki/Property_list">XML Property List Format</a>) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.</p>
+<p><a class="reference external" href="mailto:support&#37;&#52;&#48;cyberduck&#46;io">Contact us</a> if you are a service provider and need assistance in setting this up.</p>
+<p>The following properties can be defined in a connection profile:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Protocol</span></code> <em>(Required)</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vendor</span></code> (Hosting Provider) <em>(Required)</em> <strong>Important: This value must be unique among all installed connection profiles</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Description</span></code> <em>(Required)</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Nickname</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Hostname</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Port</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Path</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Username</span> <span class="pre">Placeholder</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Password</span> <span class="pre">Placeholder</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Disk</span></code> Base64 encoded disk TIFF image icon. Multi Page TIFF with formats <code class="docutils literal notranslate"><span class="pre">64x64</span></code> (72dpi) and <code class="docutils literal notranslate"><span class="pre">128x128</span></code> (144dpi) pixels. Use the <a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">disk</span> <span class="pre">template</span> <span class="pre">file</span></code></a> to create a provider profile image.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Icon</span></code> Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of <code class="docutils literal notranslate"><span class="pre">Disk</span></code> icon</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Context</span></code> Login context path (currently used for Swift profiles)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Username</span> <span class="pre">Configurable</span></code> Boolean if username is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Password</span> <span class="pre">Configurable</span></code> Boolean if password is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Hostname</span> <span class="pre">Configurable</span></code> Boolean if hostname is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Port</span> <span class="pre">Configurable</span></code> Boolean if port number is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Anonymous</span> <span class="pre">Configurable</span></code> Boolean if anonymous access is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Configurable</span></code> Boolean if default path is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Certificate</span> <span class="pre">Configurable</span></code> Boolean if clien certificate is onfigurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Region</span></code> Region name to limit listing containers of a specific region only for <a class="reference internal" href="../Protocols/OpenStack/index.html"><span class="doc std std-doc">OpenStack Swift</span></a> and <a class="reference internal" href="../Protocols/S3/index.html"><span class="doc std std-doc">S3</span></a> profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Regions</span></code> List of regions supported by the provider. This will populate options in the <em>Regions</em> dropdown when creating a new <a class="reference external" href="../Protocols/S3/index#Creatingabucket">top level folder</a> for <a class="reference internal" href="../Protocols/S3/index.html"><span class="doc std std-doc">S3</span></a> and <a class="reference internal" href="../Protocols/OpenStack/SwiftStack.html"><span class="doc std std-doc">OpenStack Swift</span></a> connections.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID</span></code> For protocols using OAuth 2.0 you can override the registered application client ID with the provider.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">Secret</span></code> For protocols using OAuth 2.0 you can override the registered application client secret with the provider.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Authorization</span></code> Set to <code class="docutils literal notranslate"><span class="pre">AWS2</span></code> to default to AWS2 signature authentication for S3. Default is <code class="docutils literal notranslate"><span class="pre">AWS4HMACSHA256</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Properties</span></code> List of custom protocol-specific properties.</p></li>
+</ul>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">Disk</span> <span class="pre">template</span> <span class="pre">file</span> <span class="pre">(Adobe</span> <span class="pre">Photoshop)</span></code></a></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Protocol&lt;/key&gt;
+        &lt;string&gt;swift&lt;/string&gt;
+        &lt;key&gt;Vendor&lt;/key&gt;
+        &lt;string&gt;hp&lt;/string&gt;
+        &lt;key&gt;Description&lt;/key&gt;
+        &lt;string&gt;HP Cloud Object Storage&lt;/string&gt;
+        &lt;key&gt;Default Hostname&lt;/key&gt;
+        &lt;string&gt;region-a.geo-1.identity.hpcloudsvc.com&lt;/string&gt;
+        &lt;key&gt;Default Port&lt;/key&gt;
+        &lt;string&gt;35357&lt;/string&gt;
+        &lt;key&gt;Schemes&lt;/key&gt;
+        &lt;array&gt;
+                &lt;string&gt;hp&lt;/string&gt;
+                &lt;string&gt;https&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;Hostname Configurable&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;Port Configurable&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;Context&lt;/key&gt;
+        &lt;string&gt;/v2.0/tokens&lt;/string&gt;
+        &lt;key&gt;Username Placeholder&lt;/key&gt;
+        &lt;string&gt;Tenant ID:Access Key&lt;/string&gt;
+        &lt;key&gt;Password Placeholder&lt;/key&gt;
+        &lt;string&gt;Secret Key&lt;/string&gt;
+        &lt;key&gt;Properties&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;key=value&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;Disk&lt;/key&gt;
+        &lt;string&gt;
+            TU0AKgAFiw6AACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuOR2PR+QSGRSOSSWTSeU
+            SmVSuWS2XS+YTGZTOaTWbTecTmdTueT2fT+gUGhUOiUWjUekUmlUumU2nU+oVGpVOqVWrVes
+            VmtVuuV2vV+wWGxWOyWWzWe0Wm1Wu2W23W+4XG5XO6XW7Xe8Xm9Xu+X2/X/AYHBYPCYXDYfE
+            YnFYvGY3HY/IZHJZPKZXLZfMZnNZvOZ3PZ/QaHRaPSaXTafUanVavWa3Xa/YbHZbPabXbbfc
+            bndbveb3fb/gcHhcPicXjcfkcnlcvmc3nc/odHpdPqdXrdfsdntdvud3vd/weHxePyeXzef0
+            en1ev2e33e/4fH5fP6fX7ff8fn9fv+f3/P/AEAwFAcCQLA0DwRBMFQXBkGwdB8IQjCUJwpCs
+            LQvDEMw1DcOQ7D0PxBEMRRHEkSxNE8URTFUVxZFsXRfGEYxlGcaRrG0bxxHMdR3Hkex9H8gS
+            DIUhyJIsjSPHAAyUAMkSbJ0nyhKMpSmkh/ysf8qSzLUtotJcmS5MEwzFMcyTLMMryxM01TXE
+            cvIZNyNzhNk5zpOs7TvPDfzQjk9onPs80BQL0TkgtCIJQlDIHRKDApRoXgPSAIA4DgNh8glJ
+            g2H6EUaCwXAQBADghKyBSUiVRgBUqs1PVKGSvVFWJ3NNUVNNNYM1VcvrLWVcoHXCDV8AFgIJ
+            V0loLYSWTTLEsWLYda15XtFJlY7BWmn1dp1YFqrTa6O20g9vI1YlbKpcFdWdB9uLxcqYXWol
+            …
+            /aMAAAPcAADAbA==
+        &lt;/string&gt;
+        &lt;key&gt;Regions&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;custom&lt;/string&gt;
+            &lt;string&gt;custom2&lt;/string&gt;
+        &lt;/array&gt;
+    &lt;/dict&gt;
+&lt;/plist&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="disk-icon-template">
+<h1>Disk icon template<a class="headerlink" href="#disk-icon-template" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Photoshop</span> <span class="pre">disk</span> <span class="pre">template</span> <span class="pre">file</span></code></a></p></li>
+</ul>
+</div>
+
 
            </div>
            

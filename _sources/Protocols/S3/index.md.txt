@@ -472,7 +472,7 @@ To host a static website on S3, It is possible to define an Amazon S3 bucket as 
 
 To access this website functionality, Amazon S3 exposes a new website endpoint for each region (US Standard, US West, EU, or Asia Pacific). For example, `s3-website-ap-southeast-1.amazonaws.com` is the endpoint for the Asia Pacific Region. The location is displayed in the *Where* field following the *Origin*.
 
-![S3 Website Configuration](_images/S3-Website_Configuration.png)
+![S3 Website Configuration](_images/S3_Website_Configuration.png)
 
 To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront#WebsiteConfigurationEndpointDistributionswithCloudFronCDN).
 
