@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Eucalyptus Walrus &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,14 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Eucalyptus Walrus</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#login-credentials">Login Credentials</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#distribution">Distribution</a></li>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
 </ul>
 </div>
             
@@ -138,7 +145,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Eucalyptus Walrus</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +164,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="eucalyptus-walrus">
+<h1>Eucalyptus Walrus<a class="headerlink" href="#eucalyptus-walrus" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="http://open.eucalyptus.com/">Eucalyptus Walrus</a> is an open source implementation of S3.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/eucalyptus/Eucalyptus%20Walrus%20S3.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>Eucalyptus Walrus S3 Connection Profile</em> for preconfigured settings.</p></li>
+</ul>
+<p>Choose <em>Eucalyptus Walrus S3</em> from the protocol dropdown menu in the <a class="reference internal" href="../../Cyberduck/Connection.html"><span class="doc std std-doc">Open Connection</span></a> or <a class="reference internal" href="../../Cyberduck/Bookmarks.html"><span class="doc std std-doc">Bookmark</span></a> settings and enter the hostname of your installation. Refer to <a class="reference internal" href="index.html"><span class="doc std std-doc">S3</span></a> in general.</p>
+<p>The only difference to regular S3 is that the storage path (endpoint) is assumed to be <code class="docutils literal notranslate"><span class="pre">/services/Walrus</span></code> instead of <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+<div class="section" id="login-credentials">
+<h2>Login Credentials<a class="headerlink" href="#login-credentials" title="Permalink to this headline">¶</a></h2>
+<p>Download your credentials ZIP from <code class="docutils literal notranslate"><span class="pre">ecc.eucalyptus.com</span></code>. You can find the access key and secret in the file <em>eucarc</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="distribution">
+<h1>Distribution<a class="headerlink" href="#distribution" title="Permalink to this headline">¶</a></h1>
+<p>You can enable <a class="reference internal" href="../../CDN/CloudFront.html"><span class="doc std std-doc">Amazon CloudFront (Content Delivery Network) distribution</span></a> using <em>File → Info → Distribution (CDN)</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="limitations">
+<h1>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>No content distribution (<a class="reference internal" href="../../CDN/index.html"><span class="doc std std-doc">CDN</span></a>) configuration.</p></li>
+<li><p>No bucket logging configuration.</p></li>
+<li><p>No bucket location support.</p></li>
+<li><p>Storage class options are not available.</p></li>
+</ul>
+</div>
+
 
            </div>
            

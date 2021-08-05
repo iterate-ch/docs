@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>MinIO Cloud Storage &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,12 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">MinIO Cloud Storage</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#virtual-host-style-requests">Virtual Host Style Requests</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +143,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>MinIO Cloud Storage</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +162,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="minio-cloud-storage">
+<h1>MinIO Cloud Storage<a class="headerlink" href="#minio-cloud-storage" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/MINIO_wordmark.png"><img alt="MinIO Logo" src="../../_images/MINIO_wordmark.png" style="height: 128px;" /></a>
+<blockquote>
+<div><p><a class="reference external" href="https://min.io/">MinIO</a> is an object storage server built for cloud application developers and DevOps.</br>Store photos, videos, VMs, containers, log files, or any blob of data as objects.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p>Download and install the <a class="reference external" href="index#GenericS3Profiles">generic S3 profile</a>.</p>
+<div class="section" id="virtual-host-style-requests">
+<h2>Virtual Host Style Requests<a class="headerlink" href="#virtual-host-style-requests" title="Permalink to this headline">¶</a></h2>
+<p>Make sure to enable <a class="reference external" href="https://github.com/minio/minio/tree/master/docs/config#domain">virtual-host-style requests</a> in your MinIO configuration. Alternatively refer to <a class="reference external" href="index#DisableuseofVirtualHostStyleRequests">Disable use of Virtual Host Style Requests</a>.</p>
+</div>
+</div>
+
 
            </div>
            
