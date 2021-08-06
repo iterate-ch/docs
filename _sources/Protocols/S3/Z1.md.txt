@@ -1,0 +1,10 @@
+Z1 Storage
+===
+
+> Bringing affordable backups to Africa and the World.
+
+[Z1](https://www.z1storage.com/) is a S3 compatible object storage.
+
+# Connecting
+
+{download}`Download<https://svn.cyberduck.io/trunk/profiles/Z1.cyberduckprofile>` the *Z1 Connection Profile* for preconfigured settings.

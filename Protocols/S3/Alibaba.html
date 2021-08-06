@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Alibaba Cloud Object Storage Service (OSS) &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,11 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Alibaba Cloud Object Storage Service (OSS)</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a></li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
 </ul>
 </div>
             
@@ -138,7 +142,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Alibaba Cloud Object Storage Service (OSS)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +161,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="alibaba-cloud-object-storage-service-oss">
+<h1>Alibaba Cloud Object Storage Service (OSS)<a class="headerlink" href="#alibaba-cloud-object-storage-service-oss" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://www.alibabacloud.com/help/doc-detail/31817.htm">Alibaba Cloud Object Storage Service (OSS)</a> is a storage service that enables you to store, back up, and archive any amount of data in the cloud. OSS is a cost-effective, highly secure, and highly reliable cloud storage solution. It uses RESTful APIs and provides 99.9999999999% (12 nines) durability (designed for) and 99.995% availability or service continuity (designed for).</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+<p>Enter the following information in the <a class="reference internal" href="../../Cyberduck/Bookmarks.html"><span class="doc std std-doc">bookmark</span></a>. Lookup the <em>Internet endpoint</em> for the buckets you want to access. Refer to <a class="reference external" href="https://www.alibabacloud.com/help/doc-detail/31837.htm">Regions and endpoints</a>.</p>
+<ul class="simple">
+<li><p>Protocol: <code class="docutils literal notranslate"><span class="pre">S3</span> <span class="pre">(Amazon</span> <span class="pre">Simple</span> <span class="pre">Storage</span> <span class="pre">Service)</span></code></p></li>
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">oss-eu-west-1.aliyuncs.com</span></code>, <code class="docutils literal notranslate"><span class="pre">oss-eu-central-1.aliyuncs.com</span></code>, <code class="docutils literal notranslate"><span class="pre">oss-me-east-1.aliyuncs.com</span></code>, <code class="docutils literal notranslate"><span class="pre">oss-us-east-1.aliyuncs.com</span></code>, <code class="docutils literal notranslate"><span class="pre">oss-us-west-1.aliyuncs.com</span></code>, <code class="docutils literal notranslate"><span class="pre">oss-cn-shenzhen.aliyuncs.com</span></code>, …</p></li>
+<li><p>Username and Password: Access credentials in your <a class="reference external" href="https://usercenter.console.aliyun.com/">user center console</a>.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<p>The error <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">bucket</span> <span class="pre">you</span> <span class="pre">are</span> <span class="pre">attempting</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">addressed</span> <span class="pre">using</span> <span class="pre">the</span> <span class="pre">specified</span> <span class="pre">endpoint.</span> <span class="pre">Please</span> <span class="pre">send</span> <span class="pre">all</span> <span class="pre">future</span> <span class="pre">requests</span> <span class="pre">to</span> <span class="pre">this</span> <span class="pre">endpoint.</span></code> indicates that you try to access a bucket in a different region than the endpoint you are connecting to.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.alibabacloud.com/help/doc-detail/31837.htm">Regions and endpoints</a></p></li>
+</ul>
+</div>
+
 
            </div>
            
