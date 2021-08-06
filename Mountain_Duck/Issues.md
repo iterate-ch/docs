@@ -254,4 +254,4 @@ Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can on
 
 ## Bug Reports and Feature Requests
 
-To get help with bugs, feature requests, or other issues please refer to the [support page](../Support). 
+To get help with bugs, feature requests, or other issues please refer to the [support page](Support). 
