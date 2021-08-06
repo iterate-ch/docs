@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Copy &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,13 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Copy</a></li>
+<li><a class="reference internal" href="#copy-files-and-folders-between-servers">Copy files and folders between servers</a><ul>
+<li><a class="reference internal" href="#copying-files-directly-on-the-server">Copying files directly on the server</a></li>
+<li><a class="reference internal" href="#copying-files-using-download-and-upload">Copying files using download and upload</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +144,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Copy</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +163,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="copy">
+<h1>Copy<a class="headerlink" href="#copy" title="Permalink to this headline">¶</a></h1>
+<p>open two browser windows each with a connection to any server and drag files and folders between the browsers to copy files or using <em>Edit → Copy</em> followed by <em>Edit → Paste</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="copy-files-and-folders-between-servers">
+<h1>Copy files and folders between servers<a class="headerlink" href="#copy-files-and-folders-between-servers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="copying-files-directly-on-the-server">
+<h2>Copying files directly on the server<a class="headerlink" href="#copying-files-directly-on-the-server" title="Permalink to this headline">¶</a></h2>
+<p>This is supported for the following protocols</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../Protocols/Azure.html"><span class="doc std std-doc">Azure</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/OpenStack/index.html"><span class="doc std std-doc">OpenStack Swift</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/WebDAV/index.html"><span class="doc std std-doc">WebDAV</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/S3/index.html"><span class="doc std std-doc">Amazon S3</span></a></p></li>
+<li><p><a class="reference internal" href="../Protocols/iRODS.html"><span class="doc std std-doc">iRODS</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="copying-files-using-download-and-upload">
+<h2>Copying files using download and upload<a class="headerlink" href="#copying-files-using-download-and-upload" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../Protocols/FTP.html"><span class="doc std std-doc">FTP</span></a> and <a class="reference internal" href="../Protocols/SFTP.html"><span class="doc std std-doc">SFTP</span></a> do not support a copy operation. <strong>Transfer speed depends on your local connectivity as files are routed through your computer for transfer between the remote servers.</strong></p>
+</div>
+</div>
+
 
            </div>
            

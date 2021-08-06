@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Custom Commands &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,10 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Custom Commands</a></li>
+<li><a class="reference internal" href="#ftp-server">FTP server</a></li>
+<li><a class="reference internal" href="#ssh-server">SSH server</a></li>
 </ul>
 </div>
             
@@ -138,7 +141,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Custom Commands</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +160,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="custom-commands">
+<h1>Custom Commands<a class="headerlink" href="#custom-commands" title="Permalink to this headline">¶</a></h1>
+<p>Use <em>Go → Send Command…</em> to open a command input window for the current browser.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ftp-server">
+<h1>FTP server<a class="headerlink" href="#ftp-server" title="Permalink to this headline">¶</a></h1>
+<p>Connected to a FTP server this allows to send arbitrary command not available through the user interface of the browser. Possibly these are extensions to the standard FTP protocol your server may support you can invoke with the <code class="docutils literal notranslate"><span class="pre">SITE</span></code> prefix. Type <code class="docutils literal notranslate"><span class="pre">SITE</span> <span class="pre">HELP</span></code> for supported commands.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ssh-server">
+<h1>SSH server<a class="headerlink" href="#ssh-server" title="Permalink to this headline">¶</a></h1>
+<p>You can send any remote command to a remote SSH server. This is for example useful if you want a HTTP server to reload its configuration or changing the ownership of files using chown on a <code class="docutils literal notranslate"><span class="pre">UNIX</span></code> system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The current working directory is always your use home. Determine using <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to get the absolute path.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/command.png"><img alt="Send Command" src="../_images/command.png" style="width: 700px;" /></a>
+</div>
+
 
            </div>
            

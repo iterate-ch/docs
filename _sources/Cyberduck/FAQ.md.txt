@@ -141,7 +141,7 @@ Bookmarks, history, [profiles](Profiles), and workspace information are saved i 
 
 - `%AppData%\Cyberduck`
 
-For the WIndows Store version refer to 
+For the Windows Store version refer to 
 
 - `%LocalAppData%\Packages\iterate.37637C3DE32E5_gr99yradmgg3r\LocalCache\Roaming\Cyberduck`
 
@@ -152,7 +152,7 @@ Preferences are stored in `%AppData%\iterate_GmbH\Cyberduck.exe_Url_[id]\[versio
 
 # Bug Reports and Feature Requests
 
-To get help with bugs, feature requests, or other issues please refer to the [support page](../Support).
+To get help with bugs, feature requests, or other issues please refer to the [support page](Support).
 
 # Snapshot and Beta builds
 

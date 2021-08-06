@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Download &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,20 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Download</a></li>
+<li><a class="reference internal" href="#segmented-downloads">Segmented Downloads</a></li>
+<li><a class="reference internal" href="#double-click">Double-click</a></li>
+<li><a class="reference internal" href="#download-using-drag-and-drop">Download using drag and drop</a></li>
+<li><a class="reference internal" href="#toolbar-button">Toolbar button</a></li>
+<li><a class="reference internal" href="#the-download-menu">The download menu</a></li>
+<li><a class="reference internal" href="#queue-a-file-to-be-downloaded-later">Queue a file to be downloaded later</a></li>
+<li><a class="reference internal" href="#where-from">Where From</a></li>
+<li><a class="reference internal" href="#hidden-preferences">Hidden Preferences</a><ul>
+<li><a class="reference internal" href="#quarantine">Quarantine</a></li>
+<li><a class="reference internal" href="#temporary-document-icon">Temporary document icon</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +151,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Download</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +170,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="download">
+<h1>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h1>
+<p>See also <a class="reference internal" href="Transfer.html"><span class="doc std std-doc">Transfers</span></a> in general.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="segmented-downloads">
+<h1>Segmented Downloads<a class="headerlink" href="#segmented-downloads" title="Permalink to this headline">¶</a></h1>
+<p>Split a file into segments and download with multiple connections when a file is larger than <code class="docutils literal notranslate"><span class="pre">100MB</span></code>. The use of segmented downloads can be disabled in <em>Preferences → Transfers → General → Downloads → Segmented download with multiple connections for file</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="double-click">
+<h1>Double-click<a class="headerlink" href="#double-click" title="Permalink to this headline">¶</a></h1>
+<p>Double click a file in the browser window to download to the default download location as configured in <em>Cyberduck → Preferences → Transfers</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="download-using-drag-and-drop">
+<h1>Download using drag and drop<a class="headerlink" href="#download-using-drag-and-drop" title="Permalink to this headline">¶</a></h1>
+<p>Drag the files or folders to the desired download location in the <em>Finder.app</em> or <em>Explorer</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="toolbar-button">
+<h1>Toolbar button<a class="headerlink" href="#toolbar-button" title="Permalink to this headline">¶</a></h1>
+<p>Customize the browser toolbar using menu <em>View → Customize Toolbar…</em> to add the <em>Download</em> toolbar button to the default configuration.</p>
+<a class="reference internal image-reference" href="../_images/Download_Toolbar_Button.png"><img alt="Send Command" src="../_images/Download_Toolbar_Button.png" style="width: 500px;" /></a>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="the-download-menu">
+<h1>The download menu<a class="headerlink" href="#the-download-menu" title="Permalink to this headline">¶</a></h1>
+<p>Select <em>File → Download</em> or right-click the file in the browser to select <em>Download</em> in the context menu. If you are not connected to a server in a browser you can still choose <em>File → New Download</em> if you know the exact URL of the file or folder.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="queue-a-file-to-be-downloaded-later">
+<h1>Queue a file to be downloaded later<a class="headerlink" href="#queue-a-file-to-be-downloaded-later" title="Permalink to this headline">¶</a></h1>
+<p>Drag the file from the browser to the <em>Transfers</em> window to be downloaded later.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="where-from">
+<h1>Where From<a class="headerlink" href="#where-from" title="Permalink to this headline">¶</a></h1>
+<div class="note admonition">
+<p class="admonition-title">macOS only</p>
+<p>Downloaded files have added metadata of its origin URL. <em>Finder.app</em> displays this information in <em>File → Get Info</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="hidden-preferences">
+<h1>Hidden Preferences<a class="headerlink" href="#hidden-preferences" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quarantine">
+<h2>Quarantine<a class="headerlink" href="#quarantine" title="Permalink to this headline">¶</a></h2>
+<div class="note admonition">
+<p class="admonition-title">macOS only</p>
+<p>Downloaded files are flagged with the <code class="docutils literal notranslate"><span class="pre">com.apple.quarantine</span></code> attribute. The attributes associate basic information with the file, such as its type, when it was received, and the URL from which it came. When the Finder or any other program uses Launch Services to open a quarantined file, Launch Services inspects the file to see if it appears to be an application, script, or other executable file types. If so, the system displays an alert informing the user that the file is an application and asking for confirmation that it should be executed. The alert lets the user open the URL from which the file was downloaded, launch the program, or cancel. If the user proceeds to open the file, Launch Services removes the quarantine attributes from that file.</p>
+<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configuration option</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.download.quarantine</span> <span class="pre">false</span></code></p>
+<p>Files downloaded to edit do not have a quarantine flag set by default.</p>
+</div>
+</div>
+<div class="section" id="temporary-document-icon">
+<h2>Temporary document icon<a class="headerlink" href="#temporary-document-icon" title="Permalink to this headline">¶</a></h2>
+<p>Don’t change the document icon while downloading. A <a class="reference external" href="Preferences#Hiddenconfigurationoption">hidden configuration option</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.download.icon.update</span> <span class="pre">false</span></code></p>
+</div>
+</div>
+
 
            </div>
            
