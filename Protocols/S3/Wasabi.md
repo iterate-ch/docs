@@ -1,0 +1,25 @@
+Wasabi Storage
+===
+
+> One simple storage solution that is faster than Amazon S3 yet cheaper than Amazon Glacier. Wasabi's immutable buckets protect you against the most common causes of data loss.
+
+[Wasabi](https://wasabi.com/) is a S3 compatible object storage.
+
+# Connecting
+
+- **Wasabi US East 1 (N. Virginia)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-east-1).cyberduckprofile>` the *Wasabi Storage (us-east-1) Connection Profile* for preconfigured settings.
+- **Wasabi US East 2 (N. Virginia)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-east-2).cyberduckprofile>` the *Wasabi Storage (us-east-2) Connection Profile* for preconfigured settings.
+- **Wasabi US West 1 (Oregon)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-west-1).cyberduckprofile>` the *Wasabi Storage (us-west-1) Connection Profile* for preconfigured settings.
+- **Wasabi EU Central 1 (Amsterdam)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(eu-central-1).cyberduckprofile>` the *Wasabi Storage (eu-central-1) Connection Profile* for preconfigured settings.
+- **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
+- **Wasabi US Central 1 (Texas)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-central-1).cyberduckprofile>` the *Wasabi Storage (us-central-1) Connection Profile* for preconfigured settings.
+
+# Known Issues
+
+## 301 Moved Permanently but no location header
+
+You are connected with a connection profile specific to a region not matching the bucket region. Please install the additional connection profile for the specific region of the bucket.
+
+# References
+
+- [How do I use Cyberduck or Mountain Duck with Wasabi?](https://wasabi-support.zendesk.com/hc/en-us/articles/115001671012-How-do-I-use-Cyberduck-or-Mountain-Duck-with-Wasabi-)
