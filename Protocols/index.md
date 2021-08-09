@@ -15,7 +15,7 @@ With support for secure TLS connections and custom origin [Amazon CloudFront (Co
 
 Transfer files to your S3 account and browse the S3 buckets and files in a hierarchical way. Supports Amazon Web Services (AWS) and many third party providers.
 
-- [S3 providers](S3/index#Third-Partyproviders)
+- [S3 providers](S3/index#third-party-providers)
 
 ## [Google Cloud Storage](Google_Cloud_Storage)
 
@@ -29,7 +29,7 @@ Backblaze B2 Cloud Storage is ¼ of the price of Amazon S3
 
 Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../CDN/CloudFront) option.
 
-- [WebDAV providers](WebDAV/index#Providers)
+- [WebDAV providers](WebDAV/index#providers)
 
 ## [SSH/SFTP](SFTP)
 
@@ -38,7 +38,7 @@ Advanced configuration for SSH connections using public key authentication and c
 ## [OpenStack Object Storage](OpenStack/index)
 Connect to cloud storage providers using OpenStack Swift for the storage protocol. Includes support for [Rackspace Cloud Files](OpenStack/CloudFiles).
 
-- [OpenStack Providers](OpenStack/index#ThirdPartyProviders)
+- [OpenStack Providers](OpenStack/index#third-party-providers)
 
 ## [Windows Azure](Azure)
 

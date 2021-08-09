@@ -42,7 +42,7 @@ If you want to access folders that are shared with you through Dropbox you have 
 This only applies to Cyberduck.
 ```
 
-You can [search recursively](../Cyberduck/Browser#FilterSearch) for files fast without browsing folders first.
+You can [search recursively](../Cyberduck/Browser#filter-search) for files fast without browsing folders first.
 
 ## Share
 

@@ -29,14 +29,14 @@ This is the default with no additional configuration required.
 
 ### Authentication With PAM Scheme
 
-To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index#ConnectionProfiles) using as
+To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index#connection-profiles) using as
 
     <key>Authorization</key>
     <string>PAM</string>
 
 ## Ressource Server
 
-You can specify a non-default resource server in the Region key of the [connection profile](index#ConnectionProfiles) using a colon-separated syntax (Issue #8721) such as
+You can specify a non-default resource server in the Region key of the [connection profile](index#connection-profiles) using a colon-separated syntax (Issue #8721) such as
 
 	<key>Region</key>
 	<string>iplant:storageresourcename</string>
@@ -45,7 +45,7 @@ You can specify a non-default resource server in the Region key of the [connecti
 
 ## Use Parallel Connections
 
-If [multiple connections](../Cyberduck/Transfer#Connections) are configured by default in *Preferences* or set in the bookmark options with *Transfer Files: Open multiple connections*, get and put transfers to the data store use parallel concurrent connections.
+If [multiple connections](../Cyberduck/Transfer#connections) are configured by default in *Preferences* or set in the bookmark options with *Transfer Files: Open multiple connections*, get and put transfers to the data store use parallel concurrent connections.
 
 ![Open multiple connections](_images/Use_parallel_transfer_option.png)
 

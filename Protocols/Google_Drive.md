@@ -50,7 +50,7 @@ Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. Fo
 This only applies to Cyberduck.
 ```
 
-You can [search recursively](../Cyberduck/Browser#FilterSearch) for files fast without browsing folders first.
+You can [search recursively](../Cyberduck/Browser#filter-search) for files fast without browsing folders first.
 
 # Documents
 
@@ -73,7 +73,7 @@ Documents shared with you from another Google account can be found inside the to
 
 ## Rate Limits
 
-Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../Cyberduck/Connection#RepeatFailedNetworkingTasks) and set a delay.
+Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../Cyberduck/Connection#repeat-failed-networking-tasks) and set a delay.
 
 ## The granted scopes do not give access to all of the requested spaces
 

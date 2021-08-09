@@ -21,7 +21,7 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *ProxyJump* to connect via SSH tunnel through bastion server. **Cyberduck version 7.7 or later required.**
 - *PreferredAuthentications* to limit authentication methods tried to login. **Cyberduck version 7.7.2 or later required.**
 - *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. **Cyberduck version 7.9.0 or later required.**
-- A [bookmark](../Cyberduck/Bookmarks) will update its public key authentication setting from the IdentityFile configuration in `~/.ssh/config`. Also when opening a new [connection](../Cyberduck/Connection#ToolbarButton) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
+- A [bookmark](../Cyberduck/Bookmarks) will update its public key authentication setting from the IdentityFile configuration in `~/.ssh/config`. Also when opening a new [connection](../Cyberduck/Connection#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
 
@@ -38,7 +38,7 @@ which is then used when configuring a new bookmark.
 
 ### Default Public Key Authentication Keys
 
-You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) `ssh.authentication.publickey.default.enable` to `true`.
+You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
 
 	defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
 
@@ -200,7 +200,7 @@ To reset to the default settings use:
 
 **Disable WSL**
 
-There is a [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
+There is a [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
 
 - Disabling OpenSSH: `terminal.openssh.enable=false`
 - Disabling WSL: `terminal.windowssubsystemlinux.enable=false`
@@ -212,7 +212,7 @@ Use *View → Customize Toolbar...* to add the *Open in Putty* toolbar icon to y
 ![Putty](_images/putty.png)
 
 **Location of the PuTTY installation:**<br/>
-By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) `terminal.command.ssh` to point to the path of the executable.
+By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) `terminal.command.ssh` to point to the path of the executable.
 
 ```
 
@@ -329,4 +329,4 @@ The available space for a volume mounted over SFTP is determined using quota fea
 
 You can work around the issue using one of the following options:
 - Set a default path you want to connect to within the bookmark Path option.
-- Disable the feature within Mountain Duck by setting the [hidden property](../Cyberduck/Preferences#HiddenConfigurationOption) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties*. If the file doesn't exist create it within *%AppData%\Cyberduck*.
+- Disable the feature within Mountain Duck by setting the [hidden property](../Cyberduck/Preferences#hidden-configuration-option) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties*. If the file doesn't exist create it within *%AppData%\Cyberduck*.
