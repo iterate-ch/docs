@@ -82,6 +82,7 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [EMC Elastic Cloud Storage](EMC)
 - [Infomaniak](Infomaniak)
 - [IDrive® Cloud](../S3/IDrive_Cloud#open-stack-swift)
+- [OpenStack FlexCloud](FlexCloud)
 
 # Temporary URLs
 

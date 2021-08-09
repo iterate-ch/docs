@@ -12,6 +12,9 @@ Settings are specific to service providers. Use the provided [connection profile
 - [GMX Mediacenter](GMX)
 - [box.com](box.com)
 - [BigCommerce](BigCommerce)
+- [iKeepinCloud](iKeepinCloud)
+- [pCloud](pCloud)
+- [Seafile](Seafile)
 
 # Supported Authentication Methods
 
