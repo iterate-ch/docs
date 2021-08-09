@@ -122,7 +122,7 @@ You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*.
 
 ## Open or copy HTTP URL
 
-See bookmark [Web URL configuration](Bookmarks#HTTPURL) for HTTP URLs. You can select multiple files to open/copy all URLs.
+See bookmark [Web URL configuration](Bookmarks#http-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
 
 - **Open Web URL:** The *Web URL* can be found in the *File → Open URL* menu and as an optional toolbar item in the browser window. Use *View → Customize Toolbar...* to add the *Open in Browser* button to your default browser toolbar.
 - **Copy Web URL:** The *Web URL* can be found in the *Edit → Copy URl* menu.
@@ -133,7 +133,7 @@ Refer to [Share](Share).
 
 ## Open in Terminal
 
-Refer to [Open in Terminal](../Protocols/SFTP#OpeninTerminal).
+Refer to [Open in Terminal](../Protocols/SFTP#open-in-terminal).
 
 ## Print browser folder listing
 
@@ -162,7 +162,7 @@ Folder with read-only permissions. Uploading or editing files to this folder is 
 :width: 50px
 ```
 
-Drop Folder where you can only upload files to bu are not allowed to view its content.
+Drop Folder where you can only upload files to but are not allowed to view its content.
 
 ## Versions 
 
@@ -189,11 +189,11 @@ Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity
 
 ## Special characters such as Umlaute
 
-If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks#EditBookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
+If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks#edit-bookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
 
 ## The folder size isn't displayed correctly
 
-This is not the size of its content but the size of the folder itself. Use *File → Info (macOS `⌘I` Windows `Alt+Return`)* to [calculate the size](Info#Calculatefoldersize) of all contained files recursively.
+This is not the size of its content but the size of the folder itself. Use *File → Info (macOS `⌘I` Windows `Alt+Return`)* to [calculate the size](Info#calculate-folder-size) of all contained files recursively.
 
 # Preferences
 
@@ -207,9 +207,9 @@ Open new browser window after application launch.
 
 ## Browser → General → Show Hidden Files
 
-Display files in the browser that start with `.` and [previous revisions (S3)](../Protocols/S3/index#Versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
+Display files in the browser that start with `.` and [previous revisions (S3)](../Protocols/S3/index#versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
 
-## Browser → General → Info window always sshows current selection
+## Browser → General → Info window always shows current selection
 
 Use only one *Info* window which updates with the selection change in the browser. If unchecked, open multiple Info windows to compare files.
 
@@ -217,13 +217,13 @@ Use only one *Info* window which updates with the selection change in the browse
 
 ## Adjust the browser font size
 
-A [hidden configurationi option](Preferences#Hiddenconfigurationoptions).
+A [hidden configurationi option](Preferences#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck browser.font.size 18`
 
 ## Duplicate filename format
 
-A [hidden configurationi option](Preferences#Hiddenconfigurationoptions). Define a different format using 
+A [hidden configurationi option](Preferences#hidden-configuration-options). Define a different format using 
 
 `defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"`
 
@@ -235,6 +235,6 @@ where the plaseholders will be replaced with
 
 ## Warning before renaming or moving files
 
-A [hidden configurationi option](Preferences#Hiddenconfigurationoptions). A confirmation is shown before renaming or moving files.
+A [hidden configurationi option](Preferences#hidden-configuration-options). A confirmation is shown before renaming or moving files.
 
 `defaults write ch.sudo.cyberduck browser.move.confirm true`

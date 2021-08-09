@@ -127,7 +127,7 @@ URLs in arguments must be fully qualified. Paths can either denote a remote file
 
 ## Connection Profiles
 
-You can install additional connection profiles in the [application support directory](index#Profiles). Use the `--profile` option to reference a [connection profile](../Protocols/index#ConnectionProfiles) file to use not installed in the standard location.
+You can install additional connection profiles in the [application support directory](index#profiles). Use the `--profile` option to reference a [connection profile](../Protocols/index#connection-profiles) file to use not installed in the standard location.
 
 ## URI
 
@@ -295,21 +295,21 @@ The support directory is `~/.duck/` on Linux. You can install third party [profi
 `````{tabs}
 ````{group-tab} macOS
 
-You can override default [preferences](../Cyberduck/Preferences#Hiddenconfigurationoptions) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 
 ````
 ````{group-tab} Windows
 
-You can override default [preferences](../Cyberduck/Preferences#Hiddenconfigurationoptions) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
 
 `set "property.name=value" & duck`
 
 ````
 ````{group-tab} Linux
 
-You can override default [preferences](../Cyberduck/Preferences#Hiddenconfigurationoptions) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 

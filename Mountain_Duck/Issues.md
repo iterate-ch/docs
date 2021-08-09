@@ -76,11 +76,11 @@ It is not possible to share a mounted drive within the local network.
 
 ## Changes from server not immediately visible
 
-The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is addin , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On the Mac, choose *Reload* from the [*Finder Extension*](index#FinderExtensionWindowsFileExplorerExtension) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
+The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is addin , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On the Mac, choose *Reload* from the [*Finder Extension*](index#finder-extension-windows-file-explorer-extension) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
 
 ## Cache uses a lot of disk space
 
-The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck` on macOS by default. You can [choose another disk](Preferences#SyncCacheLocation) for storage of files to be stored in the local cache. You can clear files cached on local disk with the *Delete on local disk* [context menu](Sync#DeleteonLocalDisk) option.
+The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck` on macOS by default. You can [choose another disk](Preferences#sync-cache-location) for storage of files to be stored in the local cache. You can clear files cached on local disk with the *Delete on local disk* [context menu](Sync#delete-on-local-disk) option.
 
 ```{image} _images/Custom_Location_Sync_Cache.png
 :alt: Send Command
@@ -110,7 +110,7 @@ If none of those applications are in use, a Finder re-launch can make the badge 
 ````{group-tab} Windows
 
 **Windows**<br/>
-Windows has a limitation on the number of applications that can register for bagde icons in FIle Explorer. You will need to either uninstall other applications or edit your registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers`.
+Windows has a limitation on the number of applications that can register for bagde icons in File Explorer. You will need to either uninstall other applications or edit your registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers`.
 You can find this well documented by Microsoft at [Sync icon overlays are missing](https://support.office.com/en-us/article/sync-icon-overlays-are-missing-from-onedrive-and-onedrive-for-business-b25070ab-2226-4ad8-b1fc-ae28cc44ecd2).
 ````
 ````` 
@@ -215,7 +215,7 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 A list of known providers that fail to work with Mountain Duck due to interoperability issues.
 
 - *OwnCube:* Their deployment does not work and we discourage this product.
-- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [Disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [](../Protocols/WebDAV/index#0bytefilesonWebDAVserver).
+- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [Disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [](../Protocols/WebDAV/index#0-byte-files-on-webdav-server).
 
 ## Third party software
 

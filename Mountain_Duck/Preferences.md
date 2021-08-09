@@ -30,7 +30,7 @@ Change the size of the menu items in the status bar menu. Choose between *Small,
 ````{admonition} macOS only
 :class: tip
 
-Volumes are mounted in the *Volumes* folder in the [application support directory](./Support). You can change the default to another folder that is writable.
+Volumes are mounted in the *Volumes* folder in the [application support directory](Support). You can change the default to another folder that is writable.
 
 
 ```{note}
@@ -62,13 +62,13 @@ Change the default synchronization option. You can disable synchronization by de
 
 ## Sync → Index Files
 
-Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](Interface#Reload) choosing *Reload* in the context menu.
+Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](Interface#reload) choosing *Reload* in the context menu.
 
 ## Sync → Cache Location
 
 `````{tabs}
 ````{group-tab} macOS
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](./Support).
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](Support).
 
 The disk must be formatted as HFS+ or APFS.
 ````
@@ -104,7 +104,7 @@ You can disable notifications in *Settings → System → Notifications and Acti
 ````
 ````{group-tab} Windows
 
-If not existing yet you need to create the file `%AppData%\Cyberduck\default.properties`. Add the setting as follows: <br/>
+If not existing yet you need to create the file `%AppData%\Cyberduck\default.properties`. Add the setting as follows:<br/>
 `property=value`
 
 These settings are shared with Cyberduck.

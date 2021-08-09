@@ -34,4 +34,4 @@ The logging output is written directly into the command line:
 
 ## Enable debug logging
 
-Set the [environment variable](index#Preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.
+Set the [environment variable](index#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.

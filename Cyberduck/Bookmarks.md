@@ -99,7 +99,7 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 
 | Setting | Description |
 | :--- | :--- |
-| Protocol | Your hosting service provider will let you know what protocolto use. Change the [protocol](Connection#Supportedprotocols) in the<br/>topmost popup menu. |
+| Protocol | Your hosting service provider will let you know what protocolto use. Change the [protocol](Connection#supported-protocols) in the<br/>topmost popup menu. |
 | Nickname | Any name for the bookmark describing it for easy access using the bookmark filter. You can<br/>also type this name in the bookmark view to select it by name. |
 | Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. |
 | Username | The login credentials from your service provider. |
@@ -107,9 +107,9 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | Client<br/>Certificate | For [HTTPS]() connections only. Choose a client certificate for mutual transport level security (TLS). |
 | Path | The initial working directory when connecting to the server. This must be the document root of<br/>the webserver if you want to configure HTTP URLs (see below) to work. |
 | Download<br/>Folder | Default location for files downloaded from this server. |
-| Transfer<br/>Files | Choose to open a new connection for transfers in the [transfers](Transfer#Connections) window or to use the existing<br/>browser connection. When using the browser connection, transfers block other operations. |
+| Transfer<br/>Files | Choose to open a new connection for transfers in the [transfers](Transfer#connections) window or to use the existing<br/>browser connection. When using the browser connection, transfers block other operations. |
 | Connect<br/>Mode | For [FTP](../Protocols/FTP) connections only. Refer to [FTP Connect Mode](../Protocols/FTP). |
-| Encoding | For [FTP](../Protocols/FTP) connectionc only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../Protocols/FTP#CharacterEncoding). |
+| Encoding | For [FTP](../Protocols/FTP) connectionc only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../Protocols/FTP#character-encoding). |
 | Timezone | For all protocols except [FTP](../Protocols/FTP), timestamps are reported in [UTC]() from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../Protocols/FTP)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the vrowser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
 
 ## Passwords
@@ -146,11 +146,11 @@ Example configuration:
 :width: 600px
 ```
 
-See also [Open or copy HTTP URL](Browser#OpenorcopyHTTPURL).
+See also [Open or copy HTTP URL](Browser#open-or-copy-http-url).
 
 # Exporting Bookmarks
 
-Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer* (e.g. the Desktop). You can double-click the document in the file browser to open a new connection to the server specified in the bookmark. To back up all bookmarks, refer to [this FAQ entry](FAQ#Preferencesandapplicationsupportfileslocation).
+Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer* (e.g. the Desktop). You can double-click the document in the file browser to open a new connection to the server specified in the bookmark. To back up all bookmarks, refer to [this FAQ entry](FAQ#preferences-and-application-support-files-location).
 
 ```{image} _images/Drag_Bookmark.png
 :alt: Send Command
@@ -234,12 +234,12 @@ Choose a default bookmark to open after opening the application. Choose *Prefere
 
 ## Do not read favicon.ico from HTTP URL
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions). Displayed in the bookmark edit window.
+A [hidden configuration option](Preferences#hidden-configuration-options). Displayed in the bookmark edit window.
 
 `defaults write ch.sudo.cyberduck bookmark.favicon.download false`
 
 ## Open bookmark view after disconnecting
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoption).
+A [hidden configuration option](Preferences#hidden-configuration-option).
 
 `defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true`

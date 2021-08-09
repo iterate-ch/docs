@@ -3,7 +3,7 @@ Opening Connections
 
 # Supported protocols
 
-All major server and cloud storage [protocols]() are supported to connect to just about any server you want.
+All major server and cloud storage [protocols](../Protocols/index) are supported to connect to just about any server you want.
 
 # Toolbar button
 
@@ -16,7 +16,7 @@ Click the *New COnnection* toolbar button or *File â†’ Open Connection.. (mac `â
 
 # Quick Connect
 
-Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](Bookmarks) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../CLI/index#URI) formats for input.
+Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](Bookmarks) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../CLI/index#uri) formats for input.
 
 ```{image} _images/Quick_Connect.png
 :alt: Send Command
@@ -57,7 +57,7 @@ Double-click a Cyberduck `.duck` bookmark file in the *Finder.app*.
 
 ## Internet Location File
 
-Double-click an *Internet Location File* in the *Finder.app*. Cyberduck must be configured as the [default protocol handler](Connection#Defaultprotocolhandler) for the given protocol of the URL.
+Double-click an *Internet Location File* in the *Finder.app*. Cyberduck must be configured as the [default protocol handler](Connection#default-protocol-handler) for the given protocol of the URL.
 
 ## Use [Spotlight](Spotlight)
 
@@ -105,9 +105,9 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 
 # Transcript
 
-Refer to [Provide log output](FAQ#Providelogoutput).
+Refer to [Provide log output](Support#logging-output).
 
-# Proxy COnfiguration
+# Proxy Configuration
 
 The following proxies are supported:
 
@@ -166,17 +166,17 @@ Search for and save password for connections.
 
 ## Prefer IPv6 adresses of DNS lookups
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions).
+A [hidden configuration option](Preferences#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck connection.dns.ipv6 true`
 
 ## Disable Bonjour support
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions).
+A [hidden configuration option](Preferences#hidden-configuration-options).
 
 ## Disable Bonjour notifications in Notification Center and Sytem Tray
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions). By default, the limit is set to allow not more than `30` notifications per minute.
+A [hidden configuration option](Preferences#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 
 `defaults write ch.sudo.cyberduck rendezvous.notification.limit 0`
 
@@ -203,7 +203,7 @@ This also works when working in *Terminal.app*. Type open `sftp://host` to open 
 
 ## Installation
 
-Double-click the connection profile file (`.cyberduckprofile`) to open and register the profile. When using the [CLI](../CLI/index) refer to the [documentation](../CLI/index#ApplicationSupportDirectory).
+Double-click the connection profile file (`.cyberduckprofile`) to open and register the profile. When using the [CLI](../CLI/index) refer to the [documentation](../CLI/index#application-support-directory).
 
 # Connection Profiles
 

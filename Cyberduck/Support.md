@@ -97,7 +97,7 @@ Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`.
 
 
 **Debug Log**<br/>
-Debug logging can be enabled with a [hidden setting](Preferences#Hiddenconfigurationoptions). As there is no user interface for this yet you need to add the setting manually. If not existing yet you have to create the file [AppData](FAQ#Preferencesandapplicationsupportfileslocation)`\Cyberduck\default.properties` and then add the property as follows:
+Debug logging can be enabled with a [hidden setting](Preferences#hidden-configuration-options). As there is no user interface for this yet you need to add the setting manually. If not existing yet you have to create the file [AppData](FAQ#preferences-and-application-support-files-location)`\Cyberduck\default.properties` and then add the property as follows:
 
 `logging=debug`
 
