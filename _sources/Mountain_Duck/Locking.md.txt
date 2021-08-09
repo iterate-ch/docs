@@ -13,7 +13,7 @@ File locking is natively supported for the following protocols:
 - [WebDAV](../Protocols/WebDAV/index)
 
 ```{note}
-Some WebDAV implementations including [ownCloud]() and [NextCloud]() may not support locing documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
+Some WebDAV implementations including [NextCloud & ownCloud](../Protocols/WebDAV/Nextcloud) may not support locing documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
 ```
 
 Files opend from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.

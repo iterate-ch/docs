@@ -51,7 +51,7 @@ Select *Always use default editor* in *Preferences → Editor* if you always wan
 
 ## Disable upload of temporary file on save
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions).
+A [hidden configuration option](Preferences#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck editor.upload.temporary false`
 

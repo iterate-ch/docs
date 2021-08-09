@@ -301,7 +301,7 @@
 <h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="transfers-general-browser-connection-for-file-transfers">
 <h2>Transfers → General → Browser connection for file transfers<a class="headerlink" href="#transfers-general-browser-connection-for-file-transfers" title="Permalink to this headline">¶</a></h2>
-<p>If your server only allows one single connection to be opened for a given user, you’ll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to <em>Use the browser connection</em> or to a <em>Open a new connection</em> for file transfers in the <a class="reference external" href="Bookmarks#EditBookmark">bookmark</a> setting. The default setting is configurable in the <em>Transfers</em> tab of <a class="reference internal" href="Preferences.html"><span class="doc std std-doc">Preferences</span></a>.</p>
+<p>If your server only allows one single connection to be opened for a given user, you’ll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to <em>Use the browser connection</em> or to a <em>Open a new connection</em> for file transfers in the <a class="reference external" href="Bookmarks#edit-bookmark">bookmark</a> setting. The default setting is configurable in the <em>Transfers</em> tab of <a class="reference internal" href="Preferences.html"><span class="doc std std-doc">Preferences</span></a>.</p>
 </div>
 <div class="section" id="transfers-general-downloads-uploads-existing-files">
 <h2>Transfers → General → Downloads/Uploads → Existing Files<a class="headerlink" href="#transfers-general-downloads-uploads-existing-files" title="Permalink to this headline">¶</a></h2>
@@ -361,17 +361,17 @@
 <h1>Hidden Preferences<a class="headerlink" href="#hidden-preferences" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="bandwith-throttle-options">
 <h2>Bandwith throttle options<a class="headerlink" href="#bandwith-throttle-options" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configuration option</a>. Edit the available options (in bytes).</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configuration option</a>. Edit the available options (in bytes).</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.bandwith.options</span> <span class="pre">102400,1073741824</span></code></p>
 </div>
 <div class="section" id="badge-dock-icon">
 <h2>Badge dock icon<a class="headerlink" href="#badge-dock-icon" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configuration option</a>. Add a badge with the number of currently running transfers to the dock icon.</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configuration option</a>. Add a badge with the number of currently running transfers to the dock icon.</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.dock.badge</span> <span class="pre">true</span></code></p>
 </div>
 <div class="section" id="prioritize-certain-files">
 <h2>Prioritize certain files<a class="headerlink" href="#prioritize-certain-files" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configuration option</a>. Use <code class="docutils literal notranslate"><span class="pre">queue.upload.priority.regex</span></code> and <code class="docutils literal notranslate"><span class="pre">queue.download.priority.regex</span></code> to determine order. For example:</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configuration option</a>. Use <code class="docutils literal notranslate"><span class="pre">queue.upload.priority.regex</span></code> and <code class="docutils literal notranslate"><span class="pre">queue.download.priority.regex</span></code> to determine order. For example:</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.upload.priority.regex</span> <span class="pre">&quot;.*\.html&quot;</span></code></p>
 </div>
 </div>

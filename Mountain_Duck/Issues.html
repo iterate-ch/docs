@@ -254,11 +254,11 @@
 </div>
 <div class="section" id="changes-from-server-not-immediately-visible">
 <h2>Changes from server not immediately visible<a class="headerlink" href="#changes-from-server-not-immediately-visible" title="Permalink to this headline">¶</a></h2>
-<p>The directory listing in <em>Finder.app</em> or <em>File Explorer</em> may become out of date when another application is addin , removing, or modifying files on the server. You can force <em>File Explorer</em> to refresh the directory listing with <code class="docutils literal notranslate"><span class="pre">F5</span></code>. On the Mac, choose <em>Reload</em> from the <a class="reference external" href="index#FinderExtensionWindowsFileExplorerExtension"><em>Finder Extension</em></a> menu. Enable <em>Sync → Index files</em> in <em>Preferences</em> to look for remote file changes every 10 minutes.</p>
+<p>The directory listing in <em>Finder.app</em> or <em>File Explorer</em> may become out of date when another application is addin , removing, or modifying files on the server. You can force <em>File Explorer</em> to refresh the directory listing with <code class="docutils literal notranslate"><span class="pre">F5</span></code>. On the Mac, choose <em>Reload</em> from the <a class="reference external" href="index#finder-extension-windows-file-explorer-extension"><em>Finder Extension</em></a> menu. Enable <em>Sync → Index files</em> in <em>Preferences</em> to look for remote file changes every 10 minutes.</p>
 </div>
 <div class="section" id="cache-uses-a-lot-of-disk-space">
 <h2>Cache uses a lot of disk space<a class="headerlink" href="#cache-uses-a-lot-of-disk-space" title="Permalink to this headline">¶</a></h2>
-<p>The cache directory is located in <code class="docutils literal notranslate"><span class="pre">%LocalAppData%\Cyberduck\Cache</span></code> on Windows or in <code class="docutils literal notranslate"><span class="pre">~/Library/Group</span> <span class="pre">Containers/G69SCX94XU.duck/Library/Application</span> <span class="pre">Support/duck</span></code> on macOS by default. You can <a class="reference external" href="Preferences#SyncCacheLocation">choose another disk</a> for storage of files to be stored in the local cache. You can clear files cached on local disk with the <em>Delete on local disk</em> <a class="reference external" href="Sync#DeleteonLocalDisk">context menu</a> option.</p>
+<p>The cache directory is located in <code class="docutils literal notranslate"><span class="pre">%LocalAppData%\Cyberduck\Cache</span></code> on Windows or in <code class="docutils literal notranslate"><span class="pre">~/Library/Group</span> <span class="pre">Containers/G69SCX94XU.duck/Library/Application</span> <span class="pre">Support/duck</span></code> on macOS by default. You can <a class="reference external" href="Preferences#sync-cache-location">choose another disk</a> for storage of files to be stored in the local cache. You can clear files cached on local disk with the <em>Delete on local disk</em> <a class="reference external" href="Sync#delete-on-local-disk">context menu</a> option.</p>
 <a class="reference internal image-reference" href="../_images/Custom_Location_Sync_Cache.png"><img alt="Send Command" src="../_images/Custom_Location_Sync_Cache.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="missing-sync-status-icons">
@@ -277,7 +277,7 @@ When you have other applications installed that register a Finder Extension (mac
 <p>If none of those applications are in use, a Finder re-launch can make the badge icons appear again.</p>
 </div>
 </div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Windows</strong><br/>
-Windows has a limitation on the number of applications that can register for bagde icons in FIle Explorer. You will need to either uninstall other applications or edit your registry key <code class="docutils literal notranslate"><span class="pre">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers</span></code>.
+Windows has a limitation on the number of applications that can register for bagde icons in File Explorer. You will need to either uninstall other applications or edit your registry key <code class="docutils literal notranslate"><span class="pre">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers</span></code>.
 You can find this well documented by Microsoft at <a class="reference external" href="https://support.office.com/en-us/article/sync-icon-overlays-are-missing-from-onedrive-and-onedrive-for-business-b25070ab-2226-4ad8-b1fc-ae28cc44ecd2">Sync icon overlays are missing</a>.</p>
 </div></div>
 </div>
@@ -339,7 +339,7 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 <p>A list of known providers that fail to work with Mountain Duck due to interoperability issues.</p>
 <ul class="simple">
 <li><p><em>OwnCube:</em> Their deployment does not work and we discourage this product.</p></li>
-<li><p><em>Bitnami ownCloud:</em> PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to <a class="reference external" href="https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/">Disable PHP-FPM</a> and <a class="reference external" href="../Protocols/WebDAV/index#0bytefilesonWebDAVserver"></a>.</p></li>
+<li><p><em>Bitnami ownCloud:</em> PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to <a class="reference external" href="https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/">Disable PHP-FPM</a> and <a class="reference external" href="../Protocols/WebDAV/index#0-byte-files-on-webdav-server"></a>.</p></li>
 </ul>
 </div>
 <div class="section" id="third-party-software">

@@ -29,7 +29,7 @@ Right-click on the taskbar and select *Taskbar setting → Notification area →
 
 ## Auto start
 
-You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](Preference#General→LoginItem). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
+You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](Preference#general-login-item). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
 # Bookmarks
 
@@ -63,7 +63,7 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 ## Connect Mode
 
 - **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#Selectfilesandfolderstoalwayskeepoffline).
+- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#select-files-and-folders-to-always-keep-offline).
 
 ## Read-only volume
 
@@ -136,7 +136,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](Sync#Notifications)
+- [Sync Notifications](Sync#notifications)
 
 # Disconnect
 
@@ -182,20 +182,20 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 # Sync Options
 
 *Keep Offline on local disk* or *Delete on local disk* to manage caching status.
-Refer to [Sync Options](Sync#Selectfilesandfolderstoalwayskeepoffline)
+Refer to [Sync Options](Sync#select-files-and-folders-to-always-keep-offline)
 
 # Reload
 
 Changes from the server not immmediately visible. The directory listing in *Finder.app* may become out of date when another application is adding, removing, or modifying files on the server. Choose *Reload* from the *Finder Extension Menu*. On Windows, you can force *File Explorer* to refresh the directory listing with F5.
 
-Enable the *Index Files* option in [*Preferences → Sync*](Preferences#SyncIndexFiles) to allow new files on the remote storage to be detected periodically.
+Enable the *Index Files* option in [*Preferences → Sync*](Preferences#sync-index-files) to allow new files on the remote storage to be detected periodically.
 
 # Share
 
 - *Create Download Share:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Create Upload Share:* Create an URL to share with someone else to allow uploading files to the selected folder.
 
-Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../Cyberduck/Bookmarks#HTTPURL) and [temporary signed URLs in S3](../Protocols/S3/Index#PublicURLs).
+Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../Cyberduck/Bookmarks#http-url) and [temporary signed URLs in S3](../Protocols/S3/Index#public-urls).
 
 - *Copy URL*
 - *Open URL*

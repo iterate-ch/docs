@@ -32,7 +32,7 @@ Enable the Mountain Duck FInder Extension in *System Preferences → Extensions 
 ````{group-tab} Windows
 
 **Installer**<br/>
-[Download](https://mountainduck.io/changelog/) the *Mountain DUck Installer.exe* with administrator privilege to install Mountain Duck.
+[Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* with administrator privilege to install Mountain Duck.
 
 ![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
 

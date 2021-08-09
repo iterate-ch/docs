@@ -1,10 +1,10 @@
 Connection Profiles
 ===
 
-[Connection profiles](Connection#ConnectionProfiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
+[Connection profiles](Connection#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
-- [Third-Party S3 providers](../Protocols/S3/index#Third-PartyProviders)
-- [OpenStack Providers](../Protocols/OpenStack/index#Providers)
+- [Third-Party S3 providers](../Protocols/S3/index#third-party-providers)
+- [OpenStack Providers](../Protocols/OpenStack/index#providers)
 
 These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
 
@@ -39,7 +39,7 @@ The following properties can be defined in a connection profile:
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if clien certificate is onfigurable.
 - `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../Protocols/OpenStack/index) and [S3](../Protocols/S3/index) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
-- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../Protocols/S3/index#Creatingabucket) for [S3](../Protocols/S3/index) and [OpenStack Swift](../Protocols/OpenStack/SwiftStack) connections.
+- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../Protocols/S3/index#creating-a-bucket) for [S3](../Protocols/S3/index) and [OpenStack Swift](../Protocols/OpenStack/SwiftStack) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.

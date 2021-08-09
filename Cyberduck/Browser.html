@@ -131,7 +131,7 @@
 <li><a class="reference internal" href="#general-browser-save-workspace">General → Browser → Save Workspace</a></li>
 <li><a class="reference internal" href="#general-browser-open-new-browser-window-on-startup">General → Browser → Open new browser window on startup</a></li>
 <li><a class="reference internal" href="#browser-general-show-hidden-files">Browser → General → Show Hidden Files</a></li>
-<li><a class="reference internal" href="#browser-general-info-window-always-sshows-current-selection">Browser → General → Info window always sshows current selection</a></li>
+<li><a class="reference internal" href="#browser-general-info-window-always-shows-current-selection">Browser → General → Info window always shows current selection</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#hidden-preferences">Hidden Preferences</a><ul>
@@ -304,7 +304,7 @@
 </div>
 <div class="section" id="open-or-copy-http-url">
 <h2>Open or copy HTTP URL<a class="headerlink" href="#open-or-copy-http-url" title="Permalink to this headline">¶</a></h2>
-<p>See bookmark <a class="reference external" href="Bookmarks#HTTPURL">Web URL configuration</a> for HTTP URLs. You can select multiple files to open/copy all URLs.</p>
+<p>See bookmark <a class="reference external" href="Bookmarks#http-url">Web URL configuration</a> for HTTP URLs. You can select multiple files to open/copy all URLs.</p>
 <ul class="simple">
 <li><p><strong>Open Web URL:</strong> The <em>Web URL</em> can be found in the <em>File → Open URL</em> menu and as an optional toolbar item in the browser window. Use <em>View → Customize Toolbar…</em> to add the <em>Open in Browser</em> button to your default browser toolbar.</p></li>
 <li><p><strong>Copy Web URL:</strong> The <em>Web URL</em> can be found in the <em>Edit → Copy URl</em> menu.</p></li>
@@ -316,7 +316,7 @@
 </div>
 <div class="section" id="open-in-terminal">
 <h2>Open in Terminal<a class="headerlink" href="#open-in-terminal" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <a class="reference external" href="../Protocols/SFTP#OpeninTerminal">Open in Terminal</a>.</p>
+<p>Refer to <a class="reference external" href="../Protocols/SFTP#open-in-terminal">Open in Terminal</a>.</p>
 </div>
 <div class="section" id="print-browser-folder-listing">
 <h2>Print browser folder listing<a class="headerlink" href="#print-browser-folder-listing" title="Permalink to this headline">¶</a></h2>
@@ -330,7 +330,7 @@
 <a class="reference internal image-reference" href="../_images/readonlyfolderbadge.png"><img alt="Send Command" src="../_images/readonlyfolderbadge.png" style="width: 50px;" /></a>
 <p>Folder with read-only permissions. Uploading or editing files to this folder is not possible.</p>
 <a class="reference internal image-reference" href="../_images/dropfolderbadge.png"><img alt="Send Command" src="../_images/dropfolderbadge.png" style="width: 50px;" /></a>
-<p>Drop Folder where you can only upload files to bu are not allowed to view its content.</p>
+<p>Drop Folder where you can only upload files to but are not allowed to view its content.</p>
 </div>
 <div class="section" id="versions">
 <h2>Versions<a class="headerlink" href="#versions" title="Permalink to this headline">¶</a></h2>
@@ -355,11 +355,11 @@
 <h1>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="special-characters-such-as-umlaute">
 <h2>Special characters such as Umlaute<a class="headerlink" href="#special-characters-such-as-umlaute" title="Permalink to this headline">¶</a></h2>
-<p>If characters aren’t displayed correctly in the browser, try to change the character encoding used. See <em>View → Text Encoding</em> or edit the <a class="reference external" href="Bookmarks#EditBookmark">bookmark</a> <em>Encoding</em> setting. Try <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> (the default), <code class="docutils literal notranslate"><span class="pre">ISO-8859-1</span></code>, and <code class="docutils literal notranslate"><span class="pre">Windows-1252</span></code>.</p>
+<p>If characters aren’t displayed correctly in the browser, try to change the character encoding used. See <em>View → Text Encoding</em> or edit the <a class="reference external" href="Bookmarks#edit-bookmark">bookmark</a> <em>Encoding</em> setting. Try <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> (the default), <code class="docutils literal notranslate"><span class="pre">ISO-8859-1</span></code>, and <code class="docutils literal notranslate"><span class="pre">Windows-1252</span></code>.</p>
 </div>
 <div class="section" id="the-folder-size-isn-t-displayed-correctly">
 <h2>The folder size isn’t displayed correctly<a class="headerlink" href="#the-folder-size-isn-t-displayed-correctly" title="Permalink to this headline">¶</a></h2>
-<p>This is not the size of its content but the size of the folder itself. Use <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>)</em> to <a class="reference external" href="Info#Calculatefoldersize">calculate the size</a> of all contained files recursively.</p>
+<p>This is not the size of its content but the size of the folder itself. Use <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>)</em> to <a class="reference external" href="Info#calculate-folder-size">calculate the size</a> of all contained files recursively.</p>
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="preferences">
@@ -374,10 +374,10 @@
 </div>
 <div class="section" id="browser-general-show-hidden-files">
 <h2>Browser → General → Show Hidden Files<a class="headerlink" href="#browser-general-show-hidden-files" title="Permalink to this headline">¶</a></h2>
-<p>Display files in the browser that start with <code class="docutils literal notranslate"><span class="pre">.</span></code> and <a class="reference external" href="../Protocols/S3/index#Versions">previous revisions (S3)</a>. Use <em>View → Show Hidden Files</em> to toggle the mode of a current browser window.</p>
+<p>Display files in the browser that start with <code class="docutils literal notranslate"><span class="pre">.</span></code> and <a class="reference external" href="../Protocols/S3/index#versions">previous revisions (S3)</a>. Use <em>View → Show Hidden Files</em> to toggle the mode of a current browser window.</p>
 </div>
-<div class="section" id="browser-general-info-window-always-sshows-current-selection">
-<h2>Browser → General → Info window always sshows current selection<a class="headerlink" href="#browser-general-info-window-always-sshows-current-selection" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="browser-general-info-window-always-shows-current-selection">
+<h2>Browser → General → Info window always shows current selection<a class="headerlink" href="#browser-general-info-window-always-shows-current-selection" title="Permalink to this headline">¶</a></h2>
 <p>Use only one <em>Info</em> window which updates with the selection change in the browser. If unchecked, open multiple Info windows to compare files.</p>
 </div>
 </div>
@@ -385,12 +385,12 @@
 <h1>Hidden Preferences<a class="headerlink" href="#hidden-preferences" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="adjust-the-browser-font-size">
 <h2>Adjust the browser font size<a class="headerlink" href="#adjust-the-browser-font-size" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configurationi option</a>.</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configurationi option</a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">browser.font.size</span> <span class="pre">18</span></code></p>
 </div>
 <div class="section" id="duplicate-filename-format">
 <h2>Duplicate filename format<a class="headerlink" href="#duplicate-filename-format" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configurationi option</a>. Define a different format using</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configurationi option</a>. Define a different format using</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">browser.duplicate.format</span> <span class="pre">&quot;{0}</span> <span class="pre">({1}){2}&quot;</span></code></p>
 <p>where the plaseholders will be replaced with</p>
 <ul class="simple">
@@ -401,7 +401,7 @@
 </div>
 <div class="section" id="warning-before-renaming-or-moving-files">
 <h2>Warning before renaming or moving files<a class="headerlink" href="#warning-before-renaming-or-moving-files" title="Permalink to this headline">¶</a></h2>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configurationi option</a>. A confirmation is shown before renaming or moving files.</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configurationi option</a>. A confirmation is shown before renaming or moving files.</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">browser.move.confirm</span> <span class="pre">true</span></code></p>
 </div>
 </div>

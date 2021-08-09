@@ -70,7 +70,7 @@ The sync operation failed for the file.
 :width: 600px
 ```
 
-A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](Sync#SyncErrors).
+A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](Sync#sync-errors).
 
 ## Application display
 

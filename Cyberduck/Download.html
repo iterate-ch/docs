@@ -213,14 +213,14 @@
 <div class="note admonition">
 <p class="admonition-title">macOS only</p>
 <p>Downloaded files are flagged with the <code class="docutils literal notranslate"><span class="pre">com.apple.quarantine</span></code> attribute. The attributes associate basic information with the file, such as its type, when it was received, and the URL from which it came. When the Finder or any other program uses Launch Services to open a quarantined file, Launch Services inspects the file to see if it appears to be an application, script, or other executable file types. If so, the system displays an alert informing the user that the file is an application and asking for confirmation that it should be executed. The alert lets the user open the URL from which the file was downloaded, launch the program, or cancel. If the user proceeds to open the file, Launch Services removes the quarantine attributes from that file.</p>
-<p>A <a class="reference external" href="Preferences#Hiddenconfigurationoptions">hidden configuration option</a>.</p>
+<p>A <a class="reference external" href="Preferences#hidden-configuration-options">hidden configuration option</a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.download.quarantine</span> <span class="pre">false</span></code></p>
 <p>Files downloaded to edit do not have a quarantine flag set by default.</p>
 </div>
 </div>
 <div class="section" id="temporary-document-icon">
 <h2>Temporary document icon<a class="headerlink" href="#temporary-document-icon" title="Permalink to this headline">¶</a></h2>
-<p>Don’t change the document icon while downloading. A <a class="reference external" href="Preferences#Hiddenconfigurationoption">hidden configuration option</a>.</p>
+<p>Don’t change the document icon while downloading. A <a class="reference external" href="Preferences#hidden-configuration-option">hidden configuration option</a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">ch.sudo.cyberduck</span> <span class="pre">queue.download.icon.update</span> <span class="pre">false</span></code></p>
 </div>
 </div>
