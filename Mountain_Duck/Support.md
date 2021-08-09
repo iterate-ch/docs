@@ -22,7 +22,7 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 
 # Bug Reports and Feature Requests
 
-[Open a new ticket](mailto:support@mountainduck.io) to report bugs you experience or features you'd like to have added. Make sure to add a detailed description of the issue including the operating system, the used protocol, the used version of Mountain Duck, and the [connect mode](Preferences#SyncConnectMode).
+[Open a new ticket](mailto:support@mountainduck.io) to report bugs you experience or features you'd like to have added. Make sure to add a detailed description of the issue including the operating system, the used protocol, the used version of Mountain Duck, and the [connect mode](Preferences#sync-connect-mode).
 
 ## Logging Output
 

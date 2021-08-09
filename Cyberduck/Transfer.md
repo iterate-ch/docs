@@ -134,7 +134,7 @@ Skip transfer of files that already exist.
 
 ## Transfers → General → Browser connection for file transfers
 
-If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](Bookmarks#EditBookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](Preferences).
+If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](Bookmarks#edit-bookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](Preferences).
 
 ## Transfers → General → Downloads/Uploads → Existing Files
 
@@ -194,18 +194,18 @@ Enabling change of modification date slows down the transfer rate when uploading
 
 ## Bandwith throttle options
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions). Edit the available options (in bytes).
+A [hidden configuration option](Preferences#hidden-configuration-options). Edit the available options (in bytes).
 
 `defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824`
 
 ## Badge dock icon
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions). Add a badge with the number of currently running transfers to the dock icon.
+A [hidden configuration option](Preferences#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
 
 `defaults write ch.sudo.cyberduck queue.dock.badge true`
 
 ## Prioritize certain files
 
-A [hidden configuration option](Preferences#Hiddenconfigurationoptions). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
+A [hidden configuration option](Preferences#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
 
 `defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"`

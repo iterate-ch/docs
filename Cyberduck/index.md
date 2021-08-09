@@ -24,7 +24,7 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 - **[Info Windows](Info):** Edit access permissions and configure [CDN](../CDN/index) options
 - **QuickLook:** Preview files in the browser window
 - **Open Web URL:** Configuration steps to open HTTP URL of selected file
-- **[Create and expand ZIP/TAR Archives](../SFTP#CreateandexpandZIPTARArchives)**
+- **[Create and expand ZIP/TAR Archives](../SFTP#create-and-expand-zip-tar-archives)**
 - **[Send custom commands](Commands#SSHserver):** Send commands to a server not available in the graphical user interface.
 - **[Activity](Browser#Activity):** The activity window shows a list of all pending background tasks.
 

@@ -31,9 +31,9 @@ Change the permissions on a particular file or folder when connected to a [FTP](
 
 Edit access control list for fine grained user permissions when connected to [Amazon S3](../Protocols/S3/index), [Google Cloud Storage](../Protocols/Google_Cloud_Storage), or [Google Drive](../Protocols/Google_Drive).
 
-- [S3 ACLs](../Protocols/S3/index#AccessControlACL)
-- [Google Storage ACLs](../Protocols/Google_Cloud_Storage#ACLs)
-- [Google Drive Document Sharing](../Protocols/Google_Drive#Sharing)
+- [S3 ACLs](../Protocols/S3/index#access-control-acl)
+- [Google Storage ACLs](../Protocols/Google_Cloud_Storage#acls)
+- [Google Drive Document Sharing](../Protocols/Google_Drive#sharing)
 
 ```{image} _images/Access_Control_Lists.png
 :alt: Send Command
@@ -49,13 +49,13 @@ Manage [Amazon CloudFront](../CDN/CloudFront) and [Rackspace/Akamai](../CDN/Akam
 Setting specific to the [Amazon S3](../Protocols/S3/index) service.
 
 - The geographic location of the bucket.
-- [Publicly accessible URL](../Protocols/S3/index#Pre-signedtemporaryURLs) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
-- [Torrent URL](../Protocols/S3/index#BitTorrentURLs) to the file.
-- Enabling [access logs](../Protocols/S3/index#BucketAccessLogging) for the bucket.
-- Choose storage class ([Reduced Redundancy Storage (RRS)](../Protocols/S3/index#StorageClass)). Settings will be applied recursively if a folder is selected.
-- Configure [bucket versioning](../Protocols/S3/index#Versions).
-- Configure [Multi-Factor Authentication (MFA) Delete](../Protocols/S3/index#Multi-FactorAuthenticationMFADelete).
-- COnfigure [Transfer Acceleration](../Protocols/S3/index#TransferAcceleration).
+- [Publicly accessible URL](../Protocols/S3/index#pre-signed-temporary-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
+- [Torrent URL](../Protocols/S3/index#bit-torrent-urls) to the file.
+- Enabling [access logs](../Protocols/S3/index#bucket-access-logging) for the bucket.
+- Choose storage class ([Reduced Redundancy Storage (RRS)](../Protocols/S3/index#storage-class)). Settings will be applied recursively if a folder is selected.
+- Configure [bucket versioning](../Protocols/S3/index#versions).
+- Configure [Multi-Factor Authentication (MFA) Delete](../Protocols/S3/index#multi-factor-authentication-mfa-delete).
+- COnfigure [Transfer Acceleration](../Protocols/S3/index#transfer-acceleration).
 
 ```{image} _images/Amazon_S3.png
 :alt: Send Command

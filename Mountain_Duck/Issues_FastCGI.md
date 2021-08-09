@@ -3,7 +3,7 @@ Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI
 
 # Summary
 
-Using a client to upload files with [HTTP chunked transfer encoding]() to a server **with fastcgi/php-fmp enabled can lead to zero byte files**. Chunked transfer encoding is used when the content length is unknown at the time the transfer is started and no `Content-length` header can be set.
+Using a client to upload files with [HTTP chunked transfer encoding](https://en.wikipedia.org/wiki/Chunked_transfer_encoding) to a server **with fastcgi/php-fmp enabled can lead to zero byte files**. Chunked transfer encoding is used when the content length is unknown at the time the transfer is started and no `Content-length` header can be set.
 
 # Background
 

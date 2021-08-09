@@ -14,7 +14,7 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 
 - *Default:* Use setting from *Preferences*
 - *Online:* Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#Selectfilesandfolderstoalwayskeepoffline).
+- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#Select-files-and-folders-to-always-keep-offline).
 
 # Status of files
 
@@ -101,7 +101,7 @@ You can choose to make files and folders available offline in the context menu. 
 :width: 500px
 ```
 
-To reach the context menu right-click on a file or folder in File Explorer (Windows) or FInder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface#ContextMenuinFinderandWindowsFileExplorer).
+To reach the context menu right-click on a file or folder in File Explorer (Windows) or FInder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface#context-menu-in-finder-and-windows-file-explorer).
 
 ### Keep Offline
 
@@ -155,7 +155,7 @@ CHanges to files are uploaded in the background as soon as a connection is avail
 :alt: Send Command
 :width: 600px
 ```
-Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](Sync_History#SyncProgress).
+Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](Sync_History#sync-progress).
 
 ## Pause Sync
 
@@ -176,7 +176,7 @@ If a sync error cannot be solved using *Mountain Duck → Retry* because the ser
 
 # File History
 
-You can lookup the latest changes to files. Refer to [Recent Files](Sync_History#RecentFiles)
+You can lookup the latest changes to files. Refer to [Recent Files](Sync_History#recent-files)
 
 ## Notifications
 
@@ -189,7 +189,7 @@ You can lookup the latest changes to files. Refer to [Recent Files](Sync_History
 - **File Updated:** File changed on server since previously indexing a folder
 - **Sync Conflict:** Conflicting change in file lead to duplicate of file being created with previous content edited on server.
 
-Refer also to [Preferences → Notifications](Preferences#Notifications)
+Refer also to [Preferences → Notifications](Preferences#notifications)
 
 # Preferences
 

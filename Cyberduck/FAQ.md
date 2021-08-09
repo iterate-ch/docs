@@ -156,7 +156,7 @@ To get help with bugs, feature requests, or other issues please refer to the [su
 
 # Snapshot and Beta builds
 
-See [Preferences → Update](Preferences#Update).
+See [Preferences → Update](Preferences#update).
 
 # Incompartibilities
 
