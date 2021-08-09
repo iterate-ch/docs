@@ -123,7 +123,7 @@ Packages can also be found for [download](https://dist.duck.sh/).
 
 Run `--help` to get the option screen.
 
-URLs in arguments must be fully qualified. Paths can either denote a remote file ([ftps://user@example.net/resource](ftps://user@example.net/resource)) or folder ([ftps://user@example.net/directory/](ftps://user@example.net/directory/)) with a trailing slash. You can reference files relative to your home directory with /~([ftps://user@example.net/~/](ftps://user@example.net/~/)).
+URLs in arguments must be fully qualified. Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing slash. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
 
 ## Connection Profiles
 
@@ -236,7 +236,7 @@ Transfer files with multiple concurrent connections to a server.
 
 ## Cryptomator
 
-Access to your [Cryptomator](../Cryptomator) vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the vault if not found in the keychain.
+Access to your [Cryptomator](../Cryptomator/index) vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the vault if not found in the keychain.
 
 Use `--vault <path>` in conjunction with `--upload` to unlock a vault. This allows uploading into a subdirectory of a vault where the auto-detect feature does otherwise not work.
 

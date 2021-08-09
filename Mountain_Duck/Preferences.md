@@ -47,7 +47,7 @@ Allow buffering file contents in a temporary location which is only deleted when
 
 ## Connection → Locking → Lock Files
 
-Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](Locking)
+Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](Locking).
 
 # Sync
 

@@ -215,7 +215,7 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 A list of known providers that fail to work with Mountain Duck due to interoperability issues.
 
 - *OwnCube:* Their deployment does not work and we discourage this product.
-- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [Disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [](../Protocols/WebDAV/index#0-byte-files-on-webdav-server).
+- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [How to disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [0 byte files on WebDAV server](../Protocols/WebDAV/index#0-byte-files-on-webdav-server).
 
 ## Third party software
 
