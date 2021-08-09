@@ -5,7 +5,7 @@ You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mut
 
 # Providers
 
-Settings are specific to service providers. Use the provided [connection profiles](../../Cyberduck/Protocols#ConnectionProfiles).
+Settings are specific to service providers. Use the provided [connection profiles](../../Cyberduck/Protocols#connection-profiles).
 
 - [Nextcloud](Nextcloud)
 - [ownCloud](Nextcloud)
@@ -97,7 +97,7 @@ You can access publicly readable Subversion (SVN) repositories running behind `m
 
 ## Cannot Login With Special Characters in Credentials
 
-If your server requires the use of UTF-8 character set for authenticatio, set the [hidden configuration option](../../Cyberduck/Preferences#HiddenConfigurationOptions)
+If your server requires the use of UTF-8 character set for authenticatio, set the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options)
 
 	http.credentials.encoding=UTF-8
 
@@ -119,11 +119,11 @@ See also Cyberduck Issue #7908.
 
 ## Disable Expect: 100-continue
 
-The `Expect: 100-continue` to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the [hidden option](../../Cyberduck/Preferences#HiddenConfigurationOptions) `webdav.expect-continue` to `false`.
+The `Expect: 100-continue` to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the [hidden option](../../Cyberduck/Preferences#hidden-configuration-options) `webdav.expect-continue` to `false`.
 
 ## Socket Timeout With GZIP Content Encoding
 
-Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the [hidden option](../../Cyberduck/Preferences#HiddenconfigurationOptions) `http.compression.enable` to `false`.
+Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the [hidden option](../../Cyberduck/Preferences#hidden-configuration-options) `http.compression.enable` to `false`.
 
 ## Require Directive in Apache HTTPD
 

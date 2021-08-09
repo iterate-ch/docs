@@ -3,7 +3,7 @@ FTP & FTP-TLS
 
 # FTP Connect Mode
 
-Choose between an [Active (PORT) or Passive (PASV) connect mode](http://en.wikipedia.org/wiki/File_Transfer_Protocol#Connection_methods) per [bookmark](../Cyberduck/Bookmarks) or when opening a [new connection](../Cyberduck/Connection#ToolbarButton). The default setting can be set in the System Preferences in *Network → Advanced... → Proxies → Use Passive FTP Mode (PASV)*.
+Choose between an [Active (PORT) or Passive (PASV) connect mode](http://en.wikipedia.org/wiki/File_Transfer_Protocol#Connection_methods) per [bookmark](../Cyberduck/Bookmarks) or when opening a [new connection](../Cyberduck/Connection#toolbar-button). The default setting can be set in the System Preferences in *Network → Advanced... → Proxies → Use Passive FTP Mode (PASV)*.
 
 # Character Encoding
 
@@ -108,7 +108,7 @@ Applying Registry-files is not riskless and should be avoided if not necessary. 
 
 ## Maximum Number of Connections
 
-Many servers limit the number of allowed connections with an error message like `530 Sorry, the maximum number of clients (10) from your host are already connected.`. Because FTP is a stateful protocol it requires opening separate connections when transferring files in parallel. Refer to [limit the number of connections](../Cyberduck/Transfer#Connections) allowed for the file transfers.
+Many servers limit the number of allowed connections with an error message like `530 Sorry, the maximum number of clients (10) from your host are already connected.`. Because FTP is a stateful protocol it requires opening separate connections when transferring files in parallel. Refer to [limit the number of connections](../Cyberduck/Transfer#connections) allowed for the file transfers.
 
 ## Error Opening Data Socket
 
@@ -126,7 +126,7 @@ The error message `FTP Error: SITE not understood` or similar is displayed. The 
 
 Various options are available to adjust the usage of different directory listing commands (`LIST`, `STAT` and `MLSD`). Directory listings are requested using `STAT`, `MLSD`, `LIST -a` and `LIST` commands in that order. If a failure is detected (because the server may not support the command), the next option is tried. Because this can be fuzzy logic, it may still be that Cyberduck does not correctly fall back to a supported list command. You may then try to force the use of a given command.
 
-To disable `STAT` for directory listings, change the [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOption) as follows:
+To disable `STAT` for directory listings, change the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-option) as follows:
 
 	defaults write ch.sudo.cyberduck ftp.command.stat false
 

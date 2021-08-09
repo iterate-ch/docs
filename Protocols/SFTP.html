@@ -237,7 +237,7 @@
 <li><p><em>ProxyJump</em> to connect via SSH tunnel through bastion server. <strong>Cyberduck version 7.7 or later required.</strong></p></li>
 <li><p><em>PreferredAuthentications</em> to limit authentication methods tried to login. <strong>Cyberduck version 7.7.2 or later required.</strong></p></li>
 <li><p><em>IdentitiesOnly</em>. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. <strong>Cyberduck version 7.9.0 or later required.</strong></p></li>
-<li><p>A <a class="reference internal" href="../Cyberduck/Bookmarks.html"><span class="doc std std-doc">bookmark</span></a> will update its public key authentication setting from the IdentityFile configuration in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>. Also when opening a new <a class="reference external" href="../Cyberduck/Connection#ToolbarButton">connection</a> using <em>File → Open Connection…, IdentityFile</em> and <em>User</em> parameters in the OpenSSH user config file are auto completed.</p></li>
+<li><p>A <a class="reference internal" href="../Cyberduck/Bookmarks.html"><span class="doc std std-doc">bookmark</span></a> will update its public key authentication setting from the IdentityFile configuration in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>. Also when opening a new <a class="reference external" href="../Cyberduck/Connection#toolbar-button">connection</a> using <em>File → Open Connection…, IdentityFile</em> and <em>User</em> parameters in the OpenSSH user config file are auto completed.</p></li>
 </ul>
 <p>Example <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> configuration:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host myhostname
@@ -254,7 +254,7 @@
 </div>
 <div class="section" id="default-public-key-authentication-keys">
 <h3>Default Public Key Authentication Keys<a class="headerlink" href="#default-public-key-authentication-keys" title="Permalink to this headline">¶</a></h3>
-<p>You can enable the use of a default set of keys <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_rsa</span></code> and <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_dsa</span></code> (in this order) by setting the <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">ssh.authentication.publickey.default.enable</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p>You can enable the use of a default set of keys <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_rsa</span></code> and <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_dsa</span></code> (in this order) by setting the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">ssh.authentication.publickey.default.enable</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
 </pre></div>
 </div>
@@ -402,7 +402,7 @@ defaults delete ch.sudo.cyberduck terminal.command
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Disable WSL</strong></p>
-<p>There is a <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> for toggling additional SSH-terminal applications. Currently implemented are <code class="docutils literal notranslate"><span class="pre">ssh.exe</span></code> (OpenSSH built-in to Windows 10 since version 1709), <code class="docutils literal notranslate"><span class="pre">bash.exe</span></code> (using WSL and invoking <code class="docutils literal notranslate"><span class="pre">ssh</span></code> there) as well as PuTTY.</p>
+<p>There is a <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> for toggling additional SSH-terminal applications. Currently implemented are <code class="docutils literal notranslate"><span class="pre">ssh.exe</span></code> (OpenSSH built-in to Windows 10 since version 1709), <code class="docutils literal notranslate"><span class="pre">bash.exe</span></code> (using WSL and invoking <code class="docutils literal notranslate"><span class="pre">ssh</span></code> there) as well as PuTTY.</p>
 <ul class="simple">
 <li><p>Disabling OpenSSH: <code class="docutils literal notranslate"><span class="pre">terminal.openssh.enable=false</span></code></p></li>
 <li><p>Disabling WSL: <code class="docutils literal notranslate"><span class="pre">terminal.windowssubsystemlinux.enable=false</span></code></p></li>
@@ -411,7 +411,7 @@ defaults delete ch.sudo.cyberduck terminal.command
 <p>Use <em>View → Customize Toolbar…</em> to add the <em>Open in Putty</em> toolbar icon to your browser.</p>
 <p><img alt="Putty" src="../_images/putty.png" /></p>
 <p><strong>Location of the PuTTY installation:</strong><br/>
-By default, the executable <code class="docutils literal notranslate"><span class="pre">putty.exe</span></code> must be located in your user home folder. You can change the install location by editing the <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">terminal.command.ssh</span></code> to point to the path of the executable.</p>
+By default, the executable <code class="docutils literal notranslate"><span class="pre">putty.exe</span></code> must be located in your user home folder. You can change the install location by editing the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">terminal.command.ssh</span></code> to point to the path of the executable.</p>
 </div></div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="distribution-cdn">
@@ -526,7 +526,7 @@ By default, the executable <code class="docutils literal notranslate"><span clas
 <p>You can work around the issue using one of the following options:</p>
 <ul class="simple">
 <li><p>Set a default path you want to connect to within the bookmark Path option.</p></li>
-<li><p>Disable the feature within Mountain Duck by setting the <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOption">hidden property</a> <code class="docutils literal notranslate"><span class="pre">fs.quota.enable=false</span></code> in <em>%AppData%\Cyberduck\default.properties</em>. If the file doesn’t exist create it within <em>%AppData%\Cyberduck</em>.</p></li>
+<li><p>Disable the feature within Mountain Duck by setting the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-option">hidden property</a> <code class="docutils literal notranslate"><span class="pre">fs.quota.enable=false</span></code> in <em>%AppData%\Cyberduck\default.properties</em>. If the file doesn’t exist create it within <em>%AppData%\Cyberduck</em>.</p></li>
 </ul>
 </div>
 </div>

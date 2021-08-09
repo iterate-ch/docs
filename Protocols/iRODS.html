@@ -207,7 +207,7 @@
 </div>
 <div class="section" id="authentication-with-pam-scheme">
 <h3>Authentication With PAM Scheme<a class="headerlink" href="#authentication-with-pam-scheme" title="Permalink to this headline">¶</a></h3>
-<p>To authenticate with PAM, prefix the username with PAM:or set it in the <a class="reference external" href="index#ConnectionProfiles">connection profile</a> using as</p>
+<p>To authenticate with PAM, prefix the username with PAM:or set it in the <a class="reference external" href="index#connection-profiles">connection profile</a> using as</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;key&gt;Authorization&lt;/key&gt;
 &lt;string&gt;PAM&lt;/string&gt;
 </pre></div>
@@ -216,7 +216,7 @@
 </div>
 <div class="section" id="ressource-server">
 <h2>Ressource Server<a class="headerlink" href="#ressource-server" title="Permalink to this headline">¶</a></h2>
-<p>You can specify a non-default resource server in the Region key of the <a class="reference external" href="index#ConnectionProfiles">connection profile</a> using a colon-separated syntax (Issue #8721) such as</p>
+<p>You can specify a non-default resource server in the Region key of the <a class="reference external" href="index#connection-profiles">connection profile</a> using a colon-separated syntax (Issue #8721) such as</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;key&gt;Region&lt;/key&gt;
 &lt;string&gt;iplant:storageresourcename&lt;/string&gt;
 </pre></div>
@@ -227,7 +227,7 @@
 <h1>Transfers<a class="headerlink" href="#transfers" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="use-parallel-connections">
 <h2>Use Parallel Connections<a class="headerlink" href="#use-parallel-connections" title="Permalink to this headline">¶</a></h2>
-<p>If <a class="reference external" href="../Cyberduck/Transfer#Connections">multiple connections</a> are configured by default in <em>Preferences</em> or set in the bookmark options with <em>Transfer Files: Open multiple connections</em>, get and put transfers to the data store use parallel concurrent connections.</p>
+<p>If <a class="reference external" href="../Cyberduck/Transfer#connections">multiple connections</a> are configured by default in <em>Preferences</em> or set in the bookmark options with <em>Transfer Files: Open multiple connections</em>, get and put transfers to the data store use parallel concurrent connections.</p>
 <p><img alt="Open multiple connections" src="../_images/Use_parallel_transfer_option.png" /></p>
 <p>The number of parallel connections is controlled using the lower right stepper control in the <a class="reference internal" href="../Cyberduck/Transfer.html"><span class="doc std std-doc">Transfers</span></a> window.</p>
 <p><img alt="Limit Number of Transfers" src="../_images/Limit_Number_of_Transfers.png" /></p>

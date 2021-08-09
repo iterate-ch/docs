@@ -199,7 +199,7 @@
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="providers">
 <h1>Providers<a class="headerlink" href="#providers" title="Permalink to this headline">¶</a></h1>
-<p>Settings are specific to service providers. Use the provided <a class="reference external" href="../../Cyberduck/Protocols#ConnectionProfiles">connection profiles</a>.</p>
+<p>Settings are specific to service providers. Use the provided <a class="reference external" href="../../Cyberduck/Protocols#connection-profiles">connection profiles</a>.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="Nextcloud.html"><span class="doc std std-doc">Nextcloud</span></a></p></li>
 <li><p><a class="reference internal" href="Nextcloud.html"><span class="doc std std-doc">ownCloud</span></a></p></li>
@@ -281,7 +281,7 @@
 <h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="cannot-login-with-special-characters-in-credentials">
 <h2>Cannot Login With Special Characters in Credentials<a class="headerlink" href="#cannot-login-with-special-characters-in-credentials" title="Permalink to this headline">¶</a></h2>
-<p>If your server requires the use of UTF-8 character set for authenticatio, set the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a></p>
+<p>If your server requires the use of UTF-8 character set for authenticatio, set the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http.credentials.encoding=UTF-8
 </pre></div>
 </div>
@@ -302,11 +302,11 @@
 </div>
 <div class="section" id="disable-expect-100-continue">
 <h2>Disable Expect: 100-continue<a class="headerlink" href="#disable-expect-100-continue" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">Expect:</span> <span class="pre">100-continue</span></code> to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden option</a> <code class="docutils literal notranslate"><span class="pre">webdav.expect-continue</span></code> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Expect:</span> <span class="pre">100-continue</span></code> to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden option</a> <code class="docutils literal notranslate"><span class="pre">webdav.expect-continue</span></code> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </div>
 <div class="section" id="socket-timeout-with-gzip-content-encoding">
 <h2>Socket Timeout With GZIP Content Encoding<a class="headerlink" href="#socket-timeout-with-gzip-content-encoding" title="Permalink to this headline">¶</a></h2>
-<p>Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the <a class="reference external" href="../../Cyberduck/Preferences#HiddenconfigurationOptions">hidden option</a> <code class="docutils literal notranslate"><span class="pre">http.compression.enable</span></code> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden option</a> <code class="docutils literal notranslate"><span class="pre">http.compression.enable</span></code> to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </div>
 <div class="section" id="require-directive-in-apache-httpd">
 <h2>Require Directive in Apache HTTPD<a class="headerlink" href="#require-directive-in-apache-httpd" title="Permalink to this headline">¶</a></h2>

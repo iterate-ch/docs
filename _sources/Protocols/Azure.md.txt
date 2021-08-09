@@ -48,7 +48,7 @@ You can edit ACLs in *File → Info (`⌘I`) → Permissions*. To make objects i
 To create a new container in your account, browse to the root and choose *File → New Folder... (`⌘N`)*.
 
 # Blob Type
-Uploads are stored as append blob type by default. You can use the [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.
+Uploads are stored as append blob type by default. You can use the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.
 
 # Metadata
 
@@ -56,7 +56,7 @@ You can edit standard custom metadata. Choose *File → Info → Metadata* to ed
 
 ## Default Metadata
 
-Currently only possible using a [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for `Cache-Control` and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for `Cache-Control` and one named `Creator` you would set
 
 	defaults write ch.sudo.cyberduck azure.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"
 

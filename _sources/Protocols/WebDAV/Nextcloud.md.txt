@@ -55,7 +55,7 @@ With 2-factor authentication enabled, you will need to create an app password in
 
 # Share Files
 
-Create [public shares](../../Cyberduck/Share#NextCloudownCloud) for people who are not Nextcloud/ownCloud users using *File → Share…*.
+Create [public shares](../../Cyberduck/Share#nextcloud-owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…*.
 
 # Known Issues
 

@@ -435,7 +435,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <li><p><a class="reference internal" href="Filebase.html"><span class="doc std std-doc">Filebase</span></a></p></li>
 <li><p><a class="reference internal" href="Z1.html"><span class="doc std std-doc">Z1 Storage</span></a></p></li>
 <li><p><a class="reference internal" href="Pilvio.html"><span class="doc std std-doc">Pilvio</span></a></p></li>
-<li><p><a class="reference external" href="IDrive_Cloud#S3">IDrive® Cloud</a></p></li>
+<li><p><a class="reference external" href="IDrive_Cloud#s3">IDrive® Cloud</a></p></li>
 <li><p><a class="reference internal" href="EMC.html"><span class="doc std std-doc">EMC Elastic Cloud Storage</span></a></p></li>
 </ul>
 </div>
@@ -542,7 +542,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 </div>
 <div class="section" id="options">
 <h4>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h4>
-<p>You can set options with the following <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration options</a>.</p>
+<p>You can set options with the following <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration options</a>.</p>
 <p>Part size for multipart uploads</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s3.upload.multipart.size=10485760
 </pre></div>
@@ -557,7 +557,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="storage-class">
 <h1>Storage Class<a class="headerlink" href="#storage-class" title="Permalink to this headline">¶</a></h1>
-<p>You have the option to store files using the <em>Reduced Redundancy Storage (RRS)</em> by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in <em>Preferences (macOS <code class="docutils literal notranslate"><span class="pre">⌘,</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+,</span></code>) → S3</em> and <a class="reference external" href="../../Cyberduck/Info#AmazonS3Panel">edit the storage class</a> for already uploaded files using <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → S3</em>. Available storage classes are</p>
+<p>You have the option to store files using the <em>Reduced Redundancy Storage (RRS)</em> by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in <em>Preferences (macOS <code class="docutils literal notranslate"><span class="pre">⌘,</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Ctrl+,</span></code>) → S3</em> and <a class="reference external" href="../../Cyberduck/Info#amazon-s3-panel">edit the storage class</a> for already uploaded files using <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → S3</em>. Available storage classes are</p>
 <ul class="simple">
 <li><p>Regular Amazon S3 Storage</p></li>
 <li><p>Intelligent-Tiering</p></li>
@@ -581,7 +581,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <p>You can temporarily restore files from Glacier using <em>File → Restore</em>. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error T<em>he operation is not valid for the object’s storage class</em>.</p>
 <div class="section" id="glacier-retrieval-options">
 <h3>Glacier Retrieval Options<a class="headerlink" href="#glacier-retrieval-options" title="Permalink to this headline">¶</a></h3>
-<p>You can set retrieval options with the following <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration options</a>.</p>
+<p>You can set retrieval options with the following <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration options</a>.</p>
 <p>Sets Glacier retrieval tier at which the restore will be processed.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s3.glacier.restore.tier=Standard
 </pre></div>
@@ -609,7 +609,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <div class="section" id="all-users-group-grantee">
 <h2>All Users Group Grantee<a class="headerlink" href="#all-users-group-grantee" title="Permalink to this headline">¶</a></h2>
 <p>You must give the group grantee <code class="docutils literal notranslate"><span class="pre">http://acs.amazonaws.com/groups/global/AllUsers</span></code> read permissions for your objects to make them accessible using a regular web browser for everyone.</p>
-<p>If <a class="reference external" href="index#BucketAccessLogging">bucket logging</a> is enabled, the bucket ACL will have <code class="docutils literal notranslate"><span class="pre">READ_ACP</span></code> and <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> permissions for the group grantee <code class="docutils literal notranslate"><span class="pre">http://acs.amazonaws.com/groups/s3/LogDelivery</span></code>.</p>
+<p>If <a class="reference external" href="index#bucket-access-logging">bucket logging</a> is enabled, the bucket ACL will have <code class="docutils literal notranslate"><span class="pre">READ_ACP</span></code> and <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> permissions for the group grantee <code class="docutils literal notranslate"><span class="pre">http://acs.amazonaws.com/groups/s3/LogDelivery</span></code>.</p>
 </div>
 <div class="section" id="default-acls">
 <h2>Default ACLs<a class="headerlink" href="#default-acls" title="Permalink to this headline">¶</a></h2>
@@ -687,11 +687,11 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <div class="tex2jax_ignore mathjax_ignore section" id="public-urls">
 <h1>Public URLs<a class="headerlink" href="#public-urls" title="Permalink to this headline">¶</a></h1>
 <p>You can access all URLs (including from <a class="reference internal" href="../../CDN/CloudFront.html"><span class="doc std std-doc">CDN</span></a> configurations) from the menu <em>Edit → Copy URL and File → Open URL</em>.</p>
-<p><img alt="Copy URLs" src="../../_images/Copy_URLs1.png" /></p>
+<p><img alt="Copy URLs" src="../../_images/Copy_URLs2.png" /></p>
 <div class="section" id="pre-signed-temporary-urls">
 <h2>Pre-signed Temporary URLs<a class="headerlink" href="#pre-signed-temporary-urls" title="Permalink to this headline">¶</a></h2>
 <p>A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from <em>Edit → Copy URL→ Signed URL</em> or <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → S3</em>.</p>
-<p>There are pre-signed URLs that expire in one hour, 24 hours (using the preference <code class="docutils literal notranslate"><span class="pre">s3.url.expire.seconds</span></code>), a week, and a month. You can change the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden preference</a> <code class="docutils literal notranslate"><span class="pre">s3.url.expire.seconds</span></code> from the default <code class="docutils literal notranslate"><span class="pre">86400</span></code> (24 hours).</p>
+<p>There are pre-signed URLs that expire in one hour, 24 hours (using the preference <code class="docutils literal notranslate"><span class="pre">s3.url.expire.seconds</span></code>), a week, and a month. You can change the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden preference</a> <code class="docutils literal notranslate"><span class="pre">s3.url.expire.seconds</span></code> from the default <code class="docutils literal notranslate"><span class="pre">86400</span></code> (24 hours).</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>It is required that your AWS credentials are saved in keychain. Refer to <a class="reference external" href="../../Cyberduck/Connection#Passwords">Passwords</a>.</p>
@@ -712,10 +712,10 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="metadata">
 <h1>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h1>
-<p>You can edit standard HTTP headers and add <a class="reference external" href="../../Cyberduck/Info#MetadataHTTPHeaders">custom HTTP headers</a> to files to store <a class="reference external" href="http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html">metadata</a>. Choose <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → Metadata</em> to edit headers.</p>
+<p>You can edit standard HTTP headers and add <a class="reference external" href="../../Cyberduck/Info#metadata-http-headers">custom HTTP headers</a> to files to store <a class="reference external" href="http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html">metadata</a>. Choose <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → Metadata</em> to edit headers.</p>
 <div class="section" id="default-metadata">
 <h2>Default Metadata<a class="headerlink" href="#default-metadata" title="Permalink to this headline">¶</a></h2>
-<p>Currently only possible using a <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add an HTTP header for Cache-Control and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
+<p>Currently only possible using a <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add an HTTP header for Cache-Control and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s3.metadata.default=&quot;Cache-Control=public,max-age=86400 Creator=Cyberduck&quot;
 </pre></div>
 </div>
@@ -724,7 +724,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <h2>Cache Control Setting<a class="headerlink" href="#cache-control-setting" title="Permalink to this headline">¶</a></h2>
 <p>This option lets you control how long a client accessing objects from your S3 bucket will cache the content and thus lowering the number of access to your S3 storage. In conjunction with Amazon CloudFront, it controls the time an object stays in an edge location until it expires. After the object expires, CloudFront must go back to the origin server the next time that edge location needs to serve that object. By default, all objects automatically expire after 24 hours when no custom <code class="docutils literal notranslate"><span class="pre">Cache-Control</span></code> header is set.</p>
 <p>The default setting is <code class="docutils literal notranslate"><span class="pre">Cache-Control:</span> <span class="pre">public,max-age=2052000</span></code> when choosing to add a custom <code class="docutils literal notranslate"><span class="pre">Cache-Control</span></code> header in the <a class="reference internal" href="../../Cyberduck/Info.html"><span class="doc std std-doc">Info</span></a> panel which translates to a cache expiration of one month (one month in seconds equals more or less <code class="docutils literal notranslate"><span class="pre">60*60*24*30</span></code>).</p>
-<p>Use the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">s3.cache.seconds</span></code> to set a custom default value</p>
+<p>Use the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">s3.cache.seconds</span></code> to set a custom default value</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>s3.cache.seconds=2052000
 </pre></div>
 </div>
@@ -785,7 +785,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <p>To host a static website on S3, It is possible to define an Amazon S3 bucket as a <em>Website Endpoint</em>. The configuration in <em>File → Info (macOS <code class="docutils literal notranslate"><span class="pre">⌘I</span></code> Windows <code class="docutils literal notranslate"><span class="pre">Alt+Return</span></code>) → Distribution</em> allows you to enable website configuration. Choose <em>Website Configuration (HTTP)</em> from <em>Delivery Method</em> and define an index document name that is searched for and returned when requests are made to the root or the subfolder of your website.</p>
 <p>To access this website functionality, Amazon S3 exposes a new website endpoint for each region (US Standard, US West, EU, or Asia Pacific). For example, <code class="docutils literal notranslate"><span class="pre">s3-website-ap-southeast-1.amazonaws.com</span></code> is the endpoint for the Asia Pacific Region. The location is displayed in the <em>Where</em> field following the <em>Origin</em>.</p>
 <p><img alt="S3 Website Configuration" src="../../_images/S3_Website_Configuration.png" /></p>
-<p>To configure Amazon CloudFront for your website endpoints, refer to <a class="reference external" href="../../CDN/CloudFront#WebsiteConfigurationEndpointDistributionswithCloudFronCDN">Website Configuration Endpoint Distributions with CloudFront CDN</a>.</p>
+<p>To configure Amazon CloudFront for your website endpoints, refer to <a class="reference external" href="../../CDN/CloudFront#website-configuration-endpoint-distributions-with-cloudfront-cdn">Website Configuration Endpoint Distributions with CloudFront CDN</a>.</p>
 <div class="section" id="id4">
 <h2>References<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -798,7 +798,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="disable-use-of-virtual-host-style-requests">
 <h2>Disable use of Virtual Host Style Requests<a class="headerlink" href="#disable-use-of-virtual-host-style-requests" title="Permalink to this headline">¶</a></h2>
-<p>Set the <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden preference</a> <code class="docutils literal notranslate"><span class="pre">s3.bucket.virtualhost.disable</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection <a class="reference internal" href="../../Cyberduck/Profiles.html"><span class="doc std std-doc">profile</span></a> with the property set in <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p>
+<p>Set the <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden preference</a> <code class="docutils literal notranslate"><span class="pre">s3.bucket.virtualhost.disable</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection <a class="reference internal" href="../../Cyberduck/Profiles.html"><span class="doc std std-doc">profile</span></a> with the property set in <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p>
 <ul class="simple">
 <li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>S3 (Deprecated path style requests) profile</em> for preconfigured settings.</p></li>
 </ul>

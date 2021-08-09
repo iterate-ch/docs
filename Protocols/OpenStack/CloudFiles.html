@@ -234,7 +234,7 @@
 <p>You can enable <a class="reference internal" href="../../CDN/Akamai.html"><span class="doc std std-doc">Akamai CDN (Content Delivery Network) distribution</span></a> for a selected container using <em>File → Info → Distribution (CDN)</em>. Choose <em>Enable Access Logging</em> to save their raw CDN weblogs to your Cloud Files storage account.</p>
 <div class="section" id="logging">
 <h3>Logging<a class="headerlink" href="#logging" title="Permalink to this headline">¶</a></h3>
-<p>You can enable private container access logging to <code class="docutils literal notranslate"><span class="pre">.ACCESS_LOGS</span></code> by adding the metadata <code class="docutils literal notranslate"><span class="pre">X-Container-Meta-Access-Log-Delivery</span></code> name with a value of <code class="docutils literal notranslate"><span class="pre">true</span></code> to the container. Choose <em>File → Info → Metadata</em>. To enable access logs for CDN enabled, refer to <a class="reference external" href="../../CDN/Akamai#DistributionAccessLogging">distribution access logging</a>.</p>
+<p>You can enable private container access logging to <code class="docutils literal notranslate"><span class="pre">.ACCESS_LOGS</span></code> by adding the metadata <code class="docutils literal notranslate"><span class="pre">X-Container-Meta-Access-Log-Delivery</span></code> name with a value of <code class="docutils literal notranslate"><span class="pre">true</span></code> to the container. Choose <em>File → Info → Metadata</em>. To enable access logs for CDN enabled, refer to <a class="reference external" href="../../CDN/Akamai#distribution-access-logging">distribution access logging</a>.</p>
 </div>
 </div>
 <div class="section" id="public-urls">
@@ -244,11 +244,11 @@
 <p class="admonition-title">Note</p>
 <p>You must first open <em>File → Info → Distribution (CDN)</em> before these URLs are available.</p>
 </div>
-<p><img alt="Copy URLs" src="../../_images/Copy_URLs.png" /></p>
+<p><img alt="Copy URLs" src="../../_images/Copy_URLs1.png" /></p>
 </div>
 <div class="section" id="metadata">
 <h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
-<p>You can add <a class="reference external" href="../../Cyberduck/Info#MetadataHTTPHeaders">custom HTTP headers</a> to files to store metadata. Choose <em>File → Info → Metadata</em> to edit custom headers.</p>
+<p>You can add <a class="reference external" href="../../Cyberduck/Info#metadata-http-headers">custom HTTP headers</a> to files to store metadata. Choose <em>File → Info → Metadata</em> to edit custom headers.</p>
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="limitations">
@@ -258,7 +258,7 @@
 </ul>
 <div class="section" id="default-metadata">
 <h2>Default metadata<a class="headerlink" href="#default-metadata" title="Permalink to this headline">¶</a></h2>
-<p>Currently only possible using a <a class="reference external" href="../../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add a HTTP header for Cache-Control and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
+<p>Currently only possible using a <a class="reference external" href="../../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add a HTTP header for Cache-Control and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck openstack.metadata.default &quot;Cache-Control=public,max-age=86400 Creator=Cyberduck&quot;
 </pre></div>
 </div>

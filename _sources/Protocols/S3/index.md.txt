@@ -168,7 +168,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Filebase](Filebase)
 - [Z1 Storage](Z1)
 - [Pilvio](Pilvio)
-- [IDrive® Cloud](IDrive_Cloud#S3)
+- [IDrive® Cloud](IDrive_Cloud#s3)
 - [EMC Elastic Cloud Storage](EMC)
 
 # File System
@@ -274,7 +274,7 @@ You can view unfinished multipart uploads in the browser by choosing *View → S
 
 #### Options
 
-You can set options with the following [hidden configuration options](../../Cyberduck/Preferences#HiddenConfigurationOptions).
+You can set options with the following [hidden configuration options](../../Cyberduck/Preferences#hidden-configuration-options).
 
 Part size for multipart uploads
 
@@ -286,7 +286,7 @@ Threshold to use multipart uploads is set to 100MB by default
 
 # Storage Class
 
-You have the option to store files using the *Reduced Redundancy Storage (RRS)* by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3* and [edit the storage class](../../Cyberduck/Info#AmazonS3Panel) for already uploaded files using *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
+You have the option to store files using the *Reduced Redundancy Storage (RRS)* by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3* and [edit the storage class](../../Cyberduck/Info#amazon-s3-panel) for already uploaded files using *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
 
 - Regular Amazon S3 Storage
 - Intelligent-Tiering
@@ -312,7 +312,7 @@ You can temporarily restore files from Glacier using *File → Restore*. The fil
 
 ### Glacier Retrieval Options
 
-You can set retrieval options with the following [hidden configuration options](../../Cyberduck/Preferences#HiddenConfigurationOptions).
+You can set retrieval options with the following [hidden configuration options](../../Cyberduck/Preferences#hidden-configuration-options).
 
 Sets Glacier retrieval tier at which the restore will be processed.
 
@@ -342,7 +342,7 @@ If you enter an email address unknown to AWS, the error message `S3 Error Messag
 
 You must give the group grantee `http://acs.amazonaws.com/groups/global/AllUsers` read permissions for your objects to make them accessible using a regular web browser for everyone.
 
-If [bucket logging](index#BucketAccessLogging) is enabled, the bucket ACL will have `READ_ACP` and `WRITE` permissions for the group grantee `http://acs.amazonaws.com/groups/s3/LogDelivery`.
+If [bucket logging](index#bucket-access-logging) is enabled, the bucket ACL will have `READ_ACP` and `WRITE` permissions for the group grantee `http://acs.amazonaws.com/groups/s3/LogDelivery`.
 
 ## Default ACLs
 
@@ -379,7 +379,7 @@ You can access all URLs (including from [CDN](../../CDN/CloudFront) configuratio
 
 A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from *Edit → Copy URL→ Signed URL* or *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*.
 
-There are pre-signed URLs that expire in one hour, 24 hours (using the preference `s3.url.expire.seconds`), a week, and a month. You can change the [hidden preference](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.url.expire.seconds` from the default `86400` (24 hours).
+There are pre-signed URLs that expire in one hour, 24 hours (using the preference `s3.url.expire.seconds`), a week, and a month. You can change the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-options) `s3.url.expire.seconds` from the default `86400` (24 hours).
 
 ```{important}
 It is required that your AWS credentials are saved in keychain. Refer to [Passwords](../../Cyberduck/Connection#Passwords).
@@ -399,11 +399,11 @@ Use *File → Info (macOS `⌘I` Window `Alt+Return`) → S3* to copy the BitTor
 
 # Metadata
 
-You can edit standard HTTP headers and add [custom HTTP headers](../../Cyberduck/Info#MetadataHTTPHeaders) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
+You can edit standard HTTP headers and add [custom HTTP headers](../../Cyberduck/Info#metadata-http-headers) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
 
 ## Default Metadata
 
-Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#HiddenConfigurationOptions) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
 
 	s3.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
 
@@ -413,7 +413,7 @@ This option lets you control how long a client accessing objects from your S3 bu
 
 The default setting is `Cache-Control: public,max-age=2052000` when choosing to add a custom `Cache-Control` header in the [Info](../../Cyberduck/Info) panel which translates to a cache expiration of one month (one month in seconds equals more or less `60*60*24*30`).
 
-Use the [hidden configuration option](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.cache.seconds` to set a custom default value
+Use the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) `s3.cache.seconds` to set a custom default value
 
 	s3.cache.seconds=2052000
 
@@ -474,7 +474,7 @@ To access this website functionality, Amazon S3 exposes a new website endpoint f
 
 ![S3 Website Configuration](_images/S3_Website_Configuration.png)
 
-To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront#WebsiteConfigurationEndpointDistributionswithCloudFronCDN).
+To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront#website-configuration-endpoint-distributions-with-cloudfront-cdn).
 
 ## References
 
@@ -485,7 +485,7 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 ## Disable use of Virtual Host Style Requests
 
-Set the [hidden preference](../../Cyberduck/Preferences#HiddenConfigurationOptions) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles) with the property set in `Properties`.
+Set the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles) with the property set in `Properties`.
 
 - {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 

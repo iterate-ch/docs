@@ -69,19 +69,19 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [Cloud.ca Object Store](Cloud.ca)
 - [Memset Memstore Object Storage](Memset)
 - [Enter Cloud Suite](Enter_Cloud_Suite)
-- [Oracle Storage Cloud Service](../S3/Oracle_Cloud#OCIObjectStorageClassic)
+- [Oracle Storage Cloud Service](../S3/Oracle_Cloud#oci-object-storage-classic)
 - [Oktawave Cloud Storage](Oktawave)
 - [SwiftStack](SwiftStack)
 - [RunAbove](https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/)
 - [Cloud A](Cloud_A)
 - [AURO](AURO)
 - [OVH](OVH)
-- [HubiC (OVH)](HubiC)
+- [HubiC (OVH)](hubiC)
 - [Zetta.IO](Zetta.IO)
 - [Selectel Cloud Storage](Selectel)
 - [EMC Elastic Cloud Storage](EMC)
 - [Infomaniak](Infomaniak)
-- [IDrive® Cloud](../S3/IDrive_Cloud#OpenStackSwift)
+- [IDrive® Cloud](../S3/IDrive_Cloud#open-stack-swift)
 
 # Temporary URLs
 
@@ -103,7 +103,7 @@ You can CDN enable the container using *File → Info → Distribution (CDN)* if
 
 ## Large Upload Segment Size
 
-You can set the [hidden option](../../Cyberduck/Preferences#HiddenConfigurationOption) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue #9134).
+You can set the [hidden option](../../Cyberduck/Preferences#hidden-configuration-option) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue #9134).
 
 # Known Issues
 
@@ -111,7 +111,7 @@ You can set the [hidden option](../../Cyberduck/Preferences#HiddenConfigurationO
 
 ## Multiple OpenStack Swift containers in different regions with the same name
 
-Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../../Cyberduck/Profiles) limited to a single region as with [Rackspace Cloudfiles region profiles](CloudFiles#ProfilesforaSingleRegion).
+Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../../Cyberduck/Profiles) limited to a single region as with [Rackspace Cloudfiles region profiles](CloudFiles#profiles-for-a-single-region).
 
 ## In Finder.app, creating a new top-level folder in OpenStack Swift will not allow to rename it from `untitled folder`
 

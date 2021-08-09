@@ -100,7 +100,7 @@ If you want to have the SHA1 checksum set in the file info for the large file up
 
 ## Edit Bucket Type
 
-New buckets are private by default, meaning that you need a bucket authorization token to download the files. You can allow public access to files by opening the [ACL tab in the *Info* panel](<../Cyberduck/Info#AccessControlList(ACL)>) and choose *Everyone → Read*.
+New buckets are private by default, meaning that you need a bucket authorization token to download the files. You can allow public access to files by opening the [ACL tab in the *Info* panel](../Cyberduck/Info#access-control-list-acl) and choose *Everyone → Read*.
 
 ![Bucket ACL](_images/B2_Bucket_ACL.png)
 

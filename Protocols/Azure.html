@@ -236,14 +236,14 @@
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="blob-type">
 <h1>Blob Type<a class="headerlink" href="#blob-type" title="Permalink to this headline">¶</a></h1>
-<p>Uploads are stored as append blob type by default. You can use the <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">azure.upload.blobtype</span></code> which allows the values <code class="docutils literal notranslate"><span class="pre">BLOCK_BLOB</span></code>, <code class="docutils literal notranslate"><span class="pre">PAGE_BLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">APPEND_BLOB</span></code>.</p>
+<p>Uploads are stored as append blob type by default. You can use the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">azure.upload.blobtype</span></code> which allows the values <code class="docutils literal notranslate"><span class="pre">BLOCK_BLOB</span></code>, <code class="docutils literal notranslate"><span class="pre">PAGE_BLOB</span></code> and <code class="docutils literal notranslate"><span class="pre">APPEND_BLOB</span></code>.</p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="metadata">
 <h1>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h1>
 <p>You can edit standard custom metadata. Choose <em>File → Info → Metadata</em> to edit custom headers.</p>
 <div class="section" id="default-metadata">
 <h2>Default Metadata<a class="headerlink" href="#default-metadata" title="Permalink to this headline">¶</a></h2>
-<p>Currently only possible using a <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add an HTTP header for <code class="docutils literal notranslate"><span class="pre">Cache-Control</span></code> and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
+<p>Currently only possible using a <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with <code class="docutils literal notranslate"><span class="pre">=</span></code>. For example, if you want to add an HTTP header for <code class="docutils literal notranslate"><span class="pre">Cache-Control</span></code> and one named <code class="docutils literal notranslate"><span class="pre">Creator</span></code> you would set</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck azure.metadata.default &quot;Cache-Control=public,max-age=86400 Creator=Cyberduck&quot;
 </pre></div>
 </div>
