@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Command Line Interface (CLI) &mdash; Wikitest  documentation</title>
   
 
   
@@ -35,6 +35,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
+        <script src="../_static/tabs.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -89,7 +90,61 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Command Line Interface (CLI)</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#connection-profiles">Connection Profiles</a></li>
+<li><a class="reference internal" href="#uri">URI</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#generic-options">Generic options</a><ul>
+<li><a class="reference internal" href="#retry"><code class="docutils literal notranslate"><span class="pre">--retry</span></code></a></li>
+<li><a class="reference internal" href="#verbose"><code class="docutils literal notranslate"><span class="pre">--verbose</span></code></a></li>
+<li><a class="reference internal" href="#nokeychain"><code class="docutils literal notranslate"><span class="pre">--nokeychain</span></code></a></li>
+<li><a class="reference internal" href="#quiet"><code class="docutils literal notranslate"><span class="pre">--quiet</span></code></a></li>
+<li><a class="reference internal" href="#throttle"><code class="docutils literal notranslate"><span class="pre">--throttle</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#credentials">Credentials</a><ul>
+<li><a class="reference internal" href="#private-key">Private Key</a></li>
+<li><a class="reference internal" href="#tenant-name">Tenant Name</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#downloads-with-download">Downloads with <code class="docutils literal notranslate"><span class="pre">--download</span></code></a><ul>
+<li><a class="reference internal" href="#glob-pattern-support-for-selecting-files-to-transfer">Glob pattern support for selecting files to transfer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uploads-with-upload">Uploads with <code class="docutils literal notranslate"><span class="pre">--upload</span></code></a><ul>
+<li><a class="reference internal" href="#id1">Glob pattern support for selecting files to transfer</a></li>
+<li><a class="reference internal" href="#use-of">Use of <code class="docutils literal notranslate"><span class="pre">~</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#remote-directory-listing-with-list">Remote directory listing with <code class="docutils literal notranslate"><span class="pre">--list</span></code></a></li>
+<li><a class="reference internal" href="#edit-with-edit">Edit with <code class="docutils literal notranslate"><span class="pre">--edit</span></code></a></li>
+<li><a class="reference internal" href="#multiple-transfer-connections-with-parallel">Multiple transfer connections with <code class="docutils literal notranslate"><span class="pre">--parallel</span></code></a></li>
+<li><a class="reference internal" href="#cryptomator">Cryptomator</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#samples">Samples</a><ul>
+<li><a class="reference internal" href="#watching-changes-in-directory-with-fswatch-and-upload">Watching changes in directory with <code class="docutils literal notranslate"><span class="pre">fswatch</span></code> and upload</a></li>
+<li><a class="reference internal" href="#upload-build-artifacts-from-continuous-integration-jenkins-to-cdn">Upload build artifacts from continuous integration (Jenkins) to CDN</a></li>
+<li><a class="reference internal" href="#upload-files-matching-glob-pattern-to-windows-azure">Upload files matching glob pattern to Windows Azure</a></li>
+<li><a class="reference internal" href="#download-files-matching-glob-pattern-from-ftp">Download files matching glob pattern from FTP</a></li>
+<li><a class="reference internal" href="#download-file-from-amazon-s3-public-bucket">Download file from Amazon S3 public bucket</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#application-support-directory">Application Support Directory</a><ul>
+<li><a class="reference internal" href="#profiles">Profiles</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#preferences">Preferences</a></li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#slow-execution-due-to-low-entropy-in-dev-random">Slow execution due to low entropy in /dev/random</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#thirdparty-references">Thirdparty References</a></li>
 </ul>
 </div>
             
@@ -138,7 +193,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Command Line Interface (CLI)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +212,351 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="command-line-interface-cli">
+<h1>Command Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://duck.sh/">Cyberduck with a command-line interface (CLI)</a> is available for Mac, Windows &amp; Linux. It is installed as <code class="docutils literal notranslate"><span class="pre">duck</span></code>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button><button aria-controls="panel-0-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-0-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Homebrew</strong><br/>
+Available as a <a class="reference external" href="http://brew.sh/">Homebrew</a> package. Use
+<code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">duck</span></code>
+to install.</p>
+<p><strong>MacPorts</strong><br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The port is maintained by a third party. Use
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">port</span> <span class="pre">install</span> <span class="pre">duck</span></code>
+to install.</p>
+</div>
+<p><strong>Snapshot Builds</strong><br/>
+<code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">iterate-ch/cyberduck/duck</span></code></p>
+<p><strong>Package</strong><br/>
+<a class="reference external" href="https://dist.duck.sh">Download</a> the latest installer package.</p>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Chocolatey</strong><br/>
+Available as a <a class="reference external" href="https://chocolatey.org">Chocolatey</a> package. Use
+<code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">duck</span></code>
+to install.</p>
+<p><strong>MSI Installer</strong><br/>
+<a class="reference external" href="https://dist.duck.sh">Download</a> the latest setup.</p>
+<p><strong>Snapshot Builds</strong><br/>
+Not currently available.</p>
+<a class="reference internal image-reference" href="../_images/CLI_Setup.png"><img alt="Send Command" src="../_images/CLI_Setup.png" style="width: 500px;" /></a>
+</div><div aria-labelledby="tab-0-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p><strong>RPM Package Repository</strong><br/>
+To add the <code class="docutils literal notranslate"><span class="pre">duck</span></code> repository to your system you need to put a file <code class="docutils literal notranslate"><span class="pre">duck.repo</span></code> with the following content into <code class="docutils literal notranslate"><span class="pre">/etc/yum.repos.d/</span></code>.</p>
+<p><strong>Snapshot Builds</strong><br/>
+Copy and paste</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;[duck-nightly]</span><span class="se">\n\</span>
+<span class="s2">name=duck-nightly</span><span class="se">\n\</span>
+<span class="s2">baseurl=https://repo.cyberduck.io/nightly/\$basearch/</span><span class="se">\n\</span>
+<span class="s2">enabled=1</span><span class="se">\n\</span>
+<span class="s2">gpgcheck=0&quot;</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">yum</span><span class="o">.</span><span class="n">repos</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">duck</span><span class="o">-</span><span class="n">snapshot</span><span class="o">.</span><span class="n">repo</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
+</pre></div>
+</div>
+<p>to add the configuration.</p>
+<p><strong>Stable Builds</strong><br/></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;[duck-stable]</span><span class="se">\n\</span>
+<span class="s2">name=duck-stable</span><span class="se">\n\</span>
+<span class="s2">baseurl=https://repo.cyberduck.io/stable/\$basearch/</span><span class="se">\n\</span>
+<span class="s2">enabled=1</span><span class="se">\n\</span>
+<span class="s2">gpgcheck=0&quot;</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">yum</span><span class="o">.</span><span class="n">repos</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">duck</span><span class="o">-</span><span class="n">stable</span><span class="o">.</span><span class="n">repo</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
+</pre></div>
+</div>
+<p>To install <em>Cyberduck CLI</em> use
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">duck</span></code></p>
+<p><strong>DEB Package Repository</strong><br/>
+Add the <code class="docutils literal notranslate"><span class="pre">duck</span></code> repositories to your <code class="docutils literal notranslate"><span class="pre">/etc/apt/sources.list</span></code> manually:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">repo</span><span class="o">.</span><span class="n">deb</span><span class="o">.</span><span class="n">cyberduck</span><span class="o">.</span><span class="n">io</span> <span class="n">nightly</span> <span class="n">main</span>
+<span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">repo</span><span class="o">.</span><span class="n">deb</span><span class="o">.</span><span class="n">cyberduck</span><span class="o">.</span><span class="n">io</span> <span class="n">stable</span> <span class="n">main</span>
+</pre></div>
+</div>
+<p>or using
+<code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">-e</span> <span class="pre">&quot;deb</span> <span class="pre">https://s3.amazonaws.com/repo.deb.cyberduck.io</span> <span class="pre">stable</span> <span class="pre">main&quot;</span> <span class="pre">|</span> <span class="pre">sudo</span> <span class="pre">tee</span> <span class="pre">/etc/apt/sources.list.d/cyberduck.list</span> <span class="pre">&gt;</span> <span class="pre">/dev/null</span></code></p>
+<p>You need to download the GPG public key from <code class="docutils literal notranslate"><span class="pre">keyserver.ubuntu.com</span></code> to verify the integrity of the packages:
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-key</span> <span class="pre">adv</span> <span class="pre">--keyserver</span> <span class="pre">keyserver.ubuntu.com</span> <span class="pre">--recv-keys</span> <span class="pre">FE7097963FEFBE72</span></code></p>
+<p>Synchronize the repository using
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span></code></p>
+<p>To install or upgrade <em>Cyberduck CLI</em> use
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">duck</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may get a conflict with another package named <code class="docutils literal notranslate"><span class="pre">duck</span></code>. As a workaround, install with a specific version number like <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">duck=6.7.1.28683</span></code>.</p>
+</div>
+<p><strong>Arch Linux Package</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aur.archlinux.org/packages/duck/">Package Details</a></p></li>
+</ul>
+<p><strong>Manual installation</strong><br/>
+Packages can also be found for <a class="reference external" href="https://dist.duck.sh/">download</a>.</p>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Usage:duck</span> <span class="pre">[options...]</span></code></p>
+<p>Run <code class="docutils literal notranslate"><span class="pre">--help</span></code> to get the option screen.</p>
+<p>URLs in arguments must be fully qualified. Paths can either denote a remote file (<span class="xref myst">ftps://user&#64;example.net/resource</span>) or folder (<span class="xref myst">ftps://user&#64;example.net/directory/</span>) with a trailing slash. You can reference files relative to your home directory with /~(<span class="xref myst">ftps://user&#64;example.net/~/</span>).</p>
+<div class="section" id="connection-profiles">
+<h2>Connection Profiles<a class="headerlink" href="#connection-profiles" title="Permalink to this headline">¶</a></h2>
+<p>You can install additional connection profiles in the <a class="reference external" href="index#Profiles">application support directory</a>. Use the <code class="docutils literal notranslate"><span class="pre">--profile</span></code> option to reference a <a class="reference external" href="../Protocols/index#ConnectionProfiles">connection profile</a> file to use not installed in the standard location.</p>
+</div>
+<div class="section" id="uri">
+<h2>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;url&gt;</span></code> argument for <code class="docutils literal notranslate"><span class="pre">--copy</span></code>, <code class="docutils literal notranslate"><span class="pre">--download</span></code>, <code class="docutils literal notranslate"><span class="pre">--upload</span></code>, and <code class="docutils literal notranslate"><span class="pre">--synchronize</span></code> must satisfy following rules:</p>
+<ul class="simple">
+<li><p>Each URL must start with a scheme and a colon (<code class="docutils literal notranslate"><span class="pre">https:</span></code>)(unless you specify a <code class="docutils literal notranslate"><span class="pre">--profile</span></code>)</p></li>
+<li><p>Depending on the type of protocol you are referencing different rules apply</p>
+<ul>
+<li><p>For all protocols where no default hostname is set (e.g. <code class="docutils literal notranslate"><span class="pre">WebDAV</span></code>, <code class="docutils literal notranslate"><span class="pre">SFTP</span></code>, and <code class="docutils literal notranslate"><span class="pre">FTPS</span></code>) you must use a fully qualified URI <code class="docutils literal notranslate"><span class="pre">https://user&#64;hostname/path</span></code></p></li>
+<li><p>For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or
+<em>Absolute paths:</em> <code class="docutils literal notranslate"><span class="pre">s3:/bucket/path</span></code>,
+<em>Relative paths:</em> <code class="docutils literal notranslate"><span class="pre">s3:user&#64;path</span></code> or <code class="docutils literal notranslate"><span class="pre">s3:user&#64;/path</span></code>.
+Omitting the first slash in a relative path uses the default home directory for this protocol.</p></li>
+<li><p>For all protocols where a default hostname is set and you are not allowed to change it (e.g. <code class="docutils literal notranslate"><span class="pre">OneDrive</span></code>, <code class="docutils literal notranslate"><span class="pre">Dropbox</span></code>, <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Drive</span></code>) you may use any combination of the above with the following rules: Fully Qualified URIs are parsed as relative paths. <code class="docutils literal notranslate"><span class="pre">onedrive://Some/Folder/</span></code> is parsed as <code class="docutils literal notranslate"><span class="pre">onedrive:Some/Folder</span></code>.</p></li>
+</ul>
+</li>
+<li><p>For all protocols where a default path is set and you are not allowed to change it (e.g. accessing a prebuilt <code class="docutils literal notranslate"><span class="pre">NextCloud</span></code> profile with a path set to <code class="docutils literal notranslate"><span class="pre">/remote.php/webdav</span></code>). You are allowed to change the path but it will be appended to the default path. Making nextcloud:/path really <code class="docutils literal notranslate"><span class="pre">nextcloud:/remote.php/webdav/path</span></code>.</p></li>
+</ul>
+<p>Spaces and other special-characters are not required to be percent-encoded (e.g. <code class="docutils literal notranslate"><span class="pre">%20</span></code> for space) as long as the path is quoted <code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--upload</span> <span class="pre">&quot;scheme://hostname/path</span> <span class="pre">with/spaces&quot;</span> <span class="pre">&quot;/Path/To/Local/File</span> <span class="pre">With/Spaces&quot;</span></code>).</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Protocol</p></th>
+<th class="head"><p>Fully Qualified URI required</p></th>
+<th class="head"><p>Absolute Path</p></th>
+<th class="head"><p>Relative Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Windows Azure Storage</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">azure:/&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">azure:&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Backblaze B2 Cloud Storage</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">b2:/&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">b2:&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>WebDAV (HTTP)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">dav://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>WebDAV (HTTPS)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">dav://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Dracoon (Email Address)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">dracoon://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Dropbox</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">dropbox:/&lt;path&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">dropbox:&lt;path&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Local</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">file:/&lt;path&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">file:&lt;path&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>FTP (File Transfer Protocol)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">ftp://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>FTPS (Explicit Auth TSL)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">ftps://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Google Drive</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">googledrive:/&lt;path&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">googledrive:&lt;path&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Google Cloud Storage</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">gs:/&lt;path&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">gs:&lt;path&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Microsoft OneDrive</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">onedrive:/&lt;path&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">onedrive:&lt;path&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Amazon S3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s3://&lt;hostname&gt;/&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s3:/&lt;container&gt;/&lt;key&gt;</span></code> <br/>(using <code class="docutils literal notranslate"><span class="pre">s3.amazonaws.com</span></code>)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s3:&lt;container&gt;/&lt;key&gt;</span></code> <br/>(using <code class="docutils literal notranslate"><span class="pre">s3.amazonaws.com</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>SFTP (SSH File Transfer <br/>Protocol)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">sftp://&lt;hostname&gt;/&lt;path&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Spectra S3 (HTTPS)</p></td>
+<td><p>Yes<br/>(<code class="docutils literal notranslate"><span class="pre">spectra://&lt;hostname&gt;/&lt;container&gt;/&lt;key&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Rackspace Cloud Files (US)</p></td>
+<td><p>No</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">rackspace:/&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">rackspace:&lt;container&gt;/&lt;key&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Swift (OpenStack Object<br/>Storage)</p></td>
+<td><p>Yes (<code class="docutils literal notranslate"><span class="pre">swift://&lt;hostname&gt;/&lt;container&gt;/&lt;key&gt;</span></code>)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>List all buckets in S3 with
+<code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--username</span> <span class="pre">&lt;Access</span> <span class="pre">Key</span> <span class="pre">ID&gt;</span> <span class="pre">--list</span> <span class="pre">s3:/</span></code></p></li>
+<li><p>List all objects in a S3 bucket with
+<code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--username</span> <span class="pre">&lt;Access</span> <span class="pre">Key</span> <span class="pre">ID&gt;</span> <span class="pre">--list</span> <span class="pre">s3:/&lt;bucketname&gt;/</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="generic-options">
+<h2>Generic options<a class="headerlink" href="#generic-options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="retry">
+<h3><code class="docutils literal notranslate"><span class="pre">--retry</span></code><a class="headerlink" href="#retry" title="Permalink to this headline">¶</a></h3>
+<p>Retry requests with I/O failures once per default. Useful on connnection timeout or latency issues.</p>
+</div>
+<div class="section" id="verbose">
+<h3><code class="docutils literal notranslate"><span class="pre">--verbose</span></code><a class="headerlink" href="#verbose" title="Permalink to this headline">¶</a></h3>
+<p>Print protocol transcript for requests and responses. This includes the HTTP headers.</p>
+</div>
+<div class="section" id="nokeychain">
+<h3><code class="docutils literal notranslate"><span class="pre">--nokeychain</span></code><a class="headerlink" href="#nokeychain" title="Permalink to this headline">¶</a></h3>
+<p>Do not save passwords in login keychain (macOS), credentials manager (Windows), or plain text password file (Linux).</p>
+</div>
+<div class="section" id="quiet">
+<h3><code class="docutils literal notranslate"><span class="pre">--quiet</span></code><a class="headerlink" href="#quiet" title="Permalink to this headline">¶</a></h3>
+<p>Suppress progress messages.</p>
+</div>
+<div class="section" id="throttle">
+<h3><code class="docutils literal notranslate"><span class="pre">--throttle</span></code><a class="headerlink" href="#throttle" title="Permalink to this headline">¶</a></h3>
+<p>Throttle bandwidth to the number of bytes per second.</p>
+</div>
+</div>
+<div class="section" id="credentials">
+<h2>Credentials<a class="headerlink" href="#credentials" title="Permalink to this headline">¶</a></h2>
+<p>You can pass username as part of the URI prepending to the hostname with <code class="docutils literal notranslate"><span class="pre">username&#64;host</span></code>. Alternatively use the <code class="docutils literal notranslate"><span class="pre">--username</span></code> option. You can give the password with the <code class="docutils literal notranslate"><span class="pre">--password</span></code> option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).</p>
+<div class="section" id="private-key">
+<h3>Private Key<a class="headerlink" href="#private-key" title="Permalink to this headline">¶</a></h3>
+<p>When connecting with SFTP you can give a file path to a private key with <code class="docutils literal notranslate"><span class="pre">--identity</span></code> for use with public key authentication.</p>
+</div>
+<div class="section" id="tenant-name">
+<h3>Tenant Name<a class="headerlink" href="#tenant-name" title="Permalink to this headline">¶</a></h3>
+<p>When connecting with <code class="docutils literal notranslate"><span class="pre">OpenStack</span> <span class="pre">Swift</span></code> you can set the tenant name (<em>OpenStack Identity Service, Keystone 2.0</em>) or project (<em>OpenStack Identity Service, Keystone 3.0</em>) with <code class="docutils literal notranslate"><span class="pre">--username</span> <span class="pre">&lt;tenant&gt;:&lt;user&gt;</span></code>.</p>
+</div>
+</div>
+<div class="section" id="downloads-with-download">
+<h2>Downloads with <code class="docutils literal notranslate"><span class="pre">--download</span></code><a class="headerlink" href="#downloads-with-download" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="glob-pattern-support-for-selecting-files-to-transfer">
+<h3>Glob pattern support for selecting files to transfer<a class="headerlink" href="#glob-pattern-support-for-selecting-files-to-transfer" title="Permalink to this headline">¶</a></h3>
+<p>You can transfer multiple files with a single command using a glob pattern for filename inclusion such as <code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--download</span> <span class="pre">ftps://&lt;hostname&gt;/directory/*.css</span></code>.</p>
+</div>
+</div>
+<div class="section" id="uploads-with-upload">
+<h2>Uploads with <code class="docutils literal notranslate"><span class="pre">--upload</span></code><a class="headerlink" href="#uploads-with-upload" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Glob pattern support for selecting files to transfer<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>If your shell supports glob expansion you can use a wildcard pattern to select files for upload like <code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--upload</span> <span class="pre">ftps://&lt;hostname&gt;/directory/</span> <span class="pre">~/*.jpg</span></code>.</p>
+</div>
+<div class="section" id="use-of">
+<h3>Use of <code class="docutils literal notranslate"><span class="pre">~</span></code><a class="headerlink" href="#use-of" title="Permalink to this headline">¶</a></h3>
+<p>You can use the tilde to abbreviate the remote path pointing to the remote home folder as in <code class="docutils literal notranslate"><span class="pre">sftp://duck.sh/~/</span></code>. It will be expanded when constructing absolute paths.</p>
+</div>
+</div>
+<div class="section" id="remote-directory-listing-with-list">
+<h2>Remote directory listing with <code class="docutils literal notranslate"><span class="pre">--list</span></code><a class="headerlink" href="#remote-directory-listing-with-list" title="Permalink to this headline">¶</a></h2>
+<p>Make sure to include a trailing ‘/’ in the path argument to denote a directory. Use the <code class="docutils literal notranslate"><span class="pre">-L</span></code> option to print permission mask and modification date in addition to the filename.</p>
+</div>
+<div class="section" id="edit-with-edit">
+<h2>Edit with <code class="docutils literal notranslate"><span class="pre">--edit</span></code><a class="headerlink" href="#edit-with-edit" title="Permalink to this headline">¶</a></h2>
+<p>You can edit remote files with your preferred editor on your local system using the <code class="docutils literal notranslate"><span class="pre">--edit</span></code> command. Use the optional <code class="docutils literal notranslate"><span class="pre">--application</span></code> option to specify the absolute path to the external editor you want to use.</p>
+</div>
+<div class="section" id="multiple-transfer-connections-with-parallel">
+<h2>Multiple transfer connections with <code class="docutils literal notranslate"><span class="pre">--parallel</span></code><a class="headerlink" href="#multiple-transfer-connections-with-parallel" title="Permalink to this headline">¶</a></h2>
+<p>Transfer files with multiple concurrent connections to a server.</p>
+</div>
+<div class="section" id="cryptomator">
+<h2>Cryptomator<a class="headerlink" href="#cryptomator" title="Permalink to this headline">¶</a></h2>
+<p>Access to your <a class="reference internal" href="../Cryptomator.html"><span class="doc std std-doc">Cryptomator</span></a> vaults from the command line. When accessing a vault using <code class="docutils literal notranslate"><span class="pre">--download</span></code>, <code class="docutils literal notranslate"><span class="pre">--list</span></code> or <code class="docutils literal notranslate"><span class="pre">--upload</span></code>, you will be prompted to provide the passphrase for the vault if not found in the keychain.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">--vault</span> <span class="pre">&lt;path&gt;</span></code> in conjunction with <code class="docutils literal notranslate"><span class="pre">--upload</span></code> to unlock a vault. This allows uploading into a subdirectory of a vault where the auto-detect feature does otherwise not work.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="samples">
+<h1>Samples<a class="headerlink" href="#samples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="watching-changes-in-directory-with-fswatch-and-upload">
+<h2>Watching changes in directory with <code class="docutils literal notranslate"><span class="pre">fswatch</span></code> and upload<a class="headerlink" href="#watching-changes-in-directory-with-fswatch-and-upload" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">fswatch</span></code> is a file change monitor; an application to watch for file system changes. Refer to their <a class="reference external" href="https://github.com/emcrisostomo/fswatch/wiki">documentation</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">fswatch</span> <span class="pre">-0</span> <span class="pre">~/Sites/mywebsite/</span> <span class="pre">|</span> <span class="pre">xargs</span> <span class="pre">-0</span> <span class="pre">-I</span> <span class="pre">{}</span> <span class="pre">-t</span> <span class="pre">sh</span> <span class="pre">-c</span> <span class="pre">'f=&quot;{}&quot;;</span> <span class="pre">duck</span> <span class="pre">--upload</span> <span class="pre">ftps://&lt;hostname&gt;/sandbox`basename</span> <span class="pre">&quot;${f}&quot;`</span> <span class="pre">&quot;${f}&quot;</span> <span class="pre">-existing</span> <span class="pre">overwrite'</span></code></p>
+</div>
+<div class="section" id="upload-build-artifacts-from-continuous-integration-jenkins-to-cdn">
+<h2>Upload build artifacts from continuous integration (Jenkins) to CDN<a class="headerlink" href="#upload-build-artifacts-from-continuous-integration-jenkins-to-cdn" title="Permalink to this headline">¶</a></h2>
+<p>use a post <a class="reference external" href="https://plugins.jenkins.io/postbuildscript/">build script action</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">${WORKSPACE};</span> <span class="pre">find</span> <span class="pre">build</span> <span class="pre">-name</span> <span class="pre">'*.tar'</span> <span class="pre">-print0</span> <span class="pre">|</span> <span class="pre">xargs</span> <span class="pre">-0</span> <span class="pre">-I</span> <span class="pre">{}</span> <span class="pre">-t</span> <span class="pre">sh</span> <span class="pre">-c</span> <span class="pre">'f=&quot;{}&quot;;</span> <span class="pre">duck</span> <span class="pre">--quiet</span> <span class="pre">--retry</span> <span class="pre">--existing</span> <span class="pre">skip</span> <span class="pre">--region</span> <span class="pre">DFW</span> <span class="pre">--upload</span> <span class="pre">rackspace://&lt;container&gt;/</span> <span class="pre">&quot;${f}&quot;'</span></code></p>
+</div>
+<div class="section" id="upload-files-matching-glob-pattern-to-windows-azure">
+<h2>Upload files matching glob pattern to Windows Azure<a class="headerlink" href="#upload-files-matching-glob-pattern-to-windows-azure" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--username</span> <span class="pre">kahy9boj3eix</span> <span class="pre">--upload</span> <span class="pre">azure://kahy9boj3eix.blob.core.windows.net/&lt;containername&gt;/</span> <span class="pre">*.zip</span></code></p>
+</div>
+<div class="section" id="download-files-matching-glob-pattern-from-ftp">
+<h2>Download files matching glob pattern from FTP<a class="headerlink" href="#download-files-matching-glob-pattern-from-ftp" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">-v</span> <span class="pre">--download</span> <span class="pre">ftp://mirror.switch.ch/mirror/apache/dist/httpd/*.gz</span> <span class="pre">~/Downloads</span></code></p>
+</div>
+<div class="section" id="download-file-from-amazon-s3-public-bucket">
+<h2>Download file from Amazon S3 public bucket<a class="headerlink" href="#download-file-from-amazon-s3-public-bucket" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--verbose</span> <span class="pre">--download</span> <span class="pre">s3://repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar</span> <span class="pre">~/Downloads/</span></code></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="application-support-directory">
+<h1>Application Support Directory<a class="headerlink" href="#application-support-directory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="profiles">
+<h2>Profiles<a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h2>
+<p>The directory location is printed with <code class="docutils literal notranslate"><span class="pre">--help</span></code> following the list of supported protocols.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button><button aria-controls="panel-1-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-1-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-1-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p>The support directory is <code class="docutils literal notranslate"><span class="pre">~/Library/Group</span> <span class="pre">Containers/G69SCX94XU.duck/Library/Application</span> <span class="pre">Support/duck/</span></code> on Mac. You can install third party <a class="reference internal" href="../Cyberduck/Profiles.html"><span class="doc std std-doc">profiles</span></a> in <code class="docutils literal notranslate"><span class="pre">~/Library/Group</span> <span class="pre">Containers/G69SCX94XU.duck/Library/Application</span> <span class="pre">Support/duck/Profiles</span></code>.</p>
+</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Install additional profiles in <code class="docutils literal notranslate"><span class="pre">%AppData%\Cyberduck\Profiles</span></code> on Windows.</p>
+</div><div aria-labelledby="tab-1-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>The support directory is <code class="docutils literal notranslate"><span class="pre">~/.duck/</span></code> on Linux. You can install third party <a class="reference internal" href="../Cyberduck/Profiles.html"><span class="doc std std-doc">profiles</span></a> in <code class="docutils literal notranslate"><span class="pre">~/.duck/profiles/</span></code>.</p>
+</div></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h1>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-2-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button><button aria-controls="panel-2-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-2-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-2-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p>You can override default <a class="reference external" href="../Cyberduck/Preferences#Hiddenconfigurationoptions">preferences</a> by setting environment variables in your shell.</p>
+<p><code class="docutils literal notranslate"><span class="pre">env</span> <span class="pre">&quot;property.name=value&quot;</span> <span class="pre">duck</span></code></p>
+</div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>You can override default <a class="reference external" href="../Cyberduck/Preferences#Hiddenconfigurationoptions">preferences</a> by setting environment variables in your shell.</p>
+<p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">&quot;property.name=value&quot;</span> <span class="pre">&amp;</span> <span class="pre">duck</span></code></p>
+</div><div aria-labelledby="tab-2-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>You can override default <a class="reference external" href="../Cyberduck/Preferences#Hiddenconfigurationoptions">preferences</a> by setting environment variables in your shell.</p>
+<p><code class="docutils literal notranslate"><span class="pre">env</span> <span class="pre">&quot;property.name=value&quot;</span> <span class="pre">duck</span></code></p>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="slow-execution-due-to-low-entropy-in-dev-random">
+<h2>Slow execution due to low entropy in /dev/random<a class="headerlink" href="#slow-execution-due-to-low-entropy-in-dev-random" title="Permalink to this headline">¶</a></h2>
+<p>As a workaround run <code class="docutils literal notranslate"><span class="pre">haveged</span></code>, a service to generate random numbers and feed Linux random device.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="thirdparty-references">
+<h1>Thirdparty References<a class="headerlink" href="#thirdparty-references" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4">Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage</a></p></li>
+</ul>
+</div>
+
 
            </div>
            
