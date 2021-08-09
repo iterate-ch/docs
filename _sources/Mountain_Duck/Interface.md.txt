@@ -247,7 +247,7 @@ Right-click on a file and choose *Info* to change permissions, ACLs, metadata, a
 
 # New Encrypted Vault...
 
-Create a new Cryptomator vault. [Read more](../Cryptomator) about client-side encryption.
+Create a new Cryptomator vault. [Read more](../Cryptomator/index) about client-side encryption.
 
 # Lock/Unlock Vault
 

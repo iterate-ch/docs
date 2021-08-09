@@ -61,7 +61,7 @@ A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperG
 **Example Configuration:**</br>
 The first time your content is served to a worldwide user (one in Tokyo, for example), a copy of the content is fetched from the origin server and stored in cache on the edge servers in that location. The next time the content is requested, it's pulled directly from the cached copy on the edge servers, dramatically reducing delivery time.
 
-![CDN Custom Origin Server](CDN_Custom_Origin_Server.png)
+![CDN Custom Origin Server](_images/CDN_Custom_Origin_Server.png)
 
 | Server | media.cyberduck.ch |	Hostname configured in bookmark to connect to. If this is different than what hostname CloudFront should fetch the origin content from, edit the hostname in the Web URL of the bookmark. |
 | CNAME | cdn.cyberduck.ch | Alias for hostname assigned by the CloudFront distribution |

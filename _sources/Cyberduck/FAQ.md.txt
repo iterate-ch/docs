@@ -137,7 +137,7 @@ Navigate to the *Library* folder using `⌘⇧-L` or use *Go → Go to Folder...
 ````
 ````{group-tab} Windows
 
-Bookmarks, history, [profiles](Profiles), and workspace information are saved i nthe application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
+Bookmarks, history, [profiles](Profiles), and workspace information are saved in the application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
 
 - `%AppData%\Cyberduck`
 

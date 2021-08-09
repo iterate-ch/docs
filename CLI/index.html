@@ -295,7 +295,7 @@ Packages can also be found for <a class="reference external" href="https://dist.
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">Usage:duck</span> <span class="pre">[options...]</span></code></p>
 <p>Run <code class="docutils literal notranslate"><span class="pre">--help</span></code> to get the option screen.</p>
-<p>URLs in arguments must be fully qualified. Paths can either denote a remote file (<span class="xref myst">ftps://user&#64;example.net/resource</span>) or folder (<span class="xref myst">ftps://user&#64;example.net/directory/</span>) with a trailing slash. You can reference files relative to your home directory with /~(<span class="xref myst">ftps://user&#64;example.net/~/</span>).</p>
+<p>URLs in arguments must be fully qualified. Paths can either denote a remote file <code class="docutils literal notranslate"><span class="pre">ftps://user&#64;example.net/resource</span></code> or folder <code class="docutils literal notranslate"><span class="pre">ftps://user&#64;example.net/directory/</span></code> with a trailing slash. You can reference files relative to your home directory with <code class="docutils literal notranslate"><span class="pre">/~ftps://user&#64;example.net/~/</span></code>.</p>
 <div class="section" id="connection-profiles">
 <h2>Connection Profiles<a class="headerlink" href="#connection-profiles" title="Permalink to this headline">¶</a></h2>
 <p>You can install additional connection profiles in the <a class="reference external" href="index#profiles">application support directory</a>. Use the <code class="docutils literal notranslate"><span class="pre">--profile</span></code> option to reference a <a class="reference external" href="../Protocols/index#connection-profiles">connection profile</a> file to use not installed in the standard location.</p>
@@ -491,7 +491,7 @@ Omitting the first slash in a relative path uses the default home directory for 
 </div>
 <div class="section" id="cryptomator">
 <h2>Cryptomator<a class="headerlink" href="#cryptomator" title="Permalink to this headline">¶</a></h2>
-<p>Access to your <span class="xref myst">Cryptomator</span> vaults from the command line. When accessing a vault using <code class="docutils literal notranslate"><span class="pre">--download</span></code>, <code class="docutils literal notranslate"><span class="pre">--list</span></code> or <code class="docutils literal notranslate"><span class="pre">--upload</span></code>, you will be prompted to provide the passphrase for the vault if not found in the keychain.</p>
+<p>Access to your <a class="reference internal" href="../Cryptomator/index.html"><span class="doc std std-doc">Cryptomator</span></a> vaults from the command line. When accessing a vault using <code class="docutils literal notranslate"><span class="pre">--download</span></code>, <code class="docutils literal notranslate"><span class="pre">--list</span></code> or <code class="docutils literal notranslate"><span class="pre">--upload</span></code>, you will be prompted to provide the passphrase for the vault if not found in the keychain.</p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">--vault</span> <span class="pre">&lt;path&gt;</span></code> in conjunction with <code class="docutils literal notranslate"><span class="pre">--upload</span></code> to unlock a vault. This allows uploading into a subdirectory of a vault where the auto-detect feature does otherwise not work.</p>
 </div>
 </div>

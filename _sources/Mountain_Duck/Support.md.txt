@@ -10,7 +10,7 @@ Inside the application support folder, the application saves files needed for th
 
 You can reach the application support folder by choosing `Go → Go to folder` within the *Finder* menu, copying the path below into the appearing window, and clicking on the *Open* button afterward.
 
-`~/Library/Group Containers/G69SCX94XU.duck/Library/Application SUpport/duck/`
+`~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/`
 
 ````
 ````{group-tab} Windows
