@@ -5,7 +5,7 @@ Cyberduck & Mountain Duck Help
 
 If you have a feature request or bug to report you can open a new ticket. [This page](Support) has all the information on how to collect relevant log files.
 
-# Cyberduck
+# [Cyberduck](Cyberduck/index)
 
 > Cyberduck is a libre server and cloud storage browser for Mac and Windows. With an easy-to-use interface, connect to servers, enterprise file sharing, and cloud storage.
 
