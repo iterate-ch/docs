@@ -76,7 +76,7 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [Cloud A](Cloud_A)
 - [AURO](AURO)
 - [OVH](OVH)
-- [HubiC (OVH)](hubiC)
+- [HubiC (OVH)](HubiC)
 - [Zetta.IO](Zetta.IO)
 - [Selectel Cloud Storage](Selectel)
 - [EMC Elastic Cloud Storage](EMC)

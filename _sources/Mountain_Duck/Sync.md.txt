@@ -115,12 +115,9 @@ To reach the context menu right-click on a file or folder in File Explorer (Wind
 Choosing this option won't prevent Mountain Duck from downloading there files and folders into the synchronization cache again.
 ```
 
-```{video} _videos/Keep_Offline.mp4
-:width: 500
-:height: 300
-```
-
-![Keep Offline](_videos/KeepOffline.mp4)
+<video width="800" height="450" controls>
+	<source src="../_static/videos_MD/KeepOffline.mp4" type="video/mp4" />
+</vidoe>
 
 
 # Sync Conflicts
