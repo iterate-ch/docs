@@ -3,7 +3,7 @@ Edit Files
 
 # How to edit a file in an external editor
 
-You can edit a file just as a local file by clicking the Edit toolbar button or by choosing *File → Edith With*. The file will be downloaded to a temporary directory and opened with the preferred editor. Set your preferred editor in *Preferences*. The file will be uploaded to the server every time you choose *File → Save* in the Editor application. The file is not changed on the server if you just close the document without saving it or if the content has not changed.
+You can edit a file just as a local file by clicking the Edit toolbar button or by choosing *File → Edit With*. The file will be downloaded to a temporary directory and opened with the preferred editor. Set your preferred editor in *Preferences*. The file will be uploaded to the server every time you choose *File → Save* in the Editor application. The file is not changed on the server if you just close the document without saving it or if the content has not changed.
 
 # Which editor for what files
 
