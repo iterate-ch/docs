@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Wikitest  documentation</title>
+  <title>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive &mdash; Wikitest  documentation</title>
   
 
   
@@ -89,7 +89,15 @@
             
             
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive</a></li>
+<li><a class="reference internal" href="#verification-issue">Verification Issue</a></li>
+<li><a class="reference internal" href="#register-client-id">Register Client ID</a></li>
+<li><a class="reference internal" href="#edit-custom-connection-profile">Edit Custom Connection Profile</a><ul>
+<li><a class="reference internal" href="#sample-google-drive-with-custom-oauth-client-id-connection-profile">Sample Google Drive with Custom OAuth Client ID Connection Profile</a></li>
+<li><a class="reference internal" href="#sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile">Sample Google Cloud Storage with Custom OAuth Client ID Connection Profile</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -138,7 +146,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,7 +165,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="custom-oatuh-2-0-client-id-for-google-cloud-storage-and-google-drive">
+<h1>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive<a class="headerlink" href="#custom-oatuh-2-0-client-id-for-google-cloud-storage-and-google-drive" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>To use OAuth 2.0 in your application, you need an OAuth 2.0 client ID, which your application uses when requesting an OAuth 2.0 access token.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="verification-issue">
+<h1>Verification Issue<a class="headerlink" href="#verification-issue" title="Permalink to this headline">¶</a></h1>
+<p>Login using OAuth is currently failing with the default OAuth Client ID application registration in Cyberduck. When attempting to allow access for Cyberduck to Google Drive, the following error is displayed.</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Sign in with Google temporarily disabled for this app. This app has not been verified yet by Google in order to use Google Sign In.</p>
+</div>
+<p>As a workaround, you can register your own OAuth Client ID to connect to <a class="reference internal" href="Protocols/Google_Drive.html"><span class="doc std std-doc">Google Drive</span></a>. For <a class="reference internal" href="Protocols/Google_Cloud_Storage.html"><span class="doc std std-doc">Google Storage</span></a> you can use <a class="reference external" href="Protocols/Google_Cloud_Storage#interoperable-access">Interoperable Access</a> as a workaround.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="register-client-id">
+<h1>Register Client ID<a class="headerlink" href="#register-client-id" title="Permalink to this headline">¶</a></h1>
+<p>Follow the steps in <a class="reference external" href="https://support.google.com/googleapi/answer/6158849?hl=en">Setting up OAuth 2.0</a>. From Credentials copy the Client ID and Client secret by choosing the action Edit OAuth Client.</p>
+<a class="reference internal image-reference" href="_images/Google_Create_OAuth_Client_ID.png"><img alt="Google Create OAuth Client ID" src="_images/Google_Create_OAuth_Client_ID.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/Google_Client_ID_and_client_secret.png"><img alt="Google Client ID and Client Secret" src="_images/Google_Client_ID_and_client_secret.png" style="width: 600px;" /></a>
+<p><em>Edit the OAuth Consent Screen</em> to add the scopes <em>Google Cloud Storage JSON API</em> <code class="docutils literal notranslate"><span class="pre">../auth/devstorage.read_write</span></code> and/or <em>Google Drive API</em> <code class="docutils literal notranslate"><span class="pre">../auth/drive</span></code>. You will first need to enable <em>Google Drive</em> in the Google API Library.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="edit-custom-connection-profile">
+<h1>Edit Custom Connection Profile<a class="headerlink" href="#edit-custom-connection-profile" title="Permalink to this headline">¶</a></h1>
+<p>Create a custom <a class="reference internal" href="Cyberduck/Profiles.html"><span class="doc std std-doc">connection profile</span></a> with the following properties.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID</span></code>. Override the registered application client id.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">Secret</span></code>. Override the registered application client secret.</p></li>
+</ul>
+<div class="section" id="sample-google-drive-with-custom-oauth-client-id-connection-profile">
+<h2>Sample Google Drive with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-drive-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="_downloads/687d82af6251f9487b16a5817b6500dd/Google Drive Custom OAuth Client ID.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Drive</span> <span class="pre">Custom</span> <span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID.cyberduckprofile</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile">
+<h2>Sample Google Cloud Storage with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="_downloads/6eab8e71e520b9cbb44e7a108496c799/Google Storage Custom OAuth Client ID.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Storage</span> <span class="pre">Custom</span> <span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID.cyberduckprofile</span></code></a></p></li>
+</ul>
+</div>
+</div>
+
 
            </div>
            
