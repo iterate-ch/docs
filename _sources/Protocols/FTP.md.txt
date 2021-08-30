@@ -1,6 +1,11 @@
 FTP & FTP-TLS
 ===
 
+```{image} _images/ftp.png
+:alt: Send Command
+:width: 128px
+```
+
 # FTP Connect Mode
 
 Choose between an [Active (PORT) or Passive (PASV) connect mode](http://en.wikipedia.org/wiki/File_Transfer_Protocol#Connection_methods) per [bookmark](../Cyberduck/Bookmarks) or when opening a [new connection](../Cyberduck/Connection#toolbar-button). The default setting can be set in the System Preferences in *Network → Advanced... → Proxies → Use Passive FTP Mode (PASV)*.
