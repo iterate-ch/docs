@@ -1,6 +1,11 @@
 Dropbox
 ===
 
+```{image} _images/dropbox.png
+:alt: Send Command
+:width: 128px
+```
+
 > Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer.
 
 ```{tip}

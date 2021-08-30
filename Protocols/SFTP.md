@@ -1,6 +1,11 @@
 SFTP
 ===
 
+```{image} _image/ftp.png
+:alt: Send Command
+:width: 128px
+```
+
 # Connecting
 
 If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.org/wiki/Secure_Shell_Protocol)), most probably `sftp-server` is also installed and configured and you can connect using [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).

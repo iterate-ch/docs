@@ -1,6 +1,11 @@
 Swift (OpenStack Object Storage)
 ===
 
+```{image} _images/swift.png
+:alt: Send Command
+:width: 128px
+```
+
 # Connecting
 
 Connect to a [Swift (OpenStack Object Storage)](http://docs.openstack.org/Swift/latest) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.

@@ -1,6 +1,11 @@
 Windows Azure Blob Storage
 ===
 
+```{image} _images/azure.png
+:alt: Send Command
+:width: 128px
+```
+
 > Massively scalable object storage for unstructured data
 
 # Connecting to Windows Azur Blob Storage

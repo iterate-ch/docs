@@ -1,6 +1,11 @@
 Amazon S3
 ===
 
+```{image} _images/s3.png
+:alt: Send Command
+:width: 128px
+```
+
 Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 buckets and files in a hierarchical way. For a short overview of Amazon S3, refer to the [Wikipedia article](http://en.wikipedia.org/wiki/Amazon_S3).
 
 # Connecting

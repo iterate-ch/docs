@@ -1,6 +1,11 @@
 Google Drive
 ===
 
+```{image} _images/googledrive.png
+:alt: Send Command
+:width: 128px
+```
+
 ```{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream*.
 ```

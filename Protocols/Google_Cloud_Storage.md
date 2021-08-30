@@ -1,6 +1,11 @@
 Google Cloud Storage
 ===
 
+```{image} _images/googlestorage.png
+:alt: Send Command
+:width: 128px
+```
+
 > [Google Cloud Storage](https://cloud.google.com/storage/docs) is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with [S3](S3/index).
 
 # Connecting
