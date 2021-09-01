@@ -49,7 +49,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': True,
-	'style_nav_header_background': '#5a5a5a'
+	'style_nav_header_background': '#5a5a5a',
+	'style_external_links': True
+
 }
 html_logo = 'cyberduck-icon-64.png'
 
