@@ -19,23 +19,28 @@ jobs:
       - uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: "."
-      - uses: actions/upload-artifact@master
+      - name: Cache artifacts
+        uses: actions/cache@v2
+        if: github.ref == 'ref/head/main'
         with:
-          name: docs
-          path: _build/html/
+          key: html-${{ github.sha }}
+          path: ./_build/html
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
+    if: github.ref == 'ref/head/main'
     steps:
-      - uses: actions/download-artifact@master
+      - name: Cache artifacts
+        uses: actions/cache@v2
         with:
-          name: docs
-      - run: touch .nojekyll
+          key: html-${{ github.sha }}
+          path: ./_build/html
+      - run: touch ./_build/html/nojekyll
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: gh-pages
-          FOLDER: ./
+          FOLDER: ./build/html
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
