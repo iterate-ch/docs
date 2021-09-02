@@ -21,7 +21,7 @@ jobs:
           docs-folder: "."
       - name: Cache artifacts
         uses: actions/cache@v2
-        if: github.ref == 'refs/head/main'
+        if: github.ref == 'refs/heads/main'
         with:
           key: html-${{ github.sha }}
           path: ./_build/html
@@ -29,7 +29,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'refs/head/main'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Cache artifacts
         uses: actions/cache@v2
