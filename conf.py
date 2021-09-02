@@ -16,9 +16,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Wikitest'
-copyright = '2019, sphinx-action Test Suite'
-author = 'sphinx-action Test Suite'
+project = 'Cyberduck Help'
+copyright = '2021 iterate GmbH'
+author = 'iterate GmbH'
 
 
 # -- General configuration ---------------------------------------------------
