@@ -50,10 +50,18 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': True,
 	'style_nav_header_background': '#5a5a5a',
-	'style_external_links': True
-
+	'style_external_links': True,
+	'vcs_pageview_mode': 'edit'
 }
 html_logo = 'cyberduck-icon-64.png'
+html_context = {
+	"display_github": True, # Add 'Edit on Github' link instead of 'View page source'
+	"github_user": "iterate-ch",
+	"github_repo": "docs",
+	"github_version": "main",
+	"conf_py_path": "/"
+}
+html_show_sourcelink = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
