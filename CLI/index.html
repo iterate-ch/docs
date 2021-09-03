@@ -123,6 +123,7 @@
 </li>
 <li><a class="reference internal" href="#remote-directory-listing-with-list">Remote directory listing with <code class="docutils literal notranslate"><span class="pre">--list</span></code></a></li>
 <li><a class="reference internal" href="#edit-with-edit">Edit with <code class="docutils literal notranslate"><span class="pre">--edit</span></code></a></li>
+<li><a class="reference internal" href="#purge-files-in-cdn-with-purge">Purge files in CDN with <code class="docutils literal notranslate"><span class="pre">--purge</span></code></a></li>
 <li><a class="reference internal" href="#multiple-transfer-connections-with-parallel">Multiple transfer connections with <code class="docutils literal notranslate"><span class="pre">--parallel</span></code></a></li>
 <li><a class="reference internal" href="#cryptomator">Cryptomator</a></li>
 </ul>
@@ -484,6 +485,10 @@ Omitting the first slash in a relative path uses the default home directory for 
 <div class="section" id="edit-with-edit">
 <h2>Edit with <code class="docutils literal notranslate"><span class="pre">--edit</span></code><a class="headerlink" href="#edit-with-edit" title="Permalink to this headline">¶</a></h2>
 <p>You can edit remote files with your preferred editor on your local system using the <code class="docutils literal notranslate"><span class="pre">--edit</span></code> command. Use the optional <code class="docutils literal notranslate"><span class="pre">--application</span></code> option to specify the absolute path to the external editor you want to use.</p>
+</div>
+<div class="section" id="purge-files-in-cdn-with-purge">
+<h2>Purge files in CDN with <code class="docutils literal notranslate"><span class="pre">--purge</span></code><a class="headerlink" href="#purge-files-in-cdn-with-purge" title="Permalink to this headline">¶</a></h2>
+<p>Purge files in CloudFront or Akamai CDN for Amazon S3 or Rackspace CloudFiles connections. For example to invalidate all contents in a bucket run <code class="docutils literal notranslate"><span class="pre">duck</span> <span class="pre">--username</span> <span class="pre">AKIAIWQ7UM47TA3ONE7Q</span> <span class="pre">--purge</span> <span class="pre">s3:/github-cyberduck-docs/</span></code></p>
 </div>
 <div class="section" id="multiple-transfer-connections-with-parallel">
 <h2>Multiple transfer connections with <code class="docutils literal notranslate"><span class="pre">--parallel</span></code><a class="headerlink" href="#multiple-transfer-connections-with-parallel" title="Permalink to this headline">¶</a></h2>

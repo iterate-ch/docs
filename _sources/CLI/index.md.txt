@@ -230,6 +230,10 @@ Make sure to include a trailing '/' in the path argument to denote a directory. 
 
 You can edit remote files with your preferred editor on your local system using the `--edit` command. Use the optional `--application` option to specify the absolute path to the external editor you want to use.
 
+## Purge files in CDN with `--purge`
+
+Purge files in CloudFront or Akamai CDN for Amazon S3 or Rackspace CloudFiles connections. For example to invalidate all contents in a bucket run `duck --username AKIAIWQ7UM47TA3ONE7Q --purge s3:/github-cyberduck-docs/`
+
 ## Multiple transfer connections with `--parallel`
 
 Transfer files with multiple concurrent connections to a server.
