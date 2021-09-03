@@ -71,11 +71,11 @@ There is a preview method of review application consent through the AAD Portal. 
 
 # Cyberduck CLI
 
-You can list the root contents of your Dropbox with [Cyberduck CLI](https://duck.sh/) using
+You can list the root contents of your OneDrive with [Cyberduck CLI](https://duck.sh/) using
 
 	duck --list onedrive:/
 
-Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Google to allow the lookup of previously saved OAuth tokens.
+Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
 
 # Search
 
