@@ -53,6 +53,7 @@ html_theme_options = {
 	'style_external_links': True
 
 }
+html_favicon = 'favicon.ico'
 html_logo = 'cyberduck-icon-64.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
