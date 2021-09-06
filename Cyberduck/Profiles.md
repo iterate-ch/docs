@@ -1,10 +1,10 @@
 Connection Profiles
 ===
 
-[Connection profiles](Connection#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
+[Connection profiles](Connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
-- [Third-Party S3 providers](../Protocols/S3/index#third-party-providers)
-- [OpenStack Providers](../Protocols/OpenStack/index#providers)
+- [Third-Party S3 providers](../Protocols/S3/index.md#third-party-providers)
+- [OpenStack Providers](../Protocols/OpenStack/index.md#providers)
 
 These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
 
@@ -43,7 +43,7 @@ The following properties can be defined in a connection profile:
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
-- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](Preferences.html#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
+- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](Preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile)
   * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
   * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
