@@ -1,6 +1,27 @@
 Swift (OpenStack Object Storage)
 ===
 
+```{toctree}
+:hidden:
+
+AURO
+Cloud.ca
+Cloud_A
+CloudFiles
+EMC
+Enter_Cloud_Suite
+FlexCloud
+HubiC
+Infomaniak
+Internap
+Memset
+Oktawave
+OVH
+Selectel
+SwiftStack
+Zetta.IO
+```
+
 ```{image} _images/swift.png
 :alt: Send Command
 :width: 128px

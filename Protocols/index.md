@@ -1,6 +1,27 @@
 Protocols
 ===
 
+```{toctree}
+:hidden:
+
+OpenStack/index
+S3/index
+WebDAV/index
+Azure
+B2
+Dracoon
+Dropbox
+Files.com
+FTP
+Google_Cloud_Storage
+Google_Drive
+iRODS
+OneDrive
+SFTP
+SharePoint
+Spectra
+```
+
 All major server and cloud storage protocols are supported to connect to just about any server you want. Support for the listed protocols and [connection profiles](../Cyberduck/Profiles) is available in [Cyberduck](../Cyberduck/index), [Cyberduck CLI](../CLI/index) and [Mountain Duck](../Mountain_Duck/index).
 
 # Supported Protocols

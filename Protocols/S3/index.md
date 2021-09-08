@@ -1,6 +1,33 @@
 Amazon S3
 ===
 
+```{toctree}
+:hidden:
+
+Alibaba
+Cynny
+DigitalOcean
+DreamObjects
+Dunkel
+EMC
+Eucalyptus
+Exoscale
+Filebase
+IAM
+IBM_COS
+IDrive_Cloud
+MinIO
+Oracle_Cloud
+Pilvio
+Polycloud
+Scaleway
+Scality
+Spectra
+Verizon
+Wasabi
+Z1
+```
+
 ```{image} _images/s3.png
 :alt: Send Command
 :width: 128px
