@@ -76,6 +76,12 @@ Connect to the region *AWS China (Beijing)*
 
 - {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing) profile* for preconfigured settings.
 
+## AWS Private Link
+
+Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
+
+- {download}`Download<https://svn.cyberduck.io/trunk/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
+
 ## Access Third Party Buckets
 
 Connecting to a bucket you are not the owner (and therefore not included when logging in as above and listing all your owned buckets) is possible. You can access buckets owned by someone else if the ACL allows you to access it by either:
@@ -504,7 +510,7 @@ Make sure the IAM user has the permission `s3:GetBucketLocation` to read the buc
 
 The S3 interoperable service must support [multipart uploads](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html).
 
-## S3 Delete Marker
+## Delete Marker
 
 When overwriting files some applications (like Windows File Explorer) will delete files prior to writing the new file. Thus we also forward this delete operation to S3 resulting in the delete marker being set. You can overwrite files with command-line tools which typically do not delete files prior to overwriting.
 
