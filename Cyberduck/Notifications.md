@@ -29,7 +29,7 @@ Notifications can be configured in *System Preferences → Notifications*.
 :width: 700px
 ```
 
-The default alert style is *Banner* which is diemissed automatically after some delay. You can change the type to *Alert* if you want to have a *Close* and *Show* button to dismiss the alert manually.
+The default alert style is *Banner* which is dismissed automatically after some delay. You can change the type to *Alert* if you want to have a *Close* and *Show* button to dismiss the alert manually.
 
 ````
 ````{group-tab} Windows
