@@ -26,8 +26,18 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 
 ## Logging Output
 
-The logging output can be reached by clicking on the *Show* button within the Mountain Duck *Preferences Connection* tab. The file is named *mountainduck.log*.
+`````{tabs}
+````{group-tab} macOS
 
+Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. You can also reveal the file by clicking on the _Show_ button within the Mountain Duck preferences _Connection_ tab.
+
+````
+````{group-tab} Windows
+
+Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. You can also reveal the file by clicking on the *Show* button within the Mountain Duck *Preferences Connection* tab. The file is named *mountainduck.log*.
+
+````
+`````
 
 ### Debug Log
 
