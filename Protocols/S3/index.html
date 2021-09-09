@@ -101,6 +101,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#aws-china-beijiing">AWS China (Beijiing)</a></li>
+<li><a class="reference internal" href="#aws-private-link">AWS Private Link</a></li>
 <li><a class="reference internal" href="#access-third-party-buckets">Access Third Party Buckets</a></li>
 <li><a class="reference internal" href="#connecting-with-temporary-access-credentials-token-from-ec2">Connecting with Temporary Access Credentials (Token) from EC2</a></li>
 <li><a class="reference internal" href="#connecting-using-credentials-in-aws-credentials">Connecting Using Credentials in <code class="docutils literal notranslate"><span class="pre">~/.aws/credentials</span></code></a></li>
@@ -193,7 +194,7 @@
 <li><a class="reference internal" href="#disable-use-of-virtual-host-style-requests">Disable use of Virtual Host Style Requests</a></li>
 <li><a class="reference internal" href="#moved-permanently-but-no-location-header">Moved Permanently but no Location Header</a></li>
 <li><a class="reference internal" href="#writing-files-to-s3-compatible-third-party-service-provider-may-fail">Writing Files to S3 Compatible Third Party Service Provider may Fail</a></li>
-<li><a class="reference internal" href="#s3-delete-marker">S3 Delete Marker</a></li>
+<li><a class="reference internal" href="#delete-marker">Delete Marker</a></li>
 <li><a class="reference internal" href="#in-finder-app-creating-a-new-top-level-folder-in-s3-fails-with-interoperability-failure-bucket-name-is-not-dns-compatible-please-contact-your-web-hosting-service-provider-for-assistance">In Finder.app, Creating a new Top-Level Folder in S3 Fails with <code class="docutils literal notranslate"><span class="pre">Interoperability</span> <span class="pre">failure.</span> <span class="pre">Bucket</span> <span class="pre">name</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">DNS</span> <span class="pre">compatible.</span> <span class="pre">Please</span> <span class="pre">contact</span> <span class="pre">your</span> <span class="pre">web</span> <span class="pre">hosting</span> <span class="pre">service</span> <span class="pre">provider</span> <span class="pre">for</span> <span class="pre">assistance.</span></code></a></li>
 <li><a class="reference internal" href="#saving-a-file-in-textedit-app-will-attempt-to-create-a-folder-temporary-items-on-the-remote-volume-on-some-servers-this-may-fail-due-to-a-permission-failure-or-because-the-name-of-the-folder-is-not-allowed-as-in-s3">Saving a file in TextEdit.app will Attempt to Create a Folder <code class="docutils literal notranslate"><span class="pre">/Temporary</span> <span class="pre">Items</span></code> on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.</a></li>
 </ul>
@@ -336,6 +337,13 @@
 <p>Connect to the region <em>AWS China (Beijing)</em></p>
 <ul class="simple">
 <li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/S3%20China%20(Beijing).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>S3 China (Beijing) profile</em> for preconfigured settings.</p></li>
+</ul>
+</div>
+<div class="section" id="aws-private-link">
+<h2>AWS Private Link<a class="headerlink" href="#aws-private-link" title="Permalink to this headline">¶</a></h2>
+<p>Connect to <a class="reference external" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html">S3 interface VPC endpoint</a></p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the <em>AWS PrivateLink for Amazon S3 (VPC endpoint) profile</em>.</p></li>
 </ul>
 </div>
 <div class="section" id="access-third-party-buckets">
@@ -816,8 +824,8 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 <h2>Writing Files to S3 Compatible Third Party Service Provider may Fail<a class="headerlink" href="#writing-files-to-s3-compatible-third-party-service-provider-may-fail" title="Permalink to this headline">¶</a></h2>
 <p>The S3 interoperable service must support <a class="reference external" href="http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html">multipart uploads</a>.</p>
 </div>
-<div class="section" id="s3-delete-marker">
-<h2>S3 Delete Marker<a class="headerlink" href="#s3-delete-marker" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="delete-marker">
+<h2>Delete Marker<a class="headerlink" href="#delete-marker" title="Permalink to this headline">¶</a></h2>
 <p>When overwriting files some applications (like Windows File Explorer) will delete files prior to writing the new file. Thus we also forward this delete operation to S3 resulting in the delete marker being set. You can overwrite files with command-line tools which typically do not delete files prior to overwriting.</p>
 </div>
 <div class="section" id="in-finder-app-creating-a-new-top-level-folder-in-s3-fails-with-interoperability-failure-bucket-name-is-not-dns-compatible-please-contact-your-web-hosting-service-provider-for-assistance">
