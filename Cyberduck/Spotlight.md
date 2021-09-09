@@ -13,7 +13,7 @@ Cyberduck includes a custom *Spotlight Importer Plugin* to search the contents o
 The *Spotlight Menu* does return no results for recently connected servers in Cyberduck because it excludes indexed files located in `~/Library/Application Support/Cyberduck/History`. This is also an issue for Adium.
 ```
 
-As a workaround, you have to export all bookmarks to another location such as your *Documents* folder. Select all bookmarks *(Command-A)* in the bookmark list and drag these somewhere in your *Documents* folder in the Finder. You can then search bookmarks in the *Spotlight Menu* by nickname and hostname. Additionally to display all bookmarks, as a result, search for `kind:"Cyberduck Bookmark"`.
+As a workaround, you have to export all bookmarks to another location such as your *Documents* folder. Select all bookmarks *(Command-A)* in the bookmark list and drag these somewhere in your *Documents* folder in the Finder. You can then search bookmarks in the *Spotlight Menu* by nickname and hostname. Additionally, to display all bookmarks as a result search for `kind:"Cyberduck Bookmark"`.
 
 # Create a Smart Folder in Finder to search bookmark files
 

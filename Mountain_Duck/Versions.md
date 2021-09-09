@@ -11,7 +11,7 @@ Support is currently limited to connections to [Amazon S3](../Protocols/S3/index
 
 ### Enable Versioning
 
-Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on macOS or *File Explorer* on Windows. Alternatively enable versioning in AWS Console or [Cyberduck](../Cyberduck/index).
+Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on macOS or *File Explorer* on Windows. Alternatively, enable versioning in AWS Console or [Cyberduck](../Cyberduck/index).
 
 ## Quick Look
 

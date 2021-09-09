@@ -43,7 +43,6 @@ Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`.
 
 To enable debug logging tick the corresponding checkmark in the Mountain Duck *Preferences Connection* tab. You can reach the logging output by clicking on the *Show* button within the same Mountain Duck *Preferences* section. The file is called *mountainduck.log*.
 
-
 ### Error Log
 
 An error log is a record of critical errors that occur during the operation of the application or server. It can be a useful tool for troubleshooting.
@@ -71,4 +70,4 @@ Crash reports are saved to `%AppData%\cyberduck\CrashReporter`.
 
 # Get Support
 
-Forbug reports, feature requests, or issues regarding purchase and upgrade mail to [support@mountainduck.io](mailto:support@mountainduck.io) to open a ticket.
+For bug reports, feature requests, or issues regarding purchase and upgrade mail to [support@mountainduck.io](mailto:support@mountainduck.io) to open a ticket.

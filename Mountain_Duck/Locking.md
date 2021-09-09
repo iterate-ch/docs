@@ -1,7 +1,7 @@
 File Locking
 ===
 
-Mountain Duck supports locking files to prevent conflicting edits from other while a document is open in an editor.
+Mountain Duck supports locking files to prevent conflicting edits from others while a document is open in an editor.
 
 # Native server-side locking
 
@@ -13,14 +13,14 @@ File locking is natively supported for the following protocols:
 - [WebDAV](../Protocols/WebDAV/index)
 
 ```{note}
-Some WebDAV implementations including [NextCloud & ownCloud](../Protocols/WebDAV/Nextcloud) may not support locing documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
+Some WebDAV implementations including [NextCloud & ownCloud](../Protocols/WebDAV/Nextcloud) may not support locking documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
 ```
 
-Files opend from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.
+Files opened from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.
 
 # Pseudo locking for protocols with no native lock support using lock owner files
 
-For connectionc other than [WebDAV](../Protocols/WebDAV/index), we support detecting files opened by others by looking for owner lock files uploading to the server.
+For connections other than [WebDAV](../Protocols/WebDAV/index), we support detecting files opened by others by looking for owner lock files uploading to the server.
 
 ```{note}
 Support is currently limited to files edited in *Microsoft Word, Microsoft Excel, and Microsoft Powerpoint* on macOS and Windows.
@@ -28,7 +28,7 @@ Support is currently limited to files edited in *Microsoft Word, Microsoft Excel
 
 ## References
 
-When a previously saved file is opend for editing, for printing, or for review, Word creates a temporary file that has a .doc file name extension. This filename extension begins with a tilde (~) that is followed by a dollar sign ($) that is followed by the remainder of the original file name. This temporary file holds the login name of the person who opens the file. This temporary file is called the "owner file".
+When a previously saved file is opened for editing, for printing, or for review, Word creates a temporary file that has a .doc file name extension. This filename extension begins with a tilde (~) that is followed by a dollar sign ($) that is followed by the remainder of the original file name. This temporary file holds the login name of the person who opens the file. This temporary file is called the "owner file".
 
 - [Description of how Word creates temporary files](https://support.microsoft.com/en-us/help/211632/description-of-how-word-creates-temporary-files)
 - [The document is locked for editing by another user error message when you try to open a document in Word](https://support.microsoft.com/en-us/help/313472/the-document-is-locked-for-editing-by-another-user-error-message-when)

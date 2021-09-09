@@ -6,7 +6,7 @@ Smart Synchronization
 :width: 200px
 ```
 
-The smart sync feature allows making files available offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as connection is available.
+The smart sync feature allows making files available offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as a connection is available.
 
 # Bookmark Options
 
@@ -101,7 +101,7 @@ You can choose to make files and folders available offline in the context menu. 
 :width: 500px
 ```
 
-To reach the context menu right-click on a file or folder in File Explorer (Windows) or FInder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface#context-menu-in-finder-and-windows-file-explorer).
+To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface#context-menu-in-finder-and-windows-file-explorer).
 
 ### Keep Offline
 
@@ -146,7 +146,7 @@ A conflict may be caused by two or more users editing the same files at the same
 
 # Sync Progress
 
-CHanges to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
+Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
 ```{image} _images/Sync_in_Progress.gif
 :alt: Send Command

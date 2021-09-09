@@ -37,7 +37,7 @@ The following properties can be defined in a connection profile:
 - `Port Configurable` Boolean if port number is configurable.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
-- `Certificate Configurable` Boolean if clien certificate is onfigurable.
+- `Certificate Configurable` Boolean if client certificate is configurable.
 - `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../Protocols/OpenStack/index) and [S3](../Protocols/S3/index) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
 - `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../Protocols/S3/index#creating-a-bucket) for [S3](../Protocols/S3/index) and [OpenStack Swift](../Protocols/OpenStack/SwiftStack) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.

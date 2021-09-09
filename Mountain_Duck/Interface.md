@@ -33,7 +33,7 @@ You can choose to automatically open Mountain Duck when logging in. Refer to [Pr
 
 # Bookmarks
 
-Choose *Open Connection...* to add a new bookmark or *<bookmark> → Edit Bookmark* to change properties.
+Choose *Open Connection...* to add a new bookmark or *<Bookmark> → Edit Bookmark* to change properties.
 
 ## Share Bookmarks with Cyberduck
 
@@ -92,7 +92,7 @@ The bookmark can show three different status lights:
 
 - **No light:** No current connection to this bookmark.
 - **Green light:** You're currently connected to this bookmark. The bookmark is completely synced and idle.
-- **Orange light:** You're currenlty connected to this bookmark. There os at least ane active process.
+- **Orange light:** You're currently connected to this bookmark. There is at least ane active process.
 
 # Connect
 
@@ -101,7 +101,7 @@ The bookmark can show three different status lights:
 Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.app* on macOS or the *File Explorer* on Windows. You can connect to multiple servers and have several volumes mounted. All operations on the remote files and folders can then be performed like on local files.
 
 ```{tip}
-You can just select the menu item with the bookmark name to connect, too. If you are already connectec, selecting the menu item will reveal the volume in *Finder.app*.
+You can just select the menu item with the bookmark name to connect, too. If you are already connected, selecting the menu item will reveal the volume in *Finder.app*.
 ```
 
 ## Connnect using command line
@@ -186,7 +186,7 @@ Refer to [Sync Options](Sync#select-files-and-folders-to-always-keep-offline)
 
 # Reload
 
-Changes from the server not immmediately visible. The directory listing in *Finder.app* may become out of date when another application is adding, removing, or modifying files on the server. Choose *Reload* from the *Finder Extension Menu*. On Windows, you can force *File Explorer* to refresh the directory listing with F5.
+Changes from the server are not immediately visible. The directory listing in *Finder.app* may become out of date when another application is adding, removing, or modifying files on the server. Choose *Reload* from the *Finder Extension Menu*. On Windows, you can force *File Explorer* to refresh the directory listing with F5.
 
 Enable the *Index Files* option in [*Preferences → Sync*](Preferences#sync-index-files) to allow new files on the remote storage to be detected periodically.
 

@@ -187,4 +187,4 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 
 ## [FTP](../Protocols/FTP), [SFTP](../Protocols/SFTP) & [WebDAV](../Protocols/WebDAV/index)
 
-If you connect to a web root, refer to [HTTP URL](Bookmarks#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the cipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](Info#unix-permissions-ftp-sftp).
+If you connect to a web root, refer to [HTTP URL](Bookmarks#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](Info#unix-permissions-ftp-sftp).
