@@ -46,7 +46,7 @@ Manage [Amazon CloudFront](../CDN/CloudFront) and [Rackspace/Akamai](../CDN/Akam
 
 # Amazon S3 Panel
 
-Setting specific to the [Amazon S3](../Protocols/S3/index) service.
+Settings specific to the [Amazon S3](../Protocols/S3/index) service.
 
 - The geographic location of the bucket.
 - [Publicly accessible URL](../Protocols/S3/index#pre-signed-temporary-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
@@ -55,7 +55,7 @@ Setting specific to the [Amazon S3](../Protocols/S3/index) service.
 - Choose storage class ([Reduced Redundancy Storage (RRS)](../Protocols/S3/index#storage-class)). Settings will be applied recursively if a folder is selected.
 - Configure [bucket versioning](../Protocols/S3/index#versions).
 - Configure [Multi-Factor Authentication (MFA) Delete](../Protocols/S3/index#multi-factor-authentication-mfa-delete).
-- COnfigure [Transfer Acceleration](../Protocols/S3/index#transfer-acceleration).
+- Configure [Transfer Acceleration](../Protocols/S3/index#transfer-acceleration).
 
 ```{image} _images/Amazon_S3.png
 :alt: Send Command

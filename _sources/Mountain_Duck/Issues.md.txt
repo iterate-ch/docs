@@ -76,7 +76,7 @@ It is not possible to share a mounted drive within the local network.
 
 ## Changes from server not immediately visible
 
-The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is addin , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On the Mac, choose *Reload* from the [*Finder Extension*](index#finder-extension-windows-file-explorer-extension) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
+The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is addin , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](index#finder-extension-windows-file-explorer-extension) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
 
 ## Cache uses a lot of disk space
 
@@ -106,7 +106,6 @@ If none of those applications are in use, a Finder re-launch can make the badge 
 ```
 
 ````
-
 ````{group-tab} Windows
 
 **Windows**<br/>
@@ -123,37 +122,30 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 **Finder.app does not show files prefixed with `.` on remote volumes**<br/>
 You can work around this by setting `defaults write com.apple.finder AppleShowAllFiles YES` in a *Terminal.app* window and restart *Finder.app* using *→ Force Quit ... → Finder → Relaunch*. If you are running macOS Sierra (10.12) you can choose `⌘⇧.` to toggle files starting with a dot to show in Finder.app.
 
-
 **Original document can't be changed (Preview.app)**<br/>
 Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Connection → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
-
 
 **Enable application icon in Dock**<br/>
 As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property
 
 `defaults write io.mountainduck application.dock.icon.enable true`
 
-
 **Mounted volumes do not appear on the desktop**<br/>
 Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder → Preferences ... → General → Show these items on the desktop: Connected Servers* to make the volume appear on the desktop. Mounted volumes are also listed in the *Finder.app* sidebar in *Favorites*.
-
 
 **Search in Finder.app (Spotlight)**<br/>
 The Spotlight indexer does not work on remote volumes
 
-
 **Multiple Mountain Duck Finder Extensions processes**<br/>
-The system may launch additionla copies of *Mountain Duck Finder Extension* whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.
-
+The system may launch additional copies of *Mountain Duck Finder Extension* whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.
 
 **Connection Interrupted**<br/>
 It may be that Finder closes the connection because Mountain Duck hasn't answered fast enough on the request of Finder. Although Finder indicates that the server connection is interrupted it isn't as Mountain Duck is still connected to the server.
 
 This is an issue within the operating system that can occur to any network drive.
 
-
 <del> **Additional `._*` files saved on remote volumes** </del> <br/>
-<del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata con be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contein this information. You can delete metadata on files using `xattr -d <filename>`. </del>
+<del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contain this information. You can delete metadata on files using `xattr -d <filename>`. </del>
 
 As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window
 
@@ -162,14 +154,12 @@ As of version [2.1](https://mountainduck.io/changelog/), extended attributes are
 If you want to delete metadata files, you can open a *Terminal.app* window and enter `dot_clean -m <folder>`.
 
 ````
-
 ````{group-tab} Windows
 
 **File system driver isn't set up properly**<br/>
 Error: `A volume has been accessed for which a file system driver is required that has not yet been loaded`
 
 If you get this error message you most likely haven't restarted your system after the installation or update of Mountain Duck. Restart your system to resolve this error. If a system restart doesn't resolve the error try to repair Mountain Duck followed by an application reinstall if this doesn't work either. Additionally, make sure no antivirus software is interfering with the operation of Mountain Duck.
-
 
 **Missing files in Windows Explorer**<br/>
 Windows has a limitation on the maximum path length. It might happen that Mountain Duck exceeds this maximum for long file names when trying to create placeholders in the local cache. If Mountain Duck is unable to create a placeholder file for a remote file it will not appear in the Windows Explorer listing.
@@ -182,14 +172,11 @@ To work around this Windows limitaion you can enable long path support in Window
 
 Please refer to [Maximum Path Length Limitation](https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation).
 
-
 **Multiple File Versions**<br/>
-This is expected behavior within the *Online* mode as Windows Explorer will first create an empty file followed by writing to the file. Due to this process, you'll see two versions within the versioning on your server. Within the *Smart Synchronization* mode the empty file won't be synced and the uppload is deferred until the file has been fully copied.
-
+This is expected behavior within the *Online* mode as Windows Explorer will first create an empty file followed by writing to the file. Due to this process, you'll see two versions within the versioning on your server. Within the *Smart Synchronization* mode the empty file won't be synced and the upload is deferred until the file has been fully copied.
 
 **Windows Search Indexer**<br/>
 The Windows Search indexer does not work on networks drives.
-
 
 **Windows sessions**<br/>
 Mountain Duck requires an interactive user logon session. This separation is done to ensure that each in a multi-user scenario has access to all available Windows drive letters (Otherwise this would be limited to 26 drive letters, shared across all users). Bookmarks are mounted in your regular and elevated user session only - there is no way for other logged-in users or non-interactive services to access your drive. There are no persistent mounts created for anyone to use and cannot work across user sessions - mounts for user A are not visible nor accessible by user B even on the same machine.
@@ -199,7 +186,6 @@ Please make sure you have not checked `Run whether user is logged on or not` on 
 
 **A Windows service has no access to a mounted drive**<br/>
 See Windows sessions above. Services do not have access to logged-in user drives.
-
 
 **Mountain Duck Tooltip persists on screen**<br/>
 You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.
@@ -247,7 +233,7 @@ Backups to Time Machine do not work with volumes mounted from Mountain Duck. Tim
 ````{group-tab} Windows
 
 **Windows Backup**<br/>
-Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can on ly save backups on destinations that are located within your local system or within your local network.
+Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can only save backups on destinations that are located within your local system or within your local network.
 
 ````
 `````

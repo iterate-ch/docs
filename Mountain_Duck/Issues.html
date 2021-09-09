@@ -256,7 +256,7 @@
 </div>
 <div class="section" id="changes-from-server-not-immediately-visible">
 <h2>Changes from server not immediately visible<a class="headerlink" href="#changes-from-server-not-immediately-visible" title="Permalink to this headline">¶</a></h2>
-<p>The directory listing in <em>Finder.app</em> or <em>File Explorer</em> may become out of date when another application is addin , removing, or modifying files on the server. You can force <em>File Explorer</em> to refresh the directory listing with <code class="docutils literal notranslate"><span class="pre">F5</span></code>. On the Mac, choose <em>Reload</em> from the <a class="reference external" href="index#finder-extension-windows-file-explorer-extension"><em>Finder Extension</em></a> menu. Enable <em>Sync → Index files</em> in <em>Preferences</em> to look for remote file changes every 10 minutes.</p>
+<p>The directory listing in <em>Finder.app</em> or <em>File Explorer</em> may become out of date when another application is addin , removing, or modifying files on the server. You can force <em>File Explorer</em> to refresh the directory listing with <code class="docutils literal notranslate"><span class="pre">F5</span></code>. On macOS, choose <em>Reload</em> from the <a class="reference external" href="index#finder-extension-windows-file-explorer-extension"><em>Finder Extension</em></a> menu. Enable <em>Sync → Index files</em> in <em>Preferences</em> to look for remote file changes every 10 minutes.</p>
 </div>
 <div class="section" id="cache-uses-a-lot-of-disk-space">
 <h2>Cache uses a lot of disk space<a class="headerlink" href="#cache-uses-a-lot-of-disk-space" title="Permalink to this headline">¶</a></h2>
@@ -298,12 +298,12 @@ Navigate to volumes using <code class="docutils literal notranslate"><span class
 <p><strong>Search in Finder.app (Spotlight)</strong><br/>
 The Spotlight indexer does not work on remote volumes</p>
 <p><strong>Multiple Mountain Duck Finder Extensions processes</strong><br/>
-The system may launch additionla copies of <em>Mountain Duck Finder Extension</em> whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.</p>
+The system may launch additional copies of <em>Mountain Duck Finder Extension</em> whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.</p>
 <p><strong>Connection Interrupted</strong><br/>
 It may be that Finder closes the connection because Mountain Duck hasn’t answered fast enough on the request of Finder. Although Finder indicates that the server connection is interrupted it isn’t as Mountain Duck is still connected to the server.</p>
 <p>This is an issue within the operating system that can occur to any network drive.</p>
 <p><del> <strong>Additional <code class="docutils literal notranslate"><span class="pre">._*</span></code> files saved on remote volumes</strong> </del> <br/>
-<del> The <code class="docutils literal notranslate"><span class="pre">._*</span></code> files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata con be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contein this information. You can delete metadata on files using <code class="docutils literal notranslate"><span class="pre">xattr</span> <span class="pre">-d</span> <span class="pre">&lt;filename&gt;</span></code>. </del></p>
+<del> The <code class="docutils literal notranslate"><span class="pre">._*</span></code> files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contain this information. You can delete metadata on files using <code class="docutils literal notranslate"><span class="pre">xattr</span> <span class="pre">-d</span> <span class="pre">&lt;filename&gt;</span></code>. </del></p>
 <p>As of version <a class="reference external" href="https://mountainduck.io/changelog/">2.1</a>, extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a <em>Terminal.app</em> window</p>
 <p><code class="docutils literal notranslate"><span class="pre">defaults</span> <span class="pre">write</span> <span class="pre">io.mounteinduck</span> <span class="pre">fs.filesnames.metadata.enable</span> <span class="pre">false</span></code></p>
 <p>If you want to delete metadata files, you can open a <em>Terminal.app</em> window and enter <code class="docutils literal notranslate"><span class="pre">dot_clean</span> <span class="pre">-m</span> <span class="pre">&lt;folder&gt;</span></code>.</p>
@@ -320,7 +320,7 @@ Windows has a limitation on the maximum path length. It might happen that Mounta
 </ol>
 <p>Please refer to <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation">Maximum Path Length Limitation</a>.</p>
 <p><strong>Multiple File Versions</strong><br/>
-This is expected behavior within the <em>Online</em> mode as Windows Explorer will first create an empty file followed by writing to the file. Due to this process, you’ll see two versions within the versioning on your server. Within the <em>Smart Synchronization</em> mode the empty file won’t be synced and the uppload is deferred until the file has been fully copied.</p>
+This is expected behavior within the <em>Online</em> mode as Windows Explorer will first create an empty file followed by writing to the file. Due to this process, you’ll see two versions within the versioning on your server. Within the <em>Smart Synchronization</em> mode the empty file won’t be synced and the upload is deferred until the file has been fully copied.</p>
 <p><strong>Windows Search Indexer</strong><br/>
 The Windows Search indexer does not work on networks drives.</p>
 <p><strong>Windows sessions</strong><br/>
@@ -369,7 +369,7 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-4-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-4-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-4-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Time Machine</strong><br/>
 Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks mounted using Apple File Protocol (AFP). See <a class="reference external" href="https://support.apple.com/en-us/HT202784">Backup disks you can use with Time Machine</a>.</p>
 </div><div aria-labelledby="tab-4-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Windows Backup</strong><br/>
-Volumes mounted with Mountain Duck cannot be used by <em>Windows Backup</em>. It can on ly save backups on destinations that are located within your local system or within your local network.</p>
+Volumes mounted with Mountain Duck cannot be used by <em>Windows Backup</em>. It can only save backups on destinations that are located within your local system or within your local network.</p>
 </div></div>
 </div>
 <div class="section" id="bug-reports-and-feature-requests">

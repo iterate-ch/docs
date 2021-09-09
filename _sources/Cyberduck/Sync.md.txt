@@ -50,7 +50,6 @@ Files are uploaded that match one of the following criteria:
 
 No files are downloaded.
 
-
 # Other solutions
 
 You have to manually restart the synchronization in the transfer window. If you want to automate things you will be better off with either

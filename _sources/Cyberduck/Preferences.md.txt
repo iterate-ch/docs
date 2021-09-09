@@ -7,7 +7,7 @@ In general, user adjustable preferences are discussed in the context of the topi
 
 Choose the language of the user interface. It defaults to the system language when set to *Default*. Thirty localizations are included.
 
-- On macOS, the first matching language is chosen according to the *Languages* list in System *Preferences → International*. To change your preferred language for all applications, change the order there.
+- On macOS, the first matching language is chosen according to the *Languages* list within System *Preferences → International*. To change your preferred language for all applications, change the preset hierarchy.
 
 ```{image} _images/Language_Preference.png
 :alt: Send Command
@@ -16,7 +16,7 @@ Choose the language of the user interface. It defaults to the system language wh
 
 # Update
 
-An auto update feature will alert you when a new version is available and self update the application. Choose *Preferences → Update → Automatically check for updates*. You can also get the latest builds by [manual download](https://update.cyberduck.io/nightly/).
+An auto update feature will alert you when a new version is available and self update the application. Choose *Preferences → Update → Automatically check for updates*. You can also get the latest builds by a [manual download](https://update.cyberduck.io/nightly/).
 
 ## Snapshot Builds
 

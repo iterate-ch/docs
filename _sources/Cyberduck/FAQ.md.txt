@@ -158,8 +158,8 @@ To get help with bugs, feature requests, or other issues please refer to the [su
 
 See [Preferences → Update](Preferences#update).
 
-# Incompartibilities
+# Incompatibilities
 
-- *WindowsDragon*. Cyberduck is [not compartible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowsDragon.
+- *WindowsDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowsDragon.
 - Sophos Anti-Virus *On-access Scanning*
 - Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).
