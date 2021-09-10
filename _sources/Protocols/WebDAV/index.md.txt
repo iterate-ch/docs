@@ -1,6 +1,18 @@
 WebDAV
 ===
 
+```{toctree}
+:hidden:
+
+BigCommerce
+box.com
+GMX
+iKeepinCloud
+Nextcloud
+pCloud
+Seafile
+```
+
 You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mutual TLS with a client certificate for authentication is supported.
 
 # Providers

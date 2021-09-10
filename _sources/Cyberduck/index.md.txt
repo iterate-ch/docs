@@ -1,6 +1,29 @@
 Cyberduck Quick Reference Cheat Sheet
 ===
 
+```{toctree}
+:hidden:
+
+Bookmarks
+Browser
+Connection
+Copy
+Download
+Edit
+FAQ
+Info
+Logging
+Notifications
+Preferences
+Profiles
+Share
+Spotlight
+Support
+Sync
+Transfer
+Upload
+```
+
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
 ```{image} _images/Cyberduck_Quick_Reference_Page_1.png

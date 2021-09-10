@@ -1,6 +1,14 @@
 Content Delivery Network (CDN) Configuration
 ===
 
+```{toctree}
+:hidden:
+
+Akamai
+CloudFront
+KeyCDN
+```
+
 A content delivery network or content delivery network (CDN) allows the distribution of files from locations all over the world using a network of edge locations. Requests for files are automatically routed to the nearest edge location. Two of the main market players are supported from within Cyberduck with a simple to use interface to enable distributions with a single click of a button.
 
 Using the [Info](../Cyberduck/Info) panel, the following content distribution networks (CDN) can be enabled:

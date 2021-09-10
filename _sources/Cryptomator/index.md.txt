@@ -1,6 +1,12 @@
 Cryptomator
 ===
 
+```{toctree}
+:hidden:
+
+Cryptomator_Architecture
+```
+
 ```{image} _images/cryptomator.png
 :alt: Send Command
 :width: 400px
