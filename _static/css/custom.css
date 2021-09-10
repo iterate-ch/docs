@@ -1,4 +1,6 @@
-.wy-nav-content { 
+@import url("https://cdn.cyberduck.io/css/custom.css");
+
+.wy-nav-content {
   max-width: 100%
 }
 
