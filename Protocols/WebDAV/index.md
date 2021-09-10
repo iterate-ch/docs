@@ -116,6 +116,14 @@ If your server requires the use of UTF-8 character set for authenticatio, set th
 
 	http.credentials.encoding=UTF-8
 
+## Too Many Folders are Displayed
+
+```{attention}
+This only applies if you access a Synology Diskstation.
+```
+
+If the file listing shows additional folders of the file tree that are usually not visible try to uncheck the checkbox *disable directory browsing* within the advanced settings for a shared folder on your Synology Diskstation.
+
 ## Interoperability Failure `Handshake alert: unrecognized_name`
 
 The virtual host set up by the hosting provider is most possibly misconfigured. It must accept TLS connections with SNI (Server Name Indication) extension (RFC 4366). The hostname must match the common name in the server certificate. In Apache *httpd* configurations, add a `ServerAlias` configuration directive with the hostname you use to connect.
