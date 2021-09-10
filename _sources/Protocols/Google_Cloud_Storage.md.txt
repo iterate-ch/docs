@@ -83,7 +83,9 @@ You can edit standard HTTP headers [add](../Cyberduck/Info#metadata-http-headers
 # ACLs
 
 ## Default ACLs
-You can set a [default ACL](https://cloud.google.com/storage/docs/access-control/lists#predefined-acl) set on new files uploaded and buckets created in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → Google Storage → Default ACL*.
+
+You can choose *canned ACLs* to be added to uploaded files or created buckets per default. *Canned ACLs* are predefined sets of permissions. 
+The [default ACL](https://cloud.google.com/storage/docs/access-control/lists#predefined-acl) can be set within *Preferences (macOS `⌘,` Windows `Ctrl+,`) → Google Storage → Default ACL*.
 
 |  | Applies to Buckets | Applies to Files |
 | :--- | :---: | :---: |

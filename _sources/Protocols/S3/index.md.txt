@@ -386,7 +386,8 @@ If [bucket logging](index#bucket-access-logging) is enabled, the bucket ACL will
 
 ## Default ACLs
 
-You can set a [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl) set on new files uploaded and buckets created in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3 → Default ACL*.
+You can choose *canned ACLs* to be added to uploaded files or created buckets per default. *Canned ACLs* are predefined sets of permissions. 
+The [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl) can be set within *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3 → Default ACL*.
 
 |  | Applies to buckets | Applies to files |
 | --- | :---: | :---: |
