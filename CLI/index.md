@@ -1,6 +1,12 @@
 Command Line Interface (CLI)
 ===
 
+```{toctree}
+:hidden:
+
+Support
+```
+
 [Cyberduck with a command-line interface (CLI)](https://duck.sh/) is available for Mac, Windows & Linux. It is installed as `duck`.
 
 # Installation

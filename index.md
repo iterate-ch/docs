@@ -1,6 +1,20 @@
 Cyberduck & Mountain Duck Help
 ===
 
+```{toctree}
+:hidden:
+
+Cyberduck/index
+CLI/index
+Mountain_Duck/index
+Protocols/index
+CDN/index
+Cryptomator/index
+
+Google_Client_ID
+Formatting_Cheat-Sheet
+```
+
 # [Support](Support)
 
 If you have a feature request or bug to report you can open a new ticket. The pages below has all the information on how to collect relevant log files.

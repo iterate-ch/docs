@@ -38,7 +38,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -51,7 +51,8 @@ html_theme_options = {
     'logo_only': True,
 	'style_nav_header_background': '#5a5a5a',
 	'style_external_links': True,
-	'vcs_pageview_mode': 'edit'
+	'vcs_pageview_mode': 'edit',
+	'includehidden': False
 }
 html_logo = 'cyberduck-icon-64.png'
 html_context = {
