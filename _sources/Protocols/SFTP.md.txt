@@ -178,7 +178,7 @@ Because of all the escaping of characters, it might be easier to edit the key us
 **Using [iTerm2](https://www.iterm2.com/)**
 
 **Version 7.4 and later:**<br/>
-No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term* and restart Cyberduck. To revert, set the default application for a file named {{.command}} to *Terminal.app* in *Finder → Info → Open With…*.
+No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term* and restart Cyberduck. To revert, set the default application for a file named `.command` to *Terminal.app* in *Finder → Info → Open With…*.
 
 **Previous versions:**<br/>
 You can change a [hidden configuration option](../Cyberduck/Preferences#HiddenConfigurationOptions) to use a thirdparty terminal application instead of Terminal.app.
