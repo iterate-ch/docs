@@ -1,76 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive &mdash; Cyberduck Help  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Formatting Cheat Sheet" href="Formatting_Cheat-Sheet.html" />
     <link rel="prev" title="Cryptomator - Encryption Security Architecture" href="Cryptomator/Cryptomator_Architecture.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #5a5a5a" >
-          
-
-          
-            <a href="index.html">
-          
-
-          
-            
-            <img src="_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
-          
+            <a href="index.html"><img src="_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -78,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive</a></li>
@@ -102,81 +49,38 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Cyberduck Help</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content style-external-links">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/iterate-ch/docs/edit/main/Google_Client_ID.md" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="tex2jax_ignore mathjax_ignore section" id="custom-oatuh-2-0-client-id-for-google-cloud-storage-and-google-drive">
-<h1>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive<a class="headerlink" href="#custom-oatuh-2-0-client-id-for-google-cloud-storage-and-google-drive" title="Permalink to this headline">¶</a></h1>
+<h1>Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive<a class="headerlink" href="#custom-oatuh-2-0-client-id-for-google-cloud-storage-and-google-drive" title="Permalink to this headline"></a></h1>
 <blockquote>
 <div><p>To use OAuth 2.0 in your application, you need an OAuth 2.0 client ID, which your application uses when requesting an OAuth 2.0 access token.</p>
 </div></blockquote>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="verification-issue">
-<h1>Verification Issue<a class="headerlink" href="#verification-issue" title="Permalink to this headline">¶</a></h1>
+<h1>Verification Issue<a class="headerlink" href="#verification-issue" title="Permalink to this headline"></a></h1>
 <p>Login using OAuth is currently failing with the default OAuth Client ID application registration in Cyberduck. When attempting to allow access for Cyberduck to Google Drive, the following error is displayed.</p>
 <div class="admonition error">
 <p class="admonition-title">Error</p>
@@ -185,27 +89,27 @@
 <p>As a workaround, you can register your own OAuth Client ID to connect to <a class="reference internal" href="Protocols/Google_Drive.html"><span class="doc std std-doc">Google Drive</span></a>. For <a class="reference internal" href="Protocols/Google_Cloud_Storage.html"><span class="doc std std-doc">Google Storage</span></a> you can use <a class="reference external" href="Protocols/Google_Cloud_Storage#interoperable-access">Interoperable Access</a> as a workaround.</p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="register-client-id">
-<h1>Register Client ID<a class="headerlink" href="#register-client-id" title="Permalink to this headline">¶</a></h1>
+<h1>Register Client ID<a class="headerlink" href="#register-client-id" title="Permalink to this headline"></a></h1>
 <p>Follow the steps in <a class="reference external" href="https://support.google.com/googleapi/answer/6158849?hl=en">Setting up OAuth 2.0</a>. From Credentials copy the Client ID and Client secret by choosing the action Edit OAuth Client.</p>
 <a class="reference internal image-reference" href="_images/Google_Create_OAuth_Client_ID.png"><img alt="Google Create OAuth Client ID" src="_images/Google_Create_OAuth_Client_ID.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="_images/Google_Client_ID_and_client_secret.png"><img alt="Google Client ID and Client Secret" src="_images/Google_Client_ID_and_client_secret.png" style="width: 600px;" /></a>
 <p><em>Edit the OAuth Consent Screen</em> to add the scopes <em>Google Cloud Storage JSON API</em> <code class="docutils literal notranslate"><span class="pre">../auth/devstorage.read_write</span></code> and/or <em>Google Drive API</em> <code class="docutils literal notranslate"><span class="pre">../auth/drive</span></code>. You will first need to enable <em>Google Drive</em> in the Google API Library.</p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="edit-custom-connection-profile">
-<h1>Edit Custom Connection Profile<a class="headerlink" href="#edit-custom-connection-profile" title="Permalink to this headline">¶</a></h1>
+<h1>Edit Custom Connection Profile<a class="headerlink" href="#edit-custom-connection-profile" title="Permalink to this headline"></a></h1>
 <p>Create a custom <a class="reference internal" href="Cyberduck/Profiles.html"><span class="doc std std-doc">connection profile</span></a> with the following properties.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID</span></code>. Override the registered application client id.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">Secret</span></code>. Override the registered application client secret.</p></li>
 </ul>
 <div class="section" id="sample-google-drive-with-custom-oauth-client-id-connection-profile">
-<h2>Sample Google Drive with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-drive-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline">¶</a></h2>
+<h2>Sample Google Drive with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-drive-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="_downloads/687d82af6251f9487b16a5817b6500dd/Google Drive Custom OAuth Client ID.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Drive</span> <span class="pre">Custom</span> <span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID.cyberduckprofile</span></code></a></p></li>
 </ul>
 </div>
 <div class="section" id="sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile">
-<h2>Sample Google Cloud Storage with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline">¶</a></h2>
+<h2>Sample Google Cloud Storage with Custom OAuth Client ID Connection Profile<a class="headerlink" href="#sample-google-cloud-storage-with-custom-oauth-client-id-connection-profile" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p><a class="reference download internal" download="" href="_downloads/6eab8e71e520b9cbb44e7a108496c799/Google Storage Custom OAuth Client ID.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Storage</span> <span class="pre">Custom</span> <span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID.cyberduckprofile</span></code></a></p></li>
 </ul>
@@ -214,50 +118,33 @@
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Formatting_Cheat-Sheet.html" class="btn btn-neutral float-right" title="Formatting Cheat Sheet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Cryptomator/Cryptomator_Architecture.html" class="btn btn-neutral float-left" title="Cryptomator - Encryption Security Architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Formatting_Cheat-Sheet.html" class="btn btn-neutral float-right" title="Formatting Cheat Sheet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021 iterate GmbH.
-
-    </p>
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
