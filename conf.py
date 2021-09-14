@@ -54,6 +54,7 @@ html_theme_options = {
 	'vcs_pageview_mode': 'edit',
 	'includehidden': False
 }
+html_favicon = 'favicon.ico'
 html_logo = 'cyberduck-icon-64.png'
 html_context = {
 	"display_github": True, # Add 'Edit on Github' link instead of 'View page source'
