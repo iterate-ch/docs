@@ -19,6 +19,7 @@ jobs:
       - uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: "."
+          build-command: "make dirhtml"
       - name: Cache artifacts
         uses: actions/cache@v2
         if: github.ref == 'refs/heads/main'
