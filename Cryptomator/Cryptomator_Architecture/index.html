@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptomator - Encryption Security Architecture &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive" href="../../Google_Client_ID/" />
+    <link rel="prev" title="Cryptomator" href="../" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Cryptomator - Encryption Security Architecture</a></li>
+<li><a class="reference internal" href="#masterkey">Masterkey</a></li>
+<li><a class="reference internal" href="#filename-encryption">Filename Encryption</a></li>
+<li><a class="reference internal" href="#file-header-encryption">File Header Encryption</a></li>
+<li><a class="reference internal" href="#file-content-encryption">File Content Encryption</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Cryptomator</a> &raquo;</li>
+      <li>Cryptomator - Encryption Security Architecture</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Cryptomator/Cryptomator_Architecture.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="cryptomator-encryption-security-architecture">
+<h1>Cryptomator - Encryption Security Architecture<a class="headerlink" href="#cryptomator-encryption-security-architecture" title="Permalink to this headline"></a></h1>
+<p>Please refer to <a class="reference internal" href="../"><span class="doc std std-doc">Cryptomator</span></a> security overview for more details.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="masterkey">
+<h1>Masterkey<a class="headerlink" href="#masterkey" title="Permalink to this headline"></a></h1>
+<p>Each vault has its own 256 bit encryption as well as MAC masterkey used for encryption of file specific keys and file authentication, respectively. Both keys are encrypted using RFC 3394 key wrapping with a KEK derived from the user’s password using scrypt.</p>
+<p>The wrapped keys (with some additional metadata) are remotely stored in a JSON file named masterkey.cryptomator located in the root directory of a vault.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="filename-encryption">
+<h1>Filename Encryption<a class="headerlink" href="#filename-encryption" title="Permalink to this headline"></a></h1>
+<p>Cryptomator uses AES-SIV to encrypt file as well as directory names. Additionally to the name, a unique directory ID of its parent directory is passed as associated data. This prevents undetected moving of files between directories.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="file-header-encryption">
+<h1>File Header Encryption<a class="headerlink" href="#file-header-encryption" title="Permalink to this headline"></a></h1>
+<p>The file header stores certain metadata, which is needed for file content encryption. It consists of 88 bytes.</p>
+<ul class="simple">
+<li><p>16 bytes nonce used during header payload encryption</p></li>
+<li><p>40 bytes AES-CTR encrypted payload consisting of:</p>
+<ul>
+<li><p>8 bytes filled with 1 for future use (formerly used for file size)</p></li>
+<li><p>32 bytes file content key</p></li>
+<li><p>32 bytes header MAC of the previous 56 bytes</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="file-content-encryption">
+<h1>File Content Encryption<a class="headerlink" href="#file-content-encryption" title="Permalink to this headline"></a></h1>
+<p>The cleartext is broken down into multiple chunks, each up to 32 KiB + 48 bytes consisting of:</p>
+<ul class="simple">
+<li><p>16 bytes nonce</p></li>
+<li><p>up to 32 KiB encrypted payload using AES-CTR with the file content key</p></li>
+<li><p>32 bytes MAC of</p>
+<ul>
+<li><p>file header nonce (to bind this chunk to the file header)</p></li>
+<li><p>chunk number as 8 byte big endian integer (to prevent undetected reordering)</p></li>
+<li><p>nonce</p></li>
+<li><p>encrypted payload</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h1>
+<p><a class="reference external" href="https://docs.cryptomator.org/en/latest/security/architecture/">Security Architecture Overview</a></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../" class="btn btn-neutral float-left" title="Cryptomator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Google_Client_ID/" class="btn btn-neutral float-right" title="Custom OAtuh 2.0 Client ID for Google Cloud Storage and Google Drive" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

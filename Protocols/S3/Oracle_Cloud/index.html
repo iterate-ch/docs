@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oracle Cloud Infrastructure &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Pilvio" href="../Pilvio/" />
+    <link rel="prev" title="MinIO Cloud Storage" href="../MinIO/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../../"><img src="../../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Oracle Cloud Infrastructure</a></li>
+<li><a class="reference internal" href="#oci-object-storage">OCI Object Storage</a><ul>
+<li><a class="reference internal" href="#connecting">Connecting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#oci-object-storage-classic">OCI Object Storage Classic</a><ul>
+<li><a class="reference internal" href="#id1">Connecting</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../">Protocols</a> &raquo;</li>
+          <li><a href="../">Amazon S3</a> &raquo;</li>
+      <li>Oracle Cloud Infrastructure</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Protocols/S3/Oracle_Cloud.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="oracle-cloud-infrastructure">
+<h1>Oracle Cloud Infrastructure<a class="headerlink" href="#oracle-cloud-infrastructure" title="Permalink to this headline"></a></h1>
+<a class="reference internal image-reference" href="../../../_images/OCI_Object_Storage.png"><img alt="Oracle Drive Icon" src="../../../_images/OCI_Object_Storage.png" style="width: 128px;" /></a>
+<blockquote>
+<div><p><a class="reference external" href="https://oracle.com/cloud">Oracle Cloud Infrastructure (OCI)</a> provides two separate Object Storage solutions: <em>OCI Object Storage</em> and <em>OCI Object Storage Classic</em>. Both of them can be accessed using Cyberduck.</p>
+</div></blockquote>
+<p><img alt="Oracle Cloud Marketplace Badge" src="../../../_images/cloud-mrktplc-badge.png" /></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="oci-object-storage">
+<h1>OCI Object Storage<a class="headerlink" href="#oci-object-storage" title="Permalink to this headline"></a></h1>
+<div class="section" id="connecting">
+<h2>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline"></a></h2>
+<p>For connecting to OCI Object Storage, Cyberduck version 6.4.0 or later is required. You need to use the <a class="reference external" href="https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/s3compatibleapi.htm">OCI Amazon S3 Compatible API</a>.</p>
+<p>Follow these instructions:</p>
+<ol class="simple">
+<li><p>Create an Amazon S3 Compatibility API key by following the instructions within the <a class="reference external" href="https://docs.oracle.com/en-us/Content/Identity/Tasks/managingcredentials.htm#Working2">Oracle Cloud Documentation</a>.</p></li>
+<li><p>Download the connection profile for the <a class="reference external" href="https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm">region</a> you want to use:</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-sydney-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-sydney-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-melbourne-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-melbourne-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(sa-saopaulo-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(sa-saopaulo-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ca-montreal-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ca-montreal-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ca-toronto-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ca-toronto-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(eu-frankfurt-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(eu-frankfurt-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-hyderabad-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-hyderabad-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-mumbai-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-mumbai-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-osaka-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-osaka-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-tokyo-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-tokyo-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(eu-amsterdam-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(eu-amsterdam-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(me-jeddah-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(me-jeddah-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-seoul-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-seoul-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(ap-chuncheon-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(ap-chuncheon-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(eu-zurich-1.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(eu-zurich-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(uk-london-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.io/trunk/profiles/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(us-ashburn-1).cyberduckprofile</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/oraclecloud/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">OCI</span> <span class="pre">Object</span> <span class="pre">Storage</span> <span class="pre">(uk-london-1).cyberduckprofile</span></code></a></p></li>
+</ul>
+</li>
+<li><p>Open the downloaded profile by double-clicking on it in Finder or Explorer. It will be opened by Cyberduck. On macOS, the connection profile will be opened automatically in edit mode. On Windows, you may need to edit the bookmark manually.</p></li>
+<li><p>Set a nickname (e.g. <em>OCI Ashburn</em>)</p></li>
+<li><p>Update the entry in the <em>Server</em> field and replace <code class="docutils literal notranslate"><span class="pre">&lt;namespace&gt;</span></code> with your tenancy’s namespace (For more information about namespaces, and ways to find your namespace refer to the <a class="reference external" href="https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm">Oracle Cloud Documentation</a>)</p></li>
+<li><p>Enter the <em>Access Key</em> that you obtained while creating <em>Amazon S3 Compatible API Key</em></p></li>
+<li><p>Save the profile</p></li>
+<li><p>When you try to connect, you will be prompted for a <em>Secret Key</em></p></li>
+<li><p>Enter the <em>Secret Key</em> that you obtained while creating <em>Amazon S3 Compatible API Key</em></p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For adding a region profile, you need to download the profile for that region. Duplicating a profile and only changing the region endpoint will not work and will result in <code class="docutils literal notranslate"><span class="pre">Listing</span> <span class="pre">directory</span> <span class="pre">/</span> <span class="pre">failed</span> <span class="pre">errors</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="oci-object-storage-classic">
+<h1>OCI Object Storage Classic<a class="headerlink" href="#oci-object-storage-classic" title="Permalink to this headline"></a></h1>
+<div class="section" id="id1">
+<h2>Connecting<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>Follow these instructions:</p>
+<ol class="simple">
+<li><p><a class="reference download external" download="" href="https://trac.cyberduck.io/attachment/wiki/help/en/howto/oraclecloud/Oracle%20Storage%20Cloud.cyberduckprofile"><code class="xref download docutils literal notranslate"><span class="pre">Download</span></code></a> the Oracle Storage Cloud profile for preconfigured settings using the <code class="docutils literal notranslate"><span class="pre">/auth/v1.0</span></code> authentication context.</p></li>
+<li><p>Enter the following information in the <a class="reference internal" href="../../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a>:</p>
+<ul class="simple">
+<li><p>Protocol: Swift (OpenStack Object Storage)</p></li>
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">IdentityDomain.storage.oraclecloud.com</span></code>. For example, this is <code class="docutils literal notranslate"><span class="pre">cyduck.storage.oraclecloud.com</span></code></p></li>
+<li><p>Username: <code class="docutils literal notranslate"><span class="pre">ServiceName-IdentityDomain:UserName</span></code>. For example this is <code class="docutils literal notranslate"><span class="pre">Storage-cyduck:dkocher&#64;cyberduck.io</span></code></p></li>
+<li><p>Password: Oracle Cloud Password</p></li>
+<li><p>Tenant: Oracle Cloud Username</p></li>
+<li><p>OCI Object Storage Classic Regions</p>
+<ul>
+<li><p>us2: Chicago, IL</p></li>
+<li><p>us6: Ashburn, VA</p></li>
+<li><p>em2: Amsterdam</p></li>
+<li><p>em3: UK</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4">Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../MinIO/" class="btn btn-neutral float-left" title="MinIO Cloud Storage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Pilvio/" class="btn btn-neutral float-right" title="Pilvio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

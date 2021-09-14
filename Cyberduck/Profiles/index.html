@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connection Profiles &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Share Files" href="../Share/" />
+    <link rel="prev" title="Preferences" href="../Preferences/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Connection Profiles</a></li>
+<li><a class="reference internal" href="#technical-file-format-specification">Technical file format specification</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#disk-icon-template">Disk icon template</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Cyberduck Quick Reference Cheat Sheet</a> &raquo;</li>
+      <li>Connection Profiles</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Cyberduck/Profiles.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="connection-profiles">
+<h1>Connection Profiles<a class="headerlink" href="#connection-profiles" title="Permalink to this headline"></a></h1>
+<p><a class="reference external" href="Connection.md#connection-profiles">Connection profiles</a> (<code class="docutils literal notranslate"><span class="pre">.cyberduckprofile</span></code>) are documents describing connection settings for a hosting provider.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="../Protocols/S3/index.md#third-party-providers">Third-Party S3 providers</a></p></li>
+<li><p><a class="reference external" href="../Protocols/OpenStack/index.md#providers">OpenStack Providers</a></p></li>
+</ul>
+<p>These files (<a class="reference external" href="http://en.wikipedia.org/wiki/Property_list">XML Property List Format</a>) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.</p>
+<p><a class="reference external" href="mailto:support&#37;&#52;&#48;cyberduck&#46;io">Contact us</a> if you are a service provider and need assistance in setting this up.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="technical-file-format-specification">
+<h1>Technical file format specification<a class="headerlink" href="#technical-file-format-specification" title="Permalink to this headline"></a></h1>
+<p>Connection profile files are (<a class="reference external" href="http://en.wikipedia.org/wiki/Property_list">XML Property List Format</a>) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.</p>
+<p><a class="reference external" href="mailto:support&#37;&#52;&#48;cyberduck&#46;io">Contact us</a> if you are a service provider and need assistance in setting this up.</p>
+<p>The following properties can be defined in a connection profile:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Protocol</span></code> <em>(Required)</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vendor</span></code> (Hosting Provider) <em>(Required)</em> <strong>Important: This value must be unique among all installed connection profiles</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Description</span></code> <em>(Required)</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Nickname</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Hostname</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Port</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Path</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Username</span> <span class="pre">Placeholder</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Password</span> <span class="pre">Placeholder</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Disk</span></code> Base64 encoded disk TIFF image icon. Multi Page TIFF with formats <code class="docutils literal notranslate"><span class="pre">64x64</span></code> (72dpi) and <code class="docutils literal notranslate"><span class="pre">128x128</span></code> (144dpi) pixels. Use the <a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">disk</span> <span class="pre">template</span> <span class="pre">file</span></code></a> to create a provider profile image.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Icon</span></code> Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of <code class="docutils literal notranslate"><span class="pre">Disk</span></code> icon</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Context</span></code> Login context path (currently used for Swift profiles)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Username</span> <span class="pre">Configurable</span></code> Boolean if username is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Password</span> <span class="pre">Configurable</span></code> Boolean if password is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Hostname</span> <span class="pre">Configurable</span></code> Boolean if hostname is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Port</span> <span class="pre">Configurable</span></code> Boolean if port number is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Anonymous</span> <span class="pre">Configurable</span></code> Boolean if anonymous access is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Path</span> <span class="pre">Configurable</span></code> Boolean if default path is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Certificate</span> <span class="pre">Configurable</span></code> Boolean if client certificate is configurable.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Region</span></code> Region name to limit listing containers of a specific region only for <a class="reference internal" href="../../Protocols/OpenStack/"><span class="doc std std-doc">OpenStack Swift</span></a> and <a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">S3</span></a> profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Regions</span></code> List of regions supported by the provider. This will populate options in the <em>Regions</em> dropdown when creating a new <a class="reference external" href="../Protocols/S3/index#creating-a-bucket">top level folder</a> for <a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">S3</span></a> and <a class="reference internal" href="../../Protocols/OpenStack/SwiftStack/"><span class="doc std std-doc">OpenStack Swift</span></a> connections.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">ID</span></code> For protocols using OAuth 2.0 you can override the registered application client ID with the provider.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OAuth</span> <span class="pre">Client</span> <span class="pre">Secret</span></code> For protocols using OAuth 2.0 you can override the registered application client secret with the provider.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Authorization</span></code> Set to <code class="docutils literal notranslate"><span class="pre">AWS2</span></code> to default to AWS2 signature authentication for S3. Default is <code class="docutils literal notranslate"><span class="pre">AWS4HMACSHA256</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Properties</span></code> List of custom protocol-specific properties. You can set <a class="reference external" href="Preferences.md#hidden-configuration-options">hidden configuration options</a> for a specific connection profile. Example usages can be found in:</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile">FTP (Compatibility Mode).cyberduckprofile</a></p></li>
+<li><p><a class="reference external" href="https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile">FTP-SSL (Compatibility Mode).cyberduckprofile</a></p></li>
+<li><p><a class="reference external" href="https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile">S3 (Deprecated path style requests).cyberduckprofile</a></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">Disk</span> <span class="pre">template</span> <span class="pre">file</span> <span class="pre">(Adobe</span> <span class="pre">Photoshop)</span></code></a></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Protocol&lt;/key&gt;
+        &lt;string&gt;swift&lt;/string&gt;
+        &lt;key&gt;Vendor&lt;/key&gt;
+        &lt;string&gt;hp&lt;/string&gt;
+        &lt;key&gt;Description&lt;/key&gt;
+        &lt;string&gt;HP Cloud Object Storage&lt;/string&gt;
+        &lt;key&gt;Default Hostname&lt;/key&gt;
+        &lt;string&gt;region-a.geo-1.identity.hpcloudsvc.com&lt;/string&gt;
+        &lt;key&gt;Default Port&lt;/key&gt;
+        &lt;string&gt;35357&lt;/string&gt;
+        &lt;key&gt;Schemes&lt;/key&gt;
+        &lt;array&gt;
+                &lt;string&gt;hp&lt;/string&gt;
+                &lt;string&gt;https&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;Hostname Configurable&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;Port Configurable&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;Context&lt;/key&gt;
+        &lt;string&gt;/v2.0/tokens&lt;/string&gt;
+        &lt;key&gt;Username Placeholder&lt;/key&gt;
+        &lt;string&gt;Tenant ID:Access Key&lt;/string&gt;
+        &lt;key&gt;Password Placeholder&lt;/key&gt;
+        &lt;string&gt;Secret Key&lt;/string&gt;
+        &lt;key&gt;Properties&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;key=value&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;Disk&lt;/key&gt;
+        &lt;string&gt;
+            TU0AKgAFiw6AACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuOR2PR+QSGRSOSSWTSeU
+            SmVSuWS2XS+YTGZTOaTWbTecTmdTueT2fT+gUGhUOiUWjUekUmlUumU2nU+oVGpVOqVWrVes
+            VmtVuuV2vV+wWGxWOyWWzWe0Wm1Wu2W23W+4XG5XO6XW7Xe8Xm9Xu+X2/X/AYHBYPCYXDYfE
+            YnFYvGY3HY/IZHJZPKZXLZfMZnNZvOZ3PZ/QaHRaPSaXTafUanVavWa3Xa/YbHZbPabXbbfc
+            bndbveb3fb/gcHhcPicXjcfkcnlcvmc3nc/odHpdPqdXrdfsdntdvud3vd/weHxePyeXzef0
+            en1ev2e33e/4fH5fP6fX7ff8fn9fv+f3/P/AEAwFAcCQLA0DwRBMFQXBkGwdB8IQjCUJwpCs
+            LQvDEMw1DcOQ7D0PxBEMRRHEkSxNE8URTFUVxZFsXRfGEYxlGcaRrG0bxxHMdR3Hkex9H8gS
+            DIUhyJIsjSPHAAyUAMkSbJ0nyhKMpSmkh/ysf8qSzLUtotJcmS5MEwzFMcyTLMMryxM01TXE
+            cvIZNyNzhNk5zpOs7TvPDfzQjk9onPs80BQL0TkgtCIJQlDIHRKDApRoXgPSAIA4DgNh8glJ
+            g2H6EUaCwXAQBADghKyBSUiVRgBUqs1PVKGSvVFWJ3NNUVNNNYM1VcvrLWVcoHXCDV8AFgIJ
+            V0loLYSWTTLEsWLYda15XtFJlY7BWmn1dp1YFqrTa6O20g9vI1YlbKpcFdWdB9uLxcqYXWol
+            …
+            /aMAAAPcAADAbA==
+        &lt;/string&gt;
+        &lt;key&gt;Regions&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;custom&lt;/string&gt;
+            &lt;string&gt;custom2&lt;/string&gt;
+        &lt;/array&gt;
+    &lt;/dict&gt;
+&lt;/plist&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="disk-icon-template">
+<h1>Disk icon template<a class="headerlink" href="#disk-icon-template" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd"><code class="xref download docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Photoshop</span> <span class="pre">disk</span> <span class="pre">template</span> <span class="pre">file</span></code></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Preferences/" class="btn btn-neutral float-left" title="Preferences" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Share/" class="btn btn-neutral float-right" title="Share Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

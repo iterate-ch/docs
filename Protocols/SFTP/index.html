@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFTP &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/tabs.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Microsoft SharePoint" href="../SharePoint/" />
+    <link rel="prev" title="Microsoft OneDrive" href="../OneDrive/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">SFTP</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#openssh-configuration-interoperability">OpenSSH Configuration Interoperability</a><ul>
+<li><a class="reference internal" href="#public-key-fingerprints">Public Key Fingerprints</a></li>
+<li><a class="reference internal" href="#configuration-file">Configuration File</a></li>
+<li><a class="reference internal" href="#default-public-key-authentication-keys">Default Public Key Authentication Keys</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#public-key-authentication">Public Key Authentication</a><ul>
+<li><a class="reference internal" href="#putty-key-format-interoperability">PuTTY Key Format Interoperability</a></li>
+<li><a class="reference internal" href="#openssh-key-format-interoperability">OpenSSH Key Format Interoperability</a></li>
+<li><a class="reference internal" href="#configure-public-key-authentication">Configure Public Key Authentication</a></li>
+<li><a class="reference internal" href="#public-key-authentication-using-ssh-agent">Public Key Authentication Using SSH Agent</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#one-time-passcodes">One-Time Passcodes</a><ul>
+<li><a class="reference internal" href="#google-authenticator">Google Authenticator</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#verify-host-keys">Verify Host Keys</a></li>
+<li><a class="reference internal" href="#connect-via-ssh-tunnel-through-bastion-server">Connect via SSH Tunnel Through Bastion Server</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#open-in-terminal">Open in Terminal</a></li>
+<li><a class="reference internal" href="#distribution-cdn">Distribution (CDN)</a></li>
+<li><a class="reference internal" href="#create-and-expand-zip-tar-archives">Create and expand ZIP/TAR Archives</a><ul>
+<li><a class="reference internal" href="#archive">Archive</a></li>
+<li><a class="reference internal" href="#expand">Expand</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#remote-commands">Remote Commands</a></li>
+<li><a class="reference internal" href="#preferences">Preferences</a><ul>
+<li><a class="reference internal" href="#default-protocol-handler">Default Protocol Handler</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#supported-algorithms">Supported Algorithms</a><ul>
+<li><a class="reference internal" href="#ciphers">Ciphers</a></li>
+<li><a class="reference internal" href="#key-exchange">Key Exchange</a></li>
+<li><a class="reference internal" href="#signatures">Signatures</a></li>
+<li><a class="reference internal" href="#compression">Compression</a></li>
+<li><a class="reference internal" href="#private-key-files">Private Key Files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#incompatibilities">Incompatibilities</a><ul>
+<li><a class="reference internal" href="#serv-u-mft">Serv-U MFT</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#illegal-sftp-packet-len-invalid-packet-indicated-length-1114795883-too-large">Illegal sftp packet len. Invalid packet: indicated length 1114795883 too large</a></li>
+<li><a class="reference internal" href="#kex-timeout">Kex Timeout</a></li>
+<li><a class="reference internal" href="#connect-does-not-work">Connect Does not Work</a></li>
+<li><a class="reference internal" href="#symbolic-link-isn-t-accessible">Symbolic Link isn’t Accessible</a></li>
+<li><a class="reference internal" href="#file-permissions-reset-when-saving-file-macos">File Permissions Reset When Saving File (macOS)</a></li>
+<li><a class="reference internal" href="#file-owner-reset-when-saving-file-macos">File Owner Reset When Saving File (macOS)</a></li>
+<li><a class="reference internal" href="#free-space-calculation-is-incorrect-windows">Free Space Calculation is Incorrect (Windows)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Protocols</a> &raquo;</li>
+      <li>SFTP</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Protocols/SFTP.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="sftp">
+<h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline"></a></h1>
+<a class="reference internal image-reference" href="Protocols/_image/ftp.png"><img alt="Send Command" src="Protocols/_image/ftp.png" style="width: 128px;" /></a>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline"></a></h1>
+<p>If you have access to a server using a secure shell (<a class="reference external" href="http://en.wikipedia.org/wiki/Secure_Shell_Protocol">SSH2</a>), most probably <code class="docutils literal notranslate"><span class="pre">sftp-server</span></code> is also installed and configured and you can connect using <a class="reference external" href="http://en.wikipedia.org/wiki/SSH_file_transfer_protocol">SFTP</a>.</p>
+<div class="section" id="openssh-configuration-interoperability">
+<h2>OpenSSH Configuration Interoperability<a class="headerlink" href="#openssh-configuration-interoperability" title="Permalink to this headline"></a></h2>
+<div class="section" id="public-key-fingerprints">
+<h3>Public Key Fingerprints<a class="headerlink" href="#public-key-fingerprints" title="Permalink to this headline"></a></h3>
+<p>Public key fingerprints are checked against and written to <code class="docutils literal notranslate"><span class="pre">~/ssh/known_hosts</span></code> when accepted. This does not apply to the Mac App Store version which does store key fingerprints in the preferences.</p>
+</div>
+<div class="section" id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>The following configuration options from <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> are supported for SFTP connections:</p>
+<ul class="simple">
+<li><p><em>IdentityFile</em> for public key authentication.</p></li>
+<li><p><em>HostName</em> aliases.</p></li>
+<li><p><em>User</em> preference for login credentials.</p></li>
+<li><p><em>ProxyJump</em> to connect via SSH tunnel through bastion server. <strong>Cyberduck version 7.7 or later required.</strong></p></li>
+<li><p><em>PreferredAuthentications</em> to limit authentication methods tried to login. <strong>Cyberduck version 7.7.2 or later required.</strong></p></li>
+<li><p><em>IdentitiesOnly</em>. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. <strong>Cyberduck version 7.9.0 or later required.</strong></p></li>
+<li><p>A <a class="reference internal" href="../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a> will update its public key authentication setting from the IdentityFile configuration in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>. Also when opening a new <a class="reference external" href="../Cyberduck/Connection#toolbar-button">connection</a> using <em>File → Open Connection…, IdentityFile</em> and <em>User</em> parameters in the OpenSSH user config file are auto completed.</p></li>
+</ul>
+<p>Example <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> configuration:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host myhostname
+	User myusername
+	IdentityFile ~/.ssh/mykey-rsa
+</pre></div>
+</div>
+<p>To use the same key for all hosts add a wildcard entry such as</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host *
+	IdentityFile ~/.ssh/mykey-rsa
+</pre></div>
+</div>
+<p>which is then used when configuring a new bookmark.</p>
+</div>
+<div class="section" id="default-public-key-authentication-keys">
+<h3>Default Public Key Authentication Keys<a class="headerlink" href="#default-public-key-authentication-keys" title="Permalink to this headline"></a></h3>
+<p>You can enable the use of a default set of keys <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_rsa</span></code> and <code class="docutils literal notranslate"><span class="pre">~/.ssh/id_dsa</span></code> (in this order) by setting the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">ssh.authentication.publickey.default.enable</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="public-key-authentication">
+<h2>Public Key Authentication<a class="headerlink" href="#public-key-authentication" title="Permalink to this headline"></a></h2>
+<p>Public-key authentication allows you to connect to a remote server without sending your password over the Internet. Public-key authentication uses two keys:</p>
+<ol class="simple">
+<li><p>a private key that only you have that should be kept in a secure place and protected with a password</p></li>
+<li><p>the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up.</p></li>
+</ol>
+<p>Private keys containing a <code class="docutils literal notranslate"><span class="pre">DSA</span></code> or <code class="docutils literal notranslate"><span class="pre">RSA</span></code> private key in <em>PEM</em> format are supported (look for <code class="docutils literal notranslate"><span class="pre">-----BEGIN</span> <span class="pre">DSA</span> <span class="pre">PRIVATE</span> <span class="pre">KEY-----</span></code> or <code class="docutils literal notranslate"><span class="pre">-----BEGIN</span> <span class="pre">RSA</span> <span class="pre">PRIVATE</span> <span class="pre">KEY-----</span></code> in the file) and can be configured in the <a class="reference internal" href="../../Cyberduck/Bookmarks/"><span class="doc std std-doc">Bookmark</span></a> or <a class="reference internal" href="../../Cyberduck/Connection/"><span class="doc std std-doc">Connection</span></a> panel.</p>
+<div class="section" id="putty-key-format-interoperability">
+<h3>PuTTY Key Format Interoperability<a class="headerlink" href="#putty-key-format-interoperability" title="Permalink to this headline"></a></h3>
+<p>PuTTY private keys (<code class="docutils literal notranslate"><span class="pre">.ppk</span></code>) are supported for <code class="docutils literal notranslate"><span class="pre">rsa</span></code> key types. <code class="docutils literal notranslate"><span class="pre">ed25519</span></code> is not supported.</p>
+</div>
+<div class="section" id="openssh-key-format-interoperability">
+<h3>OpenSSH Key Format Interoperability<a class="headerlink" href="#openssh-key-format-interoperability" title="Permalink to this headline"></a></h3>
+<p>OpenSSH private keys of type <code class="docutils literal notranslate"><span class="pre">rsa</span></code>, <code class="docutils literal notranslate"><span class="pre">dsa</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdsa</span></code> and <code class="docutils literal notranslate"><span class="pre">ed25519</span></code> (in OpenSSL<code class="docutils literal notranslate"><span class="pre">PEM</span></code> format) are supported. The new OpenSSH format (<code class="docutils literal notranslate"><span class="pre">openssh-key-v1</span></code>) is only supported for <code class="docutils literal notranslate"><span class="pre">ecdsa</span></code> and <code class="docutils literal notranslate"><span class="pre">ed25519</span></code>.</p>
+</div>
+<div class="section" id="configure-public-key-authentication">
+<h3>Configure Public Key Authentication<a class="headerlink" href="#configure-public-key-authentication" title="Permalink to this headline"></a></h3>
+<ol>
+<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">ssh-keygen</span></code> from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory <code class="docutils literal notranslate"><span class="pre">~/.ssh</span></code>, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a ‘passphrase’. If you use a <em>passphrase</em> then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don’t enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">m</span> <span class="n">PEM</span> <span class="o">-</span><span class="n">t</span> <span class="n">rsa</span>
+</pre></div>
+</div>
+</li>
+<li><p>Copy the public key to the remote host you wish to access and add it to the file <code class="docutils literal notranslate"><span class="pre">authorized_keys</span></code> in your <code class="docutils literal notranslate"><span class="pre">~/.ssh</span></code> directory. (If that file does not exist then you should create it.) Anybody listed in the authorized_keys file (via their public key) is allowed to log-in, provided that they can prove that they possess the corresponding private key. Thus if you have the private key in your .ssh directory on your home machine you’ll be allowed in.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">hostname</span> <span class="o">&lt;</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span> <span class="s1">&#39;cat &gt;&gt; .ssh/authorized_keys&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>In the Connection Dialog or the Bookmark editor in Cyberduck select <em>Use Public Key Authentication</em> and select the private key in your <code class="docutils literal notranslate"><span class="pre">.ssh</span></code> directory.</p></li>
+</ol>
+</div>
+<div class="section" id="public-key-authentication-using-ssh-agent">
+<h3>Public Key Authentication Using SSH Agent<a class="headerlink" href="#public-key-authentication-using-ssh-agent" title="Permalink to this headline"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-0-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p>There is support for OpenSSH <code class="docutils literal notranslate"><span class="pre">ssh-agent</span></code>. The agent <code class="docutils literal notranslate"><span class="pre">ssh-agent</span></code> is running by default on OS X. You add private key identities to the authentication agent using the program <code class="docutils literal notranslate"><span class="pre">ssh-add</span></code>. When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.</p>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>There is support for <a class="reference external" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Pageant</a> on Windows.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty">How To Use Pageant to Streamline SSH Key Authentication with PuTTY</a></p></li>
+</ul>
+</div></div>
+</div>
+</div>
+<div class="section" id="one-time-passcodes">
+<h2>One-Time Passcodes<a class="headerlink" href="#one-time-passcodes" title="Permalink to this headline"></a></h2>
+<p>Using a challenge-response authentication with one-time password generators like <em>SecurID</em> is supported. After the initial login prompt for the username and password, a second login prompt is displayed to enter the one-time passcode.</p>
+<div class="section" id="google-authenticator">
+<h3>Google Authenticator<a class="headerlink" href="#google-authenticator" title="Permalink to this headline"></a></h3>
+<p>A setup with a two-step verification such as <a class="reference external" href="https://github.com/google/google-authenticator">Google Authenticator</a> is supported.</p>
+<p>Use the following configuration steps:</p>
+<ol class="simple">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">libpam-google-authenticator</span></code> on the server.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">google-authenticator</span></code> to create a new account and scan the 2D barcode using the Authenticator application on your phone. Refer to <a class="reference external" href="https://support.google.com/accounts/answer/1066447?hl=en">Install Google Authenticator</a>.</p></li>
+<li><p>Make it required for SSH logins by running <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">'auth</span> <span class="pre">required</span> <span class="pre">pam_google_authenticator.so'</span> <span class="pre">&gt;&gt;</span> <span class="pre">/etc/pam.d/sshd</span></code>.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">ChallengeResponseAuthentication</span> <span class="pre">yes</span></code> to <code class="docutils literal notranslate"><span class="pre">/etc/ssh/sshd_config</span></code> with <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">'ChallengeResponseAuthentication</span> <span class="pre">yes'</span> <span class="pre">&gt;&gt;</span> <span class="pre">/etc/ssh/sshd_config</span></code>.</p></li>
+</ol>
+<p>When logging in, enter the time-based token requested after providing username and password.</p>
+<p><img alt="Verification Code Prompt" src="../../_images/Verification_Code_Prompt.png" /></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/google/google-authenticator/wiki/PAM-Module-Instructions">PAM Module Instructions</a></p></li>
+<li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-16-04">How To Set Up Multi-Factor Authentication for SSH on Ubuntu 16.04</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="verify-host-keys">
+<h2>Verify Host Keys<a class="headerlink" href="#verify-host-keys" title="Permalink to this headline"></a></h2>
+<p>Upon connecting to an SSH server for the first time, you will see a message to verify the host key uniquely identifying the server. You can ask your provider for the public fingerprint of the server to make sure you are connecting to the right host. Subsequent connections to the SSH server will make sure that the host key does not have changed to prevent spoofing attacks.</p>
+<p><img alt="Unknown Host Key" src="../../_images/Unknown_host_key.png" /></p>
+</div>
+<div class="section" id="connect-via-ssh-tunnel-through-bastion-server">
+<h2>Connect via SSH Tunnel Through Bastion Server<a class="headerlink" href="#connect-via-ssh-tunnel-through-bastion-server" title="Permalink to this headline"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Cyberduck version 7.7 or later required</p>
+</div>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">ProxyJump</span></code> configuration directive in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> you can connect through a tunnel. The bookmark configuration refers to the target host in the internal network. We should find a <code class="docutils literal notranslate"><span class="pre">ProxyJump</span></code> directive in the OpenSSH configuration <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> matching the hostname in the bookmark.</p>
+<p>Sample configuration:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host internal
+	HostName server.lan
+	ProxyJump user-external@jump.example.org:2222
+	User user-internal
+</pre></div>
+</div>
+<p>You can also work with aliases like</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host bastion-host-nickname
+    HostName bastion-hostname
+    User username
+    Port 2222
+
+Host remote-host-nickname
+    HostName remote-hostname
+    ProxyJump bastion-host-nickname
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="open-in-terminal">
+<h1>Open in Terminal<a class="headerlink" href="#open-in-terminal" title="Permalink to this headline"></a></h1>
+<p>Open in <em>Terminal</em> allows you to open an SSH shell for the current working directory with a single click.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-bWFjT1M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="0">macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-1-bWFjT1M=" class="sphinx-tabs-panel group-tab" id="panel-1-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><strong>Terminal.app</strong></p>
+<p>Use <em>View → Customize Toolbar…</em> to add the <em>Terminal.app</em> toolbar icon to your browser.</p>
+<p><img alt="Terminal" src="../../_images/Terminal.png" /></p>
+<p><strong>Customize SSH Command:</strong><br/>
+You can change the SSH command using the <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck terminal.command.ssh \&quot;ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\&quot;cd\ {4}\ \&amp;\&amp;\ exec\ \\\\\$SHELL\\\&quot;\&quot;
+</pre></div>
+</div>
+<p>where</p>
+<ul class="simple">
+<li><p>{0} is <code class="docutils literal notranslate"><span class="pre">-i</span> <span class="pre">&lt;path</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">private</span> <span class="pre">key&gt;</span></code></p></li>
+<li><p>{1} is the username from the login credentials</p></li>
+<li><p>{2} is the hostname</p></li>
+<li><p>{3} is the port number of the remote host</p></li>
+<li><p>{4} is the current working directory in the browser</p></li>
+</ul>
+<p>Because of all the escaping of characters, it might be easier to edit the key using <em>Property List Editor</em> if you have the developer tools installed. You can then set the string for the key <code class="docutils literal notranslate"><span class="pre">terminal.command.ssh</span> <span class="pre">to</span> <span class="pre">ssh</span> <span class="pre">-t</span> <span class="pre">{0}</span> <span class="pre">{1}&#64;{2}</span> <span class="pre">-p</span> <span class="pre">{3}</span> <span class="pre">&quot;cd</span> <span class="pre">{4}</span> <span class="pre">&amp;&amp;</span> <span class="pre">exec</span> <span class="pre">\$SHELL&quot;</span></code>. Test the string in <em>Terminal.app</em> first if it is valid.</p>
+<p><strong>Using <a class="reference external" href="https://www.iterm2.com/">iTerm2</a></strong></p>
+<p><strong>Version 7.4 and later:</strong><br/>
+No configuration change is required. Choose <em>iTerm2 → Make iTerm2 Default Term</em> and restart Cyberduck. To revert, set the default application for a file named <code class="docutils literal notranslate"><span class="pre">.command</span></code> to <em>Terminal.app</em> in <em>Finder → Info → Open With…</em>.</p>
+<p><strong>Previous versions:</strong><br/>
+You can change a <a class="reference external" href="../Cyberduck/Preferences#HiddenConfigurationOptions">hidden configuration option</a> to use a thirdparty terminal application instead of Terminal.app.</p>
+<ul>
+<li><p>Example for iTerm2 Version 2</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">defaults</span> <span class="n">write</span> <span class="n">ch</span><span class="o">.</span><span class="n">sudo</span><span class="o">.</span><span class="n">cyberduck</span> <span class="n">terminal</span><span class="o">.</span><span class="n">bundle</span><span class="o">.</span><span class="n">identifier</span> <span class="n">com</span><span class="o">.</span><span class="n">googlecode</span><span class="o">.</span><span class="n">iterm2</span>
+<span class="n">defaults</span> <span class="n">write</span> <span class="n">ch</span><span class="o">.</span><span class="n">sudo</span><span class="o">.</span><span class="n">cyberduck</span> <span class="n">terminal</span><span class="o">.</span><span class="n">command</span> \<span class="s2">&quot;set\ t\ to\ \(make\ new\ terminal\)</span><span class="se">\\</span><span class="s2">ntell\ t</span><span class="se">\\</span><span class="s2">nset\ s\ to\ \(launch\ session\ </span><span class="se">\\\&quot;</span><span class="s2">Default\ Session</span><span class="se">\\\&quot;</span><span class="s2">\)</span><span class="se">\\</span><span class="s2">ntell\ s</span><span class="se">\\</span><span class="s2">nwrite\ text\ </span><span class="se">\\\&quot;</span><span class="si">{0}</span><span class="se">\\\&quot;\\</span><span class="s2">nend\ tell</span><span class="se">\\</span><span class="s2">nend\ tell</span><span class="se">\&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Example for iTerm2 Version 3</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">defaults</span> <span class="n">write</span> <span class="n">ch</span><span class="o">.</span><span class="n">sudo</span><span class="o">.</span><span class="n">cyberduck</span> <span class="n">terminal</span><span class="o">.</span><span class="n">bundle</span><span class="o">.</span><span class="n">identifier</span> <span class="n">com</span><span class="o">.</span><span class="n">googlecode</span><span class="o">.</span><span class="n">iterm2</span>
+<span class="n">defaults</span> <span class="n">write</span> <span class="n">ch</span><span class="o">.</span><span class="n">sudo</span><span class="o">.</span><span class="n">cyberduck</span> <span class="n">terminal</span><span class="o">.</span><span class="n">command</span> \<span class="s2">&quot;set\ t\ to\ \(create\ window\ with\ default\ profile\)</span><span class="se">\\</span><span class="s2">ntell\ t</span><span class="se">\\</span><span class="s2">nset\ s\ to\ \(current\ session\)</span><span class="se">\\</span><span class="s2">ntell\ s</span><span class="se">\\</span><span class="s2">nwrite\ text\ </span><span class="se">\\\&quot;</span><span class="si">{0}</span><span class="se">\\\&quot;\\</span><span class="s2">nend\ tell</span><span class="se">\\</span><span class="s2">nend\ tell</span><span class="se">\&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>To reset to the default settings use:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults delete ch.sudo.cyberduck terminal.bundle.identifier
+defaults delete ch.sudo.cyberduck terminal.command
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Disable WSL</strong></p>
+<p>There is a <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> for toggling additional SSH-terminal applications. Currently implemented are <code class="docutils literal notranslate"><span class="pre">ssh.exe</span></code> (OpenSSH built-in to Windows 10 since version 1709), <code class="docutils literal notranslate"><span class="pre">bash.exe</span></code> (using WSL and invoking <code class="docutils literal notranslate"><span class="pre">ssh</span></code> there) as well as PuTTY.</p>
+<ul class="simple">
+<li><p>Disabling OpenSSH: <code class="docutils literal notranslate"><span class="pre">terminal.openssh.enable=false</span></code></p></li>
+<li><p>Disabling WSL: <code class="docutils literal notranslate"><span class="pre">terminal.windowssubsystemlinux.enable=false</span></code></p></li>
+</ul>
+<p><strong>PuTTY.exe</strong></p>
+<p>Use <em>View → Customize Toolbar…</em> to add the <em>Open in Putty</em> toolbar icon to your browser.</p>
+<p><img alt="Putty" src="../../_images/putty.png" /></p>
+<p><strong>Location of the PuTTY installation:</strong><br/>
+By default, the executable <code class="docutils literal notranslate"><span class="pre">putty.exe</span></code> must be located in your user home folder. You can change the install location by editing the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-options">hidden configuration option</a> <code class="docutils literal notranslate"><span class="pre">terminal.command.ssh</span></code> to point to the path of the executable.</p>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="distribution-cdn">
+<h1>Distribution (CDN)<a class="headerlink" href="#distribution-cdn" title="Permalink to this headline"></a></h1>
+<p>You can enable custom origin <a class="reference internal" href="../../CDN/CloudFront/"><span class="doc std std-doc">Amazon CloudFront (Content Delivery Network) distribution</span></a> using <em>File → Info → Distribution (CDN)</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="create-and-expand-zip-tar-archives">
+<h1>Create and expand ZIP/TAR Archives<a class="headerlink" href="#create-and-expand-zip-tar-archives" title="Permalink to this headline"></a></h1>
+<p>The remote systems must have the archiving tools <code class="docutils literal notranslate"><span class="pre">tar</span></code> or <code class="docutils literal notranslate"><span class="pre">zip</span></code> installed respectively. Use <em>View → Customize Toolbar…</em> to add the Archive toolbar button to your browser window. It is not included in the default toolbar configuration.</p>
+<div class="section" id="archive">
+<h2>Archive<a class="headerlink" href="#archive" title="Permalink to this headline"></a></h2>
+<p>Select one or more files to archive in the browser. For multiple files, a file with the name <code class="docutils literal notranslate"><span class="pre">Archive</span></code> with the given extension of the archive format will be created.</p>
+<p><img alt="Compress" src="../../_images/Compress.png" /></p>
+</div>
+<div class="section" id="expand">
+<h2>Expand<a class="headerlink" href="#expand" title="Permalink to this headline"></a></h2>
+<p>Select one or more files to expand in the current working directory.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="remote-commands">
+<h1>Remote Commands<a class="headerlink" href="#remote-commands" title="Permalink to this headline"></a></h1>
+<p>You can send any remote command to a remote SSH server. This is for example useful if you want a HTTP server to reload its configuration or changing the ownership of files using <em>chown</em> on a <code class="docutils literal notranslate"><span class="pre">UNIX</span></code> system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The current working directory is always your use home. Determine using pwd to get the absolute path.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/command.png"><img alt="Send Command" src="../../_images/command.png" style="width: 600px;" /></a>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline"></a></h1>
+<div class="section" id="default-protocol-handler">
+<h2>Default Protocol Handler<a class="headerlink" href="#default-protocol-handler" title="Permalink to this headline"></a></h2>
+<p>You can set Cyberduck or a third-party application as the default application (protocol handler) for <code class="docutils literal notranslate"><span class="pre">SFTP</span></code> in <em>Preferences → SFTP</em>. When you click URLs in another application like your web browser, this application is opened to open the URL instead.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="supported-algorithms">
+<h1>Supported Algorithms<a class="headerlink" href="#supported-algorithms" title="Permalink to this headline"></a></h1>
+<div class="section" id="ciphers">
+<h2>Ciphers<a class="headerlink" href="#ciphers" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">aes{128,192,256}-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">blowfish-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">3des-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">twofish{128,192,256}-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">twofish-cbc</span></code>, <code class="docutils literal notranslate"><span class="pre">serpent{128,192,256}-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">idea-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">cast128-{cbc,ctr}</span></code>, <code class="docutils literal notranslate"><span class="pre">arcfour</span></code>, <code class="docutils literal notranslate"><span class="pre">arcfour{128,256}</span></code>, <code class="docutils literal notranslate"><span class="pre">aes{128,256}-gcm&#64;openssh.com</span></code>, <code class="docutils literal notranslate"><span class="pre">chacha20-poly1305&#64;openssh.com</span></code></p>
+</div>
+<div class="section" id="key-exchange">
+<h2>Key Exchange<a class="headerlink" href="#key-exchange" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">diffie-hellman-group1-sha1</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group14-sha1</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group14-sha256</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group15-sha512</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group16-sha512</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group17-sha512</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group18-sha512</span> <span class="pre">diffie-hellman-group-exchange-sha1</span></code>, <code class="docutils literal notranslate"><span class="pre">diffie-hellman-group-exchange-sha256</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdh-sha2-nistp256</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdh-sha2-nistp384</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdh-sha2-nistp521</span></code>, <code class="docutils literal notranslate"><span class="pre">curve25519-sha256&#64;libssh.org</span></code></p>
+</div>
+<div class="section" id="signatures">
+<h2>Signatures<a class="headerlink" href="#signatures" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ssh-rsa</span></code>, <code class="docutils literal notranslate"><span class="pre">ssh-dss</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdsa-sha2-nistp256</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdsa-sha2-nistp384</span></code>, <code class="docutils literal notranslate"><span class="pre">ecdsa-sha2-nistp521</span></code>, <code class="docutils literal notranslate"><span class="pre">ssh-ed25519</span></code></p>
+</div>
+<div class="section" id="compression">
+<h2>Compression<a class="headerlink" href="#compression" title="Permalink to this headline"></a></h2>
+<p>Compression with <code class="docutils literal notranslate"><span class="pre">zlib</span></code> and <code class="docutils literal notranslate"><span class="pre">zlib&#64;openssh.com</span></code> is supported.</p>
+</div>
+<div class="section" id="private-key-files">
+<h2>Private Key Files<a class="headerlink" href="#private-key-files" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pkcs5</span></code>, <code class="docutils literal notranslate"><span class="pre">pkcs8</span></code>, <code class="docutils literal notranslate"><span class="pre">openssh-key-v1</span></code>, <code class="docutils literal notranslate"><span class="pre">ssh-rsa-cert-v01&#64;openssh.com</span></code>, <code class="docutils literal notranslate"><span class="pre">ssh-dsa-cert-v01&#64;openssh.com</span></code></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="incompatibilities">
+<h1>Incompatibilities<a class="headerlink" href="#incompatibilities" title="Permalink to this headline"></a></h1>
+<div class="section" id="serv-u-mft">
+<h2>Serv-U MFT<a class="headerlink" href="#serv-u-mft" title="Permalink to this headline"></a></h2>
+<p>Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, uploaded as a required flag is not implemented and results in error messages.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline"></a></h1>
+<div class="section" id="illegal-sftp-packet-len-invalid-packet-indicated-length-1114795883-too-large">
+<h2>Illegal sftp packet len. Invalid packet: indicated length 1114795883 too large<a class="headerlink" href="#illegal-sftp-packet-len-invalid-packet-indicated-length-1114795883-too-large" title="Permalink to this headline"></a></h2>
+<p>The error message <code class="docutils literal notranslate"><span class="pre">Invalid</span> <span class="pre">packet:</span> <span class="pre">indicated</span> <span class="pre">length</span> <span class="pre">1114795883</span> <span class="pre">too</span> <span class="pre">large</span></code> may indicate you have either:</p>
+<ul class="simple">
+<li><p>An <code class="docutils literal notranslate"><span class="pre">echo</span></code> statement in your shell init script like <em>.bashrc</em>. Make sure it does not output any text.</p></li>
+<li><p>Interoperability issue with Globalscape EFT Server (Issue #5308).</p></li>
+<li><p>Possibly the server is printing a message similar to <em>Please login as the ubuntu user rather than root user</em>. Please verify the username for your connection.</p></li>
+<li><p>Enable SSH access on your server. Use the sftp command in a terminal to verify <code class="docutils literal notranslate"><span class="pre">sftp</span> <span class="pre">username&#64;domain_name</span></code>. It’ll ask for your password. If you don’t have SSH access, you’ll get “Received message too long”, hence the error message.</p></li>
+</ul>
+</div>
+<div class="section" id="kex-timeout">
+<h2>Kex Timeout<a class="headerlink" href="#kex-timeout" title="Permalink to this headline"></a></h2>
+<p>This error can occur if you are connecting the first time to a device with a slow processor. You can raise the tmeout value in <em>Preferences → Connection → Timeout</em>.</p>
+<p><img alt="Kex Timeout" src="../../_images/Kex_Timeout.png" /></p>
+</div>
+<div class="section" id="connect-does-not-work">
+<h2>Connect Does not Work<a class="headerlink" href="#connect-does-not-work" title="Permalink to this headline"></a></h2>
+<p>Cyberduck refuses to connect if there are malformed entries in your <code class="docutils literal notranslate"><span class="pre">known_hosts</span></code> file located under <code class="docutils literal notranslate"><span class="pre">~/.ssh</span></code>. Renaming this file and recreating it usually resolves this. An alternative requires manually editing the <code class="docutils literal notranslate"><span class="pre">known_hosts</span></code> file removing all malformed entries. Please refer to <a class="reference external" href="http://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT">sshd(8)</a> for a valid format.</p>
+</div>
+<div class="section" id="symbolic-link-isn-t-accessible">
+<h2>Symbolic Link isn’t Accessible<a class="headerlink" href="#symbolic-link-isn-t-accessible" title="Permalink to this headline"></a></h2>
+<p>Symbolic links only work within Mountain Duck if the target of the symbolic link is available within the mounted path.</p>
+</div>
+<div class="section" id="file-permissions-reset-when-saving-file-macos">
+<h2>File Permissions Reset When Saving File (macOS)<a class="headerlink" href="#file-permissions-reset-when-saving-file-macos" title="Permalink to this headline"></a></h2>
+<p>Mountain Duck will forward all permission changes done by Finder or the editing application to the SFTP server. There is a hidden preference to disable the writing of permissions. Enter the following command in a <em>Terminal.app</em> window</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write io.mountainduck fs.setattr.chmod false
+</pre></div>
+</div>
+<p>to disable. Make sure to quit Mountain Duck before making the change and then re-open the application.</p>
+</div>
+<div class="section" id="file-owner-reset-when-saving-file-macos">
+<h2>File Owner Reset When Saving File (macOS)<a class="headerlink" href="#file-owner-reset-when-saving-file-macos" title="Permalink to this headline"></a></h2>
+<p>Some editors save files using an <em>Atomic Save</em> feature that writes changes to a file to a temporary file later replacing the edited file by renaming the temporary file to the name of the edited file. This works well on local filesystems, where there is support to retain the owner of the file that is different from the editing user using a special <a class="reference external" href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man2/exchangedata.2.html">function call</a>. This does not work for volumes mounted with Mountain Duck and the file owner will be reset to the default owner for new files created on the server by the logged-in user. As a workaround, try to find a setting for the editor to disable the <em>Atomic Save</em> feature.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving">TextMate</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="free-space-calculation-is-incorrect-windows">
+<h2>Free Space Calculation is Incorrect (Windows)<a class="headerlink" href="#free-space-calculation-is-incorrect-windows" title="Permalink to this headline"></a></h2>
+<p>The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the space-available extension of the SFTP protocol or the <code class="docutils literal notranslate"><span class="pre">statvfs&#64;openssh.com</span></code> extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space.</p>
+<p>You can work around the issue using one of the following options:</p>
+<ul class="simple">
+<li><p>Set a default path you want to connect to within the bookmark Path option.</p></li>
+<li><p>Disable the feature within Mountain Duck by setting the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-option">hidden property</a> <code class="docutils literal notranslate"><span class="pre">fs.quota.enable=false</span></code> in <em>%AppData%\Cyberduck\default.properties</em>. If the file doesn’t exist create it within <em>%AppData%\Cyberduck</em>.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../OneDrive/" class="btn btn-neutral float-left" title="Microsoft OneDrive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../SharePoint/" class="btn btn-neutral float-right" title="Microsoft SharePoint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

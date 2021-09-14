@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Synchronization History &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="File Versions" href="../Versions/" />
+    <link rel="prev" title="Smart Synchronization" href="../Sync/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Smart Synchronization History</a></li>
+<li><a class="reference internal" href="#sync-progress">Sync Progress</a><ul>
+<li><a class="reference internal" href="#reveal-file">Reveal file</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#recent-files">Recent Files</a><ul>
+<li><a class="reference internal" href="#delete">Delete</a></li>
+<li><a class="reference internal" href="#create">Create</a></li>
+<li><a class="reference internal" href="#upload">Upload</a></li>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#error">Error</a></li>
+<li><a class="reference internal" href="#application-display">Application display</a></li>
+<li><a class="reference internal" href="#id1">Reveal file</a></li>
+<li><a class="reference internal" href="#clear-menu">Clear menu</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Mountain Duck</a> &raquo;</li>
+      <li>Smart Synchronization History</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Mountain_Duck/Sync_History.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="smart-synchronization-history">
+<h1>Smart Synchronization History<a class="headerlink" href="#smart-synchronization-history" title="Permalink to this headline"></a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="sync-progress">
+<h1>Sync Progress<a class="headerlink" href="#sync-progress" title="Permalink to this headline"></a></h1>
+<p>The sync progress shows the files that currently get synchronized and pending changes after the current transfer.</p>
+<a class="reference internal image-reference" href="../../_images/Sync_Progress.png"><img alt="Send Command" src="../../_images/Sync_Progress.png" style="width: 800px;" /></a>
+<p>Shown for the current transfers are transfer rate, remaining data, and already transferred data. If Mountain Duck synchronizes files in a badge, the file state might differ from the state within the file browser. The sync progress display is limited to 5 entries.</p>
+<div class="section" id="reveal-file">
+<h2>Reveal file<a class="headerlink" href="#reveal-file" title="Permalink to this headline"></a></h2>
+<p>Selecting an item reveals the file in the Finder (macOS) or File Explorer (Windows).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="recent-files">
+<h1>Recent Files<a class="headerlink" href="#recent-files" title="Permalink to this headline"></a></h1>
+<p>The <em>Recent Files</em> area shows the last 20 items that Mountain DUck uses for one of the following operations:</p>
+<div class="section" id="delete">
+<h2>Delete<a class="headerlink" href="#delete" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/delete.png"><img alt="Send Command" src="../../_images/delete.png" style="width: 50px;" /></a>
+<p>A file or folder has been deleted either <em>by you</em> or <em>on the server</em></p>
+</div>
+<div class="section" id="create">
+<h2>Create<a class="headerlink" href="#create" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/plus.png"><img alt="Send Command" src="../../_images/plus.png" style="width: 50px;" /></a>
+<p>A file or folder was created or updated <em>on the server</em>.</p>
+</div>
+<div class="section" id="upload">
+<h2>Upload<a class="headerlink" href="#upload" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/transfer_upload.png"><img alt="Send Command" src="../../_images/transfer_upload.png" style="width: 50px;" /></a>
+<p>A file or folder was added or changed and is uploaded to the server.</p>
+</div>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/transfer_download.png"><img alt="Send Command" src="../../_images/transfer_download.png" style="width: 50px;" /></a>
+<p>A file or folder is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as <em>Keep offline</em> has updated on the server.</p>
+</div>
+<div class="section" id="error">
+<h2>Error<a class="headerlink" href="#error" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="../../_images/alert.png"><img alt="Send Command" src="../../_images/alert.png" style="width: 50px;" /></a>
+<p>The sync operation failed for the file.</p>
+<a class="reference internal image-reference" href="../../_images/Recent_Files.png"><img alt="Send Command" src="../../_images/Recent_Files.png" style="width: 600px;" /></a>
+<p>A file may show up with an error state indicating an issue while synchronizing. Further details are available through the <a class="reference external" href="Sync#sync-errors">sync option menu item</a>.</p>
+</div>
+<div class="section" id="application-display">
+<h2>Application display<a class="headerlink" href="#application-display" title="Permalink to this headline"></a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Windows Only</p>
+<p>The application that was used for editing the file is displayed within the <em>Recent Files</em> area.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Reveal file<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>Selecting an item in the <em>Recent Files</em> section reveals the file in the Finder (macOS) of File Explorer (Windows).</p>
+</div>
+<div class="section" id="clear-menu">
+<h2>Clear menu<a class="headerlink" href="#clear-menu" title="Permalink to this headline"></a></h2>
+<p>Clear out all entries of the list by clicking on the <em>Clear Menu</em> button at the bottom of the menu.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Sync/" class="btn btn-neutral float-left" title="Smart Synchronization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Versions/" class="btn btn-neutral float-right" title="File Versions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

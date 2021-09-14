@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KeyCDN &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Cryptomator" href="../../Cryptomator/" />
+    <link rel="prev" title="Amazon CloudFront Support" href="../CloudFront/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">KeyCDN</a></li>
+<li><a class="reference internal" href="#keycdn-features">KeyCDN Features</a></li>
+<li><a class="reference internal" href="#content-delivery-with-a-keycdn-push-zone">Content Delivery with a KeyCDN Push Zone</a><ul>
+<li><a class="reference internal" href="#free-trial-account-including-10">Free Trial Account Including $10</a></li>
+<li><a class="reference internal" href="#creating-a-keycdn-push-zone">Creating a KeyCDN Push Zone</a></li>
+<li><a class="reference internal" href="#keycdn-configuration">KeyCDN Configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#keycdn-tools">KeyCDN Tools</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Content Delivery Network (CDN) Configuration</a> &raquo;</li>
+      <li>KeyCDN</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/CDN/KeyCDN.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="keycdn">
+<h1>KeyCDN<a class="headerlink" href="#keycdn" title="Permalink to this headline"></a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://www.keycdn.com/">KeyCDN</a> is the leading European content delivery network. The CDN already supports HTTP/2 and consists of 24+ points of presence (POPs) around the world. KeyCDN does not charge extra for HTTPS traffic or HTTP requests. The pricing model is transparent and purely pay-as-you-go. No monthly fee.</p>
+</div></blockquote>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="keycdn-features">
+<h1>KeyCDN Features<a class="headerlink" href="#keycdn-features" title="Permalink to this headline"></a></h1>
+<p>KeyCDN offers a state-of-the-art features:</p>
+<ul class="simple">
+<li><p>Full <a class="reference external" href="https://www.keycdn.com/blog/keycdn-http2-support/">HTTP/2</a> support for all customers</p></li>
+<li><p><a class="reference external" href="https://www.keycdn.com/support/use-letsencrypt-with-keycdn-to-enable-ssl-tls/">Free Custom SSL based on Let’s Encrypt</a></p></li>
+<li><p><a class="reference external" href="https://www.keycdn.com/support/cdn-log-format/">Raw logs</a> in real time.</p></li>
+<li><p>CDN changes in near-realtime: Any change or update of a KeyCDN zone is globally provisioned within minutes</p></li>
+<li><p>Free WordPress plugins developed by KeyCDN: <a class="reference external" href="https://wordpress.org/plugins/cdn-enabler/">CDN Enabler</a> and <a class="reference external" href="https://wordpress.org/plugins/cache-enabler/">Cache Enabler</a></p></li>
+<li><p>File browser for push zones: Any content of y push zone can be browsed within the KeyCDN dashboard.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="content-delivery-with-a-keycdn-push-zone">
+<h1>Content Delivery with a KeyCDN Push Zone<a class="headerlink" href="#content-delivery-with-a-keycdn-push-zone" title="Permalink to this headline"></a></h1>
+<div class="section" id="free-trial-account-including-10">
+<h2>Free Trial Account Including $10<a class="headerlink" href="#free-trial-account-including-10" title="Permalink to this headline"></a></h2>
+<p>KeyCDN offers a free trial account for all Cyberduck users preloaded with $10. The whole feature set of KeyCDN is available during the test phase. Sign up for free <a class="reference external" href="https://www.keycdn.com/?a=7">KeyCDN trial account</a> including $10 worth 250 GB of traffic.</p>
+</div>
+<div class="section" id="creating-a-keycdn-push-zone">
+<h2>Creating a KeyCDN Push Zone<a class="headerlink" href="#creating-a-keycdn-push-zone" title="Permalink to this headline"></a></h2>
+<p>A KeyCDN <a class="reference external" href="https://www.keycdn.com/support/create-a-push-zone/">push zone</a> is needed in order to use Cyberduck and upload content to a zone.</p>
+</div>
+<div class="section" id="keycdn-configuration">
+<h2>KeyCDN Configuration<a class="headerlink" href="#keycdn-configuration" title="Permalink to this headline"></a></h2>
+<p>Once a KeyCDN push zone has been created. Connect with Cyberduck to your push zone. Enter the following information in the <a class="reference internal" href="../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a>:</p>
+<ul class="simple">
+<li><p>Protocol: <code class="docutils literal notranslate"><span class="pre">FTP-SSL</span> <span class="pre">(Explicit</span> <span class="pre">AUTH</span> <span class="pre">TLS)</span></code></p></li>
+<li><p>Server: <code class="docutils literal notranslate"><span class="pre">ftp.keycdn.com</span></code></p></li>
+<li><p>Port: <code class="docutils literal notranslate"><span class="pre">21</span></code></p></li>
+<li><p>Username: The same username as used for the KeyCDN dashboard</p></li>
+<li><p>Password: Same as used for the KeyCDN dashboard</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="keycdn-tools">
+<h1>KeyCDN Tools<a class="headerlink" href="#keycdn-tools" title="Permalink to this headline"></a></h1>
+<p>KeyCDN offers a wide variety of tools along with the CDN that can be used:</p>
+<ul class="simple">
+<li><p>Analyze a website performance with the <a class="reference external" href="https://tools.keycdn.com/speed">KeyCDN Speed Test</a></p></li>
+<li><p>Locate IPs worldwide with <a class="reference external" href="https://tools.keycdn.com/geo">IP Location Finder</a></p></li>
+<li><p>Check if a website is ready for HTTP/2 with the <a class="reference external" href="https://tools.keycdn.com/http2-test">KeyCDN HTTP/2 Test</a></p></li>
+<li><p>Examine HTTP headers with <a class="reference external" href="https://tools.keycdn.com/curl">Curl Test</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../CloudFront/" class="btn btn-neutral float-left" title="Amazon CloudFront Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Cryptomator/" class="btn btn-neutral float-right" title="Cryptomator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

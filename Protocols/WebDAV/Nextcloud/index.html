@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextCloud &amp; ownCloud &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+        <script src="../../../_static/tabs.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="pCloud" href="../pCloud/" />
+    <link rel="prev" title="iKeepinCloud" href="../iKeepinCloud/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../../"><img src="../../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">NextCloud &amp; ownCloud</a></li>
+<li><a class="reference internal" href="#connecting">Connecting</a><ul>
+<li><a class="reference internal" href="#manual-configuration">Manual Configuration</a></li>
+<li><a class="reference internal" href="#step-by-step-instructions">Step-by-Step Instructions</a></li>
+<li><a class="reference internal" href="#factor-authentication">2-Factor Authentication</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#share-files">Share Files</a></li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#byte-files">0-Byte Files</a></li>
+<li><a class="reference internal" href="#slow-listings-for-large-folder-structures">Slow Listings for Large Folder Structures</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../">Protocols</a> &raquo;</li>
+          <li><a href="../">WebDAV</a> &raquo;</li>
+      <li>NextCloud &amp; ownCloud</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Protocols/WebDAV/Nextcloud.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="nextcloud-owncloud">
+<h1>NextCloud &amp; ownCloud<a class="headerlink" href="#nextcloud-owncloud" title="Permalink to this headline"></a></h1>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Nextcloud</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">ownCloud</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><a class="reference internal image-reference" href="../../../_images/logo_nextcloud.png"><img alt="Nextcloud Logo" src="../../../_images/logo_nextcloud.png" style="height: 128px;" /></a>
+<blockquote>
+<div><p><a class="reference external" href="https://nextcloud.com/files/">Nextcloud Files</a> is an on-premise, open-source file sync and share solution designed to be easy-to-use and highly secure.</p>
+</div></blockquote>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><a class="reference internal image-reference" href="../../../_images/owncloud-logo.png"><img alt="ownCloud Logo" src="../../../_images/owncloud-logo.png" style="height: 128px;" /></a>
+<blockquote>
+<div><p><a class="reference external" href="https://owncloud.org/features/">ownCloud</a> is the most straightforward way to file sync and share data. You don’t need to worry about where or how to access your files. With ownCloud, all your data is where ever you are; accessible on all devices, any time.</p>
+</div></blockquote>
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline"></a></h1>
+<div class="section" id="manual-configuration">
+<h2>Manual Configuration<a class="headerlink" href="#manual-configuration" title="Permalink to this headline"></a></h2>
+<p>Choose one of the protocolls:</p>
+<ul class="simple">
+<li><p>Protocol: <code class="docutils literal notranslate"><span class="pre">WebDAV</span> <span class="pre">(HTTPS)</span></code></p></li>
+<li><p>Default Path: <code class="docutils literal notranslate"><span class="pre">/remote.php/webdav/</span></code></p></li>
+<li><p>Protocol: <code class="docutils literal notranslate"><span class="pre">Nextcloud</span> <span class="pre">&amp;</span> <span class="pre">ownCloud</span></code></p></li>
+<li><p>Default Path will be automatically be filled in</p></li>
+</ul>
+</div>
+<div class="section" id="step-by-step-instructions">
+<h2>Step-by-Step Instructions<a class="headerlink" href="#step-by-step-instructions" title="Permalink to this headline"></a></h2>
+<ol class="simple">
+<li><p>Connect to your NextCloud or OwnCloud instance in your web browser and log in.</p></li>
+<li><p>Click on the option Settings in the lower left of the screen and copy the displayed WebDAV address.</p></li>
+<li><p>Create a new <a class="reference internal" href="../../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a>. In <em>Mountain Duck</em>, click on the icon in the tray area or status bar and choose the option <em>New Bookmark</em>.</p></li>
+<li><p>Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to <em>WebDAV (HTTPS)</em> and split the WebDAV address into two parts – the server address and the path.
+<img alt="Nextcloud Bookmark Window" src="Protocols/WebDAV/_images/Nextcloud_Bookmark_Window.png" /></p></li>
+<li><p>Type your <em>Username</em> into the corresponding field and press <em>Connect</em> in the bookmark window if available or double click from the bookmark window.</p></li>
+<li><p>Upon connecting, enter your password when requested in the login prompt.</p></li>
+</ol>
+</div>
+<div class="section" id="factor-authentication">
+<h2>2-Factor Authentication<a class="headerlink" href="#factor-authentication" title="Permalink to this headline"></a></h2>
+<p>With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in <em>Personal → App passwords</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="share-files">
+<h1>Share Files<a class="headerlink" href="#share-files" title="Permalink to this headline"></a></h1>
+<p>Create <a class="reference external" href="../../Cyberduck/Share#nextcloud-owncloud">public shares</a> for people who are not Nextcloud/ownCloud users using <em>File → Share…</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline"></a></h1>
+<div class="section" id="byte-files">
+<h2>0-Byte Files<a class="headerlink" href="#byte-files" title="Permalink to this headline"></a></h2>
+<p>If you are running an Apache configuration make sure to disable <code class="docutils literal notranslate"><span class="pre">fastcgi</span></code> and <code class="docutils literal notranslate"><span class="pre">php-fpm</span></code>. Refer to our <a class="reference internal" href="../../../Mountain_Duck/Issues_FastCGI/"><span class="doc std std-doc">best practice for Nextcloud and ownCloud installations</span></a>.</p>
+</div>
+<div class="section" id="slow-listings-for-large-folder-structures">
+<h2>Slow Listings for Large Folder Structures<a class="headerlink" href="#slow-listings-for-large-folder-structures" title="Permalink to this headline"></a></h2>
+<p>In order to retain timestamps for uploaded files, we make use of custom WebDAV properties. In Nextcloud/ownCloud these properties are stored in a dedicated database table <code class="docutils literal notranslate"><span class="pre">oc_properties</span></code>. This table unfortunately does not define any index to speed up the lookup for these properties when doing a listing. The database always has to do a full scan to find the properties for the requested resources. For installations with a large number of files, this can highly impact the response times for file listing. To overcome this issue you can create the following index:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>CREATE INDEX properties_path_index ON oc_properties(userid, propertypath)
+</pre></div>
+</div>
+<p>Also, refer to the <a class="reference external" href="https://github.com/nextcloud/server/issues/8962">issue</a> in GitHub.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.nextcloud.com/server/13/user_manual/files/access_webdav.html">Accessing Nextcloud Files Using WebDAV</a></p></li>
+<li><p><a class="reference internal" href="../../../Mountain_Duck/Issues_FastCGI/"><span class="doc std std-doc">Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../iKeepinCloud/" class="btn btn-neutral float-left" title="iKeepinCloud" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../pCloud/" class="btn btn-neutral float-right" title="pCloud" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

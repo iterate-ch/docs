@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon CloudFront Support &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="KeyCDN" href="../KeyCDN/" />
+    <link rel="prev" title="Akamai (CDN) Support" href="../Akamai/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Amazon CloudFront Support</a></li>
+<li><a class="reference internal" href="#subscription">Subscription</a></li>
+<li><a class="reference internal" href="#permissions">Permissions</a></li>
+<li><a class="reference internal" href="#basic-download-http-distributions">Basic (Download HTTP) Distributions</a></li>
+<li><a class="reference internal" href="#website-configuration-endpoint-distributions">Website Configuration Endpoint Distributions</a></li>
+<li><a class="reference internal" href="#website-configuration-endpoint-distributions-with-cloudfront-cdn">Website Configuration Endpoint Distributions with CloudFront CDN</a><ul>
+<li><a class="reference internal" href="#reference">Reference</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#streaming-rtmp-distributions">Streaming (RTMP) Distributions</a><ul>
+<li><a class="reference internal" href="#playback-configuration">Playback Configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-origin-hhtp-https-distributions">Custom Origin (HHTP/HTTPS) Distributions</a></li>
+<li><a class="reference internal" href="#deployment-status">Deployment Status</a><ul>
+<li><a class="reference internal" href="#cloudfront-access-logging">CloudFront Access Logging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#origin">Origin</a></li>
+<li><a class="reference internal" href="#where">Where</a></li>
+<li><a class="reference internal" href="#cnames">CNAMEs</a></li>
+<li><a class="reference internal" href="#index-file">Index File</a></li>
+<li><a class="reference internal" href="#object-invalidation">Object Invalidation</a></li>
+<li><a class="reference internal" href="#copy-urls">Copy URLs</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Content Delivery Network (CDN) Configuration</a> &raquo;</li>
+      <li>Amazon CloudFront Support</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/CDN/CloudFront.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="amazon-cloudfront-support">
+<h1>Amazon CloudFront Support<a class="headerlink" href="#amazon-cloudfront-support" title="Permalink to this headline"></a></h1>
+<p>Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using <em>File → Info → Distribution</em> for a <a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">S3</span></a> bucket or a custom origin distribution for any other source.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="subscription">
+<h1>Subscription<a class="headerlink" href="#subscription" title="Permalink to this headline"></a></h1>
+<p>You must <a class="reference external" href="http://aws.amazon.com/cloudfront/">signup</a> for Amazon CloudFront first. You pay only for the data transfer and requests that you actually use.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="permissions">
+<h1>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline"></a></h1>
+<p>Make sure your objects in the bucket you want to enable distribution for are world-readable. In <em>File → Info → Permissions</em> give <code class="docutils literal notranslate"><span class="pre">READ</span></code> permission to <em>Everyone</em> (<code class="docutils literal notranslate"><span class="pre">http://acs.amazonaws.com/groups/global/AllUsers</span></code>).</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="basic-download-http-distributions">
+<h1>Basic (Download HTTP) Distributions<a class="headerlink" href="#basic-download-http-distributions" title="Permalink to this headline"></a></h1>
+<p>Delivery method used to serve static content.</p>
+<p><img alt="CloudFront Configuration" src="../../_images/CloudFront_Configuration.png" /></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="website-configuration-endpoint-distributions">
+<h1>Website Configuration Endpoint Distributions<a class="headerlink" href="#website-configuration-endpoint-distributions" title="Permalink to this headline"></a></h1>
+<p>Enable a <a class="reference external" href="../Protocols/S3/index#website-configuration">website endpoint</a> with no CDN features.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="website-configuration-endpoint-distributions-with-cloudfront-cdn">
+<h1>Website Configuration Endpoint Distributions with CloudFront CDN<a class="headerlink" href="#website-configuration-endpoint-distributions-with-cloudfront-cdn" title="Permalink to this headline"></a></h1>
+<p>Custom origin CDN distribution with a <a class="reference external" href="../Protocols/S3/index#website-configuration">website endpoint</a> as a source to make use of the website endpoint features in CloudFront.</p>
+<p>You must also enable the website endpoint to make sure the CloudFront edge locations can fetch the content from the origin.</p>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://forums.aws.amazon.com/ann.jspa?annID=921">Using CloudFront with the new Amazon S3 static website hosting features</a></p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="streaming-rtmp-distributions">
+<h1>Streaming (RTMP) Distributions<a class="headerlink" href="#streaming-rtmp-distributions" title="Permalink to this headline"></a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Discontinued on December 31, 2020 within CloudFront</p>
+<p>For further information refer to the <a class="reference external" href="https://forums.aws.amazon.com/ann.jspa?annID=7356">AWS announcement</a>.</p>
+</div>
+<p>A delivery method used to serve <a class="reference external" href="http://en.wikipedia.org/wiki/Flash_Video">media</a> using a <a class="reference external" href="http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol">streaming protocol</a>.</p>
+<div class="section" id="playback-configuration">
+<h2>Playback Configuration<a class="headerlink" href="#playback-configuration" title="Permalink to this headline"></a></h2>
+<p>Copy the <code class="docutils literal notranslate"><span class="pre">RTMP</span></code> URL for a given file in a bucket with a streaming distribution enabled is displayed in the Info window <em>Distribution (CDN)</em> tab with <em>Streaming (RTMP)</em> selected as the delivery method. Where to put the URL depends on the client player you are using.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="custom-origin-hhtp-https-distributions">
+<h1>Custom Origin (HHTP/HTTPS) Distributions<a class="headerlink" href="#custom-origin-hhtp-https-distributions" title="Permalink to this headline"></a></h1>
+<p>A <a class="reference external" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html#forward-custom-headers-restrict-access">custom origin</a> is an origin server that isn’t hosted on Amazon S3. The origin server holds the original, definitive versions of your content. You can connect to any <a class="reference internal" href="../../Protocols/FTP/"><span class="doc std std-doc">FTP</span></a>, <a class="reference internal" href="../../Protocols/SFTP/"><span class="doc std std-doc">SFTP</span></a> or <a class="reference internal" href="../../Protocols/WebDAV/"><span class="doc std std-doc">WebDAV</span></a> server and configure it as an origin server for content distribution with Amazon CloudFront in the <em>Distribution (CDN)</em> tab of the <a class="reference internal" href="../../Cyberduck/Info/"><span class="doc std std-doc">Info</span></a> panel. The hostname from the <em>Web URL</em> configured in the bookmark is used to configure the origin of the CDN.</p>
+<p><img alt="Custom Origin CDN" src="../../_images/Custom_Origin_CDN.png" /></p>
+<ul class="simple">
+<li><p>Adjust the <a class="reference external" href="../Cyberduck/Bookmarks#http-url">Web URL</a> of the bookmark to the host where you want to CloudFront look for the original content. If the scheme of the Web URL is <code class="docutils literal notranslate"><span class="pre">http</span></code> the origin HTTP port of the distribution is set to the port number in the Web URL (defaults to <code class="docutils literal notranslate"><span class="pre">80</span></code>) and the HTTPS port is set to <code class="docutils literal notranslate"><span class="pre">443</span></code>. If the scheme is <code class="docutils literal notranslate"><span class="pre">https</span></code> the origin HTTPS port of the distribution is set to the port number in the Web URL (defaults to <code class="docutils literal notranslate"><span class="pre">443</span></code>) and the HTTP port is set to <code class="docutils literal notranslate"><span class="pre">80</span></code>.</p></li>
+<li><p>Set the <em>Path</em> of the bookmark to the document root of your web server. This allows you to select files for <a class="reference external" href="#object-invalidation">invalidation</a> or set the <a class="reference external" href="#index-file">default root object</a>.</p></li>
+<li><p>Connect to the server and select the <em>Distribution (CDN)</em> panel from the <a class="reference internal" href="../../Cyberduck/Info/"><span class="doc std std-doc">Info</span></a> window.</p></li>
+<li><p>Check the <em>Origin URL</em> displayed and enable the distribution with <em>Enable Amazon CloudFront distribution</em>.</p></li>
+<li><p>Refresh the status of the distribution using <em><code class="docutils literal notranslate"><span class="pre">⌘R</span></code></em>. The initial status is <em>In Progress</em> and should subsequently change to <em>Deployed</em> when the changes in Amazon CloudFront have propagated.</p></li>
+<li><p>Click the <em>Where</em> URL to load the content over the CDN.</p></li>
+</ul>
+<p><strong>Example Configuration:</strong></br>
+The first time your content is served to a worldwide user (one in Tokyo, for example), a copy of the content is fetched from the origin server and stored in cache on the edge servers in that location. The next time the content is requested, it’s pulled directly from the cached copy on the edge servers, dramatically reducing delivery time.</p>
+<p><img alt="CDN Custom Origin Server" src="../../_images/CDN_Custom_Origin_Server.png" /></p>
+<p>| Server | media.cyberduck.ch |	Hostname configured in bookmark to connect to. If this is different than what hostname CloudFront should fetch the origin content from, edit the hostname in the Web URL of the bookmark. |
+| CNAME | cdn.cyberduck.ch | Alias for hostname assigned by the CloudFront distribution |
+| Bookmark Path | <code class="docutils literal notranslate"><span class="pre">/usr/home/dkocher/cyberduck.ch/</span></code> | The Web Server Document Root |
+| Selected File | <code class="docutils literal notranslate"><span class="pre">/home/dkocher/cyberduck.ch/img/cyberduck.icon.png</span></code> | A file selected in the browser |
+| HTTP URL | http://media.cyberduck.ch/img/cyberduck.icon.png | Origin URL for the resource |
+| CDN URL | http://d15bfu8of7vup8.cloudfront.net/img/cyberduck.icon.png | URL for the resource assigned by the CloudFront distribution |
+| CDN CNAME URL | http://cdn.cyberduck.ch/img/cyberduck.icon.png | URL for resource in CDN with custom hostname registered in the DNS |</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="deployment-status">
+<h1>Deployment Status<a class="headerlink" href="#deployment-status" title="Permalink to this headline"></a></h1>
+<p>Upon changing configuration parameters of a distribution configuration, the settings are not distributed immediately in the CDN. While the deployment is in progress (which can take up to 15 minutes), the status <em>In Progress</em> is displayed. The updates are fully propagated throughout the CloudFront system when the distribution’s state switches from <em>In Progress</em> to <em>Deployed</em>.</p>
+<div class="section" id="cloudfront-access-logging">
+<h2>CloudFront Access Logging<a class="headerlink" href="#cloudfront-access-logging" title="Permalink to this headline"></a></h2>
+<p>When this option is enabled, access logs are written to <code class="docutils literal notranslate"><span class="pre">&lt;bucketname&gt;/logs</span></code>. The changes to the logging configuration take effect within 12 hours. The logging option is supported for both download and streaming distributions. Choose the target bucket for access logs in the dropdown menu listing all buckets of your account. It is considered best practice to choose a different logging target for each distribution.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="origin">
+<h1>Origin<a class="headerlink" href="#origin" title="Permalink to this headline"></a></h1>
+<p>The source of the content where CloudFront fetches the content to be served in the edge location of the CDN. This is a <a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">S3</span></a> bucket or your custom origin.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="where">
+<h1>Where<a class="headerlink" href="#where" title="Permalink to this headline"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">cloudfront.net</span></code> domain assigned to your distribution. This is directing to the edge location in the CDN next to the user requesting an URL.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="cnames">
+<h1>CNAMEs<a class="headerlink" href="#cnames" title="Permalink to this headline"></a></h1>
+<p>Enter a <a class="reference external" href="http://en.wikipedia.org/wiki/CNAME_record">CNAME</a> (alias in the Domain Name System) for the hostname of the distribution given by CloudFront. To use multiple CNAMEs for a single distribution, the hostnames must be space delimited. The CNAME must be registered on the nameserver responsible for your domain and point to <code class="docutils literal notranslate"><span class="pre">cloudfront.net</span></code> domain assigned to your distribution.</p>
+<p>Example configuration:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>;; QUESTION SECTION:
+;cdn.cyberduck.ch.		IN	A
+
+;; ANSWER SECTION:
+cdn.cyberduck.ch.	1576	IN	CNAME	d15bfu8of7vup8.cloudfront.net.
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="index-file">
+<h1>Index File<a class="headerlink" href="#index-file" title="Permalink to this headline"></a></h1>
+<p>You can assign a default root object to your HTTP or HTTPS distribution. This default object will be served when Amazon CloudFront receives a request for the root of your distribution – i.e., your distribution’s domain name by itself.</p>
+<p>When you define a default root object, a user request that calls the root of your distribution returns the default root object. For example, if you designate the file <code class="docutils literal notranslate"><span class="pre">index.html</span></code> as your default root object, a request for <code class="docutils literal notranslate"><span class="pre">http://d604721fxaaqy9.cloudfront.net/</span></code> returns <code class="docutils literal notranslate"><span class="pre">http://d604721fxaaqy9.cloudfront.net/index.html</span></code>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="object-invalidation">
+<h1>Object Invalidation<a class="headerlink" href="#object-invalidation" title="Permalink to this headline"></a></h1>
+<p><a class="reference external" href="http://aws.amazon.com/about-aws/whats-new/2010/08/31/cloudfront-adds-invalidation-feature/">Invalidation</a> is one way to remove a distribution object from an edge server cache before the expiration setting on the object’s header. Invalidation clears the object from the edge server cache, and a subsequent request for the object will cause CloudFront to return to the origin to fetch the latest version of the object.</p>
+<p>Use the Invalidate option <em>File → Info → Distribution (CDN)</em> to invalidate files from edge locations.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="copy-urls">
+<h1>Copy URLs<a class="headerlink" href="#copy-urls" title="Permalink to this headline"></a></h1>
+<p>CloudFront URLs are available in the regular <em>Copy URL</em> menu. Refer to <a class="reference external" href="../Cyberduck/Browser#open-or-copy-http-url">Open or Copy HTTP URL</a>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="http://aws.amazon.com/cloudfront/faqs/">Amazon CloudFront FAQs</a></p></li>
+<li><p><a class="reference external" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/on-demand-streaming-video.html">Video on Demand and Live Streaming Video with CloudFront</a></p></li>
+<li><p><a class="reference external" href="http://aws.amazon.com/cloudfront/#details">Edge Locations</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Akamai/" class="btn btn-neutral float-left" title="Akamai (CDN) Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../KeyCDN/" class="btn btn-neutral float-right" title="KeyCDN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

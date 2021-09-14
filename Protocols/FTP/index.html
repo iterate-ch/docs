@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTP &amp; FTP-TLS &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Google Cloud Storage" href="../Google_Cloud_Storage/" />
+    <link rel="prev" title="Files.com" href="../Files.com/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FTP &amp; FTP-TLS</a></li>
+<li><a class="reference internal" href="#ftp-connect-mode">FTP Connect Mode</a></li>
+<li><a class="reference internal" href="#character-encoding">Character Encoding</a></li>
+<li><a class="reference internal" href="#tls-connections-ftps">TLS Connections (FTPS)</a><ul>
+<li><a class="reference internal" href="#mutual-tls">Mutual TLS</a></li>
+<li><a class="reference internal" href="#switch-to-secure-connection">Switch to Secure Connection</a></li>
+<li><a class="reference internal" href="#trust-certificate">Trust Certificate</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#distribution-cdn">Distribution (CDN)</a></li>
+<li><a class="reference internal" href="#remote-commands">Remote Commands</a></li>
+<li><a class="reference internal" href="#server-compatibility">Server Compatibility</a><ul>
+<li><a class="reference internal" href="#proftpd">ProFTPd</a></li>
+<li><a class="reference internal" href="#vsftpd">vsFTPd</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#preferences">Preferences</a><ul>
+<li><a class="reference internal" href="#connection-text-encoding">Connection → Text Encoding</a></li>
+<li><a class="reference internal" href="#default-protocol-handler">Default Protocol Handler</a><ul>
+<li><a class="reference internal" href="#reset-windows-ftp-protocol-registration">Reset Windows FTP Protocol Registration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#known-issues">Known Issues</a><ul>
+<li><a class="reference internal" href="#maximum-number-of-connections">Maximum Number of Connections</a></li>
+<li><a class="reference internal" href="#error-opening-data-socket">Error Opening Data Socket</a></li>
+<li><a class="reference internal" href="#it-is-not-possible-to-change-permissions">It is not Possible to Change Permissions</a></li>
+<li><a class="reference internal" href="#listing-directory-fails-or-shows-no-content">Listing Directory Fails or Shows no Content</a></li>
+<li><a class="reference internal" href="#file-locks-with-vsftpd">File Locks With vsFTPd</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Protocols</a> &raquo;</li>
+      <li>FTP &amp; FTP-TLS</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Protocols/FTP.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="ftp-ftp-tls">
+<h1>FTP &amp; FTP-TLS<a class="headerlink" href="#ftp-ftp-tls" title="Permalink to this headline"></a></h1>
+<a class="reference internal image-reference" href="../../_images/ftp.png"><img alt="Send Command" src="../../_images/ftp.png" style="width: 128px;" /></a>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ftp-connect-mode">
+<h1>FTP Connect Mode<a class="headerlink" href="#ftp-connect-mode" title="Permalink to this headline"></a></h1>
+<p>Choose between an <a class="reference external" href="http://en.wikipedia.org/wiki/File_Transfer_Protocol#Connection_methods">Active (PORT) or Passive (PASV) connect mode</a> per <a class="reference internal" href="../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a> or when opening a <a class="reference external" href="../Cyberduck/Connection#toolbar-button">new connection</a>. The default setting can be set in the System Preferences in <em>Network → Advanced… → Proxies → Use Passive FTP Mode (PASV)</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="character-encoding">
+<h1>Character Encoding<a class="headerlink" href="#character-encoding" title="Permalink to this headline"></a></h1>
+<p>The character encoding used to parse directory listings can be set as a per bookmark setting. If special characters such as Umlaute aren’t displayed correctly in the browser, try to change the character encoding used. To change the character encoding for the current browser, use <em>View → Text Encoding</em>. The setting is also available per <a class="reference internal" href="../../Cyberduck/Bookmarks/"><span class="doc std std-doc">bookmark</span></a>. Try <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> (the default), <code class="docutils literal notranslate"><span class="pre">ISO-8859-1</span></code> and <code class="docutils literal notranslate"><span class="pre">Windows-1252</span></code>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="tls-connections-ftps">
+<h1>TLS Connections (FTPS)<a class="headerlink" href="#tls-connections-ftps" title="Permalink to this headline"></a></h1>
+<p>FTP with <a class="reference external" href="http://en.wikipedia.org/wiki/FTPS#Explicit">explicit</a> TLS is supported. Implicit FTPS with no negotiation is deprecated and not supported. FTPS should not be confused with the <a class="reference internal" href="../SFTP/"><span class="doc std std-doc">SSH File Transfer Protocol (SFTP)</span></a>.</p>
+<div class="section" id="mutual-tls">
+<h2>Mutual TLS<a class="headerlink" href="#mutual-tls" title="Permalink to this headline"></a></h2>
+<p>Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the Keychain on OS X or the Windows Certificate Manager respectively.</p>
+<p><img alt="Windows Security Prompt" src="../../_images/Windows-Security-Prompt.png" /></p>
+</div>
+<div class="section" id="switch-to-secure-connection">
+<h2>Switch to Secure Connection<a class="headerlink" href="#switch-to-secure-connection" title="Permalink to this headline"></a></h2>
+<p>If you attempt to connect to a server using FTP without TLS transport security but the server advertises support for TLS (as a response to <code class="docutils literal notranslate"><span class="pre">FEAT</span></code>), a prompt is displayed to secure the connection.</p>
+<p><img alt="Unsecured Connection" src="../../_images/Unsecured_connection.png" /></p>
+<p>You can always switch back to FTP without TLS transport security by changing the protocol selection in the bookmark to <em>FTP (File Transfer Protocol)</em>.</p>
+</div>
+<div class="section" id="trust-certificate">
+<h2>Trust Certificate<a class="headerlink" href="#trust-certificate" title="Permalink to this headline"></a></h2>
+<p>If the certificate is not trusted by the system, you are asked to make an exception if you still want to connect to the site that cannot be verified. This failure during certificate trust verification is most often the case when the certificate is invalid either</p>
+<ul class="simple">
+<li><p>Because the hostname does not match the common name in the certificate. You will get the error message <code class="docutils literal notranslate"><span class="pre">You</span> <span class="pre">might</span> <span class="pre">be</span> <span class="pre">connecting</span> <span class="pre">to</span> <span class="pre">a</span> <span class="pre">server</span> <span class="pre">that</span> <span class="pre">is</span> <span class="pre">pretending</span> <span class="pre">to</span> <span class="pre">be…</span></code>.</p></li>
+<li><p>The certificate is self signed or signed by a root authority not trusted in the system.</p></li>
+<li><p>The certificate is expired.</p></li>
+</ul>
+<p>You can temporarily or permanently allow to connect nevertheless by choosing <em>Continue</em>. To remember your choice, select <em>Always Trust…</em>.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="distribution-cdn">
+<h1>Distribution (CDN)<a class="headerlink" href="#distribution-cdn" title="Permalink to this headline"></a></h1>
+<p>You can enable custom origin <a class="reference internal" href="../../CDN/CloudFront/"><span class="doc std std-doc">Amazon CloudFront (Content Delivery Network) distribution</span></a> using <em>File → Info → Distribution (CDN)</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="remote-commands">
+<h1>Remote Commands<a class="headerlink" href="#remote-commands" title="Permalink to this headline"></a></h1>
+<p>Use <em>Go → Send Command…</em> to open a command input window for the current browser.</p>
+<p>Connected to a FTP server this allows to send arbitrary command not available through the user interface of the browser. Possibly these are extensions to the standard FTP protocol your server may support you can invoke with the <code class="docutils literal notranslate"><span class="pre">SITE</span></code> prefix. Type <code class="docutils literal notranslate"><span class="pre">SITE</span> <span class="pre">HELP</span></code> for supported commands.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="server-compatibility">
+<h1>Server Compatibility<a class="headerlink" href="#server-compatibility" title="Permalink to this headline"></a></h1>
+<div class="section" id="proftpd">
+<h2>ProFTPd<a class="headerlink" href="#proftpd" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>You need to have the option set <code class="docutils literal notranslate"><span class="pre">TLSOptions</span> <span class="pre">NoSessionReuseRequired</span></code> for FTP-TLS connections (Issue #5087). If configuring the server is not an option, users should switch back to plain FTP connections. Choose <em>FTP (File Transfer Protocol)</em> in the bookmark protocol setting. Most users hit by this compatibility issue have been asked to secure the connection because support for TLS was detected upon negogiating the connection.</p></li>
+</ul>
+<p>Example configuration:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TLSOptions
+
+  The NoSessionReuseRequired option has been added.  As of
+  ProFTPD 1.3.3rc1, mod_tls only accepts SSL/TLS data connections
+  that reuse the SSL session of the control connection, as a security
+  measure.  Unfortunately, there are some clients (e.g. curl) which
+  do not reuse SSL sessions.
+
+  To relax the requirement that the SSL session from the control
+  connection be reused for data connections, use the following in the
+  proftpd.conf:
+
+    &lt;IfModule mod_tls.c&gt;
+      ...
+      TLSOptions NoSessionReuseRequired
+      ...
+    &lt;/IfModule&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The option <code class="docutils literal notranslate"><span class="pre">TLSOptions</span> <span class="pre">AllowClientRenegotiations</span></code> must be set for FTP-TLS connections (Issue #3012).</p></li>
+<li><p>The option <code class="docutils literal notranslate"><span class="pre">TLSProtocol</span> <span class="pre">SSLv23</span></code> must be set for FTP-TLS connections (Issue #5061).</p></li>
+</ul>
+</div>
+<div class="section" id="vsftpd">
+<h2>vsFTPd<a class="headerlink" href="#vsftpd" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>The option <code class="docutils literal notranslate"><span class="pre">require_ssl_reuse=NO</span></code> must be set for FTP-TLS connections (Issue #5087).</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences">
+<h1>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline"></a></h1>
+<div class="section" id="connection-text-encoding">
+<h2>Connection → Text Encoding<a class="headerlink" href="#connection-text-encoding" title="Permalink to this headline"></a></h2>
+<p>The text encoding selected is used to decode the filenames in a directory listing sent by the server. It is important this matches the text encoding used by the server to encode the characters as otherwise characters not in the ASCII range (such as German Umlaute) are not displayed correctly. <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> (the default), <code class="docutils literal notranslate"><span class="pre">ISO-8859-1</span></code> and <code class="docutils literal notranslate"><span class="pre">Windows-1252</span></code> are the most common. You can also change the text encoding per browser using <em>View → Text Encoding</em>.</p>
+</div>
+<div class="section" id="default-protocol-handler">
+<h2>Default Protocol Handler<a class="headerlink" href="#default-protocol-handler" title="Permalink to this headline"></a></h2>
+<p>You can set Cyberduck or a third party application as the default application (protocol handler) for <code class="docutils literal notranslate"><span class="pre">FTP</span></code> in <em>Preferences → FTP</em>. When you click URLs in another application like your web browser, this application is opened to open the URL instead.</p>
+<div class="section" id="reset-windows-ftp-protocol-registration">
+<h3>Reset Windows FTP Protocol Registration<a class="headerlink" href="#reset-windows-ftp-protocol-registration" title="Permalink to this headline"></a></h3>
+<p>This has been fixed in Cyberduck 7.3.0. Cyberduck has overwritten the default Windows FTP protocol integration through Internet Explorer. This effectively disabled the Windows “Add Network location” for FTP-protocol. To reset this back to default you have to run following Registry-file which will reset the FTP-protocol registration back to default.</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../../_downloads/8277a1148276b021d8beed3cc697a74f/ftp-default.reg"><code class="xref download docutils literal notranslate"><span class="pre">ftp-default.reg</span></code></a> | This has been tested for Windows 10 1909 only. This may or may not work for previous versions of Windows.</p></li>
+</ul>
+<p>Applying Registry-files is not riskless and should be avoided if not necessary. Alternatively you may apply following sequence to get the FTP-protocol handler definitions for your operating system version:</p>
+<ol class="simple">
+<li><p>Create a Virtual Machine for your platform</p></li>
+<li><p>Open RegEdit, navigate to <em>HKCR\ftp</em></p></li>
+<li><p>Open the context menu for the <em>ftp</em>-key, select <em>Export</em></p></li>
+<li><p>Import previously exported Registry-file on your PC</p></li>
+<li><p>Delete the Virtual Machine</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="known-issues">
+<h1>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline"></a></h1>
+<div class="section" id="maximum-number-of-connections">
+<h2>Maximum Number of Connections<a class="headerlink" href="#maximum-number-of-connections" title="Permalink to this headline"></a></h2>
+<p>Many servers limit the number of allowed connections with an error message like <code class="docutils literal notranslate"><span class="pre">530</span> <span class="pre">Sorry,</span> <span class="pre">the</span> <span class="pre">maximum</span> <span class="pre">number</span> <span class="pre">of</span> <span class="pre">clients</span> <span class="pre">(10)</span> <span class="pre">from</span> <span class="pre">your</span> <span class="pre">host</span> <span class="pre">are</span> <span class="pre">already</span> <span class="pre">connected.</span></code>. Because FTP is a stateful protocol it requires opening separate connections when transferring files in parallel. Refer to <a class="reference external" href="../Cyberduck/Transfer#connections">limit the number of connections</a> allowed for the file transfers.</p>
+</div>
+<div class="section" id="error-opening-data-socket">
+<h2>Error Opening Data Socket<a class="headerlink" href="#error-opening-data-socket" title="Permalink to this headline"></a></h2>
+<p>For data transfers and possibly file listings (depending on the features supported by the server), a second data connection must be opened using <code class="docutils literal notranslate"><span class="pre">PASV</span></code> or <code class="docutils literal notranslate"><span class="pre">PORT</span></code> commands which is referred to as a passive or active data connection.</p>
+<p>Depending on the firewall and router configuration in your network there may be errors reported:</p>
+<ul class="simple">
+<li><p>Failure opening active data socket reports <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">won't</span> <span class="pre">open</span> <span class="pre">a</span> <span class="pre">connection</span> <span class="pre">to</span> <span class="pre">xxx.xxx.xx.xx</span> <span class="pre">(only</span> <span class="pre">to</span> <span class="pre">xxx.xx.xxx.x)</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="it-is-not-possible-to-change-permissions">
+<h2>It is not Possible to Change Permissions<a class="headerlink" href="#it-is-not-possible-to-change-permissions" title="Permalink to this headline"></a></h2>
+<p>The error message <code class="docutils literal notranslate"><span class="pre">FTP</span> <span class="pre">Error:</span> <span class="pre">SITE</span> <span class="pre">not</span> <span class="pre">understood</span></code> or similar is displayed. The server does not support this feature (which is an optional extension to the FTP protocol) and can not be used.</p>
+</div>
+<div class="section" id="listing-directory-fails-or-shows-no-content">
+<h2>Listing Directory Fails or Shows no Content<a class="headerlink" href="#listing-directory-fails-or-shows-no-content" title="Permalink to this headline"></a></h2>
+<p>Various options are available to adjust the usage of different directory listing commands (<code class="docutils literal notranslate"><span class="pre">LIST</span></code>, <code class="docutils literal notranslate"><span class="pre">STAT</span></code> and <code class="docutils literal notranslate"><span class="pre">MLSD</span></code>). Directory listings are requested using <code class="docutils literal notranslate"><span class="pre">STAT</span></code>, <code class="docutils literal notranslate"><span class="pre">MLSD</span></code>, <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">-a</span></code> and <code class="docutils literal notranslate"><span class="pre">LIST</span></code> commands in that order. If a failure is detected (because the server may not support the command), the next option is tried. Because this can be fuzzy logic, it may still be that Cyberduck does not correctly fall back to a supported list command. You may then try to force the use of a given command.</p>
+<p>To disable <code class="docutils literal notranslate"><span class="pre">STAT</span></code> for directory listings, change the <a class="reference external" href="../Cyberduck/Preferences#hidden-configuration-option">hidden configuration option</a> as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck ftp.command.stat false
+</pre></div>
+</div>
+<p>To disable <code class="docutils literal notranslate"><span class="pre">LIST</span> <span class="pre">-a</span></code> for directory listings, open a Terminal.app window and enter</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck ftp.command.lista false
+</pre></div>
+</div>
+<p>To disable <code class="docutils literal notranslate"><span class="pre">MLSD</span></code> for directory listings, open a Terminal.app window and enter</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>defaults write ch.sudo.cyberduck ftp.command.mlsd false
+</pre></div>
+</div>
+<p>Restart Cyberduck.</p>
+</div>
+<div class="section" id="file-locks-with-vsftpd">
+<h2>File Locks With vsFTPd<a class="headerlink" href="#file-locks-with-vsftpd" title="Permalink to this headline"></a></h2>
+<p>Set the property <code class="docutils literal notranslate"><span class="pre">lock_upload_files=NO</span></code> in <em>vsftpd_conf</em>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Files.com/" class="btn btn-neutral float-left" title="Files.com" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Google_Cloud_Storage/" class="btn btn-neutral float-right" title="Google Cloud Storage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

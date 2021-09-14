@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synchronize Folders &mdash; Cyberduck Help  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="File Transfers" href="../Transfer/" />
+    <link rel="prev" title="Support" href="../Support/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5a5a5a" >
+            <a href="../../"><img src="../../_static/cyberduck-icon-64.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Synchronize Folders</a></li>
+<li><a class="reference internal" href="#synchronization">Synchronization</a><ul>
+<li><a class="reference internal" href="#mirror-files">Mirror Files</a></li>
+<li><a class="reference internal" href="#only-download-files">Only Download Files</a></li>
+<li><a class="reference internal" href="#only-upload-files">Only Upload Files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-solutions">Other solutions</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5a5a5a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Cyberduck Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../">Cyberduck Quick Reference Cheat Sheet</a> &raquo;</li>
+      <li>Synchronize Folders</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/iterate-ch/docs/edit/main/Cyberduck/Sync.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="tex2jax_ignore mathjax_ignore section" id="synchronize-folders">
+<h1>Synchronize Folders<a class="headerlink" href="#synchronize-folders" title="Permalink to this headline"></a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="synchronization">
+<h1>Synchronization<a class="headerlink" href="#synchronization" title="Permalink to this headline"></a></h1>
+<p>Files can be synchronized by selecting the directory to synchronize in the browser and select <em>File → Synchronize</em>. You will be prompted to select the directory on your computer to synchronize the files with.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The options in <em>Preferences → Transfers → Timestamps</em> must be enabled.</p>
+</div>
+<p>The criteria to download or upload a file are given by</p>
+<ul class="simple">
+<li><p>the modification date of the files and if available</p></li>
+<li><p>the MD5 checksum of the file (for <a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">S3</span></a>, <a class="reference internal" href="../../Protocols/Azure/"><span class="doc std std-doc">Azure</span></a>, and <a class="reference internal" href="../../Protocols/OpenStack/CloudFiles/"><span class="doc std std-doc">CloudFiles</span></a>)</p></li>
+</ul>
+<p>You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.</p>
+<a class="reference internal image-reference" href="../../_images/Synchronize_Folders.png"><img alt="Send Command" src="../../_images/Synchronize_Folders.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p><strong>Checkbox:</strong> Toggle to include or exclude files or directories from the transfer.</p></li>
+<li><p><strong>Down Arrow:</strong> The file is downloaded from the server replacing the local file if included.</p></li>
+<li><p><strong>Up Arrow:</strong> The file is uploaded to the server replacing the remote file if included.</p></li>
+<li><p><strong>Plus Sign:</strong> The file does not exist and will be newly created when transferred.</p></li>
+</ul>
+<div class="section" id="mirror-files">
+<h2>Mirror Files<a class="headerlink" href="#mirror-files" title="Permalink to this headline"></a></h2>
+<p>Files are transferred in both directions and created if missing or replaced with the newer file on either system depending on the timestamp.</p>
+</div>
+<div class="section" id="only-download-files">
+<h2>Only Download Files<a class="headerlink" href="#only-download-files" title="Permalink to this headline"></a></h2>
+<p>Files are downloaded that match one of the following criteria:</p>
+<ul class="simple">
+<li><p>Do not exist on the local filesystem</p></li>
+<li><p>Have a different checksum</p></li>
+<li><p>Have a newer timestamp on the server</p></li>
+</ul>
+<p>No files are uploaded.</p>
+</div>
+<div class="section" id="only-upload-files">
+<h2>Only Upload Files<a class="headerlink" href="#only-upload-files" title="Permalink to this headline"></a></h2>
+<p>Files are uploaded that match one of the following criteria:</p>
+<ul class="simple">
+<li><p>Do not exist on the server</p></li>
+<li><p>Have a different checksum</p></li>
+<li><p>Have a newer timestamp on the local filesystem</p></li>
+</ul>
+<p>No files are downloaded.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="other-solutions">
+<h1>Other solutions<a class="headerlink" href="#other-solutions" title="Permalink to this headline"></a></h1>
+<p>You have to manually restart the synchronization in the transfer window. If you want to automate things you will be better off with either</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://duck.sh/">Cyberduck CLI</a> which allows you write a script and schedule ot with your preferred method such as <code class="docutils literal notranslate"><span class="pre">cron</span></code>.</p></li>
+<li><p><a class="reference external" href="https://mountainduck.io/">Mountain Duck</a> which allows you to mount the remote volume and synchronise files with any of your preferred tools such as <code class="docutils literal notranslate"><span class="pre">rsync</span></code>.</p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Support/" class="btn btn-neutral float-left" title="Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Transfer/" class="btn btn-neutral float-right" title="File Transfers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 iterate GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
