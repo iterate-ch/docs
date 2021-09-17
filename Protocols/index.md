@@ -96,7 +96,7 @@ The Integrated Rule-Oriented Data System (iRODS) is an open source data manageme
 ## [Spectra BlackPearl Deep Storage Gateway](Spectra)
 
 # Local Disk
-> Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../Cryptomator) stored on your computer.
+> Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../Cryptomator/index) stored on your computer.
 
 # Connection Profiles
 
