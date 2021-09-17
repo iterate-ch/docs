@@ -31,7 +31,7 @@ Enable tabs by default when choosing *File → New Browser (`⌘N`)* by selectin
 
 ```
 
-## Spring-loaded folders
+## Spring-loaded Folders
 
 Spring-loaded folders are a feature that allows you to move a file or even another folder, into a folder deeply nested within several other folders using drag and drop. To enable, choose *Preferences → Browser → Use spring-loaded folders when dragging files* and adjust the delay for the folder to expand when hovering over with the mouse. Note that spring-loaded folders are only supported in the outline view.
 
@@ -49,7 +49,7 @@ Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that 
 
 You can sort the file listing by clicking the table column header. Choose *View → Column* to add more headers such as *Kind* to allow sorting by file type including folders appearing first in the list.
 
-## Local disk file browser
+## Local Disk File Browser
 
 Choose your computer name forom the protocol selection popup button in the *New Connection* window.
 
@@ -57,17 +57,17 @@ ALternatively, you can use drag and drop or Menu *File → Upload (macOS `⌥↑
 
 See other [upload](Upload) methods.
 
-# Working with files and folders
+# Working with Files and Folders
 
 ## Edit
 
 You can edit any file on the server using your preferred application. See [Edit Files](Edit).
 
-## Create new folder or file
+## Create new Folder or File
 
 Use *File → New Folder... (macOS `⇧⌘N` Windows `Ctrl+Shift+N`)* or *File → New File... (macOS `⌘F` Windows `Ctrl+Shift+F`)* to create a new folder or file on the server.
 
-## Move or duplicate files and folders
+## Move or Duplicate Files and Folders
 
 You can move files in the browser as you would in the *Finder.app/ Explorer* using drag and drop. Use the `⌥` modifier key on macOS or the Ctrl key on Windows to duplicate files. If connected to the same server, you can also move files between different browser windows.
 
@@ -80,7 +80,7 @@ The following protocols allow duplicating files on the server without downloadin
 
 To move a file, use *Edit → Cut (macOS `⌘X` Windows `Ctrl+X`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*. To duplicate a file, use *Edit → Copy (macOS `⌘C` Windows `Ctrl+C`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*.
 
-## Copy files and folders to different server
+## Copy Files and Folders to Different Server
 
 You can copy files between arbitrary servers when connected to with two open browser windows. Drag files from one browser to the other to transfer files between servers.
 
@@ -89,7 +89,7 @@ You can copy files between arbitrary servers when connected to with two open bro
 :width: 700px
 ```
 
-## Rename a file or folder
+## Rename a File or Folder
 
 Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename fiels by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`) or press the *Get [Info](Info)* toolbar button. Simply enter the new name in the very top field. THe field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
 
@@ -98,7 +98,7 @@ Select the file in the browser and press the *Return key*. Type the new name and
 :width: 300px
 ```
 
-## Create a symbolic link
+## Create a Symbolic Link
 
 Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../Protocols/SFTP) connection and some [FTP](../Protocols/FTP) with `SITE SYMLINK` extension.
 
@@ -120,7 +120,7 @@ You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*.
 :width: 500px
 ```
 
-## Open or copy HTTP URL
+## Open or Copy HTTP URL
 
 See bookmark [Web URL configuration](Bookmarks#http-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
 
@@ -135,11 +135,11 @@ Refer to [Share](Share).
 
 Refer to [Open in Terminal](../Protocols/SFTP#open-in-terminal).
 
-## Print browser folder listing
+## Print Browser Folder Listing
 
 Use the *File → Print* option where you can open a PDF from the browser listing or print it.
 
-## Folder icon badges
+## Folder Icon Badges
 
 Folder icons are badged for paticular access permissions.
 
@@ -187,7 +187,7 @@ Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity
 
 # Problems
 
-## Special characters such as Umlaute
+## Special Characters Such as Umlaute
 
 If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks#edit-bookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
 
@@ -215,15 +215,15 @@ Use only one *Info* window which updates with the selection change in the browse
 
 # Hidden Preferences
 
-## Adjust the browser font size
+## Adjust the Browser Font Size
 
-A [hidden configurationi option](Preferences#hidden-configuration-options).
+A [hidden configuration option](Preferences#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck browser.font.size 18`
 
-## Duplicate filename format
+## Duplicate Filename Format
 
-A [hidden configurationi option](Preferences#hidden-configuration-options). Define a different format using 
+A [hidden configuration option](Preferences#hidden-configuration-options). Define a different format using 
 
 `defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"`
 
@@ -233,8 +233,34 @@ where the plaseholders will be replaced with
 - {1} with the timestampof the file
 - {2} with the extension in the format `.extension` if present in the original filename.
 
-## Warning before renaming or moving files
+## Warning Before Renaming or Moving Files
 
-A [hidden configurationi option](Preferences#hidden-configuration-options). A confirmation is shown before renaming or moving files.
+A [hidden configuration option](Preferences#hidden-configuration-options). A confirmation is shown before renaming or moving files.
 
 `defaults write ch.sudo.cyberduck browser.move.confirm true`
+
+## Re-enable File Listing Limit Prompt
+
+A [hidden configuration option](Preferences#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
+
+````{tabs}
+
+```{group-tab} macOS
+
+Open *Terminal.app* and execute the command
+
+	defaults delete ch.sudo.cyberduck browser.list.limit.directory
+and the command
+
+	defaults delete ch.sudo.cyberduck browser.list.limit.container
+```
+
+```{group-tab} Windows
+
+Navigate to `%AppData%\Cyberduck` and search within the existing `Cyberduck.exe_Url_<random characters>` folders after the folder that is named after your currently used Cyberduck version. Open the file *user.config* that is located within that folder and delete the lines
+
+	<setting name="browser.list.limit.directory"
+	<setting name="browser.list.limit.container"
+```
+
+````
