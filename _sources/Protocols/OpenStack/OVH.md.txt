@@ -4,7 +4,7 @@ OVH Public Cloud Storage
 > With the [OVH Object Storage](https://www.ovh.com/us/public-cloud/storage/object-storage/) cloud solution, you only pay for what you use with no limitation when it comes to size and duration. Thanks to the OpenStack Swift technology, you can store your high-performance data in the OVH cloud environment and instantly access it at any time. This solution is perfect for web projects and can be used to make your objects available through HTTP.
 
 ```{seealso}
-[hubiC (OVH)](hubiC)
+[hubiC (OVH)](HubiC)
 ```
 
 # Connecting
