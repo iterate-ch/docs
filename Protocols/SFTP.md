@@ -1,7 +1,7 @@
 SFTP
 ===
 
-```{image} _image/ftp.png
+```{image} _images/ftp.png
 :alt: Send Command
 :width: 128px
 ```

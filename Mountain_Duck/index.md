@@ -36,7 +36,7 @@ The smart sync feature allows making files available offline.
 
 Recently changed files and pending file transfers.
 
-# [Client-side Encryption](../Cryptomator)
+# [Client-side Encryption](../Cryptomator/index)
 
 Support for client-side encryption with Cryptomator interoperable vaults.
 
