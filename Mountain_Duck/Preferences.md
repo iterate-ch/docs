@@ -80,6 +80,40 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 ````
 `````
 
+# Preferences → Profiles
+
+```{note}
+Prelimitary documentation for Mountain Duck version 4.8
+``` 
+
+Select connection profiles to be installed. Either scroll through the list or use the search funktion to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the _Protocol_ section of the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
+
+
+## Default Connection Profiles
+
+The following connection profiles are installed by default and can’t be deleted:
+
+- [FTP (File Transfer Protocol)](../Protocols/FTP)
+- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP)
+- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP)
+- [WebDAV (HTTP)](../Protocols/WebDAV/index)
+- [WebDAV (HTTPS)](../Protocols/WebDAV/index)
+- [Amazon S3](../Protocols/S3/index)
+- [Google Cloud Storage](../Protocols/Google_Cloud_Storage)
+- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index)
+- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index)
+- [Windows Azure Blob Storage](../Protocols/Azure)
+- [Backblaze B2 Cloud Storage](../Protocols/B2)
+- [Dropbox](../Protocols/Dropbox)
+- [Google Drive](../Protocols/Google_Drive)
+- [Microsoft OneDrive](../Protocols/OneDrive)
+- [Microsoft Sharepoint](../Protocols/SharePoint)
+- [Microsoft Sharepoint Site](../Protocols/SharePoint)
+- [DRACOON (OAuth)](../Protocols/Dracoon)
+- [Files.com](../Protocols/Files.com)
+- [Nextcloud](../Protocols/WebDAV/Nextcloud)
+- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles)
+
 # Notifications
 
 `````{tabs}
