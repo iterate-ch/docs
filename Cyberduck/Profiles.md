@@ -18,7 +18,7 @@ These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_li
 Prelimitary documentation for Cyberduck version 8
 ``` 
 
-Select connection profiles to be installed. Either scroll through the list or use the search funktion to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the _Protocol_ section of the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
+Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the _Protocol_ section of the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
 
 ```{image} _images/Preferences_Profiles_macOS.png
 :alt: Send Command
@@ -29,6 +29,10 @@ Select connection profiles to be installed. Either scroll through the list or us
 :alt: Send Command
 :width: 500px
 ```
+## Limitations
+
+- After deleting the connection profile the existing corresponding bookmarks will continue to work until you restart Cyberduck. After restarting the application the bookmarks won't work as long as the specific connection profile is disabled.
+- Due to caching it's possible that the protocol still appears in the protocol dropdown menu in the bookmark window. You can work around this by opening a new browser window or restarting the application.
 
 ## Default Connection Profiles
 
