@@ -148,6 +148,20 @@ Integrated Windows Authentication (IWA) for proxy authentication of HTTP connect
 
 # Preferences
 
+## General → Connection → Use Keychain
+
+Search for and save password for connections.
+
+## Profiles
+
+```{note}
+Prelimitary documentation for Cyberduck 8
+```
+
+Select connection protocols to be installed in addition to the default protocols. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
+
+**Note:** You can't disable the default protocols. If you disable the connection profile used in a bookmark the bookmark won't work after restarting the application.
+
 ## Connection → Timeout
 
 You might need to adjust the timeout to wait for an answer from the server. The default is set to `30` seconds.
@@ -159,10 +173,6 @@ Failed transfers due to network connection issues such as a low latency can be c
 ## Connection → Proxies
 
 Choose *Cyberduck → Preferences → Connection → Use system proxy settings*. No additional configuration needed.
-
-## General → Connection → Use Keychain
-
-Search for and save password for connections.
 
 ## Prefer IPv6 adresses of DNS lookups
 
