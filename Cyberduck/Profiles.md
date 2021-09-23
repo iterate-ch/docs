@@ -11,6 +11,54 @@ These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_li
 
 [Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
 
+
+# Preferences → Profiles
+
+```{note}
+Prelimitary documentation for Cyberduck version 8
+``` 
+
+Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
+
+```{image} _images/Preferences_Profiles_macOS.png
+:alt: Send Command
+:width: 600px
+```
+
+```{image} _images/Preferences_Profiles.png
+:alt: Send Command
+:width: 500px
+```
+## Limitations
+
+- After deleting the connection profile the existing corresponding bookmarks will continue to work until you restart Cyberduck. After restarting the application the bookmarks won't work as long as the specific connection profile is disabled.
+- Due to caching it's possible that the protocol still appears in the protocol dropdown menu in the bookmark window. You can work around this by opening a new browser window or restarting the application.
+
+## Default Connection Profiles
+
+The following connection profiles are installed by default and can’t be deleted:
+
+- [FTP (File Transfer Protocol)](../Protocols/FTP)
+- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP)
+- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP)
+- [WebDAV (HTTP)](../Protocols/WebDAV/index)
+- [WebDAV (HTTPS)](../Protocols/WebDAV/index)
+- [Amazon S3](../Protocols/S3/index)
+- [Google Cloud Storage](../Protocols/Google_Cloud_Storage)
+- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index)
+- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index)
+- [Windows Azure Blob Storage](../Protocols/Azure)
+- [Backblaze B2 Cloud Storage](../Protocols/B2)
+- [Dropbox](../Protocols/Dropbox)
+- [Google Drive](../Protocols/Google_Drive)
+- [Microsoft OneDrive](../Protocols/OneDrive)
+- [Microsoft Sharepoint](../Protocols/SharePoint)
+- [Microsoft Sharepoint Site](../Protocols/SharePoint)
+- [DRACOON (OAuth)](../Protocols/Dracoon)
+- [Files.com](../Protocols/Files.com)
+- [Nextcloud](../Protocols/WebDAV/Nextcloud)
+- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles)
+
 # Technical file format specification
 
 Connection profile files are ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
