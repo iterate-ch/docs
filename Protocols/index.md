@@ -110,4 +110,6 @@ Prelimitary documentation for Cyberduck 8 and Mountain Duck version 4.8
 
 Select connection protocols to be installed in addition to the default protocols listed above. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
 
-**Note:** You can't disable the default protocols. If you disable the connection profile used in a bookmark the bookmark won't work after restarting the application.
+```{note}
+You can't disable the default protocols. If you disable the connection profile used in a bookmark the bookmark won't work after restarting the application.
+```
