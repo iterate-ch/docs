@@ -40,6 +40,11 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Connection Profiles</a></li>
+<li><a class="reference internal" href="#preferences-profiles">Preferences → Profiles</a><ul>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
+<li><a class="reference internal" href="#default-connection-profiles">Default Connection Profiles</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#technical-file-format-specification">Technical file format specification</a><ul>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
@@ -81,6 +86,49 @@
 </ul>
 <p>These files (<a class="reference external" href="http://en.wikipedia.org/wiki/Property_list">XML Property List Format</a>) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.</p>
 <p><a class="reference external" href="mailto:support&#37;&#52;&#48;cyberduck&#46;io">Contact us</a> if you are a service provider and need assistance in setting this up.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preferences-profiles">
+<h1>Preferences → Profiles<a class="headerlink" href="#preferences-profiles" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Prelimitary documentation for Cyberduck version 8</p>
+</div>
+<p>Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.</p>
+<a class="reference internal image-reference" href="../../_images/Preferences_Profiles_macOS.png"><img alt="Send Command" src="../../_images/Preferences_Profiles_macOS.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Preferences_Profiles.png"><img alt="Send Command" src="../../_images/Preferences_Profiles.png" style="width: 500px;" /></a>
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>After deleting the connection profile the existing corresponding bookmarks will continue to work until you restart Cyberduck. After restarting the application the bookmarks won’t work as long as the specific connection profile is disabled.</p></li>
+<li><p>Due to caching it’s possible that the protocol still appears in the protocol dropdown menu in the bookmark window. You can work around this by opening a new browser window or restarting the application.</p></li>
+</ul>
+</div>
+<div class="section" id="default-connection-profiles">
+<h2>Default Connection Profiles<a class="headerlink" href="#default-connection-profiles" title="Permalink to this headline"></a></h2>
+<p>The following connection profiles are installed by default and can’t be deleted:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../Protocols/FTP/"><span class="doc std std-doc">FTP (File Transfer Protocol)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/FTP/"><span class="doc std std-doc">FTP-SSL (Explicit AUTH TLS)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/SFTP/"><span class="doc std std-doc">SFTP (SSH File Transfer Protocol)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/WebDAV/"><span class="doc std std-doc">WebDAV (HTTP)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/WebDAV/"><span class="doc std std-doc">WebDAV (HTTPS)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/S3/"><span class="doc std std-doc">Amazon S3</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Google_Cloud_Storage/"><span class="doc std std-doc">Google Cloud Storage</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/OpenStack/"><span class="doc std std-doc">OpenStack Swift (Keystone 2.0)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/OpenStack/"><span class="doc std std-doc">OpenStack Swift (Keystone 3)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Azure/"><span class="doc std std-doc">Windows Azure Blob Storage</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/B2/"><span class="doc std std-doc">Backblaze B2 Cloud Storage</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Dropbox/"><span class="doc std std-doc">Dropbox</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Google_Drive/"><span class="doc std std-doc">Google Drive</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/OneDrive/"><span class="doc std std-doc">Microsoft OneDrive</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/SharePoint/"><span class="doc std std-doc">Microsoft Sharepoint</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/SharePoint/"><span class="doc std std-doc">Microsoft Sharepoint Site</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Dracoon/"><span class="doc std std-doc">DRACOON (OAuth)</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/Files.com/"><span class="doc std std-doc">Files.com</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/WebDAV/Nextcloud/"><span class="doc std std-doc">Nextcloud</span></a></p></li>
+<li><p><a class="reference internal" href="../../Protocols/OpenStack/CloudFiles/"><span class="doc std std-doc">Rackspace Cloud Files (US)</span></a></p></li>
+</ul>
+</div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="technical-file-format-specification">
 <h1>Technical file format specification<a class="headerlink" href="#technical-file-format-specification" title="Permalink to this headline"></a></h1>
