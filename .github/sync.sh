@@ -14,15 +14,11 @@
 # GNU General Public License for more details.
 #
 
-TARGET=s3:/github-cyberduck-docs
+TARGET=s3:/github-cyberduck-docs/
 DIRECTORY=$1
 [ ! $DIRECTORY ] && exit 1
 
-echo "Updating $TARGET with $DIRECTORY"
-
-echo "Deleting $TARGET"
-duck -qy --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --delete "$TARGET/*" 
 echo "Upload $DIRECTORY to $TARGET"
-duck -qy --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --existing compare --upload "$TARGET" "$DIRECTORY/" --region $AWS_DEFAULT_REGION
+duck -y --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --existing compare --upload "$TARGET" "$DIRECTORY/" --region eu-west-1
 echo "Purging $TARGET CDN configuration"
-duck -qy --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --purge "$TARGET/"
+duck -y --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --purge "$TARGET/"
