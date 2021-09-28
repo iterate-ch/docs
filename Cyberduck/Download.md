@@ -10,7 +10,7 @@ Increase the download speed by enabling the segmented downloads option within *P
 The segments will be merged automatically after all parts are downloaded.
 
 ```{note}
-The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file.
+The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file or try to _Resume_ the failed transfer.
 ```
 
 # Double-click
