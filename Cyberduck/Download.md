@@ -7,7 +7,7 @@ See also [Transfers](Transfer) in general.
 
 Increase the download speed by enabling the segmented downloads option within *Preferences → Transfers → General → Downloads → Segmented download with multiple connections for file*. Files larger that `100MB` will be split into segments and downloaded over multiple connections.
 
-The segments will be merged automatically after all parts are downloaded. Merging the segmentsmay take a considerable amount of time.
+The segments will be merged automatically after all parts are downloaded. Merging the segments may take a considerable amount of time.
 
 ```{note}
 The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file or try to _Resume_ the failed transfer.
