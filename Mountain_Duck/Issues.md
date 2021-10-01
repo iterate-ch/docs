@@ -76,11 +76,11 @@ It is not possible to share a mounted drive within the local network.
 
 ## Changes from Server not Immediately Visible
 
-The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](index#finder-extension-windows-file-explorer-extension) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
+The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](Interface.md#context-menu-in-finder-and-windows-file-explorer) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
 
 ## Cache Uses a lot of Disk Space
 
-The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](Preferences#sync-cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](Sync#delete-on-local-disk) option.
+The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](Preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](Sync.md#delete-on-local-disk) option.
 
 ```{image} _images/Custom_Location_Sync_Cache.png
 :alt: Send Command
@@ -119,7 +119,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 `````{tabs}
 ````{group-tab} macOS
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
-Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](Preferences.md#connection-mount-location) (e.g. to the desktop) to make the mount visible.
+Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](Preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
 
 **Finder.app Does not Show Files Prefixed with `.` on Remote Volumes**<br/>
 You can work around this by setting `defaults write com.apple.finder AppleShowAllFiles YES` in a *Terminal.app* window and restart *Finder.app* using *→ Force Quit ... → Finder → Relaunch*. If you are running macOS Sierra (10.12) you can choose `⌘⇧.` to toggle files starting with a dot to show in Finder.app.
@@ -203,7 +203,7 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 A list of known providers that fail to work with Mountain Duck due to interoperability issues.
 
 - *OwnCube:* Their deployment does not work and we discourage this product.
-- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [How to disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [0 byte files on WebDAV server](../Protocols/WebDAV/index#0-byte-files-on-webdav-server).
+- *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [How to disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [0 byte files on WebDAV server](../Protocols/WebDAV/index.md#0-byte-files-on-webdav-server).
 
 ## Third-Party Software
 
@@ -242,4 +242,4 @@ Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can on
 
 ## Bug Reports and Feature Requests
 
-To get help with bugs, feature requests, or other issues please refer to the [support page](Support). 
+To get help with bugs, feature requests, or other issues please refer to the [support page](Support.md). 

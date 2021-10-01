@@ -11,7 +11,7 @@ Sign up for [Internap AgileCLOUD (includes AgileFILES object storage)](https://a
 
 ## Manual Configuration
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `OpenStack`
 - Server: `auth.storage.santa-clara.internapcloud.net`

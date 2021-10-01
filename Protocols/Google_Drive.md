@@ -40,14 +40,14 @@ If you have accidentally logged in with the wrong Google Drive Account or want t
 
 ## Custom OAuth Client ID
 
-You can register a [custom OAuth 2.0 client ID](../Google_Client_ID) with Google to operate independently of our registered client ID.
+You can register a [custom OAuth 2.0 client ID](Google_Client_ID.md) with Google to operate independently of our registered client ID.
 
 # Cyberduck CLI
 You can list the root contents of your Google Drive with [Cyberduck CLI](https://duck.sh/) using
 
 	duck --list googledrive:/
 
-Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Google to allow the lookup of previously saved OAuth tokens.
+Refer to the [Cyberduck CLI](../CLI/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Google to allow the lookup of previously saved OAuth tokens.
 
 # Search
 
@@ -55,7 +55,7 @@ Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. Fo
 This only applies to Cyberduck.
 ```
 
-You can [search recursively](../Cyberduck/Browser#filter-search) for files fast without browsing folders first.
+You can [search recursively](../Cyberduck/Browser.md#filter-and-search) for files fast without browsing folders first.
 
 # Documents
 
@@ -78,7 +78,7 @@ Documents shared with you from another Google account can be found inside the to
 
 ## Rate Limits
 
-Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../Cyberduck/Connection#repeat-failed-networking-tasks) and set a delay.
+Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../Cyberduck/Connection.md#repeat-failed-networking-tasks) and set a delay.
 
 ## The Granted Scopes do not Give Access to all of the Requested Spaces
 

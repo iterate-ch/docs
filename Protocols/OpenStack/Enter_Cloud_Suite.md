@@ -15,7 +15,7 @@ Use the Tenant ID `email` and password to login. See [API Access](https://cm.ent
 
 ## Manual Configuration
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `Swift (OpenStack Object Storage)`
 - Server: `api.entercloudsuite.com`

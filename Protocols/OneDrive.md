@@ -34,7 +34,7 @@ All authentication codes expire after 90 days. If you get the error message `For
 |  | Allows access to | Remarks | Bundled by default |
 | --- | --- | --- | :---: |
 | Microsoft OneDrive | Your Drive, and shared files	| Works with your personal and business OneDrive | Yes |
-| [Microsoft SharePoint](SharePoint) | All sites document libraries and accessible group document libraries<br/><br/>**prior Cyberduck 7.8 / Mountain Duck 4.4:** The default sites document libraries and accessible group document libraries | The connection profile is named Microsoft SharePoint Online in versions **prior Cyberduck 7.8 / Mountain Duck 4.4** | Yes |
+| [Microsoft SharePoint](SharePoint.md) | All sites document libraries and accessible group document libraries<br/><br/>**prior Cyberduck 7.8 / Mountain Duck 4.4:** The default sites document libraries and accessible group document libraries | The connection profile is named Microsoft SharePoint Online in versions **prior Cyberduck 7.8 / Mountain Duck 4.4** | Yes |
 | Microsoft SharePoint Site | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* | Can't mount specific directories | Yes |
 | Microsoft SharePoint Document Library	| Can't mount specific directories | Does not allow access to groups<br/><br/>Only needed for versions **prior Cyberduck 6.9 / Mountain Duck 2.7** | No |
 
@@ -75,7 +75,7 @@ You can list the root contents of your OneDrive with [Cyberduck CLI](https://duc
 
 	duck --list onedrive:/
 
-Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
+Refer to the [Cyberduck CLI](../CLI/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
 
 # Search
 
@@ -83,7 +83,7 @@ Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. Fo
 This only applies to Cyberduck.
 ```
 
-You can [search recursively](../Cyberduck/Browser#filter-search) for files fast without browsing folders first.
+You can [search recursively](../Cyberduck/Browser.md#filter-and-search) for files fast without browsing folders first.
 
 # Limitations
 

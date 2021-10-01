@@ -8,7 +8,7 @@ Dunkel Cloud Storage
 
 > [Dunkel Cloud Storage](http://www.dunkel.de/s3/) ist ein S3 kompatibler Cloud Storage in deutschen Rechenzentren. 
 
-Refer also to [S3](index) wiki page in general.
+Refer also to [S3](index.md) wiki page in general.
 
 # Connecting
 
@@ -27,4 +27,4 @@ Refer also to [S3](index) wiki page in general.
 - No bucket logging configuration.
 - Storage class options are not available.
 - Torrent URLs are not supported.
-- No content distribution ([CDN](../../CDN/index)) configuration.
+- No content distribution ([CDN](../../CDN/index.md)) configuration.

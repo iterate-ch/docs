@@ -35,15 +35,15 @@ Enable tabs by default when choosing *File → New Browser (`⌘N`)* by selectin
 
 Spring-loaded folders are a feature that allows you to move a file or even another folder, into a folder deeply nested within several other folders using drag and drop. To enable, choose *Preferences → Browser → Use spring-loaded folders when dragging files* and adjust the delay for the folder to expand when hovering over with the mouse. Note that spring-loaded folders are only supported in the outline view.
 
-## Filter & Search
+## Filter and Search
 
 Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. Search is case insensitive and does look for matching sequences in the filename. To search recursively, hit the return key (`⏎`). The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
 
-- [Google Drive](../Protocols/Google_Drive)
-- [Dropbox](../Protocols/Dropbox)
-- [Amazon S3](../Protocols/S3/index)
-- [Backblaze B2](../Protocols/B2)
-- [Microsoft OneDrive](../Protocols/OneDrive)
+- [Google Drive](../Protocols/Google_Drive.md)
+- [Dropbox](../Protocols/Dropbox.md)
+- [Amazon S3](../Protocols/S3/index.md)
+- [Backblaze B2](../Protocols/B2.md)
+- [Microsoft OneDrive](../Protocols/OneDrive.md)
 
 ## Sorting
 
@@ -55,13 +55,13 @@ Choose your computer name from the protocol selection popup button in the *New C
 
 Alternatively, you can use drag and drop or Menu *File → Upload (macOS `⌥↑` Windows `Alt+Up`)*. You can also copy *(macOS `⌘C` Windows `Ctrl+C`)* files in your file browser and paste them into Cyberduck using Menu *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)* afterward.
 
-See other [upload](Upload) methods.
+See other [upload](Upload.md) methods.
 
 # Working with Files and Folders
 
 ## Edit
 
-You can edit any file on the server using your preferred application. See [Edit Files](Edit).
+You can edit any file on the server using your preferred application. See [Edit Files](Edit.md).
 
 ## Create new Folder or File
 
@@ -73,10 +73,10 @@ You can move files in the browser as you would in the *Finder.app/ Explorer* usi
 
 The following protocols allow duplicating files on the server without downloading and uploading but copying in place:
 
-- [S3](../Protocols/S3/index)
-- [WebDAV](../Protocols/WebDAV/index)
-- [Azure](../Protocols/Azure)
-- [Dropbox](../Protocols/Dropbox)
+- [S3](../Protocols/S3/index.md)
+- [WebDAV](../Protocols/WebDAV/index.md)
+- [Azure](../Protocols/Azure.md)
+- [Dropbox](../Protocols/Dropbox.md)
 
 To move a file, use *Edit → Cut (macOS `⌘X` Windows `Ctrl+X`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*. To duplicate a file, use *Edit → Copy (macOS `⌘C` Windows `Ctrl+C`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*.
 
@@ -91,7 +91,7 @@ You can copy files between arbitrary servers when connected to with two open bro
 
 ## Rename a File or Folder
 
-Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename files by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`)* or press the *Get [Info](Info)* toolbar button. Simply enter the new name in the very top field. The field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
+Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename files by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`)* or press the *Get [Info](Info.md)* toolbar button. Simply enter the new name in the very top field. The field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
 
 ```{image} _images/Inline_Rename.png
 :alt: Send Command
@@ -100,11 +100,11 @@ Select the file in the browser and press the *Return key*. Type the new name and
 
 ## Create a Symbolic Link
 
-Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../Protocols/SFTP) connection and some [FTP](../Protocols/FTP) with `SITE SYMLINK` extension.
+Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../Protocols/SFTP.md) connection and some [FTP](../Protocols/FTP.md) with `SITE SYMLINK` extension.
 
 ## Info Window
 
-Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `Alt+Return`) to display [detailed attributes](Info)* of a file in a tool window. It allows to change permissions, manage content distributions for cloud services, and settings specific to the [Amazon S3](../Protocols/S3/index) service.
+Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `Alt+Return`) to display [detailed attributes](Info.md)* of a file in a tool window. It allows to change permissions, manage content distributions for cloud services, and settings specific to the [Amazon S3](../Protocols/S3/index.md) service.
 
 ## Quick Look
 
@@ -122,18 +122,18 @@ You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*.
 
 ## Open or Copy HTTP URL
 
-See bookmark [Web URL configuration](Bookmarks#http-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
+See bookmark [Web URL configuration](Bookmarks.md#http-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
 
 - **Open Web URL:** The *Web URL* can be found in the *File → Open URL* menu and as an optional toolbar item in the browser window. Use *View → Customize Toolbar...* to add the *Open in Browser* button to your default browser toolbar.
 - **Copy Web URL:** The *Web URL* can be found in the *Edit → Copy URl* menu.
 
 ## Share Files
 
-Refer to [Share](Share).
+Refer to [Share](Share.md).
 
 ## Open in Terminal
 
-Refer to [Open in Terminal](../Protocols/SFTP#open-in-terminal).
+Refer to [Open in Terminal](../Protocols/SFTP.md#open-in-terminal).
 
 ## Print Browser Folder Listing
 
@@ -165,9 +165,9 @@ Drop Folder where you can only upload files to but are not allowed to view its c
 
 You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*. The following protocols support versioning
 
-- [S3](../Protocols/S3/index)
-- [Backblaze B2](../Protocols/B2)
-- [Google Drive](../Protocols/Google_Drive)
+- [S3](../Protocols/S3/index.md)
+- [Backblaze B2](../Protocols/B2.md)
+- [Google Drive](../Protocols/Google_Drive.md)
 
 ### Revert
 
@@ -186,11 +186,11 @@ Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity
 
 ## Special Characters Such as Umlaute
 
-If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks#edit-bookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
+If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks.md#edit-bookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
 
 ## The Folder Size isn't Displayed Correctly
 
-This is not the size of its content but the size of the folder itself. Use *File → Info (macOS `⌘I` Windows `Alt+Return`)* to [calculate the size](Info#calculate-folder-size) of all contained files recursively.
+This is not the size of its content but the size of the folder itself. Use *File → Info (macOS `⌘I` Windows `Alt+Return`)* to [calculate the size](Info.md#calculate-folder-size) of all contained files recursively.
 
 # Preferences
 
@@ -204,7 +204,7 @@ Open new browser window after application launch.
 
 ## Browser → General → Show Hidden Files
 
-Display files in the browser that start with `.` and [previous revisions (S3)](../Protocols/S3/index#versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
+Display files in the browser that start with `.` and [previous revisions (S3)](../Protocols/S3/index.md#versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
 
 ## Browser → General → Info window always shows current selection
 
@@ -214,13 +214,13 @@ Use only one *Info* window which updates with the selection change in the browse
 
 ## Adjust the Browser Font Size
 
-A [hidden configuration option](Preferences#hidden-configuration-options).
+A [hidden configuration option](Preferences.md#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck browser.font.size 18`
 
 ## Duplicate Filename Format
 
-A [hidden configuration option](Preferences#hidden-configuration-options). Define a different format using 
+A [hidden configuration option](Preferences.md#hidden-configuration-options). Define a different format using 
 
 `defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"`
 
@@ -232,13 +232,13 @@ where the plaseholders will be replaced with
 
 ## Warning Before Renaming or Moving Files
 
-A [hidden configuration option](Preferences#hidden-configuration-options). A confirmation is shown before renaming or moving files.
+A [hidden configuration option](Preferences.md#hidden-configuration-options). A confirmation is shown before renaming or moving files.
 
 `defaults write ch.sudo.cyberduck browser.move.confirm true`
 
 ## Re-Enable File Listing Limit Prompt
 
-A [hidden configuration option](Preferences#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
+A [hidden configuration option](Preferences.md#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
 
 ````{tabs}
 

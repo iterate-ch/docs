@@ -55,7 +55,7 @@ For adding a region profile, you need to download the profile for that region. D
 Follow these instructions:
 
 1. {download}`Download<https://trac.cyberduck.io/attachment/wiki/help/en/howto/oraclecloud/Oracle%20Storage%20Cloud.cyberduckprofile>` the Oracle Storage Cloud profile for preconfigured settings using the `/auth/v1.0` authentication context.
-2. Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+2. Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 	- Protocol: Swift (OpenStack Object Storage)
 	- Server: `IdentityDomain.storage.oraclecloud.com`. For example, this is `cyduck.storage.oraclecloud.com`
 	- Username: `ServiceName-IdentityDomain:UserName`. For example this is `Storage-cyduck:dkocher@cyberduck.io`

@@ -25,7 +25,7 @@ A KeyCDN [push zone](https://www.keycdn.com/support/create-a-push-zone/) is need
 
 ## KeyCDN Configuration
 
-Once a KeyCDN push zone has been created. Connect with Cyberduck to your push zone. Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
+Once a KeyCDN push zone has been created. Connect with Cyberduck to your push zone. Enter the following information in the [bookmark](../Cyberduck/Bookmarks.md):
 
 - Protocol: `FTP-SSL (Explicit AUTH TLS)`
 - Server: `ftp.keycdn.com`

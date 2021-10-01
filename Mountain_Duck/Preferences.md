@@ -15,40 +15,43 @@ You receive no update notification if your user is missing administrator permiss
 
 # General
 
-## General → Login Item
+## Login Item
 
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
-## General → Bookmarks
+## Bookmarks
 
 Change the size of the menu items in the status bar menu. Choose between *Small, Medium,* and *Large* icons.
 
 # Connection
 
-## Connection → Mount Location 
+## Mount Location 
 
 ````{admonition} macOS only
 :class: tip
 
-Volumes are mounted in the *Volumes* folder in the [application support directory](Support). You can change the default to another folder that is writable.
+Volumes are mounted in the *Volumes* folder in the [application support directory](Support.md). You can change the default to another folder that is writable.
 
 **Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store.
 
 The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
 ````
 
+## Cache
 
-## Connection → Cache → Enable Cache
+### Enable Cache
 
 Allow buffering file contents in a temporary location which is only deleted when quitting the application. If unchecked, opened files will not automatically be available for offline usage when using connect mode *Smart Synchronization*.
 
-## Connection → Locking → Lock Files
+## Locking
 
-Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](Locking).
+### Lock Files
+
+Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](Locking.md).
 
 # Sync
 
-## Sync → Connect Mode
+## Connect Mode
 
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*.
 
@@ -57,15 +60,15 @@ Change the default synchronization option. You can disable synchronization by de
 :width: 700px
 ```
 
-## Sync → Index Files
+## Index Files
 
-Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](Interface#reload) choosing *Reload* in the context menu.
+Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](Interface.md#reload) choosing *Reload* in the context menu.
 
-## Sync → Cache Location
+## Cache Location
 
 `````{tabs}
 ````{group-tab} macOS
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](Support).
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](Support.md).
 
 The disk must be formatted as HFS+ or APFS.
 ````
@@ -77,7 +80,7 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 ````
 `````
 
-# Preferences → Profiles
+# Profiles
 
 ```{note}
 Prelimitary documentation for Mountain Duck version 4.8
@@ -90,26 +93,26 @@ Select connection profiles to be installed. Either scroll through the list or us
 
 The following connection profiles are installed by default and can’t be deleted:
 
-- [FTP (File Transfer Protocol)](../Protocols/FTP)
-- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP)
-- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP)
-- [WebDAV (HTTP)](../Protocols/WebDAV/index)
-- [WebDAV (HTTPS)](../Protocols/WebDAV/index)
-- [Amazon S3](../Protocols/S3/index)
-- [Google Cloud Storage](../Protocols/Google_Cloud_Storage)
-- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index)
-- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index)
-- [Windows Azure Blob Storage](../Protocols/Azure)
-- [Backblaze B2 Cloud Storage](../Protocols/B2)
-- [Dropbox](../Protocols/Dropbox)
-- [Google Drive](../Protocols/Google_Drive)
-- [Microsoft OneDrive](../Protocols/OneDrive)
-- [Microsoft Sharepoint](../Protocols/SharePoint)
-- [Microsoft Sharepoint Site](../Protocols/SharePoint)
-- [DRACOON (OAuth)](../Protocols/Dracoon)
-- [Files.com](../Protocols/Files.com)
-- [Nextcloud](../Protocols/WebDAV/Nextcloud)
-- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles)
+- [FTP (File Transfer Protocol)](../Protocols/FTP.md)
+- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP.md)
+- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP.md)
+- [WebDAV (HTTP)](../Protocols/WebDAV/index.md)
+- [WebDAV (HTTPS)](../Protocols/WebDAV/index.md)
+- [Amazon S3](../Protocols/S3/index.md)
+- [Google Cloud Storage](../Protocols/Google_Cloud_Storage.md)
+- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index.md)
+- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index.md)
+- [Windows Azure Blob Storage](../Protocols/Azure.md)
+- [Backblaze B2 Cloud Storage](../Protocols/B2.md)
+- [Dropbox](../Protocols/Dropbox.md)
+- [Google Drive](../Protocols/Google_Drive.md)
+- [Microsoft OneDrive](../Protocols/OneDrive.md)
+- [Microsoft Sharepoint](../Protocols/SharePoint.md)
+- [Microsoft Sharepoint Site](../Protocols/SharePoint.md)
+- [DRACOON (OAuth)](../Protocols/Dracoon.md)
+- [Files.com](../Protocols/Files.com.md)
+- [Nextcloud](../Protocols/WebDAV/Nextcloud.md)
+- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles.md)
 
 # Notifications
 

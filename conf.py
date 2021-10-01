@@ -29,7 +29,7 @@ author = 'iterate GmbH'
 extensions = [
 	"sphinx_rtd_theme",
 	"sphinx_tabs.tabs",
-	"myst_parser"
+	"myst_parser",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -76,3 +76,4 @@ html_css_files = [
 ]
 
 master_doc = 'index'
+myst_heading_anchors = 3

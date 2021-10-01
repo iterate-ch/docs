@@ -3,7 +3,7 @@ DreamObject Cloud Storage
 
 ![DreamObjects Drive Icon](_images/dreamobjects.2.png)
 
-> [DreamObjects](http://dreamhost.com/cloud/dreamobjects/) is a cost-effective, public cloud storage service built on top of the open source technology [Ceph](http://ceph.io/). It is compatible with the APIs of [Amazon S3](index) and [Swift](../OpenStack/index) based object storage services.
+> [DreamObjects](http://dreamhost.com/cloud/dreamobjects/) is a cost-effective, public cloud storage service built on top of the open source technology [Ceph](http://ceph.io/). It is compatible with the APIs of [Amazon S3](index.md) and [Swift](../OpenStack/index.md) based object storage services.
 
 # Connecting
 

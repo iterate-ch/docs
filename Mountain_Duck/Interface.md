@@ -29,7 +29,7 @@ Right-click on the taskbar and select *Taskbar setting → Notification area →
 
 ## Auto start
 
-You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](Preference#general-login-item). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
+You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](Preferences.md#login-item). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
 # Bookmarks
 
@@ -63,7 +63,7 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 ## Connect Mode
 
 - **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#select-files-and-folders-to-always-keep-offline).
+- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync.md#select-files-and-folders-to-always-keep-offline).
 
 ## Read-Only Volume
 
@@ -140,7 +140,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](Sync#notifications)
+- [Sync Notifications](Sync.md#notifications)
 
 # Disconnect
 
@@ -186,25 +186,25 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 # Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
-Refer to [Sync Options](Sync#select-files-and-folders-to-always-keep-offline)
+Refer to [Sync Options](Sync.md#select-files-and-folders-to-always-keep-offline)
 
 # Reload
 
 Changes from the server are not immediately visible. The directory listing in *Finder.app* may become out of date when another application is adding, removing, or modifying files on the server. Choose *Reload* from the *Finder Extension Menu*. On Windows, you can force *File Explorer* to refresh the directory listing with F5.
 
-Enable the *Index Files* option in [*Preferences → Sync*](Preferences#sync-index-files) to allow new files on the remote storage to be detected periodically.
+Enable the *Index Files* option in [*Preferences → Sync*](Preferences.md#index-files) to allow new files on the remote storage to be detected periodically.
 
 # Share
 
 - *Create Download Share:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Create Upload Share:* Create an URL to share with someone else to allow uploading files to the selected folder.
 
-Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../Cyberduck/Bookmarks#http-url) and [temporary signed URLs in S3](../Protocols/S3/Index#public-urls).
+Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../Cyberduck/Bookmarks.md#http-url) and [temporary signed URLs in S3](../Protocols/S3/index.md#public-urls).
 
 - *Copy URL*
 - *Open URL*
 
-[Read more](../Cyberduck/Share) about sharing options.
+[Read more](../Cyberduck/Share.md) about sharing options.
 
 ```{image} _images/Mountain_Duck_Finder_Context_Menu.png
 :alt: Send Command
@@ -214,7 +214,7 @@ Right-click files on a mounted drive will open a menu with items to copy & open 
 # Versions
 
 *Quick Look* or *Restore* previous versions of documents on servers supporting versioning.
-[Read more](Versions) about versioning.
+[Read more](Versions.md) about versioning.
 
 # New Bookmark
 
@@ -230,7 +230,7 @@ This feature is not supported in the version available in the Mac App Store.
 
 # Info Panel
 
-Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](../Cyberduck/Info).
+Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](../Cyberduck/Info.md).
 
 ```{image} _images/Info_Window_CDN.png
 :alt: Send Command
@@ -251,7 +251,7 @@ Right-click on a file and choose *Info* to change permissions, ACLs, metadata, a
 
 # New Encrypted Vault...
 
-Create a new Cryptomator Vault. [Read more](../Cryptomator/index) about client-side encryption.
+Create a new Cryptomator Vault. [Read more](../Cryptomator/index.md) about client-side encryption.
 
 # Lock/Unlock Vault
 

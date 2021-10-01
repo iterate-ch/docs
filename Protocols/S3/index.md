@@ -40,7 +40,7 @@ You must obtain the login credentials (Access Key ID and Secret Access Key) of y
 
 ## IAM User
 
-You can also connect using [IAM](IAM) credentials that have the `Amazon S3 Full Access` template policy permissions attached and optionally the `CloudFront Full Access`. Make sure you are connecting with `AWS4-HMAC-SHA256` signature version (see above).
+You can also connect using [IAM](IAM.md) credentials that have the `Amazon S3 Full Access` template policy permissions attached and optionally the `CloudFront Full Access`. Make sure you are connecting with `AWS4-HMAC-SHA256` signature version (see above).
 
 ## Generic S3 Profiles
 
@@ -71,7 +71,7 @@ If you have an S3 installation without SSL configured, you need an optional conn
 
 An incomplete list of known providers that require the use of AWS2
 - Riak Cloud Storage
-- [EMC Elastic Cloud Storage](EMC)
+- EMC Elastic Cloud Storage
 
 **HTTP**</br>
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
@@ -171,7 +171,7 @@ List the contents of a bucket with
 
 	duck --username <Access Key ID>  --list s3:/<bucketname>/
 
-Refer to the [Cyberduck CLI documentation](../../CLI/index) for more operations.
+Refer to the [Cyberduck CLI documentation](../../CLI/index.md) for more operations.
 
 # Third-Party Providers
 
@@ -179,36 +179,36 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 
 - [Aruba Cloud](https://www.cloud.it/)
 - [Connectria Cloud Storage](https://www.mh.connectria.com/rp/order/cloud_storage_index)
-- [DreamObjects Cloud Storage](DreamObjects)
-- [Dunkel Cloud Storage](Dunkel)
-- [Eucalyptus Walrus](Eucalyptus)
-- [Google Storage](../Google_Cloud_Storage)
+- [DreamObjects Cloud Storage](DreamObjects.md)
+- [Dunkel Cloud Storage](Dunkel.md)
+- [Eucalyptus Walrus](Eucalyptus.md)
+- [Google Storage](../Google_Cloud_Storage.md)
 - [Outscale (using CEPH Opensource)](https://www.outscale.com/)
 - [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
-- [Scality (proprietary technology)](Scality)
+- [Scality (proprietary technology)](Scality.md)
 - [Seeweb](https://www.seeweb.it/)
-- [Storadera](Storadera)
-- [Exoscale Swiss Object Storage](Exoscale)
-- [Verizon Cloud Storage](Verizon)
-- [Spectra BlackPearl Deep Storage Gateway](Spectra)
-- [MinIO Cloud Storage](MinIO)
-- [Cynny Space](Cynny)
+- [Storadera](Storadera.md)
+- [Exoscale Swiss Object Storage](Exoscale.md)
+- [Verizon Cloud Storage](Verizon.md)
+- [Spectra BlackPearl Deep Storage Gateway](Spectra.md)
+- [MinIO Cloud Storage](MinIO.md)
+- [Cynny Space](Cynny.md)
 - [Cloudian HyperStore Appliance](https://cloudian.com/products/hyperstore/)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
-- [Wasabi Storage](Wasabi)
-- [DigitalOcean Spaces](DigitalOcean)
-- [IBM Cloud Object Storage (COS)](IBM_COS)
-- [Oracle Storage Cloud Service](Oracle_Cloud#OCIObjectStorage)
-- [Alibaba Cloud Object Storage Service (OSS)](Alibaba)
+- [Wasabi Storage](Wasabi.md)
+- [DigitalOcean Spaces](DigitalOcean.md)
+- [IBM Cloud Object Storage (COS)](IBM_COS.md)
+- [Oracle Storage Cloud Service](Oracle_Cloud.md#oci-object-storage)
+- [Alibaba Cloud Object Storage Service (OSS)](Alibaba.md)
 - [Vultr Object Storage](https://www.vultr.com/docs/vultr-object-storage#Cyberduck_GUI_tool)
 - [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
-- [Filebase](Filebase)
-- [Z1 Storage](Z1)
-- [Pilvio](Pilvio)
-- [IDrive® Cloud](IDrive_Cloud#s3)
-- [Polycloud](Polycloud)
-- [Scaleway Object Storage](Scaleway)
+- [Filebase](Filebase.md)
+- [Z1 Storage](Z1.md)
+- [Pilvio](Pilvio.md)
+- [IDrive® Cloud](IDrive_Cloud.md#s3)
+- [Polycloud](Polycloud.md)
+- [Scaleway Object Storage](Scaleway.md)
 
 # File System
 
@@ -255,7 +255,7 @@ When this option is enabled in the S3 panel of the Info (*File → Info (macOS `
 
 ![AWS Logging Configuration](_images/AWS_Logging_Configuration.png)
 
-To toggle CloudFront access logging, select the the [Distribution](../../CDN/CloudFront) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
+To toggle CloudFront access logging, select the the [Distribution](../../CDN/CloudFront.md) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
 
 ## Versions
 
@@ -313,7 +313,7 @@ You can view unfinished multipart uploads in the browser by choosing *View → S
 
 #### Options
 
-You can set options with the following [hidden configuration options](../../Cyberduck/Preferences#hidden-configuration-options).
+You can set options with the following [hidden configuration options](../../Cyberduck/Preferences.md#hidden-configuration-options).
 
 Part size for multipart uploads
 
@@ -325,7 +325,7 @@ Threshold to use multipart uploads is set to 100MB by default
 
 # Storage Class
 
-You have the option to store files using the *Reduced Redundancy Storage (RRS)* by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3* and [edit the storage class](../../Cyberduck/Info#amazon-s3-panel) for already uploaded files using *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
+You have the option to store files using the *Reduced Redundancy Storage (RRS)* by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3* and [edit the storage class](../../Cyberduck/Info.md#amazon-s3-panel) for already uploaded files using *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
 
 - Regular Amazon S3 Storage
 - Intelligent-Tiering
@@ -351,7 +351,7 @@ You can temporarily restore files from Glacier using *File → Restore*. The fil
 
 ### Glacier Retrieval Options
 
-You can set retrieval options with the following [hidden configuration options](../../Cyberduck/Preferences#hidden-configuration-options).
+You can set retrieval options with the following [hidden configuration options](../../Cyberduck/Preferences.md#hidden-configuration-options).
 
 Sets Glacier retrieval tier at which the restore will be processed.
 
@@ -381,7 +381,7 @@ If you enter an email address unknown to AWS, the error message `S3 Error Messag
 
 You must give the group grantee `http://acs.amazonaws.com/groups/global/AllUsers` read permissions for your objects to make them accessible using a regular web browser for everyone.
 
-If [bucket logging](index#bucket-access-logging) is enabled, the bucket ACL will have `READ_ACP` and `WRITE` permissions for the group grantee `http://acs.amazonaws.com/groups/s3/LogDelivery`.
+If [bucket logging](index.md#bucket-access-logging) is enabled, the bucket ACL will have `READ_ACP` and `WRITE` permissions for the group grantee `http://acs.amazonaws.com/groups/s3/LogDelivery`.
 
 ## Default ACLs
 
@@ -411,7 +411,7 @@ The following permissions can be given to grantees:
 
 # Public URLs
 
-You can access all URLs (including from [CDN](../../CDN/CloudFront) configurations) from the menu *Edit → Copy URL and File → Open URL*.
+You can access all URLs (including from [CDN](../../CDN/CloudFront.md) configurations) from the menu *Edit → Copy URL and File → Open URL*.
 
 ![Copy URLs](_images/Copy_URLs.png)
 
@@ -419,10 +419,10 @@ You can access all URLs (including from [CDN](../../CDN/CloudFront) configuratio
 
 A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from *Edit → Copy URL→ Signed URL* or *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*.
 
-There are pre-signed URLs that expire in one hour, 24 hours (using the preference `s3.url.expire.seconds`), a week, and a month. You can change the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-options) `s3.url.expire.seconds` from the default `86400` (24 hours).
+There are pre-signed URLs that expire in one hour, 24 hours (using the preference `s3.url.expire.seconds`), a week, and a month. You can change the [hidden preference](../../Cyberduck/Preferences.md#hidden-configuration-options) `s3.url.expire.seconds` from the default `86400` (24 hours).
 
 ```{important}
-It is required that your AWS credentials are saved in keychain. Refer to [Passwords](../../Cyberduck/Connection#Passwords).
+It is required that your AWS credentials are saved in keychain. Refer to [Passwords](../../Cyberduck/Connection.md#passwords).
 ```
 
 ### Force use of AWS2 Signature
@@ -439,11 +439,11 @@ Use *File → Info (macOS `⌘I` Window `Alt+Return`) → S3* to copy the BitTor
 
 # Metadata
 
-You can edit standard HTTP headers and add [custom HTTP headers](../../Cyberduck/Info#metadata-http-headers) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
+You can edit standard HTTP headers and add [custom HTTP headers](../../Cyberduck/Info.md#metadata-http-headers) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
 
 ## Default Metadata
 
-Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
 
 	s3.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
 
@@ -451,9 +451,9 @@ Currently only possible using a [hidden configuration option](../../Cyberduck/Pr
 
 This option lets you control how long a client accessing objects from your S3 bucket will cache the content and thus lowering the number of access to your S3 storage. In conjunction with Amazon CloudFront, it controls the time an object stays in an edge location until it expires. After the object expires, CloudFront must go back to the origin server the next time that edge location needs to serve that object. By default, all objects automatically expire after 24 hours when no custom `Cache-Control` header is set.
 
-The default setting is `Cache-Control: public,max-age=2052000` when choosing to add a custom `Cache-Control` header in the [Info](../../Cyberduck/Info) panel which translates to a cache expiration of one month (one month in seconds equals more or less `60*60*24*30`).
+The default setting is `Cache-Control: public,max-age=2052000` when choosing to add a custom `Cache-Control` header in the [Info](../../Cyberduck/Info.md) panel which translates to a cache expiration of one month (one month in seconds equals more or less `60*60*24*30`).
 
-Use the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) `s3.cache.seconds` to set a custom default value
+Use the [hidden configuration option](../../Cyberduck/Preferences.md#hidden-configuration-options) `s3.cache.seconds` to set a custom default value
 
 	s3.cache.seconds=2052000
 
@@ -514,7 +514,7 @@ To access this website functionality, Amazon S3 exposes a new website endpoint f
 
 ![S3 Website Configuration](_images/S3_Website_Configuration.png)
 
-To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront#website-configuration-endpoint-distributions-with-cloudfront-cdn).
+To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../CDN/CloudFront.md#website-configuration-endpoint-distributions-with-cloudfront-cdn).
 
 ## References
 
@@ -525,7 +525,7 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 ## Disable use of Virtual Host Style Requests
 
-Set the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles) with the property set in `Properties`.
+Set the [hidden preference](../../Cyberduck/Preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles.md) with the property set in `Properties`.
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 

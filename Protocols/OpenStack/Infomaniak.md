@@ -20,7 +20,7 @@ Log in to your *Infomaniak OpenStack Swift space* via this pre-configured connec
 
 ### Additional Fields Required
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Project: Domain:Username: `information sent by email when you created your Swiss Backup space`
 - Password: `password sent by email when you created your Swiss Backup space`
@@ -35,7 +35,7 @@ Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
 
 ## Connecting
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `connect.drive.infomaniak.com`

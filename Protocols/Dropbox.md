@@ -33,7 +33,7 @@ You can list the root contents of your Dropbox with [Cyberduck CLI](https://duck
 
 	duck --list dropbox:/
 
-Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Dropbox to allow the lookup of previously saved OAuth tokens.
+Refer to the [Cyberduck CLI](../CLI/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Dropbox to allow the lookup of previously saved OAuth tokens.
 
 # Additional Information
 
@@ -47,7 +47,7 @@ If you want to access folders that are shared with you through Dropbox you have 
 This only applies to Cyberduck.
 ```
 
-You can [search recursively](../Cyberduck/Browser#filter-search) for files fast without browsing folders first.
+You can [search recursively](../Cyberduck/Browser.md#filter-and-search) for files fast without browsing folders first.
 
 ## Share
 

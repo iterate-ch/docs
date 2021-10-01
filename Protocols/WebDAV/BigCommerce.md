@@ -4,7 +4,7 @@ BigCommerce
 # Connecting
 
 1. Obtain your WebDAV credentials and setup details from your BigCommerce control panel ([Server Settings → File Access (WebDAV)](http://login.bigcommerce.com/deep-links/settings/file-access)).
-2. Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+2. Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 	- Protocol: `WebDAV (HTTPS)`
 	- Server: Your WebDAV Path without `/dav`
 	- Username: Your WebDAV username

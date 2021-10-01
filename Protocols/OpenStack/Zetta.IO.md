@@ -13,7 +13,7 @@ While most of the big cloud players in the world are U.S.-based, Zetta.IO is a N
 
 ## Connection Profiles
 
-Connect using the pre-configured [connection profile](../../Cyberduck/Connection#connection-profile):
+Connect using the pre-configured [connection profile](../../Cyberduck/Connection.md#connection-profiles):
 
 - {download}`Zetta.IO Cyberduck Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Zetta.IO.cyberduckprofile>`
 
@@ -24,7 +24,7 @@ Connect using the pre-configured [connection profile](../../Cyberduck/Connection
 - Username: `<Project Name>:<Project Domain>:<Username>`
 - Password: `<Password>`
 
-You will need the [Openstack Swift (Keystone 3) profile](index) if you want to use manual configuration with Cyberduck or Mountainduck. We recommend that you use the official profile instead.
+You will need the [Openstack Swift (Keystone 3) profile](index.md) if you want to use manual configuration with Cyberduck or Mountainduck. We recommend that you use the official profile instead.
 
 # References
 

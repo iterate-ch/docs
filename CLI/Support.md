@@ -54,4 +54,4 @@ The logging output is written directly into the command line:
 
 ## Enable Debug Logging
 
-To enable debug logging use the parameter `--debug`. Alternatively, set the [environment variable](index#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.
+To enable debug logging use the parameter `--debug`. Alternatively, set the [environment variable](index.md#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.

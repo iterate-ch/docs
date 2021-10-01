@@ -85,28 +85,28 @@ Connect with [Cyberduck CLI](https://duck.sh/) using the default connection prof
 
 	duck --username OS_TENANT_ID:OS_USERNAME --password PASSWORD  --list swift://SWIFT_KEYSTONE_AUTH_SERVER/CONTAINERNAME
 
-Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
+Refer to the [Cyberduck CLI](../../CLI/index.md) documentation for more operations.
 
 # Third-Party Providers
 
-- [Rackspace Cloud Files (US & UK)](CloudFiles) with [Akamai CDN](../../CDN/Akamai)
-- [Internap AgileFILES](Internap)
-- [Cloud.ca Object Store](Cloud.ca)
-- [Memset Memstore Object Storage](Memset)
-- [Enter Cloud Suite](Enter_Cloud_Suite)
-- [Oracle Storage Cloud Service](../S3/Oracle_Cloud#oci-object-storage-classic)
-- [Oktawave Cloud Storage](Oktawave)
-- [SwiftStack](SwiftStack)
+- [Rackspace Cloud Files (US & UK)](CloudFiles.md) with [Akamai CDN](../../CDN/Akamai.md)
+- [Internap AgileFILES](Internap.md)
+- [Cloud.ca Object Store](Cloud.ca.md)
+- [Memset Memstore Object Storage](Memset.md)
+- [Enter Cloud Suite](Enter_Cloud_Suite.md)
+- [Oracle Storage Cloud Service](../S3/Oracle_Cloud.md#oci-object-storage-classic)
+- [Oktawave Cloud Storage](Oktawave.md)
+- [SwiftStack](SwiftStack.md)
 - [RunAbove](https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/)
-- [Cloud A](Cloud_A)
-- [AURO](AURO)
-- [OVH](OVH)
-- [HubiC (OVH)](HubiC)
-- [Zetta.IO](Zetta.IO)
-- [Selectel Cloud Storage](Selectel)
-- [Infomaniak](Infomaniak)
-- [IDrive® Cloud](../S3/IDrive_Cloud#open-stack-swift)
-- [OpenStack FlexCloud](FlexCloud)
+- [Cloud A](Cloud_A.md)
+- [AURO](AURO.md)
+- [OVH](OVH.md)
+- [HubiC (OVH)](HubiC.md)
+- [Zetta.IO](Zetta.IO.md)
+- [Selectel Cloud Storage](Selectel.md)
+- [Infomaniak](Infomaniak.md)
+- [IDrive® Cloud](../S3/IDrive_Cloud.md#openstack-swift)
+- [OpenStack FlexCloud](FlexCloud.md)
 
 # Temporary URLs
 
@@ -128,7 +128,7 @@ You can CDN enable the container using *File → Info → Distribution (CDN)* if
 
 ## Large Upload Segment Size
 
-You can set the [hidden option](../../Cyberduck/Preferences#hidden-configuration-option) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue #9134).
+You can set the [hidden option](../../Cyberduck/Preferences.md#hidden-configuration-options) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue #9134).
 
 # Known Issues
 
@@ -136,7 +136,7 @@ You can set the [hidden option](../../Cyberduck/Preferences#hidden-configuration
 
 ## Multiple OpenStack Swift Containers in Different Regions with the Same Name
 
-Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../../Cyberduck/Profiles) limited to a single region as with [Rackspace Cloudfiles region profiles](CloudFiles#profiles-for-a-single-region).
+Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../../Cyberduck/Profiles.md) limited to a single region as with [Rackspace Cloudfiles region profiles](CloudFiles.md#profile-for-a-single-region).
 
 ## In Finder.app, Creating a new top-level Folder in OpenStack Swift will not Allow to Rename it from `untitled folder`
 

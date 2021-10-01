@@ -51,7 +51,7 @@ There is a preview method of review application consent through the Azure Active
 
 # SharePoint Server
 
-To connect to a SharePoint Server, choose [WebDAV](WebDAV/index) for the connection type. This is available to
+To connect to a SharePoint Server, choose [WebDAV](WebDAV/index.md) for the connection type. This is available to
 
 - SharePoint Server 2013
 - SharePoint Server 2016
@@ -65,7 +65,7 @@ Basic Authentication should only be used when using secured connection over TLS 
 
 ### NTLM Authentication
 
-If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options).
+If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../Cyberduck/Preferences.md#hidden-configuration-options).
 
 	defaults write ch.sudo.cyberduck webdav.ntlm.workstation MYWORKSTATION
 	defaults write ch.sudo.cyberduck webdav.ntlm.domain MYDOMAIN

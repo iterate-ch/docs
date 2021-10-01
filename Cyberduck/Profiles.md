@@ -4,7 +4,7 @@ Connection Profiles
 [Connection profiles](Connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 - [Third-Party S3 providers](../Protocols/S3/index.md#third-party-providers)
-- [OpenStack Providers](../Protocols/OpenStack/index.md#providers)
+- [OpenStack Providers](../Protocols/OpenStack/index.md#third-party-providers)
 
 These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
 
@@ -38,26 +38,26 @@ Select connection profiles to be installed. Either scroll through the list or us
 
 The following connection profiles are installed by default and can’t be deleted:
 
-- [FTP (File Transfer Protocol)](../Protocols/FTP)
-- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP)
-- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP)
-- [WebDAV (HTTP)](../Protocols/WebDAV/index)
-- [WebDAV (HTTPS)](../Protocols/WebDAV/index)
-- [Amazon S3](../Protocols/S3/index)
-- [Google Cloud Storage](../Protocols/Google_Cloud_Storage)
-- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index)
-- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index)
-- [Windows Azure Blob Storage](../Protocols/Azure)
-- [Backblaze B2 Cloud Storage](../Protocols/B2)
-- [Dropbox](../Protocols/Dropbox)
-- [Google Drive](../Protocols/Google_Drive)
-- [Microsoft OneDrive](../Protocols/OneDrive)
-- [Microsoft Sharepoint](../Protocols/SharePoint)
-- [Microsoft Sharepoint Site](../Protocols/SharePoint)
-- [DRACOON (OAuth)](../Protocols/Dracoon)
-- [Files.com](../Protocols/Files.com)
-- [Nextcloud](../Protocols/WebDAV/Nextcloud)
-- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles)
+- [FTP (File Transfer Protocol)](../Protocols/FTP.md)
+- [FTP-SSL (Explicit AUTH TLS)](../Protocols/FTP.md)
+- [SFTP (SSH File Transfer Protocol)](../Protocols/SFTP.md)
+- [WebDAV (HTTP)](../Protocols/WebDAV/index.md)
+- [WebDAV (HTTPS)](../Protocols/WebDAV/index.md)
+- [Amazon S3](../Protocols/S3/index.md)
+- [Google Cloud Storage](../Protocols/Google_Cloud_Storage.md)
+- [OpenStack Swift (Keystone 2.0)](../Protocols/OpenStack/index.md)
+- [OpenStack Swift (Keystone 3)](../Protocols/OpenStack/index.md)
+- [Windows Azure Blob Storage](../Protocols/Azure.md)
+- [Backblaze B2 Cloud Storage](../Protocols/B2.md)
+- [Dropbox](../Protocols/Dropbox.md)
+- [Google Drive](../Protocols/Google_Drive.md)
+- [Microsoft OneDrive](../Protocols/OneDrive.md)
+- [Microsoft Sharepoint](../Protocols/SharePoint.md)
+- [Microsoft Sharepoint Site](../Protocols/SharePoint.md)
+- [DRACOON (OAuth)](../Protocols/Dracoon.md)
+- [Files.com](../Protocols/Files.com.md)
+- [Nextcloud](../Protocols/WebDAV/Nextcloud.md)
+- [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles.md)
 
 # Technical File Format Specification
 
@@ -86,8 +86,8 @@ The following properties can be defined in a connection profile:
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../Protocols/OpenStack/index) and [S3](../Protocols/S3/index) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
-- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../Protocols/S3/index#creating-a-bucket) for [S3](../Protocols/S3/index) and [OpenStack Swift](../Protocols/OpenStack/SwiftStack) connections.
+- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../Protocols/OpenStack/index.md) and [S3](../Protocols/S3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../Protocols/S3/index.md#creating-a-bucket) for [S3](../Protocols/S3/index.md) and [OpenStack Swift](../Protocols/OpenStack/SwiftStack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.

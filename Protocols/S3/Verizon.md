@@ -15,7 +15,7 @@ You create storage keys from the [console](https://console.cloud.verizon.com/) a
 
 ## Manual Configuration
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `S3 (Amazon Simple Storage Service)`
 - Server: `storage-iad3a.cloud.verizon.com`, `storage-ams1a.cloud.verizon.com`, `storage-ushaa.cloud.verizon.com`

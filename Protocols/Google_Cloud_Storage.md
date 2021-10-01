@@ -6,7 +6,7 @@ Google Cloud Storage
 :width: 128px
 ```
 
-> [Google Cloud Storage](https://cloud.google.com/storage/docs) is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with [S3](S3/index).
+> [Google Cloud Storage](https://cloud.google.com/storage/docs) is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with [S3](S3/index.md).
 
 # Connecting
 
@@ -36,7 +36,7 @@ If you have accidentally logged in with the wrong Google Cloud Storage username 
 
 ### Custom OAuth Client ID
 
-You can register a [custom OAuth 2.0 client ID](../Google_Client_ID) with Google to operate independently of our registered client ID.
+You can register a [custom OAuth 2.0 client ID](Google_Client_ID.md) with Google to operate independently of our registered client ID.
 
 # Cyberduck CLI
 
@@ -44,7 +44,7 @@ You can list all buckets with [Cyberduck CLI](https://duck.sh/) using
 
 	duck --username <projectid> --list gs:/`
 
-Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations.
+Refer to the [Cyberduck CLI](../CLI/index.md) documentation for more operations.
 
 # Creating a Bucket
 
@@ -78,7 +78,7 @@ Creating a folder inside a bucket will create a placeholder object named after t
 
 ## Metadata
 
-You can edit standard HTTP headers [add](../Cyberduck/Info#metadata-http-headers) custom HTTP headers to files to store [metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html). Choose *File → Info → Google Storage* to edit headers.
+You can edit standard HTTP headers [add](../Cyberduck/Info.md#metadata-http-headers) custom HTTP headers to files to store [metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html). Choose *File → Info → Google Storage* to edit headers.
 
 # ACLs
 
@@ -134,7 +134,7 @@ Simulates directory index behavior at both bucket and "directory" levels. The fi
 
 # Limitations
 
-- No content distribution ([CDN](../CDN/index)) configuration.
+- No content distribution ([CDN](../CDN/index.md)) configuration.
 - Torrent URLs are not supported.
 - Signed URLs are not supported.
 

@@ -1,7 +1,7 @@
 Amazon CloudFront Support
 ===
 
-Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using *File → Info → Distribution* for a [S3](../Protocols/S3/index) bucket or a custom origin distribution for any other source.
+Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using *File → Info → Distribution* for a [S3](../Protocols/S3/index.md) bucket or a custom origin distribution for any other source.
 
 ```{note}
 Using CloudFront can be more cost effective if your users access your objects frequently because, at higher usage, the price for CloudFront data transfer is lower than the price for Amazon S3 data transfer. In addition, downloads are faster with CloudFront than with Amazon S3 alone because your objects are stored closer to your users.
@@ -19,11 +19,11 @@ Delivery method _Download (HTTP) CDN)_ used to serve static content from a S3 bu
 
 # Website Configuration Endpoint Distributions
 
-Delivery method _Website Configuration (HTTP)_ to enable a [website endpoint](../Protocols/S3/index#website-configuration) with no CDN features. This does *not* use any CloudFront feature.
+Delivery method _Website Configuration (HTTP)_ to enable a [website endpoint](../Protocols/S3/index.md#website-configuration) with no CDN features. This does *not* use any CloudFront feature.
 
 # Website Configuration Endpoint Distributions with CloudFront CDN
 
-Delivery method _Website Configuration (HTTP) CDN_  is using a custom origin CDN distribution with a [website endpoint](../Protocols/S3/index#website-configuration) as a source to make use of the website endpoint features in CloudFront.
+Delivery method _Website Configuration (HTTP) CDN_  is using a custom origin CDN distribution with a [website endpoint](../Protocols/S3/index.md#website-configuration) as a source to make use of the website endpoint features in CloudFront.
 
 ```{attention}
 You must also enable the website endpoint using the delivery method _Website Configuration (HTTP)_ to make sure the CloudFront edge locations can fetch the content from the origin.
@@ -46,13 +46,13 @@ Copy the `RTMP` URL for a given file in a bucket with a streaming distribution e
 
 # Custom Origin (HHTP/HTTPS) Distributions
 
-A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html#forward-custom-headers-restrict-access) is an origin server that isn't hosted on Amazon S3. The origin server holds the original, definitive versions of your content. You can connect to any [FTP](../Protocols/FTP), [SFTP](../Protocols/SFTP) or [WebDAV](../Protocols/WebDAV/index) server and configure it as an origin server for content distribution with Amazon CloudFront in the *Distribution (CDN)* tab of the [Info](../Cyberduck/Info) panel. The hostname from the *Web URL* configured in the bookmark is used to configure the origin of the CDN.
+A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html#forward-custom-headers-restrict-access) is an origin server that isn't hosted on Amazon S3. The origin server holds the original, definitive versions of your content. You can connect to any [FTP](../Protocols/FTP.md), [SFTP](../Protocols/SFTP.md) or [WebDAV](../Protocols/WebDAV/index.md) server and configure it as an origin server for content distribution with Amazon CloudFront in the *Distribution (CDN)* tab of the [Info](../Cyberduck/Info.md) panel. The hostname from the *Web URL* configured in the bookmark is used to configure the origin of the CDN.
 
 ![Custom Origin CDN](_images/Custom_Origin_CDN.png)
 
-- Adjust the [Web URL](../Cyberduck/Bookmarks#http-url) of the bookmark to the host where you want to CloudFront look for the original content. If the scheme of the Web URL is `http` the origin HTTP port of the distribution is set to the port number in the Web URL (defaults to `80`) and the HTTPS port is set to `443`. If the scheme is `https` the origin HTTPS port of the distribution is set to the port number in the Web URL (defaults to `443`) and the HTTP port is set to `80`.
-- Set the *Path* of the bookmark to the document root of your web server. This allows you to select files for [invalidation](#object-invalidation) or set the [default root object](#index-file).
-- Connect to the server and select the *Distribution (CDN)* panel from the [Info](../Cyberduck/Info) window.
+- Adjust the [Web URL](../Cyberduck/Bookmarks.md#http-url) of the bookmark to the host where you want to CloudFront look for the original content. If the scheme of the Web URL is `http` the origin HTTP port of the distribution is set to the port number in the Web URL (defaults to `80`) and the HTTPS port is set to `443`. If the scheme is `https` the origin HTTPS port of the distribution is set to the port number in the Web URL (defaults to `443`) and the HTTP port is set to `80`.
+- Set the *Path* of the bookmark to the document root of your web server. This allows you to select files for [invalidation](../Cyberduck/Info.md#object-invalidation) or set the [default root object](../Cyberduck/Info.md#index-file).
+- Connect to the server and select the *Distribution (CDN)* panel from the [Info](../Cyberduck/Info.md) window.
 - Check the *Origin URL* displayed and enable the distribution with *Enable Amazon CloudFront distribution*.
 - Refresh the status of the distribution using *`⌘R`*. The initial status is *In Progress* and should subsequently change to *Deployed* when the changes in Amazon CloudFront have propagated.
 - Click the *Where* URL to load the content over the CDN.
@@ -73,10 +73,10 @@ The first time your content is served to a worldwide user (one in Tokyo, for exa
 | CDN CNAME URL | http://cdn.cyberduck.ch/img/cyberduck.icon.png | URL for resource in CDN with custom hostname registered in the DNS |
 
 # Options
-Refer to [Info](../Cyberduck/Info.md#CDN_Panel) for configuration options.
+Refer to [Info](../Cyberduck/Info.md#cdn-panel) for configuration options.
 
 # Copy URLs
-CloudFront URLs are available in the regular *Copy URL* menu. Refer to [Open or Copy HTTP URL](../Cyberduck/Browser#open-or-copy-http-url).
+CloudFront URLs are available in the regular *Copy URL* menu. Refer to [Open or Copy HTTP URL](../Cyberduck/Browser.md#open-or-copy-http-url).
 
 # Access S3 through CloudFront
 You can access S3 buckets through CloudFront. Although not a typical use case, this may be of interest to save bandwidth costs when working with files in S3. For example using [Cyberduck CLI](../CLI/index.md).

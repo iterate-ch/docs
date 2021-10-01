@@ -5,7 +5,7 @@ Alibaba Cloud Object Storage Service (OSS)
 
 # Connecting
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks). Lookup the *Internet endpoint* for the buckets you want to access. Refer to [Regions and endpoints](https://www.alibabacloud.com/help/doc-detail/31837.htm).
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md). Lookup the *Internet endpoint* for the buckets you want to access. Refer to [Regions and endpoints](https://www.alibabacloud.com/help/doc-detail/31837.htm).
 
 - Protocol: `S3 (Amazon Simple Storage Service)`
 - Server: `oss-eu-west-1.aliyuncs.com`, `oss-eu-central-1.aliyuncs.com`, `oss-me-east-1.aliyuncs.com`, `oss-us-east-1.aliyuncs.com`, `oss-us-west-1.aliyuncs.com`, `oss-cn-shenzhen.aliyuncs.com`, …
