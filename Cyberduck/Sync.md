@@ -5,7 +5,7 @@ Synchronize Folders
 
 Files can be synchronized by selecting the directory to synchronize in the browser and select *File → Synchronize*. You will be prompted to select the directory on your computer to synchronize the files with.
 
-```{note}
+```{important}
 The options in *Preferences → Transfers → Timestamps* must be enabled.
 ```
 
@@ -50,7 +50,7 @@ Files are uploaded that match one of the following criteria:
 
 No files are downloaded.
 
-# Other solutions
+# Other Solutions
 
 You have to manually restart the synchronization in the transfer window. If you want to automate things you will be better off with either
 

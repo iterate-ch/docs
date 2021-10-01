@@ -1,4 +1,4 @@
-Cyberduck Quick Reference Cheat Sheet
+Cyberduck 
 ===
 
 ```{toctree}
@@ -23,6 +23,7 @@ Sync
 Transfer
 Upload
 ```
+# Quick Reference Cheat Sheet
 
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
@@ -44,12 +45,12 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 
 [Browser](Browser) remote files in a list or hierarchical outline view.
 
-- **[Info Windows](Info):** Edit access permissions and configure [CDN](../CDN/index) options
+- **[Info Window](Info):** Edit access permissions and configure [CDN](../CDN/index) options
 - **QuickLook:** Preview files in the browser window
 - **Open Web URL:** Configuration steps to open HTTP URL of selected file
-- **[Create and expand ZIP/TAR Archives](../SFTP#create-and-expand-zip-tar-archives)**
-- **[Send custom commands](Commands#SSHserver):** Send commands to a server not available in the graphical user interface.
-- **[Activity](Browser#Activity):** The activity window shows a list of all pending background tasks.
+- **[Create and expand ZIP/TAR Archives](../Protocols/SFTP#create-and-expand-zip-tar-archives)**
+- **[Send custom commands](../Protocols/SFTP#remote-commands):** Send commands to a server not available in the graphical user interface.
+- **[Activity](Browser#activity):** The activity window shows a list of all pending background tasks.
 
 ## [Edit Files](Edit)
 
@@ -90,6 +91,6 @@ Create and edit [bookmarks](Bookmarks) for your favorite servers.
 
 # Incompatibilities
 
-- *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowsDragon.
+- *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowDragon.
 - Sophos Anti-Virus *On-access Scanning*.
 - Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).

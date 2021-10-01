@@ -61,7 +61,7 @@ You can filter for the connection transcript only by using
 :width: 600px
 ```
 
-Alternatively to show previous log events use
+Alternatively, to show previous log events use
 
 `log show --predicate '(process =="Cyberduck")' --info`
 
@@ -69,7 +69,7 @@ Alternatively to show previous log events use
 `````
 
 **Transcript**<br/>
-You can only access the transcript which will log protocol request and responses. In particular useful for protocols using HTTP. Open a *Terminal.app* window and enter 
+You can only access the transcript which will log protocol request and responses. It's particular useful for protocols using HTTP. Open a *Terminal.app* window and enter 
 
 `log stream --predicate '(process == "Cyberduck") && (category == "transcript")' --level info`
 
@@ -82,7 +82,7 @@ Reset the logging configuration with
 
 `defaults delete ~/Library/Preferences/ch.sudo.cyberduck.plist logging`
 
-Reset Cyberduck for any logging configuration change to take effect.
+Restart Cyberduck for any logging configuration change to take effect.
 
 
 **Heap Dump**<br/>
@@ -97,7 +97,7 @@ Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`.
 
 
 **Debug Log**<br/>
-Debug logging can be enabled with a [hidden setting](Preferences#hidden-configuration-options). As there is no user interface for this yet you need to add the setting manually. If not existing yet you have to create the file [AppData](FAQ#preferences-and-application-support-files-location)`\Cyberduck\default.properties` and then add the property as follows:
+Debug logging can be enabled with a [hidden setting](Preferences#hidden-configuration-options). As there is no user interface for this yet you need to add the setting manually. If not existing yet you have to create the file [`%AppData%\Cyberduck\default.properties`](FAQ#preferences-and-application-support-files-location) and then add the property as follows:
 
 `logging=debug`
 
@@ -125,4 +125,4 @@ Crash reports are saved to `%AppData%\cyberduck\CrashReporter`.
 
 # Get Support
 
-For issues with your account credentials, please instead write to your hosting service provider. For bug reports or a feature request you can [open a ticket]() in our public issue tracker. Discuss features and issues you are having in the [Cyberduck Google Group](http://groups.google.com/group/cyberduck).
+For issues with your remote storage user account credentials, please instead write to your hosting service provider. For bug reports or a feature request you can [open a ticket]() in our public issue tracker. Discuss features and issues you are having in the [Cyberduck Google Group](http://groups.google.com/group/cyberduck).

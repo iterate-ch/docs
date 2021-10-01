@@ -9,7 +9,7 @@ Notifications
 - Upload failed
 - Transfer complete
 - Transfer incomplete
-- Tranfser queued
+- Transfer queued
 - Bonjour
 
 `````{tabs}

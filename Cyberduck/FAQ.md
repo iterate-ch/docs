@@ -5,9 +5,9 @@ FAQ
 
 ## What is Cyberduck?
 
-Cyberduck is an open-souce server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, AMazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure & OneDrive, Google Drive, and Dropbox licensed under the [GPL](https://github.com/iterate-ch/cyberduck/blob/master/LICENSE.txt).
+Cyberduck is an open-souce server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure & OneDrive, Google Drive, and Dropbox licensed under the [GPL](https://github.com/iterate-ch/cyberduck/blob/master/LICENSE.txt).
 
-## Is Cyberduck free?
+## Is Cyberduck Free?
 
 Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this programm useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key and it will help to make Cyberduck even better!
 
@@ -53,15 +53,15 @@ As a contributor to Cyberduck, you receive a registration key that disables the 
 
 ## Recover a Registration Key
 
-Registration keys can be [recovered](https://cyberduck.io/help#recover) using the email address you registered with Paypal.
+Registration keys can be [recovered](https://cyberduck.io/help#recover) using the email address you registered within the donation process.
 
-## No registration key received
+## No Registration Key Received
 
 - A key is sent when the payment is no more pending.
-- Verify that your email address registered with Paypal is still valid.
+- Verify that your email address registered with PayPal is still valid.
 - Check the spam folder of your email application.
 
-## The registration key received cannot be opened
+## The Registration Key Received Cannot be Opened
 
 The registration key is sent to you by email automatically after the Paypal transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
 
@@ -69,7 +69,7 @@ The registration key is sent to you by email automatically after the Paypal tran
 - Contact you hosting service provider how to download attachments.
 - Forward the mail to a different mail account where you possibly don't have an issue downloading attachments.
 
-# System requirements
+# System Requirements
 
 `````{tabs}
 ````{group-tab} macOS
@@ -123,7 +123,7 @@ There is also a [Chocolatey](http://chocolatey.org/packages?q=cyberduck) package
 ````
 `````
 
-## Preferences and application support files location
+## Preferences and Application Support Files Location
 
 `````{tabs}
 ````{group-tab} macOS
@@ -160,6 +160,6 @@ See [Preferences → Update](Preferences#update).
 
 # Incompatibilities
 
-- *WindowsDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowsDragon.
+- *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowDragon.
 - Sophos Anti-Virus *On-access Scanning*
 - Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).
