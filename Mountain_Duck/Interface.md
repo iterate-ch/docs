@@ -65,7 +65,7 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 - **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
 - **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#select-files-and-folders-to-always-keep-offline).
 
-## Read-only volume
+## Read-Only Volume
 
 Select *Options: Read Only* in the bookmark to mount the volume as read-only and disallow any write operations on the remote disk.
 
@@ -92,7 +92,7 @@ The bookmark can show three different status lights:
 
 - **No light:** No current connection to this bookmark.
 - **Green light:** You're currently connected to this bookmark. The bookmark is completely synced and idle.
-- **Orange light:** You're currently connected to this bookmark. There is at least ane active process.
+- **Orange light:** You're currently connected to this bookmark. There is at least one active process.
 
 # Connect
 
@@ -104,7 +104,7 @@ Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.a
 You can just select the menu item with the bookmark name to connect, too. If you are already connected, selecting the menu item will reveal the volume in *Finder.app*.
 ```
 
-## Connnect using command line
+## Connnect Using the Command Line Interface
 
 You can mount volumes using your command-line interface (CLI) by opening a bookmark file.
 
@@ -140,7 +140,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 
 # Disconnect
 
-Choose *<Bookmark> → Disconnect* to unmount a volume. Alternatively eject the volume in *Finder.app* or *File Explorer*
+Choose *<Bookmark> → Disconnect* to unmount a volume. Alternatively, eject the volume in *Finder.app* or *File Explorer*
 
 `````{tabs}
 ````{group-tab} macOS
@@ -181,7 +181,7 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 
 # Sync Options
 
-*Keep Offline on local disk* or *Delete on local disk* to manage caching status.
+*Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
 Refer to [Sync Options](Sync#select-files-and-folders-to-always-keep-offline)
 
 # Reload
@@ -214,7 +214,7 @@ Right-click files on a mounted drive will open a menu with items to copy & open 
 
 # New Bookmark
 
-Right-click to add a bookmark for the selected path.
+Right-click on white space within the mounted drive in Finder or Explorer to add a bookmark including the selected path.
 
 # Open in Terminal
 
@@ -226,7 +226,7 @@ This feature is not supported in the version available in the Mac App Store.
 
 # Info Panel
 
-Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Windows](../Cyberduck/Info).
+Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](../Cyberduck/Info).
 
 ```{image} _images/Info_Window_CDN.png
 :alt: Send Command
@@ -247,7 +247,7 @@ Right-click on a file and choose *Info* to change permissions, ACLs, metadata, a
 
 # New Encrypted Vault...
 
-Create a new Cryptomator vault. [Read more](../Cryptomator/index) about client-side encryption.
+Create a new Cryptomator Vault. [Read more](../Cryptomator/index) about client-side encryption.
 
 # Lock/Unlock Vault
 
@@ -255,14 +255,14 @@ Lock or unlock a Cryptomator Vault.
 
 # Usage Scenarios
 
-## Mirror files to remote server or cloud storage with `rsync`
+## Mirror Files to Remote Server or Cloud Storage with `rsync`
 
 Use `rsync` or any other of your preferred tools to mirror files for example to an S3 bucket. Set the `--timeout=TIME` option in `rsync` (in seconds) if you have low bandwidth or high latency connection.
 
-## Open remote files in text editor
+## Open Remote Files in Text Editor
 
 *Sublime Text* and other editors allow you to open folders to work on multiple files.
 
-## Create ZIP archive of files on FTP server or cloud storage
+## Create ZIP Archive of Files on FTP Server or Cloud Storage
 
 Use your preferred archive utility to create a compressed archive of files already stored on the server.

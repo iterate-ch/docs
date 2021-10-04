@@ -36,7 +36,7 @@ The smart sync feature allows making files available offline.
 
 Recently changed files and pending file transfers.
 
-# [Client-side Encryption](../Cryptomator/index)
+# [Client-Side Encryption](../Cryptomator/index)
 
 Support for client-side encryption with Cryptomator interoperable vaults.
 
@@ -48,6 +48,6 @@ Support for locking files to prevent conflicting edits from others while a docum
 
 You can preview and revert previous versioned bucket in [Amazon S3](../Protocols/S3/index)
 
-# [Perferences](Preferences)
+# [Preferences](Preferences)
 
 # [Known Issues & Workarounds](Issues)

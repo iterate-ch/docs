@@ -18,7 +18,7 @@ Selecting an item reveals the file in the Finder (macOS) or File Explorer (Windo
 
 # Recent Files
 
-The *Recent Files* area shows the last 20 items that Mountain DUck uses for one of the following operations:
+The *Recent Files* area shows the last 20 items that Mountain Duck uses for one of the following operations:
 
 ### Delete
 
@@ -72,7 +72,7 @@ The sync operation failed for the file.
 
 A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](Sync#sync-errors).
 
-## Application display
+## Application Display
 
 ```{admonition} Windows Only
 :class: tip
@@ -84,6 +84,6 @@ The application that was used for editing the file is displayed within the *Rece
 
 Selecting an item in the *Recent Files* section reveals the file in the Finder (macOS) of File Explorer (Windows).
 
-## Clear menu
+## Clear Menu
 
 Clear out all entries of the list by clicking on the *Clear Menu* button at the bottom of the menu.

@@ -16,7 +16,7 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 - *Online:* Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
 - *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#Select-files-and-folders-to-always-keep-offline).
 
-# Status of files
+# Status of Files
 
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
@@ -92,7 +92,7 @@ The file is only saved in a local temporary location and never synced to the ser
 Please make sure to enable the Mountain Duck [Integration](index#FinderExtensionWindowsFileExplorerExtensionFinder) in *System Preferences → Extensions → Finder Extensions*.
 ```
 
-## Select files and folders to always keep offline
+## Select Files and Folders to Always Keep Offline
 
 You can choose to make files and folders available offline in the context menu. Those files and folders are located within an obfuscated synchronization cache and can't be accessed outside of your bookmark. You need an active connection to the bookmark to see the offline folders. That means that you have to connect to your server once while you have access to an active internet connection. If you don't disconnect the bookmark and the connection to the server isn't interrupted otherwise you can still access the files that are located within the local synchronization cache. As soon as you are connected to the internet again, all changes are transferred to the server in the background.
 
@@ -105,11 +105,11 @@ To reach the context menu right-click on a file or folder in File Explorer (Wind
 
 ### Keep Offline
 
-- Choose *Mountian Duck → Keep Offline on Local Disk* to make the file available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
+Choose *Mountain Duck → Keep Offline on Local Disk* to make the file available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
 ### Delete on Local Disk
 
-- Choose *Mountain Duck →Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk
+Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk
 
 ```{note}
 Choosing this option won't prevent Mountain Duck from downloading there files and folders into the synchronization cache again.
@@ -133,7 +133,7 @@ A conflict may be caused by two or more users editing the same files at the same
 | Open placeholder (1) file | Directory index is out of sync.<br/>File not found on server | - | File is deleted in local cache | - |
 | Edit file deleted on server | Directory index is out of sync.<br/>File not found on server | - | File is uploaded anew to server | - |
 | Edit file renamed on server | Directory index is out of sync.<br/>File not found on server | - | File is uploaded anew to server | - |
-| Edit file already changed<br/>on server | Last seen checksum differs from current<br/>checksum on server. (Or timestamp<br/>when server does not offer checksum<br/>verification) | - | Existing file on server is renamed<br/> ro `<filename> timestamp.<extension>`.<br/>Eventually with user preference to<br/>default to sync error instead. | User has to manually merge<br/>the conflicting edits. |
+| Edit file already changed<br/>on server | Last seen checksum differs from current<br/>checksum on server. (Or timestamp<br/>when server does not offer checksum<br/>verification) | - | Existing file on server is renamed<br/> to `<filename> timestamp.<extension>`.<br/>Eventually with user preference to<br/>default to sync error instead. | User has to manually merge<br/>the conflicting edits. |
 | Edit file with parent folder<br/>missing on server | Upload fails because parent folder<br/>is not found on server | Sync Error | - | Move file to different folder<br/>or *Retry* option in context menu |
 | Move or rename *file* to target<br/>that already exists on server | Directory index is out of sync | - | Existing file on server is renamed<br/>to `<filename> timestamp.<extension>`.<br/>Eventually with user preference to<br/>default to sync error instead. | User has to manually merge<br/>the conflicting edits. |
 | Move or rename *directory* to target<br/>that already exists on server | Directory index is out of sync | - | Existing directory on server is renamed<br/>to `<folder> timestamp.<extension>` | User has to manually merge the<br/>conflicting edits. |

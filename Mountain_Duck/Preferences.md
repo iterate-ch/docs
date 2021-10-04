@@ -123,7 +123,7 @@ You can disable notifications in *System Preferences → Notifications*. Choose 
 ````
 ````{group-tab} Windows
 
-You can disable notifications in *Settings → System → Notifications and Actions*. Uncheck *Show notification banners* and *Play a sound when a notification arraives*. Keep *Show notifications in action center* to see the notifications in Windows action center anytime if required.
+You can disable notifications in *Settings → System → Notifications and Actions*. Uncheck *Show notification banners* and *Play a sound when a notification arrives*. Keep *Show notifications in action center* to see the notifications in Windows action center anytime if required.
 ````
 `````
 

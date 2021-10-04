@@ -18,16 +18,16 @@ Most clients out there, including web browsers, use the former method and thus d
 	5 - WriteFile myFile.txt, offset 1024, length 1024, buffer
 	6 - CloseFile myFile.txt
 
-In step 3 [Mountain Duck](https://mountainduck.io/) opens a connection to the remote server, send a `PUT` request with the HTTP header `Transfer-Encoding: chunked` and streams through all subsequent write callbacks. Finally in step 6 the connection is closed.
+In step 3 [Mountain Duck](https://mountainduck.io/) opens a connection to the remote server, send a `PUT` request with the HTTP header `Transfer-Encoding: chunked` and streams through all subsequent write callbacks. Finally, in step 6, the connection is closed.
 
-## Related bug reports
+## Related bug Reports
 
-Since the expected length is missing in the header the streaming characteristic of such requests makes them more difficult to be handeled in the components being passed. From our research the issue only exists in environments that use Fast CGI to speak to their PHP application. See related bug reports
+Since the expected length is missing in the header the streaming characteristic of such requests makes them more difficult to be handled in the components being passed. From our research the issue only exists in environments that use Fast CGI to speak to their PHP application. See related bug reports
 
 - [PHP Bug #60826 Raw POST data missing with chunked encoding, FastCGI](https://bugs.php.net/bug.php?id=60826)
 - [Apache HTTPD bug 53332 - Requests with chunked encoding have no body available to FCGI backend](https://bz.apache.org/bugzilla/show_bug.cgi?id=53332).
 
-# Recommended configuration
+# Recommended Configuration
 
 ## Nginx
 
