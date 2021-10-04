@@ -117,7 +117,7 @@ You may get a conflict with another package named `duck`. As a workaround, insta
 - [Package Details](https://aur.archlinux.org/packages/duck/)
 
 
-**Manual installation**<br/>
+**Manual Installation**<br/>
 Packages can also be found for [download](https://dist.duck.sh/).
 
 ````
@@ -178,7 +178,7 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 - List all objects in a S3 bucket with
 `duck --username <Access Key ID> --list s3:/<bucketname>/`
 
-## Generic options
+## Generic Options
 
 ### `--retry`
 
@@ -202,7 +202,7 @@ Throttle bandwidth to the number of bytes per second.
 
 ## Credentials
 
-You can pass username as part of the URI prepending to the hostname with `username@host`. Alternatively use the `--username` option. You can give the password with the `--password` option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).
+You can pass username as part of the URI prepending to the hostname with `username@host`. Alternatively, use the `--username` option. You can give the password with the `--password` option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).
 
 ### Private Key
 
@@ -220,7 +220,7 @@ You can transfer multiple files with a single command using a glob pattern for f
 
 ## Uploads with `--upload`
 
-### Glob pattern support for selecting files to transfer
+### Glob Pattern Support for Selecting Files to Transfer
 
 If your shell supports glob expansion you can use a wildcard pattern to select files for upload like `duck --upload ftps://<hostname>/directory/ ~/*.jpg`.
 
@@ -228,7 +228,7 @@ If your shell supports glob expansion you can use a wildcard pattern to select f
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
 
-## Remote directory listing with `--list`
+## Remote Directory Listing with `--list`
 
 Make sure to include a trailing '/' in the path argument to denote a directory. Use the `-L` option to print permission mask and modification date in addition to the filename.
 
@@ -236,43 +236,43 @@ Make sure to include a trailing '/' in the path argument to denote a directory. 
 
 You can edit remote files with your preferred editor on your local system using the `--edit` command. Use the optional `--application` option to specify the absolute path to the external editor you want to use.
 
-## Purge files in CDN with `--purge`
+## Purge Files in CDN with `--purge`
 
 Purge files in CloudFront or Akamai CDN for Amazon S3 or Rackspace CloudFiles connections. For example to invalidate all contents in a bucket run `duck --username AKIAIWQ7UM47TA3ONE7Q --purge s3:/github-cyberduck-docs/`
 
-## Multiple transfer connections with `--parallel`
+## Multiple Transfer Connections with `--parallel`
 
 Transfer files with multiple concurrent connections to a server.
 
 ## Cryptomator
 
-Access to your [Cryptomator](../Cryptomator/index) vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the vault if not found in the keychain.
+Access to your [Cryptomator](../Cryptomator/index) Vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the Vault if not found in the Keychain.
 
-Use `--vault <path>` in conjunction with `--upload` to unlock a vault. This allows uploading into a subdirectory of a vault where the auto-detect feature does otherwise not work.
+Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allows uploading into a subdirectory of a Vault where the auto-detect feature does otherwise not work.
 
 # Samples
 
-## Watching changes in directory with `fswatch` and upload
+## Watching Changes in Directory with `fswatch` and Upload
 
 `fswatch` is a file change monitor; an application to watch for file system changes. Refer to their [documentation](https://github.com/emcrisostomo/fswatch/wiki).
 
 ``fswatch -0 ~/Sites/mywebsite/ | xargs -0 -I {} -t sh -c 'f="{}"; duck --upload ftps://<hostname>/sandbox`basename "${f}"` "${f}" -existing overwrite'``
 
-## Upload build artifacts from continuous integration (Jenkins) to CDN
+## Upload Build Artifacts from Continuous Integration (Jenkins) to CDN
 
 use a post [build script action](https://plugins.jenkins.io/postbuildscript/).
 
 `cd ${WORKSPACE}; find build -name '*.tar' -print0 | xargs -0 -I {} -t sh -c 'f="{}"; duck --quiet --retry --existing skip --region DFW --upload rackspace://<container>/ "${f}"'`
 
-## Upload files matching glob pattern to Windows Azure
+## Upload Files Matching Glob Pattern to Windows Azure
 
 `duck --username kahy9boj3eix --upload azure://kahy9boj3eix.blob.core.windows.net/<containername>/ *.zip`
 
-## Download files matching glob pattern from FTP
+## Download Files Matching Glob Pattern from FTP
 
 `duck -v --download ftp://mirror.switch.ch/mirror/apache/dist/httpd/*.gz ~/Downloads`
 
-## Download file from Amazon S3 public bucket
+## Download File from Amazon S3 Public Bucket
 
 `duck --verbose --download s3://repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar ~/Downloads/`
 
@@ -328,10 +328,10 @@ You can override default [preferences](../Cyberduck/Preferences#hidden-configura
 
 # Known Issues
 
-## Slow execution due to low entropy in /dev/random
+## Slow Execution due to low Entropy in /dev/random
 
 As a workaround run `haveged`, a service to generate random numbers and feed Linux random device.
 
-# Thirdparty References
+# Third-Party References
 
 - [Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage](https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4)

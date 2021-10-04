@@ -32,6 +32,6 @@ The logging output is written directly into the command line:
 - **macOS:** Open *Terminal.app* and type `-v`
 - **Windows:** Open *cmd.exe* and type `-v`
 
-## Enable debug logging
+## Enable Debug Logging
 
-To enable debug logging use the parameter `--debug`. Alternatively set the [environment variable](index#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.
+To enable debug logging use the parameter `--debug`. Alternatively, set the [environment variable](index#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.
