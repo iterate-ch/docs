@@ -93,7 +93,22 @@ When `Preferences → Cryptomator → Auto detect and open vault in browser` is 
 
 ## Manual
 
+````{tabs}
+```{group-tab} Cyberduck
+
 Choose the *Cryptomator* button in the toolbar or the option in the *File* menu to unlock and lock a Cryptomator Vault.
+
+```
+```{group-tab} Mountain Duck
+
+Lock and unlock vaults within the Finder or Windows Explorer using the context menu:
+
+`Mountain Duck → Cryptomator → Lock Vault`
+`Mountain Duck → Cryptomator → Unlock Vault`
+
+```
+````
+
 
 ## Save Passphrase
 
@@ -104,8 +119,18 @@ You can check *Add to Keychain* to save the passphrase to open the vault with th
 :width: 400px
 ```
 
-- **On macOS**, manage your passwords with *Keychain Access.app* on Mac. Refer to [Keychain for Mac: Keychain Access overview](https://support.apple.com/kb/PH20093?locale=en_US).
-- **On Windows**, passwords are saved in the *Credential Manager*. You can view and delete your saved login information in *Control Panel → User Accounts → Credential Manager → Windows Credentials*.
+`````{tabs}
+````{group-tab} macOS
+
+Manage your passwords with *Keychain Access.app* on Mac. Refer to [Keychain for Mac: Keychain Access overview](https://support.apple.com/kb/PH20093?locale=en_US).
+
+````
+````{group-tab} Windows
+
+Passwords are saved in the *Credential Manager*. You can view and delete your saved login information in *Control Panel → User Accounts → Credential Manager → Windows Credentials*.
+
+````
+`````
 
 ## File Transfers
 
