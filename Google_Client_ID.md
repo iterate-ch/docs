@@ -15,7 +15,7 @@ As a workaround, you can register your own OAuth Client ID to connect to [Google
 
 # Register Client ID
 
-Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/answer/6158849?hl=en). From Credentials copy the Client ID and Client secret by choosing the action Edit OAuth Client.
+Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/answer/6158849?hl=en). From Credentials copy the client ID and client secret by choosing the action Edit OAuth client.
 
 ```{image} _images/Google_Create_OAuth_Client_ID.png
 :alt: Google Create OAuth Client ID
