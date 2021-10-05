@@ -109,9 +109,9 @@ Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/late
 
 - {download}`Download<https://svn.cyberduck.io/trunk/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
-## Access Third Party Buckets
+## Access Third-Party Buckets
 
-Connecting to a bucket you are not the owner (and therefore not included when logging in as above and listing all your owned buckets) is possible. You can access buckets owned by someone else if the ACL allows you to access it by either:
+Connecting to a bucket you are not the owner of (and therefore not included when logging in as above and listing all your owned buckets) is possible. You can access buckets owned by someone else if the ACL allows you to access it by either:
 
 1. Specify the bucket you want to access in the hostname to connect to like `<bucketname>.s3.amazonaws.com`. Your own buckets will not be displayed but only the third-party bucket.
 2. Set the *Default Path* in the bookmark to the bucket name.
@@ -146,7 +146,7 @@ Instead of providing Access Key ID and Secret Access Key, authenticate using tem
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name* in `~/.aws/credentials` matching the profile name from `~/.aws/credentials` with the `role_arn` configuration.
 
-### Example configuration
+### Example Configuration
 
 Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html).
 
@@ -174,7 +174,7 @@ List the contents of a bucket with
 
 Refer to the [Cyberduck CLI documentation](../../CLI/index) for more operations.
 
-# Third Party Providers
+# Third-Party Providers
 
 There are a growing number of third parties besides Amazon offering S3 compatible cloud storage software or solutions. Here is a non-exhaustive list:
 
@@ -217,7 +217,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 
 ### Creating a Bucket
 
-o create a new [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket-s3.html) for your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*. You can choose the bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for different regions.
+To create a new [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket-s3.html) for your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*. You can choose the bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for different regions.
 
 ```{attention}
 Mountain Duck 4.6.1 or later: You will receive a prompt for the region when creating a new bucket
@@ -252,7 +252,7 @@ Mountain Duck 4.6.1 or later: You will receive a prompt for the region when crea
 
 ### Bucket Access Logging
 
-When this option is enabled in the S3 panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to `/logs` in the target logging bucket specified. It is considered best practice to [choose a logging target](http://blog.qloudstat.com/2012/04/24/choose-a-logging-target/) that is different from the origin bucket.
+When this option is enabled in the S3 panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to `/logs` in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.
 
 ![AWS Logging Configuration](_images/AWS_Logging_Configuration.png)
 
@@ -308,7 +308,7 @@ Files larger than 100MB are uploaded in parts with up to 10 parallel connections
 
 Multipart uploads can be resumed later when interrupted. Make sure the user has the permission `s3:ListBucketMultipartUploads`.
 
-#### Unfinished multipart uploads
+#### Unfinished Multipart Uploads
 
 You can view unfinished multipart uploads in the browser by choosing *View → Show Hidden Files*.
 
@@ -345,10 +345,10 @@ Specify after how many days a file in a bucket should be moved to Amazon Glacier
 ## Restore from Glacier
 
 ```{attention}
-This function is Cyberduck only.
+This function is currently Cyberduck only.
 ```
 
-You can temporarily restore files from Glacier using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error T*he operation is not valid for the object's storage class*.
+You can temporarily restore files from Glacier using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
 
 ### Glacier Retrieval Options
 
@@ -534,7 +534,7 @@ Set the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-opt
 
 Make sure the IAM user has the permission `s3:GetBucketLocation` to read the bucket location.
 
-## Writing Files to S3 Compatible Third Party Service Provider may Fail
+## Writing Files to S3 Compatible Third-Party Service Provider may Fail
 
 The S3 interoperable service must support [multipart uploads](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html).
 

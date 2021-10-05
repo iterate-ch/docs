@@ -51,13 +51,13 @@ There is a preview method of review application consent through the Azure Active
 
 # SharePoint Server
 
-To connect to a Sharepoint Server, choose [WebDAV](WebDAV/index) for the connection type. This is available to
+To connect to a SharePoint Server, choose [WebDAV](WebDAV/index) for the connection type. This is available to
 
 - SharePoint Server 2013
 - SharePoint Server 2016
 - SharePoint Server 2019
 
-## Available authentication methods
+## Available Authentication Methods
 
 ### Basic Authentication
 

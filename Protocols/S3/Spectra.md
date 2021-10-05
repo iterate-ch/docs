@@ -16,7 +16,7 @@ Refer to [Profiles](../../Cyberduck/Connection#connection-profiles) for document
 
 ## Transfer → Retries
 
-Reading a file from Spectra S3 might trigger a Retry wait for up to 300 seconds when the file is not yet in the cache.
+Reading a file from Spectra S3 might trigger a retry wait for up to 300 seconds when the file is not yet in the cache.
 
 ![Cache Retries](_images/Cache_Retry.png)
 

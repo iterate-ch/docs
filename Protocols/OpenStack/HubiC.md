@@ -1,4 +1,5 @@
 hubiC
+===
 
 > hubiC, the online storage solution, was developed by the OVH group, a French company specialised in data hosting. Datacentres in France: Roubaix, Gravelines and Strasbourg.
 
@@ -6,7 +7,7 @@ hubiC
 
 hubiC is using [OpenStack Swift](index) APIs for its storage service but requires additional authentication using OAuth 2.0 to access the service.
 
-## OAuth 2.0 authentication
+## OAuth 2.0 Authentication
 
 Connect using the OAuth 2.0 connection profile:
 

@@ -31,7 +31,7 @@ NextCloud & ownCloud
 
 ## Manual Configuration
 
-Choose one of the protocolls:
+Choose one of the protocols:
 
 - Protocol: `WebDAV (HTTPS)`
 - Default Path: `/remote.php/webdav/`
@@ -45,7 +45,7 @@ Choose one of the protocolls:
 2. Click on the option Settings in the lower left of the screen and copy the displayed WebDAV address.
 3. Create a new [bookmark](../../Cyberduck/Bookmarks). In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
 4. Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to *WebDAV (HTTPS)* and split the WebDAV address into two parts – the server address and the path.
-![Nextcloud Bookmark Window](_images/Nextcloud_Bookmark_Window.png)
+![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
 6. Upon connecting, enter your password when requested in the login prompt.
 
@@ -65,7 +65,7 @@ If you are running an Apache configuration make sure to disable `fastcgi` and `p
 
 ## Slow Listings for Large Folder Structures
 
-In order to retain timestamps for uploaded files, we make use of custom WebDAV properties. In Nextcloud/ownCloud these properties are stored in a dedicated database table `oc_properties`. This table unfortunately does not define any index to speed up the lookup for these properties when doing a listing. The database always has to do a full scan to find the properties for the requested resources. For installations with a large number of files, this can highly impact the response times for file listing. To overcome this issue you can create the following index:
+In order to retain timestamps for uploaded files, we make use of custom WebDAV properties. In Nextcloud and ownCloud these properties are stored in a dedicated database table `oc_properties`. This table unfortunately does not define any index to speed up the lookup for these properties when doing a listing. The database always has to do a full scan to find the properties for the requested resources. For installations with a large number of files, this can highly impact the response times for file listing. To overcome this issue you can create the following index:
 
 	CREATE INDEX properties_path_index ON oc_properties(userid, propertypath)
 

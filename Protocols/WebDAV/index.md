@@ -52,9 +52,9 @@ Choose *WebDAV (HTTP/SSL)* as the connection protocol to secure the connection u
 
 Mutual (two-way) TLS with a client certificate for authentication is supported.
 
-### Prompt to Authenticate With Certificate When Negotiating Secure (TLS) Connection
+### Prompt to Authenticate with Certificate When Negociating Secure (TLS) Connection
 
-When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the *Keychain* on OS X or the *Windows Certificate Manager* respectively.
+When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the *Keychain* on macOS or the *Windows Certificate Manager* respectively.
 
 ![Windows Security Prompt](_images/Windows-Security-Prompt.png)
 
@@ -110,9 +110,9 @@ You can access publicly readable Subversion (SVN) repositories running behind `m
 
 # Known Issues
 
-## Cannot Login With Special Characters in Credentials
+## Cannot Login with Special Characters in Credentials
 
-If your server requires the use of UTF-8 character set for authenticatio, set the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options)
+If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options)
 
 	http.credentials.encoding=UTF-8
 
@@ -126,7 +126,7 @@ If the file listing shows additional folders of the file tree that are usually n
 
 ## Interoperability Failure `Handshake alert: unrecognized_name`
 
-The virtual host set up by the hosting provider is most possibly misconfigured. It must accept TLS connections with SNI (Server Name Indication) extension (RFC 4366). The hostname must match the common name in the server certificate. In Apache *httpd* configurations, add a `ServerAlias` configuration directive with the hostname you use to connect.
+The virtual host set up by the hosting provider is most possibly misconfigured. It must accept TLS connections with SNI (Server Name Indication) extension (RFC 4366). The hostname must match the common name in the server certificate. In *Apache httpd* configurations, add a `ServerAlias` configuration directive with the hostname you use to connect.
 
 You can verify the wrong server setup by running `openssl` with server name indication (SNI) enabled.
 

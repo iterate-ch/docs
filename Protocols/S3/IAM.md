@@ -41,7 +41,7 @@ Add a new policy for the user. This example gives the user access to all of your
 
 	iam-useraddpolicy  -u <username> -e Allow -a s3:* -r arn:aws:s3:::* -o -p `uuidgen`
 
-## Restrict access to a Specific Bucket
+## Restrict Access to a Specific Bucket
 
 - Allow user to list contents of the bucket.
 

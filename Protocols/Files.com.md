@@ -7,11 +7,11 @@ Files.com
 
 ## REST API
 
-The connection profile allows to login using the Files.com REST API supporting two-factor authentication.
+The connection profile allows to login using the *Files.com REST API* supporting two-factor authentication.
 
 - {download}`Download<https://svn.cyberduck.io/trunk/profiles/default/Files.com.cyberduckprofile>` the *Files.com Connection Profile* for preconfigured settings.
 
-## Manual configuration
+## Manual Configuration
 
 ### FTPS
 

@@ -8,7 +8,7 @@ Windows Azure Blob Storage
 
 > Massively scalable object storage for unstructured data
 
-# Connecting to Windows Azur Blob Storage
+# Connecting to Windows Azure Blob Storage
 
 ## Hostname
 
@@ -86,6 +86,6 @@ Configure access logging for buckets in the *Info* panel.
 
 # Problems
 
-## One of the request inputs is out of range
+## One of the Request Inputs is out of Range
 
 Please follow the [Naming and Referencing Containers, Blobs, and Metadata](https://docs.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata) guidelines.
