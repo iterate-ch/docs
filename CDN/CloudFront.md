@@ -63,6 +63,8 @@ The first time your content is served to a worldwide user (one in Tokyo, for exa
 
 ![CDN Custom Origin Server](_images/CDN_Custom_Origin_Server.png)
 
+| | | |
+|---|---|---|
 | Server | media.cyberduck.ch |	Hostname configured in bookmark to connect to. If this is different than what hostname CloudFront should fetch the origin content from, edit the hostname in the Web URL of the bookmark. |
 | CNAME | cdn.cyberduck.ch | Alias for hostname assigned by the CloudFront distribution |
 | Bookmark Path | `/usr/home/dkocher/cyberduck.ch/` | The Web Server Document Root |
