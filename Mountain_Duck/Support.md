@@ -15,14 +15,14 @@ You can reach the application support folder by choosing `Go → Go to folder` w
 ````
 ````{group-tab} Windows
 
-You can reach the application support folder by navigating to `%AppData%\Cyberduck` by copying the path into the address bar of the Explorer and press Return afterward.
+You can reach the application support folder by navigating to `%AppData%\Cyberduck` by copying the path into the address bar of the Explorer and press *Return* afterward.
 
 ````
 `````
 
 # Bug Reports and Feature Requests
 
-[Open a new ticket](mailto:support@mountainduck.io) to report bugs you experience or features you'd like to have added. Make sure to add a detailed description of the issue including the operating system, the used protocol, the used version of Mountain Duck, and the [connect mode](Preferences#sync-connect-mode).
+[Open a new ticket](mailto:support@mountainduck.io) to report bugs you experience or features you'd like to have added. Make sure to add a detailed description of the issue including the operating system, the used protocol, the used version of Mountain Duck, and the [connection mode](Preferences#sync-connect-mode).
 
 ## Logging Output
 
@@ -58,7 +58,7 @@ Please make sure to include a detailed description of the feature you'd like to 
 `````{tabs}
 ````{group-tab} macOS
 
-Crash reports are saved to `~/Library/Logs/DiagnosticReports/Cyberduck_*.crash`.
+Crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.crash`.
 
 ````
 ````{group-tab} Windows

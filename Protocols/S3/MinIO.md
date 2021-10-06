@@ -14,4 +14,4 @@ Download and install the [generic S3 profile](index#generic-s3-profiles).
 
 ## Virtual Host Style Requests
 
-Make sure to enable [virtual-host-style requests](https://github.com/minio/minio/tree/master/docs/config#domain) in your MinIO configuration. Alternatively refer to [Disable use of Virtual Host Style Requests](index#disable-use-of-virtual-host-style-requests).
+Make sure to enable [virtual-host-style requests](https://github.com/minio/minio/tree/master/docs/config#domain) in your MinIO configuration. Alternatively, refer to [Disable use of Virtual Host Style Requests](index#disable-use-of-virtual-host-style-requests).

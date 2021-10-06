@@ -11,10 +11,10 @@ Rackspace Cloud Files
 
 ## Connection Profiles
 
-- **Rackspace US:** {download}`Download<https://svn.cyberduck.io/trunk/profiles/default/Rackspace%20US.cyberduckprofile>` the* Rackspace US Connection Profile* for preconfigured settings. Containers from regions *DFW, ORD, IAD, HKG* and *SYD* are displayed in the browser.
+- **Rackspace US:** {download}`Download<https://svn.cyberduck.io/trunk/profiles/default/Rackspace%20US.cyberduckprofile>` the *Rackspace US Connection Profile* for preconfigured settings. Containers from regions *DFW, ORD, IAD, HKG* and *SYD* are displayed in the browser.
 - **Rackspace UK:** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Rackspace%20UK.cyberduckprofile>` the *Rackspace UK Connection Profile* for preconfigured settings. Containers from regions *LON* are displayed in the browser.
 
-### Profil for a single region
+### Profile for a Single Region
 
 - **Rackspace US (DFW):** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Rackspace%20US%20(DFW).cyberduckprofile>` the *Rackspace US (DFW) Connection Profile* for preconfigured settings. Containers from regions *DFW* are displayed in the browser.
 - **Rackspace US (ORD):** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Rackspace%20US%20(ORD).cyberduckprofile>` the *Rackspace US (ORD) Connection Profile* for preconfigured settings. Containers from regions *ORD* are displayed in the browser.
@@ -68,7 +68,7 @@ You can add [custom HTTP headers](../../Cyberduck/Info#metadata-http-headers) to
 
 - No resumable transfers
 
-## Default metadata
+## Default Metadata
 
 Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
 

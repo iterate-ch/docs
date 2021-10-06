@@ -26,7 +26,7 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *ProxyJump* to connect via SSH tunnel through bastion server. **Cyberduck version 7.7 or later required.**
 - *PreferredAuthentications* to limit authentication methods tried to login. **Cyberduck version 7.7.2 or later required.**
 - *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. **Cyberduck version 7.9.0 or later required.**
-- A [bookmark](../Cyberduck/Bookmarks) will update its public key authentication setting from the IdentityFile configuration in `~/.ssh/config`. Also when opening a new [connection](../Cyberduck/Connection#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
+- A [bookmark](../Cyberduck/Bookmarks) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../Cyberduck/Connection#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
 
@@ -227,7 +227,7 @@ By default, the executable `putty.exe` must be located in your user home folder.
 
 You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../CDN/CloudFront) using *File → Info → Distribution (CDN)*.
 
-# Create and expand ZIP/TAR Archives
+# Create and Expand ZIP/TAR Archives
 
 The remote systems must have the archiving tools `tar` or `zip` installed respectively. Use *View → Customize Toolbar...* to add the Archive toolbar button to your browser window. It is not included in the default toolbar configuration.
 
@@ -289,7 +289,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 # Known Issues
 
-## Illegal sftp packet len. Invalid packet: indicated length 1114795883 too large
+## Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
 
 The error message `Invalid packet: indicated length 1114795883 too large` may indicate you have either:
 

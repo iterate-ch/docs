@@ -24,7 +24,7 @@ Open a [free account](https://www.dracoon.com/en/free) with 10 users including 1
 The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.
 ```
 
-# Client-side Encryption
+# Client-Side Encryption
 
 The client-side encryption technology Triple-Crypt of DRACOON is fully supported to upload files to encrypted data rooms.
 

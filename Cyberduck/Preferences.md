@@ -31,7 +31,7 @@ Snapshot builds include the latest changes and are published regularly. These bu
 
 Beta builds are published before a release and include the latest features and have been tested but haven't release quality yet.
 
-# Hidden configuration options
+# Hidden Configuration Options
 
 There are some settings which aren't yet available in the *Preferences* either because they are not considered stable yet or not of general interest. Follow these steps to enable a hidden preference referenced in the wiki:
 

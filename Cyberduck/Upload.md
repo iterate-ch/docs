@@ -20,11 +20,11 @@ There is a toolbar button available that you can add using *View → Customize T
 
 Note that dragging files is not limited to the *Finder.app*, but also works i.e. with attachments *Mail.app* or any other application supporting file promises.
 
-## Drag to a folder
+## Drag to a Folder
 
 Drag the file from the *Finder.app* or *Windows Explorer* to the [browser](Browser) window to upload to the current working directory or the folder hovered over.
 
-## Drag to a bookmark
+## Drag to a Bookmark
 
 Upload files without first opening a connection to a server by dropping the file(s) onto a [bookmark](Bookmarks) item in the bookmark source list.
 
@@ -59,7 +59,7 @@ Copy a file in the *Finder.app* or *Explorer* with *Edit → Copy (macOS `⌘C` 
 :width: 300px
 ```
 
-# The Service menu
+# The Service Menu
 
 ````{admonition} macOS only
 :class: tip

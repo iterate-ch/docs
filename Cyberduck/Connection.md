@@ -1,13 +1,13 @@
 Opening Connections
 ===
 
-# Supported protocols
+# Supported Protocols
 
 All major server and cloud storage [protocols](../Protocols/index) are supported to connect to just about any server you want.
 
-# Toolbar button
+# Toolbar Button
 
-Click the *New COnnection* toolbar button or *File → Open Connection.. (mac `⌘O` Windows `Strg+O`). If you want to open a connection in a new browser window, choose *File → New Browser (macOS `⌘N` Windows `Strg+N`)* first.
+Click the *New Connection* toolbar button or *File → Open Connection.. (mac `⌘O` Windows `Strg+O`)*. If you want to open a connection in a new browser window, choose *File → New Browser (macOS `⌘N` Windows `Strg+N`)* first.
 
 ```{image} _images/Open_Connection.png
 :alt: Send Command
@@ -44,7 +44,7 @@ List all recently connected servers. Select a bookmark from the menu *Bookmark �
 
 Auto-discovery of SFTP, FTP & WebDAV services in your local network. Discovered services appear in the *Bookmark → Bonjour* application menu and the *Bonjour* tab of the bookmark view.
 
-# Opening connections from Finder.app
+# Opening Connections from Finder.app
 
 ## Bookmark File
 
@@ -61,17 +61,17 @@ Double-click an *Internet Location File* in the *Finder.app*. Cyberduck must be 
 
 ## Use [Spotlight](Spotlight)
 
-# Application launchers
+# Application Launchers
 
 ## Quicksilver
 
-[Quicksilver](http://qsapp.com/) is a launcher application. Open the *Quicksilver* Preferences and install the *Cyberduck Module*. Then when Cyberduck is selected in Qicksilver use the right-arrow key to access bookmarks within *Quicksilver*.
+[Quicksilver](http://qsapp.com/) is a launcher application. Open the *Quicksilver* Preferences and install the *Cyberduck Module*. Then when Cyberduck is selected in Quicksilver use the right-arrow key to access bookmarks within *Quicksilver*.
 
 ## LaunchBar
 
 [Indexing rule](https://www.obdev.at/resources/launchbar/help/IndexingRules.html#ir-cyberduck) for Cyberduck.
 
-# From thirdparty application
+# From Third-Party Application
 
 Drag an URL from any third-party application to a browser window.
 
@@ -80,11 +80,11 @@ Drag an URL from any third-party application to a browser window.
 
 # Problems Connecting
 
-## I get an error `IO Error: Broken pipe`
+## I get an Error `IO Error: Broken pipe`
 
 There was a problem with the underlying network stream either because the connection was too slow or the server wouldn't give a response anymore. Often this is caused when you run out of quota on the server - meaning that your user account is not allowed to use any more disk space.
 
-## I get an error `IO Error: Read Timed Out`
+## I get an Error `IO Error: Read Timed Out`
 
 When attempting to open a connection, there is either a firewall blocking requests, or no server is listening at the given address and port. If you get this error while already connected to the server, the network connection to the server is too slow or has too high latency. You can try to increase the connection timeout in *Preferences → Connection → Timeouts*.
 
@@ -176,23 +176,23 @@ Failed transfers due to network connection issues such as a low latency can be c
 
 Choose *Cyberduck → Preferences → Connection → Use system proxy settings*. No additional configuration needed.
 
-## Prefer IPv6 adresses of DNS lookups
+## Prefer IPv6 Adresses of DNS Lookups
 
 A [hidden configuration option](Preferences#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck connection.dns.ipv6 true`
 
-## Disable Bonjour support
+## Disable Bonjour Support
 
 A [hidden configuration option](Preferences#hidden-configuration-options).
 
-## Disable Bonjour notifications in Notification Center and Sytem Tray
+## Disable Bonjour Notifications in Notification Center and Sytem Tray
 
 A [hidden configuration option](Preferences#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 
 `defaults write ch.sudo.cyberduck rendezvous.notification.limit 0`
 
-# Default protocol handler
+# Default Protocol Handler
 
 You can set Cyberduck or a third-party application as the default application (protocol handler) for `FTP` and `SFTP` in *Preferences → FTP* and *Preferences → SFTP* respectively.
 

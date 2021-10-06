@@ -5,14 +5,14 @@ Installation
 ````{group-tab} macOS
 
 **Download**<br/>
-Move the unzipped application bundel *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
+Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
 
 ```{note}
 No admin privileges for installation is required.
 ```
 
 **Mac App Store**<br/>
-Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac APp Store in *→ App Store... → Purchased*.
+Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
 
 **Login Item**<br/>
 You can choose to open Mountain Duck when you log into your computer. Tha application will appear in *Login Items* of the *User & Groups* system preferences panel.
@@ -20,7 +20,7 @@ You can choose to open Mountain Duck when you log into your computer. Tha applic
 ![Login Item](_images/Login_Item.png)
 
 **Finder Extension**<br/>
-Enable the Mountain Duck FInder Extension in *System Preferences → Extensions → Finder* by selecting the checkbox. This will enable:
+Enable the Mountain Duck Finder Extension in *System Preferences → Extensions → Finder* by selecting the checkbox. This will enable:
 
 - **Context menu items** for files selectec on a mounted volume with options to *Reload* the folder listing and copy & open URLs of files
 - **Badges** on file icons to display sync status when *Smart Synchronization* is enabled for the bookmark
@@ -32,7 +32,7 @@ Enable the Mountain Duck FInder Extension in *System Preferences → Extensions 
 ````{group-tab} Windows
 
 **Installer**<br/>
-[Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* with administrator privilege to install Mountain Duck.
+[Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* and install Mountain Duck with administrator privilege.
 
 ![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
 
@@ -83,10 +83,10 @@ You can install the registration key either in:
 
 ## Known Issues
 
-### Not a valid registration key
+### Not a Valid Registration Key
 
 This error message appears if you try to use an old license key for a newer version.
-[Upgrade](https://mountainduck.io/buy/upgrade/) your license to the latest version of Moutnain Duck or download an older version from the [Mountain Duck changelog](https://mountainduck.io/changelog/).
+[Upgrade](https://mountainduck.io/buy/upgrade/) your license to the latest version of Mountain Duck or download an older version from [Mountain Duck changelog](https://mountainduck.io/changelog/).
 
 ### Upgrade Issues
 
@@ -111,7 +111,7 @@ Follow the steps below to uninstall Mountain Duck completely.
 
 ````{group-tab} Windows
 
-1. Close the application and open the start menu using the shortcut `Ctrl Esc`. Search tor *Apps & Features* and move to the entry *Mountain Duck*. Click on the application, choose *Uninstall*, and confirm your intentions by clicking *Uninstall* again.
+1. Close the application and open the start menu using the shortcut `Ctrl Esc`. Search for *Apps & Features* and move to the entry *Mountain Duck*. Click on the application, choose *Uninstall*, and confirm your intentions by clicking *Uninstall* again.
 2. Navigate to the `%AppData%`and delete the folder *Cyberduck*
 3. Navigate to `%LocalAppData%`and delete the folder *Cyberduck*
 4. **Optional:** Delete all saved login credentials regarding Mountain Duck within *Windows Credential Manager*.

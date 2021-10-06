@@ -20,7 +20,7 @@ FTP with [explicit](http://en.wikipedia.org/wiki/FTPS#Explicit) TLS is supported
 
 ## Mutual TLS
 
-Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the Keychain on OS X or the Windows Certificate Manager respectively.
+Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the Keychain on macOS or the Windows Certificate Manager respectively.
 
 ![Windows Security Prompt](_images/Windows-Security-Prompt.png)
 
@@ -101,7 +101,7 @@ This has been fixed in Cyberduck 7.3.0. Cyberduck has overwritten the default Wi
 
 - {download}`ftp-default.reg<../_static/Ressources/ftp-default.reg>` | This has been tested for Windows 10 1909 only. This may or may not work for previous versions of Windows.
 
-Applying Registry-files is not riskless and should be avoided if not necessary. Alternatively you may apply following sequence to get the FTP-protocol handler definitions for your operating system version:
+Applying Registry-files is not riskless and should be avoided if not necessary. Alternatively, you may apply following sequence to get the FTP-protocol handler definitions for your operating system version:
 
 1. Create a Virtual Machine for your platform
 2. Open RegEdit, navigate to *HKCR\ftp*
@@ -145,6 +145,6 @@ To disable `MLSD` for directory listings, open a Terminal.app window and enter
 
 Restart Cyberduck.
 
-## File Locks With vsFTPd
+## File Locks with vsFTPd
 
 Set the property `lock_upload_files=NO` in *vsftpd_conf*.

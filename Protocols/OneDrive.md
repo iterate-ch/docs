@@ -29,7 +29,7 @@ If you have accidentally logged in with the wrong OneDrive Account or want to ch
 
 All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue remove all entries that are related to `Microsoft OneDrive` and `graph.microsoft.com` from *Keychain Access.app* or *Windows Credential Manager*. After that, you'll be prompted to reauthenticate.
 
-## Which protocol to choose?
+## Which Protocol to Choose?
 
 |  | Allows access to | Remarks | Bundled by default |
 | --- | --- | --- | :---: |

@@ -1,16 +1,16 @@
 Edit Files
 ===
 
-# How to edit a file in an external editor
+# How to Edit a File in an External Editor
 
 You can edit a file just as a local file by clicking the Edit toolbar button or by choosing *File → Edit With*. The file will be downloaded to a temporary directory and opened with the preferred editor. Set your preferred editor in *Preferences*. The file will be uploaded to the server every time you choose *File → Save* in the Editor application. The file is not changed on the server if you just close the document without saving it or if the content has not changed.
 
-# Which editor for what files
+# Which Editor for What Files
 
 `````{tabs}
 ````{group-tab} macOS
 
-The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the Preferences is used instead.
+The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the *Preferences* is used instead.
 
 ```{image} _images/Edit_With_Application.png
 :alt: Send Command
@@ -24,7 +24,7 @@ To edit file type associations choose *File → Info* for a given file type in t
 ````
 ````{group-tab} Windows
 
-The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the Preferences is used instead.
+The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the *Preferences* is used instead.
 
 ```{image} _images/Edit_With_Application.png
 :alt: Send Command
@@ -49,7 +49,7 @@ Select *Always use default editor* in *Preferences → Editor* if you always wan
 
 # Hidden Preferences
 
-## Disable upload of temporary file on save
+## Disable Upload of Temporary File on Save
 
 A [hidden configuration option](Preferences#hidden-configuration-options).
 
@@ -57,9 +57,9 @@ A [hidden configuration option](Preferences#hidden-configuration-options).
 
 # Problems
 
-## No external editor available
+## No External Editor Available
 
-```{admonition} macOS X only
+```{admonition} macOS only
 :class: tip
 
 If the editor does not show up as a choice in *File → Edit With* (the only submenu item is *No external editor available*), you may have to rebuild the `LaunchServices`database of OS X using Terminal.app:

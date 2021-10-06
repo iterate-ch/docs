@@ -5,7 +5,7 @@ Select the file in the browser and choose *File → Info (macOS `⌘-I` Windows 
 
 # General Panel
 
-## Change filename
+## Change Filename
 
 Type in the new filename and press *Tab* to leave the text field and commit the change.
 
@@ -14,13 +14,13 @@ Type in the new filename and press *Tab* to leave the text field and commit the 
 :width: 600px
 ```
 
-## Calculate folder size
+## Calculate Folder Size
 
 Calculate the size recursively of all contained files.
 
 # UNIX Permissions (FTP/SFTP)
 
-Change the permissions on a particular file or folder when connected to a [FTP](../Protocols/FTP) or [SFTP](../Protocols/SFTP) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will nor change the executable bit for files if not already set when recursively updating a directory.
+Change the permissions on a particular file or folder when connected to a [FTP](../Protocols/FTP) or [SFTP](../Protocols/SFTP) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will not change the executable bit for files if not already set when recursively updating a directory.
 
 ```{image} _images/UNIX_Permissions.png
 :alt: Send Command
@@ -29,11 +29,10 @@ Change the permissions on a particular file or folder when connected to a [FTP](
 
 # Access Control List (ACL)
 
-Edit access control list for fine grained user permissions when connected to [Amazon S3](../Protocols/S3/index), [Google Cloud Storage](../Protocols/Google_Cloud_Storage), or [Google Drive](../Protocols/Google_Drive).
+Edit access control list for fine grained user permissions when connected to [Amazon S3](../Protocols/S3/index) or [Google Cloud Storage](../Protocols/Google_Cloud_Storage).
 
 - [S3 ACLs](../Protocols/S3/index#access-control-acl)
 - [Google Storage ACLs](../Protocols/Google_Cloud_Storage#acls)
-- [Google Drive Document Sharing](../Protocols/Google_Drive#sharing)
 
 ```{image} _images/Access_Control_Lists.png
 :alt: Send Command

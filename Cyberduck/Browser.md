@@ -51,9 +51,9 @@ You can sort the file listing by clicking the table column header. Choose *View 
 
 ## Local Disk File Browser
 
-Choose your computer name forom the protocol selection popup button in the *New Connection* window.
+Choose your computer name from the protocol selection popup button in the *New Connection* window.
 
-ALternatively, you can use drag and drop or Menu *File → Upload (macOS `⌥↑` Windows `Alt+Up`)*. You can also copy *(macOS `⌘C` Windows `Ctrl+C`)* files in your file browser and paste them into Cyberduck using Menu *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)* afterward.
+Alternatively, you can use drag and drop or Menu *File → Upload (macOS `⌥↑` Windows `Alt+Up`)*. You can also copy *(macOS `⌘C` Windows `Ctrl+C`)* files in your file browser and paste them into Cyberduck using Menu *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)* afterward.
 
 See other [upload](Upload) methods.
 
@@ -91,7 +91,7 @@ You can copy files between arbitrary servers when connected to with two open bro
 
 ## Rename a File or Folder
 
-Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename fiels by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`) or press the *Get [Info](Info)* toolbar button. Simply enter the new name in the very top field. THe field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
+Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename files by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`)* or press the *Get [Info](Info)* toolbar button. Simply enter the new name in the very top field. The field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
 
 ```{image} _images/Inline_Rename.png
 :alt: Send Command
@@ -146,27 +146,24 @@ Folder icons are badged for paticular access permissions.
 ```{image} _images/privatefolderbadge.png
 :alt: Send Command
 :width: 50px
-```
-
+``` 
 Folder with no permission to access.
 
 ```{image} _images/readonlyfolderbadge.png
 :alt: Send Command
 :width: 50px
 ```
-
 Folder with read-only permissions. Uploading or editing files to this folder is not possible.
 
 ```{image} _images/dropfolderbadge.png
 :alt: Send Command
 :width: 50px
 ```
-
 Drop Folder where you can only upload files to but are not allowed to view its content.
 
 ## Versions 
 
-You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*. The following protocols support verisoning
+You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*. The following protocols support versioning
 
 - [S3](../Protocols/S3/index)
 - [Backblaze B2](../Protocols/B2)
@@ -191,7 +188,7 @@ Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity
 
 If characters aren't displayed correctly in the browser, try to change the character encoding used. See *View → Text Encoding* or edit the [bookmark](Bookmarks#edit-bookmark) *Encoding* setting. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.
 
-## The folder size isn't displayed correctly
+## The Folder Size isn't Displayed Correctly
 
 This is not the size of its content but the size of the folder itself. Use *File → Info (macOS `⌘I` Windows `Alt+Return`)* to [calculate the size](Info#calculate-folder-size) of all contained files recursively.
 
@@ -239,7 +236,7 @@ A [hidden configuration option](Preferences#hidden-configuration-options). A con
 
 `defaults write ch.sudo.cyberduck browser.move.confirm true`
 
-## Re-enable File Listing Limit Prompt
+## Re-Enable File Listing Limit Prompt
 
 A [hidden configuration option](Preferences#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
 

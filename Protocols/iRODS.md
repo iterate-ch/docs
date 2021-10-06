@@ -23,11 +23,11 @@ Download the corresponding *Connection Profile* for preconfigured settings and d
 
 ## Authentication
 
-### Authentication With Native Scheme
+### Authentication with Native Scheme
 
 This is the default with no additional configuration required.
 
-### Authentication With PAM Scheme
+### Authentication with PAM Scheme
 
 To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index#connection-profiles) using as
 

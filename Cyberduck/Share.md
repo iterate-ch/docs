@@ -80,7 +80,7 @@ Create an [authorized URL](../Protocols/B2#authorized-url) to make files availab
 ````
 ````{group-tab} Mountain Duck
 
-Create an [authorized URL](../Protocols/B2#authorized-url) to make files available publicly expiring after 7 days. Choose *Create Download SHare* from the [context menu](../Mountain_Duck/interface#share).
+Create an [authorized URL](../Protocols/B2#authorized-url) to make files available publicly expiring after 7 days. Choose *Create Download Share* from the [context menu](../Mountain_Duck/interface#share).
 
 ```{image} _images/B2_Authorized_URL.png
 :alt: Send Command
@@ -105,7 +105,7 @@ Create an [download share](../Protocols/Dracoon#download-share) for a file or fo
 ````
 `````
 
-## [Microsoft OneDrive](../Protocols/OneDrive) & [Microsoft Sharepoint](../Protocols/SharePoint)
+## [Microsoft OneDrive](../Protocols/OneDrive) & [Microsoft SharePoint](../Protocols/SharePoint)
 
 `````{tabs}
 ````{group-tab} Cyberduck

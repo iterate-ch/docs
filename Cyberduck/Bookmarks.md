@@ -30,7 +30,7 @@ Use the search field *(macOS `⌘/` Windows `Strg+F`)* to filter bookmarks by ni
 Currently macOS only, Cyberduck 7.3 or later required
 ```
 
-## Edit labels for bookmarks
+## Edit Labels for Bookmarks
 
 Assign multiple labels to a bookmark to group them in folders in the menu.
 
@@ -39,7 +39,7 @@ Assign multiple labels to a bookmark to group them in folders in the menu.
 :width: 500px
 ```
 
-## Groups in bookmarks menu
+## Groups in Bookmarks Menu
 
 Bookmarks are grouped in folders in the menu by their assigned labels. Groups in bookmark view forthcoming.
 
@@ -50,7 +50,7 @@ Bookmarks are grouped in folders in the menu by their assigned labels. Groups in
 
 # Add new Bookmark
 
-## From current connection
+## From Current Connection
 
 `````{tabs}
 ````{group-tab} macOS
@@ -62,7 +62,7 @@ Select *Bookmarks → Toggle Bookmarks (`⌘B`)*. Click the plus button to add t
 :width: 400px
 ```
 
-Drag the proxy icon in the browser window title bar to the bookmark drwaer or to the *Finder.app*. You can double-click this file in the *Finder.app* to open a new connection.
+Drag the proxy icon in the browser window title bar to the bookmark drawer or to the *Finder.app*. You can double-click this file in the *Finder.app* to open a new connection.
 
 ```{image} _images/Proxy_Icon.png
 :alt: Send Command
@@ -82,7 +82,7 @@ Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the plus button to add
 ````
 `````
 
-## From a third-party application
+## From a Third-Party Application
 
 Drag an URL from a third-party application to the bookmark table to create a new bookmark. This can be a link embedded in a web page or from any text source.
 
@@ -99,18 +99,18 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 
 | Setting | Description |
 | :--- | :--- |
-| Protocol | Your hosting service provider will let you know what protocolto use. Change the [protocol](Connection#supported-protocols) in the<br/>topmost popup menu. |
+| Protocol | Your hosting service provider will let you know what protocol to use. Change the [protocol](Connection#supported-protocols) in the<br/>topmost popup menu. |
 | Nickname | Any name for the bookmark describing it for easy access using the bookmark filter. You can<br/>also type this name in the bookmark view to select it by name. |
 | Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. |
 | Username | The login credentials from your service provider. |
 | SSH Private<br/>Key | For [SFTP](../Protocols/SFTP) connections only. Choose a private key for public key authentication instead of a<br/>password. If the key is password-protected, you are prompted to enter the passphrase to<br/>decrypt the key. |
 | Client<br/>Certificate | For [HTTPS](../Protocols/WebDAV#mutual-tls) connections only. Choose a client certificate for mutual transport level security (TLS). |
-| Path | The initial working directory when connecting to the server. This must be the document root of<br/>the webserver if you want to configure HTTP URLs (see below) to work. |
+| Path | The initial working directory when connecting to the server. This must be the document root of<br/>the webserver if you want to configure HTTP URLs ([see below](#http-url)) to work. |
 | Download<br/>Folder | Default location for files downloaded from this server. |
 | Transfer<br/>Files | Choose to open a new connection for transfers in the [transfers](Transfer#connections) window or to use the existing<br/>browser connection. When using the browser connection, transfers block other operations. |
-| Connect<br/>Mode | For [FTP](../Protocols/FTP) connections only. Refer to [FTP Connect Mode](../Protocols/FTP). |
-| Encoding | For [FTP](../Protocols/FTP) connectionc only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../Protocols/FTP#character-encoding). |
-| Timezone | For all protocols except [FTP](../Protocols/FTP), timestamps are reported in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../Protocols/FTP)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the vrowser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
+| Connect<br/>Mode | For [FTP](../Protocols/FTP) connections only. Refer to [FTP Connect Mode](../Protocols/FTP#ftp-connect-mode). |
+| Encoding | For [FTP](../Protocols/FTP) connections only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../Protocols/FTP#character-encoding). |
+| Timezone | For all protocols except [FTP](../Protocols/FTP), timestamps are reported in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../Protocols/FTP)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the browser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
 
 ## Passwords
 
@@ -163,13 +163,13 @@ You can share bookmarks between Mac & Windows as the file format is the same on 
 
 # Importing Bookmarks
 
-## From exported bookmark file
+## From Exported Bookmark File
 
 Just drag the `.duck` bookmark file from the *Finder.app/ Explorer* to the list of bookmarks.
 
-## From third-party applications
+## From Third-Party Applications
 
-You are asked if you want to import bookmarks from the following list of applications if the application is still installed on your system and bookmarks configured with the application are found. There is no manual import function.
+You are asked if you want to import bookmarks from the following list of applications if the application is still installed on your system and bookmarks configured with the application are found. There is no manual import functionality available.
 
 - *Transmit 4* from `~/Library/Application Support/Transmit/Favorites/Favorites.xml`
 - *Transmit 5* from `~/Library/Application Support/Transmit/Metadata`
@@ -199,46 +199,45 @@ You are asked if you want to import bookmarks from the following list of applica
 :width: 600px
 ```
 
-# Sharing bookmarks between different computers
+# Sharing Bookmarks between Different Computers
 
 You can share bookmarks between different computers and users by uploading the *Bookmarks* and *Profiles* folder to a Cloud Storage of your liking and creating a symbolic link to it.
 
-Step by steo instructions using Dropbox as an example:
-
+**Step by step instructions using Dropbox as an example:**</br>
 `````{tabs}
 ````{group-tab} macOS
 
 1. Install the Dropbox app, log into your Dropbox account and synchronize the folder where you want to have the bookmarks to the local disk.
-2. Quit Cyberduck/Mountain Duck.
-3. Navigate to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` and move the folders Bookmarks and if available Profiles to the desired location on Dropbox.
-4. Open Terminal.app and execute the command `ln -s <AppSupportDirectory/foldername> <CloudDirectory>` to create the symbolic link.
+2. Quit *Cyberduck* and/or *Mountain Duck*.
+3. Navigate to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` and move the folders *Bookmarks* and if available *Profiles* to the desired location on Dropbox.
+4. Open *Terminal.app* and execute the command `ln -s <AppSupportDirectory/foldername> <CloudDirectory>` to create the symbolic link.
 
 ````
 ````{group-tab} Windows
 
 1. Install the Dropbox app, log into your Dropbox account and synchronize the folder where you want to have the bookmarks to the local disk.
-2. Quit Cyberduck/Mountain Duck.
-3. Navigate to `%AppData%\Cyberduck` and move the folders Bookmarks and if available Profiles to the desired location on Dropbox.
+2. Quit *Cyberduck* and/or *Mountain Duck*.
+3. Navigate to `%AppData%\Cyberduck` and move the folders *Bookmarks* and if available *Profiles* to the desired location on Dropbox.
 4. Use one of the options below to create the symbolic link:
-- Open CMD and execute the command `mklink /J <AppSupportDirectory\foldername> <CloudDirectory>`.
-- Open PowerShell and execute the command `New-Item -Type Junction -Target <CloudDirectory> -Path <AppSupportDirectory\foldername>`
+	- Open *CMD* and execute the command `mklink /J <AppSupportDirectory\foldername> <CloudDirectory>`.
+	- Open *PowerShell* and execute the command `New-Item -Type Junction -Target <CloudDirectory> -Path <AppSupportDirectory\foldername>`
 
 ````
 `````
 
 # Preferences
 
-## Open default bookmark
+## Open Default Bookmark
 
 Choose a default bookmark to open after opening the application. Choose *Preferences → General → Open new browser window on startup → Connect to bookmark ...*.
 
-## Do not read favicon.ico from HTTP URL
+## Do not Read favicon.ico from HTTP URL
 
 A [hidden configuration option](Preferences#hidden-configuration-options). Displayed in the bookmark edit window.
 
 `defaults write ch.sudo.cyberduck bookmark.favicon.download false`
 
-## Open bookmark view after disconnecting
+## Open Bookmark View after Disconnecting
 
 A [hidden configuration option](Preferences#hidden-configuration-option).
 

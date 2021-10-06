@@ -13,15 +13,15 @@ The segments will be merged automatically after all parts are downloaded. Mergin
 The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file or try to _Resume_ the failed transfer.
 ```
 
-# Double-click
+# Double-Click
 
 Double click a file in the browser window to download to the default download location as configured in *Cyberduck → Preferences → Transfers*.
 
-# Download using drag and drop
+# Download Using Drag and Drop
 
 Drag the files or folders to the desired download location in the *Finder.app* or *Explorer*.
 
-# Toolbar button
+# Toolbar Button
 
 Customize the browser toolbar using menu *View → Customize Toolbar...* to add the *Download* toolbar button to the default configuration.
 
@@ -30,11 +30,11 @@ Customize the browser toolbar using menu *View → Customize Toolbar...* to add 
 :width: 500px
 ```
 
-# The download menu
+# The Download Menu
 
 Select *File → Download* or right-click the file in the browser to select *Download* in the context menu. If you are not connected to a server in a browser you can still choose *File → New Download* if you know the exact URL of the file or folder.
 
-# Queue a file to be downloaded later
+# Queue a File to be Downloaded Later
 
 Drag the file from the browser to the *Transfers* window to be downloaded later.
 
@@ -62,7 +62,7 @@ A [hidden configuration option](Preferences#hidden-configuration-options).
 Files downloaded to edit do not have a quarantine flag set by default.
 ```
 
-## Temporary document icon
+## Temporary Document Icon
 
 Don't change the document icon while downloading. A [hidden configuration option](Preferences#hidden-configuration-option).
 

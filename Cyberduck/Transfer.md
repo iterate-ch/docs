@@ -23,7 +23,7 @@ Some servers may not support resumable transfers and the file will be reloaded i
 
 # Interrupt
 
-You can interrrupt a transfer using the *Stop* toolbar button.
+You can interrupt a transfer using the *Stop* toolbar button.
 
 # Open downloaded files
 
@@ -35,7 +35,7 @@ Use the *Open* toolbar button to open a downloaded file or folder.
 A warning might be displayed before opening the file. See the [download quarantine](Download#Quarantine).
 ```
 
-# Show downloaded files
+# Show Downloaded Files
 
 Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.app* or *Explorer*.
 
@@ -52,7 +52,7 @@ If the *Transfers* window is closed, progress is also visible in the application
 ```
 ````
 
-# Bandwith
+# Bandwidth
 
 Limit the maximum bandwidth that is allowed for transfers. Useful when you don't want transfers to take all the bandwidth available on your internet connection that would slow down other connections. Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](Preferences).
 
@@ -68,7 +68,7 @@ You can choose to use single or multiple connections for file transfers. Choose 
 :width: 300px
 ```
 
-## Limit number of parallel connections
+## Limit Number of Parallel Connections
 
 The maximum number of connections for transfers using multiple connections can be limited using the toggle in the lower right of the *transfer window* on Windows or the *toolbar dropdown* on macOS. The same toggle limits the maximum allowed concurrent transfers in the transfer window to the same number.
 
@@ -122,7 +122,7 @@ The following protocols support resume for downloads:
 
 Rename transferred file appending a timestamp to the filename.
 
-## Rename existing
+## Rename Existing
 
 Rename existing file at the destination appending a timestamp to the filename.
 
@@ -192,19 +192,19 @@ Enabling change of modification date slows down the transfer rate when uploading
 
 # Hidden Preferences
 
-## Bandwith throttle options
+## Bandwith Throttle Options
 
 A [hidden configuration option](Preferences#hidden-configuration-options). Edit the available options (in bytes).
 
 `defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824`
 
-## Badge dock icon
+## Badge Dock Icon
 
 A [hidden configuration option](Preferences#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
 
 `defaults write ch.sudo.cyberduck queue.dock.badge true`
 
-## Prioritize certain files
+## Prioritize Certain Files
 
 A [hidden configuration option](Preferences#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
 

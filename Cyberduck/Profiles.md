@@ -59,9 +59,9 @@ The following connection profiles are installed by default and can’t be delete
 - [Nextcloud](../Protocols/WebDAV/Nextcloud)
 - [Rackspace Cloud Files (US)](../Protocols/OpenStack/CloudFiles)
 
-# Technical file format specification
+# Technical File Format Specification
 
-Connection profile files are ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
+Connection profile files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
 
 [Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
 
