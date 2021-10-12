@@ -11,7 +11,7 @@ hubiC is using [OpenStack Swift](index) APIs for its storage service but require
 
 Connect using the OAuth 2.0 connection profile:
 
-- {download}`hubiC Cyberduck Connection Profile<https://svn.cyberduck.io/trunk/profiles/hubiC.cyberduckprofile>`
+- {download}`hubiC Cyberduck Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/hubiC.cyberduckprofile>`
 
 ## Gateway for Authentication
 

@@ -7,8 +7,8 @@ Spectra BlackPearl Deep Storage Gateway
 
 # Connecting
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/Spectra%20S3%20(HTTPS).cyberduckprofile>` the Spectra S3 (HTTPS) Connection Profile for preconfigured settings.
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/Spectra%20S3%20(HTTP).cyberduckprofile>` the Spectra S3 (HTTP) Connection Profile for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Spectra%20S3%20(HTTPS).cyberduckprofile>` the Spectra S3 (HTTPS) Connection Profile for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Spectra%20S3%20(HTTP).cyberduckprofile>` the Spectra S3 (HTTP) Connection Profile for preconfigured settings.
 
 Refer to [Profiles](../Cyberduck/Connection#connection-profiles) for documentation about connection profiles. Choose Spectra BlackPearl Deep Storage Gateway (HTTP) from the list of protocols when editing a [bookmark](../Cyberduck/Bookmarks) or use the `spectra://` scheme when using the [CLI](../CLI/index).
 

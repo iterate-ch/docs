@@ -7,12 +7,12 @@ Wasabi Storage
 
 # Connecting
 
-- **Wasabi US East 1 (N. Virginia)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-east-1).cyberduckprofile>` the *Wasabi Storage (us-east-1) Connection Profile* for preconfigured settings.
-- **Wasabi US East 2 (N. Virginia)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-east-2).cyberduckprofile>` the *Wasabi Storage (us-east-2) Connection Profile* for preconfigured settings.
-- **Wasabi US West 1 (Oregon)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-west-1).cyberduckprofile>` the *Wasabi Storage (us-west-1) Connection Profile* for preconfigured settings.
-- **Wasabi EU Central 1 (Amsterdam)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(eu-central-1).cyberduckprofile>` the *Wasabi Storage (eu-central-1) Connection Profile* for preconfigured settings.
-- **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
-- **Wasabi US Central 1 (Texas)** {download}`Download<https://svn.cyberduck.io/trunk/profiles/Wasabi%20(us-central-1).cyberduckprofile>` the *Wasabi Storage (us-central-1) Connection Profile* for preconfigured settings.
+- **Wasabi US East 1 (N. Virginia)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-east-1).cyberduckprofile>` the *Wasabi Storage (us-east-1) Connection Profile* for preconfigured settings.
+- **Wasabi US East 2 (N. Virginia)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-east-2).cyberduckprofile>` the *Wasabi Storage (us-east-2) Connection Profile* for preconfigured settings.
+- **Wasabi US West 1 (Oregon)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-west-1).cyberduckprofile>` the *Wasabi Storage (us-west-1) Connection Profile* for preconfigured settings.
+- **Wasabi EU Central 1 (Amsterdam)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-central-1).cyberduckprofile>` the *Wasabi Storage (eu-central-1) Connection Profile* for preconfigured settings.
+- **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
+- **Wasabi US Central 1 (Texas)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-central-1).cyberduckprofile>` the *Wasabi Storage (us-central-1) Connection Profile* for preconfigured settings.
 
 # Known Issues
 

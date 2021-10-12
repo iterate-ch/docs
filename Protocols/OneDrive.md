@@ -44,7 +44,7 @@ All authentication codes expire after 90 days. If you get the error message `For
 The separate `Microsoft Cloud Deutschland` won't be available anymore after 26. Oct 2021. For more information regarding the migration refer to this [announcement article](https://www.microsoft.com/de-de/cloud-platform/germany-cloud-regions).
 ```
 
-1. {download}`Download<https://svn.cyberduck.io/trunk/profiles/Microsoft%20365%20China%20OneDrive.cyberduckprofile>` the *Microsoft Office 365 Deutschland OneDrive* profile
+1. {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Microsoft%20365%20China%20OneDrive.cyberduckprofile>` the *Microsoft Office 365 Deutschland OneDrive* profile
 2. Use the *Microsoft Office 365 Deutschland OneDrive profile* and login with your `*.onmicrosoft.de` account to `login.microsoftonline.de` to connect to your OneDrive
 
 ## Administrator Consent Required

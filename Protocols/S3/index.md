@@ -60,10 +60,10 @@ It is discouraged to enable this option to connect plaintext to Amazon S3.
 
 If you have an S3 installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security. You will then have the added option S3 (HTTP) in the protocol dropdown selection in the [Connection](../../Cyberduck/Connection) and [Bookmark](../../Cyberduck/Bookmarks) panels.
 
-* {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(HTTP).cyberduckprofile>` the *S3 (HTTP) profile* for preconfigured settings.
+* {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(HTTP).cyberduckprofile>` the *S3 (HTTP) profile* for preconfigured settings.
 
 **HTTPS**</br>
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings.
 ````
 
 ````{tab} AWS2
@@ -75,10 +75,10 @@ An incomplete list of known providers that require the use of AWS2
 - [EMC Elastic Cloud Storage](EMC)
 
 **HTTP**</br>
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
 
 **HTTPS**</br>
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
 ````
 
 `````
@@ -89,25 +89,25 @@ An incomplete list of known providers that require the use of AWS2
 
 Use the endpoint `s3-us-gov-east-1.amazonaws.com` or install the connection profile
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-East) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-East) profile* for preconfigured settings.
 
 ### S3 GovCloud (Us-West)
 
 Use the endpoint `s3-us-gov-west-1.amazonaws.com` or install the connection profile
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-West) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-West) profile* for preconfigured settings.
 
 ## AWS China (Beijiing)
 
 Connect to the region *AWS China (Beijing)*
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing) profile* for preconfigured settings.
 
 ## AWS Private Link
 
 Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
 ## Access Third-Party Buckets
 
@@ -121,13 +121,13 @@ Connecting to a bucket you are not the owner of (and therefore not included when
 
 If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on EC2 and have setup [IAM Roles for Amazon EC2](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) to provide access to S3 from the EC2 instance, you can use the connection profile below that will fetch temporary credentials from EC2 instance metadata service at `http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access` to authenticate. Edit the profile to change the role name `s3access` to match your IAM configuration.
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Credentials%20from%20Instance%20Metadata).cyberduckprofile>` the *S3 (Credentials from Instance Metadata) profile* for preconfigured settings
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20Instance%20Metadata).cyberduckprofile>` the *S3 (Credentials from Instance Metadata) profile* for preconfigured settings
 
 ## Connecting Using Credentials in `~/.aws/credentials`
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials` using third-party tools.
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>` the *S3 (Credentials from AWS Command Line Interface) profile* for preconfigured settings. 
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>` the *S3 (Credentials from AWS Command Line Interface) profile* for preconfigured settings. 
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in ~/.aws/credentials* matching the profile name from `~/.aws/credentials`. The properties `aws_access_key_id`, `aws_secret_access_key` and `aws_session_token` are supported.
 
@@ -142,7 +142,7 @@ Instead of providing Access Key ID and Secret Access Key, authenticate using tem
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Credentials%20from%20AWS%20Security%20Token%20Service).cyberduckprofile>` the *S3 (Credentials from AWS Security Token Service) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20AWS%20Security%20Token%20Service).cyberduckprofile>` the *S3 (Credentials from AWS Security Token Service) profile* for preconfigured settings.
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name* in `~/.aws/credentials` matching the profile name from `~/.aws/credentials` with the `role_arn` configuration.
 
@@ -528,7 +528,7 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 Set the [hidden preference](../../Cyberduck/Preferences#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../Cyberduck/Profiles) with the property set in `Properties`.
 
-- {download}`Download<https://svn.cyberduck.io/trunk/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
 ## Moved Permanently but no Location Header
 
