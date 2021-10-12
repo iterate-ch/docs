@@ -15,8 +15,8 @@ Swiss Backup is a Swiss backup solution that automatically backs up your files, 
 
 Log in to your *Infomaniak OpenStack Swift space* via this pre-configured connection profile:
 
-- {download}`Infomaniak Swiss Backup (01) - Cluster1 connection profile<https://svn.cyberduck.io/trunk/profiles/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile>`
-- {download}`Infomaniak Swiss Backup (02) - Cluster2 connection profile<https://svn.cyberduck.io/trunk/profiles/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (01) - Cluster1 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (02) - Cluster2 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile>`
 
 ### Additional Fields Required
 

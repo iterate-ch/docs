@@ -14,7 +14,7 @@ Refer also to [S3](index) wiki page in general.
 
 ## Connection Profile
 
-{download}`Download<https://svn.cyberduck.io/trunk/profiles/Dunkel%20Cloud%20Storage.cyberduckprofile>` the *Dunkel Cloud Storage Connection Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Dunkel%20Cloud%20Storage.cyberduckprofile>` the *Dunkel Cloud Storage Connection Profile* for preconfigured settings.
 
 ## Manual Configuration
 

@@ -13,7 +13,7 @@ OVH Public Cloud Storage
 
 ## Connection Profile
 
-{download}`Download<https://svn.cyberduck.io/trunk/profiles/OVH%20Public%20Cloud%20Storage.cyberduckprofile>`  the *OVH Public Cloud Storage Connection Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/OVH%20Public%20Cloud%20Storage.cyberduckprofile>`  the *OVH Public Cloud Storage Connection Profile* for preconfigured settings.
 
 ## Manual Configuration
 

@@ -17,9 +17,9 @@ Download the corresponding *Connection Profile* for preconfigured settings and d
 
 ## Provider
 
-- [CyVerse Data Store](http://www.cyverse.org/data-store) (Formerly iPlant Collaborative) - {download}`Connection Profile<https://svn.cyberduck.io/trunk/profiles/iRODS%20(iPlant%20Collaborative).cyberduckprofile>`
-- RENCI - {download}`Connection Profile<https://svn.cyberduck.io/trunk/profiles/iRODS%20(RENCI).cyberduckprofile>`
-- TACC - {download}`Connection Profile<https://svn.cyberduck.io/trunk/profiles/iRODS%20(TACC).cyberduckprofile>`
+- [CyVerse Data Store](http://www.cyverse.org/data-store) (Formerly iPlant Collaborative) - {download}`Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/iRODS%20(iPlant%20Collaborative).cyberduckprofile>`
+- RENCI - {download}`Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/iRODS%20(RENCI).cyberduckprofile>`
+- TACC - {download}`Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/iRODS%20(TACC).cyberduckprofile>`
 
 ## Authentication
 

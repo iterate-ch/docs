@@ -13,7 +13,7 @@ DreamObject Cloud Storage
 See the article [What DreamObjects hostname should I use to connect?](https://help.dreamhost.com/hc/en-us/articles/360001370846) for more information.
 ```
 
-- `us-east-1` {download}`Download<https://svn.cyberduck.io/trunk/profiles/DreamObjects%20(us-east-1).cyberduckprofile>` the *DreamObjects Cloud Storage Connection Profile* for preconfigured settings. 
+- `us-east-1` {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/DreamObjects%20(us-east-1).cyberduckprofile>` the *DreamObjects Cloud Storage Connection Profile* for preconfigured settings. 
 - Alternatively, use `objects-us-east-1.dream.io` for the hostname in Open Connection or Bookmark settings with a *S3* protocol selection. Then user your *Access Key* for the username and *Secret Key* for the password.
 
 # Limitations
