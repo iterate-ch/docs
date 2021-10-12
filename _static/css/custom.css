@@ -13,3 +13,7 @@
 .text-align\:right {
   text-align: right;
 }
+
+.wy-menu-vertical a:hover, .wy-menu-vertical a:focus {
+  color: inherit;
+}
