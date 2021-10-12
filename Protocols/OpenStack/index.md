@@ -134,7 +134,7 @@ You can set the [hidden option](../../Cyberduck/Preferences#hidden-configuration
 
 # Known Issues
 
-- <del>Authentication failure with ec2-credentials</del> (Issue #7754)
+- <del>Authentication failure with ec2-credentials</del> (Issue [#7754](https://trac.cyberduck.io/ticket/7754))
 
 ## Multiple OpenStack Swift Containers in Different Regions with the Same Name
 

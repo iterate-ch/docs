@@ -56,7 +56,7 @@ Connected to a FTP server this allows to send arbitrary command not available th
 
 ## ProFTPd
 
-- You need to have the option set `TLSOptions NoSessionReuseRequired` for FTP-TLS connections (Issue #5087). If configuring the server is not an option, users should switch back to plain FTP connections. Choose *FTP (File Transfer Protocol)* in the bookmark protocol setting. Most users hit by this compatibility issue have been asked to secure the connection because support for TLS was detected upon negogiating the connection.
+- You need to have the option set `TLSOptions NoSessionReuseRequired` for FTP-TLS connections (Issue [#5087](https://trac.cyberduck.io/ticket/5087)). If configuring the server is not an option, users should switch back to plain FTP connections. Choose *FTP (File Transfer Protocol)* in the bookmark protocol setting. Most users hit by this compatibility issue have been asked to secure the connection because support for TLS was detected upon negogiating the connection.
 
 Example configuration:
 
@@ -78,12 +78,12 @@ Example configuration:
           ...
         </IfModule>
 
-- The option `TLSOptions AllowClientRenegotiations` must be set for FTP-TLS connections (Issue #3012).
-- The option `TLSProtocol SSLv23` must be set for FTP-TLS connections (Issue #5061).
+- The option `TLSOptions AllowClientRenegotiations` must be set for FTP-TLS connections (Issue [#3012](https://trac.cyberduck.io/ticket/3012)).
+- The option `TLSProtocol SSLv23` must be set for FTP-TLS connections (Issue [#5061](https://trac.cyberduck.io/ticket/5061)).
 
 ## vsFTPd
 
-- The option `require_ssl_reuse=NO` must be set for FTP-TLS connections (Issue #5087).
+- The option `require_ssl_reuse=NO` must be set for FTP-TLS connections (Issue [#5087](https://trac.cyberduck.io/ticket/5087)).
 
 # Preferences
 
