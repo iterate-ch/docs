@@ -36,7 +36,7 @@ To authenticate with PAM, prefix the username with PAM:or set it in the [connect
 
 ## Ressource Server
 
-You can specify a non-default resource server in the Region key of the [connection profile](index#connection-profiles) using a colon-separated syntax (Issue #8721) such as
+You can specify a non-default resource server in the Region key of the [connection profile](index#connection-profiles) using a colon-separated syntax (Issue [#8721](https://trac.cyberduck.io/ticket/8721)) such as
 
 	<key>Region</key>
 	<string>iplant:storageresourcename</string>

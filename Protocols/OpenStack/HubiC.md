@@ -22,4 +22,4 @@ Use the [Openstack Swift (v1) profile](index) together with an authentication ga
 
 # Known Issues
 
-- Interoperability with hubiC (OVH) (Issue #7764)
+- Interoperability with hubiC (OVH) (Issue [#7764](https://trac.cyberduck.io/ticket/7764))

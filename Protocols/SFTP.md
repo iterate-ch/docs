@@ -294,7 +294,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 The error message `Invalid packet: indicated length 1114795883 too large` may indicate you have either:
 
 - An `echo` statement in your shell init script like *.bashrc*. Make sure it does not output any text.
-- Interoperability issue with Globalscape EFT Server (Issue #5308).
+- Interoperability issue with Globalscape EFT Server (Issue [#5308](https://trac.cyberduck.io/ticket/5308)).
 - Possibly the server is printing a message similar to *Please login as the ubuntu user rather than root user*. Please verify the username for your connection.
 - Enable SSH access on your server. Use the sftp command in a terminal to verify `sftp username@domain_name`. It'll ask for your password. If you don't have SSH access, you'll get "Received message too long", hence the error message.
 
