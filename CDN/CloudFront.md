@@ -3,9 +3,9 @@ Amazon CloudFront Support
 
 Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using *File → Info → Distribution* for a [S3](../Protocols/S3/index) bucket or a custom origin distribution for any other source.
 
-# Subscription
-
-You must [signup](http://aws.amazon.com/cloudfront/) for Amazon CloudFront first. You pay only for the data transfer and requests that you actually use.
+```{note}
+Using CloudFront can be more cost effective if your users access your objects frequently because, at higher usage, the price for CloudFront data transfer is lower than the price for Amazon S3 data transfer. In addition, downloads are faster with CloudFront than with Amazon S3 alone because your objects are stored closer to your users.
+```
 
 # Permissions
 
@@ -13,33 +13,32 @@ Make sure your objects in the bucket you want to enable distribution for are wor
 
 # Basic (Download HTTP) Distributions
 
-Delivery method used to serve static content.
+Delivery method _Download (HTTP) CDN)_ used to serve static content from a S3 bucket as an origin.
 
 ![CloudFront Configuration](_images/CloudFront_Configuration.png)
 
 # Website Configuration Endpoint Distributions
 
-Enable a [website endpoint](../Protocols/S3/index#website-configuration) with no CDN features.
+Delivery method _Website Configuration (HTTP)_ to enable a [website endpoint](../Protocols/S3/index#website-configuration) with no CDN features. This does *not* use any CloudFront feature.
 
 # Website Configuration Endpoint Distributions with CloudFront CDN
 
-Custom origin CDN distribution with a [website endpoint](../Protocols/S3/index#website-configuration) as a source to make use of the website endpoint features in CloudFront.
+Delivery method _Website Configuration (HTTP) CDN_  is using a custom origin CDN distribution with a [website endpoint](../Protocols/S3/index#website-configuration) as a source to make use of the website endpoint features in CloudFront.
 
-You must also enable the website endpoint to make sure the CloudFront edge locations can fetch the content from the origin.
+```{attention}
+You must also enable the website endpoint using the delivery method _Website Configuration (HTTP)_ to make sure the CloudFront edge locations can fetch the content from the origin.
+```
 
 ## Reference
 
 - [Using CloudFront with the new Amazon S3 static website hosting features](https://forums.aws.amazon.com/ann.jspa?annID=921)
 
 # Streaming (RTMP) Distributions
+Delivery method _Streaming (RTMP) CDN)_ used to serve [media](http://en.wikipedia.org/wiki/Flash_Video) using a [streaming protocol](http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol).
 
 ```{attention}
-Discontinued on December 31, 2020 within CloudFront 
-
-For further information refer to the [AWS announcement](https://forums.aws.amazon.com/ann.jspa?annID=7356).
+Discontinued on December 31, 2020 within CloudFront. For further information refer to the [AWS announcement](https://forums.aws.amazon.com/ann.jspa?annID=7356).
 ```
-
-A delivery method used to serve [media](http://en.wikipedia.org/wiki/Flash_Video) using a [streaming protocol](http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol).
 
 ## Playback Configuration
 
@@ -73,50 +72,11 @@ The first time your content is served to a worldwide user (one in Tokyo, for exa
 | CDN URL | http://d15bfu8of7vup8.cloudfront.net/img/cyberduck.icon.png | URL for the resource assigned by the CloudFront distribution |
 | CDN CNAME URL | http://cdn.cyberduck.ch/img/cyberduck.icon.png | URL for resource in CDN with custom hostname registered in the DNS |
 
-# Deployment Status
-
-Upon changing configuration parameters of a distribution configuration, the settings are not distributed immediately in the CDN. While the deployment is in progress (which can take up to 15 minutes), the status *In Progress* is displayed. The updates are fully propagated throughout the CloudFront system when the distribution's state switches from *In Progress* to *Deployed*.
-
-## CloudFront Access Logging
-
-When this option is enabled, access logs are written to `<bucketname>/logs`. The changes to the logging configuration take effect within 12 hours. The logging option is supported for both download and streaming distributions. Choose the target bucket for access logs in the dropdown menu listing all buckets of your account. It is considered best practice to choose a different logging target for each distribution.
-
-# Origin
-
-The source of the content where CloudFront fetches the content to be served in the edge location of the CDN. This is a [S3](../Protocols/S3/index) bucket or your custom origin.
-
-# Where
-
-The `cloudfront.net` domain assigned to your distribution. This is directing to the edge location in the CDN next to the user requesting an URL.
-
-# CNAMEs
-
-Enter a [CNAME](http://en.wikipedia.org/wiki/CNAME_record) (alias in the Domain Name System) for the hostname of the distribution given by CloudFront. To use multiple CNAMEs for a single distribution, the hostnames must be space delimited. The CNAME must be registered on the nameserver responsible for your domain and point to `cloudfront.net` domain assigned to your distribution.
-
-Example configuration:
-
-	;; QUESTION SECTION:
-	;cdn.cyberduck.ch.		IN	A
-	
-	;; ANSWER SECTION:
-	cdn.cyberduck.ch.	1576	IN	CNAME	d15bfu8of7vup8.cloudfront.net.
-
-# Index File
-
-You can assign a default root object to your HTTP or HTTPS distribution. This default object will be served when Amazon CloudFront receives a request for the root of your distribution – i.e., your distribution’s domain name by itself.
-
-When you define a default root object, a user request that calls the root of your distribution returns the default root object. For example, if you designate the file `index.html` as your default root object, a request for `http://d604721fxaaqy9.cloudfront.net/` returns `http://d604721fxaaqy9.cloudfront.net/index.html`.
-
-# Object Invalidation
-
-[Invalidation](http://aws.amazon.com/about-aws/whats-new/2010/08/31/cloudfront-adds-invalidation-feature/) is one way to remove a distribution object from an edge server cache before the expiration setting on the object's header. Invalidation clears the object from the edge server cache, and a subsequent request for the object will cause CloudFront to return to the origin to fetch the latest version of the object.
-
-Use the Invalidate option *File → Info → Distribution (CDN)* to invalidate files from edge locations.
+# Options
+Refer to [Info](../Cyberduck/Info.md#CDN_Panel) for configuration options.
 
 # Copy URLs
-
 CloudFront URLs are available in the regular *Copy URL* menu. Refer to [Open or Copy HTTP URL](../Cyberduck/Browser#open-or-copy-http-url).
-
 
 # References
 
