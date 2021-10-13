@@ -188,6 +188,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
 - [Scality (proprietary technology)](Scality)
 - [Seeweb](https://www.seeweb.it/)
+- [Storadera](Storadera)
 - [Exoscale Swiss Object Storage](Exoscale)
 - [Verizon Cloud Storage](Verizon)
 - [Spectra BlackPearl Deep Storage Gateway](Spectra)
