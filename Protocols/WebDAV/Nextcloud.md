@@ -43,7 +43,9 @@ Choose one of the protocols:
 
 1. Connect to your NextCloud or OwnCloud instance in your web browser and log in.
 2. Click on the option Settings in the lower left of the screen and copy the displayed WebDAV address.
-3. Create a new [bookmark](../../Cyberduck/Bookmarks). In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
+3. Create a new [bookmark](../../Cyberduck/Bookmarks):
+In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
+In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 4. Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to *WebDAV (HTTPS)* and split the WebDAV address into two parts – the server address and the path.
 ![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.

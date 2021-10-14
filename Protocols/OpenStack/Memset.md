@@ -41,7 +41,7 @@ Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
 
 > A CDN is a Content Delivery Network and is a secondary location in the cloud where you can store and serve static content for your site. This content can be files such as images, movies, PDFs, etc. This will reduce the bandwidth and needed server resources from your primary web server.
 
-In order to make a Memstore container publicly available so you can serve files from it, you just need to the [instructions](https://www.memset.com/docs/memstore/cdn-control/).
+In order to make a Memstore container publicly available so you can serve files from it, you just follow the [instructions](https://www.memset.com/docs/memstore/cdn-control/).
 
 # References
 - [Documentation and Resources for Developers](https://docs.memset.com/object-storage/api-developer-resources)

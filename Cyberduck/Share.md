@@ -1,7 +1,7 @@
 Share Files
 ===
 
-Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. With some providers, the link is auto expiring and no longer valid after a given period or a password can be set required to download the file.
+Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. Depending on the provider, the link may be auto expiring and no longer valid after a given period or a password can be set required to download the file.
 
 # Availability of Upload and Download Shares
 

@@ -44,13 +44,13 @@ Refer to the [Cyberduck CLI](../CLI/index) documentation for more operations.
 
 # Access Control (ACL)
 
-You can edit ACLs in *File → Info (`⌘I`) → Permissions*. To make objects in a container publicly accessible, choose *Everyone → READ*. Note that this applies to all files in a container.
+You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Permissions*. To make objects in a container publicly accessible, choose *Everyone → READ*. Note that this applies to all files in a container.
 
 ![ACLs](_images/Azure_ACLs.png)
 
 # Containers
 
-To create a new container in your account, browse to the root and choose *File → New Folder... (`⌘N`)*.
+To create a new container in your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*.
 
 # Blob Type
 Uploads are stored as append blob type by default. You can use the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.

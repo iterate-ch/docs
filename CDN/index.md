@@ -17,6 +17,10 @@ Using the [Info](../Cyberduck/Info) panel, the following content distribution ne
 - [Akamai](Akamai)
 - [KeyCDN](KeyCDN)
 
+## Logging & Analytics
+
+Configuration for the delivery of access logs can be configured from within Cyberduck in the [Info window](../Cyberduck/Info) for [S3](../Protocols/S3/index), [Google Cloud Storage](../Protocols/Google_Cloud_Storage) and [Amazon CloudFront](CloudFront) CDN distributions. The server create a massive amount of log files which is best analyzed with a third-party service.
+
 # Amazon CloudFront
 
 - Add a download or streaming CDN configuration to your [S3](../Protocols/S3/index) bucket.
@@ -25,3 +29,4 @@ Using the [Info](../Cyberduck/Info) panel, the following content distribution ne
 # Akamai
 
 When connected to [Rackspace Cloudfiles](../Protocols/OpenStack/CloudFiles), configure [Akamai](Akamai) content distribution.
+

@@ -8,7 +8,6 @@ AURO
 Cloud.ca
 Cloud_A
 CloudFiles
-EMC
 Enter_Cloud_Suite
 FlexCloud
 HubiC
@@ -105,7 +104,6 @@ Refer to the [Cyberduck CLI](../../CLI/index) documentation for more operations.
 - [HubiC (OVH)](HubiC)
 - [Zetta.IO](Zetta.IO)
 - [Selectel Cloud Storage](Selectel)
-- [EMC Elastic Cloud Storage](EMC)
 - [Infomaniak](Infomaniak)
 - [IDrive® Cloud](../S3/IDrive_Cloud#open-stack-swift)
 - [OpenStack FlexCloud](FlexCloud)

@@ -9,7 +9,7 @@ Enter Cloud Suite Object Storage
 
 - {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Enter%20Cloud%20Suite.cyberduckprofile>` the *Enter Cloud Suite (Keystone) Profile* for preconfigured settings.
 
-Use `email` for the username, the tenant id prompted for the Tenant ID and password to login. See [API Access](https://cm.entercloudsuite.com/project/access_and_security/).
+Use the Tenant ID `email` and password to login. See [API Access](https://cm.entercloudsuite.com/project/access_and_security/).
 
 ![Enter Cloud Suite](_images/entercloudsuite.com.png)
 

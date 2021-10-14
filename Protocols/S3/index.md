@@ -9,7 +9,6 @@ Cynny
 DigitalOcean
 DreamObjects
 Dunkel
-EMC
 Eucalyptus
 Exoscale
 Filebase
@@ -208,7 +207,6 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Z1 Storage](Z1)
 - [Pilvio](Pilvio)
 - [IDrive® Cloud](IDrive_Cloud#s3)
-- [EMC Elastic Cloud Storage](EMC)
 - [Polycloud](Polycloud)
 - [Scaleway Object Storage](Scaleway)
 

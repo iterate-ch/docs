@@ -58,7 +58,7 @@ The file can only be opened when a connection to the server or cloud storage can
 :width: 50px
 ```
 
-The file or directory is currently synced with the server or cloud storage.
+The file or directory is currently syncing with the server or cloud storage.
 
 ## Sync Error
 
@@ -67,7 +67,7 @@ The file or directory is currently synced with the server or cloud storage.
 :width: 50px
 ```
 
-There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk and reload the directory.
+There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu.
 
 ## Ignored
 

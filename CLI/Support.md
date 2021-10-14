@@ -3,6 +3,26 @@ Support
 
 # Application Support Directory
 
+`````{tabs}
+````{group-tab} macOS
+
+You can reach the application support folder by choosing `Go → Go to folder` within the *Finder* menu, copying the path below into the appearing window, and clicking on the *Open* button afterward.
+
+`~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/`
+
+````
+````{group-tab} Windows
+
+You can reach the application support folder by navigating to `%AppData%\Cyberduck` by copying the path into the address bar of the Explorer and press *Return* afterward.
+
+````
+````{group-tab} Linux
+
+The support directory is `~/.duck/`.
+
+````
+`````
+
 ## Profiles
 
 The directory location is printed with `--help` following the list of supported protocols.
@@ -10,7 +30,7 @@ The directory location is printed with `--help` following the list of supported 
 `````{tabs}
 ````{group-tab} macOS
 
-The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../Cyberduck/Profiles) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
+You can install third party [profiles](../Cyberduck/Profiles) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
 
 ````
 ````{group-tab} Windows
@@ -20,7 +40,7 @@ Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 ````
 ````{group-tab} Linux
 
-The support directory is `~/.duck/` on Linux. You can install third party [profiles](../Cyberduck/Profiles) in `~/.duck/profiles/`.
+You can install third party [profiles](../Cyberduck/Profiles) in `~/.duck/profiles/`.
 
 ````
 `````
