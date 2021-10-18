@@ -118,6 +118,8 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 
 `````{tabs}
 ````{group-tab} macOS
+**Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
+Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](Preferences.md#connection-mount-location) (e.g. to the desktop) to make the mount visible.
 
 **Finder.app Does not Show Files Prefixed with `.` on Remote Volumes**<br/>
 You can work around this by setting `defaults write com.apple.finder AppleShowAllFiles YES` in a *Terminal.app* window and restart *Finder.app* using *→ Force Quit ... → Finder → Relaunch*. If you are running macOS Sierra (10.12) you can choose `⌘⇧.` to toggle files starting with a dot to show in Finder.app.
