@@ -65,7 +65,7 @@ You can edit any file on the server using your preferred application. See [Edit 
 
 ## Create new Folder or File
 
-Use *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)* or *File → New File... (macOS `⇧⌘F` Windows `Ctrl+Shift+F`)* to create a new folder or file on the server.
+Use *File → New Folder... (macOS `⇧⌘N` Windows `Ctrl+Shift+N`)* or *File → New File... (macOS `⌘F` Windows `Ctrl+Shift+F`)* to create a new folder or file on the server.
 
 ## Move or Duplicate Files and Folders
 
