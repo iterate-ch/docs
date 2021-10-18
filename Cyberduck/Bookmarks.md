@@ -55,7 +55,7 @@ Bookmarks are grouped in folders in the menu by their assigned labels. Groups in
 `````{tabs}
 ````{group-tab} macOS
 
-Select *Bookmarks → Toggle Bookmarks (`⌘B`)*. Click the plus button to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
+Select *Bookmarks → Toggle Bookmarks (`⌘B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
 ```{image} _images/Add_Bookmark.png
 :alt: Send Command
@@ -72,7 +72,7 @@ Drag the proxy icon in the browser window title bar to the bookmark drawer or to
 ````
 ````{group-tab} Windows
 
-Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the plus button to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
+Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
 ```{image} _images/Add_Bookmark.png
 :alt: Send Command

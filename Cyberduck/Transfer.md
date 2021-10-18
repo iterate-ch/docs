@@ -1,7 +1,7 @@
 File Transfers
 ===
 
-The *Transfers* window lists pending and completed transfers. The list is retained when quitting and relaunching the application allowing you to keep transfers like bookmarks and transfer again at a later time if the content has possibly changed.
+The *Transfers* window lists pending and completed transfers. The list is retained when the application is closed and can be retrieved after restarting so that the transfer can be restarted at a later time.
 
 - [Download](Download)
 - [Upload](Upload)
@@ -54,7 +54,20 @@ If the *Transfers* window is closed, progress is also visible in the application
 
 # Bandwidth
 
-Limit the maximum bandwidth that is allowed for transfers. Useful when you don't want transfers to take all the bandwidth available on your internet connection that would slow down other connections. Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](Preferences).
+Limit the maximum bandwidth that is allowed for transfers. Useful when you don't want transfers to take all the bandwidth available on your internet connection that would slow down other connections. 
+
+`````{tabs}
+````{group-tab} macOS
+
+Select *Bandwidth* from the toolbar in the transfer window and set the maximum bandwidth allowed by the selected transfer from the drop-down window. The default setting is configurable in the [Preferences](Preferences).
+
+````
+````{group-tab} Windows
+
+Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](Preferences).
+
+````
+`````
 
 # Connections
 

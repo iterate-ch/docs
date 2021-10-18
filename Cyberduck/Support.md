@@ -73,6 +73,10 @@ You can only access the transcript which will log protocol request and responses
 
 `log stream --predicate '(process == "Cyberduck") && (category == "transcript")' --level info`
 
+```{note}
+The transcript will be written in the *Terminal.app* window. Make sure to keep the window open after executing the command.
+```
+
 **Debug Log**<br/>
 To enable debug logging open a *Terminal.app* window and enter
 
@@ -126,3 +130,5 @@ Crash reports are saved to `%AppData%\cyberduck\CrashReporter`.
 # Get Support
 
 For issues with your remote storage user account credentials, please instead write to your hosting service provider. For bug reports or a feature request you can [open a ticket]() in our public issue tracker. Discuss features and issues you are having in the [Cyberduck Google Group](http://groups.google.com/group/cyberduck).
+
+For licensing issues, please send a mail to [support@cyberduck.io](mailto:support@cyberduck.io) to open a ticket.

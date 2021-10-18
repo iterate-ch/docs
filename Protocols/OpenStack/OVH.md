@@ -26,11 +26,11 @@ You will need to create a new user in the [OVH manager](https://www.ovh.com/mana
 
 # Cyberduck CLI
 
-To use connection profile must be [installed](../../CLI/index#profiles) to connect with following parameters using [Cyberduck CLI](https://duck.sh/).
+To use a connection, the corresponding profile must be [installed](../../CLI/index#profiles) with the following parameters using [Cyberduck CLI](https://duck.sh/).
 
 	duck --username OS_TENANT_ID:OS_USERNAME --password PROJECT_USER_PASSWORD --region BHS3 --list ovh://CONTAINERNAME
 
-Alternatively, connect with the default connection profile by setting the authentication hostname with
+Alternatively, connect using the default connection profile by specifying the authentication hostname with
 
 	duck --username OS_TENANT_ID:OS_USERNAME --password PROJECT_USER_PASSWORD --region BHS3 --list swift://auth.cloud.ovh.net/CONTAINERNAME
 

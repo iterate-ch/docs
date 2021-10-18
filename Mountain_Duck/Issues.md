@@ -80,7 +80,7 @@ The directory listing in *Finder.app* or *File Explorer* may become out of date 
 
 ## Cache Uses a lot of Disk Space
 
-The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck` on macOS by default. You can [choose another disk](Preferences#sync-cache-location) for storage of files to be stored in the local cache. You can clear files cached on local disk with the *Delete on local disk* [context menu](Sync#delete-on-local-disk) option.
+The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](Preferences#sync-cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](Sync#delete-on-local-disk) option.
 
 ```{image} _images/Custom_Location_Sync_Cache.png
 :alt: Send Command

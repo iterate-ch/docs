@@ -36,7 +36,6 @@ Follow these instructions:
 	- {download}`OCI Object Storage (eu-zurich-1).cyberduckprofile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/OCI%20Object%20Storage%20(eu-zurich-1.cyberduckprofile>`
 	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
 	- {download}`OCI Object Storage (us-ashburn-1).cyberduckprofile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/oraclecloud/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
 3. Open the downloaded profile by double-clicking on it in Finder or Explorer. It will be opened by Cyberduck. On macOS, the connection profile will be opened automatically in edit mode. On Windows, you may need to edit the bookmark manually.
 4. Set a nickname (e.g. *OCI Ashburn*)
 5. Update the entry in the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))

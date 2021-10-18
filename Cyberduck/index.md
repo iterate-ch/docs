@@ -12,7 +12,6 @@ Download
 Edit
 FAQ
 Info
-Logging
 Notifications
 Preferences
 Profiles
@@ -51,6 +50,10 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 - **[Create and expand ZIP/TAR Archives](../Protocols/SFTP#create-and-expand-zip-tar-archives)**
 - **[Send custom commands](../Protocols/SFTP#remote-commands):** Send commands to a server not available in the graphical user interface.
 - **[Activity](Browser#activity):** The activity window shows a list of all pending background tasks.
+
+```{note}
+_Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
+```
 
 ## [Edit Files](Edit)
 

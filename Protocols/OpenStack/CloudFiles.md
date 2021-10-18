@@ -34,7 +34,7 @@ Alternatively, enter the following information in the [bookmark](../../Cyberduck
 
 ## Containers
 
-You can create a new top-level container using *File → New Folder... (`⌘N`)*. You can select from regions *DFW, ORD, HKG* and *SYD*.
+You can create a new top-level container using *File → New Folder... (MacOS `⇧⌘N` Windows `Ctrl+Shift+N`)*. You can select from regions *DFW, ORD, HKG* and *SYD*.
 
 ![Create Container](_images/Create_Container.png)
 

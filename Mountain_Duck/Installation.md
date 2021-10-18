@@ -38,6 +38,12 @@ Enable the Mountain Duck Finder Extension in *System Preferences → Extensions 
 
 **MSI**<br/>
 [Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.5.2*.
+
+```{note}
+Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separatly. Both packages are needed to enable the explorer extension.
+```
+
+````
 `````
 
 # System Requirements
@@ -104,7 +110,7 @@ Follow the steps below to uninstall Mountain Duck completely.
 ````{group-tab} macOS
 
 1. Close the application and navigate to the application folder using the shortcut `⌘⇧A`. Select *Mountain Duck.app* and delete the application by choosing *File → Move to Trash*.
-2. Navigate to the application support folder an delete the folder. If you changed the cache location you will have to delete that folder as well.
+2. Navigate to the *Group Containers* folder within *~/Library/* and delete the folder *G69SCX94XU.duck*. If you changed the cache location you will have to delete that folder as well.
 3. **Optional:** Delete all saved login credentials regarding Mountain Duck within *Keychain Access.app*.
 
 ````
