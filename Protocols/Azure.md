@@ -50,7 +50,7 @@ You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Perm
 
 # Containers
 
-To create a new container in your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*.
+To create a new container in your account, browse to the root and choose *File → New Folder... (macOS `⇧⌘N` Windows `Ctrl+Shift+N`)*.
 
 # Blob Type
 Uploads are stored as append blob type by default. You can use the [hidden configuration option](../Cyberduck/Preferences#hidden-configuration-options) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.

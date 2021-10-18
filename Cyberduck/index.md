@@ -12,7 +12,6 @@ Download
 Edit
 FAQ
 Info
-Logging
 Notifications
 Preferences
 Profiles

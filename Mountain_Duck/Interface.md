@@ -74,7 +74,7 @@ Select *Options: Read Only* in the bookmark to mount the volume as read-only and
 Always assign the same drive letter to the mounted volume.
 
 ```{note}
-The number of concurrent connected bookmarks is limited by the number of drive letters. You can connect up to 26 bookmarks at the same time.
+The number of concurrent connected bookmarks is limited by the number of available drive letters. You can have a total of 26 drives on your system.
 ```
 
 # Filter

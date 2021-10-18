@@ -110,7 +110,7 @@ Follow the steps below to uninstall Mountain Duck completely.
 ````{group-tab} macOS
 
 1. Close the application and navigate to the application folder using the shortcut `⌘⇧A`. Select *Mountain Duck.app* and delete the application by choosing *File → Move to Trash*.
-2. Navigate to the *Group Container* folder and delete the folder *G69SCX94XU.duck*. If you changed the cache location you will have to delete that folder as well.
+2. Navigate to the *Group Containers* folder within *~/Library/* and delete the folder *G69SCX94XU.duck*. If you changed the cache location you will have to delete that folder as well.
 3. **Optional:** Delete all saved login credentials regarding Mountain Duck within *Keychain Access.app*.
 
 ````

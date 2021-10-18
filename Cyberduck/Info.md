@@ -1,7 +1,7 @@
 Info Window
 ===
 
-Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `Alt+Return`)* to display detailed information on s file in a tool window. You can choose in the [Preferences](Preferences) in the *Browser* tab to use the info window as an inspector of the currently selected files in the browser or open a new panel window to compare different files.
+Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `Alt+Return`)* to display detailed information on a file in a tool window. You can choose in the [Preferences](Preferences) in the *Browser* tab to use the info window as an inspector of the currently selected files in the browser or open a new panel window to compare different files.
 
 # General Panel
 
