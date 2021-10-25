@@ -6,7 +6,7 @@ Memset Object Storage
 > Memset Memstore is an exciting new long-term storage solution. Based on the OpenStack Object Storage platform, combined with our own impressive infrastructure, Memstore™ is flexible, scalable, easy to use, and secure. We take care of the details from disk space to backups; you simply drag and drop your files and leave everything else to us. You only pay for what you use, whether that be 1GB or 1TB, and there are no license fees or hidden costs. Data replication means that your data is unaffected by hardware failures and you can sleep soundly knowing your data is safe with us.
 
 **Free 5GB Account**</br>
-Sign up for a free account that comes with 5GB of storage and 5GB of transfer per month [Memset Object Storage](http://www.memset.com/service/object-storage).
+Sign up for a free account that comes with 5GB of storage and 5GB of transfer per month [Memset Object Storage](https://www.memset.com/services/object-storage/).
 
 # Connecting
 
@@ -37,12 +37,7 @@ Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
 
 ![Memstore configuration](_images/Memstore.Swift.Config.png)
 
-# Memstore as CDN
-
-> A CDN is a Content Delivery Network and is a secondary location in the cloud where you can store and serve static content for your site. This content can be files such as images, movies, PDFs, etc. This will reduce the bandwidth and needed server resources from your primary web server.
-
-In order to make a Memstore container publicly available so you can serve files from it, you just follow the [instructions](https://www.memset.com/docs/memstore/cdn-control/).
 
 # References
-- [Documentation and Resources for Developers](https://docs.memset.com/object-storage/api-developer-resources)
-- [Swift Openstack API with Cyberduck](https://docs.memset.com/object-storage/swift-openstack-api-with-cyberduck)
+- [Documentation and Resources for Developers](https://docs.memset.com/cd/API-%2F-Developer-Resources.199072028.html)
+- [Swift Openstack API with Cyberduck](https://docs.memset.com/cd/Swift-OpenStack-API-with-Cyberduck.199072116.html)
