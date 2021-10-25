@@ -28,7 +28,7 @@ Zetta.IO
 
 # Connecting
 
-Connect to a [Swift (OpenStack Object Storage)](https://docs.openstack.org/xena/) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.
+Connect to a [Swift (OpenStack Object Storage)](https://docs.openstack.org/swift/latest/) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.
 
 ## Authentication Context Path
 
