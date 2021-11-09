@@ -78,6 +78,13 @@ Refer to [Info](../Cyberduck/Info.md#CDN_Panel) for configuration options.
 # Copy URLs
 CloudFront URLs are available in the regular *Copy URL* menu. Refer to [Open or Copy HTTP URL](../Cyberduck/Browser#open-or-copy-http-url).
 
+# Access S3 through CloudFront
+You can access S3 buckets through CloudFront. Although not a typical use case, this may be of interest to save bandwidth costs when working with files in S3. For example using [Cyberduck CLI](../CLI/index.md).
+
+```{code-block}
+duck --user anonymous --list s3://djynunjb246r8.cloudfront.net/
+```
+
 # References
 
 - [Amazon CloudFront FAQs](http://aws.amazon.com/cloudfront/faqs/)
