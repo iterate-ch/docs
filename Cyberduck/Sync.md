@@ -12,7 +12,7 @@ The options in *Preferences → Transfers → Timestamps* must be enabled.
 The criteria to download or upload a file are given by
 
 - the modification date of the files and if available
-- the MD5 checksum of the file (for [S3](../Protocols/S3/index), [Azure](../Protocols/Azure), and [CloudFiles](../Protocols/OpenStack/CloudFiles))
+- the MD5 checksum of the file (for [S3](../Protocols/S3/index.md), [Azure](../Protocols/Azure.md), and [CloudFiles](../Protocols/OpenStack/CloudFiles.md))
 
 You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.
 

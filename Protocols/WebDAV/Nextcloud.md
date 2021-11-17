@@ -43,7 +43,7 @@ Choose one of the protocols:
 
 1. Connect to your NextCloud or OwnCloud instance in your web browser and log in.
 2. Click on the option Settings in the lower left of the screen and copy the displayed WebDAV address.
-3. Create a new [bookmark](../../Cyberduck/Bookmarks):
+3. Create a new [bookmark](../../Cyberduck/Bookmarks.md):
 In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
 In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 4. Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to *WebDAV (HTTPS)* and split the WebDAV address into two parts – the server address and the path.
@@ -57,13 +57,13 @@ With 2-factor authentication enabled, you will need to create an app password in
 
 # Share Files
 
-Create [public shares](../../Cyberduck/Share#nextcloud-owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…*.
+Create [public shares](../../Cyberduck/Share.md#nextcloud-and-owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…*.
 
 # Known Issues
 
 ## 0-Byte Files
 
-If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../Mountain_Duck/Issues_FastCGI).
+If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../Mountain_Duck/Issues_FastCGI.md).
 
 ## Slow Listings for Large Folder Structures
 
@@ -76,4 +76,4 @@ Also, refer to the [issue](https://github.com/nextcloud/server/issues/8962) in G
 # References
 
 - [Accessing Nextcloud Files Using WebDAV](https://docs.nextcloud.com/server/13/user_manual/files/access_webdav.html)
-- [Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI](../../Mountain_Duck/Issues_FastCGI)
+- [Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI](../../Mountain_Duck/Issues_FastCGI.md)

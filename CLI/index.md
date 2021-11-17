@@ -133,7 +133,7 @@ URLs in arguments must be fully qualified. Paths can either denote a remote file
 
 ## Connection Profiles
 
-You can install additional connection profiles in the [application support directory](index#profiles). Use the `--profile` option to reference a [connection profile](../Protocols/index#connection-profiles) file to use not installed in the standard location.
+You can install additional connection profiles in the [application support directory](#profiles). Use the `--profile` option to reference a [connection profile](../Protocols/index.md#connection-profiles) file to use not installed in the standard location.
 
 ## URI
 
@@ -246,7 +246,7 @@ Transfer files with multiple concurrent connections to a server.
 
 ## Cryptomator
 
-Access to your [Cryptomator](../Cryptomator/index) Vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the Vault if not found in the Keychain.
+Access to your [Cryptomator](../Cryptomator/index.md) Vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the Vault if not found in the Keychain.
 
 Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allows uploading into a subdirectory of a Vault where the auto-detect feature does otherwise not work.
 
@@ -305,21 +305,21 @@ The support directory is `~/.duck/` on Linux. You can install third party [profi
 `````{tabs}
 ````{group-tab} macOS
 
-You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 
 ````
 ````{group-tab} Windows
 
-You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `set "property.name=value" & duck`
 
 ````
 ````{group-tab} Linux
 
-You can override default [preferences](../Cyberduck/Preferences#hidden-configuration-options) by setting environment variables in your shell.
+You can override default [preferences](../Cyberduck/Preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 

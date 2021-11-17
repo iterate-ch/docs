@@ -7,20 +7,20 @@ Mountain Duck supports locking files to prevent conflicting edits from others wh
 
 File locking is natively supported for the following protocols:
 
-- [Dropbox for Business](../Protocols/Dropbox)
-- [Microsoft OneDrive](../Protocols/OneDrive)
-- [Microsoft SharePoint](../Protocols/SharePoint)
-- [WebDAV](../Protocols/WebDAV/index)
+- [Dropbox for Business](../Protocols/Dropbox.md)
+- [Microsoft OneDrive](../Protocols/OneDrive.md)
+- [Microsoft SharePoint](../Protocols/SharePoint.md)
+- [WebDAV](../Protocols/WebDAV/index.md)
 
 ```{note}
-Some WebDAV implementations including [NextCloud & ownCloud](../Protocols/WebDAV/Nextcloud) may not support locking documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
+Some WebDAV implementations including [NextCloud & ownCloud](../Protocols/WebDAV/Nextcloud.md) may not support locking documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
 ```
 
 Files opened from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.
 
 # Pseudo Locking for Protocols with no Native Lock Support Using Lock Owner Files
 
-For connections other than [WebDAV](../Protocols/WebDAV/index), we support detecting files opened by others by looking for owner lock files uploading to the server.
+For connections other than [WebDAV](../Protocols/WebDAV/index.md), we support detecting files opened by others by looking for owner lock files uploading to the server.
 
 ```{note}
 Support is currently limited to files edited in *Microsoft Word, Microsoft Excel, and Microsoft Powerpoint* on macOS and Windows.
@@ -108,4 +108,4 @@ If you get a warning that the document is *Read-Only*, ask other users to close 
 
 # Preferences
 
-Locking is disabled by default. Refer to [Preferences](Preferences) to enable it in *Connection → Locking → Lock Files*.
+Locking is disabled by default. Refer to [Preferences](Preferences.md) to enable it in *Connection → Locking → Lock Files*.

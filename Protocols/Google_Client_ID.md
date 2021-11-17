@@ -11,7 +11,7 @@ Login using OAuth is currently failing with the default OAuth Client ID applicat
 Sign in with Google temporarily disabled for this app. This app has not been verified yet by Google in order to use Google Sign In.
 ```
 
-As a workaround, you can register your own OAuth Client ID to connect to [Google Drive](Google_Drive). For [Google Storage](Google_Cloud_Storage) you can use [Interoperable Access](Google_Cloud_Storage#interoperable-access) as a workaround.
+As a workaround, you can register your own OAuth Client ID to connect to [Google Drive](Google_Drive.md). For [Google Storage](Google_Cloud_Storage.md) you can use [Interoperable Access](Google_Cloud_Storage.md#interoperable-access) as a workaround.
 
 # Register Client ID
 
@@ -30,7 +30,7 @@ Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/
 
 # Edit Custom Connection Profile
 
-Create a custom [connection profile](Cyberduck/Profiles) with the following properties.
+Create a custom [connection profile](../Cyberduck/Profiles.md) with the following properties.
 
 - `OAuth Client ID`. Override the registered application client id.
 - `OAuth Client Secret`. Override the registered application client secret.

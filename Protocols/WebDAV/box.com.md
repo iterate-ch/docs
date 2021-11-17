@@ -11,7 +11,7 @@ Box.com
 Only available for Box.com business and enterprise accounts
 ```
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `FTP` or `FTPS`
 - Server: `ftp.box.com`
@@ -27,7 +27,7 @@ Box.com WebDAV support reached end-of-life at October 25th, 2019
 1. {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Box.cyberduckprofile>` the *Box Connection Profile* for preconfigured settings.
 2. Enter your email address for the username.
 
-Alternatively, enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Alternatively, enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `dav.box.com`

@@ -26,7 +26,7 @@ Use `admin` for the username, the Memstore name when prompted for the Tenant ID 
 
 ## Manual Configuration
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `Swift (OpenStack Object Storage)`
 - Server: `auth.storage.memset.com`

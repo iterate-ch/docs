@@ -13,7 +13,7 @@ Cloud.ca Object Storage
 
 ## Manual Configuration
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `OpenStack`
 - Server: `objects.east-1.cloud.ca`

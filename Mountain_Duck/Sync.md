@@ -14,14 +14,14 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 
 - *Default:* Use setting from *Preferences*
 - *Online:* Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](Sync#Select-files-and-folders-to-always-keep-offline).
+- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](#select-files-and-folders-to-always-keep-offline).
 
 # Status of Files
 
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
 ```{note}
-Please make sure to enable the Mountain Duck [Integration](Installation) in *System Preferences → Extensions → Finder* on macOS.
+Please make sure to enable the Mountain Duck [Integration](Installation.md) in *System Preferences → Extensions → Finder* on macOS.
 ```
 
 ## Up to Date
@@ -89,7 +89,7 @@ The file is only saved in a local temporary location and never synced to the ser
 ```{admonition} macOS only
 :class: tip
 
-Please make sure to enable the Mountain Duck [Integration](index#FinderExtensionWindowsFileExplorerExtensionFinder) in *System Preferences → Extensions → Finder Extensions*.
+Please make sure to enable the Mountain Duck [Integration](Interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
 ```
 
 ## Select Files and Folders to Always Keep Offline
@@ -101,7 +101,7 @@ You can choose to make files and folders available offline in the context menu. 
 :width: 500px
 ```
 
-To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface#context-menu-in-finder-and-windows-file-explorer).
+To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](Interface.md#context-menu-in-finder-and-windows-file-explorer).
 
 ### Keep Offline
 
@@ -152,7 +152,7 @@ Changes to files are uploaded in the background as soon as a connection is avail
 :alt: Send Command
 :width: 600px
 ```
-Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](Sync_History#sync-progress).
+Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](Sync_History.md#sync-progress).
 
 ## Pause Sync
 
@@ -173,7 +173,7 @@ If a sync error cannot be solved using *Mountain Duck → Retry* because the ser
 
 # File History
 
-You can lookup the latest changes to files. Refer to [Recent Files](Sync_History#recent-files)
+You can lookup the latest changes to files. Refer to [Recent Files](Sync_History.md#recent-files)
 
 ## Notifications
 
@@ -186,8 +186,8 @@ You can lookup the latest changes to files. Refer to [Recent Files](Sync_History
 - **File Updated:** File changed on server since previously indexing a folder
 - **Sync Conflict:** Conflicting change in file lead to duplicate of file being created with previous content edited on server.
 
-Refer also to [Preferences → Notifications](Preferences#notifications)
+Refer also to [Preferences → Notifications](Preferences.md#notifications)
 
 # Preferences
 
-Refer to [Preferences](Preferences).
+Refer to [Preferences](Preferences.md).

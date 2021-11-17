@@ -17,16 +17,16 @@ You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mut
 
 # Providers
 
-Settings are specific to service providers. Use the provided [connection profiles](../../Cyberduck/Protocols#connection-profiles).
+Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
 
-- [Nextcloud](Nextcloud)
-- [ownCloud](Nextcloud)
-- [GMX Mediacenter](GMX)
-- [box.com](box.com)
-- [BigCommerce](BigCommerce)
-- [iKeepinCloud](iKeepinCloud)
-- [pCloud](pCloud)
-- [Seafile](Seafile)
+- [Nextcloud](Nextcloud.md)
+- [ownCloud](Nextcloud.md)
+- [GMX Mediacenter](GMX.md)
+- [box.com](box.com.md)
+- [BigCommerce](BigCommerce.md)
+- [iKeepinCloud](iKeepinCloud.md)
+- [pCloud](pCloud.md)
+- [Seafile](Seafile.md)
 
 # Supported Authentication Methods
 
@@ -40,7 +40,7 @@ Both *HTTP Basic Authentication* and *Digest Authentication* are supported.
 
 ## NTLM Authentication
 
-Used when connecting to [SharePoint](../SharePoint) using WebDAV.
+Used when connecting to [SharePoint](../SharePoint.md) using WebDAV.
 
 ## Integrated Windows Authentication (IWA)
 
@@ -84,7 +84,7 @@ You can edit custom properties using File → Info → Metadata.
 
 ```{tab} Cyberduck
 
-Files aren't locked when [editing](../../Cyberduck/Edit) with Cyberduck.
+Files aren't locked when [editing](../../Cyberduck/Edit.md) with Cyberduck.
 
 ```
 
@@ -98,11 +98,11 @@ Mountain Duck supports locking using `LOCK` and `UNLOCK` methods when opening do
 
 # Distribution (CDN)
 
-You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../CDN/CloudFront) using *File → Info → Distribution (CDN)*.
+You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../CDN/CloudFront.md) using *File → Info → Distribution (CDN)*.
 
 ## SharePoint
 
-Refer to [SharePoint](../SharePoint) to connect using WebDAV.
+Refer to [SharePoint](../SharePoint.md) to connect using WebDAV.
 
 ## Subversion (SVN) Repositories
 
@@ -112,7 +112,7 @@ You can access publicly readable Subversion (SVN) repositories running behind `m
 
 ## Cannot Login with Special Characters in Credentials
 
-If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options)
+If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../Cyberduck/Preferences.md#hidden-configuration-options)
 
 	http.credentials.encoding=UTF-8
 
@@ -142,11 +142,11 @@ See also Cyberduck Issue [#7908](https://trac.cyberduck.io/ticket/7908).
 
 ## Disable Expect: 100-continue
 
-The `Expect: 100-continue` to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the [hidden option](../../Cyberduck/Preferences#hidden-configuration-options) `webdav.expect-continue` to `false`.
+The `Expect: 100-continue` to make sure a server accepts an upload before data is sent. You can disable the use of this feature when there is an interoperability issue by setting the [hidden option](../../Cyberduck/Preferences.md#hidden-configuration-options) `webdav.expect-continue` to `false`.
 
 ## Socket Timeout With GZIP Content Encoding
 
-Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the [hidden option](../../Cyberduck/Preferences#hidden-configuration-options) `http.compression.enable` to `false`.
+Some servers (cPanel) have invalid return GZIP encoded content. This error may not be seen with other clients that do not enable content compression. An invalid HTTP response status line is sent and the content size does not match the content length set. As a workaround, you can disable support for content compression. Set the [hidden option](../../Cyberduck/Preferences.md#hidden-configuration-options) `http.compression.enable` to `false`.
 
 ## Require Directive in Apache HTTPD
 
@@ -156,7 +156,7 @@ The `Require` directive in Apache HTTPD tests whether an authenticated user is a
 
 ## 0 Byte Files on WebDAV Server
 
-If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../Mountain_Duck/Issues_FastCGI).
+If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../Mountain_Duck/Issues_FastCGI.md).
 
 ## mod_evasive
 

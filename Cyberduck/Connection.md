@@ -3,7 +3,7 @@ Opening Connections
 
 # Supported Protocols
 
-All major server and cloud storage [protocols](../Protocols/index) are supported to connect to just about any server you want.
+All major server and cloud storage [protocols](../Protocols/index.md) are supported to connect to just about any server you want.
 
 # Toolbar Button
 
@@ -16,7 +16,7 @@ Click the *New Connection* toolbar button or *File → Open Connection.. (mac `�
 
 # Quick Connect
 
-Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](Bookmarks) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../CLI/index#uri) formats for input.
+Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](Bookmarks.md) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../CLI/index.md#uri) formats for input.
 
 ```{image} _images/Quick_Connect.png
 :alt: Send Command
@@ -27,7 +27,7 @@ If you enter just the hostname, the default protocol as configured in *Preferenc
 
 # Bookmarks
 
-Select *Bookmarks → Toggle Bookmarks (macOS `⌘B` Windows `Strg+B`)* and double-click a [bookmark](Bookmarks) to connect. If you want to bookmark a connection already open, choose *Bookmark → New Bookmark (macOS `⌘⇧B` Windows `Strg+Shift+B`)* and it will add a new bookmark with the current connection settings.
+Select *Bookmarks → Toggle Bookmarks (macOS `⌘B` Windows `Strg+B`)* and double-click a [bookmark](Bookmarks.md) to connect. If you want to bookmark a connection already open, choose *Bookmark → New Bookmark (macOS `⌘⇧B` Windows `Strg+Shift+B`)* and it will add a new bookmark with the current connection settings.
 
 Additionally, you can switch to the *History* or *Bonjour* in the bookmark view.
 
@@ -57,9 +57,9 @@ Double-click a Cyberduck `.duck` bookmark file in the *Finder.app*.
 
 ## Internet Location File
 
-Double-click an *Internet Location File* in the *Finder.app*. Cyberduck must be configured as the [default protocol handler](Connection#default-protocol-handler) for the given protocol of the URL.
+Double-click an *Internet Location File* in the *Finder.app*. Cyberduck must be configured as the [default protocol handler](Connection.md#default-protocol-handler) for the given protocol of the URL.
 
-## Use [Spotlight](Spotlight)
+## Use [Spotlight](Spotlight.md)
 
 ```{note}
 The *Spotlight Menu* does return no results for recently connected servers in Cyberduck because it excludes indexed files located in `~/Library/Application Support/Cyberduck/History`. This is also an issue for Adium.
@@ -82,7 +82,7 @@ As a workaround, you have to export all bookmarks to another location such as yo
 Drag an URL from any third-party application to a browser window.
 
 - Drag an URL (e.g. from Safari) to the browser list or outline view to open a new connection.
-- Drag an URL to the [bookmarks](Bookmarks) to create a new bookmark.
+- Drag an URL to the [bookmarks](Bookmarks.md) to create a new bookmark.
 
 # Problems Connecting
 
@@ -111,7 +111,7 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 
 # Transcript
 
-Refer to [Provide log output](Support#logging-output).
+Refer to [Provide log output](Support.md#logging-output).
 
 # Proxy Configuration
 
@@ -170,33 +170,35 @@ Select connection protocols to be installed in addition to the default protocols
 You can't disable the default protocols. If you disable the connection profile used in a bookmark the bookmark won't work after restarting the application.
 ```
 
-## Connection → Timeout
+## Connection
+
+### Timeout
 
 You might need to adjust the timeout to wait for an answer from the server. The default is set to `30` seconds.
 
-## Connection → Repeat failes networking tasks
+### Repeat failed networking tasks
 
 Failed transfers due to network connection issues such as a low latency can be chosen to be repeated with a configurable number of retries.
 
-## Connection → Proxies
+### Proxies
 
 Choose *Cyberduck → Preferences → Connection → Use system proxy settings*. No additional configuration needed.
 
 ## Prefer IPv6 Adresses of DNS Lookups
 
-A [hidden configuration option](Preferences#hidden-configuration-options).
+A [hidden configuration option](Preferences.md#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck connection.dns.ipv6 true`
 
 ## Disable Bonjour Support
 
-A [hidden configuration option](Preferences#hidden-configuration-options).
+A [hidden configuration option](Preferences.md#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck rendezvous.enable false`
 
 ## Disable Bonjour Notifications in Notification Center and Sytem Tray
 
-A [hidden configuration option](Preferences#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
+A [hidden configuration option](Preferences.md#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 
 `defaults write ch.sudo.cyberduck rendezvous.notification.limit 0`
 
@@ -223,7 +225,7 @@ This also works when working in *Terminal.app*. Type open `sftp://host` to open 
 
 ## Installation
 
-Double-click the connection profile file (`.cyberduckprofile`) to open and register the profile. When using the [CLI](../CLI/index) refer to the [documentation](../CLI/index#application-support-directory).
+Double-click the connection profile file (`.cyberduckprofile`) to open and register the profile. When using the [CLI](../CLI/index.md) refer to the [documentation](../CLI/index.md#application-support-directory).
 
 # Connection Profiles
 
@@ -231,4 +233,4 @@ Connection profiles (`.cyberduckprofile`) are plugins describing specific connec
 
 ## File Format
 
-Refer to the [technical documentation](Profiles).
+Refer to the [technical documentation](Profiles.md).

@@ -15,7 +15,7 @@ The connection profile allows to login using the *Files.com REST API* supporting
 
 ### FTPS
 
-Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../Cyberduck/Bookmarks.md):
 
 - Protocol: `FTP-SSL (Explicit AUTH TLS)`
 - Server: `app.files.com`
@@ -24,7 +24,7 @@ Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
 
 ### WebDAV
 
-Enter the following information in the [bookmark](../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../Cyberduck/Bookmarks.md):
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `<subdomain>.files.com`

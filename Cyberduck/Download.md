@@ -1,7 +1,7 @@
 Download
 ===
 
-See also [Transfers](Transfer) in general.
+See also [Transfers](Transfer.md) in general.
 
 # Segmented Downloads
 
@@ -55,7 +55,7 @@ Downloaded files have added metadata of its origin URL. *Finder.app* displays th
 
 Downloaded files are flagged with the `com.apple.quarantine` attribute. The attributes associate basic information with the file, such as its type, when it was received, and the URL from which it came. When the Finder or any other program uses Launch Services to open a quarantined file, Launch Services inspects the file to see if it appears to be an application, script, or other executable file types. If so, the system displays an alert informing the user that the file is an application and asking for confirmation that it should be executed. The alert lets the user open the URL from which the file was downloaded, launch the program, or cancel. If the user proceeds to open the file, Launch Services removes the quarantine attributes from that file.
 
-A [hidden configuration option](Preferences#hidden-configuration-options).
+A [hidden configuration option](Preferences.md#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck queue.download.quarantine false`
 
@@ -64,6 +64,6 @@ Files downloaded to edit do not have a quarantine flag set by default.
 
 ## Temporary Document Icon
 
-Don't change the document icon while downloading. A [hidden configuration option](Preferences#hidden-configuration-option).
+Don't change the document icon while downloading. A [hidden configuration option](Preferences.md#hidden-configuration-options).
 
 `defaults write ch.sudo.cyberduck queue.download.icon.update false`

@@ -13,7 +13,7 @@ iRODS (Integrated Rule-Oriented Data System)
 
 # Connecting
 
-Download the corresponding *Connection Profile* for preconfigured settings and double-click on it to install it. Choose the profile from the list of protocols when editing a [bookmark](../Cyberduck/Bookmarks) or use the `<vendor>:/` scheme when using the [CLI](../CLI/index).
+Download the corresponding *Connection Profile* for preconfigured settings and double-click on it to install it. Choose the profile from the list of protocols when editing a [bookmark](../Cyberduck/Bookmarks.md) or use the `<vendor>:/` scheme when using the [CLI](../CLI/index).
 
 ## Provider
 
@@ -29,14 +29,14 @@ This is the default with no additional configuration required.
 
 ### Authentication with PAM Scheme
 
-To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index#connection-profiles) using as
+To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index.md#connection-profiles) using as
 
     <key>Authorization</key>
     <string>PAM</string>
 
 ## Ressource Server
 
-You can specify a non-default resource server in the Region key of the [connection profile](index#connection-profiles) using a colon-separated syntax (Issue [#8721](https://trac.cyberduck.io/ticket/8721)) such as
+You can specify a non-default resource server in the Region key of the [connection profile](index.md#connection-profiles) using a colon-separated syntax (Issue [#8721](https://trac.cyberduck.io/ticket/8721)) such as
 
 	<key>Region</key>
 	<string>iplant:storageresourcename</string>
@@ -45,11 +45,11 @@ You can specify a non-default resource server in the Region key of the [connecti
 
 ## Use Parallel Connections
 
-If [multiple connections](../Cyberduck/Transfer#connections) are configured by default in *Preferences* or set in the bookmark options with *Transfer Files: Open multiple connections*, get and put transfers to the data store use parallel concurrent connections.
+If [multiple connections](../Cyberduck/Transfer.md#connections) are configured by default in *Preferences* or set in the bookmark options with *Transfer Files: Open multiple connections*, get and put transfers to the data store use parallel concurrent connections.
 
 ![Open multiple connections](_images/Use_parallel_transfer_option.png)
 
-The number of parallel connections is controlled using the lower right stepper control in the [Transfers](../Cyberduck/Transfer) window.
+The number of parallel connections is controlled using the lower right stepper control in the [Transfers](../Cyberduck/Transfer.md) window.
 
 ![Limit Number of Transfers](_images/Limit_Number_of_Transfers.png)
 

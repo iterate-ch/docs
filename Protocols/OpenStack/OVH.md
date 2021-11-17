@@ -9,7 +9,7 @@ OVH Public Cloud Storage
 
 # Connecting
 
-*OVH Public Cloud Storage* is using [OpenStack Swift](index) APIs for its storage service.
+*OVH Public Cloud Storage* is using [OpenStack Swift](index.md) APIs for its storage service.
 
 ## Connection Profile
 
@@ -26,7 +26,7 @@ You will need to create a new user in the [OVH manager](https://www.ovh.com/mana
 
 # Cyberduck CLI
 
-To use a connection, the corresponding profile must be [installed](../../CLI/index#profiles) with the following parameters using [Cyberduck CLI](https://duck.sh/).
+To use a connection, the corresponding profile must be [installed](../../CLI/index.md#profiles) with the following parameters using [Cyberduck CLI](https://duck.sh/).
 
 	duck --username OS_TENANT_ID:OS_USERNAME --password PROJECT_USER_PASSWORD --region BHS3 --list ovh://CONTAINERNAME
 

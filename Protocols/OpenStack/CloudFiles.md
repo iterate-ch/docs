@@ -24,7 +24,7 @@ Rackspace Cloud Files
 
 ## Manual Configuration
 
-Alternatively, enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Alternatively, enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Protocol: `Swift (OpenStack Object Storage)`
 - Server: `lon.auth.api.rackspacecloud.com`
@@ -44,15 +44,15 @@ Creating a folder inside a container will create a placeholder object named afte
 
 ## Distribution
 
-You can enable [Akamai CDN (Content Delivery Network) distribution](../../CDN/Akamai) for a selected container using *File → Info → Distribution (CDN)*. Choose *Enable Access Logging* to save their raw CDN weblogs to your Cloud Files storage account.
+You can enable [Akamai CDN (Content Delivery Network) distribution](../../CDN/Akamai.md) for a selected container using *File → Info → Distribution (CDN)*. Choose *Enable Access Logging* to save their raw CDN weblogs to your Cloud Files storage account.
 
 ### Logging
 
-You can enable private container access logging to `.ACCESS_LOGS` by adding the metadata `X-Container-Meta-Access-Log-Delivery` name with a value of `true` to the container. Choose *File → Info → Metadata*. To enable access logs for CDN enabled, refer to [distribution access logging](../../CDN/Akamai#distribution-access-logging).
+You can enable private container access logging to `.ACCESS_LOGS` by adding the metadata `X-Container-Meta-Access-Log-Delivery` name with a value of `true` to the container. Choose *File → Info → Metadata*. To enable access logs for CDN enabled, refer to [distribution access logging](../../CDN/Akamai.md#distribution-access-logging).
 
 ## Public URLs
 
-You can access all URLs (including from [CDN](../../CDN/Akamai) configurations) from the menu Edit → Copy URL and File → Open URL. 
+You can access all URLs (including from [CDN](../../CDN/Akamai.md) configurations) from the menu Edit → Copy URL and File → Open URL. 
 
 ```{note}
 You must first open *File → Info → Distribution (CDN)* before these URLs are available.
@@ -62,7 +62,7 @@ You must first open *File → Info → Distribution (CDN)* before these URLs are
 
 ## Metadata
 
-You can add [custom HTTP headers](../../Cyberduck/Info#metadata-http-headers) to files to store metadata. Choose *File → Info → Metadata* to edit custom headers.
+You can add [custom HTTP headers](../../Cyberduck/Info.md#metadata-http-headers) to files to store metadata. Choose *File → Info → Metadata* to edit custom headers.
 
 # Limitations
 
@@ -70,6 +70,6 @@ You can add [custom HTTP headers](../../Cyberduck/Info#metadata-http-headers) to
 
 ## Default Metadata
 
-Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../../Cyberduck/Preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
 
 	defaults write ch.sudo.cyberduck openstack.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"

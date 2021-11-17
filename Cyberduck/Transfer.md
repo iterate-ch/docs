@@ -3,10 +3,10 @@ File Transfers
 
 The *Transfers* window lists pending and completed transfers. The list is retained when the application is closed and can be retrieved after restarting so that the transfer can be restarted at a later time.
 
-- [Download](Download)
-- [Upload](Upload)
-- [Synchronize Folders](Sync)
-- [Copy between Servers](Copy)
+- [Download](Download.md)
+- [Upload](Upload.md)
+- [Synchronize Folders](Sync.md)
+- [Copy between Servers](Copy.md)
 
 # Resume and Reload
 
@@ -32,7 +32,7 @@ Use the *Open* toolbar button to open a downloaded file or folder.
 ```{admonition} macOS only
 :class: tip
 
-A warning might be displayed before opening the file. See the [download quarantine](Download#Quarantine).
+A warning might be displayed before opening the file. See the [download quarantine](Download.md#quarantine).
 ```
 
 # Show Downloaded Files
@@ -59,12 +59,12 @@ Limit the maximum bandwidth that is allowed for transfers. Useful when you don't
 `````{tabs}
 ````{group-tab} macOS
 
-Select *Bandwidth* from the toolbar in the transfer window and set the maximum bandwidth allowed by the selected transfer from the drop-down window. The default setting is configurable in the [Preferences](Preferences).
+Select *Bandwidth* from the toolbar in the transfer window and set the maximum bandwidth allowed by the selected transfer from the drop-down window. The default setting is configurable in the [Preferences](Preferences.md).
 
 ````
 ````{group-tab} Windows
 
-Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](Preferences).
+Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](Preferences.md).
 
 ````
 `````
@@ -118,18 +118,18 @@ Skip existing files that match a checksum if available. If a checksum is not ava
 
 Append to existing files and skip files that match the file size and checksum if available. The following protocols support resume for uploads:
 
-- [FTP](../Protocols/FTP)
-- [SFTP](../Protocols/SFTP)
-- [WebDAV](../Protocols/WebDAV/index)
-- [S3](../Protocols/S3/index) (for multipart uploads)
+- [FTP](../Protocols/FTP.md)
+- [SFTP](../Protocols/SFTP.md)
+- [WebDAV](../Protocols/WebDAV/index.md)
+- [S3](../Protocols/S3/index.md) (for multipart uploads)
 
 The following protocols support resume for downloads:
 
-- [FTP](../Protocols/FTP)
-- [SFTP](../Protocols/SFTP)
-- [WebDAV](../Protocols/WebDAV/index)
-- [S3](../Protocols/S3/index)
-- [Openstack](../Protocols/OpenStack/index)
+- [FTP](../Protocols/FTP.md)
+- [SFTP](../Protocols/SFTP.md)
+- [WebDAV](../Protocols/WebDAV/index.md)
+- [S3](../Protocols/S3/index.md)
+- [Openstack](../Protocols/OpenStack/index.md)
 
 ## Rename
 
@@ -147,7 +147,7 @@ Skip transfer of files that already exist.
 
 ## Transfers → General → Browser connection for file transfers
 
-If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](Bookmarks#edit-bookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](Preferences).
+If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](Bookmarks.md#edit-bookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](Preferences.md).
 
 ## Transfers → General → Downloads/Uploads → Existing Files
 
@@ -181,7 +181,7 @@ The default pattern excludes metadata files from common revision control softwar
 
 ## Transfers → General → Transfer Files
 
-Files can be transferred using either the connection from the browser or by opening a new dedicated transfer connection. Using the setting *Open new connection* will add files to be transferred to the *Transfer* Window and open a new connection to the server to initiate the transfer. The option *Use browser connection* will transfer files using the connection from the browser. The file transfer is only reported at the bottom of the browser window without any detailed progress indicator. The transferred files will not get added to the *Transfer* Window. This setting is a also available per [bookmark](Bookmarks).
+Files can be transferred using either the connection from the browser or by opening a new dedicated transfer connection. Using the setting *Open new connection* will add files to be transferred to the *Transfer* Window and open a new connection to the server to initiate the transfer. The option *Use browser connection* will transfer files using the connection from the browser. The file transfer is only reported at the bottom of the browser window without any detailed progress indicator. The transferred files will not get added to the *Transfer* Window. This setting is a also available per [bookmark](Bookmarks.md).
 
 ## Transfers → Permissions → Downloads
 
@@ -189,36 +189,36 @@ Choose between a default permission mask to apply to downloaded files or to appl
 
 ## Transfers → Permissions → Uploads
 
-Adjust the permission mask of uploaded files or leave it to the default mask chosen by the server. The setting for permissions apply when connected to a UNIX host using [FTP](../Protocols/FTP) or [SFTP](../Protocols/SFTP). When connected to [S3](../Protocols/S3/index) and [Azure](../Protocols/Azure) this will update the access control list (ACL).
+Adjust the permission mask of uploaded files or leave it to the default mask chosen by the server. The setting for permissions apply when connected to a UNIX host using [FTP](../Protocols/FTP.md) or [SFTP](../Protocols/SFTP.md). When connected to [S3](../Protocols/S3/index.md) and [Azure](../Protocols/Azure.md) this will update the access control list (ACL).
 
 ```{note}
-Enabling change of permissions slows down the transfer rate when uploading many files with [FTP](../Protocols/FTP).
+Enabling change of permissions slows down the transfer rate when uploading many files with [FTP](../Protocols/FTP.md).
 ```
 
 ## Transfers → Timestamps
 
-Preserve modification date when uploading or downloading files. For [synchronization](Sync) to work, these options must be enabled.
+Preserve modification date when uploading or downloading files. For [synchronization](Sync.md) to work, these options must be enabled.
 
 ```{note}
-Enabling change of modification date slows down the transfer rate when uploading many files with [FTP](../Protocols/FTP).
+Enabling change of modification date slows down the transfer rate when uploading many files with [FTP](../Protocols/FTP.md).
 ```
 
 # Hidden Preferences
 
 ## Bandwith Throttle Options
 
-A [hidden configuration option](Preferences#hidden-configuration-options). Edit the available options (in bytes).
+A [hidden configuration option](Preferences.md#hidden-configuration-options). Edit the available options (in bytes).
 
 `defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824`
 
 ## Badge Dock Icon
 
-A [hidden configuration option](Preferences#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
+A [hidden configuration option](Preferences.md#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
 
 `defaults write ch.sudo.cyberduck queue.dock.badge true`
 
 ## Prioritize Certain Files
 
-A [hidden configuration option](Preferences#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
+A [hidden configuration option](Preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
 
 `defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"`

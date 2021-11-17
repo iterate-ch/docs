@@ -42,7 +42,7 @@ Type the `defaults` command given in a *Terminal.app* (in `/Applications/Utiliti
 
 `defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist <property> <value>`
 
-Alternatively you can create a file `default.properties` in the [application support folder](FAQ#where-are-preferences-and-application-settings-saved-to). Add the setting as follows:
+Alternatively you can create a file `default.properties` in the [application support folder](FAQ.md#preferences-and-application-support-files-location). Add the setting as follows:
 
 `...`<br/>
 `<property>=<value>`<br/>
@@ -51,7 +51,7 @@ Alternatively you can create a file `default.properties` in the [application sup
 ````
 ````{group-tab} Windows
 
-If not existing yet you need to create the file [%AppData%](FAQ#where-are-preferences-and-application-settings-saved-to)`\Cyberduck\default.properties`. To do that create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
+If not existing yet you need to create the file [%AppData%](FAQ.md#preferences-and-application-support-files-location)`\Cyberduck\default.properties`. To do that create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
 
 Add the setting as follows:
 
@@ -61,6 +61,6 @@ Add the setting as follows:
 ````
 ````{group-tab} CLI
 
-Refer to [Preferences](../CLI/index#preferences)
+Refer to [Preferences](../CLI/index.md#preferences)
 ````
 `````

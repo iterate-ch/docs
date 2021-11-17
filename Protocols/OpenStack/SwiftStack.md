@@ -9,7 +9,7 @@ SwiftStack
 
 ## Connection Profiles
 
-Connect to a SwiftStack cluster via HTTP or HTTPS using these pre-configured [connection profiles](../../Cyberduck/Connection#connection-profiles):
+Connect to a SwiftStack cluster via HTTP or HTTPS using these pre-configured [connection profiles](../../Cyberduck/Connection.md#connection-profiles):
 
 - **HTTP:** {download}`OpenStack Swift (SwiftStack HTTP).cyberduckprofile<http://files.swiftstack.com/OpenStack%20Swift%20(SwiftStack%20HTTP).cyberduckprofile>`
 - **HTTPS:** {download}`OpenStack Swift (SwiftStack HTTPS).cyberduckprofile<http://files.swiftstack.com/OpenStack%20Swift%20(SwiftStack%20HTTPS).cyberduckprofile>`
@@ -21,7 +21,7 @@ Connect to a SwiftStack cluster via HTTP or HTTPS using these pre-configured [co
 
 ## Additional Fields Required
 
-Enter the following information in the [bookmark](../../Cyberduck/Bookmarks):
+Enter the following information in the [bookmark](../../Cyberduck/Bookmarks.md):
 
 - Server: `SwiftStack cluster API IP address`
 - Username: `SwiftStack cluster user`
