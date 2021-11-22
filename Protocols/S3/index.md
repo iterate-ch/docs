@@ -108,13 +108,12 @@ Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/late
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
-## Access Third-Party Buckets
+## Access single bucket
 
-Connecting to a bucket you are not the owner of (and therefore not included when logging in as above and listing all your owned buckets) is possible. You can access buckets owned by someone else if the ACL allows you to access it by either:
+Connecting to a bucket owned by you or even a third party is possible without requiring permission to list all buckets. You can access buckets owned by someone else if the ACL allows you to access it by *either*:
 
-1. Specify the bucket you want to access in the hostname to connect to like `<bucketname>.s3.amazonaws.com`. Your own buckets will not be displayed but only the third-party bucket.
-2. Set the *Default Path* in the bookmark to the bucket name.
-3. Choose *Go → Go to Folder…* when already connected.
+- Specify the bucket you want to access in the hostname to connect to like `<bucketname>.s3.amazonaws.com`. Your own buckets will not be displayed but only this bucket contents
+- Set the *Default Path* in the bookmark to the bucket name. If you have permission you can still navigate one level up to display all buckets if the ACL allows.
 
 ## Connecting with Temporary Access Credentials (Token) from EC2
 
