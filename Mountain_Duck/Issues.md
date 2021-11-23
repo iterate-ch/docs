@@ -118,6 +118,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 
 `````{tabs}
 ````{group-tab} macOS
+
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](Preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
 
