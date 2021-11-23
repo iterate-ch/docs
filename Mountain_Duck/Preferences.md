@@ -82,11 +82,7 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 
 # Profiles
 
-```{note}
-Prelimitary documentation for Mountain Duck version 4.8
-``` 
-
-Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
+Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. 
 
 
 ## Default Connection Profiles

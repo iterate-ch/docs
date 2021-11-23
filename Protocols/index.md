@@ -101,16 +101,12 @@ Open a window to browse your local hard disk to drag files for download or uploa
 
 # Connection Profiles
 
-[Connection profiles](../Cyberduck/Profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
+[Connection profiles](../Cyberduck/Profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials. 
 
 ## Preferences → Profiles
 
-```{note}
-Prelimitary documentation for Cyberduck 8 and Mountain Duck version 4.8
-```
-
-Select connection protocols to be installed in addition to the default protocols listed above. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
+Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed above. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
 
 ```{note}
-You can't disable the default protocols. If you disable the connection profile used in a bookmark, the bookmark won't work after restarting the application.
+You cannot disable any of the default protocols or a connection profile in use.
 ```
