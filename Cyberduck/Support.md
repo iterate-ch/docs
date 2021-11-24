@@ -120,7 +120,7 @@ Debug logging can be enabled with a [hidden setting](Preferences.md#hidden-confi
 ````
 
 **Cyberduck 8.0 or later required**
-Alternatively, enable debug logging by ticking the corresponding checkmark in the Cyberduck Preferences Connection tab. You can reach the logging output by clicking on the Show button within the same Cyberduck Preferences section. The file is called cyberduck.log.
+Alternatively, enable debug logging by ticking the corresponding checkmark in the Cyberduck Preferences Connection tab.
 
 
 ## Feature Requests
