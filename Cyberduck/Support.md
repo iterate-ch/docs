@@ -26,6 +26,9 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 
 ## Logging Output
 
+**Cyberduck 8.0 or later required**
+You can reach the logging output by clicking on the Show button within the same Cyberduck Preferences section. The file is called cyberduck.log.
+
 ```````{tabs}
 ``````{group-tab} macOS
 
@@ -77,17 +80,6 @@ You can only access the transcript which will log protocol request and responses
 The transcript will be written in the *Terminal.app* window. Make sure to keep the window open after executing the command.
 ```
 
-**Debug Log**<br/>
-To enable debug logging open a *Terminal.app* window and enter
-
-`defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist logging debug`
-
-Reset the logging configuration with
-
-`defaults delete ~/Library/Preferences/ch.sudo.cyberduck.plist logging`
-
-Restart Cyberduck for any logging configuration change to take effect.
-
 
 **Heap Dump**<br/>
 To create a heap dump of the Cyberduck process on macOS (in case of excessive memory usage for example) you can use `jmap` from the {download}`OpenJDK 13<https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_mac_hotspot_13.0.2_8.pkg>`.
@@ -99,14 +91,37 @@ To create a heap dump of the Cyberduck process on macOS (in case of excessive me
 
 Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`.
 
+``````
+```````
 
-**Debug Log**<br/>
+### Debug Logging
+
+````{tabs}
+```{group-tab} macOS
+
+To enable debug logging open a *Terminal.app* window and enter
+
+`defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist logging debug`
+
+Reset the logging configuration with
+
+`defaults delete ~/Library/Preferences/ch.sudo.cyberduck.plist logging`
+
+Restart Cyberduck for any logging configuration change to take effect.
+
+```
+```{group-tab} Windows
+
 Debug logging can be enabled with a [hidden setting](Preferences.md#hidden-configuration-options). As there is no user interface for this yet you need to add the setting manually. If not existing yet you have to create the file [`%AppData%\Cyberduck\default.properties`](FAQ.md#preferences-and-application-support-files-location) and then add the property as follows:
 
 `logging=debug`
 
-``````
-```````
+```
+````
+
+**Cyberduck 8.0 or later required**
+Alternatively, enable debug logging by ticking the corresponding checkmark in the Cyberduck Preferences Connection tab. You can reach the logging output by clicking on the Show button within the same Cyberduck Preferences section. The file is called cyberduck.log.
+
 
 ## Feature Requests
 
