@@ -9,6 +9,10 @@ Rackspace Cloud Files
 
 # Connecting
 
+```{Note}
+All connection profiles are available through the *Preferences Profiles* tab.
+```
+
 ## Connection Profiles
 
 - **Rackspace US:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/default/Rackspace%20US.cyberduckprofile>` the *Rackspace US Connection Profile* for preconfigured settings. Containers from regions *DFW, ORD, IAD, HKG* and *SYD* are displayed in the browser.

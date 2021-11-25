@@ -14,6 +14,10 @@ Oracle Cloud Infrastructure
 
 ## Connecting
 
+```{Note}
+All connection profiles are available through the *Preferences Profiles* tab.
+```
+
 For connecting to OCI Object Storage, Cyberduck version 6.4.0 or later is required. You need to use the [OCI Amazon S3 Compatible API](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/s3compatibleapi.htm).
 
 Follow these instructions:

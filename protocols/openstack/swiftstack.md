@@ -9,6 +9,10 @@ SwiftStack
 
 ## Connection Profiles
 
+```{Note}
+All connection profiles are available through the *Preferences Profiles* tab.
+```
+
 Connect to a SwiftStack cluster via HTTP or HTTPS using these pre-configured [connection profiles](../../cyberduck/connection.md#connection-profiles):
 
 - **HTTP:** {download}`OpenStack Swift (SwiftStack HTTP).cyberduckprofile<http://files.swiftstack.com/OpenStack%20Swift%20(SwiftStack%20HTTP).cyberduckprofile>`

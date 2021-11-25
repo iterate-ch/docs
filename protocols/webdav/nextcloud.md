@@ -36,7 +36,10 @@ Choose one of the protocols:
 - Protocol: `WebDAV (HTTPS)`
 - Default Path: `/remote.php/webdav/`
 
-- Protocol: `Nextcloud & ownCloud`
+- Protocol: `Nextcloud`
+- Default Path will be automatically be filled in
+
+- Protocol: `ownCloud`
 - Default Path will be automatically be filled in
 
 ## Step-by-Step Instructions

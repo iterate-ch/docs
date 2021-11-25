@@ -30,6 +30,10 @@ zetta.io
 
 Connect to a [Swift (OpenStack Object Storage)](https://docs.openstack.org/swift/latest/) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.
 
+```{Note}
+All connection profiles are available through the *Preferences Profiles* tab.
+```
+
 ## Authentication Context Path
 
 ### Authetication with `devauth` for Context `/v1.0`

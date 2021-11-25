@@ -7,6 +7,10 @@ Wasabi Storage
 
 # Connecting
 
+```{Note}
+All connection profiles are available through the *Preferences Profiles* tab.
+```
+
 - **Wasabi US East 1 (N. Virginia)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-east-1).cyberduckprofile>` the *Wasabi Storage (us-east-1) Connection Profile* for preconfigured settings.
 - **Wasabi US East 2 (N. Virginia)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-east-2).cyberduckprofile>` the *Wasabi Storage (us-east-2) Connection Profile* for preconfigured settings.
 - **Wasabi US West 1 (Oregon)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-west-1).cyberduckprofile>` the *Wasabi Storage (us-west-1) Connection Profile* for preconfigured settings.
