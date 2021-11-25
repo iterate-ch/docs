@@ -91,9 +91,3 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 # [Preferences](preferences.md)
 
 - Settings available in the [Preferences](preferences.md) window.
-
-# Incompatibilities
-
-- *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowDragon.
-- Sophos Anti-Virus *On-access Scanning*.
-- Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).
