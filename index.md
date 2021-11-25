@@ -26,6 +26,10 @@ If you have a feature request or bug to report you can open a new ticket. The pa
 
 Cyberduck is a libre server and cloud storage browser for Mac and Windows. With an easy-to-use interface, connect to servers, enterprise file sharing, and cloud storage.
 
+## [Frequently Asked Questions (FAQ)](cyberduck/faq.md)
+
+Read more about system requirements, registration keys and incompatibilities.
+
 # ![Mountain Duck Application Icon](_images/mountainduck_y_64.png) [Mountain Duck](mountainduck/index.md)
 
 Mountain Duck lets you mount server and cloud storage as a disk in Finder on macOS and the File Explorer on Windows with a minimal User Interface and Smart Synchronisation feature that allows making files available offline.
