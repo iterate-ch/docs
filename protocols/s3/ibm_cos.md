@@ -18,6 +18,10 @@ Obtain HMAC [credentials](https://cloud.ibm.com/docs/cloud-object-storage?topic=
 
 ## Connection Profiles
 
+```{Note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 Using [Cross Region Endpoints](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-endpoints)
 
 - **us-geo:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/IBM%20COS%20(us-geo).cyberduckprofile>` the *IBM COS (us-geo) Connection Profile* for preconfigured settings.

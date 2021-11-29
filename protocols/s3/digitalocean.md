@@ -10,6 +10,10 @@ DigitalOcean Spaces
 
 # Connecting
 
+```{Note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 ## NYC3
 
 {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/DigitalOcean%20Spaces%20(nyc3).cyberduckprofile>` the *DigitalOcean Spaces (nyc3) Connection Profile* for preconfigured settings.
