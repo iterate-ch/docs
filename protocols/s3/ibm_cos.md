@@ -19,7 +19,7 @@ Obtain HMAC [credentials](https://cloud.ibm.com/docs/cloud-object-storage?topic=
 ## Connection Profiles
 
 ```{Note}
-All connection profiles are available through the *Preferences Profiles* tab.
+All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
 Using [Cross Region Endpoints](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-endpoints)

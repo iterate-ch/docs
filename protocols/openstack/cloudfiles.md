@@ -10,7 +10,7 @@ Rackspace Cloud Files
 # Connecting
 
 ```{Note}
-All connection profiles are available through the *Preferences Profiles* tab.
+All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
 ## Connection Profiles
