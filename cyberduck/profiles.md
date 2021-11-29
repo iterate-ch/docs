@@ -14,10 +14,6 @@ These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_li
 
 # Preferences → Profiles
 
-```{note}
-Prelimitary documentation for Cyberduck version 8
-``` 
-
 Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
 
 ```{image} _images/Preferences_Profiles_macOS.png
@@ -57,6 +53,7 @@ The following connection profiles are installed by default and can’t be delete
 - [DRACOON (OAuth)](../protocols/dracoon.md)
 - [Files.com](../protocols/files.com.md)
 - [Nextcloud](../protocols/webdav/nextcloud.md)
+- [ownCloud](../protocols/webdav/nextcloud.md)
 - [Rackspace Cloud Files (US)](../protocols/openstack/cloudfiles.md)
 
 # Technical File Format Specification
