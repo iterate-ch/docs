@@ -102,7 +102,7 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 ```
 
 ```{note}
-Files are saved in a obfuscated cache on local disk and cannot be accessed directly. You must keep the volume mounted but can access files regardless if a connection to the server is possible when marked with a green checkmark. Changes are synchronized in the background when the server is reachable.
+Files marked with a green checkmark remain accessible, regardless of the network connection to the server, while the volume is mounted. Changes are synchronized in the background when the server is reachable again. This is made possible by caching file contents in an obfuscated cache on local, which is unavailable for direct use.
 ```
 
 To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](interface.md#context-menu-in-finder-and-windows-file-explorer).
