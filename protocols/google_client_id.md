@@ -30,7 +30,7 @@ Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/
 
 # Edit Custom Connection Profile
 
-Create a custom [connection profile](../cyberduck/profiles.md) with the following properties.
+Create a custom [connection profile](profiles.md) with the following properties.
 
 - `OAuth Client ID`. Override the registered application client id.
 - `OAuth Client Secret`. Override the registered application client secret.

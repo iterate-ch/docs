@@ -529,7 +529,7 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 ## Disable use of Virtual Host Style Requests
 
-Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../../cyberduck/profiles.md) with the property set in `Properties`.
+Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../profiles.md) with the property set in `Properties`.
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
