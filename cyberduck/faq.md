@@ -129,7 +129,7 @@ There is also a [Chocolatey](http://chocolatey.org/packages?q=cyberduck) package
 `````{tabs}
 ````{group-tab} macOS
 
-Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookmarks, history, and [connection profiles](profiles.md) are saved in the application support directory. These settings are shared with [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
+Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookmarks, history, and [connection profiles](../protocols/profiles.md) are saved in the application support directory. These settings are shared with [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
 - `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/`
 
@@ -138,7 +138,7 @@ Navigate to the *Library* folder using `⌘⇧-L` or use *Go → Go to Folder...
 ````
 ````{group-tab} Windows
 
-Bookmarks, history, [profiles](profiles.md), and workspace information are saved in the application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
+Bookmarks, history, [connection profiles](../protocols/profiles.md), and workspace information are saved in the application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
 
 - `%AppData%\Cyberduck`
 

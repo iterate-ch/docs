@@ -1,66 +1,19 @@
 Connection Profiles
 ===
 
-[Connection profiles](connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
+[Connection profiles](../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
-- [Third-Party S3 providers](../protocols/s3/index.md#third-party-providers)
-- [OpenStack Providers](../protocols/openstack/index.md#third-party-providers)
+- [Third-Party S3 providers](s3/index.md#third-party-providers)
+- [OpenStack Providers](openstack/index.md#third-party-providers)
 
-These files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
+# Installation
+Connection profiles can be activated by either installing the file by double clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
 
+## Technical File Format Specification
 
-[Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
-
-
-# Preferences → Profiles
-
-Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. The profile will be disabled after closing the application.
-
-```{image} _images/Preferences_Profiles_macOS.png
-:alt: Send Command
-:width: 600px
+```{note}
+Connection profile files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually. [Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
 ```
-
-```{image} _images/Preferences_Profiles.png
-:alt: Send Command
-:width: 500px
-```
-## Limitations
-
-- After deleting the connection profile the existing corresponding bookmarks will continue to work until you restart Cyberduck. After restarting the application the bookmarks won't work as long as the specific connection profile is disabled.
-- Due to caching it's possible that the protocol still appears in the protocol dropdown menu in the bookmark window. You can work around this by opening a new browser window or restarting the application.
-
-## Default Connection Profiles
-
-The following connection profiles are installed by default and can’t be deleted:
-
-- [FTP (File Transfer Protocol)](../protocols/ftp.md)
-- [FTP-SSL (Explicit AUTH TLS)](../protocols/ftp.md)
-- [SFTP (SSH File Transfer Protocol)](../protocols/sftp.md)
-- [WebDAV (HTTP)](../protocols/webdav/index.md)
-- [WebDAV (HTTPS)](../protocols/webdav/index.md)
-- [Amazon S3](../protocols/s3/index.md)
-- [Google Cloud Storage](../protocols/google_cloud_storage.md)
-- [OpenStack Swift (Keystone 2.0)](../protocols/openstack/index.md)
-- [OpenStack Swift (Keystone 3)](../protocols/openstack/index.md)
-- [Windows Azure Blob Storage](../protocols/azure.md)
-- [Backblaze B2 Cloud Storage](../protocols/b2.md)
-- [Dropbox](../protocols/dropbox.md)
-- [Google Drive](../protocols/google_drive.md)
-- [Microsoft OneDrive](../protocols/onedrive.md)
-- [Microsoft Sharepoint](../protocols/sharepoint.md)
-- [Microsoft Sharepoint Site](../protocols/sharepoint.md)
-- [DRACOON (OAuth)](../protocols/dracoon.md)
-- [Files.com](../protocols/files.com.md)
-- [Nextcloud](../protocols/webdav/nextcloud.md)
-- [ownCloud](../protocols/webdav/nextcloud.md)
-- [Rackspace Cloud Files (US)](../protocols/openstack/cloudfiles.md)
-
-# Technical File Format Specification
-
-Connection profile files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually.
-
-[Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
 
 The following properties can be defined in a connection profile:
 
@@ -83,17 +36,17 @@ The following properties can be defined in a connection profile:
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../protocols/openstack/index.md) and [S3](../protocols/s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
-- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../protocols/s3/index.md#creating-a-bucket) for [S3](../protocols/s3/index.md) and [OpenStack Swift](../protocols/openstack/swiftstack.md) connections.
+- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](openstack/index.md) and [S3](s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](s3/index.md#creating-a-bucket) for [S3](s3/index.md) and [OpenStack Swift](openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
-- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
+- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile)
   * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
   * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
 
-## Example
+### Example
 
 - {download}`Disk template file (Adobe Photoshop)<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
 

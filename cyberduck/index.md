@@ -14,7 +14,6 @@ faq
 info
 notifications
 preferences
-profiles
 share
 spotlight
 support
