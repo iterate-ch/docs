@@ -40,7 +40,7 @@ Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 ````
 ````{group-tab} Linux
 
-You can install third party [profiles](../protocol/profiles) in `~/.duck/profiles/`.
+You can install third party [profiles](../protocols/profiles) in `~/.duck/profiles/`.
 
 ````
 `````
