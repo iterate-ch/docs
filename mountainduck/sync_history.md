@@ -19,59 +19,26 @@ Selecting an item reveals the file in the Finder (macOS) or File Explorer (Windo
 # Recent Files
 
 The *Recent Files* area shows the last 20 items that Mountain Duck uses for one of the following operations:
-
-## File Actions
-### Delete
-
-```{image} _images/delete.png
-:alt: Send Command
-:width: 50px
-```
-
-A file or folder has been deleted either *by you* or *on the server*
-
-### Create
-
-```{image} _images/plus.png
-:alt: Send Command
-:width: 50px
-```
-
-A file or folder was created or updated *on the server*.
-
-### Upload
-
-```{image} _images/transfer_upload.png
-:alt: Send Command
-:width: 50px
-```
-
-A file or folder was added or changed and is uploaded to the server.
-
-### Download
-
-```{image} _images/transfer_download.png
-:alt: Send Command
-:width: 50px
-```
-
-A file or folder is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
-
-### Error
-
-```{image} _images/alert.png
-:alt: Send Command
-:width: 50px
-```
-
-The sync operation failed for the file.
-
 ```{image} _images/Recent_Files.png
 :alt: Send Command
 :width: 600px
 ```
 
-A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](sync.md#sync-errors).
+## File Actions
+### ![Delete](_images/delete.png) Delete
+A file or folder has been deleted either *by you* or *on the server*
+
+### ![Create](_images/plus.png) Create
+A file or folder was created or updated *on the server*.
+
+### ![Upload](_images/transfer_upload.png) Upload
+A file or folder was added or changed and is uploaded to the server.
+
+### ![Download](_images/transfer_download.png) Download
+A file or folder is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
+
+### ![Error](_images/alert.png) Error
+The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](sync.md#sync-errors).
 
 ## Application Display
 
