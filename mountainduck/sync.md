@@ -24,67 +24,30 @@ Files and folders on a mounted volume have a status icon overlay in File Explore
 Please make sure to enable the Mountain Duck [Integration](installation.md) in *System Preferences → Extensions → Finder* on macOS.
 ```
 
-## Up to Date
-
-```{image} _images/overlay_uptodate.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![Up to Date](_images/overlay_uptodate.png) Up to Date
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
 
-## In Sync
-
-```{image} _images/overlay_sync.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![In Sync](_images/overlay_sync.png) In Sync
 The file or directory is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.
 
-## Online Only
-
-```{image} _images/overlay_infinite.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![Online Only](_images/overlay_infinite.png) Online Only
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
-## Sync in Progress
-
-```{image} _images/overlay_syncing.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![Sync in Progress](_images/overlay_syncing.png) Sync in Progress
 The file or directory is currently syncing with the server or cloud storage.
 
-## Sync Error
-
-```{image} _images/overlay_error.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![Sync Error](_images/overlay_error.png) Sync Error
 There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu.
 
-## Ignored
-
-```{image} _images/overlay_ignored.png
-:alt: Send Command
-:width: 50px
-```
-
+## ![Ignored](_images/overlay_ignored.png) Ignored
 The file is only saved in a local temporary location and never synced to the server or cloud storage.
 
 
+# Context Menu Options
 ```{image} _images/Mountain_Duck_Screenshot_Finder_Dark.png
 :alt: Send Command
 :width: 800px
 ```
-
-# Context Menu Options
 
 ```{admonition} macOS only
 :class: tip
