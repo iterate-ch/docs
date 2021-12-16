@@ -14,7 +14,7 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 
 - *Default:* Use setting from *Preferences*
 - *Online:* Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](#select-files-and-folders-to-always-keep-offline).
+- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](#keep-offline).
 
 # Status of Files
 
@@ -55,27 +55,27 @@ The file is only saved in a local temporary location and never synced to the ser
 Please make sure to enable the Mountain Duck [Integration](interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
 ```
 
-## Select Files and Folders to Always Keep Offline
+## Keep Offline
 
-You can choose to make files and folders available offline in the context menu. Those files and folders are located within an obfuscated synchronization cache and can't be accessed outside of your bookmark. You need an active connection to the bookmark to see the offline folders. That means that you have to connect to your server once while you have access to an active internet connection. If you don't disconnect the bookmark and the connection to the server isn't interrupted otherwise you can still access the files that are located within the local synchronization cache. As soon as you are connected to the internet again, all changes are transferred to the server in the background.
+Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
 ```{image} _images/Sync_Context_Menu_macOS.png
 :alt: Send Command
 :width: 500px
 ```
 
+```{note}
+As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. This is made possible by caching file contents in an obfuscated cache on a local disk, which is unavailable for direct use.
+```
+
 To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](interface.md#context-menu-in-finder-and-windows-file-explorer).
 
-### Keep Offline
-
-Choose *Mountain Duck → Keep Offline on Local Disk* to make the file available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
-
-### Delete on Local Disk
+## Delete on Local Disk
 
 Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk
 
 ```{note}
-Choosing this option won't prevent Mountain Duck from downloading there files and folders into the synchronization cache again.
+Files will get cached again regardless this setting if accessed again later (e.g. Finder and Windows Explorer thumbnail preview and media file metadata retrieval).
 ```
 
 <video width="800" height="450" controls>
