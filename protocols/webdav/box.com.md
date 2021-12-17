@@ -5,7 +5,14 @@ Box.com
 
 # Connecting
 
-## FTP
+## Connection Profile
+
+Use the default *Box* profile to connect to your server using the box API.
+The default profile allows to connect to account with OAuth login enabled.
+
+## Manual Configuration
+
+### FTP
 
 ```{important}
 Only available for Box.com business and enterprise accounts
@@ -18,7 +25,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 - Username: Your Box account email address
 - Password: Your Box account password
 
-## WebDAV
+### WebDAV
 
 ```{warning}
 Box.com WebDAV support reached end-of-life at October 25th, 2019
@@ -34,6 +41,14 @@ Alternatively, enter the following information in the [bookmark](../../cyberduck
 - Username: Your Box account email address
 - Password: Your Box account password
 - Path: `dav`
+
+# Share
+
+```{note}
+Only available using the default *Box* connection profile.
+```
+
+Create [URL shares](../../cyberduck/share#box.com) for people who are not Box users by using *File → Share...*.
 
 # References
 

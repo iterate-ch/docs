@@ -17,6 +17,7 @@ Many storage providers have an option to share a file with a third party without
 | Google Drive | ✅ | ✅ | ❌ |
 | Dropbox | ❌ | ✅ | ❌ |
 | DRACOON | ✅ | ✅ | ✅ |
+| Box | ✅ | ✅ | ✅ |
 
 # Providers with support to share a file using a public, password protected or temporary URL
 
@@ -175,12 +176,34 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 ````
 ````{group-tab} Mountain Duck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public share with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Download_Share_Context_Menu.png
 :alt: Send Command
 :width: 300px
 ```
+
+````
+`````
+
+## [Box.com](../protocols/webdav/box.com.md)
+
+`````{tabs}
+````{group-tab} Cyberduck
+
+Create download shares by choosing *File → Share...*. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. An Box account is not required to open the URL.
+
+````
+````{group-tab} Mountain Duck
+
+Create download shares for files and folders. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
+
+```{image} _images/Download_Share_Box.png
+:alt: Send Command
+:width: 300px
+```
+
+Create upload shares for folders. Optionally set a password required to upload files or folders. Choose *Cancel* to create a public URL without password protection. Choose *Create Upload Share* from the [context menu](../mountainduck/interface.md#share).
 
 ````
 `````
