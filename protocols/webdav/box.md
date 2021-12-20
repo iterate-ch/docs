@@ -48,7 +48,7 @@ Alternatively, enter the following information in the [bookmark](../../cyberduck
 Only available using the default *Box* connection profile.
 ```
 
-Create [URL shares](../../cyberduck/share#box.com) for people who are not Box users by using *File → Share...*.
+Create [URL shares](../../cyberduck/share.md#box) for people who are not Box users by using *File → Share...*.
 
 # References
 

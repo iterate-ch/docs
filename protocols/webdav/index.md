@@ -5,7 +5,7 @@ WebDAV
 :hidden:
 
 bigcommerce
-box.com
+box
 gmx
 ikeepincloud
 nextcloud
@@ -22,7 +22,7 @@ Settings are specific to service providers. Use the provided [connection profile
 - [Nextcloud](nextcloud.md)
 - [ownCloud](nextcloud.md)
 - [GMX Mediacenter](gmx.md)
-- [box.com](box.com.md)
+- [Box](box.md)
 - [BigCommerce](bigcommerce.md)
 - [iKeepinCloud](ikeepincloud.md)
 - [pCloud](pcloud.md)
