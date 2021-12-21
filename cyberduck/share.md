@@ -17,6 +17,7 @@ Many storage providers have an option to share a file with a third party without
 | Google Drive | ✅ | ✅ | ❌ |
 | Dropbox | ❌ | ✅ | ❌ |
 | DRACOON | ✅ | ✅ | ✅ |
+| Box | ✅ | ✅ | ✅ |
 
 # Providers with support to share a file using a public, password protected or temporary URL
 
@@ -175,11 +176,31 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 ````
 ````{group-tab} Mountain Duck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public share with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Download_Share_Context_Menu.png
 :alt: Send Command
 :width: 300px
+```
+
+````
+`````
+
+## [Box](../protocols/box.md)
+
+`````{tabs}
+````{group-tab} Cyberduck
+
+Create download shares by choosing *File → Share...*. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
+
+````
+````{group-tab} Mountain Duck
+
+Create download shares for files and folders and upload shares for folders. Choose *Cancel* to create a public URL without password protection. Choose *Create Download Share* or *Create Upload Share* from the [context menu](../mountainduck/interface.md#share) respectively. Optionally set a password required to download the file or folder.
+
+```{image} _images/Download_Share_Box.png
+:alt: Box
+:width: 400px
 ```
 
 ````

@@ -1,7 +1,10 @@
 Microsoft OneDrive
 ===
 
-![OneDrive Drive Icon](_images/onedrive_128.png)
+```{image} _images/onedrive.png
+:alt: Microsoft OneDrive
+:width: 128px
+```
 
 # Connecting
 

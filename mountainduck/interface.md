@@ -63,7 +63,7 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 ## Connect Mode
 
 - **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync.md#select-files-and-folders-to-always-keep-offline).
+- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync.md#keep-offline).
 
 ## Read-Only Volume
 
@@ -186,7 +186,7 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 # Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
-Refer to [Sync Options](sync.md#select-files-and-folders-to-always-keep-offline)
+Refer to [Sync Options](sync.md#keep-offline)
 
 # Reload
 
