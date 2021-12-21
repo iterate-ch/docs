@@ -186,7 +186,7 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 ````
 `````
 
-## [Box](../protocols/webdav/box.md)
+## [Box](../protocols/box.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck

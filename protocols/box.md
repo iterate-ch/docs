@@ -1,24 +1,30 @@
 Box.com
 ===
 
-> [box](https://box.com/) Simple, secure file sharing and collaboration from anywhere.
+```{image} _images/box.png
+:alt: Box
+:width: 128px
+```
+
+```{tip}
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Box Drive*.
+```
+
+> [Box](https://box.com/) Simple, secure file sharing and collaboration from anywhere.
 
 # Connecting
 
-## Connection Profile
+Use the default *Box* connection profile to connect to your server using the Box API. This allows to have Multi-Factor Authentication enabled for your accout.
 
-Use the default *Box* profile to connect to your server using the box API.
-The default profile allows to connect to account with OAuth login enabled.
-
-## Manual Configuration
+## Alternate Connection Options
 
 ### FTP
 
 ```{important}
-Only available for Box.com business and enterprise accounts
+Only available for Box business and enterprise accounts
 ```
 
-Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
+Enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
 - Protocol: `FTP` or `FTPS`
 - Server: `ftp.box.com`
@@ -28,13 +34,13 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 ### WebDAV
 
 ```{warning}
-Box.com WebDAV support reached end-of-life at October 25th, 2019
+Box WebDAV support reached end-of-life at October 25th, 2019
 ```
 
 1. {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Box.cyberduckprofile>` the *Box Connection Profile* for preconfigured settings.
 2. Enter your email address for the username.
 
-Alternatively, enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
+Alternatively, enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `dav.box.com`
@@ -48,7 +54,7 @@ Alternatively, enter the following information in the [bookmark](../../cyberduck
 Only available using the default *Box* connection profile.
 ```
 
-Create [URL shares](../../cyberduck/share.md#box) for people who are not Box users by using *File → Share...*.
+Create [URL shares](../cyberduck/share.md#box) for people who are not Box users by using *File → Share...*.
 
 # References
 
