@@ -2,7 +2,7 @@ Windows Azure Blob Storage
 ===
 
 ```{image} _images/azure.png
-:alt: Send Command
+:alt: Azure Blob Storage
 :width: 128px
 ```
 
