@@ -191,19 +191,17 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create download shares by choosing *File → Share...*. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. An Box account is not required to open the URL.
+Create download shares by choosing *File → Share...*. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
 
 ````
 ````{group-tab} Mountain Duck
 
-Create download shares for files and folders. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
+Create download shares for files and folders and upload shares for folders. Choose *Cancel* to create a public URL without password protection. Choose *Create Download Share* or *Create Upload Share* from the [context menu](../mountainduck/interface.md#share) respectively. Optionally set a password required to download the file or folder.
 
 ```{image} _images/Download_Share_Box.png
-:alt: Send Command
-:width: 300px
+:alt: Box
+:width: 400px
 ```
-
-Create upload shares for folders. Optionally set a password required to upload files or folders. Choose *Cancel* to create a public URL without password protection. Choose *Create Upload Share* from the [context menu](../mountainduck/interface.md#share).
 
 ````
 `````
