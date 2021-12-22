@@ -41,15 +41,6 @@ All authentication codes expire after 90 days. If you get the error message `For
 | Microsoft SharePoint Site | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* | Can't mount specific directories | Yes |
 | Microsoft SharePoint Document Library	| Can't mount specific directories | Does not allow access to groups<br/><br/>Only needed for versions **prior Cyberduck 6.9 / Mountain Duck 2.7** | No |
 
-### Office 365 Deutschland
-
-```{attention}
-The separate `Microsoft Cloud Deutschland` won't be available anymore after 26. Oct 2021. For more information regarding the migration refer to this [announcement article](https://www.microsoft.com/de-de/cloud-platform/germany-cloud-regions).
-```
-
-1. {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Microsoft%20365%20China%20OneDrive.cyberduckprofile>` the *Microsoft Office 365 Deutschland OneDrive* profile
-2. Use the *Microsoft Office 365 Deutschland OneDrive profile* and login with your `*.onmicrosoft.de` account to `login.microsoftonline.de` to connect to your OneDrive
-
 ## Administrator Consent Required
 
 Depending on the setup of your AAD you may need to perform several steps in order for you to be able to access your OneDrive. Please get in contact with your domain administrator for following steps.
