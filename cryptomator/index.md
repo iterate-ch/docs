@@ -96,7 +96,7 @@ When `Preferences → Cryptomator → Auto detect and open vault in browser` is 
 ````{tabs}
 ```{group-tab} Cyberduck
 
-Choose the *Cryptomator* button in the toolbar or the option in the *File* menu to unlock and lock a Cryptomator Vault.
+Choose the *Cryptomator* button in the toolbar or *File → Unlock/Lock Vault* menu to unlock or lock a Cryptomator Vault.
 
 ```
 ```{group-tab} Mountain Duck
@@ -109,6 +109,9 @@ Lock and unlock vaults within the Finder or Windows Explorer using the context m
 ```
 ````
 
+```{attention}
+The menu option is disabled if you have set Preferences → Cryptomator → Auto detect and open vault in browser
+```
 
 ## Save Passphrase
 
