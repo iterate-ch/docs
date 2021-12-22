@@ -70,7 +70,7 @@ Choose *File → New Vault…* to create a new Vault.
 
 ## Discovery
 
-When `Preferences → Cryptomator → Auto detect and open vault in browser` is enabled, opening a directory in the browser that is a Cryptomator Vault, a prompt is displayed to unlock the Vault using the provided passphrase and decrypt the directory and filenames. If you cancel the prompt, the encrypted Vault content is displayed.
+When _Preferences → Cryptomator → Auto detect and open vault in browser_ is enabled, opening a directory in the browser that is a Cryptomator Vault, a prompt is displayed to unlock the Vault using the provided passphrase and decrypt the directory and filenames. If you cancel the prompt, the encrypted Vault content is displayed.
 
 `````{tabs}
 ````{group-tab} macOS
@@ -96,7 +96,7 @@ When `Preferences → Cryptomator → Auto detect and open vault in browser` is 
 ````{tabs}
 ```{group-tab} Cyberduck
 
-Choose the *Cryptomator* button in the toolbar or *File → Unlock/Lock Vault* menu to unlock or lock a Cryptomator Vault.
+Choose the *Cryptomator* button in the toolbar or *File → Unlock Vault* and *File →Lock Vault* menu to unlock or lock a vault respectively.
 
 ```
 ```{group-tab} Mountain Duck
