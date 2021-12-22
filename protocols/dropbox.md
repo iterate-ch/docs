@@ -6,10 +6,8 @@ Dropbox
 :width: 128px
 ```
 
-> Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer.
-
 ```{tip}
-Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Dropbox Client*.
+Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Dropbox Client*.
 ```
 
 # Connecting
@@ -57,6 +55,12 @@ You can share an URL to provide access to a document in your Dropbox from *File 
 
 ## Restricted Content
 
-> The file cannot be transferred because the content is restricted. For example, sometimes there are legal restrictions due to copyright claims.
+Downloads may fail with a `409 Conflict (restricted_content)` error reply for files considered restricted.
 
-Downloads may fail when Dropbox returns a `409 Conflict (restricted_content)` error reply for files considered restricted.
+```{attention}
+The file cannot be transferred because the content is restricted. For example, sometimes there are legal restrictions due to copyright claims.
+```
+
+## Will not save the file or folder because of its name.
+
+Uploads may fail with a `409 (disallowed_name)` error reply for files with certain characters in the filename.
