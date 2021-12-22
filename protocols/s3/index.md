@@ -351,11 +351,11 @@ Specify after how many days a file in a bucket should be moved to Amazon Glacier
 This function is currently Cyberduck only.
 ```
 
-You can temporarily restore files from Glacier using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
+You can temporarily restore files from *Glacier* and *Glacier Deep Archive* using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
 
 ### Glacier Retrieval Options
 
-You can set retrieval options with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
+You can set retrieval options for the storage classes *Glacier* and *Glacier Deep Archive* with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
 Sets Glacier retrieval tier at which the restore will be processed.
 
