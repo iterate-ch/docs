@@ -2,7 +2,7 @@ Dropbox
 ===
 
 ```{image} _images/dropbox.png
-:alt: Send Command
+:alt: Bropbox Drive Icon
 :width: 128px
 ```
 

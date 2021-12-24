@@ -2,7 +2,7 @@ Google Drive
 ===
 
 ```{image} _images/googledrive.png
-:alt: Send Command
+:alt: Google Drive Icon
 :width: 128px
 ```
 

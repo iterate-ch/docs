@@ -35,7 +35,7 @@ Currently macOS only, Cyberduck 7.3 or later required
 Assign multiple labels to a bookmark to group them in folders in the menu.
 
 ```{image} _images/Edit_Labels_for_Bookmark.png
-:alt: Send Command
+:alt: Edit Labels for Bookmark
 :width: 500px
 ```
 
@@ -44,7 +44,7 @@ Assign multiple labels to a bookmark to group them in folders in the menu.
 Bookmarks are grouped in folders in the menu by their assigned labels. Groups in bookmark view forthcoming.
 
 ```{image} _images/Groups_in_Bookmarks_Menu.png
-:alt: Send Command
+:alt: Groups in Bookmarks Menu
 :width: 400px
 ```
 
@@ -58,14 +58,14 @@ Bookmarks are grouped in folders in the menu by their assigned labels. Groups in
 Select *Bookmarks → Toggle Bookmarks (`⌘B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
 ```{image} _images/Add_Bookmark.png
-:alt: Send Command
+:alt: Add Bookmark
 :width: 400px
 ```
 
 Drag the proxy icon in the browser window title bar to the bookmark drawer or to the *Finder.app*. You can double-click this file in the *Finder.app* to open a new connection.
 
 ```{image} _images/Proxy_Icon.png
-:alt: Send Command
+:alt: Proxy Icon
 :width: 400px
 ```
 
@@ -75,7 +75,7 @@ Drag the proxy icon in the browser window title bar to the bookmark drawer or to
 Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
 ```{image} _images/Add_Bookmark.png
-:alt: Send Command
+:alt: Add Bookmark
 :width: 400px
 ```
 
@@ -91,7 +91,7 @@ Drag an URL from a third-party application to the bookmark table to create a new
 Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel where you can edit the bookmark's properties will appear. If the server configured is not reachable, an alert icon is displayed next to the URL. Clicking it opens *Network Diagnostics*.
 
 ```{image} _images/WebDAV_Bookmark_Client_Certificate.png
-:alt: Send Command
+:alt: WebDAV Bookmark Client Certificate
 :width: 600px
 ```
 
@@ -142,7 +142,7 @@ Example configuration:
 | HTTP URL | [http://sudo.ch/stylesheet.css](http://sudo.ch/stylesheet.css) | *Accessible in the web browser* |
 
 ```{image} _images/HTTP_URL.png
-:alt: Send Command
+:alt: HTTP ULR
 :width: 600px
 ```
 
@@ -153,7 +153,7 @@ See also [Open or copy HTTP URL](browser.md#open-or-copy-http-url).
 Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer* (e.g. the Desktop). You can double-click the document in the file browser to open a new connection to the server specified in the bookmark. To back up all bookmarks, refer to [this FAQ entry](faq.md#preferences-and-application-support-files-location).
 
 ```{image} _images/Drag_Bookmark.png
-:alt: Send Command
+:alt: Drag Bookmark
 :width: 300px
 ```
 
@@ -195,7 +195,7 @@ You are asked if you want to import bookmarks from the following list of applica
 - *Cloud Mounter* from `~/Library/Preferences/com.eltima.cloudmounter.plist`
 
 ```{image} _images/Filezilla_Import.png
-:alt: Send Command
+:alt: FileZilla Import
 :width: 600px
 ```
 

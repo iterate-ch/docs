@@ -43,7 +43,7 @@ Log output can be found in the `cyberduck.log` file in `~/Library/Logs/Cyberduck
 You can easily `cyberduck.log` in *Console.app* (Open from `/Applications/Utilities`) under `Reports → Log Reports → cyberduck.log`.
 
 ```{image} _images/Console.app.png
-:alt: Send Command
+:alt: Console.app
 :width: 600px  
 ```
 

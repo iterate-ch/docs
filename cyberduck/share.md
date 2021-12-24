@@ -34,7 +34,7 @@ Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-ur
 Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/S3_Pre-Signed_URL.png
-:alt: Send Command
+:alt: Pre-Signed URL
 :width: 400px
 ```
 
@@ -84,7 +84,7 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/B2_Authorized_URL.png
-:alt: Send Command
+:alt: B2 Authorized URL
 :width: 600px
 ```
 
@@ -129,7 +129,7 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *C
 You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Edit → Copy URL → Signed URL*.
 
 ```{image} _images/Passphrase_Prompt_Dropbox_Share.png
-:alt: Send Command
+:alt: Passphrase Prompt Dropbox Share
 :width: 400px
 ```
 
@@ -139,7 +139,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Passphrase_Prompt_Dropbox_Share.png
-:alt: Send Command
+:alt: Passphrase Prompt Dropbox Share
 :width: 400px
 ```
 
@@ -159,7 +159,7 @@ Share the web link to open download or open the file in Google Docs. This will s
 Share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Share_File_Google_Drive_.png
-:alt: Send Command
+:alt: Share File Google Drive
 :width: 400px
 ```
 
@@ -179,7 +179,7 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public share with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Download_Share_Context_Menu.png
-:alt: Send Command
+:alt: Download Share Context Menu
 :width: 300px
 ```
 
@@ -199,7 +199,7 @@ Create download shares by choosing *File → Share...*. Optionally set a passwor
 Create download shares for files and folders and upload shares for folders. Choose *Cancel* to create a public URL without password protection. Choose *Create Download Share* or *Create Upload Share* from the [context menu](../mountainduck/interface.md#share) respectively. Optionally set a password required to download the file or folder.
 
 ```{image} _images/Download_Share_Box.png
-:alt: Box
+:alt: Download Share Box
 :width: 400px
 ```
 

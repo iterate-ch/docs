@@ -23,7 +23,7 @@ An auto update feature will alert you when a new version is available and self u
 Snapshot builds include the latest changes and are published regularly. These builds are not tested.
 
 ```{image} _images/Update.png
-:alt: Send Command
+:alt: Update
 :width: 500px
 ```
 

@@ -2,7 +2,7 @@ Box.com
 ===
 
 ```{image} _images/box.png
-:alt: Box
+:alt: Box Drive Icon
 :width: 128px
 ```
 

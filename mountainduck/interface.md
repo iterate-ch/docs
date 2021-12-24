@@ -9,7 +9,7 @@ Mountain Duck runs in the status bar (macOS) and taskbar (Windows).
 ````{group-tab} macOS
 
 ```{image} _images/Status_Bar_Menu_Mac_Dark.png
-:alt: Send Command
+:alt: Status Bar Menu (macOS Dark)
 :width: 800px
 ```
 <br/>
@@ -40,11 +40,11 @@ Choose *Open Connection...* to add a new bookmark or *<Bookmark> → Edit Bookma
 Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
 
 ```{image} _images/Edit_Bookmark_macOS.png
-:alt: Send Command
+:alt: Edit Bookmark (macOS)
 :width: 500px
 ```
 ```{image} _images/Edit_Bookmark_Windows.png
-:alt: Send Command
+:alt: Edit Bookmark (Windows)
 :width: 500px
 ```
 
@@ -56,7 +56,7 @@ Version 4.0 or later required.
 Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the status bar menu by their assigned labels.
 
 ```{image} _images/Taskbar_Menu_Bookmark_Groups_Large_Icons_Windows.png
-:alt: Send Command
+:alt: Taskbar Menu Bookmark Groups (Windows, Large Icons)
 :width: 400px
 ```
 
@@ -86,7 +86,7 @@ Version 4.4 or later required.
 You can search for bookmarks with the filter input field in the menu. Bookmarks not matching the input are greyed out.
 
 ```{image} _images/Bookmark_Search_Input.png
-:alt: Send COmmand 
+:alt: Bookmark Search Input
 :width: 400px
 ```
 
@@ -131,7 +131,7 @@ Enter the commmand `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Bo
 # Notifications
 
 ```{image} _images/File_Added_Notification_Windows.png
-:alt: Send Command
+:alt: File Added Notification (Windows)
 :width: 600px
 ```
 
@@ -179,7 +179,7 @@ Drag files in *Finder.app* an macOS or *File Explorer* on Windows to move and co
 A context menu in *Finder* on macOS and *File Explorer* on Windows allows various actions on files.
 
 ```{image} _images/Context_Menu_Windows.png
-:alt: Send Command
+:alt: Context Menu (Windows)
 :width: 600px
 ```
 
@@ -207,7 +207,7 @@ Right-click files on a mounted drive will open a menu with items to copy & open 
 [Read more](../cyberduck/share.md) about sharing options.
 
 ```{image} _images/Mountain_Duck_Finder_Context_Menu.png
-:alt: Send Command
+:alt: Mountain Duck Finder Context Menu
 :width: 1000px
 ```
 
@@ -233,19 +233,19 @@ This feature is not supported in the version available in the Mac App Store.
 Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](../cyberduck/info.md).
 
 ```{image} _images/Info_Window_CDN.png
-:alt: Send Command
+:alt: Info Window CDN
 :width: 400px
 ```
 ```{image} _images/Info_Window_S3.png
-:alt: Send Command
+:alt: Info Window S3
 :width: 400px
 ```
 ```{image} _images/Info_Window_Permissions.png
-:alt: Send Command
+:alt: Info Window Permissions
 :width: 400px
 ```
 ```{image} _images/Info_Window_Metadata.png
-:alt: Send Command
+:alt: Info Window Metadata
 :width: 400px
 ```
 
