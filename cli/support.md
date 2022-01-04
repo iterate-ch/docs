@@ -1,7 +1,7 @@
 Support
 ====
 
-# Application Support Directory
+## Application Support Directory
 
 `````{tabs}
 ````{group-tab} macOS
@@ -23,7 +23,7 @@ The support directory is `~/.duck/`.
 ````
 `````
 
-## Profiles
+### Profiles
 
 The directory location is printed with `--help` following the list of supported protocols.
 
@@ -45,13 +45,13 @@ You can install third party [profiles](../protocols/profiles) in `~/.duck/profil
 ````
 `````
 
-# Logging Output
+## Logging Output
 
 The logging output is written directly into the command line:
 
 - **macOS:** Open *Terminal.app* and type `-v`
 - **Windows:** Open *cmd.exe* and type `-v`
 
-## Enable Debug Logging
+### Enable Debug Logging
 
 To enable debug logging use the parameter `--debug`. Alternatively, set the [environment variable](index.md#preferences) `logging` to the level `debug`, `info`, `warn`, or `error`.

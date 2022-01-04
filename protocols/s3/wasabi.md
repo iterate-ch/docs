@@ -5,7 +5,7 @@ Wasabi Storage
 
 [Wasabi](https://wasabi.com/) is a S3 compatible object storage.
 
-# Connecting
+## Connecting
 
 ```{Note}
 All connection profiles are available through the *Preferences → Profiles* tab.
@@ -18,12 +18,12 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
 - **Wasabi US Central 1 (Texas)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(us-central-1).cyberduckprofile>` the *Wasabi Storage (us-central-1) Connection Profile* for preconfigured settings.
 
-# Known Issues
+## Known Issues
 
-## 301 Moved Permanently but no location header
+### 301 Moved Permanently but no location header
 
 You are connected with a connection profile specific to a region not matching the bucket region. Please install the additional connection profile for the specific region of the bucket.
 
-# References
+## References
 
 - [How do I use Cyberduck or Mountain Duck with Wasabi?](https://wasabi-support.zendesk.com/hc/en-us/articles/115001671012-How-do-I-use-Cyberduck-or-Mountain-Duck-with-Wasabi-)

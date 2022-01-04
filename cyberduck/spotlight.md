@@ -1,11 +1,11 @@
 Spotlight (macOS)
 ====
 
-# Search bookmarks with Spotlight
+## Search bookmarks with Spotlight
 
 Cyberduck includes a custom *Spotlight Importer Plugin* to search the contents of its bookmarks files.
 
-# Using the Spotlight Menu
+## Using the Spotlight Menu
 
 ```{note}
 The *Spotlight Menu* does return no results for recently connected servers in Cyberduck because it excludes indexed files located in `~/Library/Application Support/Cyberduck/History`. This is also an issue for Adium.
@@ -13,7 +13,7 @@ The *Spotlight Menu* does return no results for recently connected servers in Cy
 
 As a workaround, you have to export all bookmarks to another location such as your *Documents* folder. Select all bookmarks *(⌘A)* in the bookmark list and drag these somewhere in your *Documents* folder in the Finder. You can then search bookmarks in the *Spotlight Menu* by nickname and hostname. Additionally, to display all bookmarks as a result search for `kind:"Cyberduck Bookmark"`.
 
-# Create a Smart Folder in Finder to Search Bookmark Files
+## Create a Smart Folder in Finder to Search Bookmark Files
 
 Using custom search criteria, you can create a smart folder in *Finder.app* to display all recently connected servers and other bookmarks you have manually exported from Cyberduck.
 

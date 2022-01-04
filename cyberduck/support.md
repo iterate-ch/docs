@@ -1,9 +1,9 @@
 Support
 ====
 
-# Get Support
+## Get Support
 
-## Feature Requests
+### Feature Requests
 
 If you have a feature request please make sure to include a detailed and comprehensible description of the requested feature in [the ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose). Make sure to check if someone already requested a similar feature.
 
@@ -11,7 +11,7 @@ If you have a feature request please make sure to include a detailed and compreh
 For issues with your remote storage user account credentials, please instead write to your hosting service provider. 
 ```
 
-## Bug Reports
+### Bug Reports
 
 [Open a new ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose) with a description of what you have done and what went wrong. Make sure to look or search for existing issues first.
 
@@ -23,7 +23,7 @@ Discuss features and issues you are having in the [Cyberduck Google Group](http:
 Please be aware that you are possibly using our software at no charge if you have not purchased a registration key. Thus the support provided here is best effort only.
 ```
 
-# Logging Output
+## Logging Output
 
 ```{note}
 Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
@@ -75,7 +75,7 @@ Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`.
 ``````
 ```````
 
-## Debug Logging Level
+### Debug Logging Level
 Enable debug logging by choosing _Preferences → Connection → Log → Enable debug log_. Alternatively this can be configured using the following command line options.
 
 ````{tabs}
@@ -101,7 +101,7 @@ Debug logging can be enabled with a [hidden setting](preferences.md#hidden-confi
 ```
 ````
 
-# Application Support Folder
+## Application Support Folder
 
 Inside the application support folder, the application saves files needed for their operations e.g. settings, log data, history files, etc.
 
@@ -118,7 +118,7 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 ````
 `````
 
-## Crash Reports
+### Crash Reports
 
 `````{tabs}
 ````{group-tab} macOS

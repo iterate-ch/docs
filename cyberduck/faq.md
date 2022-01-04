@@ -1,13 +1,13 @@
 FAQ
 ====
 
-# General
+## General
 
-## What is Cyberduck?
+### What is Cyberduck?
 
 Cyberduck is an open-source server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure & OneDrive, Google Drive, and Dropbox licensed under the [GPL](https://github.com/iterate-ch/cyberduck/blob/master/LICENSE.txt).
 
-## Is Cyberduck Free?
+### Is Cyberduck Free?
 
 Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this programm useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key and it will help to make Cyberduck even better!
 
@@ -16,17 +16,17 @@ Cyberduck is free software. Free software is a matter of the users' freedom to r
 :width: 600px
 ```
 
-## Mac App Store
+### Mac App Store
 
 The presence of Cyberduck is important for the visibility of the project in particular for new and average users on the Mac platform. The caveat is that the donation key model is not supported in the App Store per the developer agreement. Software asking for voluntary contributions does not get approved. We have therefore opted to distribute Cyberduck in the App Store for a fixed price with no donation prompt. It is your choice to buy the version from the App Store or download from the website and opt in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
 Your purchase receipt from the App Store version is copied to the Application Support folder and recognized as a key when running any version of Cyberduck.
 
-## Windows App Store
+### Windows App Store
 
 The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
-### Troubleshooting
+#### Troubleshooting
 
 If you bought Cyberduck on Windows Store, but you are not allowed to use Cyberduck due to a Trial Expired error message, please execute the following steps to ensure that your local app license cache is up-to-date – a reinstall of Cyberduck via Windows Store does not refresh your license.
 
@@ -47,21 +47,21 @@ If these steps are not resolving the trial expired message please follow these a
 3. Paste it into the window
 4. Run it and wait for completion.
 
-# Registration Keys
+## Registration Keys
 
 As a contributor to Cyberduck, you receive a registration key that disables the donation prompt that is displayed when quitting Cyberduck.
 
-## Recover a Registration Key
+### Recover a Registration Key
 
 Registration keys can be [recovered](https://cyberduck.io/help#recover) using the email address you registered within the donation process.
 
-## No Registration Key Received
+### No Registration Key Received
 
 - A key is sent when the payment is no more pending.
 - Verify that your email address registered with PayPal is still valid.
 - Check the spam folder of your email application.
 
-## The Registration Key Received Cannot be Opened
+### The Registration Key Received Cannot be Opened
 
 The registration key is sent to you by email automatically after the Paypal transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
 
@@ -69,7 +69,7 @@ The registration key is sent to you by email automatically after the Paypal tran
 - Contact you hosting service provider how to download attachments.
 - Forward the mail to a different mail account where you possibly don't have an issue downloading attachments.
 
-# System Requirements
+## System Requirements
 
 `````{tabs}
 ````{group-tab} macOS
@@ -97,7 +97,7 @@ Requires *.NET Framework 4.7.2*. If the [.NET Framework installation](https://do
 ````
 `````
 
-# Installation
+## Installation
 
 `````{tabs}
 ````{group-tab} macOS
@@ -124,7 +124,7 @@ There is also a [Chocolatey](http://chocolatey.org/packages?q=cyberduck) package
 ````
 `````
 
-## Preferences and Application Support Files Location
+### Preferences and Application Support Files Location
 
 `````{tabs}
 ````{group-tab} macOS
@@ -151,15 +151,15 @@ Preferences are stored in `%AppData%\iterate_GmbH\Cyberduck.exe_Url_[id]\[versio
 ````
 `````
 
-# Bug Reports and Feature Requests
+## Bug Reports and Feature Requests
 
 To get help with bugs, feature requests, or other issues please refer to the [support page](support.md).
 
-# Snapshot and Beta builds
+## Snapshot and Beta builds
 
 See [Preferences → Update](preferences.md#update).
 
-# Incompatibilities
+## Incompatibilities
 
 - *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowDragon.
 - Sophos Anti-Virus *On-access Scanning*

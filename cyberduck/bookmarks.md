@@ -1,7 +1,7 @@
 Bookmarks
 ====
 
-# Toggle Bookmarks
+## Toggle Bookmarks
 
 `````{tabs}
 ````{group-tab} macOS
@@ -16,21 +16,21 @@ You can toggle between the bookmarks and the browser using *Bookmarks → Toggle
 ````
 `````
 
-# Sorting 
+## Sorting 
 
 You can manually sort bookmarks by dragging a row to a different location.
 
-# Filter
+## Filter
 
 Use the search field *(macOS `⌘/` Windows `Strg+F`)* to filter bookmarks by nickname, hostname, and labels. Only bookmarks that match the search string are displayed in the bookmark list. Search is case insensitive.
 
-# Labels & Groups
+## Labels & Groups
 
 ```{note}
 Currently macOS only, Cyberduck 7.3 or later required
 ```
 
-## Edit Labels for Bookmarks
+### Edit Labels for Bookmarks
 
 Assign multiple labels to a bookmark to group them in folders in the menu.
 
@@ -39,7 +39,7 @@ Assign multiple labels to a bookmark to group them in folders in the menu.
 :width: 500px
 ```
 
-## Groups in Bookmarks Menu
+### Groups in Bookmarks Menu
 
 Bookmarks are grouped in folders in the menu by their assigned labels. Groups in bookmark view forthcoming.
 
@@ -48,9 +48,9 @@ Bookmarks are grouped in folders in the menu by their assigned labels. Groups in
 :width: 400px
 ```
 
-# Add new Bookmark
+## Add new Bookmark
 
-## From Current Connection
+### From Current Connection
 
 `````{tabs}
 ````{group-tab} macOS
@@ -82,11 +82,11 @@ Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the + button in lower 
 ````
 `````
 
-## From a Third-Party Application
+### From a Third-Party Application
 
 Drag an URL from a third-party application to the bookmark table to create a new bookmark. This can be a link embedded in a web page or from any text source.
 
-# Edit Bookmark
+## Edit Bookmark
 
 Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel where you can edit the bookmark's properties will appear. If the server configured is not reachable, an alert icon is displayed next to the URL. Clicking it opens *Network Diagnostics*.
 
@@ -95,7 +95,7 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 :width: 600px
 ```
 
-## Bookmark Options
+### Bookmark Options
 
 | Setting | Description |
 | :--- | :--- |
@@ -112,7 +112,7 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | Encoding | For [FTP](../protocols/ftp.md) connections only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../protocols/ftp.md#character-encoding). |
 | Timezone | For all protocols except [FTP](../protocols/ftp.md), timestamps are reported in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../protocols/ftp.md)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the browser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
 
-## Passwords
+### Passwords
 
 `````{tabs}
 ````{group-tab} macOS
@@ -127,7 +127,7 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 ````
 `````
 
-# HTTP URL
+## HTTP URL
 
 With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. You can select multiple files in the browser for a list of URLs.
 
@@ -148,7 +148,7 @@ Example configuration:
 
 See also [Open or copy HTTP URL](browser.md#open-or-copy-http-url).
 
-# Exporting Bookmarks
+## Exporting Bookmarks
 
 Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer* (e.g. the Desktop). You can double-click the document in the file browser to open a new connection to the server specified in the bookmark. To back up all bookmarks, refer to [this FAQ entry](faq.md#preferences-and-application-support-files-location).
 
@@ -161,13 +161,13 @@ Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer
 You can share bookmarks between Mac & Windows as the file format is the same on both platforms.
 ```
 
-# Importing Bookmarks
+## Importing Bookmarks
 
-## From Exported Bookmark File
+### From Exported Bookmark File
 
 Just drag the `.duck` bookmark file from the *Finder.app/ Explorer* to the list of bookmarks.
 
-## From Third-Party Applications
+### From Third-Party Applications
 
 You are asked if you want to import bookmarks from the following list of applications if the application is still installed on your system and bookmarks configured with the application are found. There is no manual import functionality available.
 
@@ -199,7 +199,7 @@ You are asked if you want to import bookmarks from the following list of applica
 :width: 600px
 ```
 
-# Sharing Bookmarks between Different Computers
+## Sharing Bookmarks between Different Computers
 
 You can share bookmarks between different computers and users by uploading the *Bookmarks* and *Profiles* folder to a Cloud Storage of your liking and creating a symbolic link to it.
 
@@ -225,19 +225,19 @@ You can share bookmarks between different computers and users by uploading the *
 ````
 `````
 
-# Preferences
+## Preferences
 
-## Open Default Bookmark
+### Open Default Bookmark
 
 Choose a default bookmark to open after opening the application. Choose *Preferences → General → Open new browser window on startup → Connect to bookmark ...*.
 
-## Do not Read favicon.ico from HTTP URL
+### Do not Read favicon.ico from HTTP URL
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Displayed in the bookmark edit window.
 
 `defaults write ch.sudo.cyberduck bookmark.favicon.download false`
 
-## Open Bookmark View after Disconnecting
+### Open Bookmark View after Disconnecting
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 

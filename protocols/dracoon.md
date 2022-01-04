@@ -10,13 +10,13 @@ Cloud service made in Germany. DRACOON as a Cloud Service in ISO 27001 certified
 
 > [DRACOON](https://www.dracoon.com/en/home#) is a highly secure, platform-independent enterprise file sharing solution, which has repeatedly won awards as a market leader. It is certified according to the highest compliance guidelines. Unique to the solution is the own developed TripleCrypt technology with end-to-end encryption as well as the authorization system for high demands in the enterprise business environment.
 
-# Free Account
+## Free Account
 
 Open a [free account](https://www.dracoon.com/en/free) with 10 users including 10 GB of storage.
 
 > With DRACOON, you opt for a highly secure enterprise file sync and share solution that is made and hosted in Germany. Try the full version of our business cloud storage free of charge.
 
-# Connecting
+## Connecting
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/DRACOON%20(OAuth).cyberduckprofile>` the *DRACOON (OAuth) connection profile*.
 
@@ -24,15 +24,15 @@ Open a [free account](https://www.dracoon.com/en/free) with 10 users including 1
 The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.
 ```
 
-# Client-Side Encryption
+## Client-Side Encryption
 
 The client-side encryption technology Triple-Crypt of DRACOON is fully supported to upload files to encrypted data rooms.
 
-# Download Share
+## Download Share
 
 Choose *File → Share…* to create a download share for a file. Default settings apply with no expiration.
 
 ![Create Download Share](_images/DRACOON_Download_Share.png)
 
-# References
+## References
 - [Encryption](https://cloud.support.dracoon.com/hc/en-us/articles/115001832709-Encryption)

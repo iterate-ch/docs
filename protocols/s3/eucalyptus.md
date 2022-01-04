@@ -3,7 +3,7 @@ Eucalyptus Walrus
 
 > [Eucalyptus Walrus](http://open.eucalyptus.com/) is an open source implementation of S3. 
 
-# Connecting
+## Connecting
 
 - {download}`Download<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/eucalyptus/Eucalyptus%20Walrus%20S3.cyberduckprofile>` the *Eucalyptus Walrus S3 Connection Profile* for preconfigured settings.
 
@@ -11,15 +11,15 @@ Choose *Eucalyptus Walrus S3* from the protocol dropdown menu in the [Open Conne
 
 The only difference to regular S3 is that the storage path (endpoint) is assumed to be `/services/Walrus` instead of `/`.
 
-## Login Credentials
+### Login Credentials
 
 Download your credentials ZIP from `ecc.eucalyptus.com`. You can find the access key and secret in the file *eucarc*.
 
-# Distribution
+## Distribution
 
 You can enable [Amazon CloudFront (Content Delivery Network) distribution](../../cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
-# Limitations
+## Limitations
 
 - No content distribution ([CDN](../../cdn/index.md)) configuration.
 - No bucket logging configuration.

@@ -5,10 +5,10 @@ Located in Estonia. S3 compatible object storage with perfect cost and reliabili
 
 [Pilvio](https://pilvio.com/) is a S3 compatible object storage.
 
-# Connecting
+## Connecting
 
 {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Pilvio.cyberduckprofile>` the *Pilvio Connection Profile* for preconfigured settings.
 
-# References
+## References
 
 - [Set Up Your Object Storage Space in 4 Steps](https://blog.pilw.io/set-up-your-object-storage-space-in-4-steps/)

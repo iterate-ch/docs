@@ -8,23 +8,23 @@ Memset Object Storage
 **Free 5GB Account**</br>
 Sign up for a free account that comes with 5GB of storage and 5GB of transfer per month [Memset Object Storage](https://www.memset.com/services/object-storage/).
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
-### Memset 1.0
+#### Memset 1.0
 
 {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Memset%20(1.0).cyberduckprofile>` the *Memset (1.0) Profile* for preconfigured settings.
 
 Use your Memstore access username (e.g. `mstestaa1.admin`) and password (API key) to log in.
 
-### Keystone
+#### Keystone
 
 {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Memset%20(Keystone).cyberduckprofile>` the *Memstore (Keystone) Profile* for preconfigured settings.
 
 Use `admin` for the username, the Memstore name when prompted for the Tenant ID (e.g. `mstestaa1`) and password (API key) to log in.
 
-## Manual Configuration
+### Manual Configuration
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
@@ -38,6 +38,6 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 ![Memstore configuration](_images/Memstore.Swift.Config.png)
 
 
-# References
+## References
 - [Documentation and Resources for Developers](https://docs.memset.com/cd/API-%2F-Developer-Resources.199072028.html)
 - [Swift Openstack API with Cyberduck](https://docs.memset.com/cd/Swift-OpenStack-API-with-Cyberduck.199072116.html)

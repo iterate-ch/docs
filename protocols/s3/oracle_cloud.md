@@ -10,9 +10,9 @@ Oracle Cloud Infrastructure
 
 ![Oracle Cloud Marketplace Badge](_images/cloud-mrktplc-badge.png)
 
-# OCI Object Storage
+## OCI Object Storage
 
-## Connecting
+### Connecting
 
 ```{Note}
 All connection profiles are available through the *Preferences → Profiles* tab.
@@ -52,9 +52,9 @@ Follow these instructions:
 For adding a region profile, you need to download the profile for that region. Duplicating a profile and only changing the region endpoint will not work and will result in `Listing directory / failed errors`.
 ```
 
-# OCI Object Storage Classic
+## OCI Object Storage Classic
 
-## Connecting
+### Connecting
 
 Follow these instructions:
 
@@ -71,6 +71,6 @@ Follow these instructions:
 		- em2: Amsterdam
 		- em3: UK
 
-## References
+### References
 
 - [Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage](https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4)

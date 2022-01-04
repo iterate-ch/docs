@@ -3,13 +3,13 @@ Internap AgileFILES
 
 Sign up for [Internap AgileCLOUD (includes AgileFILES object storage)](https://agile.internap.com/signup/register?utm_source=wiki&utm_medium=referral&utm_campaign=cyberduck).
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 {download}`Download<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/internap/Internap%20AgileFILES.cyberduckprofile>` the *Internap AgileFILES Connection Profile* for preconfigured settings.
 
-## Manual Configuration
+### Manual Configuration
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 

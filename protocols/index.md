@@ -27,11 +27,11 @@ spectra
 
 All major server and cloud storage protocols are supported to connect to just about any server or cloud storage. Support for the listed protocols and [connection profiles](profiles.md) is available in [Cyberduck](../cyberduck/index.md), [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
-# Connection Profiles
+## Connection Profiles
 
 [Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
 
-## Preferences → Profiles
+### Preferences → Profiles
 
 Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed below. Either scroll through the list or use the search function to look for a specific profile. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
 
@@ -58,63 +58,63 @@ You cannot disable any of the default protocols or a connection profile in use o
 ```
 
 
-# Supported Protocols
-## [FTP](ftp.md)
+## Supported Protocols
+### [FTP](ftp.md)
 With support for secure TLS connections and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront) option.
 
-## [Amazon S3](s3/index.md)
+### [Amazon S3](s3/index.md)
 Transfer files to your S3 account and browse the S3 buckets and files in a hierarchical way. Supports Amazon Web Services (AWS) and many third party providers.
 
 - [S3 providers](s3/index.md#third-party-providers)
 
-## [Google Cloud Storage](google_cloud_storage.md)
+### [Google Cloud Storage](google_cloud_storage.md)
 
 Transfer files to your Google Storage account and browse files, manage ACLs and bucket configurations.
 
-## [Backblaze B2](b2.md)
+### [Backblaze B2](b2.md)
 Backblaze B2 Cloud Storage is ¼ of the price of Amazon S3
 
-## [WebDAV](webdav/index.md)
+### [WebDAV](webdav/index.md)
 Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) option.
 
 - [WebDAV providers](webdav/index.md#providers)
 
-## [SSH/SFTP](sftp.md)
+### [SSH/SFTP](sftp.md)
 Advanced configuration for SSH connections using public key authentication and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) option.
 
-## [OpenStack Object Storage](openstack/index.md)
+### [OpenStack Object Storage](openstack/index.md)
 Connect to cloud storage providers using OpenStack Swift for the storage protocol. Includes support for [Rackspace Cloud Files](openstack/cloudfiles).
 
 - [OpenStack Providers](openstack/index.md#third-party-providers)
 
-## [Windows Azure](azure.md)
+### [Windows Azure](azure.md)
 Massively scalable object storage for unstructured data.
 
-## [Microsoft OneDrive](onedrive.md)
+### [Microsoft OneDrive](onedrive.md)
 Access OneDrive without syncing to your computer.
 
-## [Microsoft SharePoint](sharepoint.md)
+### [Microsoft SharePoint](sharepoint.md)
 Connect to SharePoint Server and SharePoint Online.
 
-## [Google Drive](google_drive.md)
+### [Google Drive](google_drive.md)
 Access all your documents and upload files of any type to use your Google Drive account for storage.
 
-## [Box](box.md)
+### [Box](box.md)
 Simple, secure file sharing and collaboration from anywhere.
 
-## [Dropbox](dropbox.md)
+### [Dropbox](dropbox.md)
 Access Dropbox without syncing to your computer.
 
-## [DRACOON](dracoon.md)
+### [DRACOON](dracoon.md)
 A highly secure, platform-independent enterprise filesharing solution
 
-## [Files.com](files.com.md)
+### [Files.com](files.com.md)
 Files.com is Smart Cloud Storage for modern teams
 
-## [iRODS](irods.md)
+### [iRODS](irods.md)
 The Integrated Rule-Oriented Data System (iRODS) is an open source data management software used by research organizations and government agencies worldwide.
 
-## [Spectra BlackPearl Deep Storage Gateway](spectra.md)
+### [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 
-## Local Disk
+### Local Disk
 Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../cryptomator/index.md#access-vaults-on-local-disk) stored on your computer.

@@ -21,7 +21,8 @@ sync
 transfer
 upload
 ```
-# Quick Reference Cheat Sheet
+
+## Quick Reference Cheat Sheet
 
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
@@ -35,11 +36,11 @@ Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-
 :width: 700px
 ```
 
-# [Opening Connections](connection.md)
+## [Opening Connections](connection.md)
 
 FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more protocols are supported. There are several options to open a [connection](connection.md) depending on the workflow.
 
-# [Browser](browser.md)
+## [Browser](browser.md)
 
 [Browser](browser.md) remote files in a list or hierarchical outline view.
 
@@ -54,21 +55,21 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 _Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
 ```
 
-## [Edit Files](edit.md)
+### [Edit Files](edit.md)
 
 Editing files on the server using an [external editor](edit.md).
 
-## [Share Files](share.md)
+### [Share Files](share.md)
 
 Share files with others using signed or temporary URLs.
 
-# [Bookmarks](bookmarks.md)
+## [Bookmarks](bookmarks.md)
 
 Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 
 - [Spotlight](spotlight.md) support for bookmark files
 
-# [File Transfers](transfer.md)
+## [File Transfers](transfer.md)
 
 - **[General](transfer.md)** information about transfers. 
 - **[Download](download.md)** files and folders to your computer.
@@ -76,17 +77,17 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 - **[Synchronize](sync.md)** folders between your computer and a server.
 - **[Copy](copy.md)** files and folders between servers.
 
-# [Content Distribution (CDN)](../cdn/index.md)
+## [Content Distribution (CDN)](../cdn/index.md)
 
 - [Memset Memstore](../protocols/openstack/memset.md)
 - [Amazon CloudFront](../cdn/cloudfront.md) content delivery options.
 - [Akamai](../cdn/akamai.md) content delivery options.
 - [KeyCDN](../cdn/keycdn.md) content delivery options.
 
-# [Notifications](notifications.md)
+## [Notifications](notifications.md)
 
 - [Notifications](notifications.md) configuration
 
-# [Preferences](preferences.md)
+## [Preferences](preferences.md)
 
 - Settings available in the [Preferences](preferences.md) window.

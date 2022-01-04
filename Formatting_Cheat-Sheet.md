@@ -1,7 +1,7 @@
 Formatting Cheat Sheet
 ====
 
-# Footnotes
+## Footnotes
 
 - This is a manually-numbered footnote reference.[^3]
 - This is an auto-numbered footnote reference.[^myref]
@@ -22,7 +22,7 @@ that are not separated by a blank line
 
 ---
 
-# Tabs
+## Tabs
 
 ````{tabs}
 
@@ -40,7 +40,7 @@ test
 
 ---
 
-# Quotes and Codeblocks
+## Quotes and Codeblocks
 
 	This is a codeblock
 
@@ -48,7 +48,7 @@ test
 
 > this is a single line Quote
 
-# Links und Downloadlinks
+## Links und Downloadlinks
 
 [Formatting Cheat Sheet](Formatting_Cheat-Sheet)
 
@@ -58,7 +58,7 @@ test
 
 ---
 
-# Admonitions
+## Admonitions
 
 ```{note}
 Here is a note!

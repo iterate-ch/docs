@@ -8,7 +8,7 @@ Selectel Cloud Storage
 
 > [Selectel Cloud Storage](https://selectel.ru/en/services/cloud/storage/) is a durable solution for developers and businesses.
 
-# Connecting
+## Connecting
 
 Connect using the pre-configured [connection profile](../../cyberduck/connection.md#connection-profiles):
 

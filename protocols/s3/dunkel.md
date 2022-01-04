@@ -10,18 +10,18 @@ Dunkel Cloud Storage
 
 Refer also to [S3](index.md) wiki page in general.
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Dunkel%20Cloud%20Storage.cyberduckprofile>` the *Dunkel Cloud Storage Connection Profile* for preconfigured settings.
 
-## Manual Configuration
+### Manual Configuration
 
 - Protocol: `S3`
 - Server: `dcs.dunkel.de`
 
-# Limitations
+## Limitations
 
 - No bucket location support (All data is stored in Germany).
 - No bucket logging configuration.

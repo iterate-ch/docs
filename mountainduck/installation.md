@@ -46,7 +46,7 @@ Using the MSI Installer, you'll have to install the *MSI Package Shell Extension
 ````
 `````
 
-# System Requirements
+## System Requirements
 
 `````{tabs}
 ````{group-tab} macOS
@@ -64,7 +64,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 ````
 `````
 
-# Registration Key
+## Registration Key
 
 Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the application support directory.
 
@@ -87,14 +87,14 @@ You can install the registration key either in:
 ````
 `````
 
-## Known Issues
+### Known Issues
 
-### Not a Valid Registration Key
+#### Not a Valid Registration Key
 
 This error message appears if you try to use an old license key for a newer version.
 [Upgrade](https://mountainduck.io/buy/upgrade/) your license to the latest version of Mountain Duck or download an older version from [Mountain Duck changelog](https://mountainduck.io/changelog/).
 
-### Upgrade Issues
+#### Upgrade Issues
 
 After upgrading a license, a new license file will be generated.
 
@@ -102,7 +102,7 @@ After upgrading a license, a new license file will be generated.
 2. Download the new license file from the email attachment.
 3. Apply the new license file using double-click or copy the file into the application support folder.
 
-# Complete Uninstall
+## Complete Uninstall
 
 Follow the steps below to uninstall Mountain Duck completely.
 

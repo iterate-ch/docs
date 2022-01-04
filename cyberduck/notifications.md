@@ -1,7 +1,7 @@
 Notifications
 ====
 
-# Events
+## Events
 
 - Connection opened
 - Connection failed

@@ -3,18 +3,18 @@ GMX Cloud
 
 > Die sichere [GMX Cloud](https://www.gmx.net/cloud/) steht Ihnen als Nutzer kostenlos im Postfach zur Verfügung. Über die Cloud können Sie online auf Ihre Dateien zugreifen – überall und jederzeit.
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 {download}`Download<https://svn.cyberduck.ch/trunk/profiles/GMX%20Cloud.cyberduckprofile>` the *GMX Cloud Connection Profile* for preconfigured settings.
 
-## Manual Configuration
+### Manual Configuration
 
 - Protocol: `WebDAV (HTTPS)`
 - Server: `webdav.mc.gmx.net`
 - Username: `GMX Kundenummer` or `GMX email`
 
-# References
+## References
 
 - [GMX Kundennummer](https://hilfe.gmx.net/account/verwalten/kundennummer.html?pos=1#)
