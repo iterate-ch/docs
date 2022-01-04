@@ -142,7 +142,7 @@ Example configuration:
 | HTTP URL | [http://sudo.ch/stylesheet.css](http://sudo.ch/stylesheet.css) | *Accessible in the web browser* |
 
 ```{image} _images/HTTP_URL.png
-:alt: HTTP ULR
+:alt: HTTP URL
 :width: 600px
 ```
 

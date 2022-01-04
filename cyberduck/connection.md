@@ -136,7 +136,7 @@ The *Automatic Proxy Configuration* using a *Proxy Configuration File* is curren
 Choose *FTP Proxy* and select the checkbox to configure the proxy address.
 
 ```{image} _images/Proxy_Configuration_FTP_and_SFTP.png
-:alt: Proxy Configuration FTP/ SFTP
+:alt: Proxy Configuration FTP/SFTP
 :width: 500px
 ```
 
