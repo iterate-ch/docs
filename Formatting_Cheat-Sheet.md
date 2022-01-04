@@ -1,3 +1,7 @@
+---
+orphan: true
+---
+
 Formatting Cheat Sheet
 ====
 
