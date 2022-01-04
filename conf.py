@@ -79,7 +79,7 @@ html_css_files = [
 ]
 
 master_doc = 'index'
-myst_heading_anchors = 3
+myst_heading_anchors = 4
 myst_enable_extensions = [
 	"html_image",
 ]
