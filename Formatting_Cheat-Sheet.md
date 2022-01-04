@@ -1,5 +1,5 @@
 Formatting Cheat Sheet
-===
+====
 
 # Footnotes
 

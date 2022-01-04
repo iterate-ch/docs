@@ -1,5 +1,5 @@
 IBM Cloud Object Storage (COS)
-===
+====
 
 ```{attention}
 - [**Softlayer is now IBM Cloud.**](https://www.ibm.com/cloud/info/softlayer-is-now-ibm-cloud)

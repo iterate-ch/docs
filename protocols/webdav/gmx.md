@@ -1,5 +1,5 @@
 GMX Cloud
-===
+====
 
 > Die sichere [GMX Cloud](https://www.gmx.net/cloud/) steht Ihnen als Nutzer kostenlos im Postfach zur Verfügung. Über die Cloud können Sie online auf Ihre Dateien zugreifen – überall und jederzeit.
 

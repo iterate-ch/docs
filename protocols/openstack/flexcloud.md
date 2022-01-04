@@ -1,5 +1,5 @@
 OpenStack FlexCloud
-===
+====
 
 > [OpenStack FlexCloud](https://www.green.ch/de-ch/greencloud/openstackflexcloud/flexcloudservices.aspx) bietet Ihnen Schweizer Infrastruktur mit maximaler Flexibilität.
 

@@ -1,5 +1,5 @@
 Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI
-===
+====
 
 # Summary
 

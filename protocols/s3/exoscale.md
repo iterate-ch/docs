@@ -1,5 +1,5 @@
 Exoscale
-===
+====
 
 ![Exoscale Drive Icon](_images/exoscale.png)
 

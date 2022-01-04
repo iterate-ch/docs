@@ -1,5 +1,5 @@
 Rackspace Cloud Files
-===
+====
 
 ![Cloud Files Icon](_images/cloudfiles_icon.png)
 

@@ -1,5 +1,5 @@
 AWS Identity & Access Management (IAM)
-===
+====
 
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
 

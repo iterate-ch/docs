@@ -1,5 +1,5 @@
 Smart Synchronization History
-===
+====
 
 # Sync Progress
 

@@ -1,5 +1,5 @@
 Windows Azure Blob Storage
-===
+====
 
 ```{image} _images/azure.png
 :alt: Azure Blob Storage

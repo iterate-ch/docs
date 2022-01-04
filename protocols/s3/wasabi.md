@@ -1,5 +1,5 @@
 Wasabi Storage
-===
+====
 
 > One simple storage solution that is faster than Amazon S3 yet cheaper than Amazon Glacier. Wasabi's immutable buckets protect you against the most common causes of data loss.
 

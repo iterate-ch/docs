@@ -1,5 +1,5 @@
 Amazon CloudFront Support
-===
+====
 
 Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using *File → Info → Distribution* for a [S3](../protocols/s3/index.md) bucket or a custom origin distribution for any other source.
 

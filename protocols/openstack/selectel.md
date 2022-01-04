@@ -1,5 +1,5 @@
 Selectel Cloud Storage
-===
+====
 
 ```{image} _images/selectel.png
 :alt: Selectel Drive Icon

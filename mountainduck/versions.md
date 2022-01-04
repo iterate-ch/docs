@@ -1,5 +1,5 @@
 File Versions
-===
+====
 
 Mountain Duck supports opening and reverting previous versions of files. You can get a list of previous versions by right-clicking on a file in *Finder* on macOS or *File Explorer* on Windows and choosing *Versions*.
 

@@ -1,5 +1,5 @@
 Scality RS2
-===
+====
 
 > [Scality RING (RS2)](https://www.scality.com/products/ring/) is a commercial object storage product that implements an S3 protocol to connect with. The Protocol is called RS2 in Scality's product line. Scality is used by many providers to implement their cloud storage.
 

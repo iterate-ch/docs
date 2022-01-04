@@ -1,5 +1,5 @@
 Connection Profiles
-===
+====
 
 [Connection profiles](../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 

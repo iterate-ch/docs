@@ -1,5 +1,5 @@
 Spotlight (macOS)
-===
+====
 
 # Search bookmarks with Spotlight
 

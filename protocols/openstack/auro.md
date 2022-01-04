@@ -1,5 +1,5 @@
 AURO
-===
+====
 
 ```{image} _images/Auro_Logo.jpg
 :alt: AURO Logo

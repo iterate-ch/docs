@@ -1,5 +1,5 @@
 Akamai (CDN) Support
-===
+====
 
 Akamai is the [CDN provider for Rackspace Cloudfiles](https://www.rackspace.com/openstack/public/cdn-content-delivery-network). A container can be enabled for *Akamai* in the *Distribution (CDN)* tab of the [Info](../cyberduck/info.md) panel.
 

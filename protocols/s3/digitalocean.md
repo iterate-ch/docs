@@ -1,5 +1,5 @@
 DigitalOcean Spaces
-===
+====
 
 ```{image} _images/DigitalOcean_Spaces.png
 :alt: DigitalOcean Spaces Drive Icon

@@ -1,5 +1,5 @@
 Infomaniak
-===
+====
 
 ![Infomaniak Drive Icon](_images/blue-128.png)
 

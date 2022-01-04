@@ -1,5 +1,5 @@
 pCloud
-===
+====
 
 > [pCloud](https://www.pcloud.com/) is encrypted cloud storage, where you can store your personal files, backup your PC or share your business documents with your colleagues.
 

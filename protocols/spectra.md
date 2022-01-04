@@ -1,5 +1,5 @@
 Spectra BlackPearl Deep Storage Gateway
-===
+====
 
 ![Spectra Drive Icon](_images/spectra_128x128.png)
 

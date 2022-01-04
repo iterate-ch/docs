@@ -1,5 +1,5 @@
 File Locking
-===
+====
 
 Mountain Duck supports locking files to prevent conflicting edits from others while a document is open in an editor.
 

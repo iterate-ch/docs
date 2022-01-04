@@ -1,5 +1,5 @@
 Copy
-===
+====
 
 Open two browser windows each with a connection to any server and drag files and folders between the browsers to copy files or using *Edit → Copy* followed by *Edit → Paste*.
 

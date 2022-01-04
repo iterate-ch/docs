@@ -1,5 +1,5 @@
 MinIO Cloud Storage
-===
+====
 
 ```{image} _images/MINIO_wordmark.png
 :alt: MinIO Logo

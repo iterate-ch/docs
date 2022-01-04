@@ -1,5 +1,5 @@
 Command Line Interface (CLI)
-===
+====
 
 ```{toctree}
 :hidden:

@@ -1,5 +1,5 @@
 Oktawave Cloud Storage
-===
+====
 
 > [Oktawave Cloud Storage (OCS)](https://www.oktawave.com/en/cloud/object-storage) is a highly efficient, reliable, and secure way to exchange files between different systems and applications on the Internet.
 

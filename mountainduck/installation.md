@@ -1,5 +1,5 @@
 Installation
-===
+====
 
 `````{tabs}
 ````{group-tab} macOS

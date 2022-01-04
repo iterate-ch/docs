@@ -1,5 +1,5 @@
 SwiftStack
-===
+====
 
 ![SwiftStack Drive Icon](_images/swiftstack.png)
 

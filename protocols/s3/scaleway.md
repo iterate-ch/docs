@@ -1,5 +1,5 @@
 Scaleway Object Storage
-===
+====
 
 > [Scaleway Object Storage](https://www.scaleway.com/docs/object-storage-feature/) is an Object Storage service based on the S3 protocol. It allows you to store any kind of object (documents, images, videos, etc.).
 

@@ -1,5 +1,5 @@
 Mountain Duck
-===
+====
 
 ```{toctree}
 :hidden:

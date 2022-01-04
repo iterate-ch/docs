@@ -1,5 +1,5 @@
 Cryptomator
-===
+====
 
 ```{toctree}
 :hidden:

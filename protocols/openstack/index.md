@@ -1,5 +1,5 @@
 Swift (OpenStack Object Storage)
-===
+====
 
 ```{toctree}
 :hidden:

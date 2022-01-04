@@ -1,5 +1,5 @@
 Polycloud
-===
+====
 
 > [Polycloud](https://crowdstorage.com/) is an object storage service offering secure and private data storage with immediate access and high reliability. Data are stored as objects within buckets and can be accessed and managed via our basic browser-based user interface, but full functionality is realized by utilizing our S3 compatible API.
 

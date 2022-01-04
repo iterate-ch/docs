@@ -1,5 +1,5 @@
 Smart Synchronization
-===
+====
 
 ```{image} _images/Disk_Syncing.png
 :alt: Send Command

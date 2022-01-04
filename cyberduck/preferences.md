@@ -1,5 +1,5 @@
 Preferences
-===
+====
 
 In general, user adjustable preferences are discussed in the context of the topic in all wiki pages.
 
