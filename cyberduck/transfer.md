@@ -17,7 +17,7 @@ Some servers may not support resumable transfers and the file will be reloaded i
 ```
 
 ```{image} _images/Transfers.png
-:alt: Tranfsers
+:alt: Transfers
 :width: 700px
 ```
 
