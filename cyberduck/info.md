@@ -87,7 +87,6 @@ Settings specific to the [Amazon S3](../protocols/s3/index.md) service.
 
 - The geographic location of the bucket.
 - [Publicly accessible URL](../protocols/s3/index.md#pre-signed-temporary-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
-- [Torrent URL](../protocols/s3/index.md#bittorrent-urls) to the file.
 - Enabling [access logs](../protocols/s3/index.md#bucket-access-logging) for the bucket.
 - Choose storage class ([Reduced Redundancy Storage (RRS)](../protocols/s3/index.md#storage-class)). Settings will be applied recursively if a folder is selected.
 - Configure [bucket versioning](../protocols/s3/index.md#versions).
