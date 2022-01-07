@@ -87,6 +87,10 @@ The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or
 :width: 600px
 ```
 
+## Insufficient disk space 
+
+If the available disk space on the mounted volume is below 100MB a soft quota notification will be displayed saying *Insufficient disk space*.
+
 ## Missing Sync Status Icons
 
 `````{tabs}
