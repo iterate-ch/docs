@@ -62,7 +62,7 @@ With 2-factor authentication enabled, you will need to create an app password in
 
 Create [public shares](../../cyberduck/share.md#nextcloud-and-owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…*.
 
-# Known Issues
+# Known Limitations
 
 ## 0-Byte Files
 
@@ -75,6 +75,10 @@ In order to retain timestamps for uploaded files, we make use of custom WebDAV p
 	CREATE INDEX properties_path_index ON oc_properties(userid, propertypath)
 
 Also, refer to the [issue](https://github.com/nextcloud/server/issues/8962) in GitHub.
+
+## Modification Date
+
+The modification date retention is supported using `X-OC-Mtime` for new files uploaded but without the option to adjust the modification date later.
 
 # References
 

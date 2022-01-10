@@ -521,6 +521,10 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 # Known Issues
 
+## Modification Date
+
+The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Timestamps).cyberduckprofile>`.
+
 ## Disable use of Virtual Host Style Requests
 
 Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../profiles.md) with the property set in `Properties`.

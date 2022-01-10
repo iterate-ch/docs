@@ -109,6 +109,10 @@ You can access publicly readable Subversion (SVN) repositories running behind `m
 
 # Known Issues
 
+## Modification Date
+
+Saving the modification dates requires support from server storing metadata in custom namespace.
+
 ## Cannot Login with Special Characters in Credentials
 
 If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)

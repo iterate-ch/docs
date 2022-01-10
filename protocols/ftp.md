@@ -111,6 +111,10 @@ Applying Registry-files is not riskless and should be avoided if not necessary. 
 
 # Known Issues
 
+## Modification Date
+
+Requires server-side support for `MFMT` or `UTIME` extensions.
+
 ## Maximum Number of Connections
 
 Many servers limit the number of allowed connections with an error message like `530 Sorry, the maximum number of clients (10) from your host are already connected.`. Because FTP is a stateful protocol it requires opening separate connections when transferring files in parallel. Refer to [limit the number of connections](../cyberduck/transfer.md#connections) allowed for the file transfers.
