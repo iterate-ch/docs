@@ -261,7 +261,10 @@ To toggle CloudFront access logging, select the the [Distribution](../../cdn/clo
 
 ## Versions
 
-[Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has `s3:PutBucketVersioning` permission permits users to modify the versioning configuration of a bucket.
+[Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has the following permissions:
+- `s3:PutBucketVersioning` to permit users to modify the versioning configuration of a bucket.
+- `s3:GetBucketVersioning` and `s3:ListBucketVersions` to see versions of a file.
+- `s3:GetObjectVersion` to download a specific version.
 
 You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*.
 
