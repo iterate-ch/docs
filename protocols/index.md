@@ -57,6 +57,33 @@ Select connection protocols in _Preferences → Profiles_ to be installed in add
 You cannot disable any of the default protocols or a connection profile in use or default protocols.
 ```
 
+# Modification Date
+The modification date retention isn't supported for all protocols natively.
+
+```{admonition} Mountain Duck only
+:class: attention
+Protocols with limited support retaining modification dates for new files uploaded but without the option to adjust the modification date later.
+```
+
+| Protocol | Native Support | Limited Support |
+| --- | :---: | :---: |
+| SFTP| ✅ ||
+| Google Drive | ✅ ||
+| Google Cloud Storage | ✅ ||
+| Microsoft OneDrive | ✅ ||
+| Microsoft Sharepoint | ✅ ||
+| Files.com | ✅ ||
+| DRACOON | ✅ ||
+| Backblaze B2 | ❌	| ✅ |
+| Box.com | ❌	| ✅ |
+| Dropbox | ❌	| ✅ |
+| Nextcloud | ❌ | ✅ |
+| ownCloud | ❌	| ✅ |
+| S3 | ❌ | ✅ |
+
+There are two protocols with possible interoperability issues:
+- **WebDAV**: Saving the modification dates requires support from server storing metadata in custom namespace
+- **FTP**: Requires support from server for `MFMT` or `UTIME` extensions
 
 # Supported Protocols
 ## [FTP](ftp.md)

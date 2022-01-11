@@ -51,7 +51,11 @@ You can [search recursively](../cyberduck/browser.md#filter-and-search) for file
 
 You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection.
 
-# Known Issues
+# Known Limitations
+
+## Modification Date
+
+The modification date retention is supported for new files uploaded but without the option to adjust the modification date later.
 
 ## Restricted Content
 
