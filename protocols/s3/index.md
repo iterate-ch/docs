@@ -29,7 +29,7 @@ storadera
 ```
 
 ```{image} _images/s3.png
-:alt: Send Command
+:alt: S3 Drive Icon
 :width: 128px
 ```
 

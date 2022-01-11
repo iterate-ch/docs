@@ -8,14 +8,14 @@ cryptomator_architecture
 ```
 
 ```{image} _images/cryptomator.png
-:alt: Send Command
+:alt: Cryptomator
 :width: 400px
 ```
 
 Support for client-side encryption with [Cryptomator](https://cryptomator.org/) interoperable vaults to secure your data on any server or cloud storage.
 
 ```{image} _images/Browse_Cryptomator_Vault.gif
-:alt: Send Command
+:alt: Browse Cryptomator Vault
 :width: 600px
 ```
 
@@ -37,7 +37,7 @@ You can create a new vault directory anywhere on your remote storage. This will 
 Choose *File → New Vault…* to create a new vault. 
 
 ```{image} _images/New_Encrypted_Vault_File_Menu_Option.png
-:alt: Send Command
+:alt: New Encrypted Vault File Menu Option
 :width: 400px
 ```
 
@@ -47,19 +47,19 @@ Choose *File → New Vault…* to create a new vault.
 - Choose *New Vault…* from the Finder Extension toolbar or context menu using right-click in Finder or Windows Explorer.
 
 ```{image} _images/Mountain_Duck_Create_New_Vault_Finder_Extension.png
-:alt: Send Command
+:alt: Mountain Duck Create New Vault (Finder Extension)
 :width: 400px
 ```
 
 ```{image} _images/Mountain_Duck_Create_New_Vault_Windows_Explorer.png
-:alt: Send Command
+:alt: Mountain Duck Create New Vault (Windows Explorer)
 :width: 400px
 ```
 
 - Choose a name for the Vault folder and a passphrase to secure the Vault.
 
 ```{image} _images/Create_New_Vault.png
-:alt: Send Command
+:alt: Create New Vault
 :width: 400px
 ```
 
@@ -76,7 +76,7 @@ When _Preferences → Cryptomator → Auto detect and open vault in browser_ is 
 ````{group-tab} macOS
 
 ```{image} _images/Mountain_Duck_Unlock_Vault.png
-:alt: Send Command
+:alt: Mountain Duck Unlock Vault
 :width: 400px
 ```
 
@@ -84,7 +84,7 @@ When _Preferences → Cryptomator → Auto detect and open vault in browser_ is 
 ````{group-tab} Windows
 
 ```{image} _images/Mountain_Duck_Unlock_Vault_Windows.png
-:alt: Send Command
+:alt: Mountain Duck Unlock Vault (Windows)
 :width: 400px
 ```
 
@@ -118,7 +118,7 @@ The menu option is disabled if you have set Preferences → Cryptomator → Auto
 You can check *Add to Keychain* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. Another application that wants to access the vault passphrase from the login keychain will trigger a permission prompt.
 
 ```{image} _images/Keychain_Access_Crpytomator_Passphrase.png
-:alt: Send Command
+:alt: Keychain Access Cryptomator Passphrase
 :width: 400px
 ```
 
@@ -144,7 +144,7 @@ File transfers require you to unlock the vault again unless you have chosen to s
 You can open and browse multiple vaults on a server in a single browser window. For each vault to be opened you will be prompted to enter your passphrase to decrypt the filenames. Decrypted filenames when browsing a vault will show a padlock overlay icon.
 
 ```{image} _images/Cryptomator_Vault_Browser.png
-:alt: Send Command
+:alt: Cryptomator Vault Browser
 :width: 400px
 ```
 
@@ -161,7 +161,7 @@ The vault must be unlocked before you move files to it, otherwise the files won'
 Both [Cyberduck](https://cyberduck.io/) and [Mountain Duck](https://mountainduck.io/) support browsing your local disk to access vaults created on your computer. Create a new [bookmark](../cyberduck/bookmarks) to connect to your local disk.
 
 ```{image} _images/local_disk_connection.png
-:alt: Send Command
+:alt: Local Disk Connection
 :width: 400px
 ```
 
@@ -175,12 +175,12 @@ In your local disk connection, you can access all directories which are saved on
 3. Type your set password in the password box. If you want you can save the password for easier access to this directory for further usage.
 
 ```{image} _images/access_Cryptomator_vault_Mountain_Duck.png
-:alt: Send Command
+:alt: Mountain Duck Cryptomator Vault 
 :width: 400px
 ```
 
 ```{image} _images/access_Cryptomator_vault_Cyberduck.png
-:alt: Send Command
+:alt: Cyberduck Access Cryptomator Vault
 :width: 400px
 ```
 

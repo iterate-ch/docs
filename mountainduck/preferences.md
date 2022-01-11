@@ -18,7 +18,7 @@ Change the size of the menu items in the status bar menu. Choose between *Small,
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*.
 
 ```{image} _images/Sync_Preferences.png
-:alt: Send Command
+:alt: Sync Preferences
 :width: 700px
 ```
 
@@ -58,7 +58,7 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. 
 
 ```{image} _images/Profiles_Preferences.png
-:alt: Send Command
+:alt: Profiles Preferences
 :width: 700px
 ```
 

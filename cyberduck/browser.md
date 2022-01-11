@@ -85,7 +85,7 @@ To move a file, use *Edit → Cut (macOS `⌘X` Windows `Ctrl+X`)* followed by *
 You can copy files between arbitrary servers when connected to with two open browser windows. Drag files from one browser to the other to transfer files between servers.
 
 ```{image} _images/Copy.png
-:alt: Send Command
+:alt: Copy
 :width: 700px
 ```
 
@@ -94,7 +94,7 @@ You can copy files between arbitrary servers when connected to with two open bro
 Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename files by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`)* or press the *Get [Info](info.md)* toolbar button. Simply enter the new name in the very top field. The field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
 
 ```{image} _images/Inline_Rename.png
-:alt: Send Command
+:alt: Inline Rename
 :width: 300px
 ```
 
@@ -116,7 +116,7 @@ You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*.
 ```
 
 ```{image} _images/quicklook.png
-:alt: Send Command
+:alt: Quicklook
 :width: 500px
 ```
 
@@ -144,19 +144,19 @@ Use the *File → Print* option where you can open a PDF from the browser listin
 Folder icons are badged for paticular access permissions.
 
 ```{image} _images/privatefolderbadge.png
-:alt: Send Command
+:alt: Private Folder Badge
 :width: 50px
 ``` 
 Folder with no permission to access.
 
 ```{image} _images/readonlyfolderbadge.png
-:alt: Send Command
+:alt: Read Only Folder Badge
 :width: 50px
 ```
 Folder with read-only permissions. Uploading or editing files to this folder is not possible.
 
 ```{image} _images/dropfolderbadge.png
-:alt: Send Command
+:alt: Drop folder Badge
 :width: 50px
 ```
 Drop Folder where you can only upload files to but are not allowed to view its content.
@@ -178,7 +178,7 @@ To revert to a previous version and make it the current, choose *File → Revert
 Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity window. It lists the currently running background tasks at the top and all queued activities subsequently.
 
 ```{image} _images/Activity.png
-:alt: Send Command
+:alt: Activity
 :width: 500px
 ```
 
