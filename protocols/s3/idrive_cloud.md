@@ -1,15 +1,15 @@
 IDrive® Cloud
-===
+====
 
 > [IDrive® Cloud](https://www.idrive.com/cloud/) is an S3 compatible cloud object storage solution. We provide a scalable, low-cost infrastructure for unlimited data storage. A platform-as-a-service, IDrive® Cloud can be used for various purposes like securely archiving data, hosting a web or mobile applications, or even as robust storage for data analytics.
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 Double-click on the downloaded file to activate the connection profile.
 
-### S3
+#### S3
 
 Create S3 Access Keys from the IDrive® Cloud Console.
 
@@ -26,7 +26,7 @@ Keys can be generated in the *Settings* section of the *Profile Details* within 
 You can have a maximum of 2 pairs of S3 Access Key and Secret.
 ```
 
-### OpenStack Swift
+#### OpenStack Swift
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* for preconfigured settings for authentication.
 
@@ -39,6 +39,6 @@ Enter the following authentication credentials to the bookmark:
 **How to get the API Password**</br>
 The API Password can be obtained from *Swift API Password* section of *IDrive® Cloud console*.
 
-# References
+## References
 
 - [IDrive® Cloud documentation](https://www.idrive.com/cloud/guides/default)

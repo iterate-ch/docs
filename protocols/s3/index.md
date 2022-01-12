@@ -1,5 +1,5 @@
 Amazon S3
-===
+====
 
 ```{toctree}
 :hidden:
@@ -35,7 +35,7 @@ storadera
 
 Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 buckets and files in a hierarchical way. For a short overview of Amazon S3, refer to the [Wikipedia article](http://en.wikipedia.org/wiki/Amazon_S3).
 
-# Connecting
+## Connecting
 
 You must obtain the login credentials (Access Key ID and Secret Access Key) of your [Amazon Web Services Account](http://aws.amazon.com/account/) from the [*AWS Access Identifiers page*](https://console.aws.amazon.com/iam/home?#security_credential). Enter the *Access Key ID* and *Secret Access Key* in the login prompt.
 
@@ -43,11 +43,11 @@ You must obtain the login credentials (Access Key ID and Secret Access Key) of y
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-## IAM User
+### IAM User
 
 You can also connect using [IAM](iam.md) credentials that have the `Amazon S3 Full Access` template policy permissions attached and optionally the `CloudFront Full Access`. Make sure you are connecting with `AWS4-HMAC-SHA256` signature version (see above).
 
-## Generic S3 Profiles
+### Generic S3 Profiles
 
 For use with third party S3 installations.
 
@@ -87,46 +87,46 @@ An incomplete list of known providers that require the use of AWS2
 
 `````
 
-## AWS Gov Cloud
+### AWS Gov Cloud
 
-### S3 GovCloud (US-East)
+#### S3 GovCloud (US-East)
 
 Use the endpoint `s3-us-gov-east-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-East) profile* for preconfigured settings.
 
-### S3 GovCloud (Us-West)
+#### S3 GovCloud (Us-West)
 
 Use the endpoint `s3-us-gov-west-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-West) profile* for preconfigured settings.
 
-## AWS China (Beijiing)
+### AWS China (Beijiing)
 
 Connect to the region *AWS China (Beijing)*
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing) profile* for preconfigured settings.
 
-## AWS Private Link
+### AWS Private Link
 
 Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
-## Access single bucket
+### Access single bucket
 
 Connecting to a bucket owned by you or even a third party is possible without requiring permission to list all buckets. You can access buckets owned by someone else if the ACL allows you to access it by *either*:
 
 - Specify the bucket you want to access in the hostname to connect to like `<bucketname>.s3.amazonaws.com`. Your own buckets will not be displayed but only this bucket contents
 - Set the *Default Path* in the bookmark to the bucket name. If you have permission you can still navigate one level up to display all buckets if the ACL allows.
 
-## Connecting with Temporary Access Credentials (Token) from EC2
+### Connecting with Temporary Access Credentials (Token) from EC2
 
 If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on EC2 and have setup [IAM Roles for Amazon EC2](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) to provide access to S3 from the EC2 instance, you can use the connection profile below that will fetch temporary credentials from EC2 instance metadata service at `http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access` to authenticate. Edit the profile to change the role name `s3access` to match your IAM configuration.
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20Instance%20Metadata).cyberduckprofile>` the *S3 (Credentials from Instance Metadata) profile* for preconfigured settings
 
-## Connecting Using Credentials in `~/.aws/credentials`
+### Connecting Using Credentials in `~/.aws/credentials`
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials` using third-party tools.
 
@@ -139,7 +139,7 @@ You might be interested in scripts maintained by third parties to facilitate man
 - [Manage configuration files for Cyberduck S3 (AssumeRoles from AWS STS)](https://github.com/jmvbxx/cyberduck-s3-config)
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
 
-## Connecting Using AssumeRole from AWS Security Token Service (STS)
+### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer to U[sing IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
 
@@ -149,7 +149,7 @@ Instead of providing Access Key ID and Secret Access Key, authenticate using tem
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name* in `~/.aws/credentials` matching the profile name from `~/.aws/credentials` with the `role_arn` configuration.
 
-### Example Configuration
+#### Example Configuration
 
 Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html).
 
@@ -161,11 +161,11 @@ Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-
 	source_profile=testuser
 	mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 
-## Read Credentials from `~/.aws/credentials`
+### Read Credentials from `~/.aws/credentials`
 
 When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at `~/.aws/credentials` if such a profile exists.
 
-# Cyberduck CLI
+## Cyberduck CLI
 
 List all buckets with [Cyberduck CLI](https://duck.sh/) using
 
@@ -177,7 +177,7 @@ List the contents of a bucket with
 
 Refer to the [Cyberduck CLI documentation](../../cli/index.md) for more operations.
 
-# Third-Party Providers
+## Third-Party Providers
 
 There are a growing number of third parties besides Amazon offering S3 compatible cloud storage software or solutions. Here is a non-exhaustive list:
 
@@ -214,9 +214,9 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Polycloud](polycloud.md)
 - [Scaleway Object Storage](scaleway.md)
 
-# Buckets
+## Buckets
 
-## Creating a Bucket
+### Creating a Bucket
 
 To create a new [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket-s3.html) for your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*. You can choose the bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for different regions.
 
@@ -251,7 +251,7 @@ Mountain Duck 4.6.1 or later: You will receive a prompt for the region when crea
 - You cannot change the location of an existing bucket.
 ```
 
-## Bucket Access Logging
+### Bucket Access Logging
 
 When this option is enabled in the S3 panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to `/logs` in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.
 
@@ -259,7 +259,7 @@ When this option is enabled in the S3 panel of the Info (*File → Info (macOS `
 
 To toggle CloudFront access logging, select the the [Distribution](../../cdn/cloudfront.md) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
 
-## Versions
+### Versions
 
 [Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has the following permissions:
 - `s3:PutBucketVersioning` to permit users to modify the versioning configuration of a bucket.
@@ -268,55 +268,55 @@ To toggle CloudFront access logging, select the the [Distribution](../../cdn/clo
 
 You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*.
 
-### Revert
+#### Revert
 
 To revert to a previous version and make it the current, choose *File → Revert*.
 
-### Multi-Factor Authentication (MFA) Delete
+#### Multi-Factor Authentication (MFA) Delete
 
 To enable *Multi-Factor Authentication (MFA) Delete*, you need to purchase a compatible [authentication device](http://aws.amazon.com/mfa/). Toggle MFA in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. When enabled, you are prompted for the device number and one-time token in the login prompt. Never reenter a token in the prompt already used before. A token is only valid for a single request. Wait for the previous token to disappear from the device screen and request a new token from the device.
 
 ![MFA Credentials](_images/MFA_Credentials.png)
 
-### References
+#### References
 
 - [Using versioning in S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html#MultiFactorAuthenticationDelete)
 
-## Folders
+### Folders
 
 Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type `application/x-directory`.
 
-## Supported Third Party Folder Placeholder Formats
+### Supported Third Party Folder Placeholder Formats
 
 - Folders created with [AWS Management Console](http://aws.amazon.com/console/).
 
-# File Transfers
+## File Transfers
 
-## Transfer Acceleration
+### Transfer Acceleration
 
 When enabled for the bucket, downloads, and uploads using the S3 Transfer Acceleration endpoints to transfer data through CloudFront’s globally distributed edge locations. The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods ("."). You do **not** need to enter transfer accelerated endpoints manually. When using Transfer Acceleration, additional data transfer charges may apply to connect to `s3-accelerate.dualstack.amazonaws.com`.
 
 ![Transfer Acceleration](_images/Amazon_S3_Transfer_Acceleration.png)
 
-### Permissions
+#### Permissions
 
 Make sure the user has `s3:GetAccelerateConfiguration` permission permits users to return the Transfer Acceleration state of a bucket.
 
-## Checksums
+### Checksums
 
 Files are verified both by AWS when the file is received and compared with the `SHA256` checksum sent with the request. Additionally, the checksum returned by AWS for the uploaded file is compared with the checksum computed locally if enabled in *Transfers → Checksum → Uploads → Verify checksum*.
 
-## Multipart Uploads
+### Multipart Uploads
 
 Files larger than 100MB are uploaded in parts with up to 10 parallel connections as 10MB parts. Given these sizes, the file size limit is 100GB with a maximum of 10'000 parts allowed by S3. The number of connections used can be limited using the toggle in the lower right of the transfer window.
 
 Multipart uploads can be resumed later when interrupted. Make sure the user has the permission `s3:ListBucketMultipartUploads`.
 
-### Unfinished Multipart Uploads
+#### Unfinished Multipart Uploads
 
 You can view unfinished multipart uploads in the browser by choosing *View → Show Hidden Files*.
 
-### Options
+#### Options
 
 You can set options with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
@@ -328,7 +328,7 @@ Threshold to use multipart uploads is set to 100MB by default
 
 	s3.upload.multipart.threshold=104857600
 
-# Storage Class
+## Storage Class
 
 You have the option to store files using the *Reduced Redundancy Storage (RRS)* by storing non-critical, reproducible data at lower levels of redundancy. Set the default storage class in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3* and [edit the storage class](../../cyberduck/info.md#amazon-s3-panel) for already uploaded files using *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
 
@@ -340,13 +340,13 @@ You have the option to store files using the *Reduced Redundancy Storage (RRS)* 
 - Glacier
 - Glacier Deep Archive
 
-# Lifecycle Configuration
+## Lifecycle Configuration
 
 Specify after how many days a file in a bucket should be moved to Amazon Glacier or deleted.
 
 ![Lifecycle Configuration](_images/Lifecycle-Configuration-for-S3-Windows.png)
 
-# Restore from Glacier
+## Restore from Glacier
 
 ```{attention}
 This function is currently Cyberduck only.
@@ -354,7 +354,7 @@ This function is currently Cyberduck only.
 
 You can temporarily restore files from *Glacier* and *Glacier Deep Archive* using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
 
-## Glacier Retrieval Options
+### Glacier Retrieval Options
 
 You can set retrieval options for the storage classes *Glacier* and *Glacier Deep Archive* with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
@@ -368,27 +368,27 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 	s3.glacier.restore.expiration.days=2
 
-# Access Control (ACL)
+## Access Control (ACL)
 
 Amazon S3 uses Access Control List (ACL) settings to control who may access or modify items stored in S3. You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Permissions*.
 
 ![ACLs](_images/ACLs.png)
 
-## Canonical User ID Grantee
+### Canonical User ID Grantee
 
 If you enter a user ID unknown to AWS, the error message `S3 Error Message. Bad Request. Invalid id.` will be displayed.
 
-## Email Address Grantee
+### Email Address Grantee
 
 If you enter an email address unknown to AWS, the error message `S3 Error Message. Bad Request. Invalid id.` will be displayed. If multiple accounts are registered with AWS for the given email address, the error message `Bad Request. The e-mail address you provided is associated with more than one account. Please retry your request using a different identification method or after resolving the ambiguity.` is returned.
 
-## All Users Group Grantee
+### All Users Group Grantee
 
 You must give the group grantee `http://acs.amazonaws.com/groups/global/AllUsers` read permissions for your objects to make them accessible using a regular web browser for everyone.
 
 If [bucket logging](index.md#bucket-access-logging) is enabled, the bucket ACL will have `READ_ACP` and `WRITE` permissions for the group grantee `http://acs.amazonaws.com/groups/s3/LogDelivery`.
 
-## Default ACLs
+### Default ACLs
 
 You can choose *canned ACLs* to be added to uploaded files or created buckets per default. *Canned ACLs* are predefined sets of permissions. 
 The [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl) can be set within *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3 → Default ACL*.
@@ -402,7 +402,7 @@ The [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-over
 | `bucket-owner-read` | ❌	| ✅ |
 | `bucket-owner-full-control` | ❌	| ✅ |
 
-## Permissions
+### Permissions
 
 The following permissions can be given to grantees:
 
@@ -414,13 +414,13 @@ The following permissions can be given to grantees:
 | `READ_ACP` | Allows grantee to read the bucket ACL | Allows grantee to read the file ACL |
 | `WRITE_ACP` | Allows grantee to write the ACL for the applicable bucket | Allows grantee to write the ACL for the applicable file |
 
-# Public URLs
+## Public URLs
 
 You can access all URLs (including from [CDN](../../cdn/cloudfront.md) configurations) from the menu *Edit → Copy URL and File → Open URL*.
 
 ![Copy URLs](_images/Copy_URLs.png)
 
-## Pre-signed Temporary URLs
+### Pre-signed Temporary URLs
 
 A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from *Edit → Copy URL→ Signed URL* or *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*.
 
@@ -430,7 +430,7 @@ There are pre-signed URLs that expire in one hour, 24 hours (using the preferenc
 It is required that your AWS credentials are saved in keychain. Refer to [Passwords](../../cyberduck/connection.md#passwords).
 ```
 
-### Force use of AWS2 Signature
+#### Force use of AWS2 Signature
 
 Using the AWS4 signature version used in Cyberduck version 5.0 and later, pre-signed URLs cannot have an expiry date later than a week. You can revert by setting the default signature version to AWS2 by using the *S3 AWS2 Signature Version (HTTP) connection profile*.
 
@@ -438,17 +438,17 @@ Using the AWS4 signature version used in Cyberduck version 5.0 and later, pre-si
 This deprecated signature version is not compatible with new regions such as `eu-central-1`.
 ```
 
-# Metadata
+## Metadata
 
 You can edit standard HTTP headers and add [custom HTTP headers](../../cyberduck/info.md#metadata-http-headers) to files to store [metadata](http://docs.amazonwebservices.com/AmazonS3/latest/index.html?UsingMetadata.html). Choose *File → Info (macOS `⌘I` Windows `Alt+Return`) → Metadata* to edit headers.
 
-## Default Metadata
+### Default Metadata
 
 Currently only possible using a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
 
 	s3.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
 
-## Cache Control Setting
+### Cache Control Setting
 
 This option lets you control how long a client accessing objects from your S3 bucket will cache the content and thus lowering the number of access to your S3 storage. In conjunction with Amazon CloudFront, it controls the time an object stays in an edge location until it expires. After the object expires, CloudFront must go back to the origin server the next time that edge location needs to serve that object. By default, all objects automatically expire after 24 hours when no custom `Cache-Control` header is set.
 
@@ -458,7 +458,7 @@ Use the [hidden configuration option](../../cyberduck/preferences.md#hidden-conf
 
 	s3.cache.seconds=2052000
 
-## References
+### References
 
 - [Amazon CloudFront and Your Live System](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html)
 - Read more about [Amazon CloudFront Object Expiration](http://docs.amazonwebservices.com/AmazonCloudFront/latest/DeveloperGuide/index.html?Expiration.html)
@@ -467,11 +467,11 @@ Use the [hidden configuration option](../../cyberduck/preferences.md#hidden-conf
 Use `curl -I <http://<bucketname>.s3.amazonaws.com/<key>` to debug HTTP headers.
 ```
 
-# Server Side Encryption (SSE)
+## Server Side Encryption (SSE)
 
 [Server-side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) for stored files is supported and can be enabled by default for all uploads in the S3 preferences or for individual files in the *File → Info (macOS `⌘I` WIndows `Alt+Return`) → S3*. AWS handles key management and key protection for you.
 
-## Defaults
+### Defaults
 
 Choose *Preferences → S3 → Server Side Encryption* to change the default.
 
@@ -481,15 +481,15 @@ Choose *Preferences → S3 → Server Side Encryption* to change the default.
 
 You can override these default settings in the *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3* panel per bucket.
 
-## Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
+### Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
 
 When changing the setting for a folder or bucket you are prompted to confirm the recursive operation on all files contained in the selected bucket or folder.
 
-## Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)
+### Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)
 
 Among the default `SSE-S3 (AES-256)`, the server-side encryption (SSE) dropdown list allows choosing from all private keys managed in AWS Key Management Service (KMS).
 
-### Permissions
+#### Permissions
 
 This requires the `kms:ListKeys` and `kms:ListAliases` permission for the AWS credentials used to connect to S3.
 
@@ -497,17 +497,17 @@ This requires the `kms:ListKeys` and `kms:ListAliases` permission for the AWS cr
 
 When changing the setting for a folder or bucket you are prompted to confirm the recursive operation on all files contained in the selected bucket or folder.
 
-## Prevent Uploads of Unencrypted Files
+### Prevent Uploads of Unencrypted Files
 
 Refer to the AWS Security Blog
 
 - [How to Prevent Uploads of Unencrypted Objects to Amazon S3](https://aws.amazon.com/blogs/security/how-to-prevent-uploads-of-unencrypted-objects-to-amazon-s3/)
 
-# CloudFront CDN
+## CloudFront CDN
 
 Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. Refer to [Amazon CloudFront distribution](../../cdn/cloudfront) for help about setting up distributions.
 
-# Website Configuration
+## Website Configuration
 
 To host a static website on S3, It is possible to define an Amazon S3 bucket as a *Website Endpoint*. The configuration in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Distribution* allows you to enable website configuration. Choose *Website Configuration (HTTP)* from *Delivery Method* and define an index document name that is searched for and returned when requests are made to the root or the subfolder of your website.
 
@@ -517,36 +517,36 @@ To access this website functionality, Amazon S3 exposes a new website endpoint f
 
 To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../cdn/cloudfront.md#website-configuration-endpoint-distributions-with-cloudfront-cdn).
 
-## References
+### References
 
 - [Host Your Static Website on Amazon S3](http://aws.typepad.com/aws/2011/02/host-your-static-website-on-amazon-s3.html)
 - [Amazon S3 adds new features for hosting static websites](http://aws.amazon.com/about-aws/whats-new/2011/02/17/Amazon-S3-Website-Features/)
 
-# Known Issues
+## Known Issues
 
-## Modification Date
+### Modification Date
 
 The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Timestamps).cyberduckprofile>`.
 
-## Disable use of Virtual Host Style Requests
+### Disable use of Virtual Host Style Requests
 
 Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a custom connection [profile](../profiles.md) with the property set in `Properties`.
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
-## Moved Permanently but no Location Header
+### Moved Permanently but no Location Header
 
 Make sure the IAM user has the permission `s3:GetBucketLocation` to read the bucket location.
 
-## Writing Files to S3 Compatible Third-Party Service Provider may Fail
+### Writing Files to S3 Compatible Third-Party Service Provider may Fail
 
 The S3 interoperable service must support [multipart uploads](http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html).
 
-## Delete Marker
+### Delete Marker
 
 When overwriting files some applications (like Windows File Explorer) will delete files prior to writing the new file. Thus we also forward this delete operation to S3 resulting in the delete marker being set. You can overwrite files with command-line tools which typically do not delete files prior to overwriting.
 
-## In Finder.app, Creating a new Top-Level Folder in S3 Fails with `Interoperability failure. Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`
+### In Finder.app, Creating a new Top-Level Folder in S3 Fails with `Interoperability failure. Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`
 
 A bucket name in S3 cannot have whitespace in the filename. Because a new folder created with Finder.app is named `Untitled Folder` the operation fails. As a workaround, create a new bucket with `mkdir` in *Terminal.app*.
 
@@ -555,11 +555,11 @@ The bucket can be created within the Smart Synchronization mode as the folder on
 ```
 
 
-## Saving a file in TextEdit.app will Attempt to Create a Folder `/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
+### Saving a file in TextEdit.app will Attempt to Create a Folder `/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
 
 <del>You will get the error message `Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`.</del> As of Mountain Duck version 2.1, `.DS_Store` files are only saved in a temporary location and not stored on the mounted remote volume.
 
-# References
+## References
 
 - [Grant access to user-specific folders in an Amazon S3 bucket](http://blogs.aws.amazon.com/security/post/Tx1P2T3LFXXCNB5/Writing-IAM-policies-Grant-access-to-user-specific-folders-in-an-Amazon-S3-bucke)
 - [Amazon Simple Storage Service FAQs](http://aws.amazon.com/s3/faqs/)

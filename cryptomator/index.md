@@ -1,5 +1,5 @@
 Cryptomator
-===
+====
 
 ```{toctree}
 :hidden:
@@ -27,7 +27,7 @@ Compared to other client-side-encryption solutions the Cryptomator based approac
 - no online services, no subscriptions, no accounts
 - no need to share your cloud storage provider credentials
 
-# Create new Vault
+## Create new Vault
 
 You can create a new vault directory anywhere on your remote storage. This will initialize the vault with a `masterkey.cryptomator`. A backup of the master key file (`masterkey.cryptomator`) is saved in user defaults. The encrypted keys in `masterkey.cryptomator` are not more sensitive than the encrypted files in the vault. For technical aspects, refer to [Masterkey Derivation](https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation).
 
@@ -66,9 +66,9 @@ Choose *File → New Vault…* to create a new vault.
 ````
 `````
 
-# Unlock Vault
+## Unlock Vault
 
-## Discovery
+### Discovery
 
 When _Preferences → Cryptomator → Auto detect and open vault in browser_ is enabled, opening a directory in the browser that is a Cryptomator Vault, a prompt is displayed to unlock the vault using the provided passphrase and decrypt the directory and filenames. If you cancel the prompt, the encrypted vault content is displayed.
 
@@ -91,7 +91,7 @@ When _Preferences → Cryptomator → Auto detect and open vault in browser_ is 
 ````
 `````
 
-## Manual
+### Manual
 
 ````{tabs}
 ```{group-tab} Cyberduck
@@ -113,7 +113,7 @@ Lock and unlock vaults within the Finder or Windows Explorer using the context m
 The menu option is disabled if you have set Preferences → Cryptomator → Auto detect and open vault in browser
 ```
 
-## Save Passphrase
+### Save Passphrase
 
 You can check *Add to Keychain* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. Another application that wants to access the vault passphrase from the login keychain will trigger a permission prompt.
 
@@ -135,11 +135,11 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 ````
 `````
 
-## File Transfers
+### File Transfers
 
 File transfers require you to unlock the vault again unless you have chosen to save your vault passphrase in the keychain.
 
-# Browser
+## Browser
 
 You can open and browse multiple vaults on a server in a single browser window. For each vault to be opened you will be prompted to enter your passphrase to decrypt the filenames. Decrypted filenames when browsing a vault will show a padlock overlay icon.
 
@@ -148,7 +148,7 @@ You can open and browse multiple vaults on a server in a single browser window. 
 :width: 400px
 ```
 
-## Moving Files Into Vault
+### Moving Files Into Vault
 
 You can move files from and to the vault. Because files need to be encrypted or decrypted respectively they pass through your local computer and cannot be moved on the server-side.
 
@@ -156,7 +156,7 @@ You can move files from and to the vault. Because files need to be encrypted or 
 The vault must be unlocked before you move files to it, otherwise the files won't be encrypted.
 ```
 
-## Access Vaults on Local Disk
+### Access Vaults on Local Disk
 
 Both [Cyberduck](https://cyberduck.io/) and [Mountain Duck](https://mountainduck.io/) support browsing your local disk to access vaults created on your computer. Create a new [bookmark](../cyberduck/bookmarks) to connect to your local disk.
 
@@ -188,21 +188,21 @@ In your local disk connection, you can access all directories which are saved on
 
 ````
 
-# Known Limitations
+## Known Limitations
 
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
 
-# Security Architecture
+## Security Architecture
 
 See [Security Architecture Overview](https://docs.cryptomator.org/en/latest/security/architecture/#).
 
-# Preferences
+## Preferences
 
-## Auto Detect
+### Auto Detect
 
 Uncheck *Preferences → Cryptomator → Auto detect and open Vault in browser* to disable opening vaults by default when opening the vault directory in the browser.
 
-# References
+## References
 
 See [Encryption Security Architecture](cryptomator_architecture).

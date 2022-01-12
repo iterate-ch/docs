@@ -1,13 +1,13 @@
 Upload
-===
+====
 
 See also [Transfers](transfer.md) in general.
 
-# Menu File → Upload...
+## Menu File → Upload...
 
 Select *File → Upload...* to select files to upload.
 
-# Toolbar
+## Toolbar
 
 There is a toolbar button available that you can add using *View → Customize Toolbar...*.
 
@@ -16,19 +16,19 @@ There is a toolbar button available that you can add using *View → Customize T
 :width: 300px
 ```
 
-# Using Drag & Drop
+## Using Drag & Drop
 
 Note that dragging files is not limited to the *Finder.app*, but also works i.e. with attachments *Mail.app* or any other application supporting file promises.
 
-## Drag to a Folder
+### Drag to a Folder
 
 Drag the file from the *Finder.app* or *Windows Explorer* to the [browser](browser.md) window to upload to the current working directory or the folder hovered over.
 
-## Drag to a Bookmark
+### Drag to a Bookmark
 
 Upload files without first opening a connection to a server by dropping the file(s) onto a [bookmark](bookmarks.md) item in the bookmark source list.
 
-## Local Disk Browser
+### Local Disk Browser
 
 You can browse your local hard disk within Cyberduck and drag files to the remote browser opened in another window or tab.
 
@@ -37,7 +37,7 @@ You can browse your local hard disk within Cyberduck and drag files to the remot
 :width: 400px
 ```
 
-## Drag to the Dock
+### Drag to the Dock
 
 ```{admonition} macOS only
 :class: tip
@@ -50,7 +50,7 @@ Drag files to the application icon in the `Dock` which will upload to the frontm
 :width: 400px
 ```
 
-# Using Copy & Paste
+## Using Copy & Paste
 
 Copy a file in the *Finder.app* or *Explorer* with *Edit → Copy (macOS `⌘C` Windows `Ctrl+C`)* and paste it to a browser window in Cyberduck to upload with *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*.
 
@@ -59,7 +59,7 @@ Copy a file in the *Finder.app* or *Explorer* with *Edit → Copy (macOS `⌘C` 
 :width: 300px
 ```
 
-# The Service Menu
+## The Service Menu
 
 ````{admonition} macOS only
 :class: tip
@@ -81,9 +81,9 @@ Make sure in *System Preferences → Keyboard → Keyboard Shortcuts → Service
 :width: 600px
 ```
 
-# Preferences
+## Preferences
 
-## Transfers → General → Uploads → Upload with temporary filename
+### Transfers → General → Uploads → Upload with temporary filename
 
 An option to upload with a temporary name and rename the file after the transfer is complete. An upload that is not complete, will not be renamed. This is useful for uploading to watch folders, that should only pick up a file once the upload is complete. To specify a different temporary filename pattern, use the [hidden configuration option](preferences.md#hidden-configuration-options)
 

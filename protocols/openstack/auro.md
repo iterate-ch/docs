@@ -1,5 +1,5 @@
 AURO
-===
+====
 
 ```{image} _images/Auro_Logo.jpg
 :alt: AURO Logo
@@ -8,7 +8,7 @@ AURO
 
 > AURO is 100% Canadian owned and operated provider of public cloud infrastructure based on OpenStack.
 
-# Connecting
+## Connecting
 
 - Protocol: `Swift (OpenStack Object Storage)`
 - Server: `api.van1.auro.io`
@@ -20,6 +20,6 @@ The server name is found in the Cloud Dashboard under `Project/Compute/Access & 
 
 The username is a concatenation of your OpenStack tenant name and OpenStack user name. These values can be found in your [OpenStack RC file](https://login.van1.auro.io/project/access_and_security/api_access/openrc/).
 
-# References
+## References
 
 - [Swift Usage](https://www.auro.io/support/CLI/swift/)

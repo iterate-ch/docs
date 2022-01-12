@@ -1,15 +1,15 @@
 Connection Profiles
-===
+====
 
 [Connection profiles](../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 - [Third-Party S3 providers](s3/index.md#third-party-providers)
 - [OpenStack Providers](openstack/index.md#third-party-providers)
 
-# Installation
+## Installation
 Connection profiles can be activated by either installing the file by double clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
 
-## Technical File Format Specification
+### Technical File Format Specification
 
 ```{note}
 Connection profile files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually. [Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
@@ -46,7 +46,7 @@ The following properties can be defined in a connection profile:
   * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
   * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
 
-### Example
+#### Example
 
 - {download}`Disk template file (Adobe Photoshop)<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
 
@@ -109,6 +109,6 @@ The following properties can be defined in a connection profile:
 </plist>
 ```
 
-# Disk icon template
+## Disk icon template
 
 - {download}`Adobe Photoshop disk template file<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`

@@ -1,7 +1,7 @@
 Known Issues
-===
+====
 
-# Performance Considerations
+## Performance Considerations
 
 To reduce the number of requests to the remote server for mounted volumes, we recommend the following settings when running in *Online* connect mode.
 
@@ -24,7 +24,7 @@ Choose *File Explorer → Folder Options*.
 
 `````
 
-# Characters to Avoid
+## Characters to Avoid
 
 The following characters should be avoided within file and folder names.
 
@@ -51,34 +51,34 @@ The following characters should be avoided within file and folder names.
 ````
 `````
 
-# Known Issues
+## Known Issues
 
-## Can Only Open Single PDF in Adobe Acrobat Reader
+### Can Only Open Single PDF in Adobe Acrobat Reader
 
 This is a known bug in Adobe Acrobat Reader when opening documents from a network volume. As a workaround uncheck *edit → Preferences... → Security (Enhanced) → Enable Protected Mode at startup*.
 
 - Adobe Documentation: [Protected mode (Windows)](https://helpx.adobe.com/reader/11/using/protected-mode-windows.html)
 
-## rsync Fails with Error
+### rsync Fails with Error
 
 If your server does not accept the creation of `.` temporary files you might need to add the `--inplace` when running `rsync`.
 
-## High CPU Usage when Working with Sublime Text
+### High CPU Usage when Working with Sublime Text
 
 - When working with Sublime Text we recommend turning off indexing by adding the following setting to your user preferences in Sublime Text. <br/>
 `"index_files": false`
 - You might want to [turn off Git support in Sublime](https://www.sublimetext.com/docs/git_integration.html) which has caused high CPU usage for some users when scanning `.git` folders. <br/>
 `"show_git_status": false`
 
-## Sharing a Mounted Drive in Local Network
+### Sharing a Mounted Drive in Local Network
 
 It is not possible to share a mounted drive within the local network.
 
-## Changes from Server not Immediately Visible
+### Changes from Server not Immediately Visible
 
 The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](interface.md#context-menu-in-finder-and-windows-file-explorer) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
 
-## Cache Uses a lot of Disk Space
+### Cache Uses a lot of Disk Space
 
 The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](sync.md#delete-on-local-disk) option.
 
@@ -87,7 +87,7 @@ The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or
 :width: 600px
 ```
 
-## Insufficient disk space 
+### Insufficient disk space 
 
 If the available disk space on the mounted volume is below 100MB a soft quota notification will be displayed saying *Insufficient space*. 
 Synchronization is paused when the soft quota is reached.
@@ -105,7 +105,7 @@ This quota information is only available for the following protocols:
 - [Microsoft Sharepoint](../protocols/sharepoint.md)
 - [SFTP](../protocols/sftp.md)
 
-## Missing Sync Status Icons
+### Missing Sync Status Icons
 
 `````{tabs}
 ````{group-tab} macOS
@@ -132,7 +132,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 ````
 ````` 
 
-## Operating System Specific Issues
+### Operating System Specific Issues
 
 `````{tabs}
 ````{group-tab} macOS
@@ -215,34 +215,34 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 
 `````
 
-# Interoperability
+## Interoperability
 
-## Hosting Service Providers
+### Hosting Service Providers
 
 A list of known providers that fail to work with Mountain Duck due to interoperability issues.
 
 - *OwnCube:* Their deployment does not work and we discourage this product.
 - *Bitnami ownCloud:* PHP-FPM is enabled by default in virtual machines and Ubuntu-based cloud images but must be disabled for uploads to complete. Refer to [How to disable PHP-FPM](https://docs.bitnami.com/general/infrastructure/lamp/administration/disable-phpfpm/) and [0 byte files on WebDAV server](../protocols/webdav/index.md#0-byte-files-on-webdav-server).
 
-## Third-Party Software
+### Third-Party Software
 
-### Kaspersky Internet Security
+#### Kaspersky Internet Security
 
 Make sure to uninstall Kaspersky Internet Security with its kernel extensions causing kernel panics prior to mounting a volume.
 
-### Eset Cyber Security Pro
+#### Eset Cyber Security Pro
 
 Make sure not connections on the loopback interface are blocked.
 
-### Bitdefender
+#### Bitdefender
 
 Be aware that Bitdefender may interfere with connections.
 
-### Sophos Endpoint Protection
+#### Sophos Endpoint Protection
 
 May interfere with installation.
 
-## Backups
+### Backups
 
 `````{tabs}
 ````{group-tab} macOS
@@ -259,6 +259,6 @@ Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can on
 ````
 `````
 
-## Bug Reports and Feature Requests
+### Bug Reports and Feature Requests
 
 To get help with bugs, feature requests, or other issues please refer to the [support page](support.md). 

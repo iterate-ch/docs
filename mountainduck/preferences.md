@@ -1,19 +1,19 @@
 Preferences
-===
+====
 
-# General
+## General
 
-## Save Workspace
+### Save Workspace
 
 Save all mounted volumes when quitting to be restored while relaunching.
 
-## Bookmarks
+### Bookmarks
 
 Change the size of the menu items in the status bar menu. Choose between *Small, Medium,* and *Large* icons.
 
-# Sync
+## Sync
 
-## Connect Mode
+### Connect Mode
 
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*.
 
@@ -22,22 +22,22 @@ Change the default synchronization option. You can disable synchronization by de
 :width: 700px
 ```
 
-## Index Files
+### Index Files
 
 Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](interface.md#reload) choosing *Reload* in the context menu.
 
 
-## Enable Buffering
+### Enable Buffering
 
 Choose whether the file contents should be buffered or not. Unchecking the option will disable the online cache as well.
 
 
-## Lock Files
+### Lock Files
 
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
 
-## Cache Location
+### Cache Location
 
 `````{tabs}
 ````{group-tab} macOS
@@ -53,7 +53,7 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 ````
 `````
 
-# Profiles
+## Profiles
 
 Select connection profiles to be installed. Either scroll through the list or use the search function to look for a specific profile. The connection profiles will be installed after ticking the corresponding checkboxes. Installed protocols are displayed in the protocol dropdown menu in the bookmark window. To disable the connection profile simply untick the checkbox. 
 
@@ -62,7 +62,7 @@ Select connection profiles to be installed. Either scroll through the list or us
 :width: 700px
 ```
 
-## Default Connection Profiles
+### Default Connection Profiles
 
 The following connection profiles are installed by default and can’t be deleted:
 
@@ -89,9 +89,9 @@ The following connection profiles are installed by default and can’t be delete
 - [Rackspace Cloud Files (US)](../protocols/openstack/cloudfiles.md)
 
 
-# Connection
+## Connection
 
-## Mount Location 
+### Mount Location 
 
 ````{admonition} macOS only
 :class: tip
@@ -103,19 +103,19 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
 ````
 
-## Cache
+### Cache
 
-### Enable Cache
+#### Enable Cache
 
 Allow buffering file contents in a temporary location which is only deleted when quitting the application. If unchecked, opened files will not automatically be available for offline usage when using connect mode *Smart Synchronization*.
 
 
-# Login Item
+## Login Item
 
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
 
-# Updates
+## Updates
 
 An auto-update feature will alert you when a new version is available and self updates the application. Choose *Preferences → Automatically check for updates*. You can also choose to update to snapshot or beta builds.
 
@@ -128,7 +128,7 @@ You receive no update notification if your user is missing administrator permiss
 ```
 
 
-# Notifications
+## Notifications
 
 `````{tabs}
 ````{group-tab} macOS
@@ -141,7 +141,7 @@ You can disable notifications in *Settings → System → Notifications and Acti
 ````
 `````
 
-# Hidden Configuration Options
+## Hidden Configuration Options
 
 `````{tabs}
 ````{group-tab} macOS

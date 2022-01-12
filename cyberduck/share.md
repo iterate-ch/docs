@@ -1,9 +1,9 @@
 Share Files
-===
+====
 
 Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. Depending on the provider, the link may be auto expiring and no longer valid after a given period or a password can be set required to download the file.
 
-# Availability of Upload and Download Shares
+## Availability of Upload and Download Shares
 
 *Upload* and *Download Shares* aren't available for all supported protocols. The table below shows the protocols which either support *Upload* or *Download Shares*.
 
@@ -19,9 +19,9 @@ Many storage providers have an option to share a file with a third party without
 | DRACOON | ✅ | ✅ | ✅ |
 | Box | ✅ | ✅ | ✅ |
 
-# Providers with support to share a file using a public, password protected or temporary URL
+## Providers with support to share a file using a public, password protected or temporary URL
 
-## [S3](../protocols/s3/index.md)
+### [S3](../protocols/s3/index.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -41,7 +41,7 @@ Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-ur
 ````
 `````
 
-## [OpenStack Swift](../protocols/openstack/index.md)
+### [OpenStack Swift](../protocols/openstack/index.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -56,7 +56,7 @@ A private object stored in OpenStack Swift can be made publicly available for a 
 ````
 `````
 
-## [Azure](../protocols/azure.md)
+### [Azure](../protocols/azure.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -71,7 +71,7 @@ Create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signa
 ````
 `````
 
-## [Backblaze B2](../protocols/b2.md)
+### [Backblaze B2](../protocols/b2.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -91,7 +91,7 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 ````
 `````
 
-## [DRACOON](../protocols/dracoon.md)
+### [DRACOON](../protocols/dracoon.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -106,7 +106,7 @@ Create an [download share](../protocols/dracoon.md#download-share) for a file or
 ````
 `````
 
-## [Microsoft OneDrive](../protocols/onedrive.md) & [Microsoft SharePoint](../protocols/sharepoint.md)
+### [Microsoft OneDrive](../protocols/onedrive.md) & [Microsoft SharePoint](../protocols/sharepoint.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -121,7 +121,7 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *C
 ````
 `````
 
-## [Dropbox](../protocols/dropbox.md)
+### [Dropbox](../protocols/dropbox.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -146,7 +146,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 ````
 `````
 
-## [Google Drive](../protocols/google_drive.md)
+### [Google Drive](../protocols/google_drive.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -166,7 +166,7 @@ Share the web link to open download or open the file in Google Docs. This will s
 ````
 `````
 
-## [NextCloud and ownCloud](../protocols/webdav/nextcloud.md)
+### [NextCloud and ownCloud](../protocols/webdav/nextcloud.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -186,7 +186,7 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 ````
 `````
 
-## [Box](../protocols/box.md)
+### [Box](../protocols/box.md)
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -206,6 +206,6 @@ Create download shares for files and folders and upload shares for folders. Choo
 ````
 `````
 
-## [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) & [WebDAV](../protocols/webdav/index.md)
+### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) & [WebDAV](../protocols/webdav/index.md)
 
 If you connect to a web root, refer to [HTTP URL](bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
