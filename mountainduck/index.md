@@ -6,13 +6,12 @@ Mountain Duck
 
 installation
 interface
-issues
-issues_fastcgi
+issues/index
 locking
 preferences
 support
-sync
-sync_history
+sync/index
+sync/history
 versions
 ```
 
@@ -28,11 +27,11 @@ Refer to our installation instructions
 
 Mountain Duck runs in the *status bar* on macOS and *tray area* on Windows. Refer to our user interface documentation.
 
-## [Smart Synchronization](sync.md)
+## [Smart Synchronization](sync/index.md)
 
 The smart sync feature allows making files available offline.
 
-### [File History](sync_history.md)
+### [File History](sync/history.md)
 
 Recently changed files and pending file transfers.
 
@@ -50,4 +49,4 @@ You can preview and revert previous versioned bucket in [Amazon S3](../protocols
 
 ## [Preferences](preferences.md)
 
-## [Known Issues & Workarounds](issues.md)
+## [Known Issues & Workarounds](issues/index.md)

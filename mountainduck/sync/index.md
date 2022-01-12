@@ -1,7 +1,13 @@
 Smart Synchronization
 ====
 
-```{image} _images/Disk_Syncing.png
+```{toctree}
+:hidden:
+
+history
+```
+
+```{image} ../_images/Disk_Syncing.png
 :alt: Disk Syncing
 :width: 200px
 ```
@@ -21,30 +27,30 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
 ```{note}
-Please make sure to enable the Mountain Duck [Integration](installation.md) in *System Preferences → Extensions → Finder* on macOS.
+Please make sure to enable the Mountain Duck [Integration](../installation.md) in *System Preferences → Extensions → Finder* on macOS.
 ```
 
-### ![Up to Date](_images/overlay_uptodate.png) Up to Date
+### ![Up to Date](../_images/overlay_uptodate.png) Up to Date
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
 
-### ![In Sync](_images/overlay_sync.png) In Sync
+### ![In Sync](../_images/overlay_sync.png) In Sync
 The file or directory is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.
 
-### ![Online Only](_images/overlay_infinite.png) Online Only
+### ![Online Only](../_images/overlay_infinite.png) Online Only
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
-### ![Sync in Progress](_images/overlay_syncing.png) Sync in Progress
+### ![Sync in Progress](../_images/overlay_syncing.png) Sync in Progress
 The file or directory is currently syncing with the server or cloud storage.
 
-### ![Sync Error](_images/overlay_error.png) Sync Error
+### ![Sync Error](../_images/overlay_error.png) Sync Error
 There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu.
 
-### ![Ignored](_images/overlay_ignored.png) Ignored
+### ![Ignored](../_images/overlay_ignored.png) Ignored
 The file is only saved in a local temporary location and never synced to the server or cloud storage.
 
 
 ## Context Menu Options
-```{image} _images/Mountain_Duck_Screenshot_Finder_Dark.png
+```{image} ../_images/Mountain_Duck_Screenshot_Finder_Dark.png
 :alt: Mountain Duck Finder Dark
 :width: 800px
 ```
@@ -52,14 +58,14 @@ The file is only saved in a local temporary location and never synced to the ser
 ```{admonition} macOS only
 :class: tip
 
-Please make sure to enable the Mountain Duck [Integration](interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
+Please make sure to enable the Mountain Duck [Integration](../interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
 ```
 
 ### Keep Offline
 
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
-```{image} _images/Sync_Context_Menu_macOS.png
+```{image} ../_images/Sync_Context_Menu_macOS.png
 :alt: Sync Context Menu (macOS)
 :width: 500px
 ```
@@ -68,7 +74,7 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. This is made possible by caching file contents in an obfuscated cache on a local disk, which is unavailable for direct use.
 ```
 
-To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](interface.md#context-menu-in-finder-and-windows-file-explorer).
+To reach the context menu right-click on a file or folder in File Explorer (Windows) or Finder (macOS). Refer to [Finder Extension & Windows File Explorer Extension](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 
 ### Delete on Local Disk
 
@@ -111,11 +117,11 @@ A conflict may be caused by two or more users editing the same files at the same
 
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
-```{image} _images/Sync_in_Progress.gif
+```{image} ../_images/Sync_in_Progress.gif
 :alt: Sync in Progress
 :width: 600px
 ```
-Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](sync_history.md#sync-progress).
+Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](../sync/history.md#sync-progress).
 
 ### Pause Sync
 
@@ -123,7 +129,7 @@ You can manually pause background syncing by selecting *Pause Sync* in the subme
 
 The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
 
-```{image} _images/Sync_Paused_macOS.png
+```{image} ../_images/Sync_Paused_macOS.png
 :alt: Sync Paused (macOS)
 :width: 500px
 ```
@@ -141,11 +147,11 @@ If a sync error cannot be solved using *Mountain Duck → Retry* because the ser
 
 ## File History
 
-You can lookup the latest changes to files. Refer to [Recent Files](sync_history.md#recent-files)
+You can lookup the latest changes to files. Refer to [Recent Files](history.md#recent-files)
 
 ### Notifications
 
-```{image} _images/File_Updated_Notification.png
+```{image} ../_images/File_Updated_Notification.png
 :alt: File Updated Notification
 :width: 500px
 ```
@@ -154,8 +160,8 @@ You can lookup the latest changes to files. Refer to [Recent Files](sync_history
 - **File Updated:** File changed on server since previously indexing a folder
 - **Sync Conflict:** Conflicting change in file lead to duplicate of file being created with previous content edited on server.
 
-Refer also to [Preferences → Notifications](preferences.md#notifications)
+Refer also to [Preferences → Notifications](../preferences.md#notifications)
 
 ## Preferences
 
-Refer to [Preferences](preferences.md).
+Refer to [Preferences](../preferences.md).

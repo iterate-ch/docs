@@ -63,7 +63,7 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 ### Connect Mode
 
 - **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync.md#keep-offline).
+- **Smart Synchronization:** Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync/index.md#keep-offline).
 
 ### Read-Only Volume
 
@@ -140,7 +140,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](sync.md#notifications)
+- [Sync Notifications](sync/index.md#notifications)
 
 ## Disconnect
 
@@ -186,7 +186,7 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 ## Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
-Refer to [Sync Options](sync.md#keep-offline)
+Refer to [Sync Options](sync/index.md#keep-offline)
 
 ## Reload
 

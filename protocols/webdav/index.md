@@ -159,7 +159,7 @@ The `Require` directive in Apache HTTPD tests whether an authenticated user is a
 
 ### 0 Byte Files on WebDAV Server
 
-If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues_fastcgi.md).
+If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues/fastcgi.md).
 
 ### mod_evasive
 

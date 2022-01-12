@@ -5,7 +5,7 @@ Smart Synchronization History
 
 The sync progress shows the files that currently get synchronized and pending changes after the current transfer.
 
-```{image} _images/Sync_Progress.png
+```{image} ../_images/Sync_Progress.png
 :alt: Sync Progress
 :width: 800px
 ```
@@ -19,26 +19,26 @@ Selecting an item reveals the file in the Finder (macOS) or File Explorer (Windo
 ## Recent Files
 
 The *Recent Files* area shows the last 20 items that Mountain Duck uses for one of the following operations:
-```{image} _images/Recent_Files.png
+```{image} ../_images/Recent_Files.png
 :alt: Recent Files
 :width: 600px
 ```
 
 ### File Actions
-#### ![Delete](_images/delete.png) Delete
+#### ![Delete](../_images/delete.png) Delete
 A file or folder has been deleted either *by you* or *on the server*
 
-#### ![Create](_images/plus.png) Create
+#### ![Create](../_images/plus.png) Create
 A file or folder was created or updated *on the server*.
 
-#### ![Upload](_images/transfer_upload.png) Upload
+#### ![Upload](../_images/transfer_upload.png) Upload
 A file or folder was added or changed and is uploaded to the server.
 
-#### ![Download](_images/transfer_download.png) Download
+#### ![Download](../_images/transfer_download.png) Download
 A file or folder is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
 
-#### ![Error](_images/alert.png) Error
-The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](sync.md#sync-errors).
+#### ![Error](../_images/alert.png) Error
+The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](index.md#sync-errors).
 
 ### Application Display
 
