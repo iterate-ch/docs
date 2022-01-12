@@ -87,6 +87,24 @@ The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or
 :width: 600px
 ```
 
+## Insufficient disk space 
+
+If the available disk space on the mounted volume is below 100MB a soft quota notification will be displayed saying *Insufficient space*. 
+Synchronization is paused when the soft quota is reached.
+
+```{image} _images/Soft_Quota_Disk_Space.png
+:alt: Soft Quota Insufficient disk space
+:width: 400px
+```
+
+This quota information is only available for the following protocols:
+- [WebDAV](../protocols/webdav/index.md)
+- [Google Drive](../protocols/google_drive.md)
+- [Dropdox](../protocols/dropbox.md)
+- [Microsoft OneDrive](../protocols/onedrive.md)
+- [Microsoft Sharepoint](../protocols/sharepoint.md)
+- [SFTP](../protocols/sftp.md)
+
 ## Missing Sync Status Icons
 
 `````{tabs}
