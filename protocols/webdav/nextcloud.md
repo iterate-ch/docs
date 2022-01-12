@@ -66,7 +66,7 @@ Create [public shares](../../cyberduck/share.md#nextcloud-and-owncloud) for peop
 
 ### 0-Byte Files
 
-If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues_fastcgi.md).
+If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues/issues/fastcgi.md).
 
 ### Slow Listings for Large Folder Structures
 
@@ -83,4 +83,4 @@ The modification date retention is supported using `X-OC-Mtime` for new files up
 ## References
 
 - [Accessing Nextcloud Files Using WebDAV](https://docs.nextcloud.com/server/13/user_manual/files/access_webdav.html)
-- [Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI](../../mountainduck/issues_fastcgi.md)
+- [Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI](../../mountainduck/issues/issues/fastcgi.md)
