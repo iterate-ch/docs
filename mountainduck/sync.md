@@ -79,8 +79,8 @@ Files will get cached again regardless this setting if accessed again later (e.g
 ```
 
 <video width="800" height="450" controls>
-	<source src="../_static/videos_MD/KeepOffline.mp4" type="video/mp4" />
-</vidoe>
+	<source src="../_static/videos/mountainduck/keepoffline.mp4" type="video/mp4" />
+</video>
 
 
 # Sync Conflicts
