@@ -18,7 +18,7 @@ Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on
 You can open a previous version of a file by choosing *Versions → ... → Quick Look*. This will open a *Quick Look preview* on macOS or open the previous version of the file in the defailt application on Windows.
 
 ```{image} _images/Revert_File_Context_Menu_Option_Windows.png
-:alt: Send Command
+:alt: Revert File Context Menu Option (Windows)
 :width: 900px
 ```
 
@@ -27,6 +27,6 @@ You can open a previous version of a file by choosing *Versions → ... → Quic
 You can revert to a previous version of a file by choosing *Versions → ... → Revert*. Wait for the *File Updated* notification which notifies the previous version has been restored.
 
 ```{image} _images/File_Updated_Notification_Windows.png
-:alt: Send Command
+:alt: File Updated Notification (Windows)
 :width: 400px
 ```

@@ -6,7 +6,7 @@ Smart Synchronization History
 The sync progress shows the files that currently get synchronized and pending changes after the current transfer.
 
 ```{image} _images/Sync_Progress.png
-:alt: Send Command
+:alt: Sync Progress
 :width: 800px
 ```
 
@@ -20,7 +20,7 @@ Selecting an item reveals the file in the Finder (macOS) or File Explorer (Windo
 
 The *Recent Files* area shows the last 20 items that Mountain Duck uses for one of the following operations:
 ```{image} _images/Recent_Files.png
-:alt: Send Command
+:alt: Recent Files
 :width: 600px
 ```
 

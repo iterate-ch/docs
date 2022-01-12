@@ -10,7 +10,7 @@ Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `
 Type in the new filename and press *Tab* to leave the text field and commit the change.
 
 ```{image} _images/General.png
-:alt: Send Command
+:alt: General
 :width: 600px
 ```
 
@@ -23,7 +23,7 @@ Calculate the size recursively of all contained files.
 Change the permissions on a particular file or folder when connected to a [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp.md) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will not change the executable bit for files if not already set when recursively updating a directory.
 
 ```{image} _images/UNIX_Permissions.png
-:alt: Send Command
+:alt: UNIX Permissions
 :width: 400px
 ```
 
@@ -35,7 +35,7 @@ Edit access control list for fine grained user permissions when connected to [Am
 - [Google Storage ACLs](../protocols/google_cloud_storage.md#acls)
 
 ```{image} _images/Access_Control_Lists.png
-:alt: Send Command
+:alt: Access Control Lists
 :width: 500px
 ```
 
@@ -87,7 +87,6 @@ Settings specific to the [Amazon S3](../protocols/s3/index.md) service.
 
 - The geographic location of the bucket.
 - [Publicly accessible URL](../protocols/s3/index.md#pre-signed-temporary-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
-- [Torrent URL](../protocols/s3/index.md#bittorrent-urls) to the file.
 - Enabling [access logs](../protocols/s3/index.md#bucket-access-logging) for the bucket.
 - Choose storage class ([Reduced Redundancy Storage (RRS)](../protocols/s3/index.md#storage-class)). Settings will be applied recursively if a folder is selected.
 - Configure [bucket versioning](../protocols/s3/index.md#versions).
@@ -95,7 +94,7 @@ Settings specific to the [Amazon S3](../protocols/s3/index.md) service.
 - Configure [Transfer Acceleration](../protocols/s3/index.md#transfer-acceleration).
 
 ```{image} _images/Amazon_S3.png
-:alt: Send Command
+:alt: Amazon S3
 :width: 500px
 ```
 
@@ -109,6 +108,6 @@ Any non-standard HTTP header values are (transparently) prefixed with the follow
 - Values are prefixed with `X-Object-Meta-` for [CloudFiles](../protocols/openstack/cloudfiles.md).
 
 ```{image} _images/Metadata.png
-:alt: Send Command
+:alt: Metadata
 :width: 500px
 ```

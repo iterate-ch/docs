@@ -29,7 +29,7 @@ storadera
 ```
 
 ```{image} _images/s3.png
-:alt: Send Command
+:alt: S3 Drive Icon
 :width: 128px
 ```
 
@@ -214,11 +214,9 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Polycloud](polycloud.md)
 - [Scaleway Object Storage](scaleway.md)
 
-## File System
+## Buckets
 
-### Buckets
-
-#### Creating a Bucket
+### Creating a Bucket
 
 To create a new [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket-s3.html) for your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*. You can choose the bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for different regions.
 
@@ -253,7 +251,7 @@ Mountain Duck 4.6.1 or later: You will receive a prompt for the region when crea
 - You cannot change the location of an existing bucket.
 ```
 
-#### Bucket Access Logging
+### Bucket Access Logging
 
 When this option is enabled in the S3 panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to `/logs` in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.
 
@@ -263,7 +261,10 @@ To toggle CloudFront access logging, select the the [Distribution](../../cdn/clo
 
 ### Versions
 
-[Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has `s3:PutBucketVersioning` permission permits users to modify the versioning configuration of a bucket.
+[Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has the following permissions:
+- `s3:PutBucketVersioning` to permit users to modify the versioning configuration of a bucket.
+- `s3:GetBucketVersioning` and `s3:ListBucketVersions` to see versions of a file.
+- `s3:GetObjectVersion` to download a specific version.
 
 You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*.
 
@@ -285,37 +286,37 @@ To enable *Multi-Factor Authentication (MFA) Delete*, you need to purchase a com
 
 Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type `application/x-directory`.
 
-#### Supported Third Party Folder Placeholder Formats
+### Supported Third Party Folder Placeholder Formats
 
 - Folders created with [AWS Management Console](http://aws.amazon.com/console/).
 
-### File Transfers
+## File Transfers
 
-#### Transfer Acceleration
+### Transfer Acceleration
 
 When enabled for the bucket, downloads, and uploads using the S3 Transfer Acceleration endpoints to transfer data through CloudFront’s globally distributed edge locations. The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods ("."). You do **not** need to enter transfer accelerated endpoints manually. When using Transfer Acceleration, additional data transfer charges may apply to connect to `s3-accelerate.dualstack.amazonaws.com`.
 
 ![Transfer Acceleration](_images/Amazon_S3_Transfer_Acceleration.png)
 
-##### Permissions
+#### Permissions
 
 Make sure the user has `s3:GetAccelerateConfiguration` permission permits users to return the Transfer Acceleration state of a bucket.
 
-#### Checksums
+### Checksums
 
 Files are verified both by AWS when the file is received and compared with the `SHA256` checksum sent with the request. Additionally, the checksum returned by AWS for the uploaded file is compared with the checksum computed locally if enabled in *Transfers → Checksum → Uploads → Verify checksum*.
 
-#### Multipart Uploads
+### Multipart Uploads
 
 Files larger than 100MB are uploaded in parts with up to 10 parallel connections as 10MB parts. Given these sizes, the file size limit is 100GB with a maximum of 10'000 parts allowed by S3. The number of connections used can be limited using the toggle in the lower right of the transfer window.
 
 Multipart uploads can be resumed later when interrupted. Make sure the user has the permission `s3:ListBucketMultipartUploads`.
 
-##### Unfinished Multipart Uploads
+#### Unfinished Multipart Uploads
 
 You can view unfinished multipart uploads in the browser by choosing *View → Show Hidden Files*.
 
-##### Options
+#### Options
 
 You can set options with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
@@ -339,13 +340,13 @@ You have the option to store files using the *Reduced Redundancy Storage (RRS)* 
 - Glacier
 - Glacier Deep Archive
 
-### Lifecycle Configuration
+## Lifecycle Configuration
 
 Specify after how many days a file in a bucket should be moved to Amazon Glacier or deleted.
 
 ![Lifecycle Configuration](_images/Lifecycle-Configuration-for-S3-Windows.png)
 
-### Restore from Glacier
+## Restore from Glacier
 
 ```{attention}
 This function is currently Cyberduck only.
@@ -353,7 +354,7 @@ This function is currently Cyberduck only.
 
 You can temporarily restore files from *Glacier* and *Glacier Deep Archive* using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
 
-#### Glacier Retrieval Options
+### Glacier Retrieval Options
 
 You can set retrieval options for the storage classes *Glacier* and *Glacier Deep Archive* with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
@@ -436,10 +437,6 @@ Using the AWS4 signature version used in Cyberduck version 5.0 and later, pre-si
 ```{note}
 This deprecated signature version is not compatible with new regions such as `eu-central-1`.
 ```
-
-### BitTorrent URLs
-
-Use *File → Info (macOS `⌘I` Window `Alt+Return`) → S3* to copy the BitTorrent URL of a selected file. The ACL of the object must allow anonymous read. One important thing to note is that the `.torrent` file describing an Amazon S3 object is generated on-demand, the first time the Torrent URL is requested. Generating the `.torrent` for an object takes time proportional to the size of that object. For large objects, this time can be significant. Therefore, before publishing a `?torrent` link, we suggest making the first request for it yourself. Amazon S3 might take several minutes to respond to this first request, as it generates the `.torrent` file. Unless you update the object in question, subsequent requests for the `.torrent` will be fast.
 
 ## Metadata
 
@@ -526,6 +523,10 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 - [Amazon S3 adds new features for hosting static websites](http://aws.amazon.com/about-aws/whats-new/2011/02/17/Amazon-S3-Website-Features/)
 
 ## Known Issues
+
+### Modification Date
+
+The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Timestamps).cyberduckprofile>`.
 
 ### Disable use of Virtual Host Style Requests
 

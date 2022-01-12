@@ -13,7 +13,7 @@ You can edit a file just as a local file by clicking the Edit toolbar button or 
 The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the *Preferences* is used instead.
 
 ```{image} _images/Edit_With_Application.png
-:alt: Send Command
+:alt: Edit with Application
 :width: 700px
 ```
 <br/>
@@ -27,7 +27,7 @@ To edit file type associations choose *File → Info* for a given file type in t
 The default editor of a file is selected using the default application for a given file typeset. If the default application is not one of the supported editors, the editor chosen in the *Preferences* is used instead.
 
 ```{image} _images/Edit_With_Application.png
-:alt: Send Command
+:alt: Edit with Application
 :width: 700px
 ```
 <br/>
@@ -43,7 +43,7 @@ To edit file type associations choose *File → Info* for a given file type in t
 Select *Always use default editor* in *Preferences → Editor* if you always want to use the default editor set regardless of the file type.
 
 ```{image} _images/Editor_Preferences.png
-:alt: Send Command
+:alt: Editor Preferences
 :width: 500px
 ```
 

@@ -63,7 +63,7 @@ to install.
 Not currently available.
 
 ```{image} _images/CLI_Setup.png
-:alt: Send Command
+:alt: CLI Setup
 :width: 500px
 ```
 

@@ -12,7 +12,7 @@ Cyberduck is an open-source server and cloud storage browser for Mac and Windows
 Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this programm useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key and it will help to make Cyberduck even better!
 
 ```{image} _images/Donation_Prompt.png
-:alt: Send Command
+:alt: Donation Prompt
 :width: 600px
 ```
 

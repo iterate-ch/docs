@@ -17,7 +17,7 @@ Some servers may not support resumable transfers and the file will be reloaded i
 ```
 
 ```{image} _images/Transfers.png
-:alt: Send Command
+:alt: Transfers
 :width: 700px
 ```
 
@@ -47,7 +47,7 @@ Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.
 If the *Transfers* window is closed, progress is also visible in the application icon in the Taskbar.
 
 ```{image} _images/Transfer_Progress.png
-:alt: Send Command
+:alt: Transfer Progress
 :width: 100px
 ```
 ````
@@ -77,7 +77,7 @@ You can choose to use single or multiple connections for file transfers. Choose 
 **Open multiple connections:** Use multiple connections to transfer files from a transfer concurrently.
 
 ```{image} _images/Transfer_Options.png
-:alt: Send Command
+:alt: Transfer Options
 :width: 300px
 ```
 
@@ -86,7 +86,7 @@ You can choose to use single or multiple connections for file transfers. Choose 
 The maximum number of connections for transfers using multiple connections can be limited using the toggle in the lower right of the *transfer window* on Windows or the *toolbar dropdown* on macOS. The same toggle limits the maximum allowed concurrent transfers in the transfer window to the same number.
 
 ```{image} _images/Limit_Connections.png
-:alt: Send Command
+:alt: Limit Connections
 :width: 500px
 ```
 
@@ -95,7 +95,7 @@ The maximum number of connections for transfers using multiple connections can b
 A prompt is displayed if files already exist at the target location (on your local hard disk for downloads or on the server for uploads) and you have selected *Prompt* in *Transfers → General → Downloads/Uploads → Existing Files*. The prompt allows choosing the action for existing files. You can exclude selected files and folders from the transfer action by unchecking the checkbox next to it. If the checkbox is not selected, these files will be skipped.
 
 ```{image} _images/Overwrite_Prompt.png
-:alt: Send Command
+:alt: Overwrite Prompt
 :width: 700px
 ```
 
@@ -106,7 +106,7 @@ A prompt is displayed if files already exist at the target location (on your loc
 Replace any existing file restarting the transfer from scratch. Existing files are moved to the trash.
 
 ```{image} _images/Overwrite_Options.png
-:alt: Send Command
+:alt: Overwrite Options
 :width: 600px
 ```
 

@@ -2,7 +2,7 @@ Google Cloud Storage
 ====
 
 ```{image} _images/googlestorage.png
-:alt: Send Command
+:alt: Google Cloud Storage Drive Icon
 :width: 128px
 ```
 

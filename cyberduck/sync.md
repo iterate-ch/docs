@@ -17,7 +17,7 @@ The criteria to download or upload a file are given by
 You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.
 
 ```{image} _images/Synchronize_Folders.png
-:alt: Send Command
+:alt: Synchronize Folders
 :width: 700px
 ```
 

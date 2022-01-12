@@ -2,7 +2,7 @@ Smart Synchronization
 ====
 
 ```{image} _images/Disk_Syncing.png
-:alt: Send Command
+:alt: Disk Syncing
 :width: 200px
 ```
 
@@ -45,7 +45,7 @@ The file is only saved in a local temporary location and never synced to the ser
 
 ## Context Menu Options
 ```{image} _images/Mountain_Duck_Screenshot_Finder_Dark.png
-:alt: Send Command
+:alt: Mountain Duck Finder Dark
 :width: 800px
 ```
 
@@ -60,7 +60,7 @@ Please make sure to enable the Mountain Duck [Integration](interface.md#context-
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
 ```{image} _images/Sync_Context_Menu_macOS.png
-:alt: Send Command
+:alt: Sync Context Menu (macOS)
 :width: 500px
 ```
 
@@ -112,7 +112,7 @@ A conflict may be caused by two or more users editing the same files at the same
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
 ```{image} _images/Sync_in_Progress.gif
-:alt: Send Command
+:alt: Sync in Progress
 :width: 600px
 ```
 Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](sync_history.md#sync-progress).
@@ -122,6 +122,11 @@ Detailed status for current transfers is available in the *Sync* submenu. Refer 
 You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
 The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
+
+```{image} _images/Sync_Paused_macOS.png
+:alt: Sync Paused (macOS)
+:width: 500px
+```
 
 ## Sync Errors
 
@@ -141,7 +146,7 @@ You can lookup the latest changes to files. Refer to [Recent Files](sync_history
 ### Notifications
 
 ```{image} _images/File_Updated_Notification.png
-:alt: Send Command
+:alt: File Updated Notification
 :width: 500px
 ```
 

@@ -10,7 +10,7 @@ All major server and cloud storage [protocols](../protocols/index.md) are suppor
 Click the *New Connection* toolbar button or *File → Open Connection.. (mac `⌘O` Windows `Strg+O`)*. If you want to open a connection in a new browser window, choose *File → New Browser (macOS `⌘N` Windows `Strg+N`)* first.
 
 ```{image} _images/Open_Connection.png
-:alt: Send Command
+:alt: Open Connection
 :width: 500px
 ```
 
@@ -19,7 +19,7 @@ Click the *New Connection* toolbar button or *File → Open Connection.. (mac `�
 Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](bookmarks.md) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../cli/index.md#uri) formats for input.
 
 ```{image} _images/Quick_Connect.png
-:alt: Send Command
+:alt: Quick Connect
 :width: 400px
 ```
 
@@ -36,7 +36,7 @@ Additionally, you can switch to the *History* or *Bonjour* in the bookmark view.
 List all recently connected servers. Select a bookmark from the menu *Bookmark → History* or the *History* tab of the bookmark view.
 
 ```{image} _images/History_Menu.png
-:alt: Send Command
+:alt: History Menu
 :width: 700px
 ```
 
@@ -49,7 +49,7 @@ Auto-discovery of SFTP, FTP & WebDAV services in your local network. Discovered 
 ### Bookmark File
 
 ```{image} _images/Bookmark_Files.png
-:alt: Send Comman
+:alt: Bookmark Files
 :width: 200px
 ```
 
@@ -136,7 +136,7 @@ The *Automatic Proxy Configuration* using a *Proxy Configuration File* is curren
 Choose *FTP Proxy* and select the checkbox to configure the proxy address.
 
 ```{image} _images/Proxy_Configuration_FTP_and_SFTP.png
-:alt: Send Command
+:alt: Proxy Configuration FTP/SFTP
 :width: 500px
 ```
 
@@ -207,7 +207,7 @@ A [hidden configuration option](preferences.md#hidden-configuration-options). By
 You can set Cyberduck or a third-party application as the default application (protocol handler) for `FTP` and `SFTP` in *Preferences → FTP* and *Preferences → SFTP* respectively.
 
 ```{image} _images/Default_FTP_Protocol_Handler.png
-:alt: Send Command
+:alt: Default FTP Protocol Handler
 :width: 400px
 ```
 

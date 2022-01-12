@@ -25,7 +25,7 @@ Follow these steps:
 - Select to include system files in the custom search by choosing *Other...* in the criteria drop-down menu.
 
 ```{image} _images/system_files_criteria.png
-:alt: Send Command
+:alt: System Files Criteria
 :width: 600px
 ```
 
@@ -34,6 +34,6 @@ Follow these steps:
 When configured, the saved search looks the following:
 
 ```{image} _images/Cyberduck_saved_search.png
-:alt: Send Command
+:alt: Cyberduck Saved Search
 :width: 800px
 ```

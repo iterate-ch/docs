@@ -2,7 +2,7 @@ SFTP
 ====
 
 ```{image} _images/ftp.png
-:alt: Send Command
+:alt: FTP Drive Icon
 :width: 128px
 ```
 

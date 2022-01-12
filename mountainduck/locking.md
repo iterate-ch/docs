@@ -43,7 +43,7 @@ Attempting to open a locked document, an error message is displayed notifying th
 `Read Only. To save a copy of this document, click Duplicate`
 
 ```{image} _images/Read_Only_Microsoft_Word_macOS.png
-:alt: Send Command
+:alt: Read Only Microsoft Word (macOS)
 :width: 500px
 ```
 
@@ -51,12 +51,12 @@ Attempting to open a locked document, an error message is displayed notifying th
 `Document ... is locked for editing by... . Open document read-only or open a copy of the document for editing.`
 
 ```{image} _images/Document_in_Use_Libre_Office_macOS.png
-:alt: Send Command
+:alt: Document in Use Libre Office (macOS)
 :width: 400px
 ```
 
 ```{image} _images/Read_Only_Mode_Libre_Office_macOS.png
-:alt: Send Comman
+:alt: Read Only Mode Libre Office (macOS)
 :width: 400px
 ```
 
@@ -65,19 +65,19 @@ Attempting to open a locked document, an error message is displayed notifying th
 `This file is already opend by another user. Would you like to make a copy of this file for your use?`
 
 ```{image} _images/File_in_Use_Microsoft_Word_Windows.png
-:alt: Send Command
+:alt: File in Use Microsoft Word (Windows)
 :width: 400px
 ```
 
 Choose *Receive notification when the original copy is available* to open the document in read-only mode and get an alert when the other user has closed the document.
 
 ```{image} _images/Microsoft_Word_Read-Only_Edit_Windows.png
-:alt: Send Command
+:alt: Read Only Edit Microsoft Word (Windows)
 :width: 400px
 ```
 
 ```{image} _images/Microsoft_Word_File_Now_Available_Windows.png
-:alt: Send Command
+:alt: File Now Available Microsoft Word (Windows)
 :width: 400px
 ```
 
@@ -85,14 +85,14 @@ Choose *Receive notification when the original copy is available* to open the do
 `File in Use: File is locked for editing by ... . Open 'Read-Only' or click 'Notify' to open read-only and receive notification when the document is no longer in use.`
 
 ```{image} _images/Read_Only_Microsoft_Excel_Windows.png
-:alt: Send Command
+:alt: Read Only Microsoft Excel (Windows)
 :width: 400px
 ```
 
 Choose *Notify* to open the document in read-only mode and get an alert when the other user has closed the document.
 
 ```{image} _images/Microsoft_Excel_File_Now_Available_Notification_Windows.png
-:alt: Send Command
+:alt: File Now Available Notification Microsoft Excel
 :width: 400px
 ```
 

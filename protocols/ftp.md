@@ -2,7 +2,7 @@ FTP & FTP-TLS
 ====
 
 ```{image} _images/ftp.png
-:alt: Send Command
+:alt: FTP Drive Icon
 :width: 128px
 ```
 
@@ -110,6 +110,10 @@ Applying Registry-files is not riskless and should be avoided if not necessary. 
 5. Delete the Virtual Machine
 
 ## Known Issues
+
+### Modification Date
+
+Requires server-side support for `MFMT` or `UTIME` extensions.
 
 ### Maximum Number of Connections
 

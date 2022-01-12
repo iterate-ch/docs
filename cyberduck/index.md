@@ -27,12 +27,12 @@ upload
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
 ```{image} _images/Cyberduck_Quick_Reference_Page_1.png
-:alt: Send Command
+:alt: Cyberduck Quick Reference Page 1
 :width: 700px
 ```
 
 ```{image} _images/Cyberduck_Quick_Reference_Page_2.png
-:alt: Send Command
+:alt: Cyberduck Quick Reference Page 2
 :width: 700px
 ```
 

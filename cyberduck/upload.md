@@ -12,7 +12,7 @@ Select *File → Upload...* to select files to upload.
 There is a toolbar button available that you can add using *View → Customize Toolbar...*.
 
 ```{image} _images/Toolbar_Upload.png
-:alt: Send Command
+:alt: Toolbar Upload
 :width: 300px
 ```
 
@@ -33,7 +33,7 @@ Upload files without first opening a connection to a server by dropping the file
 You can browse your local hard disk within Cyberduck and drag files to the remote browser opened in another window or tab.
 
 ```{image} _images/Connection_Popup.png
-:alt: Send Command
+:alt: Connection Popup
 :width: 400px
 ```
 
@@ -46,7 +46,7 @@ Drag files to the application icon in the `Dock` which will upload to the frontm
 ```
 
 ```{image} _images/Bookmark_Upload_Selection.png
-:alt: Send Command
+:alt: Bookmark Upload Selection
 :width: 400px
 ```
 
@@ -55,7 +55,7 @@ Drag files to the application icon in the `Dock` which will upload to the frontm
 Copy a file in the *Finder.app* or *Explorer* with *Edit → Copy (macOS `⌘C` Windows `Ctrl+C`)* and paste it to a browser window in Cyberduck to upload with *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*.
 
 ```{image} _images/Paste_Files.png
-:alt: Send Command
+:alt: Paste Files
 :width: 300px
 ```
 
@@ -67,7 +67,7 @@ Copy a file in the *Finder.app* or *Explorer* with *Edit → Copy (macOS `⌘C` 
 When selecting files in the *Finder* or another application with references to files and folders, choose the item *Services → Upload* (with the Cyberduck icon) in the application menu to launch Cyberduck and upload the items selected to the bookmark you choose. This action is also available in the context menu (right-click on files or folders) in the *Finder*.
 
 ```{image} _images/Services_Upload.png
-:alt: Send Command
+:alt: Services Upload
 :width: 300px
 ```
 ````
@@ -77,7 +77,7 @@ Make sure in *System Preferences → Keyboard → Keyboard Shortcuts → Service
 ```
 
 ```{image} _images/Upload_from_Finder.png
-:alt: Send Command
+:alt: Upload from Finder
 :width: 600px
 ```
 

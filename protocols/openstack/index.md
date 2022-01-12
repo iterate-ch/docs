@@ -22,7 +22,7 @@ zetta.io
 ```
 
 ```{image} _images/swift.png
-:alt: Send Command
+:alt: Swift Drive Icon
 :width: 128px
 ```
 

@@ -26,7 +26,7 @@ Drag the files or folders to the desired download location in the *Finder.app* o
 Customize the browser toolbar using menu *View → Customize Toolbar...* to add the *Download* toolbar button to the default configuration.
 
 ```{image} _images/Download_Toolbar_Button.png
-:alt: Send Command
+:alt: Download Toolbar Button
 :width: 500px
 ```
 

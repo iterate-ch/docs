@@ -2,7 +2,7 @@ Box.com
 ====
 
 ```{image} _images/box.png
-:alt: Box
+:alt: Box Drive Icon
 :width: 128px
 ```
 
@@ -55,6 +55,12 @@ Only available using the default *Box* connection profile.
 ```
 
 Create download and upload [shares](../cyberduck/share.md#box) of files or folders for people who are not Box users by using *File → Share...*.
+
+## Known Limitations
+
+### Modification Date
+
+The modification date retention is supported for new files uploaded but without the option to adjust the modification date later.
 
 ## References
 
