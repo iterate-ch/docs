@@ -57,7 +57,7 @@ Select connection protocols in _Preferences → Profiles_ to be installed in add
 You cannot disable any of the default protocols or a connection profile in use or default protocols.
 ```
 
-# Modification Date
+## Modification Date
 The modification date retention isn't supported for all protocols natively.
 
 ```{admonition} Mountain Duck only
