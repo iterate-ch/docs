@@ -10,6 +10,10 @@ Sign up for a free account that comes with 5GB of storage and 5GB of transfer pe
 
 # Connecting
 
+```{Note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 ## Connection Profile
 
 ### Memset 1.0
