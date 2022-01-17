@@ -1,4 +1,4 @@
-Cryptomator - Encryption Security Architecture
+Encryption Security Architecture
 ====
 
 Please refer to [Cryptomator](index) security overview for more details.

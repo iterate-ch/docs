@@ -4,7 +4,7 @@ Cryptomator
 ```{toctree}
 :hidden:
 
-cryptomator_architecture
+architecture/index.md
 ```
 
 ```{image} _images/cryptomator.png
@@ -193,10 +193,6 @@ In your local disk connection, you can access all directories which are saved on
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
 
-## Security Architecture
-
-See [Security Architecture Overview](https://docs.cryptomator.org/en/latest/security/architecture/#).
-
 ## Preferences
 
 ### Auto Detect
@@ -205,4 +201,4 @@ Uncheck *Preferences → Cryptomator → Auto detect and open Vault in browser* 
 
 ## References
 
-See [Encryption Security Architecture](cryptomator_architecture).
+See [Encryption Security Architecture](architecture/index.md).
