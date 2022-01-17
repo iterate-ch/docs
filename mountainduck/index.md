@@ -7,11 +7,10 @@ Mountain Duck
 installation
 interface
 issues/index
+sync/index
 locking
 preferences
 support
-sync/index
-sync/history
 versions
 ```
 
