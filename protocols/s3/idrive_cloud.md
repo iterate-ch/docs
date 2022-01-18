@@ -28,7 +28,7 @@ You can have a maximum of 2 pairs of S3 Access Key and Secret.
 
 ### OpenStack Swift
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* for preconfigured settings for authentication.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* or install it through the *Profiles* tab of the preferences for preconfigured settings for authentication.
 
 Enter the following authentication credentials to the bookmark:
 

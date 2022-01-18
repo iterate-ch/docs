@@ -28,7 +28,7 @@ You must obtain the login credentials (Account Name and Primary Access Key) from
 
 You can use a [SAS](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) when you want to provide access to resources in your storage account to any client not possessing your storage account's access keys.
 
-- [Download](https://github.com/iterate-ch/cyberduck/raw/master/profiles/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile) the Azure (Shared Access Signature Token) profile
+- [Download](https://github.com/iterate-ch/cyberduck/raw/master/profiles/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile) the Azure (Shared Access Signature Token) profile or install it through the *Profiles* tab of the preferences.
 
 ## Cyberduck CLI
 
