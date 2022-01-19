@@ -51,10 +51,6 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 - **[Send custom commands](../protocols/sftp.md#remote-commands):** Send commands to a server not available in the graphical user interface.
 - **[Activity](browser.md#activity):** The activity window shows a list of all pending background tasks.
 
-```{note}
-_Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
-```
-
 ### [Edit Files](edit.md)
 
 Editing files on the server using an [external editor](edit.md).

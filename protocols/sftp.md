@@ -231,6 +231,10 @@ You can enable custom origin [Amazon CloudFront (Content Delivery Network) distr
 
 The remote systems must have the archiving tools `tar` or `zip` installed respectively. Use *View → Customize Toolbar...* to add the Archive toolbar button to your browser window. It is not included in the default toolbar configuration.
 
+```{note}
+_Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
+```
+
 ### Archive
 
 Select one or more files to archive in the browser. For multiple files, a file with the name `Archive` with the given extension of the archive format will be created.
