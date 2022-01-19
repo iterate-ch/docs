@@ -1,5 +1,9 @@
 @import url("https://cdn.cyberduck.io/css/custom.css");
 
+body {
+    font-size: 16px;
+}
+
 .wy-nav-content {
   max-width: 100%
 }
