@@ -4,6 +4,7 @@ Cryptomator
 ```{toctree}
 :hidden:
 :titlesonly:
+
 architecture/index.md
 ```
 
