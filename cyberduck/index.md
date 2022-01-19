@@ -73,13 +73,6 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 - **[Synchronize](sync.md)** folders between your computer and a server.
 - **[Copy](copy.md)** files and folders between servers.
 
-## [Content Distribution (CDN)](../cdn/index.md)
-
-- [Memset Memstore](../protocols/openstack/memset.md)
-- [Amazon CloudFront](../cdn/cloudfront.md) content delivery options.
-- [Akamai](../cdn/akamai.md) content delivery options.
-- [KeyCDN](../cdn/keycdn.md) content delivery options.
-
 ## [Notifications](notifications.md)
 
 - [Notifications](notifications.md) configuration
