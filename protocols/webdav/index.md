@@ -3,7 +3,7 @@ WebDAV
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 bigcommerce
 gmx
 ikeepincloud

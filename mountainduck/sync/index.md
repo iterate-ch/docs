@@ -3,7 +3,7 @@ Smart Synchronization
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 history
 ```
 

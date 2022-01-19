@@ -3,7 +3,7 @@ Amazon S3
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 alibaba
 cynny
 digitalocean

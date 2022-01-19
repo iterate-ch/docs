@@ -3,7 +3,7 @@ Command Line Interface (CLI)
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 support
 ```
 

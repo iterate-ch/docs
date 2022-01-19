@@ -3,7 +3,7 @@ Cyberduck
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 bookmarks
 browser
 connection

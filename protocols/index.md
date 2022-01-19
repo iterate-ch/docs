@@ -3,7 +3,7 @@ Protocols
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 profiles
 openstack/index
 s3/index

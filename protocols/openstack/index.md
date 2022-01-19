@@ -3,7 +3,7 @@ Swift (OpenStack Object Storage)
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 auro
 cloud.ca
 cloud_a

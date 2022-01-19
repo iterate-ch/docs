@@ -3,6 +3,7 @@ Cyberduck & Mountain Duck Help
 
 ```{toctree}
 :hidden:
+:titlesonly:
 
 cyberduck/index
 cli/index

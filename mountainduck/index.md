@@ -3,7 +3,7 @@ Mountain Duck
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 installation
 interface
 issues/index

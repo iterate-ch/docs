@@ -3,7 +3,7 @@ Content Delivery Network (CDN) Configuration
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 akamai
 cloudfront
 keycdn
