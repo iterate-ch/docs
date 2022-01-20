@@ -18,6 +18,10 @@ You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mut
 
 Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
 
+```{Note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 - [Nextcloud](nextcloud.md)
 - [ownCloud](nextcloud.md)
 - [GMX Mediacenter](gmx.md)
