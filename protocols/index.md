@@ -88,11 +88,11 @@ The Integrated Rule-Oriented Data System (iRODS) is an open source data manageme
 Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../cryptomator/index.md#access-vaults-on-local-disk) stored on your computer.
 
 
-# Connection Profiles
+## Connection Profiles
 
 [Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
 
-## Preferences → Profiles
+### Preferences → Profiles
 
 Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed below. Either scroll through the list or use the search function to look for a specific profile. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
 
@@ -118,7 +118,8 @@ Select connection protocols in _Preferences → Profiles_ to be installed in add
 You cannot disable default protocols or connection profiles currently in use in any bookmark.
 ```
 
-# Modification Date
+## Features
+### Modification Date
 Retaining the modification date for files uploaded is not supported for all protocols.
 
 ```{admonition} Mountain Duck
