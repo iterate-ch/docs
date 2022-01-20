@@ -27,65 +27,6 @@ spectra
 
 All major server and cloud storage protocols are supported to connect to just about any server or cloud storage. Support for the listed protocols and [connection profiles](profiles.md) is available in [Cyberduck](../cyberduck/index.md), [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
-## Connection Profiles
-
-[Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
-
-### Preferences → Profiles
-
-Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed below. Either scroll through the list or use the search function to look for a specific profile. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
-
-`````{tabs}
-````{group-tab} macOS
-
-```{image} _images/Preferences_Profiles_macOS.png
-:alt: macOS
-:width: 600px
-```
-
-````
-````{group-tab} Windows
-
-```{image} _images/Preferences_Profiles.png
-:alt: Windows
-:width: 500px
-```
-````
-`````
-
-```{note}
-You cannot disable any of the default protocols or a connection profile in use or default protocols.
-```
-
-## Modification Date
-The modification date retention isn't supported for all protocols natively.
-
-```{admonition} Mountain Duck only
-:class: attention
-Protocols with limited support retaining modification dates for new files uploaded but without the option to adjust the modification date later.
-```
-
-| Protocol | Native Support | Limited Support |
-| --- | :---: | :---: |
-| SFTP| ✅ ||
-| Google Drive | ✅ ||
-| Google Cloud Storage | ✅ ||
-| Microsoft OneDrive | ✅ ||
-| Microsoft Sharepoint | ✅ ||
-| Files.com | ✅ ||
-| DRACOON | ✅ ||
-| Backblaze B2 | ❌	| ✅ |
-| Box.com | ❌	| ✅ |
-| Dropbox | ❌	| ✅ |
-| Nextcloud | ❌ | ✅ |
-| ownCloud | ❌	| ✅ |
-| S3 | ❌ | ✅ |
-
-There are two protocols with possible interoperability issues:
-- **WebDAV**: Saving the modification dates requires support from server storing metadata in custom namespace
-- **FTP**: Requires support from server for `MFMT` or `UTIME` extensions
-
-## Supported Protocols
 ### [FTP](ftp.md)
 With support for secure TLS connections and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront) option.
 
@@ -145,3 +86,126 @@ The Integrated Rule-Oriented Data System (iRODS) is an open source data manageme
 
 ### Local Disk
 Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../cryptomator/index.md#access-vaults-on-local-disk) stored on your computer.
+
+
+## Connection Profiles
+
+[Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
+
+### Preferences → Profiles
+
+Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed below. Either scroll through the list or use the search function to look for a specific profile. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
+
+`````{tabs}
+````{group-tab} macOS
+
+```{image} _images/Preferences_Profiles_macOS.png
+:alt: macOS
+:width: 600px
+```
+
+````
+````{group-tab} Windows
+
+```{image} _images/Preferences_Profiles.png
+:alt: Windows
+:width: 500px
+```
+````
+`````
+
+```{note}
+You cannot disable any of the default protocols or a connection profile in use or default protocols.
+```
+
+## Modification Date
+The modification date retention isn't supported for all protocols natively.
+
+```{admonition} Mountain Duck only
+:class: attention
+Protocols with limited support retaining modification dates for new files uploaded but without the option to adjust the modification date later.
+```
+
+| Protocol | Native Support | Limited Support |
+| --- | :---: | :---: |
+| SFTP| ✅ ||
+| Google Drive | ✅ ||
+| Google Cloud Storage | ✅ ||
+| Microsoft OneDrive | ✅ ||
+| Microsoft Sharepoint | ✅ ||
+| Files.com | ✅ ||
+| DRACOON | ✅ ||
+| Backblaze B2 | ❌	| ✅ |
+| Box.com | ❌	| ✅ |
+| Dropbox | ❌	| ✅ |
+| Nextcloud | ❌ | ✅ |
+| ownCloud | ❌	| ✅ |
+| S3 | ❌ | ✅ |
+
+There are two protocols with possible interoperability issues:
+- **WebDAV**: Saving the modification dates requires support from server storing metadata in custom namespace
+- **FTP**: Requires support from server for `MFMT` or `UTIME` extensions
+
+# Connection Profiles
+
+[Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
+
+## Preferences → Profiles
+
+Select connection protocols in _Preferences → Profiles_ to be installed in addition to the default protocols listed below. Either scroll through the list or use the search function to look for a specific profile. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
+
+`````{tabs}
+````{group-tab} macOS
+
+```{image} _images/Preferences_Profiles_macOS.png
+:alt: macOS
+:width: 600px
+```
+
+````
+````{group-tab} Windows
+
+```{image} _images/Preferences_Profiles.png
+:alt: Windows
+:width: 500px
+```
+````
+`````
+
+```{note}
+You cannot disable any of the default protocols or a connection profile in use or default protocols.
+```
+
+# Modification Date
+Retaining the modification date for files uploaded is not supported for all protocols.
+
+```{admonition} Mountain Duck
+:class: attention
+Protocols with limited support for modification dates only allow to set the modification for new files uploaded but not changing it later.
+```
+
+| Protocol             | Native Support | Limited Support |
+|----------------------| :---: | :---: |
+| Local Disk           | ✅ ||
+| SFTP                 | ✅ ||
+| FTP                  | ✅ ||
+| Google Drive         | ✅ ||
+| Google Cloud Storage | ✅ ||
+| Microsoft OneDrive   | ✅ ||
+| Microsoft Sharepoint | ✅ ||
+| Files.com            | ✅ ||
+| DRACOON              | ✅ ||
+| Backblaze B2         | ❌	| ✅ |
+| Box.com              | ❌	| ✅ |
+| Dropbox              | ❌	| ✅ |
+| Nextcloud            | ❌ | ✅ |
+| ownCloud             | ❌	| ✅ |
+| S3                   | ❌ | ✅ |
+| Windows Azure        | ❌ | ❌ |
+| OpenStack Object Storage        | ❌ | ❌ |
+
+```{admonition} Interoperability
+:class: attention
+- **WebDAV**: Saving the modification dates requires support from server storing metadata in custom namespace
+- **FTP**: Requires support from server for `MFMT` or `UTIME` extensions
+```
