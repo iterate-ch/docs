@@ -220,8 +220,10 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 
 To create a new [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket-s3.html) for your account, browse to the root and choose *File → New Folder... (macOS `⌘N` Windows `Ctrl+Shift+N`)*. You can choose the bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for different regions.
 
-```{attention}
-Mountain Duck 4.6.1 or later: You will receive a prompt for the region when creating a new bucket
+```{admonition} Mountain Duck
+:class: note
+
+You will receive a prompt for the region when creating a new bucket
 ```
 
 **Supported Regions**
