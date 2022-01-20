@@ -156,7 +156,7 @@ Files opened in Preview.app and edited cannot be saved at the original location 
 **Enable Application Icon in Dock**<br/>
 As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property
 
-`defaults write io.mountainduck application.dock.icon.enable true`
+    defaults write io.mountainduck application.dock.icon.enable true
 
 **Mounted Volumes do not Appear on the Desktop**<br/>
 Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder → Preferences ... → General → Show these items on the desktop: Connected Servers* to make the volume appear on the desktop. Mounted volumes are also listed in the *Finder.app* sidebar in *Favorites*.
@@ -177,7 +177,7 @@ This is an issue within the operating system that can occur to any network drive
 
 As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window
 
-`defaults write io.mounteinduck fs.filesnames.metadata.enable false`
+    defaults write io.mounteinduck fs.filesnames.metadata.enable false
 
 If you want to delete metadata files, you can open a *Terminal.app* window and enter `dot_clean -m <folder>`.
 

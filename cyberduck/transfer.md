@@ -209,16 +209,16 @@ Enabling change of modification date slows down the transfer rate when uploading
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Edit the available options (in bytes).
 
-`defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824`
+    defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824
 
 ### Badge Dock Icon
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
 
-`defaults write ch.sudo.cyberduck queue.dock.badge true`
+    defaults write ch.sudo.cyberduck queue.dock.badge true
 
 ### Prioritize Certain Files
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
 
-`defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"`
+    defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"
