@@ -18,7 +18,10 @@ Connection profile files ([XML Property List Format](http://en.wikipedia.org/wik
 The following properties can be defined in a connection profile:
 
 - `Protocol` *(Required)*
-- `Vendor` (Hosting Provider) *(Required)* **Important: This value must be unique among all installed connection profiles**
+- `Vendor` (Hosting Provider) *(Required)*
+```{important}
+The value of `Vendor` must be unique among all installed connection profiles.
+```
 - `Description` *(Required)*
 - `Default Nickname`
 - `Default Hostname`
@@ -48,7 +51,9 @@ The following properties can be defined in a connection profile:
 
 #### Example
 
-- {download}`Disk template file (Adobe Photoshop)<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
+```{note}
+{download}`Disk template file (Adobe Photoshop)<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
+```
 
 ```{code-block}
 <?xml version="1.0" encoding="UTF-8"?>
