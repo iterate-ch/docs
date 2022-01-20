@@ -26,8 +26,10 @@ Use the search field *(macOS `⌘/` Windows `Strg+F`)* to filter bookmarks by ni
 
 ## Labels & Groups
 
-```{note}
-Currently macOS only, Cyberduck 7.3 or later required
+```{admonition} macOS only
+:class: tip
+
+Only supported in Cyberduck for macOS.
 ```
 
 ### Edit Labels for Bookmarks
