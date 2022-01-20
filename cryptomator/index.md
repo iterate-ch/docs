@@ -152,7 +152,7 @@ You can open and browse multiple vaults on a server in a single browser window. 
 
 You can move files from and to the vault. Because files need to be encrypted or decrypted respectively they pass through your local computer and cannot be moved on the server-side.
 
-```{note}
+```{attention}
 The vault must be unlocked before you move files to it, otherwise the files won't be encrypted.
 ```
 
