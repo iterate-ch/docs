@@ -83,7 +83,7 @@ Enable debug logging by choosing _Preferences → Connection → Log → Enable 
 
 To enable debug logging open a *Terminal.app* window and enter
 
-`defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist logging debug`
+    defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist logging debug
 
 Reset the logging configuration with
 

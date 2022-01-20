@@ -57,7 +57,7 @@ Downloaded files are flagged with the `com.apple.quarantine` attribute. The attr
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck queue.download.quarantine false`
+    defaults write ch.sudo.cyberduck queue.download.quarantine false
 
 Files downloaded to edit do not have a quarantine flag set by default.
 ```
@@ -66,4 +66,4 @@ Files downloaded to edit do not have a quarantine flag set by default.
 
 Don't change the document icon while downloading. A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck queue.download.icon.update false`
+    defaults write ch.sudo.cyberduck queue.download.icon.update false

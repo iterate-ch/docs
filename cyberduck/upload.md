@@ -87,6 +87,6 @@ Make sure in *System Preferences → Keyboard → Keyboard Shortcuts → Service
 
 An option to upload with a temporary name and rename the file after the transfer is complete. An upload that is not complete, will not be renamed. This is useful for uploading to watch folders, that should only pick up a file once the upload is complete. To specify a different temporary filename pattern, use the [hidden configuration option](preferences.md#hidden-configuration-options)
 
-`defaults write ch.sudo.cyberduck queue.upload.file.temporary.format "'{0}-{1}'"`
+    defaults write ch.sudo.cyberduck queue.upload.file.temporary.format "'{0}-{1}'"
 
 where `{0}` is the original filename and `{1}` is a random UUID. The default setting uses a temprary filename of `filename-uuid`.

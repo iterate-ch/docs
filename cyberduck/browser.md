@@ -216,13 +216,13 @@ Use only one *Info* window which updates with the selection change in the browse
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck browser.font.size 18`
+    defaults write ch.sudo.cyberduck browser.font.size 18
 
 ### Duplicate Filename Format
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Define a different format using 
 
-`defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"`
+    defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"
 
 where the plaseholders will be replaced with
 
@@ -234,7 +234,7 @@ where the plaseholders will be replaced with
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). A confirmation is shown before renaming or moving files.
 
-`defaults write ch.sudo.cyberduck browser.move.confirm true`
+    defaults write ch.sudo.cyberduck browser.move.confirm true
 
 ### Re-Enable File Listing Limit Prompt
 

@@ -40,7 +40,7 @@ There are some settings which aren't yet available in the *Preferences* either b
 
 Type the `defaults` command given in a *Terminal.app* (in `/Applications/Utilities`) window and restart Cyberduck.
 
-`defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist <property> <value>`
+    defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist <property> <value>
 
 Alternatively you can create a file `default.properties` in the [application support folder](faq.md#preferences-and-application-support-files-location). Add the setting as follows:
 

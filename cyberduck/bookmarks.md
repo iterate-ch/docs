@@ -235,10 +235,10 @@ Choose a default bookmark to open after opening the application. Choose *Prefere
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Displayed in the bookmark edit window.
 
-`defaults write ch.sudo.cyberduck bookmark.favicon.download false`
+    defaults write ch.sudo.cyberduck bookmark.favicon.download false
 
 ### Open Bookmark View after Disconnecting
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true`
+    defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true
