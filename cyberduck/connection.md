@@ -160,14 +160,10 @@ Search for and save password for connections.
 
 ### Profiles
 
-```{note}
-Prelimitary documentation for Cyberduck 8
-```
-
 Select connection protocols to be installed in addition to the default protocols. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
 
 ```{note}
-You can't disable the default protocols. If you disable the connection profile used in a bookmark the bookmark won't work after restarting the application.
+You cannot disable default protocols or connection profiles currently in use in any bookmark.
 ```
 
 ### Connection
@@ -188,19 +184,19 @@ Choose *Cyberduck → Preferences → Connection → Use system proxy settings*.
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck connection.dns.ipv6 true`
+    defaults write ch.sudo.cyberduck connection.dns.ipv6 true
 
 ### Disable Bonjour Support
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck rendezvous.enable false`
+    defaults write ch.sudo.cyberduck rendezvous.enable false
 
 ### Disable Bonjour Notifications in Notification Center and Sytem Tray
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 
-`defaults write ch.sudo.cyberduck rendezvous.notification.limit 0`
+    defaults write ch.sudo.cyberduck rendezvous.notification.limit 0
 
 ## Default Protocol Handler
 

@@ -23,9 +23,9 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *IdentityFile* for public key authentication.
 - *HostName* aliases.
 - *User* preference for login credentials.
-- *ProxyJump* to connect via SSH tunnel through bastion server. **Cyberduck version 7.7 or later required.**
-- *PreferredAuthentications* to limit authentication methods tried to login. **Cyberduck version 7.7.2 or later required.**
-- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. **Cyberduck version 7.9.0 or later required.**
+- *ProxyJump* to connect via SSH tunnel through bastion server.
+- *PreferredAuthentications* to limit authentication methods tried to login.
+- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests.
 - A [bookmark](../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:

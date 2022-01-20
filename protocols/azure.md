@@ -72,7 +72,7 @@ A private object stored in Azure Storage can be made publicly available for a li
 ![Shared Access Signature URLs](_images/Azure_Shared_Access_Signature_URLs.png)
 
 ```{Note}
-Currently are only 24h-signed URLs available
+Currently only signed URLs with a validity of 24 hours are available.
 ```
 
 ### Access Logs

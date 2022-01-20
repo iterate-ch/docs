@@ -53,7 +53,7 @@ Select *Always use default editor* in *Preferences → Editor* if you always wan
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck editor.upload.temporary false`
+    defaults write ch.sudo.cyberduck editor.upload.temporary false
 
 ## Problems
 
