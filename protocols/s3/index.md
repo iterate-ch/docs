@@ -126,7 +126,7 @@ If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20Instance%20Metadata).cyberduckprofile>` the *S3 (Credentials from Instance Metadata) profile* for preconfigured settings
 
-## Connecting Using Credentials in `~/.aws/credentials`
+## Connecting Using Credentials from AWS Command Line Interface
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows using third-party tools.
 
@@ -138,6 +138,14 @@ You might be interested in scripts maintained by third parties to facilitate man
 
 - [Manage configuration files for Cyberduck S3 (AssumeRoles from AWS STS)](https://github.com/jmvbxx/cyberduck-s3-config)
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
+
+### AWS Single Sign-On
+
+For a SSO connection the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are needed within the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows.
+
+The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache/` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
+
+- [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
 ## Connecting Using AssumeRole from AWS Security Token Service (STS)
 
