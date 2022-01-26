@@ -1,9 +1,9 @@
 Download
-===
+====
 
 See also [Transfers](transfer.md) in general.
 
-# Segmented Downloads
+## Segmented Downloads
 
 Increase the download speed by enabling the segmented downloads option within *Preferences → Transfers → General → Downloads → Segmented download with multiple connections for file*. Files larger that `100MB` will be split into segments and downloaded over multiple connections.
 
@@ -13,15 +13,15 @@ The segments will be merged automatically after all parts are downloaded. Mergin
 The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file or try to _Resume_ the failed transfer.
 ```
 
-# Double-Click
+## Double-Click
 
 Double click a file in the browser window to download to the default download location as configured in *Cyberduck → Preferences → Transfers*.
 
-# Download Using Drag and Drop
+## Download Using Drag and Drop
 
 Drag the files or folders to the desired download location in the *Finder.app* or *Explorer*.
 
-# Toolbar Button
+## Toolbar Button
 
 Customize the browser toolbar using menu *View → Customize Toolbar...* to add the *Download* toolbar button to the default configuration.
 
@@ -30,15 +30,15 @@ Customize the browser toolbar using menu *View → Customize Toolbar...* to add 
 :width: 500px
 ```
 
-# The Download Menu
+## The Download Menu
 
 Select *File → Download* or right-click the file in the browser to select *Download* in the context menu. If you are not connected to a server in a browser you can still choose *File → New Download* if you know the exact URL of the file or folder.
 
-# Queue a File to be Downloaded Later
+## Queue a File to be Downloaded Later
 
 Drag the file from the browser to the *Transfers* window to be downloaded later.
 
-# Where From 
+## Where From 
 
 ```{admonition} macOS only
 :class: note
@@ -46,9 +46,9 @@ Drag the file from the browser to the *Transfers* window to be downloaded later.
 Downloaded files have added metadata of its origin URL. *Finder.app* displays this information in *File → Get Info*.
 ```
 
-# Hidden Preferences
+## Hidden Preferences
 
-## Quarantine
+### Quarantine
 
 ```{admonition} macOS only
 :class: note
@@ -57,13 +57,13 @@ Downloaded files are flagged with the `com.apple.quarantine` attribute. The attr
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck queue.download.quarantine false`
+    defaults write ch.sudo.cyberduck queue.download.quarantine false
 
 Files downloaded to edit do not have a quarantine flag set by default.
 ```
 
-## Temporary Document Icon
+### Temporary Document Icon
 
 Don't change the document icon while downloading. A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck queue.download.icon.update false`
+    defaults write ch.sudo.cyberduck queue.download.icon.update false

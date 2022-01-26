@@ -1,13 +1,13 @@
 SwiftStack
-===
+====
 
 ![SwiftStack Drive Icon](_images/swiftstack.png)
 
 > [SwiftStack](http://swiftstack.com/) makes OpenStack Swift enterprise-ready with dramatically simplified deployment, management, and monitoring capabilities for object storage.
 
-# Connecting
+## Connecting
 
-## Connection Profiles
+### Connection Profiles
 
 ```{Note}
 All connection profiles are available through the *Preferences → Profiles* tab.
@@ -23,7 +23,7 @@ Connect to a SwiftStack cluster via HTTP or HTTPS using these pre-configured [co
 - **HTTP:** {download}`OpenStack Swift Auth v2.0 (SwiftStack HTTP).cyberduckprofile<http://files.swiftstack.com/OpenStack%20Swift%20Auth%20v2.0%20(SwiftStack%20HTTP).cyberduckprofile>`
 - **HTTPS:** {download}`OpenStack Swift Auth v2.0 (SwiftStack HTTPS).cyberduckprofile<http://files.swiftstack.com/OpenStack%20Swift%20Auth%20v2.0%20(SwiftStack%20HTTPS).cyberduckprofile>`
 
-## Additional Fields Required
+### Additional Fields Required
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
@@ -31,6 +31,6 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 - Username: `SwiftStack cluster user`
 - Password: `SwiftStack cluster user's password`
 
-# References
+## References
 
 - [Demo Video](https://vimeo.com/123122789)

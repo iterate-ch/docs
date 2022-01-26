@@ -1,31 +1,31 @@
 SFTP
-===
+====
 
 ```{image} _images/ftp.png
 :alt: FTP Drive Icon
 :width: 128px
 ```
 
-# Connecting
+## Connecting
 
 If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.org/wiki/Secure_Shell_Protocol)), most probably `sftp-server` is also installed and configured and you can connect using [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).
 
-## OpenSSH Configuration Interoperability
+### OpenSSH Configuration Interoperability
 
-### Public Key Fingerprints
+#### Public Key Fingerprints
 
 Public key fingerprints are checked against and written to `~/ssh/known_hosts` when accepted. This does not apply to the Mac App Store version which does store key fingerprints in the preferences.
 
-### Configuration File
+#### Configuration File
 
 The following configuration options from `~/.ssh/config` are supported for SFTP connections:
 
 - *IdentityFile* for public key authentication.
 - *HostName* aliases.
 - *User* preference for login credentials.
-- *ProxyJump* to connect via SSH tunnel through bastion server. **Cyberduck version 7.7 or later required.**
-- *PreferredAuthentications* to limit authentication methods tried to login. **Cyberduck version 7.7.2 or later required.**
-- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests. **Cyberduck version 7.9.0 or later required.**
+- *ProxyJump* to connect via SSH tunnel through bastion server.
+- *PreferredAuthentications* to limit authentication methods tried to login.
+- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests.
 - A [bookmark](../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
@@ -41,13 +41,13 @@ To use the same key for all hosts add a wildcard entry such as
 
 which is then used when configuring a new bookmark.
 
-### Default Public Key Authentication Keys
+#### Default Public Key Authentication Keys
 
 You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
 
 	defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
 
-## Public Key Authentication
+### Public Key Authentication
 
 Public-key authentication allows you to connect to a remote server without sending your password over the Internet. Public-key authentication uses two keys:
 1. a private key that only you have that should be kept in a secure place and protected with a password
@@ -55,15 +55,15 @@ Public-key authentication allows you to connect to a remote server without sendi
 
 Private keys containing a `DSA` or `RSA` private key in *PEM* format are supported (look for `-----BEGIN DSA PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----` in the file) and can be configured in the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) panel.
 
-### PuTTY Key Format Interoperability
+#### PuTTY Key Format Interoperability
 
 PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not supported.
 
-### OpenSSH Key Format Interoperability
+#### OpenSSH Key Format Interoperability
 
 OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
 
-### Configure Public Key Authentication
+#### Configure Public Key Authentication
 
 1. Run the command `ssh-keygen` from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a 'passphrase'. If you use a *passphrase* then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don't enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.
 	```
@@ -75,7 +75,7 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
-### Public Key Authentication Using SSH Agent
+#### Public Key Authentication Using SSH Agent
 
 ````{tabs}
 
@@ -93,11 +93,11 @@ There is support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putt
 
 ````
 
-## One-Time Passcodes
+### One-Time Passcodes
 
 Using a challenge-response authentication with one-time password generators like *SecurID* is supported. After the initial login prompt for the username and password, a second login prompt is displayed to enter the one-time passcode.
 
-### Google Authenticator
+#### Google Authenticator
 
 A setup with a two-step verification such as [Google Authenticator](https://github.com/google/google-authenticator) is supported.
 
@@ -114,13 +114,13 @@ When logging in, enter the time-based token requested after providing username a
 - [PAM Module Instructions](https://github.com/google/google-authenticator/wiki/PAM-Module-Instructions)
 - [How To Set Up Multi-Factor Authentication for SSH on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-16-04)
 
-## Verify Host Keys
+### Verify Host Keys
 
 Upon connecting to an SSH server for the first time, you will see a message to verify the host key uniquely identifying the server. You can ask your provider for the public fingerprint of the server to make sure you are connecting to the right host. Subsequent connections to the SSH server will make sure that the host key does not have changed to prevent spoofing attacks.
 
 ![Unknown Host Key](_images/Unknown_host_key.png)
 
-## Connect via SSH Tunnel Through Bastion Server
+### Connect via SSH Tunnel Through Bastion Server
 
 ```{important}
 Cyberduck version 7.7 or later required
@@ -146,7 +146,7 @@ You can also work with aliases like
 	    HostName remote-hostname
 	    ProxyJump bastion-host-nickname
 
-# Open in Terminal
+## Open in Terminal
 
 Open in *Terminal* allows you to open an SSH shell for the current working directory with a single click.
 
@@ -223,25 +223,29 @@ By default, the executable `putty.exe` must be located in your user home folder.
 
 ````
 
-# Distribution (CDN)
+## Distribution (CDN)
 
 You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
-# Create and Expand ZIP or TAR Archives
+## Create and Expand ZIP or TAR Archives
 
 The remote systems must have the archiving tools `tar` or `zip` installed respectively. Use *View → Customize Toolbar...* to add the Archive toolbar button to your browser window. It is not included in the default toolbar configuration.
 
-## Archive
+```{note}
+_Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
+```
+
+### Archive
 
 Select one or more files to archive in the browser. For multiple files, a file with the name `Archive` with the given extension of the archive format will be created.
 
 ![Compress](_images/Compress.png)
 
-## Expand
+### Expand
 
 Select one or more files to expand in the current working directory.
 
-# Remote Commands
+## Remote Commands
 
 You can send any remote command to a remote SSH server. This is for example useful if you want a HTTP server to reload its configuration or changing the ownership of files using *chown* on a `UNIX` system.
 
@@ -253,43 +257,43 @@ The current working directory is always your use home. Determine using pwd to ge
 :width: 600px
 ```
 
-# Preferences
+## Preferences
 
-## Default Protocol Handler
+### Default Protocol Handler
 
 You can set Cyberduck or a third-party application as the default application (protocol handler) for `SFTP` in *Preferences → SFTP*. When you click URLs in another application like your web browser, this application is opened to open the URL instead.
 
-# Supported Algorithms
+## Supported Algorithms
 
-## Ciphers
+### Ciphers
 
 `aes{128,192,256}-{cbc,ctr}`, `blowfish-{cbc,ctr}`, `3des-{cbc,ctr}`, `twofish{128,192,256}-{cbc,ctr}`, `twofish-cbc`, `serpent{128,192,256}-{cbc,ctr}`, `idea-{cbc,ctr}`, `cast128-{cbc,ctr}`, `arcfour`, `arcfour{128,256}`, `aes{128,256}-gcm@openssh.com`, `chacha20-poly1305@openssh.com`
 
-## Key Exchange
+### Key Exchange
 
 `diffie-hellman-group1-sha1`, `diffie-hellman-group14-sha1`, `diffie-hellman-group14-sha256`, `diffie-hellman-group15-sha512`, `diffie-hellman-group16-sha512`, `diffie-hellman-group17-sha512`, `diffie-hellman-group18-sha512 diffie-hellman-group-exchange-sha1`, `diffie-hellman-group-exchange-sha256`, `ecdh-sha2-nistp256`, `ecdh-sha2-nistp384`, `ecdh-sha2-nistp521`, `curve25519-sha256@libssh.org`
 
-## Signatures
+### Signatures
 
 `ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`
 
-## Compression
+### Compression
 
 Compression with `zlib` and `zlib@openssh.com` is supported.
 
-## Private Key Files
+### Private Key Files
 
 `pkcs5`, `pkcs8`, `openssh-key-v1`, `ssh-rsa-cert-v01@openssh.com`, `ssh-dsa-cert-v01@openssh.com`
 
-# Incompatibilities
+## Incompatibilities
 
-## Serv-U MFT
+### Serv-U MFT
 
 Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, uploaded as a required flag is not implemented and results in error messages.
 
-# Known Issues
+## Known Issues
 
-## Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
+### Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
 
 The error message `Invalid packet: indicated length 1114795883 too large` may indicate you have either:
 
@@ -298,21 +302,21 @@ The error message `Invalid packet: indicated length 1114795883 too large` may in
 - Possibly the server is printing a message similar to *Please login as the ubuntu user rather than root user*. Please verify the username for your connection.
 - Enable SSH access on your server. Use the sftp command in a terminal to verify `sftp username@domain_name`. It'll ask for your password. If you don't have SSH access, you'll get "Received message too long", hence the error message.
 
-## Kex Timeout
+### Kex Timeout
 
 This error can occur if you are connecting the first time to a device with a slow processor. You can raise the tmeout value in *Preferences → Connection → Timeout*.
 
 ![Kex Timeout](_images/Kex_Timeout.png)
 
-## Connect Does not Work
+### Connect Does not Work
 
 Cyberduck refuses to connect if there are malformed entries in your `known_hosts` file located under `~/.ssh`. Renaming this file and recreating it usually resolves this. An alternative requires manually editing the `known_hosts` file removing all malformed entries. Please refer to [sshd(8)](http://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) for a valid format.
 
-## Symbolic Link isn't Accessible
+### Symbolic Link isn't Accessible
 
 Symbolic links only work within Mountain Duck if the target of the symbolic link is available within the mounted path.
 
-## File Permissions Reset When Saving File (macOS)
+### File Permissions Reset When Saving File (macOS)
 
 Mountain Duck will forward all permission changes done by Finder or the editing application to the SFTP server. There is a hidden preference to disable the writing of permissions. Enter the following command in a *Terminal.app* window
 
@@ -320,7 +324,7 @@ Mountain Duck will forward all permission changes done by Finder or the editing 
 
 to disable. Make sure to quit Mountain Duck before making the change and then re-open the application.
 
-## File Owner Reset When Saving File (macOS)
+### File Owner Reset When Saving File (macOS)
 
 Some editors save files using an *Atomic Save* feature that writes changes to a file to a temporary file later replacing the edited file by renaming the temporary file to the name of the edited file. This works well on local filesystems, where there is support to retain the owner of the file that is different from the editing user using a special [function call](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man2/exchangedata.2.html). This does not work for volumes mounted with Mountain Duck and the file owner will be reset to the default owner for new files created on the server by the logged-in user. As a workaround, try to find a setting for the editor to disable the *Atomic Save* feature.
 
@@ -328,7 +332,7 @@ Some editors save files using an *Atomic Save* feature that writes changes to a 
 - [TextMate](https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving)
 ```
 
-## Free Space Calculation is Incorrect (Windows)
+### Free Space Calculation is Incorrect (Windows)
 
 The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the space-available extension of the SFTP protocol or the `statvfs@openssh.com` extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space.
 

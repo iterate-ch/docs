@@ -1,11 +1,11 @@
 Edit Files
-===
+====
 
-# How to Edit a File in an External Editor
+## How to Edit a File in an External Editor
 
 You can edit a file just as a local file by clicking the Edit toolbar button or by choosing *File → Edit With*. The file will be downloaded to a temporary directory and opened with the preferred editor. Set your preferred editor in *Preferences*. The file will be uploaded to the server every time you choose *File → Save* in the Editor application. The file is not changed on the server if you just close the document without saving it or if the content has not changed.
 
-# Which Editor for What Files
+## Which Editor for What Files
 
 `````{tabs}
 ````{group-tab} macOS
@@ -38,7 +38,7 @@ To edit file type associations choose *File → Info* for a given file type in t
 ````
 `````
 
-# Preferences
+## Preferences
 
 Select *Always use default editor* in *Preferences → Editor* if you always want to use the default editor set regardless of the file type.
 
@@ -47,17 +47,17 @@ Select *Always use default editor* in *Preferences → Editor* if you always wan
 :width: 500px
 ```
 
-# Hidden Preferences
+## Hidden Preferences
 
-## Disable Upload of Temporary File on Save
+### Disable Upload of Temporary File on Save
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-`defaults write ch.sudo.cyberduck editor.upload.temporary false`
+    defaults write ch.sudo.cyberduck editor.upload.temporary false
 
-# Problems
+## Problems
 
-## No External Editor Available
+### No External Editor Available
 
 ```{admonition} macOS only
 :class: tip

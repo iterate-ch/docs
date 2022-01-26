@@ -1,19 +1,19 @@
-Cryptomator - Encryption Security Architecture
-===
+Encryption Security Architecture
+====
 
 Please refer to [Cryptomator](index) security overview for more details.
 
-# Masterkey
+## Masterkey
 
  Each vault has its own 256 bit encryption as well as MAC masterkey used for encryption of file specific keys and file authentication, respectively. Both keys are encrypted using RFC 3394 key wrapping with a KEK derived from the user's password using scrypt.
 
 The wrapped keys (with some additional metadata) are remotely stored in a JSON file named masterkey.cryptomator located in the root directory of a vault.
 
-# Filename Encryption
+## Filename Encryption
 
 Cryptomator uses AES-SIV to encrypt file as well as directory names. Additionally to the name, a unique directory ID of its parent directory is passed as associated data. This prevents undetected moving of files between directories.
 
-# File Header Encryption
+## File Header Encryption
 
 The file header stores certain metadata, which is needed for file content encryption. It consists of 88 bytes.
 
@@ -23,7 +23,7 @@ The file header stores certain metadata, which is needed for file content encryp
 	- 32 bytes file content key
 	- 32 bytes header MAC of the previous 56 bytes
 
-# File Content Encryption
+## File Content Encryption
 
 The cleartext is broken down into multiple chunks, each up to 32 KiB + 48 bytes consisting of:
 
@@ -35,6 +35,6 @@ The cleartext is broken down into multiple chunks, each up to 32 KiB + 48 bytes 
 	- nonce
 	- encrypted payload
 
-# References
+## References
 
 [Security Architecture Overview](https://docs.cryptomator.org/en/latest/security/architecture/#)

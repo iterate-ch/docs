@@ -1,5 +1,5 @@
 Zetta.IO
-===
+====
 
 ![Zetta Drive Icon](_images/candy-drive-removable-media-zetta.png)
 
@@ -9,15 +9,15 @@ Access your data from any internet-connected environment. Store and retrieve any
 
 While most of the big cloud players in the world are U.S.-based, Zetta.IO is a Norwegian company with Norwegian owners, operating under strict Norwegian privacy laws.
 
-# Connecting
+## Connecting
 
-## Connection Profiles
+### Connection Profiles
 
 Connect using the pre-configured [connection profile](../../cyberduck/connection.md#connection-profiles):
 
 - {download}`Zetta.IO Cyberduck Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Zetta.IO.cyberduckprofile>`
 
-## Manual Configuration
+### Manual Configuration
 
 - Server: `identity.api.zetta.io`
 - Port: `443`
@@ -26,7 +26,7 @@ Connect using the pre-configured [connection profile](../../cyberduck/connection
 
 You will need the [Openstack Swift (Keystone 3) profile](index.md) if you want to use manual configuration with Cyberduck or Mountainduck. We recommend that you use the official profile instead.
 
-# References
+## References
 
 - [Sign up for an account](https://dashboard.zetta.io/register/)
 - [Step-by-step instructions for signing up and activating the Object Storage service.](https://zetta.io/en/help/articles-tutorials/registration-object-storage/)

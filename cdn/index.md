@@ -1,9 +1,9 @@
 Content Delivery Network (CDN) Configuration
-===
+====
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 akamai
 cloudfront
 keycdn
@@ -21,11 +21,11 @@ Using the [Info](../cyberduck/info.md) panel, the following content distribution
 
 Configuration for the delivery of access logs can be configured from within Cyberduck in the [Info window](../cyberduck/info.md) for [S3](../protocols/s3/index.md), [Google Cloud Storage](../protocols/google_cloud_storage.md) and [Amazon CloudFront](cloudfront.md) CDN distributions. The server create a massive amount of log files which is best analyzed with a third-party service.
 
-# Amazon CloudFront
+## Amazon CloudFront
 
 - Add a download or streaming CDN configuration to your [S3](../protocols/s3/index.md) bucket.
 - Connect to any server using FTP, SFTP or WebDAV and configure it as the origin of a new [Amazon CloudFront](cloudfront.md) CDN distribution.
 
-# Akamai
+## Akamai
 
 When connected to [Rackspace Cloudfiles](../protocols/openstack/cloudfiles.md), configure [Akamai](akamai.md) content distribution.

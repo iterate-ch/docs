@@ -1,19 +1,19 @@
 File Versions
-===
+====
 
 Mountain Duck supports opening and reverting previous versions of files. You can get a list of previous versions by right-clicking on a file in *Finder* on macOS or *File Explorer* on Windows and choosing *Versions*.
 
-# Supported Providers
+## Supported Providers
 
 Support is currently limited to connections to [Amazon S3](../protocols/s3/index.md) with buckets that have versioning enabled.
 
-## Amazon S3
+### Amazon S3
 
-### Enable Versioning
+#### Enable Versioning
 
 Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on macOS or *File Explorer* on Windows. Alternatively, enable versioning in AWS Console or [Cyberduck](../cyberduck/index.md).
 
-## Quick Look
+### Quick Look
 
 You can open a previous version of a file by choosing *Versions → ... → Quick Look*. This will open a *Quick Look preview* on macOS or open the previous version of the file in the defailt application on Windows.
 
@@ -22,7 +22,7 @@ You can open a previous version of a file by choosing *Versions → ... → Quic
 :width: 900px
 ```
 
-## Revert
+### Revert
 
 You can revert to a previous version of a file by choosing *Versions → ... → Revert*. Wait for the *File Updated* notification which notifies the previous version has been restored.
 

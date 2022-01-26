@@ -52,7 +52,10 @@ html_theme_options = {
 	'style_nav_header_background': '#5a5a5a',
 	'style_external_links': True,
 	'vcs_pageview_mode': 'edit',
-	'includehidden': False
+
+	# Toc options
+    'includehidden': True,
+    'titles_only': False
 }
 html_favicon = '_static/favicon.ico'
 html_logo = 'cyberduck-icon-64.png'
@@ -64,7 +67,7 @@ html_context = {
 	"conf_py_path": "/"
 }
 html_show_sourcelink = False
-html_show_sphinx = False
+html_show_sphinx = True
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -76,4 +79,7 @@ html_css_files = [
 ]
 
 master_doc = 'index'
-myst_heading_anchors = 3
+myst_heading_anchors = 4
+myst_enable_extensions = [
+	"html_image",
+]
