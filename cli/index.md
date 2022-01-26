@@ -308,7 +308,7 @@ cd ${WORKSPACE}; find build -name '*.tar' -print0 | xargs -0 -I {} -t sh -c 'f="
 duck --username kahy9boj3eix --upload azure://kahy9boj3eix.blob.core.windows.net/<containername>/ *.zip
 ```
 
-### Download Files Matching Glob Pattern from FTP
+### Download Files Matching Glob Pattern from S3
 ```{code-block}
 duck --user anonymous --verbose --download s3:/profiles.cyberduck.io/Wasabi* ~/Downloads/
 ```
