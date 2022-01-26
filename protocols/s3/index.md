@@ -126,18 +126,26 @@ If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20Instance%20Metadata).cyberduckprofile>` the *S3 (Credentials from Instance Metadata) profile* for preconfigured settings
 
-### Connecting Using Credentials in `~/.aws/credentials`
+### Connecting Using Credentials from AWS Command Line Interface
 
-Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials` using third-party tools.
+Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows using third-party tools.
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>` the *S3 (Credentials from AWS Command Line Interface) profile* for preconfigured settings. 
 
-You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in ~/.aws/credentials* matching the profile name from `~/.aws/credentials`. The properties `aws_access_key_id`, `aws_secret_access_key` and `aws_session_token` are supported.
+You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows as well as the config file `~/aws/config` on macOS or `%USERPROFILE%\.aws\config` on Windows from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in` ~/.aws/credentials`* matching the profile name from `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows. The properties `aws_access_key_id`, `aws_secret_access_key` and `aws_session_token` are supported.
 
 You might be interested in scripts maintained by third parties to facilitate managing credentials
 
 - [Manage configuration files for Cyberduck S3 (AssumeRoles from AWS STS)](https://github.com/jmvbxx/cyberduck-s3-config)
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
+
+#### AWS Single Sign-On
+
+For a SSO connection the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are needed within the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows.
+
+The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache/` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
+
+- [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
 ### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
@@ -147,7 +155,7 @@ Instead of providing Access Key ID and Secret Access Key, authenticate using tem
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/S3%20(Credentials%20from%20AWS%20Security%20Token%20Service).cyberduckprofile>` the *S3 (Credentials from AWS Security Token Service) profile* for preconfigured settings.
 
-You must provide configuration in the standard credentials property file `~/.aws/credentials` from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name* in `~/.aws/credentials` matching the profile name from `~/.aws/credentials` with the `role_arn` configuration.
+You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in `~/.aws/credentials`* matching the profile name from `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows with the `role_arn` configuration.
 
 #### Example Configuration
 
@@ -163,7 +171,7 @@ Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-
 
 ### Read Credentials from `~/.aws/credentials`
 
-When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at `~/.aws/credentials` if such a profile exists.
+When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows if such a profile exists.
 
 ## Cyberduck CLI
 
