@@ -12,4 +12,4 @@ Selectel Cloud Storage
 
 Connect using the preconfigured [connection profile](../../cyberduck/connection.md#connection-profiles):
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Selectel%20Cloud%20Storage.cyberduckprofile>` the *Selectel Cloud Storage Connection Profile* or install it through the *Profiles* tab of the preferences for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Selectel%20Cloud%20Storage.cyberduckprofile>` the *Selectel Cloud Storage Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.

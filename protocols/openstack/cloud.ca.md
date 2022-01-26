@@ -9,7 +9,7 @@ Cloud.ca Object Storage
 
 ### Connection Profile
 
-{download}`Download<https://svn.cyberduck.ch/trunk/profiles/Cloud.ca%20Object%20Store%20East-1%20Region.cyberduckprofile>` the *Cloud.ca Object Store East-1 Region Profile* or install it through the *Profiles* tab of the preferences for preconfigured settings.
+{download}`Download<https://svn.cyberduck.ch/trunk/profiles/Cloud.ca%20Object%20Store%20East-1%20Region.cyberduckprofile>` the *Cloud.ca Object Store East-1 Region Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 

@@ -37,7 +37,7 @@ Enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 Box WebDAV support reached end-of-life at October 25th, 2019
 ```
 
-1. {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Box.cyberduckprofile>` the *Box Connection Profile* or install it through the *Profiles* tab of the preferences for preconfigured settings.
+1. {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Box.cyberduckprofile>` the *Box Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 2. Enter your email address for the username.
 
 Alternatively, enter the following information in the [bookmark](../cyberduck/bookmarks.md):
