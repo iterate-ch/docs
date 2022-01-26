@@ -1,7 +1,7 @@
 Notifications
-===
+====
 
-# Events
+## Events
 
 - Connection opened
 - Connection failed
@@ -25,7 +25,7 @@ Notifications can be configured in *System Preferences → Notifications*.
 
 
 ```{image} _images/Notification_Center.png
-:alt: Send Command
+:alt: Notification Center
 :width: 700px
 ```
 
@@ -41,7 +41,7 @@ Notifications are displayed in the notification area commonly referred to as the
 **Settings**
 
 ```{image} _images/Notifications_Area_Settings.png
-:alt: Send Command
+:alt: Notification Area Settings
 :width: 700px
 ```
 ````

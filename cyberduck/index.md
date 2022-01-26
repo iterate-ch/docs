@@ -1,9 +1,9 @@
 Cyberduck 
-===
+====
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 bookmarks
 browser
 connection
@@ -21,25 +21,26 @@ sync
 transfer
 upload
 ```
-# Quick Reference Cheat Sheet
+
+## Quick Reference Cheat Sheet
 
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
 ```{image} _images/Cyberduck_Quick_Reference_Page_1.png
-:alt: Send Command
+:alt: Cyberduck Quick Reference Page 1
 :width: 700px
 ```
 
 ```{image} _images/Cyberduck_Quick_Reference_Page_2.png
-:alt: Send Command
+:alt: Cyberduck Quick Reference Page 2
 :width: 700px
 ```
 
-# [Opening Connections](connection.md)
+## [Opening Connections](connection.md)
 
 FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more protocols are supported. There are several options to open a [connection](connection.md) depending on the workflow.
 
-# [Browser](browser.md)
+## [Browser](browser.md)
 
 [Browser](browser.md) remote files in a list or hierarchical outline view.
 
@@ -50,25 +51,21 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 - **[Send custom commands](../protocols/sftp.md#remote-commands):** Send commands to a server not available in the graphical user interface.
 - **[Activity](browser.md#activity):** The activity window shows a list of all pending background tasks.
 
-```{note}
-_Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
-```
-
-## [Edit Files](edit.md)
+### [Edit Files](edit.md)
 
 Editing files on the server using an [external editor](edit.md).
 
-## [Share Files](share.md)
+### [Share Files](share.md)
 
 Share files with others using signed or temporary URLs.
 
-# [Bookmarks](bookmarks.md)
+## [Bookmarks](bookmarks.md)
 
 Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 
 - [Spotlight](spotlight.md) support for bookmark files
 
-# [File Transfers](transfer.md)
+## [File Transfers](transfer.md)
 
 - **[General](transfer.md)** information about transfers. 
 - **[Download](download.md)** files and folders to your computer.
@@ -76,17 +73,10 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 - **[Synchronize](sync.md)** folders between your computer and a server.
 - **[Copy](copy.md)** files and folders between servers.
 
-# [Content Distribution (CDN)](../cdn/index.md)
-
-- [Memset Memstore](../protocols/openstack/memset.md)
-- [Amazon CloudFront](../cdn/cloudfront.md) content delivery options.
-- [Akamai](../cdn/akamai.md) content delivery options.
-- [KeyCDN](../cdn/keycdn.md) content delivery options.
-
-# [Notifications](notifications.md)
+## [Notifications](notifications.md)
 
 - [Notifications](notifications.md) configuration
 
-# [Preferences](preferences.md)
+## [Preferences](preferences.md)
 
 - Settings available in the [Preferences](preferences.md) window.

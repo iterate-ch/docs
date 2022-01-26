@@ -1,7 +1,7 @@
 Synchronize Folders
-===
+====
 
-# Synchronization
+## Synchronization
 
 Files can be synchronized by selecting the directory to synchronize in the browser and select *File → Synchronize*. You will be prompted to select the directory on your computer to synchronize the files with.
 
@@ -17,7 +17,7 @@ The criteria to download or upload a file are given by
 You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.
 
 ```{image} _images/Synchronize_Folders.png
-:alt: Send Command
+:alt: Synchronize Folders
 :width: 700px
 ```
 
@@ -26,11 +26,11 @@ You will be prompted to confirm the actions and if missing files should only be 
 - **Up Arrow:** The file is uploaded to the server replacing the remote file if included.
 - **Plus Sign:** The file does not exist and will be newly created when transferred.
 
-## Mirror Files
+### Mirror Files
 
 Files are transferred in both directions and created if missing or replaced with the newer file on either system depending on the timestamp.
 
-## Only Download Files
+### Only Download Files
 
 Files are downloaded that match one of the following criteria:
 
@@ -40,7 +40,7 @@ Files are downloaded that match one of the following criteria:
 
 No files are uploaded.
 
-## Only Upload Files
+### Only Upload Files
 
 Files are uploaded that match one of the following criteria:
 
@@ -50,7 +50,7 @@ Files are uploaded that match one of the following criteria:
 
 No files are downloaded.
 
-# Other Solutions
+## Other Solutions
 
 You have to manually restart the synchronization in the transfer window. If you want to automate things you will be better off with either
 

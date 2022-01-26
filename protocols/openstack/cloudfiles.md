@@ -1,5 +1,5 @@
 Rackspace Cloud Files
-===
+====
 
 ![Cloud Files Icon](_images/cloudfiles_icon.png)
 
@@ -7,18 +7,18 @@ Rackspace Cloud Files
 
 [Signup](https://cart.rackspace.com/cloud/) and connect to your [Rackspace Cloud Files](http://www.rackspace.com/openstack/public/files) account. You must make sure you have generated a valid API Access Key using the control panel available at [manage.rackspacecloud.com](https://manage.rackspacecloud.com/).
 
-# Connecting
+## Connecting
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-## Connection Profiles
+### Connection Profiles
 
 - **Rackspace US:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/default/Rackspace%20US.cyberduckprofile>` the *Rackspace US Connection Profile* for preconfigured settings. Containers from regions *DFW, ORD, IAD, HKG* and *SYD* are displayed in the browser.
 - **Rackspace UK:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Rackspace%20UK.cyberduckprofile>` the *Rackspace UK Connection Profile* for preconfigured settings. Containers from regions *LON* are displayed in the browser.
 
-### Profile for a Single Region
+#### Profile for a Single Region
 
 - **Rackspace US (DFW):** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Rackspace%20US%20(DFW).cyberduckprofile>` the *Rackspace US (DFW) Connection Profile* for preconfigured settings. Containers from regions *DFW* are displayed in the browser.
 - **Rackspace US (ORD):** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Rackspace%20US%20(ORD).cyberduckprofile>` the *Rackspace US (ORD) Connection Profile* for preconfigured settings. Containers from regions *ORD* are displayed in the browser.
@@ -26,7 +26,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - **Rackspace US (HKG):** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Rackspace%20US%20(HKG).cyberduckprofile>` the *Rackspace US (HKG) Connection Profile* for preconfigured settings. Containers from regions *HKG* are displayed in the browser.
 - **Rackspace US (SYD):** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Rackspace%20US%20(SYD).cyberduckprofile>` the *Rackspace US (SYD) Connection Profile* for preconfigured settings. Containers from regions *SYD* are displayed in the browser.
 
-## Manual Configuration
+### Manual Configuration
 
 Alternatively, enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
@@ -34,27 +34,27 @@ Alternatively, enter the following information in the [bookmark](../../cyberduck
 - Server: `lon.auth.api.rackspacecloud.com`
 - Port: `443`
 
-# Additional Information
+## Additional Information
 
-## Containers
+### Containers
 
 You can create a new top-level container using *File → New Folder... (MacOS `⇧⌘N` Windows `Ctrl+Shift+N`)*. You can select from regions *DFW, ORD, HKG* and *SYD*.
 
 ![Create Container](_images/Create_Container.png)
 
-## Folders
+### Folders
 
 Creating a folder inside a container will create a placeholder object named after the directory that has no data content and the MIME type `application/x-directory`.
 
-## Distribution
+### Distribution
 
 You can enable [Akamai CDN (Content Delivery Network) distribution](../../cdn/akamai.md) for a selected container using *File → Info → Distribution (CDN)*. Choose *Enable Access Logging* to save their raw CDN weblogs to your Cloud Files storage account.
 
-### Logging
+#### Logging
 
 You can enable private container access logging to `.ACCESS_LOGS` by adding the metadata `X-Container-Meta-Access-Log-Delivery` name with a value of `true` to the container. Choose *File → Info → Metadata*. To enable access logs for CDN enabled, refer to [distribution access logging](../../cdn/akamai.md#distribution-access-logging).
 
-## Public URLs
+### Public URLs
 
 You can access all URLs (including from [CDN](../../cdn/akamai.md) configurations) from the menu Edit → Copy URL and File → Open URL. 
 
@@ -64,15 +64,15 @@ You must first open *File → Info → Distribution (CDN)* before these URLs are
 
 ![Copy URLs](_images/Copy_URLs.png)
 
-## Metadata
+### Metadata
 
 You can add [custom HTTP headers](../../cyberduck/info.md#metadata-http-headers) to files to store metadata. Choose *File → Info → Metadata* to edit custom headers.
 
-# Limitations
+## Limitations
 
 - No resumable transfers
 
-## Default Metadata
+### Default Metadata
 
 Currently only possible using a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
 

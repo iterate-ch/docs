@@ -1,11 +1,11 @@
 Enter Cloud Suite Object Storage
-===
+====
 
 > [Enter Cloud Suite Object Storage](https://www.entercloudsuite.com/en/) a Pay-Per-Use Storage provides IaaS public object storage that you can use to archive large amounts of data in a variety of formats in the cloud. You only pay for the space and time you use – starting at 0.075€ per Gb per month – and can even archive data for very short periods of time.
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 - {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Enter%20Cloud%20Suite.cyberduckprofile>` the *Enter Cloud Suite (Keystone) Profile* or install it through the *Profiles* tab of the preferences for preconfigured settings.
 
@@ -13,7 +13,7 @@ Use the Tenant ID `email` and password to login. See [API Access](https://cm.ent
 
 ![Enter Cloud Suite](_images/entercloudsuite.com.png)
 
-## Manual Configuration
+### Manual Configuration
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 

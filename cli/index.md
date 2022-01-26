@@ -1,15 +1,15 @@
 Command Line Interface (CLI)
-===
+====
 
 ```{toctree}
 :hidden:
-
+:titlesonly:
 support
 ```
 
 [Cyberduck with a command-line interface (CLI)](https://duck.sh/) is available for Mac, Windows & Linux. It is installed as `duck`.
 
-# Installation
+## Installation
 
 `````{tabs}
 ````{group-tab} macOS
@@ -63,7 +63,7 @@ to install.
 Not currently available.
 
 ```{image} _images/CLI_Setup.png
-:alt: Send Command
+:alt: CLI Setup
 :width: 500px
 ```
 
@@ -143,7 +143,7 @@ Packages can also be found for [download](https://dist.duck.sh/).
 ````
 `````
 
-# Usage
+## Usage
 
 `Usage:duck [options...]`
 
@@ -151,11 +151,11 @@ Run `--help` to get the option screen.
 
 URLs in arguments must be fully qualified. Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing slash. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
 
-## Connection Profiles
+### Connection Profiles
 
 You can install additional [connection profiles](../protocols/profiles.md) in the [application support directory](#profiles). Use the `--profile` option to reference a [connection profile](../protocols/index.md#connection-profiles) file to use not installed in the standard location.
 
-## URI
+### URI
 
 The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize` must satisfy following rules:
 
@@ -193,7 +193,7 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 | Rackspace Cloud Files (US) | No | `rackspace:/<container>/<key>` | `rackspace:<container>/<key>` |
 | Swift (OpenStack Object<br/>Storage) | Yes (`swift://<hostname>/<container>/<key>`) |||
 
-### Examples
+#### Examples
 
 - List all buckets in S3 with 
 ```{code-block}
@@ -204,90 +204,90 @@ duck --username <Access Key ID> --list s3:/
 duck --username <Access Key ID> --list s3:/<bucketname>/
 ```
 
-## Generic Options
+### Generic Options
 
-### `--retry`
+#### `--retry`
 
 Retry requests with I/O failures once per default. Useful on connnection timeout or latency issues.
 
-### `--verbose`
+#### `--verbose`
 
 Print protocol transcript for requests and responses. This includes the HTTP headers.
 
-### `--nokeychain`
+#### `--nokeychain`
 
 Do not save passwords in login keychain (macOS), credentials manager (Windows), or plain text password file (Linux).
 
-### `--quiet`
+#### `--quiet`
 
 Suppress progress messages.
 
-### `--throttle`
+#### `--throttle`
 
 Throttle bandwidth to the number of bytes per second.
 
-## Credentials
+### Credentials
 
 You can pass username as part of the URI prepending to the hostname with `username@host`. Alternatively, use the `--username` option. You can give the password with the `--password` option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).
 
-### Private Key
+#### Private Key
 
 When connecting with SFTP you can give a file path to a private key with `--identity` for use with public key authentication.
 
-### Tenant Name
+#### Tenant Name
 
 When connecting with `OpenStack Swift` you can set the tenant name (*OpenStack Identity Service, Keystone 2.0*) or project (*OpenStack Identity Service, Keystone 3.0*) with `--username <tenant>:<user>`.
 
-## Downloads with `--download`
+### Downloads with `--download`
 
-### Glob pattern support for selecting files to transfer
+#### Glob pattern support for selecting files to transfer
 
 You can transfer multiple files with a single command using a glob pattern for filename inclusion such as
 ```{code-block}
 duck --download ftps://<hostname>/directory/*.css
 ```
 
-## Uploads with `--upload`
+### Uploads with `--upload`
 
-### Glob Pattern Support for Selecting Files to Transfer
+#### Glob Pattern Support for Selecting Files to Transfer
 
 If your shell supports glob expansion you can use a wildcard pattern to select files for upload like 
 ```{code-block}
 duck --upload ftps://<hostname>/directory/ ~/*.jpg
 ```
 
-### Use of `~`
+#### Use of `~`
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
 
-## Remote Directory Listing with `--list`
+### Remote Directory Listing with `--list`
 
 Make sure to include a trailing '/' in the path argument to denote a directory. Use the `-L` option to print permission mask and modification date in addition to the filename.
 
-## Edit with `--edit`
+### Edit with `--edit`
 
 You can edit remote files with your preferred editor on your local system using the `--edit` command. Use the optional `--application` option to specify the absolute path to the external editor you want to use.
 
-## Purge Files in CDN with `--purge`
+### Purge Files in CDN with `--purge`
 
 Purge files in CloudFront or Akamai CDN for Amazon S3 or Rackspace CloudFiles connections. For example to invalidate all contents in a bucket run
 ```{code-block}
 duck --username AKIAIWQ7UM47TA3ONE7Q --purge s3:/github-cyberduck-docs/
 ```
 
-## Multiple Transfer Connections with `--parallel`
+### Multiple Transfer Connections with `--parallel`
 
 Transfer files with multiple concurrent connections to a server.
 
-## Cryptomator
+### Cryptomator
 
 Access to your [Cryptomator](../cryptomator/index.md) Vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the Vault if not found in the Keychain.
 
 Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allows uploading into a subdirectory of a Vault where the auto-detect feature does otherwise not work.
 
-# Samples
+## Samples
 
-## Watching Changes in Directory with `fswatch` and Upload
+### Watching Changes in Directory with `fswatch` and Upload
 
 `fswatch` is a file change monitor; an application to watch for file system changes. Refer to their [documentation](https://github.com/emcrisostomo/fswatch/wiki).
 
@@ -295,7 +295,7 @@ Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allo
 fswatch -0 ~/Sites/mywebsite/ | xargs -0 -I {} -t sh -c 'f="{}"; duck --upload ftps://<hostname>/sandbox`basename "${f}"` "${f}" -existing overwrite'
 ```
 
-## Upload Build Artifacts from Continuous Integration (Jenkins) to CDN
+### Upload Build Artifacts from Continuous Integration (Jenkins) to CDN
 
 use a post [build script action](https://plugins.jenkins.io/postbuildscript/).
 
@@ -303,24 +303,24 @@ use a post [build script action](https://plugins.jenkins.io/postbuildscript/).
 cd ${WORKSPACE}; find build -name '*.tar' -print0 | xargs -0 -I {} -t sh -c 'f="{}"; duck --quiet --retry --existing skip --region DFW --upload rackspace://<container>/ "${f}"'
 ```
 
-## Upload Files Matching Glob Pattern to Windows Azure
+### Upload Files Matching Glob Pattern to Windows Azure
 ```{code-block}
 duck --username kahy9boj3eix --upload azure://kahy9boj3eix.blob.core.windows.net/<containername>/ *.zip
 ```
 
-## Download Files Matching Glob Pattern from FTP
+### Download Files Matching Glob Pattern from FTP
 ```{code-block}
 duck -v --download ftp://mirror.switch.ch/mirror/apache/dist/httpd/*.gz ~/Downloads
 ```
 
-## Download File from Amazon S3 Public Bucket
+### Download File from Amazon S3 Public Bucket
 ```{code-block}
 duck --verbose --download s3://repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar ~/Downloads/
 ```
 
-# Application Support Directory
+## Application Support Directory
 
-## Profiles
+### Profiles
 
 The directory location is printed with `--help` following the list of supported protocols.
 
@@ -342,7 +342,7 @@ The support directory is `~/.duck/` on Linux. You can install third party [profi
 ````
 `````
 
-# Preferences
+## Preferences
 
 `````{tabs}
 ````{group-tab} macOS
@@ -368,12 +368,12 @@ You can override default [preferences](../cyberduck/preferences.md#hidden-config
 ````
 `````
 
-# Known Issues
+## Known Issues
 
-## Slow Execution due to low Entropy in /dev/random
+### Slow Execution due to low Entropy in /dev/random
 
 As a workaround run `haveged`, a service to generate random numbers and feed Linux random device.
 
-# Third-Party References
+## Third-Party References
 
 - [Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage](https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4)

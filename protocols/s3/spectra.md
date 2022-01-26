@@ -1,11 +1,11 @@
 Spectra BlackPearl Deep Storage Gateway
-===
+====
 
 ![Spectra Drive Icon](_images/Spectra_Drive_Icon.png)
 
 > S3 Gateway to Deep Storage. The Spectra Logic BlackPearl Converged Storage System provides an easy, cloud-like interface to on-premise storage solutions, including to disk, tape, and cloud targets for maximum protection.
 
-# Connecting
+## Connecting
 
 ```{Note}
 All connection profiles are available through the *Preferences → Profiles* tab.
@@ -16,25 +16,25 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 Refer to [Profiles](../../cyberduck/connection.md#connection-profiles) for documentation about connection profiles. Choose *Spectra BlackPearl Deep Storage Gateway (HTTP)* from the list of protocols when editing a [bookmark](../../cyberduck/bookmarks.md) or use the `spectra://` scheme when using the [CLI](../../cli/index).
 
-# Additional Information
+## Additional Information
 
-## Transfer → Retries
+### Transfer → Retries
 
 Reading a file from Spectra S3 might trigger a retry wait for up to 300 seconds when the file is not yet in the cache.
 
 ![Cache Retries](_images/Cache_Retry.png)
 
-## Transfer → Multiple Connections
+### Transfer → Multiple Connections
 
 Use the lower right toggle to set the number of concurrent connections for file transfers. Refer to [Multiple Connections](../../cyberduck/transfer.md#connections). This allows saturating the bandwidth when running in a fast local network.
 
 ![Saturating 10GbE interface with file transfer](_images/10GbE_Transfer.png)
 
-# Limitations
+## Limitations
 
 - Rename and move files: not supported
 
-# References
+## References
 
 - [S3 Gateway to Deep Storage](https://www.spectralogic.com/products/blackpearl/)
 - [The first RESTful interface to deep storage](https://www.spectralogic.com/products/spectra-s3/)
