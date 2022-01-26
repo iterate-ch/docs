@@ -9,7 +9,7 @@ Files.com
 
 The connection profile allows to login using the *Files.com REST API* supporting two-factor authentication.
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/default/Files.com.cyberduckprofile>` the *Files.com Connection Profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/default/Files.com.cyberduckprofile>` the *Files.com Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 

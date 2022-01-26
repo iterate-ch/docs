@@ -13,9 +13,9 @@ While most of the big cloud players in the world are U.S.-based, Zetta.IO is a N
 
 ### Connection Profiles
 
-Connect using the pre-configured [connection profile](../../cyberduck/connection.md#connection-profiles):
+Connect using the preconfigured [connection profile](../../cyberduck/connection.md#connection-profiles):
 
-- {download}`Zetta.IO Cyberduck Connection Profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Zetta.IO.cyberduckprofile>`
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Zetta.IO.cyberduckprofile>` the *Zetta.IO Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 

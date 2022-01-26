@@ -7,4 +7,4 @@ Exoscale
 
 ## Connecting
 
-{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/exoscale.cyberduckprofile>` the *Exoscale Object Store Connection Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/exoscale.cyberduckprofile>` the *Exoscale Object Store Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.

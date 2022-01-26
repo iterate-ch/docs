@@ -5,7 +5,7 @@ Cynny Space
 
 ## Connecting
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Cynny%20Space.cyberduckprofile>` the *Cynny Space Connection Profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Cynny%20Space.cyberduckprofile>` the *Cynny Space Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ## References
 
