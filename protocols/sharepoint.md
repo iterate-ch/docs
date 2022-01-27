@@ -80,6 +80,6 @@ You may review your SharePoint authentication methods via `SharePoint Central Ad
 
 You may not connect to a SharePoint enabled site through WebDAV if any of these authentication methods is required:
 
-- Kerberos (Issue [#133](https://trac.cyberduck.io/ticket/133))
+- Kerberos (Issue [#133](https://github.com/iterate-ch/cyberduck/issues/12082))
 - Forms Based Authentication
 - Trusted Identity Provider

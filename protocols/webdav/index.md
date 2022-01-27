@@ -147,7 +147,7 @@ This will print
 
 during the handshake, if there is a configuration problem.
 
-See also Cyberduck Issue [#7908](https://trac.cyberduck.io/ticket/7908).
+See also Cyberduck Issue [#7908](https://github.com/iterate-ch/cyberduck/issues/7908).
 
 ### Disable Expect: 100-continue
 

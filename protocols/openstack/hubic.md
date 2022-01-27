@@ -22,4 +22,4 @@ Use the [Openstack Swift (v1) profile](index.md) together with an authentication
 
 ## Known Issues
 
-- Interoperability with hubiC (OVH) (Issue [#7764](https://trac.cyberduck.io/ticket/7764))
+- Interoperability with hubiC (OVH) (Issue [#7764](https://github.com/iterate-ch/cyberduck/issues/7764))
