@@ -126,7 +126,7 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *C
 `````{tabs}
 ````{group-tab} Cyberduck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Edit → Copy URL → Signed URL*.
+You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *File → Share...*.
 
 ```{image} _images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
@@ -136,7 +136,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 ````
 ````{group-tab} Mountain Duck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Create Download Share* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} _images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
