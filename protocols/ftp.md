@@ -149,6 +149,15 @@ To disable `MLSD` for directory listings, open a Terminal.app window and enter
 
 Restart Cyberduck.
 
+Alternatively, you can use one of the connection profiles below for which the mentioned directory listing commands are already disabled.
+* {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+* {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+
+#### Interoperability with ASUS Routers
+
+Asus Routers are incapable of performing basic `STAT`-requests. This is in direct violation of [RFC9591](https://tools.ietf.org/html/rfc959) which states that `STAT` should behave like `LIST` when a path name is given - which is not the case.
+Because of this, the usage of the *FTP (Compatibility Mode) Connection Profile* is mandatory to get proper access to drives connected to an ASUS Router.
+
 ### File Locks with vsFTPd
 
 Set the property `lock_upload_files=NO` in *vsftpd_conf*.
