@@ -132,11 +132,11 @@ You can CDN enable the container using *File → Info → Distribution (CDN)* if
 
 ### Large Upload Segment Size
 
-You can set the [hidden option](../../cyberduck/preferences.md#hidden-configuration-options) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue #9134).
+You can set the [hidden option](../../cyberduck/preferences.md#hidden-configuration-options) `openstack.upload.largeobject.size` for the segment size in `bytes` (Issue [#9134](https://github.com/iterate-ch/cyberduck/issues/9134)).
 
 ## Known Issues
 
-- <del>Authentication failure with ec2-credentials</del> (Issue [#7754](https://trac.cyberduck.io/ticket/7754))
+- <del>Authentication failure with ec2-credentials</del> (Issue [#7754](https://github.com/iterate-ch/cyberduck/issues/7754))
 
 ### Multiple OpenStack Swift Containers in Different Regions with the Same Name
 
