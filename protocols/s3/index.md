@@ -26,6 +26,7 @@ verizon
 wasabi
 z1
 storadera
+linode
 ```
 
 ```{image} _images/s3.png
