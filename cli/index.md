@@ -308,14 +308,14 @@ cd ${WORKSPACE}; find build -name '*.tar' -print0 | xargs -0 -I {} -t sh -c 'f="
 duck --username kahy9boj3eix --upload azure://kahy9boj3eix.blob.core.windows.net/<containername>/ *.zip
 ```
 
-### Download Files Matching Glob Pattern from FTP
+### Download Files Matching Glob Pattern from S3
 ```{code-block}
-duck -v --download ftp://mirror.switch.ch/mirror/apache/dist/httpd/*.gz ~/Downloads
+duck --user anonymous --verbose --download s3:/profiles.cyberduck.io/Wasabi* ~/Downloads/
 ```
 
 ### Download File from Amazon S3 Public Bucket
 ```{code-block}
-duck --verbose --download s3://repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar ~/Downloads/
+duck --user anonymous --download s3:/repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar ~/Downloads/
 ```
 
 ## Application Support Directory
