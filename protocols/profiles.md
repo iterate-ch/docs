@@ -3,6 +3,10 @@ Connection Profiles
 
 [Connection profiles](../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
+```{note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 - [Third-Party S3 providers](s3/index.md#third-party-providers)
 - [OpenStack Providers](openstack/index.md#third-party-providers)
 
