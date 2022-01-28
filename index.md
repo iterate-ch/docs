@@ -4,12 +4,38 @@ Cyberduck & Mountain Duck Help
 ```{toctree}
 :hidden:
 :titlesonly:
+:caption: Cyberduck
 
 cyberduck/index
-cli/index
-mountainduck/index
-protocols/index
 cdn/index
+```
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Cyberduck CLI
+cli/index
+```
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Mountain Duck
+mountainduck/index
+```
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Supported Protocols
+protocols/index
+protocols/profiles
+```
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Cryptomator
 cryptomator/index
 ```
 
