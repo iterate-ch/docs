@@ -53,6 +53,16 @@ Used when connecting to [SharePoint](../sharepoint.md) using WebDAV.
 
 Choose *WebDAV (HTTP/SSL)* as the connection protocol to secure the connection using SSL.
 
+:::{admonition} TLS v1 and TLSv1.1 deprecation
+:class: warning
+
+TLS v1 and TLS v1.1 are not supported as of
+* Cyberduck macOS 8.1.0, due to Oracle disabling support in [JDK16](https://www.oracle.com/java/technologies/javase/16-relnote-issues.html#JDK-8202343)
+* Cyberduck Windows 8.1.1, due to Oracle retroactively disabling support in [Java 8u291](https://www.oracle.com/java/technologies/javase/8u291-relnotes.html#JDK-8202343)
+
+Ref: [JDK-8202343](https://bugs.openjdk.java.net/browse/JDK-8202343)
+:::
+
 ### Mutual TLS (mTLS)
 
 Mutual (two-way) TLS with a client certificate for authentication is supported.
