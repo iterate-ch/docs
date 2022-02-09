@@ -51,11 +51,10 @@ Used when connecting to [SharePoint](../sharepoint.md) using WebDAV.
 
 ## SSL/TLS Support
 
-Choose *WebDAV (HTTP/SSL)* as the connection protocol to secure the connection using SSL.
+Choose *WebDAV (HTTP/SSL)* as the connection protocol to secure the connection using SSL. Interoperable with *TLSv1.3* and *TLSv1.2*.
 
 :::{admonition} TLSv1 and TLSv1.1 deprecation
 :class: warning
-
 TLSv1 and TLSv1.1 are no longer supported as of
 * Cyberduck [8.1.0](https://github.com/iterate-ch/cyberduck/milestone/184) or later
 * Mountain Duck [4.9.0](https://mountainduck.io/changelog/) or later
