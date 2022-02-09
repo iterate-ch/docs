@@ -18,6 +18,14 @@ The character encoding used to parse directory listings can be set as a per book
 
 FTP with [explicit](http://en.wikipedia.org/wiki/FTPS.md#explicit) TLS is supported. Implicit FTPS with no negotiation is deprecated and not supported. FTPS should not be confused with the [SSH File Transfer Protocol (SFTP)](sftp.md).
 
+:::{admonition} TLSv1 and TLSv1.1 deprecation
+:class: warning
+
+TLSv1 and TLSv1.1 are no longer supported as of
+* Cyberduck [8.1.0](https://github.com/iterate-ch/cyberduck/milestone/184) or later
+* Mountain Duck [4.9.0](https://mountainduck.io/changelog/) or later
+  :::
+
 ### Mutual TLS
 
 Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the Keychain on macOS or the Windows Certificate Manager respectively.

@@ -82,4 +82,5 @@ master_doc = 'index'
 myst_heading_anchors = 4
 myst_enable_extensions = [
 	"html_image",
+	"colon_fence"
 ]
