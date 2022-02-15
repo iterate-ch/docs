@@ -1,7 +1,7 @@
 Alibaba Cloud Object Storage Service (OSS)
 ====
 
-```{image} _images/alibaba.png
+```{image} https://cdn.cyberduck.io/img/providers/alibaba.png
 :alt: Alibaba Cloud Object Storage Service
 :width: 128px
 ```
