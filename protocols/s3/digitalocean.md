@@ -1,7 +1,7 @@
 DigitalOcean Spaces
 ====
 
-```{image} _images/DigitalOcean_Spaces.png
+```{image} https://cdn.cyberduck.io/img/providers/digitaloceanspaces.png
 :alt: DigitalOcean Spaces Drive Icon
 :width: 128px
 ```

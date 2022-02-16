@@ -1,7 +1,10 @@
 DreamObject Cloud Storage
 ====
 
-![DreamObjects Drive Icon](_images/dreamobjects.2.png)
+```{image} https://cdn.cyberduck.io/img/providers/dreamobjects.png
+:alt: DreamObject Cloud Storage
+:width: 128px
+```
 
 > [DreamObjects](http://dreamhost.com/cloud/dreamobjects/) is a cost-effective, public cloud storage service built on top of the open source technology [Ceph](http://ceph.io/). It is compatible with the APIs of [Amazon S3](index.md) and [Swift](../openstack/index.md) based object storage services.
 
