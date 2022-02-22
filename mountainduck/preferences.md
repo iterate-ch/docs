@@ -37,6 +37,19 @@ Choose whether the file contents should be buffered or not. Unchecking the optio
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
 
+### Mount Location 
+
+````{admonition} macOS only
+:class: tip
+
+Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
+
+**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store.
+
+The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
+````
+
+
 ### Cache Location
 
 `````{tabs}
@@ -88,20 +101,6 @@ The following connection profiles are installed by default and can’t be delete
 - [ownCloud](../protocols/webdav/nextcloud.md)
 - [Rackspace Cloud Files (US)](../protocols/openstack/cloudfiles.md)
 
-
-## Connection
-
-### Mount Location 
-
-````{admonition} macOS only
-:class: tip
-
-Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
-
-**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store.
-
-The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
-````
 
 ### Cache
 
