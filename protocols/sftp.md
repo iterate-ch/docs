@@ -332,10 +332,10 @@ Some editors save files using an *Atomic Save* feature that writes changes to a 
 - [TextMate](https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving)
 ```
 
-### Free Space Calculation is Incorrect (Windows)
+### Free Space Calculation is Incorrect
 
 The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the space-available extension of the SFTP protocol or the `statvfs@openssh.com` extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space.
 
 You can work around the issue using one of the following options:
-- Set a default path you want to connect to within the bookmark Path option.
-- Disable the feature within Mountain Duck by setting the [hidden property](../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties*. If the file doesn't exist create it within *%AppData%\Cyberduck*.
+- Set a default path you want to connect to within the bookmark *Path* option.
+- Disable the feature within Mountain Duck by setting the [hidden property](../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/deafult.properties* on macOS. If the file doesn't exist create it within the [application support folder](../mountainduck/support.md#application-support-folder).
