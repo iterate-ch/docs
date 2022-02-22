@@ -85,3 +85,6 @@ There are some limitations that you should keep in mind while working with.
 
 - We've added support for Microsoft 365 China in **Cyberduck 7.8 / Mountain Duck 4.4** but aren't able to verify if it works properly.
 - No interoperability with Microsoft 365 for US Government (other services may apply as well)
+
+### Top Level folder
+It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.

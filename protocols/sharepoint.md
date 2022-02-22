@@ -83,3 +83,8 @@ You may not connect to a SharePoint enabled site through WebDAV if any of these 
 - Kerberos (Issue [#133](https://github.com/iterate-ch/cyberduck/issues/12082))
 - Forms Based Authentication
 - Trusted Identity Provider
+
+## Limitations
+
+### Top Level folder
+It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.

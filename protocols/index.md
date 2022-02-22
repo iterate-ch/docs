@@ -152,3 +152,23 @@ Protocols with limited support for modification dates only allow to set the modi
 - **WebDAV**: Saving the modification dates requires support from server storing metadata in custom namespace
 - **FTP**: Requires support from server for `MFMT` or `UTIME` extensions
 ```
+
+## Limitations
+
+A top level folder can't be created for protocols with virtual top level folders.
+
+| Protocol             | Virtual top level folders |
+|----------------------| :---: |
+| Local Disk           | ❌ |
+| SFTP                 | ❌ |
+| FTP                  | ❌ |
+| Google Drive         | ✅ |
+| Google Cloud Storage | ❌ |
+| Microsoft OneDrive   | ✅ |
+| Microsoft Sharepoint | ✅ |
+| Files.com            | ❌ |
+| DRACOON              | ❌ |
+| Box.com              | ❌ |
+| Dropbox              | ✅ |
+| Nextcloud            | ❌ |
+| ownCloud             | ❌ |

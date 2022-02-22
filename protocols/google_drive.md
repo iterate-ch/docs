@@ -80,6 +80,9 @@ Documents shared with you from another Google account can be found inside the to
 
 Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../cyberduck/connection.md#repeat-failed-networking-tasks) and set a delay.
 
+### Top Level folder
+It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.
+
 ### The Granted Scopes do not Give Access to all of the Requested Spaces
 
 Please remove the previously saved OAuth tokens `Google Drive (Email) OAuth2 Access Token` saved in your keychain and reconnect to grant Cyberduck access to Google Photos.
