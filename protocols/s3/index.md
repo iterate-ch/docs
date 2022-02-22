@@ -23,6 +23,7 @@ scaleway
 scality
 spectra
 verizon
+vitanium
 wasabi
 z1
 storadera
@@ -190,38 +191,39 @@ Refer to the [Cyberduck CLI documentation](../../cli/index.md) for more operatio
 
 There are a growing number of third parties besides Amazon offering S3 compatible cloud storage software or solutions. Here is a non-exhaustive list:
 
+- [Alibaba Cloud Object Storage Service (OSS)](alibaba.md)
 - [Aruba Cloud](https://www.cloud.it/)
+- [Cloudian HyperStore Appliance](https://cloudian.com/products/hyperstore/)
 - [connectria Cloud Storage](https://www.mh.connectria.com/rp/order/cloud_storage_index)
+- [Cynny Space](cynny.md)
+- [DigitalOcean Spaces](digitalocean.md)
 - [DreamObjects Cloud Storage](dreamobjects.md)
 - [Dunkel Cloud Storage](dunkel.md)
 - [Eucalyptus Walrus](eucalyptus.md)
+- [Exoscale Swiss Object Storage](exoscale.md)
+- [Filebase](filebase.md)
 - [Google Storage](../google_cloud_storage.md)
+- [IBM Cloud Object Storage (COS)](ibm_cos.md)
+- [IDrive® Cloud](idrive_cloud.md#s3)
+- [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
+- [MinIO Cloud Storage](minio.md)
+- [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
+- [Oracle Storage Cloud Service](oracle_cloud.md#oci-object-storage)
 - [Outscale (using CEPH Opensource)](https://www.outscale.com/)
+- [Pilvio](pilvio.md)
+- [Polycloud](polycloud.md)
 - [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
+- [Scaleway Object Storage](scaleway.md)
 - [Scality (proprietary technology)](scality.md)
 - [Seeweb](https://www.seeweb.it/)
-- [Storadera](storadera.md)
-- [Exoscale Swiss Object Storage](exoscale.md)
-- [Verizon Cloud Storage](verizon.md)
 - [Spectra BlackPearl Deep Storage Gateway](spectra.md)
-- [MinIO Cloud Storage](minio.md)
-- [Cynny Space](cynny.md)
-- [Cloudian HyperStore Appliance](https://cloudian.com/products/hyperstore/)
+- [Storadera](storadera.md)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
-- [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
-- [Wasabi Storage](wasabi.md)
-- [DigitalOcean Spaces](digitalocean.md)
-- [IBM Cloud Object Storage (COS)](ibm_cos.md)
-- [Oracle Storage Cloud Service](oracle_cloud.md#oci-object-storage)
-- [Alibaba Cloud Object Storage Service (OSS)](alibaba.md)
+- [Verizon Cloud Storage](verizon.md)
+- [Vitanium Cloud](vitanium.md)
 - [Vultr Object Storage](https://www.vultr.com/docs/vultr-object-storage#Cyberduck_GUI_tool)
-- [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
-- [Filebase](filebase.md)
+- [Wasabi Storage](wasabi.md)
 - [Z1 Storage](z1.md)
-- [Pilvio](pilvio.md)
-- [IDrive® Cloud](idrive_cloud.md#s3)
-- [Polycloud](polycloud.md)
-- [Scaleway Object Storage](scaleway.md)
 
 ## Buckets
 
