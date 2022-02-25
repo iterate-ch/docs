@@ -58,7 +58,7 @@ Please make sure to include a detailed description of the feature you'd like to 
 `````{tabs}
 ````{group-tab} macOS
 
-Crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.crash`.
+Crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.crash`. On macOS 12 or later crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.ips`.
 
 ````
 ````{group-tab} Windows
