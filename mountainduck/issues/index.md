@@ -85,6 +85,10 @@ It is not possible to share a mounted drive within the local network.
 
 The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](../interface.md#context-menu-in-finder-and-windows-file-explorer) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
 
+### Folder Doesn't Show Content on the Remote Server
+
+Folders that weren't renamed after creation don't get uploaded to the server and therefore don't show the content. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows, and the folder should be uploaded to the server and be visible on the server.
+
 ### Cache Uses a lot of Disk Space
 
 The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](../preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](../sync/index.md#delete-on-local-disk) option.
