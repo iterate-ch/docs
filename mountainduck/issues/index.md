@@ -124,9 +124,10 @@ This quota information is only available for the following protocols:
 **Finder**<br/>
 When you have other applications installed that register a Finder Extension (macOS) for the volume mounted, the status icon may not appear. This has been reported for the following applications:
 
-- *Araxis Merge*
-- *BetterZip*
-- *Sophos*. Documented in [SAV for Mac OS - Sophos Finder Extension Known Issues](https://community.sophos.com/kb/en-us/132136)
+- [*Araxis Merge*](https://www.araxis.com/merge/index.en)
+- [*BetterZip*](https://macitbetter.com/)
+- [*Sophos*](https://www.sophos.com/en-us). Documented in [SAV for Mac OS - Sophos Finder Extension Known Issues](https://community.sophos.com/kb/en-us/132136)
+- [*Keka*](https://www.keka.io/en/)
 
 Please check in *System Preferences → Extension → Finder* for other applications that may override the badge icons.
 
