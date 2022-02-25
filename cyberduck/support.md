@@ -123,7 +123,7 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 `````{tabs}
 ````{group-tab} macOS
 
-Crash reports are saved to `~/Library/Logs/DiagnosticReports/Cyberduck_*.crash`.
+Crash reports are saved to `~/Library/Logs/DiagnosticReports/Cyberduck_*.crash`. On macOS 12 or later crash reports are saved to `~/Library/Logs/DiagnosticReports/Cyberduck_*.ips`.
 
 ````
 ````{group-tab} Windows
