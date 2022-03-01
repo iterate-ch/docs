@@ -32,7 +32,7 @@ Please be aware that you are possibly using our software at no charge if you hav
 `````{tabs}
 ````{tab} Log
 
-Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
+Reveal the log output named `cyberduck.log` by choosing _Preferences → Connection → Log → Show_.
 
 Alternatively, the `cyberduck.log` file can be found in `~/Library/Logs/Cyberduck`.
 
@@ -69,7 +69,7 @@ To create a heap dump of the Cyberduck process on macOS (in case of excessive me
 ``````
 ``````{group-tab} Windows
 
-Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
+Reveal the log output named `cyberduck.log` by choosing _Preferences → Connection → Log → Show_.
 
 Alternatively, the `cyberduck.log` file can be found in `%AppData%\cyberduck`.
 
