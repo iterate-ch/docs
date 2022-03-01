@@ -25,9 +25,6 @@ Please be aware that you are possibly using our software at no charge if you hav
 
 ## Logging Output
 
-```{note}
-Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
-```
 
 ```````{tabs}
 ``````{group-tab} macOS
@@ -35,7 +32,9 @@ Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection
 `````{tabs}
 ````{tab} Log
 
-Log output can be found in the `cyberduck.log` file in `~/Library/Logs/Cyberduck`.
+Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
+
+Alternatively, the `cyberduck.log` file can be found in `~/Library/Logs/Cyberduck`.
 
 ````
 ````{tab} Console.app
@@ -70,7 +69,9 @@ To create a heap dump of the Cyberduck process on macOS (in case of excessive me
 ``````
 ``````{group-tab} Windows
 
-Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`.
+Reveal the log output in `cyberduck.log` by choosing _Preferences → Connection → Log → _Show__.
+
+Alternatively, the `cyberduck.log` file can be found in `%AppData%\cyberduck`.
 
 ``````
 ```````
