@@ -3,9 +3,9 @@ Eucalyptus Walrus
 
 > [Eucalyptus Walrus](http://open.eucalyptus.com/) is an open source implementation of S3. 
 
-## Connecting
+## Connecting 
 
-- {download}`Download<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/eucalyptus/Eucalyptus%20Walrus%20S3.cyberduckprofile>` the *Eucalyptus Walrus S3 Connection Profile* for preconfigured settings.
+- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Eucalyptus%20Walrus%20S3.cyberduckprofile>` the *Eucalyptus Walrus S3 Connection Profile* for preconfigured settings.
 
 Choose *Eucalyptus Walrus S3* from the protocol dropdown menu in the [Open Connection](../../cyberduck/connection.md) or [Bookmark](../../cyberduck/bookmarks.md) settings and enter the hostname of your installation. Refer to [S3](index.md) in general.
 
