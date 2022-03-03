@@ -1,6 +1,11 @@
 Vitanium Cloud
 ===
 
+```{image} https://cdn.cyberduck.io/img/providers/vitanium.png
+:alt: Vitanium Cloud
+:width: 128px
+```
+
 ## Connecting
 
 {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Vitanium%20Object%20Storage.cyberduckprofile>` the *Vitanium Object Storage Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
