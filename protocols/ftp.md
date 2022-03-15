@@ -160,6 +160,10 @@ Alternatively, you can use one of the connection profiles below for which the me
 * {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 * {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
+```{Note}
+Connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 #### Interoperability with ASUS Routers
 
 Asus Routers are incapable of performing basic `STAT`-requests. This is in direct violation of [RFC9591](https://tools.ietf.org/html/rfc959) which states that `STAT` should behave like `LIST` when a path name is given - which is not the case.
