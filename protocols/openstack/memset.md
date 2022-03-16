@@ -18,13 +18,13 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 #### Memset 1.0
 
-{download}`Download<https://svn.cyberduck.ch/trunk/profiles/Memset%20(1.0).cyberduckprofile>` the *Memset (1.0) Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Memset%20(1.0).cyberduckprofile>` the *Memset (1.0) Profile* for preconfigured settings.
 
 Use your Memstore access username (e.g. `mstestaa1.admin`) and password (API key) to log in.
 
 #### Keystone
 
-{download}`Download<https://svn.cyberduck.ch/trunk/profiles/Memset%20(Keystone).cyberduckprofile>` the *Memstore (Keystone) Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Memset%20(Keystone).cyberduckprofile>` the *Memstore (Keystone) Profile* for preconfigured settings.
 
 Use `admin` for the username, the Memstore name when prompted for the Tenant ID (e.g. `mstestaa1`) and password (API key) to log in.
 

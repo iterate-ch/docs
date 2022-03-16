@@ -7,7 +7,7 @@ GMX Cloud
 
 ### Connection Profile
 
-{download}`Download<https://svn.cyberduck.ch/trunk/profiles/GMX%20Cloud.cyberduckprofile>` the *GMX Cloud Connection Profile* for preconfigured settings.
+{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/GMX%20Cloud.cyberduckprofile>` the *GMX Cloud Connection Profile* for preconfigured settings.
 
 ### Manual Configuration
 
