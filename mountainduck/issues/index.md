@@ -182,7 +182,7 @@ This is an issue within the operating system that can occur to any network drive
 
 As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window
 
-    defaults write io.mounteinduck fs.filesnames.metadata.enable false
+    defaults write io.mountainduck fs.filesnames.metadata.enable false
 
 If you want to delete metadata files, you can open a *Terminal.app* window and enter `dot_clean -m <folder>`.
 
