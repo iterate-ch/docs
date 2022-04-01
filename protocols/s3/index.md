@@ -143,9 +143,15 @@ You might be interested in scripts maintained by third parties to facilitate man
 
 #### AWS Single Sign-On
 
-For a SSO connection the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are needed within the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows.
+For a SSO connection the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are needed within the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows. The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
 
-The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache/` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
+To populate the correct cache locations follow these steps:
+1. Run the command `aws sso login` to populate `~/.aws/sso/cache` on macOS or respectively `%USERPROFILE%\.aws\sso\cache` on Windows. This adds client secrets but doesn't add any usable AWS credentials.
+2. Seed the second cache in `~/.aws/cli/cache` on macOS or respectively `%USERPROFILE%\.aws\cli\cache` on Windows by running the command `aws sts get-caller-identity`. This adds the usable credentials to the location Cyberduck and Mountain Duck reads from.
+
+```{note}
+You can also do this for a specific profile by adding `--profile myProfile` to the commands. Make sure to use the same profile for both steps.
+```
 
 - [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
