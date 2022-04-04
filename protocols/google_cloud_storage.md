@@ -80,6 +80,10 @@ Creating a folder inside a bucket will create a placeholder object named after t
 
 You can edit standard HTTP headers [add](../cyberduck/info.md#metadata-http-headers) custom HTTP headers to files to store [metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html). Choose *File → Info → Google Storage* to edit headers.
 
+#### Support for `Custom-Time`
+
+Modification dates are supported through the `Custom-Time` metadata parameter. The parameter gets set on file upload through Mountain Duck and Cyberduck.
+
 ## ACLs
 
 ### Default ACLs
