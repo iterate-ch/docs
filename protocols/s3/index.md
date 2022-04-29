@@ -389,7 +389,7 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 ## Access Control (ACL)
 
-Amazon S3 uses Access Control List (ACL) settings to control who may access or modify items stored in S3. You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Permissions*.
+Amazon S3 uses Access Control List (ACL) settings to control who may access or modify items stored in S3. You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Permissions*. Alternatively, permissions can be changed using [bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
 
 ![ACLs](_images/ACLs.png)
 
@@ -433,11 +433,19 @@ The following permissions can be given to grantees:
 | `READ_ACP` | Allows grantee to read the bucket ACL | Allows grantee to read the file ACL |
 | `WRITE_ACP` | Allows grantee to write the ACL for the applicable bucket | Allows grantee to write the ACL for the applicable file |
 
+```{attention}
+You may receive an error *Cannot change permissions of* when attempting to grant *Everyone READ* permission for a file if the bucket has public access blocked because [Block Public Access settings](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html) are turned on for this bucket.
+```
+
 ## Public URLs
 
 You can access all URLs (including from [CDN](../../cdn/cloudfront.md) configurations) from the menu *Edit → Copy URL and File → Open URL*.
 
 ![Copy URLs](_images/Copy_URLs.png)
+
+```{important}
+Public URLs are only accessible if the permission `READ` is granted for `EVERYONE`.
+```
 
 ### Pre-signed Temporary URLs
 
