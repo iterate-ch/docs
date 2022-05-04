@@ -193,7 +193,7 @@ List the contents of a bucket with
 
 Refer to the [Cyberduck CLI documentation](../../cli/index.md) for more operations.
 
-### Uploads to S3
+### Uploads using CLI
 
 Add default metadata for uploads using the [preferences option to read from the environment](../../cli/index.md#preferences). The property is documented in [Default metadata](#default-metadata).
 
