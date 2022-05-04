@@ -256,6 +256,18 @@ If your shell supports glob expansion you can use a wildcard pattern to select f
 duck --upload ftps://<hostname>/directory/ ~/*.jpg
 ```
 
+#### Specification for folders
+
+Integrate 'folder' (e.g. folder contents) to 'name' using
+```{code-block}
+duck --upload protocol:/<name> folder/
+```
+
+Upload the 'folder' itself to '<name>/' using
+```{code-block}
+duck --upload protocol:/<name>/ folder/
+```
+
 #### Use of `~`
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
