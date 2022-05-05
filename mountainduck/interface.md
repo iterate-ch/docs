@@ -108,7 +108,7 @@ Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.a
 You can just select the menu item with the bookmark name to connect, too. If you are already connected, selecting the menu item will reveal the volume in *Finder.app*.
 ```
 
-### Connnect Using the Command Line Interface
+### Connect Using the Command Line Interface
 
 You can mount volumes using your command-line interface (CLI) by opening a bookmark file.
 
