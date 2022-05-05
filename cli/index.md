@@ -260,6 +260,17 @@ duck --upload ftps://<hostname>/directory/ ~/*.jpg
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
 
+#### Custom configuration options for uploads to S3
+
+Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../../s3/index.md#default-metadata).
+
+	env "s3.metadata.default=Content-Type=application/xml" duck --upload …
+
+Set a default ACL for the upload with
+
+	env "s3.acl.default=public-read" duck --upload …
+
+
 ### Remote Directory Listing with `--list`
 
 Make sure to include a trailing '/' in the path argument to denote a directory. Use the `-L` option to print permission mask and modification date in addition to the filename.

@@ -193,6 +193,16 @@ List the contents of a bucket with
 
 Refer to the [Cyberduck CLI documentation](../../cli/index.md) for more operations.
 
+### Uploads using CLI
+
+Add default metadata for uploads using the [preferences option to read from the environment](../../cli/index.md#preferences). The property is documented in [Default metadata](#default-metadata).
+
+	env "s3.metadata.default=Content-Type=application/xml" duck --upload …
+
+Set a default ACL for the upload with
+
+	env "s3.acl.default=public-read" duck --upload …
+
 ## Third-Party Providers
 
 There are a growing number of third parties besides Amazon offering S3 compatible cloud storage software or solutions. Here is a non-exhaustive list:
