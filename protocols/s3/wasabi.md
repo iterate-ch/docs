@@ -37,7 +37,7 @@ Connecting to buckets with dots in the bucket name can cause a certificate error
 
 ```{image} _images/Wasabi_Certificate_Error.png
 :alt: Certificate Error
-:width: 600px
+:width: 400px
 ```
 
 ## References
