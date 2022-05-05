@@ -31,6 +31,15 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 You are connected with a connection profile specific to a region not matching the bucket region. Please install the additional connection profile for the specific region of the bucket.
 
+### Certificate Error
+
+Connecting to buckets with dots in the bucket name can cause a certificate error. 
+
+```{image} _images/Wasabi_Certificate_Error.png
+:alt: Certificate Error
+:width: 600px
+```
+
 ## References
 
 - [How do I use Cyberduck or Mountain Duck with Wasabi?](https://wasabi-support.zendesk.com/hc/en-us/articles/115001671012-How-do-I-use-Cyberduck-or-Mountain-Duck-with-Wasabi-)
