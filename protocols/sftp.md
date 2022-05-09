@@ -41,6 +41,50 @@ To use the same key for all hosts add a wildcard entry such as
 
 which is then used when configuring a new bookmark.
 
+#### Certificates signed by Certification Authority
+
+**ssh-keygen** supports signing of keys to produce certificates that may be used for user or host authentication. Certificates consist of a public key, some identity information, zero or more principal (user or host) names and a set of options that are signed by a Certification Authority (CA) key. 
+
+```{note}
+OpenSSH certificates are a different, and much simpler, format to the X.509 certificates used in [ssl|https://man.openbsd.org/ssl].
+```
+
+ssh-keygen supports two types of certificates: user and host. User certificates authenticate users to servers, whereas host certificates authenticate server hosts to users. To generate a user certificate execute:
+
+	$ ssh-keygen -s /path/to/ca_key -I key_id /path/to/user_key.pub
+
+The user certificate will be placed in `/path/to/user_key-cert.pub`.
+A host certificate requires the `-h` option:
+
+	$ ssh-keygen -s /path/to/ca_key -I key_id -h /path/to/host_key.pub
+
+The host certificate will be output to `/path/to/host_key.pub`.
+
+It is possible to sign certificates using a CA key stored in a PKCS11 token by providing the token library using `-D` and identifying the CA key by providing its public half as an argument to `-s`.
+
+	$ ssh-keygen -s ca_key.pub -D libpkcs11.so -I key_id user_key.pub
+
+Similarly, it is possible for the CA key to be hosted in a [ssh-agent|https://man.openbsd.org/ssh-agent] indicated by the `-U` flag. The CA key must be identified by its public half.
+
+	$ ssh-keygen -Us ca_key.pub -I key_id user_key.pub
+
+In all cases, `key_id` is a "key identifier" that is logged by the server when the certificate is used for authentication. The CA public key must be trusted by [sshd|https://man.openbsd.org/sshd] or [ssh|https://man.openbsd.org/ssh].
+
+##### Specifications
+
+Certificates may be limited to be valid for a set of principal (user/host) names. By default, generated certificates are valid for all users or hosts. Generate a certificate for a specified set of principals using
+
+	$ ssh-keygen -s ca_key -I key_id -n user1,user2 user_key.pub
+	$ ssh-keygen -s ca_key -I key_id -h -n host.domain host_key.pub
+
+Additional restrictionson the validity and use of user certificates can be set through certificate options. For a list of valid certificate options, see the documentation for the [-O option|https://man.openbsd.org/ssh-keygen#O].
+
+```{note}
+A Certificate options may disable features of the SSH session, may be valid only when presented by specific source addresses, or may force the use of a specific command.
+```
+
+Certificates may be defined with a validity lifetime. The [-V option|https://man.openbsd.org/ssh-keygen#V] allows specification of certificate start and end times. A certificate that is presented at a time outside this range will not be considered valid. By default, certificates are valid from UNIX Epoch to the distant future.
+
 #### Default Public Key Authentication Keys
 
 You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
