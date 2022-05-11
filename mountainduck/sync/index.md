@@ -16,6 +16,11 @@ history
 
 The smart sync feature allows making files available offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as a connection is available.
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Bookmark Options
 
 You can change the synchronization options for a bookmark in *Connect Mode*.
