@@ -22,8 +22,8 @@ Calculate the size recursively of all contained files.
 
 Change the permissions on a particular file or folder when connected to a [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp.md) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will not change the executable bit for files if not already set when recursively updating a directory.
 
-```{image} _images/UNIX_Permissions.png
-:alt: UNIX Permissions
+```{image} _images/UNIX_Permission.png
+:alt: UNIX Permission
 :width: 500px
 ```
 
