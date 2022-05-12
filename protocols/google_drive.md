@@ -67,7 +67,7 @@ For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displ
 - `.url` on Windows
 
 ```{attention}
-Google document files can't be managed (renamed, moved, or deleted) within Mountain Duck or Cyberduck. 
+*Google Docs* files can't be managed (renamed, moved, or deleted) within Mountain Duck or Cyberduck. 
 ```
 
 ### Google Team Drives
