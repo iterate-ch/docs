@@ -3,6 +3,11 @@ Share Files
 
 Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. Depending on the provider, the link may be auto expiring and no longer valid after a given period or a password can be set required to download the file.
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Availability of Upload and Download Shares
 
 *Upload* and *Download Shares* aren't available for all supported protocols. The table below shows the protocols which either support *Upload* or *Download Shares*.

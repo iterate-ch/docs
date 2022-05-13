@@ -1,6 +1,11 @@
 File Transfers
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 The *Transfers* window lists pending and completed transfers. The list is retained when the application is closed and can be retrieved after restarting so that the transfer can be restarted at a later time.
 
 - [Download](download.md)

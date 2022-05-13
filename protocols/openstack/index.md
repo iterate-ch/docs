@@ -26,6 +26,11 @@ zetta.io
 :width: 128px
 ```
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Connecting
 
 Connect to a [Swift (OpenStack Object Storage)](https://docs.openstack.org/swift/latest/) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.

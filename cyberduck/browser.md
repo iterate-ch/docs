@@ -1,6 +1,11 @@
 Browser
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Navigation
 
 ### List and Outline View
