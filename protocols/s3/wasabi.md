@@ -24,7 +24,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - **Wasabi EU Central 1 (Amsterdam)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-central-1).cyberduckprofile>` the *Wasabi Storage (eu-central-1) Connection Profile* for preconfigured settings.
 - **Wasabi EU Central 2 (Frankfurt)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-central-2).cyberduckprofile>` the *Wasabi Storage (eu-central-2) Connection Profile* for preconfigured settings.
 - **Wasabi EU West 1 (London)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-west-1).cyberduckprofile>` the *Wasabi Storage (eu-west-1) Connection Profile* for preconfigured settings.
-- **Wasabi EU West 2 (Paris)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-west-2).cyberduckprofile>` the *Wasabi Storage (eu-central-1) Connection Profile* for preconfigured settings.
+- **Wasabi EU West 2 (Paris)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(eu-west-2).cyberduckprofile>` the *Wasabi Storage (eu-west-2) Connection Profile* for preconfigured settings.
 - **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
 - **Wasabi AP Northeast 2 (Osaka)** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Wasabi%20(ap-northeast-2).cyberduckprofile>` the *Wasabi Storage (ap-northeast-2) Connection Profile* for preconfigured settings.
 
