@@ -1,7 +1,23 @@
 Info Window
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
+````{tabs}
+```{group-tab} Cyberduck
+
 Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `Alt+Return`)* to display detailed information on a file in a tool window. You can choose in the [Preferences](preferences.md) in the *Browser* tab to use the info window as an inspector of the currently selected files in the browser or open a new panel window to compare different files.
+
+```
+```{group-tab} Mountain Duck
+
+Select a file or folder within the Finder and choose *Mountain Duck → Info* from the context menu to display detailed information on the selected content in a tool window.
+
+```
+````
 
 ## General Panel
 
