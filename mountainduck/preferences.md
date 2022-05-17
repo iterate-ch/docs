@@ -1,6 +1,11 @@
 Preferences
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## General
 
 ### Save Workspace

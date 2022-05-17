@@ -8,6 +8,11 @@ Google Cloud Storage
 
 > [Google Cloud Storage](https://cloud.google.com/storage/docs) is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with [S3](s3/index.md).
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Connecting
 
 ### Interoperable Access

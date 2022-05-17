@@ -6,11 +6,22 @@ SFTP
 :width: 128px
 ```
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Connecting
 
 If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.org/wiki/Secure_Shell_Protocol)), most probably `sftp-server` is also installed and configured and you can connect using [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).
 
 ### OpenSSH Configuration Interoperability
+
+```{note}
+Reading *IdentityAgent* from OpenSSH configuration is supported for:
+- Mountain Duck [4.10.1](https://mountainduck.io/changelog/) or later
+- Cyberduck [8.2.3](https://cyberduck.io/changelog/) or later
+```
 
 #### Public Key Fingerprints
 
@@ -74,6 +85,10 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
+
+#### CA signed SSH Certificate Interopeability
+
+*Certification Authority (CA)* sigend SSH certificates are supported for keys of type  `rsa`, `dsa`, `ecdsa`, and `ed25519`.
 
 #### Public Key Authentication Using SSH Agent
 

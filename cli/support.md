@@ -30,7 +30,7 @@ The directory location is printed with `--help` following the list of supported 
 `````{tabs}
 ````{group-tab} macOS
 
-You can install third party [profiles](../protocols/profiles) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
+You can install third party [profiles](../protocols/profiles.md) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
 
 ````
 ````{group-tab} Windows
@@ -40,7 +40,7 @@ Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 ````
 ````{group-tab} Linux
 
-You can install third party [profiles](../protocols/profiles) in `~/.duck/profiles/`.
+You can install third party [profiles](../protocols/profiles.md) in `~/.duck/profiles/`.
 
 ````
 `````

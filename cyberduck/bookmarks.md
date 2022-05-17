@@ -1,6 +1,11 @@
 Bookmarks
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Toggle Bookmarks
 
 `````{tabs}
