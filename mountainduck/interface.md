@@ -1,6 +1,11 @@
 User Interface
 ====
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## User Interface
 
 Mountain Duck runs in the status bar (macOS) and taskbar (Windows).
@@ -108,7 +113,7 @@ Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.a
 You can just select the menu item with the bookmark name to connect, too. If you are already connected, selecting the menu item will reveal the volume in *Finder.app*.
 ```
 
-### Connnect Using the Command Line Interface
+### Connect Using the Command Line Interface
 
 You can mount volumes using your command-line interface (CLI) by opening a bookmark file.
 
@@ -230,24 +235,7 @@ This feature is not supported in the version available in the Mac App Store.
 
 ## Info Panel
 
-Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](../cyberduck/info.md).
-
-```{image} _images/Info_Window_CDN.png
-:alt: Info Window CDN
-:width: 400px
-```
-```{image} _images/Info_Window_S3.png
-:alt: Info Window S3
-:width: 400px
-```
-```{image} _images/Info_Window_Permissions.png
-:alt: Info Window Permissions
-:width: 400px
-```
-```{image} _images/Info_Window_Metadata.png
-:alt: Info Window Metadata
-:width: 400px
-```
+Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](info.md).
 
 ## New Encrypted Vault...
 

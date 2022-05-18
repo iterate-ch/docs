@@ -66,6 +66,10 @@ For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displ
 - `.webloc` on macOS
 - `.url` on Windows
 
+```{attention}
+*Google Docs* files can't be managed (renamed, moved, or deleted) within Mountain Duck or Cyberduck. 
+```
+
 ### Google Team Drives
 
 Use the regular Google Drive connection type to see the *Team Drives* besides *My Drive* and *Shared with me*.

@@ -6,6 +6,7 @@ Mountain Duck
 :titlesonly:
 installation
 interface
+info
 issues/index
 sync/index
 locking
@@ -25,6 +26,10 @@ Refer to our installation instructions
 ## [User Interface](interface.md)
 
 Mountain Duck runs in the *status bar* on macOS and *tray area* on Windows. Refer to our user interface documentation.
+
+## [Info Window](info.md)
+
+Edit access permissions and configure [CDN](../cdn/index.md) options.
 
 ## [Smart Synchronization](sync/index.md)
 

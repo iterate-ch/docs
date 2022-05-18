@@ -256,9 +256,32 @@ If your shell supports glob expansion you can use a wildcard pattern to select f
 duck --upload ftps://<hostname>/directory/ ~/*.jpg
 ```
 
+#### Specification for folders
+
+Integrate 'folder' (e.g. folder contents) to 'name' using
+```{code-block}
+duck --upload protocol:/<name> folder/
+```
+
+Upload the 'folder' itself to '<name>/' using
+```{code-block}
+duck --upload protocol:/<name>/ folder/
+```
+
 #### Use of `~`
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
+
+#### Custom configuration options for uploads to S3
+
+Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../../s3/index.md#default-metadata).
+
+	env "s3.metadata.default=Content-Type=application/xml" duck --upload …
+
+Set a default ACL for the upload with
+
+	env "s3.acl.default=public-read" duck --upload …
+
 
 ### Remote Directory Listing with `--list`
 
@@ -327,7 +350,7 @@ The directory location is printed with `--help` following the list of supported 
 `````{tabs}
 ````{group-tab} macOS
 
-The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../protocols/profiles) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
+The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../protocols/profiles.md) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
 
 ````
 ````{group-tab} Windows
@@ -337,7 +360,7 @@ Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 ````
 ````{group-tab} Linux
 
-The support directory is `~/.duck/` on Linux. You can install third party [profiles](../protocols/profiles) in `~/.duck/profiles/`.
+The support directory is `~/.duck/` on Linux. You can install third party [profiles](../protocols/profiles.md) in `~/.duck/profiles/`.
 
 ````
 `````
