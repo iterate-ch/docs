@@ -75,7 +75,7 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
-#### CA signed SSH Certificate Interopeability
+#### CA signed SSH Certificate Interoperability
 
 *Certification Authority (CA)* sigend SSH certificates are supported for keys of type  `rsa`, `dsa`, `ecdsa`, and `ed25519`.
 
