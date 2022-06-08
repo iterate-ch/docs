@@ -17,12 +17,6 @@ If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.
 
 ### OpenSSH Configuration Interoperability
 
-```{note}
-Reading *IdentityAgent* from OpenSSH configuration is supported for:
-- Mountain Duck [4.10.1](https://mountainduck.io/changelog/) or later
-- Cyberduck [8.2.3](https://cyberduck.io/changelog/) or later
-```
-
 #### Public Key Fingerprints
 
 Public key fingerprints are checked against and written to `~/ssh/known_hosts` when accepted. This does not apply to the Mac App Store version which does store key fingerprints in the preferences.
@@ -32,6 +26,7 @@ Public key fingerprints are checked against and written to `~/ssh/known_hosts` w
 The following configuration options from `~/.ssh/config` are supported for SFTP connections:
 
 - *IdentityFile* for public key authentication.
+- *IdentityAgent* for public key authentication. Specifies the UNIX-domain socket used to communicate with the authentication agent.
 - *HostName* aliases.
 - *User* preference for login credentials.
 - *ProxyJump* to connect via SSH tunnel through bastion server.
