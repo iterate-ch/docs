@@ -164,7 +164,7 @@ You can work around this by setting `defaults write com.apple.finder AppleShowAl
 Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Connection → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
 
 **Enable Application Icon in Dock**<br/>
-As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property
+As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property:
 
     defaults write io.mountainduck application.dock.icon.enable true
 
@@ -172,7 +172,7 @@ As a utility application with no application windows, no icon is displayed in th
 Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder → Preferences ... → General → Show these items on the desktop: Connected Servers* to make the volume appear on the desktop. Mounted volumes are also listed in the *Finder.app* sidebar in *Favorites*.
 
 **Search in Finder.app (Spotlight)**<br/>
-The Spotlight indexer does not work on remote volumes
+The Spotlight indexer does not work on remote volumes.
 
 **Multiple Mountain Duck Finder Extensions Processes**<br/>
 The system may launch additional copies of *Mountain Duck Finder Extension* whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.
@@ -185,7 +185,7 @@ This is an issue within the operating system that can occur to any network drive
 <del> **Additional `._*` Files Saved on Remote Volumes** </del> <br/>
 <del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contain this information. You can delete metadata on files using `xattr -d <filename>`. </del>
 
-As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window
+As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window:
 
     defaults write io.mountainduck fs.filenames.metadata.enable false
 
