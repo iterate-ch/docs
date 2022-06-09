@@ -73,7 +73,7 @@ Select connection profiles to be installed. Either scroll through the list or us
 ```
 
 ### Default Connection Profiles
-Connection profiles supported as [default protocols](../protocols/index.md) are always enabled.
+The connection profiles for [default protocols](../protocols/index.md) are always enabled.
 
 ## Login Item
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
