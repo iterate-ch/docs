@@ -57,9 +57,6 @@ You can share an URL to provide access to a document in your Dropbox from *File 
 
 The modification date retention is supported for new files uploaded but without the option to adjust the modification date later.
 
-### Top Level folder
-It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.
-
 ### Restricted Content
 
 Downloads may fail with a `409 Conflict (restricted_content)` error reply for files considered restricted.
