@@ -26,9 +26,9 @@ Change the default synchronization option. You can disable synchronization by de
 Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](interface.md#reload) choosing *Reload* in the context menu.
 
 ### Enable Buffering
-Choose whether the file contents should be buffered. Unchecking the option will disable the online cache as well. Allows buffering file contents in a temporary location which is only deleted when quitting the application.
-- Allows for faster access when reading or writing files with random access patterns from applications in _Online_ [connect mode](interface.md#connect-mode).
-- With the option enabled in _Smart Synchronization_ [connect mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](sync/index.md#status-of-files).
+Choose whether the file contents should be buffered. The option allows buffering file contents in a temporary location which is only deleted when quitting the application.
+- Allows faster access when reading or writing files with random access patterns from applications in _Online_ [mode](interface.md#connect-mode).
+- With the option enabled in _Smart Synchronization_ [mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](sync/index.md#status-of-files).
 
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
@@ -72,7 +72,7 @@ Select connection profiles to be installed. Either scroll through the list or us
 ```
 
 ### Default Connection Profiles
-The connection profiles for support [default protocols](../protocols/index.md) are always enabled.
+The connection profiles for [default protocols](../protocols/index.md) are always enabled.
 
 ## Login Item
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
