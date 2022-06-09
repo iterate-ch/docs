@@ -87,4 +87,12 @@ You may not connect to a SharePoint enabled site through WebDAV if any of these 
 ## Limitations
 
 ### Top Level folder
-It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.
+It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
+
+| Folder Name |
+|-------------|
+| Default     |
+| Drives      |
+| Groups      |
+| Sites       |
+

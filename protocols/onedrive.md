@@ -87,4 +87,9 @@ There are some limitations that you should keep in mind while working with.
 - No interoperability with Microsoft 365 for US Government (other services may apply as well)
 
 ### Top Level folder
-It is not possible to create a top level folder in Mountain Duck or Cyberduck because of a virtual top level folder.
+It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
+
+| Folder Name |    Contents    |
+|-------------|:--------------:|
+| My Files    | Personal files |
+| Shared      | Shared folders |
