@@ -105,13 +105,13 @@ The bookmark can show three different status lights:
 
 ## Connect
 
-![Screenshot Windows Mountain Duck](_images/Screenshot_Windows_Mountain_Duck.png)
-
 Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.app* on macOS or the *File Explorer* on Windows. You can connect to multiple servers and have several volumes mounted. All operations on the remote files and folders can then be performed like on local files.
 
 ```{tip}
 You can just select the menu item with the bookmark name to connect, too. If you are already connected, selecting the menu item will reveal the volume in *Finder.app*.
 ```
+
+![Screenshot Windows Mountain Duck](_images/Screenshot_Windows_Mountain_Duck.png)
 
 ### Connect Using the Command Line Interface
 
@@ -135,17 +135,17 @@ Enter the commmand `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Bo
 
 ## Notifications
 
-```{image} _images/File_Added_Notification_Windows.png
-:alt: File Added Notification (Windows)
-:width: 600px
-```
-
 Notifications of the connection status are posted to the *Notification Center* of the operating system.
 
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
 - [Sync Notifications](sync/index.md#notifications)
+
+```{image} _images/File_Added_Notification_Windows.png
+:alt: File Added Notification (Windows)
+:width: 600px
+```
 
 ## Disconnect
 
