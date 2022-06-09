@@ -100,8 +100,8 @@ You can search for bookmarks with the filter input field in the menu. Bookmarks 
 The bookmark can show three different status lights:
 
 - **No light:** No current connection to this bookmark.
-- **Green light:** You're currently connected to this bookmark. The bookmark is completely synced and idle.
-- **Orange light:** You're currently connected to this bookmark. There is at least one active process.
+- **Green light:** Currently connected to this bookmark. The bookmark is completely synced and idle.
+- **Orange light:** Currently connected to this bookmark. There is at least one active process.
 
 ## Connect
 
