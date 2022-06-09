@@ -82,30 +82,7 @@ Select connection profiles to be installed. Either scroll through the list or us
 
 ### Default Connection Profiles
 
-The following connection profiles are installed by default and can’t be deleted:
-
-- [FTP (File Transfer Protocol)](../protocols/ftp.md)
-- [FTP-SSL (Explicit AUTH TLS)](../protocols/ftp.md)
-- [SFTP (SSH File Transfer Protocol)](../protocols/sftp.md)
-- [WebDAV (HTTP)](../protocols/webdav/index.md)
-- [WebDAV (HTTPS)](../protocols/webdav/index.md)
-- [Amazon S3](../protocols/s3/index.md)
-- [Google Cloud Storage](../protocols/google_cloud_storage.md)
-- [OpenStack Swift (Keystone 2.0)](../protocols/openstack/index.md)
-- [OpenStack Swift (Keystone 3)](../protocols/openstack/index.md)
-- [Windows Azure Blob Storage](../protocols/azure.md)
-- [Backblaze B2 Cloud Storage](../protocols/b2.md)
-- [Dropbox](../protocols/dropbox.md)
-- [Google Drive](../protocols/google_drive.md)
-- [Microsoft OneDrive](../protocols/onedrive.md)
-- [Microsoft Sharepoint](../protocols/sharepoint.md)
-- [Microsoft Sharepoint Site](../protocols/sharepoint.md)
-- [DRACOON (OAuth)](../protocols/dracoon.md)
-- [Files.com](../protocols/files.com.md)
-- [Nextcloud](../protocols/webdav/nextcloud.md)
-- [ownCloud](../protocols/webdav/nextcloud.md)
-- [Rackspace Cloud Files (US)](../protocols/openstack/cloudfiles.md)
-
+The connection profiles for support [default protocols](../protocols/index.md) are always enabled.
 
 ### Cache
 
