@@ -7,17 +7,13 @@ Preferences
 ```
 
 ## General
-
 ### Save Workspace
-
 Save all mounted volumes when quitting to be restored while relaunching.
 
 ### Bookmarks
-
 Change the size of the menu items in the status bar menu. Choose between *Small, Medium,* and *Large* icons.
 
 ## Sync
-
 ### Connect Mode
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*. Refer to [Connect Mode](interface.md#connect-mode)
 
@@ -27,17 +23,12 @@ Change the default synchronization option. You can disable synchronization by de
 ```
 
 ### Index Files
-
 Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](interface.md#reload) choosing *Reload* in the context menu.
 
-
 ### Enable Buffering
-
 Choose whether the file contents should be buffered or not. Unchecking the option will disable the online cache as well.
 
-
 ### Lock Files
-
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
 
@@ -89,14 +80,10 @@ The connection profiles for support [default protocols](../protocols/index.md) a
 
 Allow buffering file contents in a temporary location which is only deleted when quitting the application. If unchecked, opened files will not automatically be available for offline usage when using connect mode *Smart Synchronization*.
 
-
 ## Login Item
-
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
-
 ## Updates
-
 An auto-update feature will alert you when a new version is available and self updates the application. Choose *Preferences → Automatically check for updates*. You can also choose to update to snapshot or beta builds.
 
 - **Snapshot builds:** Include the latest changes and are published continuously. These builds are not manually tested.
@@ -106,7 +93,6 @@ An auto-update feature will alert you when a new version is available and self u
 :class: tip
 You receive no update notification if your user is missing administrator permission.
 ```
-
 
 ## Notifications
 
