@@ -29,7 +29,6 @@ Index files on the server for a mounted connection in the background after conne
 Choose whether the file contents should be buffered. The option allows buffering file contents in a temporary location which is only deleted when quitting the application.
 - Allows faster access when reading or writing files with random access patterns from applications in _Online_ [mode](interface.md#connect-mode).
 - With the option enabled in _Smart Synchronization_ [mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](sync/index.md#status-of-files).
-Depending on the protocol in use, unchecking the option will disable the online cache as well.
 
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
