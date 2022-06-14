@@ -28,7 +28,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
 ### References
 - [Official Infomaniak Public Cloud documentation](https://docs.infomaniak.cloud)
-- [Find out more about Swiss Backup](https://www.infomaniak.com/en/hosting/public-cloud)
+- [Find out more about Infomaniak Public Cloud](https://www.infomaniak.com/en/hosting/public-cloud)
 - [Test Infomaniak Public Cloud with free tiers](https://www.infomaniak.com/en/hosting/public-cloud)
 
 ## Infomaniak Swiss Backup
