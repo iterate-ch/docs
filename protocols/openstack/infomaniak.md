@@ -33,7 +33,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
 ## Infomaniak Swiss Backup
 
-Swiss Backup is a Swiss backup solution that automatically backs up your files, workstations, mobiles, and servers. Your data is stored in Switzerland in Tier 3+ datacentres in at least three different physical locations. Infomaniak is a leading Swiss hosting service provider that is recognized for the reliability of its services and the quality of its 7/7 support in over five languages.
+Swiss Backup is a solution that automatically backs up your files, workstations, mobiles, and servers. Your data is stored in Switzerland in Tier 3+ datacenters in at least three different physical locations. Infomaniak is a leading Swiss hosting service provider that is recognized for the reliability of its services and the quality of its 7/7 support in over five languages.
 
 - [Test Swiss Backup free for 90 days](https://www.infomaniak.com/en/swiss-backup)
 
