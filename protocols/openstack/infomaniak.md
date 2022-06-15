@@ -17,7 +17,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- Infomaniak Public Cloud (01): [Infomaniak Public Cloud (01).cyberduckprofile](https://raw.githubusercontent.com/iterate-ch/cyberduck/master/profiles/Infomaniak%20Public%20Cloud%20(01).cyberduckprofile)
+{download}Infomaniak Public Cloud (01) - Cluster1 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Public%20Cloud%20(01).cyberduckprofile>
 
 #### Additional Fields Required
 
@@ -47,9 +47,9 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- Infomaniak Swiss Backup (01) - Cluster1 connection profile: [Infomaniak Swiss Backup (01).cyberduckprofile](https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile)
-- Infomaniak Swiss Backup (02) - Cluster2 connection profile: [Infomaniak Swiss Backup (02).cyberduckprofile](https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile)
-- Infomaniak Swiss Backup (03) - Cluster3 connection profile: [Infomaniak Swiss Backup (03).cyberduckprofile](https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(03).cyberduckprofile)
+{download}Infomaniak Swiss Backup (01) - Cluster1 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile>
+{download}Infomaniak Swiss Backup (02) - Cluster2 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile>
+{download}Infomaniak Swiss Backup (03) - Cluster3 connection profile<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Infomaniak%20Swiss%20Backup%20(03).cyberduckprofile>
 
 #### Additional Fields Required
 
