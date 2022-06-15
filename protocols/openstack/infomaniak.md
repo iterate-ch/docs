@@ -85,5 +85,4 @@ kDrive doesn't accept uploads with unknown file sizes. Because of this files can
 
 ### References
 
-- [kDrive Official Applications](https://www.infomaniak.com/en/apps/download-kdrive)
 - [kDrive: logging in to your Drive via WebDAV](https://www.infomaniak.com/en/support/faq/2409/kdrive-logging-in-to-your-drive-via-webdav)
