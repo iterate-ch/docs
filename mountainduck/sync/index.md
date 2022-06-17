@@ -167,7 +167,7 @@ You can lookup the latest changes to files. Refer to [Recent Files](history.md#r
 - **File Updated:** File changed on server since previously indexing a folder
 - **Sync Conflict:** Conflicting change in file lead to duplicate of file being created with previous content edited on server.
 
-Refer also to [Preferences → Notifications](../preferences.md#notifications)
+You can adjust which notifications you want to receive within [*Preferences → Notifications*](../preferences.md#notifications).
 
 ## Preferences
 

@@ -33,7 +33,6 @@ Choose whether the file contents should be buffered. The option allows buffering
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
-
 ### Mount Location 
 
 ````{admonition} macOS only
@@ -45,7 +44,6 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 
 The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
 ````
-
 
 ### Cache Location
 
@@ -60,6 +58,27 @@ The disk must be formatted as HFS+ or APFS.
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`.
 
 You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
+````
+`````
+
+## Notifications
+Set which notifications you want to receive.
+
+```{image} _images/Notification_Preferences.png
+:alt: Notification Preferences
+:width: 700px
+```
+
+Alternatively, you can choose *Open System Preferences* to disable the notifications completely.
+
+`````{tabs}
+````{group-tab} macOS
+
+You can disable notifications in *System Preferences → Notifications*. Choose *None* for alert style and keep checked *Show* in *Notification Centre*. This way you will no longer be disturbed by any notification displays, but can still check back the notifications in *Notification Centre* anytime if required.
+````
+````{group-tab} Windows
+
+You can disable notifications in *Settings → System → Notifications and Actions*. Uncheck *Show notification banners* and *Play a sound when a notification arrives*. Keep *Show notifications in action center* to see the notifications in Windows action center anytime if required.
 ````
 `````
 
@@ -87,19 +106,6 @@ An auto-update feature will alert you when a new version is available and self u
 :class: tip
 You receive no update notification if your user is missing administrator permission.
 ```
-
-## Notifications
-
-`````{tabs}
-````{group-tab} macOS
-
-You can disable notifications in *System Preferences → Notifications*. Choose *None* for alert style and keep checked *Show* in *Notification Centre*. This way you will no longer be disturbed by any notification displays, but can still check back the notifications in *Notification Centre* anytime if required.
-````
-````{group-tab} Windows
-
-You can disable notifications in *Settings → System → Notifications and Actions*. Uncheck *Show notification banners* and *Play a sound when a notification arrives*. Keep *Show notifications in action center* to see the notifications in Windows action center anytime if required.
-````
-`````
 
 ## Hidden Configuration Options
 
