@@ -23,7 +23,7 @@ You can connect to multiple accounts at the same time. Create a new bookmark for
 
 ### OAuth Reset
 
-If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark you can reset the OAuth token by deleting the entries related to `https://Dropbox (user)@api.dropboxapi.com` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
+If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark you can reset the OAuth token by deleting the entries related to `duck:dropbox?user=(user)` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
 
 ## Cyberduck CLI
 

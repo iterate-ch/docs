@@ -37,7 +37,7 @@ You access the page with the authorization code from the link displayed in the l
 
 #### OAuth Reset
 
-If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark you can reset the OAuth token by deleting the entries related to `https://Google Cloud Storage (user)` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
+If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark you can reset the OAuth token by deleting the entries related to `duck:googlecloudstorage?user=(user)` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
 
 #### Custom OAuth Client ID
 

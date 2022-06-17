@@ -26,7 +26,7 @@ You can connect to multiple accounts at the same time. Create a new bookmark for
 
 ### OAuth Reset
 
-If you have accidentally logged in with the wrong OneDrive Account or want to change the login of the OneDrive bookmark you can reset the OAuth token by deleting the entries related to `https://Microsoft OneDrive (user)@login.microsoft.com` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
+If you have accidentally logged in with the wrong OneDrive Account or want to change the login of the OneDrive bookmark you can reset the OAuth token by deleting the entries related to `duck:onedrive?user=(user)` out of the *Windows Credential Manager* or on macOS out of *Keychain Access.app*.
 
 ### Expiry
 
