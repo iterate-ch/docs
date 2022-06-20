@@ -59,6 +59,12 @@ This only applies to Cyberduck.
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
 
+## Deleting Files and Folders
+
+Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
+
+	browser.delete.trash=false
+
 ## Documents
 
 ### Google Docs Documents
