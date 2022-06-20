@@ -105,7 +105,7 @@ Select the file in the browser and press the *Return key*. Type the new name and
 
 ### Deleting Files and Folders
 
-Some protocols support the trashing of files instead of permanently deleting them.  This feature is enabled by default. It can be enabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
+Some protocols support the trashing of files instead of permanently deleting them.  This feature is enabled by default. It can be disabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
 	browser.delete.trash=false
 
