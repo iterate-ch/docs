@@ -28,11 +28,11 @@ You can connect to multiple accounts at the same time. Create a new bookmark for
 
 If you have accidentally logged in with the wrong OneDrive Account or want to change the login of the OneDrive bookmark delete the current bookmark and create a new one to start a new authentication flow.
 
-Alternatively, you can reset the OAuth token by deleting the entries related to `duck:onedrive?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `https://Microsoft OneDrive (user)@login.microsoftonline.com` out of *Keychain Access.app*.
+Alternatively, you can reset the OAuth token by deleting the entries related to `duck:onedrive?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `login.microsoftonline.com` out of *Keychain Access.app*.
 
 ### Expiry
 
-All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue remove all entries that are related to `Microsoft OneDrive` and `graph.microsoft.com` from *Keychain Access.app* or *Windows Credential Manager*. After that, you'll be prompted to reauthenticate.
+All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue you need to reauthenticate by performing an [OAuth Reset](#oauth-reset).
 
 ### Which Protocol to Choose?
 
