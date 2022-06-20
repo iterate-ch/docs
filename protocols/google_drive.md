@@ -36,7 +36,9 @@ You can connect to multiple accounts at the same time. Create a new bookmark for
 
 ### OAuth Reset
 
-If you have accidentally logged in with the wrong Google Drive Account or want to change the login of the Google Drive bookmark you can reset the OAuth token by deleting the entries related to `https://Google Drive (user)@accounts.google.com` out of the *Windows Credential Manager* or on macOS out of *Keychain*.
+If you have accidentally logged in with the wrong Google Drive Account or want to change the login of the Google Drive bookmark delete the current bookmark and create a new one to start a new authentication flow.
+
+Alternatively, you can reset the OAuth token by deleting the entries related to `duck:googledrive?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `accounts.google.com` out of *Keychain*.
 
 ### Custom OAuth Client ID
 
