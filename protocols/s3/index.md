@@ -225,7 +225,8 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Filebase](filebase.md)
 - [Google Storage](../google_cloud_storage.md)
 - [IBM Cloud Object Storage (COS)](ibm_cos.md)
-- [IDrive® Cloud](idrive_cloud.md#s3)
+- [IDrive® Cloud](idrive_cloud.md#idrive-cloud)
+- [IDrive® e2](idrive_cloud.md#idrive-e2)
 - [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
 - [MinIO Cloud Storage](minio.md)
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
@@ -435,6 +436,12 @@ The [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-over
 | `authenticated-read` | ✅ | ✅ |
 | `bucket-owner-read` | ❌	| ✅ |
 | `bucket-owner-full-control` | ❌	| ✅ |
+
+You can [disable the ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) using the _Amazon S3 Object Ownership_.
+
+```{note}
+You need to set _Preferences → S3 → Default ACL → None_ for uploads with disabled ACLs to succeed. Otherwise uploads fail with `The bucket does not allow ACLs.`.
+```
 
 ### Permissions
 
