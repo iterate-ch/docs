@@ -109,7 +109,9 @@ Some protocols support the trashing of files instead of permanently deleting the
 
 	browser.delete.trash=false
 
-This is supported for the following protocol: [Google Drive](../protocols/google_drive.md).
+This is supported for the following protocols: 
+- [Google Drive](../protocols/google_drive.md)
+
 ### Create a Symbolic Link
 
 Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../protocols/sftp.md) connection and some [FTP](../protocols/ftp.md) with `SITE SYMLINK` extension.
