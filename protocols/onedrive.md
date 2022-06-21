@@ -79,6 +79,14 @@ This only applies to Cyberduck.
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
 
+## Versions
+
+A list of file versions can be viewed within the *Versions* panel of the *Info* window. Files can be reverted to a chosen version of this list. 
+
+```{note}
+The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+```
+
 ## Limitations
 
 There are some limitations that you should keep in mind while working with.

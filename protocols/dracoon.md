@@ -34,5 +34,13 @@ Choose *File → Share…* to create a download share for a file. Default settin
 
 ![Create Download Share](_images/DRACOON_Download_Share.png)
 
+## Versioning
+
+A list of file versions can be viewed within the *Versions* panel of the *Info* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
+
+```{note}
+The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+```
+
 ## References
 - [Encryption](https://cloud.support.dracoon.com/hc/en-us/articles/115001832709-Encryption)

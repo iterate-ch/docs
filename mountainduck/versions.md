@@ -65,7 +65,7 @@ Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on
 
 **Backblaze B2**
 
-Versioning can be enabled per bucket in by choosing *Info → B2* in *Finder* on macOS or *File Explorer* on Windows. Alternatively, enable versioning in AWS Console or [Cyberduck](../cyberduck/index.md).
+`Bucket versioning` is enabled per default. It can be verified within the *B2* panel of the *Info* window.
 
 ````
 `````
