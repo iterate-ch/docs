@@ -100,9 +100,7 @@ Files will get cached again regardless this setting if accessed again later (e.g
 
 ## Cache Limitation
 
-The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not acessed within a chosen periode of time can be purged.
-
-Refer to [Preferences](../preferences.md#cache-limitations).
+The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Preferences](../preferences.md#cache-limitations).
 
 ## Sync Conflicts
 
