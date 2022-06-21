@@ -57,7 +57,7 @@ The following protocols support to review previous versions of files. On macOS, 
 | **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ | ❌ |
 
 ```{note}
-Using S3 or Backblaze B2, versions will only be displayed if bucket versioning is enabled.
+Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
 ```
 
 ## UNIX Permissions
