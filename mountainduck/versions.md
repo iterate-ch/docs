@@ -36,7 +36,7 @@ You can revert to a previous version of a file by choosing *Versions → ... →
 ````
 ````{tab} Version 4.12 and later
 
-The *Versions* option within the contect menu is not available anymore. A list of file versions can be viewed within the *Versions* tab of the *Info* window. The files can also be reverted to a choosen version of the list.
+The *Versions* option within the contect menu is not available anymore. A list of file versions can be viewed within the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. The files can also be reverted to a choosen version of the list.
 
 **Supported Providers**
 
