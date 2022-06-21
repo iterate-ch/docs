@@ -302,6 +302,14 @@ To toggle CloudFront access logging, select the the [Distribution](../../cdn/clo
 
 You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*.
 
+#### Info → Versions
+
+A list of file versions can be viewed within the *Versions* panel of the *Info* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
+
+```{note}
+The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+```
+
 #### Revert
 
 To revert to a previous version and make it the current, choose *File → Revert*.
