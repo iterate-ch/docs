@@ -54,7 +54,7 @@ The versions feature within the *Info* window is supported for the following pro
 | **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ |
 
 ```{note}
-Using S3 or Backblaze B2, versions will only be displayed if bucket versioning is enabled.
+Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
 ```
 
 **Enable Versioning**
