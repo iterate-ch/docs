@@ -201,7 +201,7 @@ Create download shares by choosing *File → Share…*. Optionally set a passwor
 ````
 ````{group-tab} Mountain Duck
 
-Create download shares for files and folders and upload shares for folders. Choose *Cancel* to create a public URL without password protection. Choose *Share…* or *Request file…* from the [context menu](../mountainduck/interface.md#share) respectively. Optionally set a password required to download the file or folder.
+Create download shares for files and folders by choosing *Share…* from the [context menu](../mountainduck/interface.md#share). Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
 
 ```{image} _images/Download_Share_Box.png
 :alt: Download Share Box

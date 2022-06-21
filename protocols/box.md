@@ -54,7 +54,7 @@ Alternatively, enter the following information in the [bookmark](../cyberduck/bo
 Only available using the default *Box* connection profile.
 ```
 
-Create download and upload [shares](../cyberduck/share.md#box) of files or folders for people who are not Box users by using *File → Share...*.
+Create download [shares](../cyberduck/share.md#box) of files or folders for people who are not Box users by using *File → Share...*.
 
 ## Known Limitations
 
