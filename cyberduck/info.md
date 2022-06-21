@@ -34,6 +34,32 @@ Type in the new filename and press *Tab* to leave the text field and commit the 
 
 Calculate the size recursively of all contained files.
 
+## Versions Panel
+
+A list of file versions can be viewed in the *Versions* tab of the Info window. The files can be reverted to a choosen version.
+
+```{image} _images/Info_Panel_Versions.png
+:alt: Versions Tab
+:width: 600px
+```
+
+The following protocols support to review previous versions of files. On macOS, this opens a *QuickLook* window. On Windows, this downloads and opens the file in the default editor. Some protocols also display previous versions of files in [browser](browser.md) when enabling *View → Show Hidden*.
+
+| **Protocol** | **Revert previous version** | **Open/Quick Look previous version** | **Delete version** | **Displayed in browser with *View → Show Hidden*** |
+| --- | --- | --- | --- | --- |
+| **[S3](../protocols/s3/index.md)** | ✅ | ✅ | ✅ | ✅ |
+| **[Backblaze B2](../protocols/b2.md)** | ✅ | ✅ | ✅ | ✅ |
+| **[Google Drive](../protocols/google_drive.md)** | ❌ | ✅ | ✅ | ✅ |
+| **[Google Storage](../protocols/google_cloud_storage.md)** | ✅ | ✅ | ✅ | ✅ |
+| **[Microsoft OneDrive](../protocols/onedrive.md)** | ✅ | ✅ | ❌ | ❌ |
+| **[Microsoft Sharepoint](../protocols/sharepoint.md)** | ❌ | ✅ | ❌ | ❌ |
+| **[DRACOON](../protocols/dracoon.md)** | ✅ | ❌ | ✅ | ❌ | 
+| **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ | ❌ |
+
+```{note}
+Using S3 or Backblaze B2, versions will only be displayed if bucket versioning is enabled.
+```
+
 ## UNIX Permissions
 
 Change the permissions on a particular file or folder when connected to a [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp.md) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will not change the executable bit for files if not already set when recursively updating a directory.

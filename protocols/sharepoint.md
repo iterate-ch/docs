@@ -84,6 +84,14 @@ You may not connect to a SharePoint enabled site through WebDAV if any of these 
 - Forms Based Authentication
 - Trusted Identity Provider
 
+## Versioning
+
+A list of file versions can be viewed within the *Versions* panel of the *Info* window.
+
+```{note}
+The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+```
+
 ## Limitations
 
 ### Top Level folder
@@ -95,4 +103,3 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Drives      |
 | Groups      |
 | Sites       |
-

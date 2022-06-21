@@ -49,6 +49,14 @@ This only applies to Cyberduck.
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
 
+### Versions
+
+A list of file versions can be viewed within the *Versions* panel of the *Info* window. Files can be reverted to a chosen version of this list. 
+
+```{note}
+The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+```
+
 ### Share
 
 You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection.
