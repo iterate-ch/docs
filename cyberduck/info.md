@@ -19,7 +19,7 @@ Select a file or folder within the Finder and choose *Mountain Duck → Info* fr
 ```
 ````
 
-## General Panel
+## General
 
 ### Change Filename
 
@@ -34,7 +34,7 @@ Type in the new filename and press *Tab* to leave the text field and commit the 
 
 Calculate the size recursively of all contained files.
 
-## Versions Panel
+## Versions
 
 A list of file versions can be viewed in the *Versions* tab of the Info window. The files can be reverted to a choosen version.
 
