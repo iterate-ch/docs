@@ -95,6 +95,14 @@ Files will get cached again regardless this setting if accessed again later (e.g
 	<source src="../_static/videos/mountainduck/keepoffline.mp4" type="video/mp4" />
 </video>
 
+<br>
+<br>
+
+## Cache Limitation
+
+The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not acessed within a chosen periode of time can be purged.
+
+Refer to [Preferences](../preferences.md#cache-limitations).
 
 ## Sync Conflicts
 

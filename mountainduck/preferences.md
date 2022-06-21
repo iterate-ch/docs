@@ -61,6 +61,18 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 ````
 `````
 
+#### Cache Limitations
+
+```{note}
+This feature is available for Mountain Duck version 4.12 and later.
+```
+
+Cache limitation allows cached files to be deleted from the cache at regular intervals, keeping only a placeholder with metadata. The following options are available:
+- Limit cache size per bookmark by selecting a maximum folder size within the preference. Exceeding the maximum cache size, larger files are purged first. Available limits: 500MB, 1GB, 5GB, and 10GB.
+- Purge files not accessed within a selected period of time automatically. Available periods: 1 day, 7 days, 30 days, and 60 days.
+
+The indexer to determine whether purging is required based on the perferences runs every hour.
+
 ## Notifications
 Set which notifications you want to receive.
 
