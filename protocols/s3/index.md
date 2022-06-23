@@ -305,7 +305,7 @@ You can view all revisions of a file in the browser by choosing *View → Show H
 
 #### Info → Versions
 
-A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
+A list of file versions can be viewed in the *Versions* tab of the *[Info](../../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
 
 ```{note}
 - Cyberduck 8.4 or later required.
