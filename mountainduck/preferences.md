@@ -64,7 +64,7 @@ You must select NTFS formatted drives with support for *NTFS Alternate Data Stre
 #### Cache Limitations
 
 ```{note}
-This feature is available for Mountain Duck version 4.12 and later.
+Version 4.12 or later required.
 ```
 
 Cache limitation allows cached files to be deleted from the cache at regular intervals, keeping only a placeholder with metadata. The following options are available:
@@ -74,14 +74,12 @@ Cache limitation allows cached files to be deleted from the cache at regular int
 An indexer runs every hour to determine whether purging is required based on the set preferences.
 
 ## Notifications
-Set which notifications you want to receive.
+Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together.
 
 ```{image} _images/Notification_Preferences.png
 :alt: Notification Preferences
 :width: 700px
 ```
-
-Alternatively, you can choose *Open System Preferences* to disable the notifications completely.
 
 `````{tabs}
 ````{group-tab} macOS
