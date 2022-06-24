@@ -14,13 +14,16 @@ Licenses are registered to the email address in use while purchasing. Buying mor
 
 Downloading the [trial version](https://mountainduck.io/) of Mountain Duck, a license popup will open. Select `Request Trial` to download a 14-days trial license.
 
-If you receive a `Download trial failed` error while intending to trial Mountain Duck, you're experiencing bug occurring from time to time. Please reach out to the [Mountain Duck support](mailto:support@mountainduck.io) to receive a trial license file.
+```{note}
+Please reach out to [Mountain Duck support](mailto:support@mountainduck.io) for extended trial requirements in enterprise deployments.
+```
 
 ## FAQ
 
 ### How many licenses do I need?
 
-Mountain Duck is licensed on a per-seat basis. You have to buy a license for everyone who wants to use the software. One license can be used on any number of computers as long as it is the same user accessing the software.
+Mountain Duck is licensed on a per-seat basis. You have to buy a license for everyone who wants to use the software. One 
+license can be used on any number of computers as long as it is the same user accessing the software.
 
 ### Can I use the same license for the macOS and Windows version?
 
@@ -44,17 +47,28 @@ Yes, we offer a 30% discount for college/university students, staff and faculty 
 
 Please note that for academic labs with non-personal computers a per device licensing model applies.
 
-### How does the licenseing work in a Terminal Services environment?
+### How does the licensing work in a Terminal Services environment?
 
 You need a license for each user who needs access to Mountain Duck through Remote Desktop Protocol (RDP) e.g. on Windows Server 2008 R2.
 
 ### How to install the registration key for a multi-user license?
 
-You purchase multiple licenses contained in a single registration key to be installed on multiple computers. Double click the registration key file to register your license. In case you make use of a software management system on Windows to deploy Mountain Duck you might add a post-deploy action to add the license key to the installation copying alongside the application.
+You purchase multiple licenses contained in a single registration key to be installed on multiple computers. Double 
+click the registration key file to register your license. In case you make use of a software management system on 
+Windows to deploy Mountain Duck you might add a post-deploy action to add the license key to the installation 
+copying alongside the application.
+
+```{note}
+You always receive a single registration key containing all purchased licenses for multi-user deployments.
+```
 
 ### Is the registration key valid for future version?
 
 The license is valid for one specific major version. For future major versions, we provide upgrade discounts depending on the date of purchase.
+
+### Switching from Trial to Mac App Store
+
+To use the version from the Mac App Store after testing the application, you have to uninstall the current installed version prior your purchase from the Mac App Store.
 
 ## Known Issues
 

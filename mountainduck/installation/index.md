@@ -73,7 +73,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 
 ## Registration Key
 
-Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the application support directory.
+Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the [application support folder](../support.md#application-support-folder).
 
 `````{tabs}
 ````{group-tab} macOS
@@ -108,6 +108,10 @@ After upgrading a license, a new license file will be generated.
 1. Delete the current license file from the application support folder.
 2. Download the new license file from the email attachment.
 3. Apply the new license file using double-click or copy the file into the application support folder.
+
+### Windows Installation
+#### Error Code 0x24C
+If you're experiencing the error code `0x24C` `A volume has been accessed for which a file system driver is required that has not yet been loaded.`, please uninstall the client, reboot the system, and reinstall the client.
 
 ## Complete Uninstall
 
