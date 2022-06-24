@@ -49,15 +49,18 @@ The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Applic
 
 `````{tabs}
 ````{group-tab} macOS
+
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md).
 
 The disk must be formatted as HFS+ or APFS.
-````
 
+````
 ````{group-tab} Windows
+
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`.
 
 You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
+
 ````
 `````
 
