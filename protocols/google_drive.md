@@ -61,15 +61,16 @@ You can [search recursively](../cyberduck/browser.md#filter-and-search) for file
 
 ## Versions
 
-A list of file versions can be viewed within the *Versions* panel of the *Info* window. Additionally, versions of the list can be deleted.
+A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Additionally, versions of the list can be deleted.
 
 ```{note}
-The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+- Cyberduck 8.4 or later required.
+- Mountain Duck 4.12 or later required.
 ```
 
 ## Deleting Files and Folders
 
-Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
+Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
 
 	browser.delete.trash=false
 

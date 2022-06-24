@@ -19,7 +19,7 @@ Select a file or folder within the Finder and choose *Mountain Duck → Info* fr
 ```
 ````
 
-## General Panel
+## General
 
 ### Change Filename
 
@@ -34,16 +34,19 @@ Type in the new filename and press *Tab* to leave the text field and commit the 
 
 Calculate the size recursively of all contained files.
 
-## Versions Panel
+## Versions
 
-A list of file versions can be viewed in the *Versions* tab of the Info window. The files can be reverted to a choosen version.
+A list of file versions can be viewed in the *Versions* tab of the Info window. The following actions are available for a selected previous version:
+- Revert version
+- Permanently delete version
+- View previous version. On macOS, this opens a *QuickLook* window. On Windows, this downloads and opens the file in the default editor.
 
 ```{image} _images/Info_Panel_Versions.png
 :alt: Versions Tab
 :width: 600px
 ```
 
-The following protocols support to review previous versions of files. On macOS, this opens a *QuickLook* window. On Windows, this downloads and opens the file in the default editor. Some protocols also display previous versions of files in [browser](browser.md) when enabling *View → Show Hidden*.
+The following protocols support to view previous versions of files.  Some protocols also display previous versions of files in [browser](browser.md) when enabling *View → Show Hidden*.
 
 | **Protocol** | **Revert previous version** | **Open/Quick Look previous version** | **Delete version** | **Displayed in browser with *View → Show Hidden*** |
 | --- | --- | --- | --- | --- |
@@ -57,7 +60,7 @@ The following protocols support to review previous versions of files. On macOS, 
 | **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ | ❌ |
 
 ```{note}
-Using S3 or Backblaze B2, versions will only be displayed if bucket versioning is enabled.
+Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
 ```
 
 ## UNIX Permissions
