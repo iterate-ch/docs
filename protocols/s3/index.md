@@ -28,6 +28,7 @@ wasabi
 z1
 storadera
 linode
+cloudflare_r2
 ```
 
 ```{image} _images/s3.png
