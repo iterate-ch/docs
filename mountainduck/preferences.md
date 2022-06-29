@@ -17,7 +17,7 @@ Change the size of the menu items in the status bar menu. Choose between *Small,
 ### Connect Mode
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*. Refer to [Connect Mode](interface.md#connect-mode)
 
-```{image} _images/Sync_Preferences.png
+```{image} _images/Sync_Preferences_Win.png
 :alt: Sync Preferences
 :width: 700px
 ```
