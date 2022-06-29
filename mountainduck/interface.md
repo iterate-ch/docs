@@ -55,7 +55,7 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 
 ### Mount point
 
-The nickname set determines the mount point used. You can customize the mount point by editing the nickname of the bookmark.
+The nickname set determines the mount point used. You can customize the mount point name by editing the nickname of the bookmark.
 
 ### Labels
 
