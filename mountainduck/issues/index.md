@@ -65,6 +65,16 @@ The following characters should be avoided within file and folder names.
 
 ## Known Issues
 
+### `Download trial failed.` Error
+
+This is a known bug appearing from time to time while downloading the trial version of Mountain Duck. Please reach out to the [Mountain Duck support](mailto:support@mountainduck.io) to receive a trial license file.
+
+### `Not a valid registration key` Error
+
+This error appears if you try to use a license key for older versions of Mountain Duck for a new major version. Registration keys are valid for the current major version at the time of purchase and for previous versions.
+
+To use the latest major version you will have to [upgrade](https://mountainduck.io/buy/upgrade/) your license. Alternatively, install an older version of Mountain Duck from the [changelog](https://mountainduck.io/changelog/).
+
 ### Can Only Open Single PDF in Adobe Acrobat Reader
 
 This is a known bug in Adobe Acrobat Reader when opening documents from a network volume. As a workaround uncheck *edit → Preferences... → Security (Enhanced) → Enable Protected Mode at startup*.
@@ -120,6 +130,14 @@ This quota information is only available for the following protocols:
 - [Microsoft OneDrive](../../protocols/onedrive.md)
 - [Microsoft Sharepoint](../../protocols/sharepoint.md)
 - [SFTP](../../protocols/sftp.md)
+
+### View files from Synplogy Drive 
+
+*Synology Drive* is not supported natively. You can try to view your *Synology Drive* files by connecting to your *Synology NAS*. To do that connect to your *Synology NAS* using the protocol **SFTP, FTP,** or **WebDAV** with the path `home/Drive`.
+
+```{note}
+This won't allow you to view and access shared files and folders.
+```
 
 ### Missing Sync Status Icons
 
