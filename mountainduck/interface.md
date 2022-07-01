@@ -53,9 +53,9 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 :width: 500px
 ```
 
-### Mount point
+### Nickname
 
-The nickname set determines the mount point used. You can customize the mount point name by editing the nickname of the bookmark.
+The nickname determines the display of the bookmark in the Mountain Duck menu and can be customized. It is also used for the name of the mounted volume in the Finder or the drive under Windows.
 
 ### Labels
 
