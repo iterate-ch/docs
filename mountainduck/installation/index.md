@@ -1,6 +1,13 @@
 Installation
 ====
 
+```{toctree}
+:hidden:
+:titlesonly:
+
+licensing
+```
+
 `````{tabs}
 ````{group-tab} macOS
 
