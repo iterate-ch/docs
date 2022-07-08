@@ -19,7 +19,7 @@ You won't receive a license file after purchasing via AppStore because the appli
 
 Additional reasons for a missing license file can be:
 - A key is sent when the payment is no more pending.
-- Verify that your email address registered with PayPal is still valid.
+- The license file will be sent to the registered email. Typos can misslead the email.
 - Check the spam folder of your email application.
 
 ### Not a valid registration key
