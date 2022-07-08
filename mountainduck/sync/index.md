@@ -40,21 +40,32 @@ Please make sure to enable the Mountain Duck [Integration](../installation.md) i
 ### ![Up to Date](../_images/overlay_uptodate.png) Up to Date
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
 
+```{note}
+Files can be purged automatically from the cache when not accessed or the cache size limit is exceeded. Refer to [Cache Limitations](../preferences.md#cache-limitations).
+```
+
 ### ![In Sync](../_images/overlay_sync.png) In Sync
 The file or directory is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.
+
+```{tip}
+Files explicitly selected to keep offline are **not** automatically purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
+```
 
 ### ![Online Only](../_images/overlay_infinite.png) Online Only
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
 ### ![Sync in Progress](../_images/overlay_syncing.png) Sync in Progress
-The file or directory is currently syncing with the server or cloud storage.
+The file or directory is currently syncing with the server or cloud storage. Check the menu with the sync status for current download or upload progress.
 
 ### ![Sync Error](../_images/overlay_error.png) Sync Error
-There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu.
+There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu. Refer to [Sync Conflicts](#sync-conflicts) for possible error scenarios.
 
 ### ![Ignored](../_images/overlay_ignored.png) Ignored
 The file is only saved in a local temporary location and never synced to the server or cloud storage.
 
+```{tip}
+Rename a file to synchronize with the server.
+```
 
 ## Context Menu Options
 ```{image} ../_images/Mountain_Duck_Screenshot_Finder_Dark.png
