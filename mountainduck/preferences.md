@@ -40,24 +40,18 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
 
-**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store.
-
-The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
+**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
 ````
 
 ### Cache Location
 
 `````{tabs}
 ````{group-tab} macOS
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md).
-
-The disk must be formatted as HFS+ or APFS.
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md). The disk must be formatted as HFS+ or APFS.
 ````
 
 ````{group-tab} Windows
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`.
-
-You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`. You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
 ````
 `````
 
