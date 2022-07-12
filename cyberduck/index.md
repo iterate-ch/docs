@@ -5,21 +5,21 @@ Cyberduck
 :hidden:
 :titlesonly:
 bookmarks
-browser
 connection
-copy
+browser
+transfer
 download
+upload
+sync
+copy
 edit
-faq
-info
-notifications
-preferences
 share
+info
+preferences
+notifications
 spotlight
 support
-sync
-transfer
-upload
+faq
 ```
 
 ## Quick Reference Cheat Sheet

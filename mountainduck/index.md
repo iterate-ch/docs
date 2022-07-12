@@ -4,25 +4,31 @@ Mountain Duck
 ```{toctree}
 :hidden:
 :titlesonly:
-installation
+installation/index
 interface
 info
-issues/index
 sync/index
 locking
+versions
 preferences
 versions
+issues/index
 support
 faq
+
 ```
 
 Cyberduck for mounting volumes in the file explorer is available for Mac & Windows.
 
 > Mountain Duck lets you mount server and cloud storage as a disk in Finder on macOS and the File Explorer on Windows. Open remote files with any application and work like on a local volume. Transfer files using Finder to remote servers, fast.
 
-## [Installation](installation.md)
+## [Installation](installation/index.md)
 
-Refer to our installation instructions
+Refer to our installation instructions.
+
+## [Licensing](installation/licensing.md)
+
+Refer to our licensing FAQ.
 
 ## [User Interface](interface.md)
 

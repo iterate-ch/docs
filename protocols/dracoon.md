@@ -36,10 +36,11 @@ Choose *File → Share…* to create a download share for a file. Default settin
 
 ## Versioning
 
-A list of file versions can be viewed within the *Versions* panel of the *Info* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
+A list of file versions can be viewed within the *Versions* panel of the *[Info](../cyberduck/info.md)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
 
 ```{note}
-The versions panel is availabe for Mountain Duck version 4.12 or later/ Cyberduck 8.4 or later.
+- Cyberduck 8.4 or later required.
+- Mountain Duck 4.12 or later required.
 ```
 
 ## References

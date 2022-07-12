@@ -17,7 +17,7 @@ Change the size of the menu items in the status bar menu. Choose between *Small,
 ### Connect Mode
 Change the default synchronization option. You can disable synchronization by default for all bookmarks by switching to *Online*. Refer to [Connect Mode](interface.md#connect-mode)
 
-```{image} _images/Sync_Preferences.png
+```{image} _images/Sync_Preferences_Win.png
 :alt: Sync Preferences
 :width: 700px
 ```
@@ -40,51 +40,58 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
 
-**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store.
-
-The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
+**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes`.
 ````
 
 ### Cache Location
 
 `````{tabs}
 ````{group-tab} macOS
-
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md).
-
-The disk must be formatted as HFS+ or APFS.
-
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md). The disk must be formatted as HFS+ or APFS.
 ````
+
 ````{group-tab} Windows
-
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`.
-
-You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
-
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`. You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
 ````
 `````
 
 #### Cache Limitations
 
 ```{note}
-This feature is available for Mountain Duck version 4.12 and later.
+Version 4.12 or later required.
 ```
 
-Cache limitation allows cached files to be deleted from the cache at regular intervals, keeping only a placeholder with metadata. The following options are available:
-- Limit cache size per bookmark by selecting a maximum folder size within the preference. Exceeding the maximum cache size, larger files are purged first. Available limits: 500MB, 1GB, 5GB, and 10GB.
-- Purge files not accessed within a selected period of time automatically. Available periods: 1 day, 7 days, 30 days, and 60 days.
+Cache limitation allows cached files to be deleted from the cache at regular intervals, keeping only a placeholder with metadata. An indexer runs every hour to determine whether purging files in cache is required based on the set preferences. The following options are available:
+- **Limit by size**. Limit cache size per bookmark by selecting a maximum folder size within the preference. Exceeding the maximum cache size, larger files are purged first.
+- **Limit by time**. Purge files not accessed within a selected period of time automatically.
 
-An indexer runs every hour to determine whether purging is required based on the set preferences.
+```{tip}
+Files selected to always keep offline are never automatically removed from the cache.
+```
 
 ## Notifications
-Set which notifications you want to receive.
+
+```{note}
+Version 4.12 or later required.
+```
+
+Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. The following types of notifications can be toggled:
+- **Filesystem mounted**. The volume is now connected. 
+- **Filesystem unmounted**. The volume has been disconnected.
+- **Pause Sync**. Synchronization has paused due to the server not reachable because of a network or login error.
+- **Resume Sync**. Synchronization has automatically resumed as after reachability change.
+- **File Added**. New file has been found on the server not previously synced.
+- **File Deleted**. File has been deleted on the server previously synced.
+- **File Updated**. File has been updated on the server previously synced.
+- **File Uncached**. File previously cached for offline access has been purged.
+- **Download complete**. File download completed in the background.
+- **Upload complete**. File upload completed in the background.
+- **Sync Error**. Error synchronizing file because of a server error response.
 
 ```{image} _images/Notification_Preferences.png
 :alt: Notification Preferences
 :width: 700px
 ```
-
-Alternatively, you can choose *Open System Preferences* to disable the notifications completely.
 
 `````{tabs}
 ````{group-tab} macOS

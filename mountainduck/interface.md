@@ -53,6 +53,13 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 :width: 500px
 ```
 
+### Nickname
+
+The nickname determines the display of the bookmark in the menu and can be customized.
+```{tip}
+The nickname determines the name of the mounted volume in Finder on macOS or drive in Windows Explorer. Also refer to [Mount Location](preferences.md#mount-location).
+```
+
 ### Labels
 
 ```{note}
