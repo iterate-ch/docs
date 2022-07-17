@@ -149,7 +149,11 @@ Packages can also be found for [download](https://dist.duck.sh/).
 
 Run `--help` to get the option screen.
 
-URLs in arguments must be fully qualified. Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing slash. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
+URLs in arguments must be fully qualified. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
+
+```{attention}
+Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing slash. 
+```
 
 ### Connection Profiles
 
@@ -159,14 +163,16 @@ You can install additional [connection profiles](../protocols/profiles.md) in th
 
 The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize` must satisfy following rules:
 
-- Each URL must start with a scheme and a colon (`https:`)(unless you specify a `--profile`)
+- Each URL must start with a scheme and a colon (`https:`) unless you specify a `--profile`.
 - Depending on the type of protocol you are referencing different rules apply
-	- For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI `https://user@hostname/path`
-	- For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or 
-	*Absolute paths:* `s3:/bucket/path`,
-	*Relative paths:* `s3:user@path` or `s3:user@/path`. 
-	Omitting the first slash in a relative path uses the default home directory for this protocol.
-	- For all protocols where a default hostname is set and you are not allowed to change it (e.g. `OneDrive`, `Dropbox`, `Google Drive`) you may use any combination of the above with the following rules: Fully Qualified URIs are parsed as relative paths. `onedrive://Some/Folder/` is parsed as `onedrive:Some/Folder`.
+    - For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI `https://user@hostname/path`
+    - For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or 
+    *Absolute paths:* `s3:/bucket/path`,
+    *Relative paths:* `s3:user@path` or `s3:user@/path`. 
+    ```{note}
+    Omitting the first slash in a relative path uses the default home directory for this protocol.
+    ```
+    - For all protocols where a default hostname is set and you are not allowed to change it (e.g. `OneDrive`, `Dropbox`, `Google Drive`) you may use any combination of the above with the following rules: Fully Qualified URIs are parsed as relative paths. `onedrive://Some/Folder/` is parsed as `onedrive:Some/Folder`.
 - For all protocols where a default path is set and you are not allowed to change it (e.g. accessing a prebuilt `NextCloud` profile with a path set to `/remote.php/webdav`). You are allowed to change the path but it will be appended to the default path. Making nextcloud:/path really `nextcloud:/remote.php/webdav/path`.
 
 ```{note}
