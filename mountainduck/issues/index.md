@@ -71,9 +71,7 @@ This is a known bug appearing from time to time while downloading the trial vers
 
 ### `Not a valid registration key` Error
 
-This error appears if you try to use a license key for older versions of Mountain Duck for a new major version. Registration keys are valid for the current major version at the time of purchase and for previous versions.
-
-To use the latest major version you will have to [upgrade](https://mountainduck.io/buy/upgrade/) your license. Alternatively, install an older version of Mountain Duck from the [changelog](https://mountainduck.io/changelog/).
+This error appears if you try to use a license key for older versions of Mountain Duck for a new major version. Registration keys are valid for the current major version at the time of purchase and for previous versions. To use the latest major version you will have to [upgrade](https://mountainduck.io/buy/upgrade/) your license. Alternatively, install an older version of Mountain Duck from the [changelog](https://mountainduck.io/changelog/).
 
 ### Can Only Open Single PDF in Adobe Acrobat Reader
 
