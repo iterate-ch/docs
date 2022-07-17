@@ -270,6 +270,16 @@ duck --upload protocol:/<name> folder/
 duck --upload protocol:/<name>/ folder/
 ```
 
+* Upload file `file` to folder `<name>` using
+```{code-block}
+duck --upload protocol:/<name>/ file
+```
+
+* Upload file `file` as `<name>` to folder `<folder>` using
+```{code-block}
+duck --upload protocol:/<folder>/<name> file
+```
+
 #### Use of `~`
 
 You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
