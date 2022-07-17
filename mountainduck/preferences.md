@@ -69,6 +69,10 @@ Cache limitation allows cached files to be deleted from the cache at regular int
 Files selected to always keep offline are never automatically removed from the cache.
 ```
 
+```{attention}
+The settings apply separately for each bookmark which must be connected for the cache management to run.
+```
+
 ## Notifications
 
 ```{note}
