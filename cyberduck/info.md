@@ -41,6 +41,8 @@ A list of file versions can be viewed in the *Versions* tab of the Info window. 
 - Permanently delete version
 - View previous version. On macOS, this opens a *QuickLook* window. On Windows, this downloads and opens the file in the default editor.
 
+The list is empty when no previous version is available.
+
 ```{image} _images/Info_Panel_Versions.png
 :alt: Versions Tab
 :width: 600px
