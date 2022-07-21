@@ -29,7 +29,7 @@ mountainduck/index
 :titlesonly:
 :caption: Supported Protocols
 protocols/index
-protocols/profiles
+protocols/profiles/index
 ```
 
 ```{toctree}

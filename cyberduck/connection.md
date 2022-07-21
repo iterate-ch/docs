@@ -234,4 +234,4 @@ Connection profiles (`.cyberduckprofile`) are plugins describing specific connec
 
 ### File Format
 
-Refer to the [technical documentation](../protocols/profiles.md).
+Refer to the [technical documentation](../protocols/profiles/index.md).

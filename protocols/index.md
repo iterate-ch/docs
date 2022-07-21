@@ -4,28 +4,27 @@ Protocols
 ```{toctree}
 :hidden:
 :titlesonly:
-profiles
-openstack/index
-s3/index
+profiles/index
+ftp
+sftp
 webdav/index
+s3/index
+google_cloud_storage
+openstack/index
 azure
 b2
-dracoon
 dropbox
-files.com
-ftp
-google_client_id
-google_cloud_storage
 google_drive
-box
-irods
 onedrive
-sftp
 sharepoint
+box
+files.com
+dracoon
+irods
 spectra
 ```
 
-All major server and cloud storage protocols are supported to connect to just about any server or cloud storage. Support for the listed protocols and [connection profiles](profiles.md) is available in [Cyberduck](../cyberduck/index.md), [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
+All major server and cloud storage protocols are supported to connect to just about any server or cloud storage. Support for the listed protocols and [connection profiles](profiles/index.md) is available in [Cyberduck](../cyberduck/index.md), [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
 ### [FTP](ftp.md)
 With support for secure TLS connections and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront) option.
@@ -90,7 +89,7 @@ Open a window to browse your local hard disk to drag files for download or uploa
 
 ## Connection Profiles
 
-[Connection profiles](profiles.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
+[Connection profiles](profiles/index.md) (`.cyberduckprofile`) are plugins describing specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile is installed and adds a provider option in the protocol selection drop down menu in the *Connection* and *Bookmark* panels. No need to enter the connection details manually other than credentials.
 
 ### Preferences → Profiles
 

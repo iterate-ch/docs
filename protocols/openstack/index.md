@@ -145,7 +145,7 @@ You can set the [hidden option](../../cyberduck/preferences.md#hidden-configurat
 
 ### Multiple OpenStack Swift Containers in Different Regions with the Same Name
 
-Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../profiles.md) limited to a single region as with [Rackspace Cloudfiles region profiles](cloudfiles.md#profile-for-a-single-region).
+Browsing containers will be erratic. As a workaround, browse a region by using a [connection profile](../profiles/index.md) limited to a single region as with [Rackspace Cloudfiles region profiles](cloudfiles.md#profile-for-a-single-region).
 
 ### In Finder.app, Creating a new top-level Folder in OpenStack Swift will not Allow to Rename it from `untitled folder`
 

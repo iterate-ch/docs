@@ -43,7 +43,7 @@ Alternatively, you can reset the OAuth token by deleting the entries related to 
 
 #### Custom OAuth Client ID
 
-You can register a [custom OAuth 2.0 client ID](google_client_id.md) with Google to operate independently of our registered client ID.
+You can register a [custom OAuth 2.0 client ID](profiles/google_client_id.md) with Google to operate independently of our registered client ID.
 
 ## Cyberduck CLI
 

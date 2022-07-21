@@ -1,14 +1,14 @@
 Connection Profiles
 ====
 
-[Connection profiles](../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
+[Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 ```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- [Third-Party S3 providers](s3/index.md#third-party-providers)
-- [OpenStack Providers](openstack/index.md#third-party-providers)
+- [Third-Party S3 providers](../s3/index.md#third-party-providers)
+- [OpenStack Providers](../openstack/index.md#third-party-providers)
 
 ## Installation
 Connection profiles can be activated by either installing the file by double clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
@@ -43,12 +43,15 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](openstack/index.md) and [S3](s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
-- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](s3/index.md#creating-a-bucket) for [S3](s3/index.md) and [OpenStack Swift](openstack/swiftstack.md) connections.
+- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+- `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../s3/index.md#creating-a-bucket) for [S3](../s3/index.md) and [OpenStack Swift](../openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
+```{note}
+Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
+```
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
-- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
+- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile)
   * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
   * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)

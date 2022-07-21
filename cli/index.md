@@ -157,7 +157,7 @@ Paths can either denote a remote file `ftps://user@example.net/resource` or fold
 
 ### Connection Profiles
 
-You can install additional [connection profiles](../protocols/profiles.md) in the [application support directory](#profiles). Use the `--profile` option to reference a [connection profile](../protocols/index.md#connection-profiles) file to use not installed in the standard location.
+You can install additional [connection profiles](../protocols/profiles/index.md) in the [application support directory](#profiles). Use the `--profile` option to reference a [connection profile](../protocols/index.md#connection-profiles) file to use not installed in the standard location.
 
 ### URI
 
@@ -280,7 +280,7 @@ You can use the tilde to abbreviate the remote path pointing to the remote home 
 
 #### Custom configuration options for uploads to S3
 
-Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../../s3/index.md#default-metadata).
+Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../protocols/s3/index.md#default-metadata).
 
 	env "s3.metadata.default=Content-Type=application/xml" duck --upload …
 
@@ -356,7 +356,7 @@ The directory location is printed with `--help` following the list of supported 
 `````{tabs}
 ````{group-tab} macOS
 
-The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../protocols/profiles.md) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
+The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../protocols/profiles/index.md) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
 
 ````
 ````{group-tab} Windows
@@ -366,7 +366,7 @@ Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 ````
 ````{group-tab} Linux
 
-The support directory is `~/.duck/` on Linux. You can install third party [profiles](../protocols/profiles.md) in `~/.duck/profiles/`.
+The support directory is `~/.duck/` on Linux. You can install third party [profiles](../protocols/profiles/index.md) in `~/.duck/profiles/`.
 
 ````
 `````
