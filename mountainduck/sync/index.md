@@ -34,7 +34,7 @@ You can change the synchronization options for a bookmark in *Connect Mode*.
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
 ```{note}
-Please make sure to enable the Mountain Duck [Integration](../installation.md) in *System Preferences → Extensions → Finder* on macOS.
+Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS.
 ```
 
 ### ![Up to Date](../_images/overlay_uptodate.png) Up to Date
