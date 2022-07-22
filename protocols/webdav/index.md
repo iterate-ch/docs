@@ -52,7 +52,7 @@ Used when connecting to [SharePoint](../sharepoint.md) using WebDAV.
 
 ### Integrated Windows Authentication (IWA)
 
-{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/WebDAV%20(Integrated%20Windows%20Authentication).cyberduckprofile>` and use the *WebDAV (Integrated Windows Authentication) profile* to connect to the server using *Integrated Windows Authentication*.
+{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/WebDAV%20(Integrated%20Windows%20Authentication).cyberduckprofile>` and use the *WebDAV (Integrated Windows Authentication) profile* to connect to the server using *Integrated Windows Authentication*.
 
 ## SSL/TLS Support
 
