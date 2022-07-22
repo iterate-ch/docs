@@ -18,7 +18,7 @@ Open a [free account](https://www.dracoon.com/en/free) with 10 users including 1
 
 ## Connecting
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/DRACOON%20(OAuth).cyberduckprofile>` the *DRACOON (OAuth) connection profile*.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/DRACOON%20(OAuth).cyberduckprofile>` the *DRACOON (OAuth) connection profile*.
 
 ```{note}
 The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.

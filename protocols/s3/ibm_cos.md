@@ -24,9 +24,9 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 Using [Cross Region Endpoints](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-endpoints)
 
-- **us-geo:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/IBM%20COS%20(us-geo).cyberduckprofile>` the *IBM COS (us-geo) Connection Profile* for preconfigured settings.
-- **eu-geo:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/IBM%20COS%20(eu-geo).cyberduckprofile>` the *IBM COS (eu-geo) Connection Profile* for preconfigured settings.
-- **ap-geo:** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/IBM%20COS%20(ap-geo).cyberduckprofile>` the *IBM COS (ap-geo) Connection Profile* for preconfigured settings.
+- **us-geo:** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IBM%20COS%20(us-geo).cyberduckprofile>` the *IBM COS (us-geo) Connection Profile* for preconfigured settings.
+- **eu-geo:** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IBM%20COS%20(eu-geo).cyberduckprofile>` the *IBM COS (eu-geo) Connection Profile* for preconfigured settings.
+- **ap-geo:** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IBM%20COS%20(ap-geo).cyberduckprofile>` the *IBM COS (ap-geo) Connection Profile* for preconfigured settings.
 
 ## Buckets
 When creating a bucket you can choose the [storage class](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-classes).

@@ -5,7 +5,7 @@ Filebase
 
 ## Connecting
 
-{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Filebase.cyberduckprofile>` the *Filebase Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Filebase.cyberduckprofile>` the *Filebase Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ## References
 
