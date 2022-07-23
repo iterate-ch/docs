@@ -11,8 +11,11 @@ sync/index
 locking
 versions
 preferences
+versions
 issues/index
 support
+faq
+
 ```
 
 Cyberduck for mounting volumes in the file explorer is available for Mac & Windows.
