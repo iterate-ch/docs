@@ -264,14 +264,26 @@ duck --upload ftps://<hostname>/directory/ ~/*.jpg
 
 #### Specification for folders
 
-Integrate 'folder' (e.g. folder contents) to 'name' using
+Note the inclusion or absence of a trailing slash delimiter character to denote a file or directory on the server.
+
+* Integrate `folder` (e.g. folder contents) to `<name>` using
 ```{code-block}
 duck --upload protocol:/<name> folder/
 ```
 
-Upload the 'folder' itself to '<name>/' using
+* Upload the `folder` itself to `<name>/` using
 ```{code-block}
 duck --upload protocol:/<name>/ folder/
+```
+
+* Upload file `file` to folder `<name>` using
+```{code-block}
+duck --upload protocol:/<name>/ file
+```
+
+* Upload file `file` as `<name>` to folder `<folder>` using
+```{code-block}
+duck --upload protocol:/<folder>/<name> file
 ```
 
 #### Use of `~`
