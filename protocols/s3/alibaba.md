@@ -16,29 +16,29 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ### Connection Profile
 
-- **Alibaba Beijing** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Beijing).cyberduckprofile>` the *Alibaba (Beijing) Connection Profile* for preconfigured settings.
-- **Alibaba Chengdu** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Chengdu).cyberduckprofile>` the *Alibaba (Chengdu) Connection Profile* for preconfigured settings.
-- **Alibaba Dubai** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Dubai).cyberduckprofile>` the *Alibaba (Dubai) Connection Profile* for preconfigured settings.
-- **Alibaba Frankfurt** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Frankfurt).cyberduckprofile>` the *Alibaba (Frankfurt) Connection Profile* for preconfigured settings.
-- **Alibaba Guangzhou** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Guangzhou).cyberduckprofile>` the *Alibaba (Guangzhou) Connection Profile* for preconfigured settings.
-- **Alibaba Hangzhou** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Hangzhou).cyberduckprofile>` the *Alibaba (Hangzhou) Connection Profile* for preconfigured settings.
-- **Alibaba Heyuan** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Heyuan).cyberduckprofile>` the *Alibaba (Heyuan) Connection Profile* for preconfigured settings.
-- **Alibaba Hohhot** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Hohhot).cyberduckprofile>` the *Alibaba (Hohhot) Connection Profile* for preconfigured settings.
-- **Alibaba Hong Kong** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Hong%20Kong).cyberduckprofile>` the *Alibaba (Hong Kong) Connection Profile* for preconfigured settings.
-- **Alibaba Jakarta** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Jakarta).cyberduckprofile>` the *Alibaba (Jakarta) Connection Profile* for preconfigured settings.
-- **Alibaba Kuala Lumpur** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Kuala%20Lumpur).cyberduckprofile>` the *Alibaba (Kuala Lumpur) Connection Profile* for preconfigured settings.
-- **Alibaba London** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(London).cyberduckprofile>` the *Alibaba (London) Connection Profile* for preconfigured settings.
-- **Alibaba Manila** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Manila).cyberduckprofile>` the *Alibaba (Manila) Connection Profile* for preconfigured settings.
-- **Alibaba Mumbai** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Mumbai).cyberduckprofile>` the *Alibaba (Mumbai) Connection Profile* for preconfigured settings.
-- **Alibaba Qingdao** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Qingdao).cyberduckprofile>` the *Alibaba (Qingdao) Connection Profile* for preconfigured settings.
-- **Alibaba Shanghai** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Shanghai).cyberduckprofile>` the *Alibaba (Shanghai) Connection Profile* for preconfigured settings.
-- **Alibaba Shenzhen** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Shenzhen).cyberduckprofile>` the *Alibaba (Shenzhen) Connection Profile* for preconfigured settings.
-- **Alibaba Singapore** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Singapore).cyberduckprofile>` the *Alibaba (Singapore) Connection Profile* for preconfigured settings.
-- **Alibaba Sydney** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Sydney).cyberduckprofile>` the *Alibaba (Sydney) Connection Profile* for preconfigured settings.
-- **Alibaba Tokyo** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Tokyo).cyberduckprofile>` the *Alibaba (Tokyo) Connection Profile* for preconfigured settings.
-- **Alibaba Ulanqab** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Ulanqab).cyberduckprofile>` the *Alibaba (Ulanqab) Connection Profile* for preconfigured settings.
-- **Alibaba Virginia** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Virginia).cyberduckprofile>` the *Alibaba (Virginia) Connection Profile* for preconfigured settings.
-- **Alibaba Zhangjiakou** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Alibaba%20(Zhangjiakou).cyberduckprofile>` the *Alibaba (Zhangjiakou) Connection Profile* for preconfigured settings.
+- **Alibaba Beijing** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Beijing).cyberduckprofile>` the *Alibaba (Beijing) Connection Profile* for preconfigured settings.
+- **Alibaba Chengdu** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Chengdu).cyberduckprofile>` the *Alibaba (Chengdu) Connection Profile* for preconfigured settings.
+- **Alibaba Dubai** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Dubai).cyberduckprofile>` the *Alibaba (Dubai) Connection Profile* for preconfigured settings.
+- **Alibaba Frankfurt** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Frankfurt).cyberduckprofile>` the *Alibaba (Frankfurt) Connection Profile* for preconfigured settings.
+- **Alibaba Guangzhou** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Guangzhou).cyberduckprofile>` the *Alibaba (Guangzhou) Connection Profile* for preconfigured settings.
+- **Alibaba Hangzhou** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Hangzhou).cyberduckprofile>` the *Alibaba (Hangzhou) Connection Profile* for preconfigured settings.
+- **Alibaba Heyuan** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Heyuan).cyberduckprofile>` the *Alibaba (Heyuan) Connection Profile* for preconfigured settings.
+- **Alibaba Hohhot** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Hohhot).cyberduckprofile>` the *Alibaba (Hohhot) Connection Profile* for preconfigured settings.
+- **Alibaba Hong Kong** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Hong%20Kong).cyberduckprofile>` the *Alibaba (Hong Kong) Connection Profile* for preconfigured settings.
+- **Alibaba Jakarta** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Jakarta).cyberduckprofile>` the *Alibaba (Jakarta) Connection Profile* for preconfigured settings.
+- **Alibaba Kuala Lumpur** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Kuala%20Lumpur).cyberduckprofile>` the *Alibaba (Kuala Lumpur) Connection Profile* for preconfigured settings.
+- **Alibaba London** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(London).cyberduckprofile>` the *Alibaba (London) Connection Profile* for preconfigured settings.
+- **Alibaba Manila** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Manila).cyberduckprofile>` the *Alibaba (Manila) Connection Profile* for preconfigured settings.
+- **Alibaba Mumbai** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Mumbai).cyberduckprofile>` the *Alibaba (Mumbai) Connection Profile* for preconfigured settings.
+- **Alibaba Qingdao** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Qingdao).cyberduckprofile>` the *Alibaba (Qingdao) Connection Profile* for preconfigured settings.
+- **Alibaba Shanghai** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Shanghai).cyberduckprofile>` the *Alibaba (Shanghai) Connection Profile* for preconfigured settings.
+- **Alibaba Shenzhen** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Shenzhen).cyberduckprofile>` the *Alibaba (Shenzhen) Connection Profile* for preconfigured settings.
+- **Alibaba Singapore** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Singapore).cyberduckprofile>` the *Alibaba (Singapore) Connection Profile* for preconfigured settings.
+- **Alibaba Sydney** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Sydney).cyberduckprofile>` the *Alibaba (Sydney) Connection Profile* for preconfigured settings.
+- **Alibaba Tokyo** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Tokyo).cyberduckprofile>` the *Alibaba (Tokyo) Connection Profile* for preconfigured settings.
+- **Alibaba Ulanqab** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Ulanqab).cyberduckprofile>` the *Alibaba (Ulanqab) Connection Profile* for preconfigured settings.
+- **Alibaba Virginia** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Virginia).cyberduckprofile>` the *Alibaba (Virginia) Connection Profile* for preconfigured settings.
+- **Alibaba Zhangjiakou** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Alibaba%20(Zhangjiakou).cyberduckprofile>` the *Alibaba (Zhangjiakou) Connection Profile* for preconfigured settings.
 
 ### Manual Configuration
 
