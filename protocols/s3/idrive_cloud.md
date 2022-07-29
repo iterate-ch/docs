@@ -12,11 +12,9 @@ IDrive®
 
 ### Connecting
 
-#### Connection Profile
-
 Double-click on the downloaded file to activate the connection profile.
 
-##### S3
+#### S3
 
 Create S3 Access Keys from the IDrive® Cloud Console.
 
@@ -33,7 +31,7 @@ Keys can be generated in the *Settings* section of the *Profile Details* within 
 You can have a maximum of 2 pairs of S3 Access Key and Secret.
 ```
 
-##### OpenStack Swift
+#### OpenStack Swift
 
 - {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* or install it from *Preferences… → Profiles* for preconfigured settings for authentication.
 

@@ -114,7 +114,7 @@ Refer to the [Cyberduck CLI](../../cli/index.md) documentation for more operatio
 - [Zetta.IO](zetta.io.md)
 - [Selectel Cloud Storage](selectel.md)
 - [Infomaniak](infomaniak.md)
-- [IDrive® Cloud](../s3/idrive_cloud.md#openstack-swift)
+- [IDrive® Cloud](../s3/idrive_cloud.md#openstack-swift) 
 - [OpenStack FlexCloud](flexcloud.md)
 
 ## Temporary URLs

@@ -5,6 +5,7 @@ Amazon S3
 :hidden:
 :titlesonly:
 alibaba
+cloudflare_r2
 cynny
 digitalocean
 dreamobjects
@@ -15,20 +16,20 @@ filebase
 iam
 ibm_cos
 idrive_cloud
+linode
 minio
 oracle_cloud
 pilvio
 polycloud
 scaleway
 scality
+seagate
 spectra
+storadera
 verizon
 vitanium
 wasabi
 z1
-storadera
-linode
-cloudflare_r2
 ```
 
 ```{image} _images/s3.png
@@ -238,6 +239,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
 - [Scaleway Object Storage](scaleway.md)
 - [Scality (proprietary technology)](scality.md)
+- [Seagate Lyve Cloud](seagate.md)
 - [Seeweb](https://www.seeweb.it/)
 - [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 - [Storadera](storadera.md)
