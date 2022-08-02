@@ -35,7 +35,7 @@ You can have a maximum of 2 pairs of S3 Access Key and Secret.
 
 ##### OpenStack Swift
 
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* or install it from *Preferences… → Profiles* for preconfigured settings for authentication.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *OpenStack Swift (Keystone 3) profile* or install it from *Preferences… → Profiles* for preconfigured settings for authentication.
 
 Enter the following authentication credentials to the bookmark:
 
@@ -59,7 +59,7 @@ The API Password can be obtained from *Swift API Password* section of *IDrive® 
 
 #### Connection Profile
 
-{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/IDrive520e2.cyberduckprofile>` the *IDrive® e2 Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IDrive520e2.cyberduckprofile>` the *IDrive® e2 Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 #### Manual Configuration
 

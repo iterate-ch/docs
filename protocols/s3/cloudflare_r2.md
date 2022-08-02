@@ -5,7 +5,7 @@ Cloudflare R2
 
 ## Connection
 
-{download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Cloudflare%20R2%20Storage%20(S3).cyberduckprofile>` the *Cloudflare R2 Storage (S3) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Cloudflare%20R2%20Storage%20(S3).cyberduckprofile>` the *Cloudflare R2 Storage (S3) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ## Limitations
 

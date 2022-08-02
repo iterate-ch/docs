@@ -8,7 +8,7 @@ An OpenStack installation by [green.ch](https://green.ch/).
 ## Connecting
 
 Connect using the preconfigured connection profile.
-- {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/FlexCloud.cyberduckprofile>` the *FlexCloud Connection Profile* or install it from *Preferences… → Profiles*.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/FlexCloud.cyberduckprofile>` the *FlexCloud Connection Profile* or install it from *Preferences… → Profiles*.
 
 ## Resources
 

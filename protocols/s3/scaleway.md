@@ -9,8 +9,8 @@ Scaleway Object Storage
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- **NL-AMS** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Scaleway%20(NL-AMS).cyberduckprofile>` the *Scaleway Object Storage (NL-AMS) Connection Profile* for preconfigured settings.
-- **FR-PAR** {download}`Download<https://github.com/iterate-ch/cyberduck/raw/master/profiles/Scaleway%20(FR-PAR).cyberduckprofile>` the *Scaleway Object Storage (NL-AMS) Connection Profile* for preconfigured settings.
+- **NL-AMS** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Scaleway%20(NL-AMS).cyberduckprofile>` the *Scaleway Object Storage (NL-AMS) Connection Profile* for preconfigured settings.
+- **FR-PAR** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Scaleway%20(FR-PAR).cyberduckprofile>` the *Scaleway Object Storage (NL-AMS) Connection Profile* for preconfigured settings.
 
 ## References
 
