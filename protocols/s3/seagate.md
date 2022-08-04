@@ -27,7 +27,7 @@ You have to create service accounts within the *Lyve Cloud console* to use third
 4. Choose *Create*. The access key will be generated and the details of the key will be displayed in a popup window.
 
 ```{note}
-The prompt contailing the access key information will only be displayed once. Make sure to save the details for future use.
+The prompt containing the access key information will only be displayed once. Make sure to save the details for future use.
 ```
 
 ## References
