@@ -129,7 +129,7 @@ Connecting to a bucket owned by you or even a third party is possible without re
 - Set the *Default Path* in the bookmark to the bucket name. If you have permission you can still navigate one level up to display all buckets if the ACL allows.
 
 ```{attention}
-No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically while detemining the region of the bucket.
+No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically by querying the region of the bucket.
 ```
 
 ### Connecting with Temporary Access Credentials (Token) from EC2
