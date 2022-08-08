@@ -1,6 +1,12 @@
 Connection Profiles
 ====
 
+```{toctree}
+:hidden:
+:titlesonly:
+google_client_id
+```
+
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 ```{note}
