@@ -128,6 +128,10 @@ Connecting to a bucket owned by you or even a third party is possible without re
 - Specify the bucket you want to access in the hostname to connect to like `<bucketname>.s3.amazonaws.com`. Your own buckets will not be displayed but only this bucket contents
 - Set the *Default Path* in the bookmark to the bucket name. If you have permission you can still navigate one level up to display all buckets if the ACL allows.
 
+```{attention}
+No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically while detemining the region of the bucket.
+```
+
 ### Connecting with Temporary Access Credentials (Token) from EC2
 
 If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on EC2 and have setup [IAM Roles for Amazon EC2](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) to provide access to S3 from the EC2 instance, you can use the connection profile below that will fetch temporary credentials from EC2 instance metadata service at `http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access` to authenticate. Edit the profile to change the role name `s3access` to match your IAM configuration.
