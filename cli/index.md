@@ -184,7 +184,7 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 | Windows Azure Storage | No | `azure:/<container>/<key>` | `azure:<container>/<key>` |
 | Backblaze B2 Cloud Storage | No | `b2:/<container>/<key>` | `b2:<container>/<key>` |
 | WebDAV (HTTP) | Yes (`dav://<hostname>/<path>`) |||
-| WebDAV (HTTPS) | Yes (`dav://<hostname>/<path>`) |||
+| WebDAV (HTTPS) | Yes (`davs://<hostname>/<path>`) |||
 | Dracoon (Email Address) | Yes (`dracoon://<hostname>/<path>`) |||
 | Dropbox | No | `dropbox:/<path>` | `dropbox:<path>` |
 | Local | No | `file:/<path>` | `file:<path>` |
