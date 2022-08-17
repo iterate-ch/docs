@@ -16,6 +16,7 @@ filebase
 iam
 ibm_cos
 idrive_cloud
+ionos
 linode
 minio
 oracle_cloud
@@ -233,6 +234,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [IBM Cloud Object Storage (COS)](ibm_cos.md)
 - [IDrive® Cloud](idrive_cloud.md#idrive-cloud)
 - [IDrive® e2](idrive_cloud.md#idrive-e2)
+- [IONOS Cloud Object Storage](ionos.md)
 - [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
 - [MinIO Cloud Storage](minio.md)
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
