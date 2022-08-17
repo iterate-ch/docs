@@ -22,6 +22,10 @@ Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Driv
 
 ![OAuth 2 Prompt](_images/Google_Drive_OAuth_2_Authentication_Code_Prompt.png)
 
+```{attention}
+Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
+```
+
 ### Google Apps Accounts
 
 To access the Google Docs storage of your company's [Google Apps](https://workspace.google.com/features/) Account, use your email address connected to your Google Apps account for the username.
