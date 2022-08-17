@@ -64,10 +64,6 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
 
 #### Example
 
-```{note}
-{download}`Disk template file (Adobe Photoshop)<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
-```
-
 ```{code-block}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -129,4 +125,23 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
 
 ## Disk icon template
 
-- {download}`Adobe Photoshop disk template file<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>`
+- {download}`Adobe Photoshop disk template file<https://github.com/iterate-ch/cyberduck/blob/master/profiles/assets/Template.psd>`
+
+## Icon set
+
+Create a *multi-TIFF* containing the needed icon sizes:
+1. Create a high-resolution *.png* file based on the PSD template
+2. Use the following script to generate the different resolutions and the multi-TIFF *disk.tiff* file:
+    ```{code-block}
+    png=[LOCATION_OF_HIGH_RESOLUTION_PNG]
+    tmp=$TMPDIR
+    target=[TARGET_FOLDER]
+    /usr/bin/sips -s format png -z 128 128 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_64x64@2x.png
+    /usr/bin/sips -s format png -z 64 64 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_64x64.png
+    /usr/bin/sips -s format png -z 96 96 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_96@2x.png
+    /usr/bin/sips -s format png -z 48 48 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_96.png
+    /usr/bin/sips -s format png -z 256 256 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_256@2x.png
+    /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
+    /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/disk.tiff
+    ```
+3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
