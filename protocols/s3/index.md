@@ -27,6 +27,7 @@ scality
 seagate
 spectra
 storadera
+storj dcs
 verizon
 vitanium
 wasabi
@@ -249,6 +250,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Seeweb](https://www.seeweb.it/)
 - [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 - [Storadera](storadera.md)
+- [Storj DCS](storj_dcs.md)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
 - [Verizon Cloud Storage](verizon.md)
 - [Vitanium Cloud](vitanium.md)
