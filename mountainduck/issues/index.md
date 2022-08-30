@@ -241,6 +241,11 @@ See Windows sessions above. Services do not have access to logged-in user drives
 **Mountain Duck Tooltip Persists on Screen**<br/>
 You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.
 
+**Dot files are not hidden**<br/>
+By default, files starting with `.` aren't hidden by Windows Explorer. You can change the default by using a [hidden configuration option](../preferences.md#hidden-configuration-options).
+
+    browser.hidden.regex=\\..*
+
 ````
 
 `````
