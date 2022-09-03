@@ -102,13 +102,13 @@ An incomplete list of known providers that require the use of AWS2
 
 #### S3 GovCloud (US-East)
 
-Use the endpoint `s3-us-gov-east-1.amazonaws.com` or install the connection profile
+Use the endpoint `s3.us-gov-east-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-East) profile* for preconfigured settings.
 
 #### S3 GovCloud (Us-West)
 
-Use the endpoint `s3-us-gov-west-1.amazonaws.com` or install the connection profile
+Use the endpoint `s3.us-gov-west-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (US-West) profile* for preconfigured settings.
 
@@ -538,7 +538,7 @@ Use `curl -I <http://<bucketname>.s3.amazonaws.com/<key>` to debug HTTP headers.
 
 ## Server Side Encryption (SSE)
 
-[Server-side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) for stored files is supported and can be enabled by default for all uploads in the S3 preferences or for individual files in the *File → Info (macOS `⌘I` WIndows `Alt+Return`) → S3*. AWS handles key management and key protection for you.
+[Server-side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) for stored files is supported and can be enabled by default for all uploads in the S3 preferences or for individual files in the *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. AWS handles key management and key protection for you.
 
 ### Defaults
 
