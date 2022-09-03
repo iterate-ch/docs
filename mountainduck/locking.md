@@ -26,6 +26,10 @@ For connections other than [WebDAV](../protocols/webdav/index.md), we support de
 Support is currently limited to files edited in *Microsoft Word, Microsoft Excel, and Microsoft Powerpoint* on macOS and Windows.
 ```
 
+```{attention}
+*Excel 97-2003* files are not included because Excel doesn't create lock files for those file types: `*.xls`, `*.xlt`, `*.xla`.
+```
+
 ### References
 
 When a previously saved file is opened for editing, for printing, or for review, Word creates a temporary file that has a .doc file name extension. This filename extension begins with a tilde (\~) that is followed by a dollar sign ($) that is followed by the remainder of the original file name. This temporary file holds the login name of the person who opens the file. This temporary file is called the "owner file".
