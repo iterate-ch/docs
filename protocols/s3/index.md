@@ -27,7 +27,7 @@ scality
 seagate
 spectra
 storadera
-storj dcs
+storj_dcs
 verizon
 vitanium
 wasabi

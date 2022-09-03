@@ -7,6 +7,11 @@ Connection Profiles
 google_client_id
 ```
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 ```{note}
@@ -145,3 +150,7 @@ Create a *multi-TIFF* containing the needed icon sizes:
     /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/disk.tiff
     ```
 3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
+
+## Contributing connection profiles
+
+To contribute new connection profiles, open a pull regest in the [`iterate-ch/profiles` repository](https://github.com/iterate-ch/docs/issues/profiles). Once the pull request is approved the profile will be available through the _[Preferences → Profiles](../../mountainduck/preferences.md#profiles)_ tab.
