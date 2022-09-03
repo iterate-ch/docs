@@ -34,7 +34,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 ```
 - `Description` *(Required)*
 - `Default Nickname`
-- `Default Hostname`
+- `Hostname Placeholder`
 - `Default Port`
 - `Default Path`
 - `Username Placeholder`
@@ -75,7 +75,7 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
         <string>hp</string>
         <key>Description</key>
         <string>HP Cloud Object Storage</string>
-        <key>Default Hostname</key>
+        <key>Hostname Placeholder</key>
         <string>region-a.geo-1.identity.hpcloudsvc.com</string>
         <key>Default Port</key>
         <string>35357</string>
