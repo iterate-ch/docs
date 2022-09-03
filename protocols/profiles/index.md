@@ -60,7 +60,9 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Password Configurable` Boolean if password is configurable.
 - `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>` to create a provider profile image.
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
-- `Context` Login context path (currently used for Swift profiles)
+- `Context` Currently used for 
+* Login context path for [OpenStack Swift](../openstack/index.md) profiles.
+* Prefix all requests with path for [S3](../s3/index.md) profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
