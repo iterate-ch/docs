@@ -34,6 +34,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 ```
 - `Description` *(Required)*
 - `Default Nickname`
+- `Default Hostname`
 - `Hostname Placeholder`
 - `Default Port`
 - `Default Path`
