@@ -7,6 +7,11 @@ Connection Profiles
 google_client_id
 ```
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 ```{note}
@@ -17,7 +22,16 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - [OpenStack Providers](../openstack/index.md#third-party-providers)
 
 ## Installation
+
 Connection profiles can be activated by either installing the file by double clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
+
+## Contributing Connection Profiles
+
+```{admonition} Info
+:class: tip
+
+To contribute new connection profiles, open a pull regest in the [`iterate-ch/profiles` repository](https://github.com/iterate-ch/docs/issues/profiles). Once the pull request is approved the profile will be available through the _Preferences → Profiles_ tab in [Mountain Duck](../../mountainduck/preferences.md#profiles) and Cyberduck.
+```
 
 ### Technical File Format Specification
 
@@ -123,11 +137,11 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
 </plist>
 ```
 
-## Disk icon template
+### Disk icon template
 
 - {download}`Adobe Photoshop disk template file<https://github.com/iterate-ch/cyberduck/blob/master/profiles/assets/Template.psd>`
 
-## Icon set
+### Icon set
 
 Create a *multi-TIFF* containing the needed icon sizes:
 1. Create a high-resolution *.png* file based on the PSD template
