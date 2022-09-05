@@ -303,6 +303,15 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 ## Known Issues
 
+### Too many authentication failures
+
+Running an SSH agent with multiple identities can lead to the server error `Too many authentication failures` as the default behaviour is to first try to authenticate with all available identities before a specific key. Note that this is also the default behaviour of the command line SSH client. Possible remedies:
+
+- Increase the allowed authentication tries on the server by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
+- [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try explicitly set private keys to authenticate but not all identities found in SSH agent.
+- Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to disable public key authentication for example.
+- When using Public Key Authentication with an SSH agent make sure to set the private key in your bookmark to allow Cyberduck to try this identity only.
+
 ### Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
 
 The error message `Invalid packet: indicated length 1114795883 too large` may indicate you have either:
@@ -320,7 +329,7 @@ This error can occur if you are connecting the first time to a device with a slo
 
 ### Connect Does not Work
 
-Cyberduck refuses to connect if there are malformed entries in your `known_hosts` file located under `~/.ssh`. Renaming this file and recreating it usually resolves this. An alternative requires manually editing the `known_hosts` file removing all malformed entries. Please refer to [sshd(8)](http://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) for a valid format.
+Cyberduck refuses to connect if there are malformed entries in your `known_hosts` file located under `~/.ssh`. Renaming this file and recreating it usually resolves this. An alternative requires manually editing the `known_hosts` file removing all malformed entries. Please refer to [sshd(8)](https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) for a valid format.
 
 ### Symbolic Link isn't Accessible
 
