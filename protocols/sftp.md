@@ -307,7 +307,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 ### Too many authentication failures
 
-Running an SSH agent with many added identities can lead to the server error `Too many authentication failures` when trying to authenticate with all available identities. 
+Running an SSH agent with many added identities can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
 
 - Select the identity in the [bookmark](../cyberduck/bookmarks/#edit-bookmark) with _SSH Private Key_.
 - Increase the allowed authentication tries on the *server* by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
