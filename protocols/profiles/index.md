@@ -47,16 +47,16 @@ The following properties can be defined in a connection profile:
 The value of `Vendor` must be unique among all installed connection profiles.
 ```
 - `Description` *(Required)*
-- `Default Nickname`. Prefilled bookmark name.
-- `Default Hostname`. Prefilled server name.
+- `Default Nickname` Prefilled bookmark name.
+- `Default Hostname` Prefilled server name.
 - `Hostname Configurable` Boolean if hostname is configurable.
-- `Hostname Placeholder`. Suggestion for server name.
-- `Default Port`. Prefilled port number.
+- `Hostname Placeholder` Suggestion for server name.
+- `Default Port` Prefilled port number.
 - `Port Configurable` Boolean if port number is configurable.
 - `Default Path`
 - `Username Configurable` Boolean if username is configurable.
-- `Username Placeholder`. Suggestion for username in login credentials.
-- `Password Placeholder`. Suggestion for password in login credentials.
+- `Username Placeholder` Suggestion for username in login credentials.
+- `Password Placeholder` Suggestion for password in login credentials.
 - `Password Configurable` Boolean if password is configurable.
 - `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>` to create a provider profile image.
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
