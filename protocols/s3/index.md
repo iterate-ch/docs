@@ -609,6 +609,10 @@ Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-
 
 - {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
+### `Listing directory / failed.` with path in custom S3 endpoint
+
+When connecting to a service that requires a path prefix in all requests, you must set the `Context` property in a custom [connection profile](../profiles/index.md).
+
 ### Moved Permanently but no Location Header
 
 Make sure the IAM user has the permission `s3:GetBucketLocation` to read the bucket location.
