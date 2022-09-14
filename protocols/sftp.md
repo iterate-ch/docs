@@ -31,7 +31,7 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *User* preference for login credentials.
 - *ProxyJump* to connect via SSH tunnel through bastion server.
 - *PreferredAuthentications* to limit authentication methods tried to login.
-- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves Too many authentication failures errors with servers limiting the number of attempted authentication requests.
+- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
 - A [bookmark](../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
@@ -86,22 +86,24 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 *Certification Authority (CA)* sigend SSH certificates are supported for keys of type  `rsa`, `dsa`, `ecdsa`, and `ed25519`.
 
 #### Public Key Authentication Using SSH Agent
+When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
 
 ````{tabs}
-
 ```{group-tab} macOS
-
-There is support for OpenSSH `ssh-agent`. The agent `ssh-agent` is running by default on OS X. You add private key identities to the authentication agent using the program `ssh-add`. When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
+There is support for OpenSSH `ssh-agent`. The agent `ssh-agent` is running by default on OS X. You add private key identities to the authentication agent using the program `ssh-add`. 
 ```
 
 ```{group-tab} Windows
-
 There is support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on Windows.
 
 - [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty)
 ```
-
 ````
+
+```{tip}
+When authenticating using Public Key Authentication with an SSH agent, make sure to set the SSH Private
+Key in your bookmark to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many authentication failures.
+```
 
 ### One-Time Passcodes
 
@@ -305,12 +307,14 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 ### Too many authentication failures
 
-Running an SSH agent with multiple identities can lead to the server error `Too many authentication failures` as the default behaviour is to first try to authenticate with all available identities before a specific key. Note that this is also the default behaviour of the command line SSH client. Possible remedies:
+Running an SSH agent with many added identities can lead to the server error `Too many authentication failures` when trying to authenticate with all available identities. 
 
-- Increase the allowed authentication tries on the server by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
-- [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try explicitly set private keys to authenticate but not all identities found in SSH agent.
+- Select the identity in the [bookmark](../cyberduck/bookmarks/#edit-bookmark) with _SSH Private Key_.
+- Increase the allowed authentication tries on the *server* by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
+
+Possible remedies using configuration in [OpenSSH configuration file](#openssh-configuration-interoperability):
+- [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try to authenticate with explicitly set private key instead of all identities retrieved from SSH agent.
 - Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to disable public key authentication for example.
-- When using Public Key Authentication with an SSH agent make sure to set the private key in your bookmark to allow Cyberduck to try this identity only.
 
 ### Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
 
