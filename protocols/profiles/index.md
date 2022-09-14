@@ -76,7 +76,7 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
         <string>hp</string>
         <key>Description</key>
         <string>HP Cloud Object Storage</string>
-        <key>Hostname Placeholder</key>
+        <key>Default Hostname</key>
         <string>region-a.geo-1.identity.hpcloudsvc.com</string>
         <key>Default Port</key>
         <string>35357</string>
