@@ -22,11 +22,12 @@ Support for client-side encryption with [Cryptomator](https://cryptomator.org/) 
 
 The client-side encryption feature in Cyberduck and Mountain Duck is based on the excellent concepts and work of [Cryptomator](https://cryptomator.org/). Cryptomator is free and open-source software. Since Cyberduck is also open-source software anyone is able to audit the source code. That means no security by obscurity, no hidden backdoors from third parties, no need to trust anyone except yourself.
 
-Compared to other client-side-encryption solutions the Cryptomator based approach yields a few crucial advantages:
-
-- in addition to file content encryption also file and directory names are encrypted and directory structures obfuscated
-- no online services, no subscriptions, no accounts
-- no need to share your cloud storage provider credentials
+```{tip}
+Compared to other client-side-encryption solutions, the Cryptomator based approach yields a few crucial advantages:
+- In addition to file content encryption, file and directory names are encrypted and directory structures obfuscated.
+- No online services, no subscriptions, no accounts.
+- No need to share your cloud storage provider credentials.
+```
 
 ## Create new Vault
 
