@@ -54,7 +54,7 @@ explicitly with [*Keep Offline on Local Disk*](sync/index.md#keep-offline).
 Using the *Smart Synchronization* connect mode, the cached data is saved in the [sync cache](preferences.md#cache-location). 
 
 ```{warning}
-Do not manually move, delete or modify files in the obufscated local cache location.
+Do not manually move, delete or modify files in the obfuscated local cache location.
 ```
 
 #### Temporary Files
