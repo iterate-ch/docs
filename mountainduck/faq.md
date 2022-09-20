@@ -62,10 +62,6 @@ With buffering enabled, Mountain Duck will use more disk space. To allow you fas
 
 Using the *Online* mode, metadata and temporary copies of files you work with will be stored within the _temp_ folder. Depending on the connection profile in use, the cached data will be removed from the temp cache once you disconnect the bookmark.
 
-### Run as a Windows Service
-
-It is not possible to run Mountain Duck as a Service as it needs an interactive user session to mount drives. As the mounts are also limited to the user session there isn't any way to mount a drive once and share it with all other users.
-
 ### Web URL
 
 Using Cyberduck, you have an additional panel to include a Web URL. This Web URL will replace your server address using the *Copy URL* feature. Using Mountain Duck, there is no such feature but the setting from Cyberduck are taken over.
