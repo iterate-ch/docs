@@ -237,7 +237,7 @@ By default, the executable `putty.exe` must be located in your user home folder.
 
 ## Distribution (CDN)
 
-You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
+You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
 ## Create and Expand ZIP or TAR Archives
 
@@ -309,7 +309,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 Running an SSH agent with many added identities can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
 
-- Select the identity in the [bookmark](../cyberduck/bookmarks/#edit-bookmark) with _SSH Private Key_.
+- Select the identity in the [bookmark](../cyberduck/bookmarks.md#edit-bookmark) with _SSH Private Key_.
 - Increase the allowed authentication tries on the *server* by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
 
 Possible remedies using configuration in [OpenSSH configuration file](#openssh-configuration-interoperability):

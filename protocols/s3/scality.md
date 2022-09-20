@@ -17,5 +17,5 @@ Once connected, the behavior with an S3 account is exactly the same.
 
 ## Limitations
 
-- No content distribution ([CDN](../../cdn/index.md)) configuration.
+- No content distribution ([CDN](../../protocols/cdn/index.md)) configuration.
 - No bucket logging configuration.

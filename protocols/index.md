@@ -5,6 +5,7 @@ Protocols
 :hidden:
 :titlesonly:
 profiles/index
+cdn/index
 ftp
 sftp
 webdav/index
@@ -27,7 +28,7 @@ spectra
 All major server and cloud storage protocols are supported to connect to just about any server or cloud storage. Support for the listed protocols and [connection profiles](profiles/index.md) is available in [Cyberduck](../cyberduck/index.md), [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
 ### [FTP](ftp.md)
-With support for secure TLS connections and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront) option.
+With support for secure TLS connections and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../protocols/cdn/cloudfront) option.
 
 ### [Amazon S3](s3/index.md)
 Transfer files to your S3 account and browse the S3 buckets and files in a hierarchical way. Supports Amazon Web Services (AWS) and many third party providers.
@@ -42,12 +43,12 @@ Transfer files to your Google Storage account and browse files, manage ACLs and 
 Backblaze B2 Cloud Storage is ¼ of the price of Amazon S3
 
 ### [WebDAV](webdav/index.md)
-Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) option.
+Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom origin [Amazon CloudFront (Content Delivery Network) distribution](cdn/cloudfront.md) option.
 
 - [WebDAV providers](webdav/index.md#providers)
 
 ### [SSH/SFTP](sftp.md)
-Advanced configuration for SSH connections using public key authentication and custom origin [Amazon CloudFront (Content Delivery Network) distribution](../cdn/cloudfront.md) option.
+Advanced configuration for SSH connections using public key authentication and custom origin [Amazon CloudFront (Content Delivery Network) distribution](cdn/cloudfront.md) option.
 
 ### [OpenStack Object Storage](openstack/index.md)
 Connect to cloud storage providers using OpenStack Swift for the storage protocol. Includes support for [Rackspace Cloud Files](openstack/cloudfiles).

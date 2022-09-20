@@ -98,7 +98,7 @@ Refer to the [Cyberduck CLI](../../cli/index.md) documentation for more operatio
 
 ## Third-Party Providers
 
-- [Rackspace Cloud Files (US & UK)](cloudfiles.md) with [Akamai CDN](../../cdn/akamai.md)
+- [Rackspace Cloud Files (US & UK)](cloudfiles.md) with [Akamai CDN](../../protocols/cdn/akamai.md)
 - [Internap AgileFILES](internap.md)
 - [Cloud.ca Object Store](cloud.ca.md)
 - [Memset Memstore Object Storage](memset.md)

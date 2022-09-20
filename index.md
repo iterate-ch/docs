@@ -7,7 +7,6 @@ Cyberduck & Mountain Duck Help
 :caption: Cyberduck
 
 cyberduck/index
-cdn/index
 ```
 
 ```{toctree}

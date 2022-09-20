@@ -88,7 +88,7 @@ Edit access control list for fine grained user permissions when connected to [Am
 
 ## CDN Panel
 
-Manage [Amazon CloudFront](../cdn/cloudfront.md) and [Rackspace/Akamai](../cdn/akamai.md) distributions ([CDN](../cdn/index.md)) respectively.
+Manage [Amazon CloudFront](../protocols/cdn/cloudfront.md) and [Rackspace/Akamai](../protocols/cdn/akamai.md) distributions ([CDN](../protocols/cdn/index.md)) respectively.
 
 ### Deployment Status
 

@@ -115,7 +115,7 @@ Mountain Duck supports locking using `LOCK` and `UNLOCK` methods when opening do
 
 ## Distribution (CDN)
 
-You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
+You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
 ### SharePoint
 

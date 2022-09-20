@@ -149,7 +149,7 @@ Simulates directory index behavior at both bucket and "directory" levels. The fi
 
 ## Limitations
 
-- No content distribution ([CDN](../cdn/index.md)) configuration.
+- No content distribution ([CDN](../protocols/cdn/index.md)) configuration.
 - Torrent URLs are not supported.
 - Signed URLs are not supported.
 

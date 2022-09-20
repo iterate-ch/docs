@@ -48,15 +48,15 @@ Creating a folder inside a container will create a placeholder object named afte
 
 ### Distribution
 
-You can enable [Akamai CDN (Content Delivery Network) distribution](../../cdn/akamai.md) for a selected container using *File → Info → Distribution (CDN)*. Choose *Enable Access Logging* to save their raw CDN weblogs to your Cloud Files storage account.
+You can enable [Akamai CDN (Content Delivery Network) distribution](../../protocols/cdn/akamai.md) for a selected container using *File → Info → Distribution (CDN)*. Choose *Enable Access Logging* to save their raw CDN weblogs to your Cloud Files storage account.
 
 #### Logging
 
-You can enable private container access logging to `.ACCESS_LOGS` by adding the metadata `X-Container-Meta-Access-Log-Delivery` name with a value of `true` to the container. Choose *File → Info → Metadata*. To enable access logs for CDN enabled, refer to [distribution access logging](../../cdn/akamai.md#distribution-access-logging).
+You can enable private container access logging to `.ACCESS_LOGS` by adding the metadata `X-Container-Meta-Access-Log-Delivery` name with a value of `true` to the container. Choose *File → Info → Metadata*. To enable access logs for CDN enabled, refer to [distribution access logging](../../protocols/cdn/akamai.md#distribution-access-logging).
 
 ### Public URLs
 
-You can access all URLs (including from [CDN](../../cdn/akamai.md) configurations) from the menu Edit → Copy URL and File → Open URL. 
+You can access all URLs (including from [CDN](../../protocols/cdn/akamai.md) configurations) from the menu Edit → Copy URL and File → Open URL. 
 
 ```{note}
 You must first open *File → Info → Distribution (CDN)* before these URLs are available.

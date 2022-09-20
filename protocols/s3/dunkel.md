@@ -27,4 +27,4 @@ Refer also to [S3](index.md) wiki page in general.
 - No bucket logging configuration.
 - Storage class options are not available.
 - Torrent URLs are not supported.
-- No content distribution ([CDN](../../cdn/index.md)) configuration.
+- No content distribution ([CDN](../../protocols/cdn/index.md)) configuration.

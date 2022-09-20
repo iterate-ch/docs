@@ -303,7 +303,7 @@ When this option is enabled in the S3 panel of the Info (*File → Info (macOS `
 
 ![AWS Logging Configuration](_images/AWS_Logging_Configuration.png)
 
-To toggle CloudFront access logging, select the the [Distribution](../../cdn/cloudfront.md) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
+To toggle CloudFront access logging, select the the [Distribution](../../protocols/cdn/cloudfront.md) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
 
 ### Versions
 
@@ -481,7 +481,7 @@ You may receive an error *Cannot change permissions of* when attempting to grant
 
 ## Public URLs
 
-You can access all URLs (including from [CDN](../../cdn/cloudfront.md) configurations) from the menu *Edit → Copy URL and File → Open URL*.
+You can access all URLs (including from [CDN](../../protocols/cdn/cloudfront.md) configurations) from the menu *Edit → Copy URL and File → Open URL*.
 
 ![Copy URLs](_images/Copy_URLs.png)
 
@@ -574,7 +574,7 @@ Refer to the AWS Security Blog
 
 ## CloudFront CDN
 
-Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. Refer to [Amazon CloudFront distribution](../../cdn/cloudfront) for help about setting up distributions.
+Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. Refer to [Amazon CloudFront distribution](../../protocols/cdn/cloudfront) for help about setting up distributions.
 
 ## Website Configuration
 
@@ -584,7 +584,7 @@ To access this website functionality, Amazon S3 exposes a new website endpoint f
 
 ![S3 Website Configuration](_images/S3_Website_Configuration.png)
 
-To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../cdn/cloudfront.md#website-configuration-endpoint-distributions-with-cloudfront-cdn).
+To configure Amazon CloudFront for your website endpoints, refer to [Website Configuration Endpoint Distributions with CloudFront CDN](../../protocols/cdn/cloudfront.md#website-configuration-endpoint-distributions-with-cloudfront-cdn).
 
 ### References
 

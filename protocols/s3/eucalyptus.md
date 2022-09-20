@@ -17,11 +17,11 @@ Download your credentials ZIP from `ecc.eucalyptus.com`. You can find the access
 
 ## Distribution
 
-You can enable [Amazon CloudFront (Content Delivery Network) distribution](../../cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
+You can enable [Amazon CloudFront (Content Delivery Network) distribution](../../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
 ## Limitations
 
-- No content distribution ([CDN](../../cdn/index.md)) configuration.
+- No content distribution ([CDN](../../protocols/cdn/index.md)) configuration.
 - No bucket logging configuration.
 - No bucket location support.
 - Storage class options are not available.

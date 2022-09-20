@@ -44,7 +44,7 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 
 [Browser](browser.md) remote files in a list or hierarchical outline view.
 
-- **[Info Window](info.md):** Edit access permissions and configure [CDN](../cdn/index.md) options
+- **[Info Window](info.md):** Edit access permissions and configure [CDN](../protocols/cdn/index.md) options
 - **QuickLook:** Preview files in the browser window
 - **Open Web URL:** Configuration steps to open HTTP URL of selected file
 - **[Create and expand ZIP/TAR Archives](../protocols/sftp.md#create-and-expand-zip-or-tar-archives)**
