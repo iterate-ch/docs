@@ -236,7 +236,7 @@ The Windows Search indexer does not work on networks drives.
 Mountain Duck requires an interactive user logon session. This separation is done to ensure that each in a multi-user scenario has access to all available Windows drive letters (Otherwise this would be limited to 26 drive letters, shared across all users). Bookmarks are mounted in your regular and elevated user session only - there is no way for other logged-in users or non-interactive services to access your drive. There are no persistent mounts created for anyone to use and cannot work across user sessions - mounts for user A are not visible nor accessible by user B even on the same machine.
 
 **Windows Service has no Access to a Mounted Drive**<br/>
-See Windows sessions above. Services do not have access to logged-in user drives. Please make sure you have not checked `Run whether user is logged on or not` on the scheduled task configuration.
+See Windows sessions above. It is not possible to run Mountain Duck as a Service as it needs an interactive user session to mount drives. As the mounts are also limited to the user session there isn't any way to mount a drive once and share it with all other users. Please make sure you have not checked `Run whether user is logged on or not` on the scheduled task configuration.
 
 **Mountain Duck Tooltip Persists on Screen**<br/>
 You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.

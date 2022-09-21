@@ -69,7 +69,7 @@ Cache limitation allows cached files to be deleted from the cache at regular int
 Files selected to always keep offline are never automatically removed from the cache.
 ```
 
-By default files are kept in cache for 30 days and the cache is limited to a maximum size of 5GiB.
+By default, files are kept in cache for 30 days and the cache is limited to a maximum size of 5GiB.
 
 ```{attention}
 The settings apply separately for each bookmark which must be connected for the cache management to run.
