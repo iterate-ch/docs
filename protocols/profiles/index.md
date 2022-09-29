@@ -58,7 +58,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Username Placeholder` Suggestion for username in login credentials.
 - `Password Placeholder` Suggestion for password in login credentials.
 - `Password Configurable` Boolean if password is configurable.
-- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://svn.cyberduck.ch/trunk/profiles/assets/Template.psd>` to create a provider profile image.
+- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a provider profile image.
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
 - `Context` Currently used for 
 * Login context path for [OpenStack Swift](../openstack/index.md) profiles.
@@ -75,9 +75,9 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
 ```
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
 - `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
-  * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP%20(Compatibility%20Mode).cyberduckprofile)
-  * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
-  * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/cyberduck/blob/master/profiles/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
+  * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP%20(Compatibility%20Mode).cyberduckprofile)
+  * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
+  * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
 
 #### Example
 
@@ -142,7 +142,7 @@ Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](
 
 ### Disk icon template
 
-- {download}`Adobe Photoshop disk template file<https://github.com/iterate-ch/cyberduck/blob/master/profiles/assets/Template.psd>`
+- {download}`Adobe Photoshop disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>`
 
 ### Icon set
 
