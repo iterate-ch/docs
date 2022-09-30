@@ -37,13 +37,15 @@ Choose *File Explorer → Folder Options*.
 `````
 
 ## Temporary Files
-When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data ist stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file.
+When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data ist stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file. Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. 
 
-Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. When enabled,
+```{tip}
+When enabled _Preferences → Sync → Enable buffering_ is enabled:
 * In _Online_ connect mode, buffered content in temporary files is kept until disconnecting the bookmark.
 * In _Smart Synchronization_ connect mode, the buffer contents is moved from the temporary folder to the local cache and the status of the file changes to _Up to Date_.
+```
 
-## Characters to avoid
+## Filenames
 
 The following characters should be avoided within file and folder names.
 
@@ -80,24 +82,24 @@ This is a known bug appearing from time to time while downloading the trial vers
 
 This error appears if you try to use a license key for older versions of Mountain Duck for a new major version. Registration keys are valid for the current major version at the time of purchase and for previous versions. To use the latest major version you will have to [upgrade](https://mountainduck.io/buy/upgrade/) your license. Alternatively, install an older version of Mountain Duck from the [changelog](https://mountainduck.io/changelog/).
 
-### Can Only Open Single PDF in Adobe Acrobat Reader
+### Can only open single PDF in Adobe Acrobat Reader
 
 This is a known bug in Adobe Acrobat Reader when opening documents from a network volume. As a workaround uncheck *edit → Preferences... → Security (Enhanced) → Enable Protected Mode at startup*.
 
 - Adobe Documentation: [Protected mode (Windows)](https://helpx.adobe.com/reader/11/using/protected-mode-windows.html)
 
-### rsync Fails with Error
+### rsync fails with error
 
 If your server does not accept the creation of `.` temporary files you might need to add the `--inplace` when running `rsync`.
 
-### High CPU Usage when Working with Sublime Text
+### High CPU usage when working with Sublime Text
 
 - When working with Sublime Text we recommend turning off indexing by adding the following setting to your user preferences in Sublime Text. <br/>
 `"index_files": false`
 - You might want to [turn off Git support in Sublime](https://www.sublimetext.com/docs/git_integration.html) which has caused high CPU usage for some users when scanning `.git` folders. <br/>
 `"show_git_status": false`
 
-### Sharing a Mounted Drive in Local Network
+### Sharing a mounted drive in local network
 
 It is not possible to share a mounted drive within the local network.
 
@@ -179,7 +181,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 ````
 ````` 
 
-### Operating System Specific Issues
+### Operating System specific Issues
 
 `````{tabs}
 ````{group-tab} macOS
@@ -308,6 +310,6 @@ Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can on
 ````
 `````
 
-### Bug Reports and Feature Requests
+## Bug Reports and Feature Requests
 
-To get help with bugs, feature requests, or other issues please refer to the [support page](../support.md). 
+To get help with bugs, feature requests, or other issues please refer to [support](../support.md). 
