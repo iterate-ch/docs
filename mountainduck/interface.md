@@ -40,6 +40,10 @@ You can choose to automatically open Mountain Duck when logging in. Refer to [Pr
 
 Choose *Open Connection…* to add a new bookmark or *<Bookmark> → Edit Bookmark* to change properties.
 
+```{note}
+Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
+```
+
 ### Connect Mode
 
 - **Default:** Use setting from *Preferences*
@@ -53,10 +57,6 @@ In _Online_ connect mode, changes to a file are immediately uploaded and in sync
 ```{tip}
 In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
 ```
-
-### Share Bookmarks with Cyberduck
-
-Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
 
 ```{image} _images/Edit_Bookmark_macOS.png
 :alt: Edit Bookmark (macOS)
