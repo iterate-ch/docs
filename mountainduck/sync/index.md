@@ -109,7 +109,7 @@ Files will get cached again regardless this setting if accessed again later (e.g
 <br>
 <br>
 
-## Cache Limitation
+## Cache Size
 
 The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
 
@@ -151,6 +151,10 @@ Detailed status for current transfers is available in the *Sync* submenu. Refer 
 
 You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
+```{warning}
+When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected.
+```
+
 The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
 
 ```{image} ../_images/Sync_Paused_macOS.png
@@ -158,16 +162,32 @@ The paused sync status is indicated with a greyed-out icon in the tray (Windows)
 :width: 500px
 ```
 
+### Cancel upload in progress
+To abort the upload of a file, follow these steps:
+1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
+2. Delete the file
+3. *Resume Synchronization* in the dropdown menu.
+
+You can use the steps as well to cancel *Keep Offline* processes.
+
+### Cancel download in progress
+To abort the download of a file, follow these steps:
+1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
+2. Select *Delete on local Disk* within the Mountain Duck [context menu](../interface.md#context-menu-in-finder-and-windows-file-explorer).
+3. *Resume Synchronization* in the dropdown menu.
+
 ## Sync Errors
 
 Files that failed to sync get a sync error badge. You can try to repeat the failed transfer by selecting *Mountain Duck → Retry* in the context menu.
 
 ### Resolve Errors
 
-If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operatio due to a permission issue you can resolve the error state on the file or folder by
+If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operation (i.e. due to a permission issue), you can resolve the error state on the file or folder by
 
 - Move the file or folder to another location on the volume
-- Delete the file or folder
+- Delete the file or folder 
+
+To upload files to a target directory no longer existing on the server, you have to move the files to a location found on the server.
 
 ## File History
 

@@ -36,7 +36,14 @@ Choose *File Explorer → Folder Options*.
 
 `````
 
-## Characters to Avoid
+## Temporary Files
+When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data ist stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file.
+
+Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. When enabled,
+* In _Online_ connect mode, buffered content in temporary files is kept until disconnecting the bookmark.
+* In _Smart Synchronization_ connect mode, the buffer contents is moved from the temporary folder to the local cache and the status of the file changes to _Up to Date_.
+
+## Characters to avoid
 
 The following characters should be avoided within file and folder names.
 
@@ -94,15 +101,22 @@ If your server does not accept the creation of `.` temporary files you might nee
 
 It is not possible to share a mounted drive within the local network.
 
-### Changes from Server not Immediately Visible
+### Changes from server not immediately visible
 
-The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding , removing, or modifying files on the server. You can force *File Explorer* to refresh the directory listing with `F5`. On macOS, choose *Reload* from the [*Finder Extension*](../interface.md#context-menu-in-finder-and-windows-file-explorer) menu. Enable *Sync → Index files* in *Preferences* to look for remote file changes every 10 minutes.
+In _Smart Synchronization_ connect mode changes from the server must be synced with cached contents on your computer. The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding, removing, or modifying files on the server. No push notifications are received for changes on the server. Thus, the following strategies are in place to detect changes to existing and new files as soon as possible:
+* With [_Preferences → Sync → Index Files_](../preferences.md#index-files) enabled, remote directories previously opened are polled for changes and new files.
+* When browsing a directory in Finder.app or Windows Explorer will attempt to sync with contents with the server.
+* You can explicitly request to look for changes on the server in a directory by choosing [*Reload*](../interface.md#reload) within the context menu.
 
-### Folder Doesn't Show Content on the Remote Server
+### New folder not uploaded to remote server
 
-Folders that weren't renamed after creation don't get uploaded to the server and therefore don't show the content. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows, and the folder should be uploaded to the server and be visible on the server.
+Folders that weren't renamed after creation don't get uploaded to the server. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows, and the folder should be uploaded to the server and be visible on the server.
 
-### Cache Uses a lot of Disk Space
+### Cache uses a lot of disk space
+
+Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../sync/index.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ or _Windows Explorer_) or explicitly with [*Keep Offline on Local Disk*](../sync/index.md#keep-offline).
+
+The cache size can be limited per bookmark in *Preferences → Sync*. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
 
 The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](../preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](../sync/index.md#delete-on-local-disk) option.
 
