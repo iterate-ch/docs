@@ -105,7 +105,7 @@ When authenticating using Public Key Authentication with an SSH agent, make sure
 Key in your bookmark to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many authentication failures.
 ```
 
-### One-Time Passcodes
+### One-Time Passcodes (2FA)
 
 Using a challenge-response authentication with one-time password generators like *SecurID* is supported. After the initial login prompt for the username and password, a second login prompt is displayed to enter the one-time passcode.
 
