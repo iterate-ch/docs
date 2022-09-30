@@ -77,10 +77,6 @@ The settings apply separately for each bookmark which must be connected for the 
 
 ## Notifications
 
-```{note}
-Version 4.12 or later required.
-```
-
 Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. The following types of notifications can be toggled:
 - **Filesystem mounted**. The volume is now connected. 
 - **Filesystem unmounted**. The volume has been disconnected.
@@ -93,6 +89,7 @@ Set which type of notifications you want to receive. Alternatively, you can choo
 - **Download complete**. File download completed in the background.
 - **Upload complete**. File upload completed in the background.
 - **Sync Error**. Error synchronizing file because of a server error response.
+- **Sync Conflict**. Error synchronizing file because of a sync conflict.
 
 ```{image} _images/Notification_Preferences.png
 :alt: Notification Preferences
