@@ -14,20 +14,12 @@ history
 :width: 200px
 ```
 
-The smart sync feature allows making files available offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as a connection is available.
+The smart synchronization [connect mode](../interface.md#connect-mode) allows working with files when offline. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as a connection is available.
 
 ```{contents} Content
 :depth: 2
 :local:
 ```
-
-## Bookmark Options
-
-You can change the synchronization options for a bookmark in *Connect Mode*.
-
-- *Default:* Use setting from *Preferences*
-- *Online:* Do not synchronize any files to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- *Smart Synchronization:* Files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](#keep-offline).
 
 ## Status of Files
 

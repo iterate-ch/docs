@@ -40,6 +40,20 @@ You can choose to automatically open Mountain Duck when logging in. Refer to [Pr
 
 Choose *Open Connection…* to add a new bookmark or *<Bookmark> → Edit Bookmark* to change properties.
 
+### Connect Mode
+
+- **Default:** Use setting from *Preferences*
+- **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
+
+```{tip}
+In _Online_ connect mode, changes to a file are immediately uploaded and in sync when an application has finished saving a file.
+```
+
+- **Smart Synchronization:** Directories can be browsed when offline and files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync/index.md#keep-offline). See [Smart Synchronization](sync/index.md).
+```{tip}
+In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
+```
+
 ### Share Bookmarks with Cyberduck
 
 Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
@@ -71,11 +85,6 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 :alt: Taskbar Menu Bookmark Groups (Windows, Large Icons)
 :width: 400px
 ```
-
-### Connect Mode
-
-- **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-- **Smart Synchronization:** Directories can be browsed when offline and files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync/index.md#keep-offline). See [Smart Synchronization](sync/index.md).
 
 ### Read-Only Volume
 
