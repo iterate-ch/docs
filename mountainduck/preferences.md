@@ -23,7 +23,11 @@ Change the default synchronization option. You can disable synchronization by de
 ```
 
 ### Index Files
-Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](interface.md#reload) choosing *Reload* in the context menu.
+Index files on the server for a mounted connection in the background after connecting to ensure you can browse all directories when offline. Enabling this option will make sure new files available on the remote storage are detected without [manually](interface.md#reload) choosing *Reload* in the context menu. When enabled, remote directories previously opened are polled for changes and new files periodically every 10 minutes. 
+
+```{warning}
+This feature is not available in *Online* connect mode. You cannot browse folders or open files as soon as the server connection gets interrupted.
+```
 
 ### Enable Buffering
 Choose whether the file contents should be buffered. The option allows buffering file contents in a temporary location which is only deleted when quitting the application.
@@ -55,13 +59,15 @@ Change the location where to store cache files required for offline access. By d
 ````
 `````
 
-#### Cache Limitations
-
-```{note}
-Version 4.12 or later required.
+```{warning}
+Do not manually move, delete or modify files in the obfuscated local cache location.
 ```
 
-Cache limitation allows cached files to be deleted from the cache at regular intervals, keeping only a placeholder with metadata. An indexer runs every hour to determine whether purging files in cache is required based on the set preferences. The following options are available:
+#### Cache Limitations
+
+Periodically free up space with cache limitations to purge unused files from the cache at regular intervals in the background keeping only a placeholder with metadata. You can choose a limit for the synchronization cache per bookmark and can select a timeframe for unused files to be purged.
+
+The following options are available:
 - **Limit by size**. Limit cache size per bookmark by selecting a maximum folder size within the preference. Exceeding the maximum cache size, larger files are purged first.
 - **Limit by time**. Purge files not accessed within a selected period of time automatically.
 
