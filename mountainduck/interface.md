@@ -195,12 +195,12 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 :width: 600px
 ```
 
-## Sync Options
+### Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
 Refer to [Sync Options](sync/index.md#keep-offline)
 
-## Reload
+### Reload
 
 Changes from the server are not immediately visible. The directory listing in *Finder.app* may become out of date when another application is adding, removing, or modifying files on the server. Choose *Reload* from the *Finder Extension Menu*. On Windows, you can force *File Explorer* to refresh the directory listing with F5.
 
@@ -208,7 +208,7 @@ Changes from the server are not immediately visible. The directory listing in *F
 Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically.
 ```
 
-## Share
+### Share
 
 - *Share…:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Request file…:* Create an URL to share with someone else to allow uploading files to the selected folder.
@@ -225,16 +225,16 @@ Right-click files on a mounted drive will open a menu with items to copy & open 
 :width: 1000px
 ```
 
-## Versions
+### Versions
 
 *Quick Look* or *Restore* previous versions of documents on servers supporting versioning.
 [Read more](versions.md) about versioning.
 
-## New Bookmark
+### New Bookmark
 
 Right-click on white space within the mounted drive in Finder or Explorer to add a bookmark including the selected path.
 
-## Open in Terminal
+### Open in Terminal
 
 Right-click on a folder and choose *Open in Terminal* to open an SSH connection to the server in Terminal for SFTP bookmarks.
 
@@ -242,15 +242,15 @@ Right-click on a folder and choose *Open in Terminal* to open an SSH connection 
 This feature is not supported in the version available in the Mac App Store.
 ```
 
-## Info Panel
+### Info Panel
 
 Right-click on a file and choose *Info* to change permissions, ACLs, metadata, and other service provider-specific settings on a file. Refer to [Info Window](info.md).
 
-## New Encrypted Vault…
+### New Encrypted Vault…
 
 Create a new Cryptomator Vault. [Read more](../cryptomator/index.md) about client-side encryption.
 
-## Lock/Unlock Vault
+### Lock/Unlock Vault
 
 Lock or unlock a Cryptomator Vault.
 
