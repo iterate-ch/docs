@@ -192,6 +192,11 @@ Drag files in *Finder.app* an macOS or *File Explorer* on Windows to move and co
 ![Copy Operation Mountain Duck Finder](_images/Copy_Operation_Mountain_Duck_Finder.png)
 ![Copy Operation Mountain Duck File Explorer](_images/Copy_Operation_Mountain_Duck_File_Explorer.png)
 
+```{admonition} macOS only
+:class: tip
+Using _Integrated_ connect mode, files dragged are moved by default instead of copied. Drag the file with the ⌥ key pressed (macOS) to copy instead.
+```
+
 ## Context Menu in Finder and Windows File Explorer
 
 A context menu in *Finder* on macOS and *File Explorer* on Windows allows various actions on files.
