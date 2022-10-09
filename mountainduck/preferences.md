@@ -75,12 +75,14 @@ Custom mount location is not honoured in _Integrated_ connect mode.
 
 ::::{tabs}
 :::{group-tab} macOS
-
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support/index.md#application-support-folder). The disk must be formatted as HFS+ or APFS.
+
+:::{attention}
+Custom cache location is not honoured in _Integrated_ connect mode.
+:::
 
 :::
 :::{group-tab} Windows
-
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`. You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
 
 :::
