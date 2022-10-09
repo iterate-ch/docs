@@ -110,6 +110,10 @@ By default, files are kept in cache for 30 days and the cache is limited to a ma
 The settings apply separately for each bookmark. The synchronization cache gets cleared based on the chosen cache limit after Mountain Duck is started and every 24h as long as Mountain Duck is running.
 :::
 
+```{note}
+With _Integrated_ connect mode, the operating system may additionally automatically remove cached files to free up disk space.
+```
+
 ## Notifications
 
 Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. 
