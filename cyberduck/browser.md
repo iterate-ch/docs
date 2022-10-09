@@ -56,6 +56,10 @@ The following protocols have a server-side index that is used to give fast resul
 - [Backblaze B2](../protocols/b2.md)
 - [Microsoft OneDrive](../protocols/onedrive.md)
 
+```{tip}
+You can also search for files by _Version_ where applicable.
+```
+
 ### Sorting
 
 You can sort the file listing by clicking the table column header. Choose *View → Column* to add more headers such as *Kind* to allow sorting by file type including folders appearing first in the list.
