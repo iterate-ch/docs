@@ -42,7 +42,13 @@ Spring-loaded folders are a feature that allows you to move a file or even anoth
 
 ### Filter and Search
 
-Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. Search is case insensitive and does look for matching sequences in the filename. To search recursively, hit the return key (`⏎`). The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
+Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. To search recursively, hit the return key (`⏎`).
+
+```{note}
+Search is case-insensitive and does look for matching sequences in the filename supporting glob patterns `*` and `?`.  
+```
+
+The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
 
 - [Google Drive](../protocols/google_drive.md)
 - [Dropbox](../protocols/dropbox.md)
