@@ -42,7 +42,7 @@ Spring-loaded folders are a feature that allows you to move a file or even anoth
 
 ### Filter and Search
 
-Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. To search recursively, hit the return key (`⏎`).
+Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. To search recursively, hit the return key (`⏎`). Only files matching the search or folders with containing files matching the pattern will be displayed in the browser.
 
 ```{note}
 Search is case-insensitive and does look for matching sequences in the filename supporting glob patterns `*` and `?`.  
