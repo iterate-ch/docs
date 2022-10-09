@@ -114,6 +114,10 @@ The settings apply separately for each bookmark. The synchronization cache gets 
 With _Integrated_ connect mode, the operating system may additionally automatically remove cached files to free up disk space.
 ```
 
+```{note}
+With _Integrated_ connect mode, the operating system may additionally automatically remove cached files to free up disk space.
+```
+
 ## Notifications
 
 Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. 
