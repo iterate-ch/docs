@@ -31,16 +31,19 @@ NextCloud & ownCloud
 
 ### Manual Configuration
 
-Choose one of the protocols:
+Choose one of the protocols if you require a custom server path for your installation:
 
 - Protocol: `WebDAV (HTTPS)`
 - Default Path: `/remote.php/webdav/`
 
-- Protocol: `Nextcloud`
-- Default Path will be automatically be filled in
+### Connection Profiles
 
+- Protocol: `Nextcloud` 
 - Protocol: `ownCloud`
-- Default Path will be automatically be filled in
+
+```{tip}
+The default path `/remote.php/dav/files/<username>` will be used.
+```
 
 ### Step-by-Step Instructions
 
