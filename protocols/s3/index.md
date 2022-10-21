@@ -339,11 +339,13 @@ To enable *Multi-Factor Authentication (MFA) Delete*, you need to purchase a com
 
 ### Folders
 
-Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type `application/x-directory`.
+Creating a folder inside a bucket will create a placeholder object named after the directory, has no data content, and the MIME type `application/x-directory`. This is interoperable with folders created with [AWS Management Console](http://aws.amazon.com/console/).
 
-### Supported Third Party Folder Placeholder Formats
+* [Organizing objects in the Amazon S3 console using folders](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-folders.html)
 
-- Folders created with [AWS Management Console](http://aws.amazon.com/console/).
+```{important}
+Do not name objects in S3 containing `/` as this will break navigation.
+```
 
 ## File Transfers
 
