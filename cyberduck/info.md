@@ -48,7 +48,7 @@ The list is empty when no previous version is available.
 :width: 600px
 ```
 
-The following protocols support to view previous versions of files.  Some protocols also display previous versions of files in [browser](browser.md) when enabling *View → Show Hidden*.
+The following protocols support to view previous versions of files.  Some protocols also display previous versions of files in [browser](../cyberduck/browser.md) when enabling *View → Show Hidden*.
 
 | **Protocol** | **Revert previous version** | **Open/Quick Look previous version** | **Delete version** | **Displayed in browser with *View → Show Hidden*** |
 | --- | --- | --- | --- | --- |
