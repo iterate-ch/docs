@@ -67,6 +67,7 @@ Using the MSI Installer, you'll have to install the *MSI Package Shell Extension
 
 - Mountain Duck 3.3.5 or later requires *macOS 10.12* or later
 - Mountain Duck 3.0.1 or later requires *macOS 10.11* or later
+- Mountain Duck 5.0.0 or later requires *macOS 11.3* or later
 
 ::::
 ::::{group-tab} Windows
@@ -76,6 +77,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 - Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
+- Mountain Duck 5.0.0 or later requires *Windows 10, version 2004* or later.
 
 ::::
 :::::
