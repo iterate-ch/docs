@@ -19,6 +19,6 @@ DIRECTORY=$1
 [ ! $DIRECTORY ] && exit 1
 
 echo "Upload $DIRECTORY to $TARGET"
-duck -y --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --existing compare --upload "$TARGET" "$DIRECTORY/*" --region eu-west-1
+duck -y --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --existing compare --upload "$TARGET" $DIRECTORY/* --region eu-west-1
 echo "Purging $TARGET CDN configuration"
 duck -y --username $AWS_ACCESS_KEY_ID --password $AWS_SECRET_ACCESS_KEY --purge "$TARGET/"
