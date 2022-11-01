@@ -42,7 +42,7 @@ Choose one of the protocols if you require a custom server path for your install
 - Protocol: `ownCloud`
 
 ```{tip}
-The default path `/remote.php/dav/files/<username>` will be used.
+The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_.
 ```
 
 ### Step-by-Step Instructions
