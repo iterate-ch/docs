@@ -38,7 +38,7 @@ Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-ur
 
 Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
 
-```{image} _images/S3_Pre-Signed_URL.png
+```{image} ../cyberduck/_images/S3_Pre-Signed_URL.png
 :alt: Pre-Signed URL
 :width: 400px
 ```
@@ -88,7 +88,7 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 
 Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
 
-```{image} _images/B2_Authorized_URL.png
+```{image} ../cyberduck/_images/B2_Authorized_URL.png
 :alt: B2 Authorized URL
 :width: 600px
 ```
@@ -133,7 +133,7 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *S
 
 You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *File → Share…*.
 
-```{image} _images/Passphrase_Prompt_Dropbox_Share.png
+```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
 :width: 400px
 ```
@@ -143,7 +143,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 
 You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
 
-```{image} _images/Passphrase_Prompt_Dropbox_Share.png
+```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
 :width: 400px
 ```
@@ -163,7 +163,7 @@ Share the web link to open download or open the file in Google Docs. This will s
 
 Share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
 
-```{image} _images/Share_File_Google_Drive_.png
+```{image} ../cyberduck/_images/Share_File_Google_Drive_.png
 :alt: Share File Google Drive
 :width: 400px
 ```
@@ -183,7 +183,7 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 
 Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public share with no password protection. Choose *Share…* for download shares or *Request files…* for upload shares from the [context menu](../mountainduck/interface.md#share).
 
-```{image} _images/Download_Share_Context_Menu.png
+```{image} ../cyberduck/_images/Download_Share_Context_Menu.png
 :alt: Download Share Context Menu
 :width: 300px
 ```
@@ -203,7 +203,7 @@ Create download shares by choosing *File → Share…*. Optionally set a passwor
 
 Create download shares for files and folders by choosing *Share…* from the [context menu](../mountainduck/interface.md#share). Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
 
-```{image} _images/Download_Share_Box.png
+```{image} ../cyberduck/_images/Download_Share_Box.png
 :alt: Download Share Box
 :width: 400px
 ```
@@ -213,7 +213,7 @@ Create download shares for files and folders by choosing *Share…* from the [co
 
 ### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) & [WebDAV](../protocols/webdav/index.md)
 
-If you connect to a web root, refer to [HTTP URL](bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
+If you connect to a web root, refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
 
 ```{note}
 You must use [Cyberduck](https://cyberduck.io) to edit the Web URL in a bookmark. The Web URL will replace your server address in URLs available in *Copy URL* .

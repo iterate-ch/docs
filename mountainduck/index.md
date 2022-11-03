@@ -7,6 +7,7 @@ Mountain Duck
 installation/index
 interface
 info
+share
 sync/index
 locking
 versions
@@ -34,6 +35,10 @@ Mountain Duck runs in the *status bar* on macOS and *tray area* on Windows. Refe
 ## [Info Window](info.md)
 
 Edit access permissions and configure [CDN](../protocols/cdn/index.md) options.
+
+## [Share](share.md)
+
+Share files with others using signed or temporary URLs.
 
 ## [Smart Synchronization](sync/index.md)
 
