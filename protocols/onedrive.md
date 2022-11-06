@@ -73,15 +73,12 @@ You can list the root contents of your OneDrive with [Cyberduck CLI](https://duc
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
 
-## Search
-
-```{attention}
-This only applies to Cyberduck.
-```
+## Features
+### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
 
-## Versions
+### Versions
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. 
 

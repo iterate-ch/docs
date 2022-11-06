@@ -34,7 +34,7 @@ Alternatively, enter the following information in the [bookmark](../../cyberduck
 - Server: `lon.auth.api.rackspacecloud.com`
 - Port: `443`
 
-## Additional Information
+## Features
 
 ### Containers
 

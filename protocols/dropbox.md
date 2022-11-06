@@ -35,7 +35,7 @@ You can list the root contents of your Dropbox with [Cyberduck CLI](https://duck
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Dropbox to allow the lookup of previously saved OAuth tokens.
 
-## Additional Information
+## Features
 
 ### Shared Folders
 

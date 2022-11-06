@@ -55,15 +55,12 @@ You can list the root contents of your Google Drive with [Cyberduck CLI](https:/
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Google to allow the lookup of previously saved OAuth tokens.
 
-## Search
-
-```{attention}
-This only applies to Cyberduck.
-```
+## Features
+### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
 
-## Versions
+### Versions
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Additionally, versions of the list can be deleted.
 
@@ -73,9 +70,9 @@ Deleted files are trashed instead of being permanently deleted. This feature is 
 
 	browser.delete.trash=false
 
-## Documents
+### Documents
 
-### Google Docs Documents
+#### Google Docs Documents
 
 For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displayed that point your web browser to the document in Google Docs.
 
@@ -86,11 +83,11 @@ For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displ
 *Google Docs* files can't be managed (renamed, moved, or deleted) within Mountain Duck or Cyberduck. 
 ```
 
-### Google Team Drives
+#### Team Drives
 
 Use the regular Google Drive connection type to see the *Team Drives* besides *My Drive* and *Shared with me*.
 
-### Shared Documents
+#### Shared with me
 
 Documents shared with you from another Google account can be found inside the top-level folder *Shared with me*.
 
