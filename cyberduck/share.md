@@ -101,7 +101,7 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create an [download share](../protocols/dracoon.md#download-share) for a file or folder. Choose *File → Share…*. Optionally set a password required to download the file. Choose *Cancel* to create a public with no password protection.
+Create an [download share](../protocols/dracoon.md#download-share) for a file or folder. Choose *File → Share…*. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public with no password protection.
 
 ````
 ````{group-tab} Mountain Duck
@@ -131,7 +131,7 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *S
 `````{tabs}
 ````{group-tab} Cyberduck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *File → Share…*.
+You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection. Choose *File → Share…*.
 
 ```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
@@ -141,7 +141,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 ````
 ````{group-tab} Mountain Duck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
@@ -176,12 +176,12 @@ Share the web link to open download or open the file in Google Docs. This will s
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection. Choose *File → Share…* for download shares or *File → Request files…* for upload shares.
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection. Choose *File → Share…* for download shares or *File → Request files…* for upload shares.
 
 ````
 ````{group-tab} Mountain Duck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Cancel* to create a public share with no password protection. Choose *Share…* for download shares or *Request files…* for upload shares from the [context menu](../mountainduck/interface.md#share).
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public share with no password protection. Choose *Share…* for download shares or *Request files…* for upload shares from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} ../cyberduck/_images/Download_Share_Context_Menu.png
 :alt: Download Share Context Menu
@@ -196,12 +196,12 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create download shares by choosing *File → Share…*. Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
+Create download shares by choosing *File → Share…*. Optionally set a password required to download the file or folder. Uncheck *Require Passphrase* to create a public URL without password protection. A Box account is not required to open the URL.
 
 ````
 ````{group-tab} Mountain Duck
 
-Create download shares for files and folders by choosing *Share…* from the [context menu](../mountainduck/interface.md#share). Optionally set a password required to download the file or folder. Choose *Cancel* to create a public URL without password protection. A Box account is not required to open the URL.
+Create download shares for files and folders by choosing *Share…* from the [context menu](../mountainduck/interface.md#share). Optionally set a password required to download the file or folder. Uncheck *Require Passphrase* to create a public URL without password protection. A Box account is not required to open the URL.
 
 ```{image} ../cyberduck/_images/Download_Share_Box.png
 :alt: Download Share Box
