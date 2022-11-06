@@ -91,6 +91,10 @@ Use the regular Google Drive connection type to see the *Team Drives* besides *M
 
 Documents shared with you from another Google account can be found inside the top-level folder *Shared with me*.
 
+### Share
+
+Create download [shares](../cyberduck/share.md#google-drive) of files or folders for others with no access to your Google Drive using *File → Share...*.
+
 ## Issues
 
 ### Rate Limits
