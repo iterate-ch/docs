@@ -31,7 +31,9 @@ Providers with support to share a file using a public, password protected or tem
 * _Request files…_. to create link to request upload of files to your account.
 * _Pre-Signed URL_. Create temporary link to download a file.
 
-### [S3](../protocols/s3/index.md)
+### S3
+
+For connections using [S3](../protocols/s3/index.md) protocol.
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -51,7 +53,9 @@ Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-ur
 ````
 `````
 
-### [OpenStack Swift](../protocols/openstack/index.md)
+### OpenStack Swift
+
+For connections using [OpenStack Swift](../protocols/openstack/index.md) protocol.
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -66,7 +70,9 @@ A private object stored in OpenStack Swift can be made publicly available for a 
 ````
 `````
 
-### [Azure](../protocols/azure.md)
+### Azure
+
+For connections to [Azure](../protocols/azure.md). 
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -81,17 +87,14 @@ Create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signa
 ````
 `````
 
-### [Backblaze B2](../protocols/b2.md)
+### Backblaze B2
+
+For connections to [Backblaze B2](../protocols/b2.md).
 
 `````{tabs}
 ````{group-tab} Cyberduck
 
 Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *File → Share…*.
-
-````
-````{group-tab} Mountain Duck
-
-Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} ../cyberduck/_images/B2_Authorized_URL.png
 :alt: B2 Authorized URL
@@ -99,9 +102,16 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 ```
 
 ````
+````{group-tab} Mountain Duck
+
+Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+
+````
 `````
 
-### [DRACOON](../protocols/dracoon.md)
+### DRACOON
+
+For [DRACOON](../protocols/dracoon.md) connections.
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -116,7 +126,9 @@ Create an [download share](../protocols/dracoon.md#download-share) for a file or
 ````
 `````
 
-### [Microsoft OneDrive](../protocols/onedrive.md) & [Microsoft SharePoint](../protocols/sharepoint.md)
+### OneDrive & Sharepoint
+
+For bookmarks configured with [Microsoft OneDrive](../protocols/onedrive.md) & [Microsoft SharePoint](../protocols/sharepoint.md) protocols.
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -131,7 +143,9 @@ Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *S
 ````
 `````
 
-### [Dropbox](../protocols/dropbox.md)
+### Dropbox
+
+For connections to [Dropbox](../protocols/dropbox.md).
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -156,7 +170,9 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 ````
 `````
 
-### [Google Drive](../protocols/google_drive.md)
+### Google Drive
+
+For connections to [Google Drive](../protocols/google_drive.md).
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -176,7 +192,9 @@ Share the web link to open download or open the file in Google Docs. This will s
 ````
 `````
 
-### [NextCloud and ownCloud](../protocols/webdav/nextcloud.md)
+### [NextCloud & ownCloud]
+
+For connections to [NextCloud & ownCloud](../protocols/webdav/nextcloud.md) servers.
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -196,7 +214,9 @@ Create public shares for people who are not Nextcloud users. Optionally set a pa
 ````
 `````
 
-### [Box](../protocols/box.md)
+### Box
+
+For connections to [Box](../protocols/box.md).
 
 `````{tabs}
 ````{group-tab} Cyberduck
@@ -216,9 +236,9 @@ Create download shares for files and folders by choosing *Share…* from the [co
 ````
 `````
 
-### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) & [WebDAV](../protocols/webdav/index.md)
+### FTP, SFTP & WebDAV
 
-If you connect to a web root, refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
+If you connect to a web root using ### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) or [WebDAV](../protocols/webdav/index.md), refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
 
 ```{note}
 You must use [Cyberduck](https://cyberduck.io) to edit the Web URL in a bookmark. The Web URL will replace your server address in URLs available in *Copy URL* .
