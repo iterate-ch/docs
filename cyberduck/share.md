@@ -12,17 +12,17 @@ Many storage providers have an option to share a file with a third party without
 
 *Upload* and *Download Shares* aren't available for all supported protocols. The table below shows the protocols which either support *Upload* or *Download Shares*.
 
-|| **Download Share** || **Upload Share** |
-| --- | --- | --- | --- |
-| **Protocol** | **Folder** | **File** | **Folder** |
-| S3 | ❌ | ✅ | ❌ |
-| B2 | ❌ | ✅ | ❌ |
-| Nextcloud | ✅ | ✅ | ✅ |
-| OneDrive | ✅ | ✅ | ❌ |
-| Google Drive | ✅ | ✅ | ❌ |
-| Dropbox | ❌ | ✅ | ❌ |
-| DRACOON | ✅ | ✅ | ✅ |
-| Box | ✅ | ✅ | ❌ |
+|| **Share…**   || **Request files…** |
+|--------------|--------------------| --- | --- |
+| **Protocol** | **Folder**         | **File** | **Folder** |
+| S3           | ❌                  | ✅ | ❌ |
+| B2           | ❌                  | ✅ | ❌ |
+| Nextcloud    | ✅                  | ✅ | ✅ |
+| OneDrive     | ✅                  | ✅ | ❌ |
+| Google Drive | ✅                  | ✅ | ❌ |
+| Dropbox      | ✅                  | ✅ | ✅ |
+| DRACOON      | ✅                  | ✅ | ✅ |
+| Box          | ✅                  | ✅ | ❌ |
 
 ## Providers with support to share a file using a public, password protected or temporary URL
 
