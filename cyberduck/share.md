@@ -1,16 +1,16 @@
 Share Files
 ====
 
-Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. Depending on the provider, the link may be auto expiring and no longer valid after a given period or a password can be set required to download the file.
+Many storage providers have an option to share a file with a third party without access to your account with a publicly accessible link. Depending on the provider, the link may be auto expiring and no longer valid after a given period or a password can be set required to download the file. Some providers support to _Request files…_ from others by creating an URL that allows others to add files to your account.
 
 ```{contents} Content
 :depth: 2
 :local:
 ```
 
-## Availability of Upload and Download Shares
+## Availability
 
-*Upload* and *Download Shares* aren't available for all supported protocols. The table below shows the protocols which either support *Upload* or *Download Shares*.
+The table below shows the protocols which support to share files using _Share…_ or _Request files…_.
 
 || **Share…**   || **Request files…** |
 |--------------|--------------------| --- | --- |
@@ -24,7 +24,12 @@ Many storage providers have an option to share a file with a third party without
 | DRACOON      | ✅                  | ✅ | ✅ |
 | Box          | ✅                  | ✅ | ❌ |
 
-## Providers with support to share a file using a public, password protected or temporary URL
+## Providers
+
+Providers with support to share a file using a public, password protected or temporary URL and request files to be uploaded.
+* _Share…_. Create link for file to be made available publicly or password protected.
+* _Request files…_. to create link to request upload of files to your account.
+* _Pre-Signed URL_. Create temporary link to download a file.
 
 ### [S3](../protocols/s3/index.md)
 
