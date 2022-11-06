@@ -88,11 +88,6 @@ You may not connect to a SharePoint enabled site through WebDAV if any of these 
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window.
 
-```{note}
-- Cyberduck 8.4 or later required.
-- Mountain Duck 4.12 or later required.
-```
-
 ## Limitations
 
 ### Top Level folder

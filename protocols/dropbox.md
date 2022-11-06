@@ -53,10 +53,6 @@ You can [search recursively](../cyberduck/browser.md#filter-and-search) for file
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. 
 
-```{note}
-- Cyberduck 8.4 or later required.
-- Mountain Duck 4.12 or later required.
-```
 
 ### Share
 
