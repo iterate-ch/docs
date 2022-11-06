@@ -82,6 +82,10 @@ You can [search recursively](../cyberduck/browser.md#filter-and-search) for file
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. 
 
+### Share
+
+Create download [shares](../cyberduck/share.md#onedrive--sharepoint) of files or folders for people outside of your organization using *File → Share...*.
+
 ## Limitations
 
 There are some limitations that you should keep in mind while working with.
