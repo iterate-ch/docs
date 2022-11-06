@@ -61,9 +61,9 @@ In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
 
-## Share Files
+## Share & Request Files
 
-Create [public shares](../../cyberduck/share.md#nextcloud-and-owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…* for download shares or *File → Request files…* for upload shares.
+Create [public shares](../../cyberduck/share.md#nextcloud--owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…* for download shares or *File → Request files…* for upload shares.
 
 ## Known Limitations
 

@@ -53,10 +53,9 @@ You can [search recursively](../cyberduck/browser.md#filter-and-search) for file
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. 
 
+## Share & Request Files
 
-### Share
-
-You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Choose *Cancel* to create a public URL with no password protection.
+You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Request others to add files to your Dropbox with *File → Request Files…".
 
 ## Known Limitations
 
