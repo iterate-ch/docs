@@ -194,7 +194,7 @@ Share the web link to open download or open the file in Google Docs. This will s
 ````
 `````
 
-### [NextCloud & ownCloud]
+### NextCloud & ownCloud
 
 For connections to [NextCloud & ownCloud](../protocols/webdav/nextcloud.md) servers.
 
