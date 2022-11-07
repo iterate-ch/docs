@@ -38,12 +38,14 @@ For connections using [S3](../protocols/s3/index.md) protocol.
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Edit → Copy URL → Signed URL*.
+* Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Edit → Copy URL → Signed URL*.
+* Choose *File → Share…* to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../cyberduck/info.md#access-control-list-acl).
 
 ````
 ````{group-tab} Mountain Duck
 
-Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+* Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+* Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../cyberduck/info.md#access-control-list-acl).
 
 ```{image} ../cyberduck/_images/S3_Pre-Signed_URL.png
 :alt: Pre-Signed URL

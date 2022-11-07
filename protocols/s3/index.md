@@ -486,6 +486,8 @@ You can access all URLs (including from [CDN](../../protocols/cdn/cloudfront.md)
 Public URLs are only accessible if the permission `READ` is granted for `EVERYONE`.
 ```
 
+Choose *File → Share…* to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../../cyberduck/info.md#access-control-list-acl).
+
 ### Pre-signed Temporary URLs
 
 A private object stored in S3 can be made publicly available for a limited time using a pre-signed URL. The pre-signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the pre-signed URL from *Edit → Copy URL→ Signed URL* or *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*.
