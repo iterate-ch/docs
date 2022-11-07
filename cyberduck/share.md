@@ -38,13 +38,13 @@ For connections using [S3](../protocols/s3/index.md) protocol.
 `````{tabs}
 ````{group-tab} Cyberduck
 
-* Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Edit → Copy URL → Signed URL*.
+* Choose *Edit → Copy URL → Signed URL* to create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL making a private object stored in a S3 bucket publicly available for a limited time.
 * Choose *File → Share…* to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../cyberduck/info.md#access-control-list-acl).
 
 ````
 ````{group-tab} Mountain Duck
 
-* Create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL. Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+* Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share) to create a [pre-signed temporary](../protocols/s3/index.md#pre-signed-temporary-urls) URL making a private object stored in a S3 bucket publicly available for a limited time.
 * Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../cyberduck/info.md#access-control-list-acl).
 
 ```{image} ../cyberduck/_images/S3_Pre-Signed_URL.png
@@ -62,12 +62,12 @@ For connections using [OpenStack Swift](../protocols/openstack/index.md) protoco
 `````{tabs}
 ````{group-tab} Cyberduck
 
-A private object stored in OpenStack Swift can be made publicly available for a limited time using a [signed URL](../protocols/openstack/index.md#temporary-urls). Choose *Edit → Copy URL → Signed URL*.
+Choose *Edit → Copy URL → Signed URL* to make a private object stored in OpenStack Swift publicly available for a limited time using a [signed URL](../protocols/openstack/index.md#temporary-urls).
 
 ````
 ````{group-tab} Mountain Duck
 
-A private object stored in OpenStack Swift can be made publicly available for a limited time using a [signed URL](../protocols/openstack/index.md#temporary-urls). Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share) to make a private object stored in OpenStack Swift publicly available for a limited time using a [signed URL](../protocols/openstack/index.md#temporary-urls).
 
 ````
 `````
@@ -79,12 +79,12 @@ For connections to [Azure](../protocols/azure.md).
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signature-urls). Choose *Edit → Copy URL → Signed URL*.
+Choose *Edit → Copy URL → Signed URL* to create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signature-urls).
 
 ````
 ````{group-tab} Mountain Duck
 
-Create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signature-urls). Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share).
+Choose *Copy URL* from the [context menu](../mountainduck/interface.md#share) to create a [Shared Access Signature URL](../protocols/azure.md#shared-access-signature-urls).
 
 ````
 `````
@@ -96,7 +96,7 @@ For connections to [Backblaze B2](../protocols/b2.md).
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *File → Share…*.
+Choose *File → Share…* to create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days.
 
 ```{image} ../cyberduck/_images/B2_Authorized_URL.png
 :alt: B2 Authorized URL
@@ -106,7 +106,7 @@ Create an [authorized URL](../protocols/b2.md#authorized-url) to make files avai
 ````
 ````{group-tab} Mountain Duck
 
-Create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to create an [authorized URL](../protocols/b2.md#authorized-url) to make files available publicly expiring after 7 days.
 
 ````
 `````
@@ -118,12 +118,12 @@ For [DRACOON](../protocols/dracoon.md) connections.
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create an [download share](../protocols/dracoon.md#download-share) for a file or folder. Choose *File → Share…*. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public with no password protection.
+Choose *File → Share…* to create an [download share](../protocols/dracoon.md#download-share) for a file or folder. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public with no password protection.
 
 ````
 ````{group-tab} Mountain Duck
 
-Create an [download share](../protocols/dracoon.md#download-share) for a file or folder. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+Choose *Share…* from the [context menu](../mountainduck/interface.md#share)  to create an [download share](../protocols/dracoon.md#download-share) for a file or folder.
 
 ````
 `````
@@ -135,12 +135,12 @@ For bookmarks configured with [Microsoft OneDrive](../protocols/onedrive.md) & [
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create an [shared link](../protocols/onedrive.md) for a file or folder. Choose *File → Share…*.
+Choose *File → Share…*. to create an [shared link](../protocols/onedrive.md) for a file or folder.
 
 ````
 ````{group-tab} Mountain Duck
 
-Create a [shared link](../protocols/onedrive.md) for a file or folder. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to create a [shared link](../protocols/onedrive.md) for a file or folder.
 
 ````
 `````
@@ -152,7 +152,7 @@ For connections to [Dropbox](../protocols/dropbox.md).
 `````{tabs}
 ````{group-tab} Cyberduck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection. Choose *File → Share…*.
+Choose *File → Share…* to share an [URL](../protocols/dropbox.md#share--request-files) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection.
 
 ```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
@@ -162,7 +162,7 @@ You can share an [URL](../protocols/dropbox.md#share) to provide access to a doc
 ````
 ````{group-tab} Mountain Duck
 
-You can share an [URL](../protocols/dropbox.md#share) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to share an [URL](../protocols/dropbox.md#share--request-files) to provide access to a document in your Dropbox. Optionally set a password required to download the file. Uncheck *Require Passphrase* to create a public URL with no password protection.
 
 ```{image} ../cyberduck/_images/Passphrase_Prompt_Dropbox_Share.png
 :alt: Passphrase Prompt Dropbox Share
@@ -179,12 +179,12 @@ For connections to [Google Drive](../protocols/google_drive.md).
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`. Choose *File → Share…*.
+Choose *File → Share…*. to share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`.
 
 ````
 ````{group-tab} Mountain Duck
 
-Share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`. Choose *Share…* from the [context menu](../mountainduck/interface.md#share).
+Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`.
 
 ```{image} ../cyberduck/_images/Share_File_Google_Drive_.png
 :alt: Share File Google Drive
