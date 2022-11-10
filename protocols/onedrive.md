@@ -34,14 +34,13 @@ Alternatively, you can reset the OAuth token by deleting the entries related to 
 
 All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue you need to reauthenticate by performing an [OAuth Reset](#oauth-reset).
 
-### Which Protocol to Choose?
+### Available Connection Profiles
 
-|  | Allows access to | Remarks | Bundled by default |
-| --- | --- | --- | :---: |
-| Microsoft OneDrive | Your Drive, and shared files	| Works with your personal and business OneDrive | Yes |
-| [Microsoft SharePoint](sharepoint.md) | All sites document libraries and accessible group document libraries<br/><br/>**prior Cyberduck 7.8 / Mountain Duck 4.4:** The default sites document libraries and accessible group document libraries | The connection profile is named Microsoft SharePoint Online in versions **prior Cyberduck 7.8 / Mountain Duck 4.4** | Yes |
-| Microsoft SharePoint Site | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* | Can't mount specific directories | Yes |
-| Microsoft SharePoint Document Library	| Can't mount specific directories | Does not allow access to groups<br/><br/>Only needed for versions **prior Cyberduck 6.9 / Mountain Duck 2.7** | No |
+|                                            | Allows access to | Remarks                                        | Bundled by default |
+|--------------------------------------------| --- |------------------------------------------------| :---: |
+| Microsoft OneDrive                         | Your Drive and shared files	| Works with your Personal and Business OneDrive | Yes |
+| [Microsoft SharePoint](sharepoint.md)      | All sites document libraries and accessible group document libraries |                                                | Yes |
+| [Microsoft SharePoint Site](sharepoint.md) | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* | Can't mount specific directories               | Yes |
 
 ### Administrator Consent Required
 
