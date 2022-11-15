@@ -318,11 +318,6 @@ You can view all revisions of a file in the browser by choosing *View → Show H
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
 
-```{note}
-- Cyberduck 8.4 or later required.
-- Mountain Duck 4.12 or later required.
-```
-
 #### Revert
 
 To revert to a previous version and make it the current, choose *File → Revert*.
@@ -490,6 +485,8 @@ You can access all URLs (including from [CDN](../../protocols/cdn/cloudfront.md)
 ```{important}
 Public URLs are only accessible if the permission `READ` is granted for `EVERYONE`.
 ```
+
+Choose *File → Share…* to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../../cyberduck/info.md#access-control-list-acl).
 
 ### Pre-signed Temporary URLs
 

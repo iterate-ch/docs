@@ -38,10 +38,6 @@ Choose *File → Share…* to create a download share for a file. Default settin
 
 A list of file versions can be viewed within the *Versions* panel of the *[Info](../cyberduck/info.md)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
 
-```{note}
-- Cyberduck 8.4 or later required.
-- Mountain Duck 4.12 or later required.
-```
 
 ## References
 - [Encryption](https://cloud.support.dracoon.com/hc/en-us/articles/115001832709-Encryption)
