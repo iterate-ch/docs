@@ -9,6 +9,7 @@ cdn/index
 ftp
 sftp
 webdav/index
+webdav/nextcloud
 s3/index
 google_cloud_storage
 openstack/index
