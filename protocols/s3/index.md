@@ -5,7 +5,7 @@ Amazon S3
 :hidden:
 :titlesonly:
 alibaba
-cloudflare_r2
+cloudflare
 cynny
 digitalocean
 dreamobjects
