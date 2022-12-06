@@ -94,9 +94,8 @@ The agent `ssh-agent` is running by default on macOS. You add private key identi
 ```
 
 ```{group-tab} Windows
-There is support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on Windows.
-
-- [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty)
+ * Support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
+ * Support for using the agent over the OpenSSH pipe (\\.\pipe\openssh-ssh-agent).
 ```
 ````
 
