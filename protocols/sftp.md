@@ -90,7 +90,7 @@ When connecting to a SSH server, Cyberduck will lookup matching private keys fro
 
 ````{tabs}
 ```{group-tab} macOS
-There is support for OpenSSH `ssh-agent`. The agent `ssh-agent` is running by default on OS X. You add private key identities to the authentication agent using the program `ssh-add`. 
+The agent `ssh-agent` is running by default on macOS. You add private key identities to the authentication agent using the program `ssh-add`. The SSH agent is located using the `IdentityAgent` directive in `~/.ssh/config` or if missing from the environment variable `SSH_AUTH_SOCK`.
 ```
 
 ```{group-tab} Windows
