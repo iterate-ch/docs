@@ -57,6 +57,10 @@ In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
 6. Upon connecting, enter your password when requested in the login prompt.
 
+```{warning}
+Make sure to use the actual username instead of the email address for login credential.
+```
+
 ### 2-Factor Authentication
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
