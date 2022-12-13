@@ -27,6 +27,8 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - **Wasabi EU West 2 (Paris)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Wasabi%20(eu-west-2).cyberduckprofile>` the *Wasabi Storage (eu-west-2) Connection Profile* for preconfigured settings.
 - **Wasabi AP Northeast 1 (Tokyo)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Wasabi%20(ap-northeast-1).cyberduckprofile>` the *Wasabi Storage (ap-northeast-1) Connection Profile* for preconfigured settings.
 - **Wasabi AP Northeast 2 (Osaka)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Wasabi%20(ap-northeast-2).cyberduckprofile>` the *Wasabi Storage (ap-northeast-2) Connection Profile* for preconfigured settings.
+- **Wasabi AP Southeast 1 (Singapore)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Wasabi%20(ap-southeast-1).cyberduckprofile>` the *Wasabi Storage (ap-southeast-1) Connection Profile* for preconfigured settings.
+- **Wasabi AP Southeast 2 (Sydney)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Wasabi%20(ap-southeast-2).cyberduckprofile>` the *Wasabi Storage (ap-southeast-2) Connection Profile* for preconfigured settings.
 
 ## Known Issues
 
