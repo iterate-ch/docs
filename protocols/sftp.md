@@ -88,15 +88,18 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
 
+```{warning}
+The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/13945).
+```
+
 ````{tabs}
 ```{group-tab} macOS
-There is support for OpenSSH `ssh-agent`. The agent `ssh-agent` is running by default on OS X. You add private key identities to the authentication agent using the program `ssh-add`. 
+The agent `ssh-agent` is running by default on macOS. You add private key identities to the authentication agent using the program `ssh-add`. The SSH agent is located using the `IdentityAgent` directive in `~/.ssh/config` or if missing from the environment variable `SSH_AUTH_SOCK`.
 ```
 
 ```{group-tab} Windows
-There is support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on Windows.
-
-- [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty)
+ * Support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
+ * Support for using the agent over the OpenSSH pipe (\\.\pipe\openssh-ssh-agent).
 ```
 ````
 
@@ -162,10 +165,12 @@ You can also work with aliases like
 
 Open in *Terminal* allows you to open an SSH shell for the current working directory with a single click.
 
+```{warning}
+The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/7664).
+```
+
 ````{tabs}
-
 ```{group-tab} macOS
-
 **Terminal.app**
 
 Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to your browser.
