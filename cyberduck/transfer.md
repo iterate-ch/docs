@@ -78,7 +78,8 @@ Use the drop-down menu in the lower right of the transfer window to set the maxi
 
 You can choose to use single or multiple connections for file transfers. Choose *Preferences → Transfers → Transfer Files* to set the default or for a bookmark in *Bookmark → Edit Bookmark → Transfer Files*.
 
-**Open single connection:** Use a single connection to transfer files from a transfer sequentially.<br/>
+**Use browser connection:** Use the browser connection to transfer files.<br/>
+**Open single connection:** Use a single connection additionally to the browser connection to transfer files from a transfer sequentially.<br/>
 **Open multiple connections:** Use multiple connections to transfer files from a transfer concurrently.
 
 ```{image} _images/Transfer_Options.png
