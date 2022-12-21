@@ -7,7 +7,7 @@ Google Drive
 ```
 
 ```{tip}
-Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream*.
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream* or *Drive for Desktop".
 ```
 
 ## Connecting
