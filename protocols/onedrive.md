@@ -6,6 +6,10 @@ Microsoft OneDrive
 :width: 128px
 ```
 
+```{tip}
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to the *One Drive* client from Microsoft.
+```
+
 ## Connecting
 
 > Microsoft Graph, OneDrive, and SharePoint support using a standard OAuth2 authorization flow.
