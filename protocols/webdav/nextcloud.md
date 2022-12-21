@@ -27,6 +27,10 @@ NextCloud & ownCloud
 
 `````
 
+```{tip}
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client" from Nextcloud & ownCloud.
+```
+
 ## Connecting
 
 ### Manual Configuration
