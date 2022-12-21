@@ -1,6 +1,15 @@
 Microsoft SharePoint
 ====
 
+```{image} _images/onedrive.png
+:alt: Microsoft OneDrive
+:width: 128px
+```
+
+```{tip}
+Download [Mountain Duck](https://mountainduck.io/) to access in Finder on macOS & Windows Explorer.
+```
+
 ## SharePoint Online
 
 ### Microsoft SharePoint Connection Profile
