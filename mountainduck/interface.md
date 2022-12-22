@@ -211,22 +211,10 @@ Refer to [Sync Options](sync/index.md#keep-offline)
 
 ### Reload
 
-`````{tabs}
-````{tab} Mountain Duck 4.13.2 or later
-
-Mountain Duck periodically polls for changes for open folders in Finder or Windows Explorer. The polling interval defaults to 60 seconds for both connection modes.
-
-````
-
-````{tab} Prior Mountain Duck 4.13.2
-
-Changes from the server are not immediately visible. The directory listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Choose *Reload* from the *Finder Extension Menu* on macOS to refresh the directory listing. You can force *File Explorer* on Windows to refresh the directory listing with F5.
-
-````
-`````
+Changes from the server are not immediately visible. The directory listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Choose *Reload* from the *Finder Extension Menu* on macOS to refresh the directory listing.
 
 ```{note}
-Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories.
+Mountain Duck periodically polls for changes for open folders in _Finder_ or _Windows Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes. Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories regardless of any open window for the folder in _Finder_ or _Windows Explorer_.
 ```
 
 ### Share
