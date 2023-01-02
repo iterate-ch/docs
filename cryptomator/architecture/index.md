@@ -1,7 +1,7 @@
 Encryption Security Architecture
 ====
 
-Please refer to [Cryptomator](index) security overview for more details.
+Please refer to [Cryptomator](https://docs.cryptomator.org/en/latest/security/architecture/) security overview for more details.
 
 ## Masterkey
 
