@@ -32,10 +32,10 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ## Interoperability
 
-Using Mountain Duck and pCloud client simultaneously can cause DNS failures because pCloud client requires an older version of system driver than Mountain Duck. 
+Using Mountain Duck and pCloud client simultaneously can cause problems because pCloud client requires an older version of system driver than Mountain Duck. 
 
 ```{note}
-Reported for pCloud Client version 4.0.1 (Windows).
+Reported for pCloud Client version 4.0.0 (Windows).
 ```
 
 ## References
