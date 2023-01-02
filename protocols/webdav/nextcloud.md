@@ -75,6 +75,10 @@ Create [public shares](../../cyberduck/share.md#nextcloud--owncloud) for people 
 
 ## Known Limitations
 
+### `Connection failed`
+
+Adding the path to the server field can cause constant DNS failures while connecting.
+
 ### 0-Byte Files
 
 If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues/fastcgi.md).
