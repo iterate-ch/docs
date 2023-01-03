@@ -19,6 +19,10 @@ Click the *New Connection* toolbar button or *File â†’ Open Connection.. (mac `â
 :width: 500px
 ```
 
+```{important}
+Adding a path to the server panel leads to connection failures.
+```
+
 ## Quick Connect
 
 Type in the name of the server directly into the *Quick Connect* field in the toolbar. The text field will autocomplete from [bookmarked](bookmarks.md) hosts. You can enter a string in the format `user@host`, i.e. `user@example.net`, or a fully qualified URL such as `ftp://mirror.switch.ch/mirror/`. Refer to valid [URI](../cli/index.md#uri) formats for input.

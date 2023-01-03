@@ -119,6 +119,10 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | Encoding | For [FTP](../protocols/ftp.md) connections only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../protocols/ftp.md#character-encoding). |
 | Timezone | For all protocols except [FTP](../protocols/ftp.md), timestamps are reported in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../protocols/ftp.md)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the browser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
 
+```{important}
+Adding a path to the server panel leads to connection failures.
+```
+
 ### Passwords
 
 `````{tabs}
