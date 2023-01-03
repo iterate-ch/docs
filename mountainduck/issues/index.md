@@ -296,7 +296,7 @@ May interfere with installation.
 
 #### xbar
 
-Using the xbar menu bar plugins, the Mountain Duck icon may not appear in the menu bar.
+Using the _xbar_ for macOS, the Mountain Duck icon in the status bar may not appear.
 
 ### Backups
 
