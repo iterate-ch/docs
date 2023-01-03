@@ -32,7 +32,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ## Interoperability
 
-Using Mountain Duck and pCloud client simultaneously can cause problems because pCloud client requires an older version of system driver than Mountain Duck. 
+Using Mountain Duck and pCloud Client simultaneously can cause issues for the pCloud Client. The Client requires an older version of the system driver than Mountain Duck and can't deal with the newer version intalled by Mountain Duck. 
 
 ```{note}
 Reported for pCloud Client version 4.0.0 (Windows).
