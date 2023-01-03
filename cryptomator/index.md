@@ -34,7 +34,7 @@ Compared to other client-side-encryption solutions, the Cryptomator based approa
 You can create a new vault directory anywhere on your remote storage. This will initialize the vault with a `masterkey.cryptomator`. A backup of the master key file (`masterkey.cryptomator`) is saved in user defaults. The encrypted keys in `masterkey.cryptomator` are not more sensitive than the encrypted files in the vault. For technical aspects, refer to [Masterkey Derivation](https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation).
 
 `````{tabs}
-````{group-tab} macOS
+````{group-tab} Cyberduck
 
 Choose *File → New Vault…* to create a new vault. 
 
@@ -44,7 +44,7 @@ Choose *File → New Vault…* to create a new vault.
 ```
 
 ````
-````{group-tab} Windows
+````{group-tab} Mountain Duck
 
 - Choose *New Vault…* from the Finder Extension toolbar or context menu using right-click in Finder or Windows Explorer.
 
