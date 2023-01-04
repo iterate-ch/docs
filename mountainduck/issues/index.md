@@ -294,6 +294,10 @@ Be aware that Bitdefender may interfere with connections.
 
 May interfere with installation.
 
+#### xbar
+
+Using the _xbar_ for macOS, the Mountain Duck icon in the status bar may not appear.
+
 ### Backups
 
 `````{tabs}
