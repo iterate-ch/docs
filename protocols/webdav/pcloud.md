@@ -30,6 +30,14 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - Username: pCloud login Email
 - Password: pCloud login password
 
+## Interoperability
+
+Using Mountain Duck and pCloud Client simultaneously can cause issues for the pCloud Client. The Client requires an older version of the system driver than Mountain Duck and can't deal with the newer version intalled by Mountain Duck. 
+
+```{note}
+Reported for pCloud Client version 4.0.0 (Windows).
+```
+
 ## References
 
 - [pCloud via WebDAV ansprechen](https://www.techstream.at/pcloud-via-webdav-ansprechen-geht-das/)
