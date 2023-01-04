@@ -19,8 +19,8 @@ Click the *New Connection* toolbar button or *File â†’ Open Connection.. (mac `â
 :width: 500px
 ```
 
-```{important}
-Adding a path to the server panel leads to connection failures.
+```{tip}
+Create a new [bookmark](bookmarks.md) instead if you need to configure [additional options](bookmarks.md#bookmark-options) like _Path_. 
 ```
 
 ## Quick Connect
