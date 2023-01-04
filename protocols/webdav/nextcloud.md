@@ -69,7 +69,13 @@ Make sure to use the actual username instead of the email address for login cred
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
 
-## Share & Request Files
+## Features
+
+### Versioning
+
+A list of file versions can be viewed in the *Versions* tab of the *[Info](../../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. 
+
+### Share & Request Files
 
 Create [public shares](../../cyberduck/share.md#nextcloud--owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…* for download shares or *File → Request files…* for upload shares.
 
