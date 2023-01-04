@@ -108,7 +108,7 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | :--- | :--- |
 | Protocol | Your hosting service provider will let you know what protocol to use. Change the [protocol](connection.md#supported-protocols) in the<br/>topmost popup menu. |
 | Nickname | Any name for the bookmark describing it for easy access using the bookmark filter. You can<br/>also type this name in the bookmark view to select it by name. |
-| Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. |
+| Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. *Make sure no server path is included but only the domain name and instead set any server path in _Path_.* |
 | Username | The login credentials from your service provider. |
 | SSH Private<br/>Key | For [SFTP](../protocols/sftp.md) connections only. Choose a private key for public key authentication instead of a<br/>password. If the key is password-protected, you are prompted to enter the passphrase to<br/>decrypt the key. |
 | Client<br/>Certificate | For [HTTPS](../protocols/webdav/index.md#mutual-tls-mtls) connections only. Choose a client certificate for mutual transport level security (TLS). |
@@ -118,10 +118,6 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | Connect<br/>Mode | For [FTP](../protocols/ftp.md) connections only. Refer to [FTP Connect Mode](../protocols/ftp.md#ftp-connect-mode). |
 | Encoding | For [FTP](../protocols/ftp.md) connections only. Character encoding of filenames on the server. You can also change<br/>the encoding used when the connection is open using *View → Text Encoding* if characters<br/>are not displayed properly. Try `UTF-8` (the default), `ISO-8859-1`, and `Windows-1252`.<br/>Refer to [Character Encoding](../protocols/ftp.md#character-encoding). |
 | Timezone | For all protocols except [FTP](../protocols/ftp.md), timestamps are reported in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) from the server and there is no<br/>need for configuration. All timestamps in the browser are automatically converted to the timezone<br/>you have configured in the *System Preferences* and displayed in local time. For [FTP](../protocols/ftp.md)<br/>however, the local timezone is assumed for timestamps in directory listings If the server<br/>is configured with a different timezone that your Mac and returning the local time for<br/>modification dates, there will be an offset by the timezone difference. To get the correct local<br/>time for modification dates in the browser, you can choose the timezone of the server in the<br/>bookmark settings. Select *Bookmark → Edit Bookmark*. |
-
-```{important}
-Adding a path to the server panel leads to connection failures.
-```
 
 ### Passwords
 
