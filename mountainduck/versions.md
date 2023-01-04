@@ -21,6 +21,7 @@ The versions feature within the *Info* window is supported for the following pro
 | **[Microsoft Sharepoint](../protocols/sharepoint.md)** | ❌ | ✅ | ❌ |
 | **[DRACOON](../protocols/dracoon.md)** | ✅ | ❌ | ✅ |
 | **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ |
+| **[Nextcloud](../protocols/webdav/nextcloud.md)** | ✅ | ✅ | ❌ |
 
 ```{attention}
 Using [S3](../protocols/s3/index.md) versions will only be displayed for buckets with versioning enabled. Versioning can be enabled per bucket in by choosing *Info → S3* in *Finder* on macOS or *File Explorer* on Windows. Alternatively, enable versioning in AWS Console or [Cyberduck](../cyberduck/index.md).
