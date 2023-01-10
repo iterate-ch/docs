@@ -140,7 +140,7 @@ Synchronization is paused when the soft quota is reached.
 
 This quota information is only available for the following protocols:
 - [WebDAV](../../protocols/webdav/index.md)
-- [Google Drive](../../protocols/google_drive.md)
+- [Google Drive](../../protocols/googledrive.md)
 - [Dropdox](../../protocols/dropbox.md)
 - [Microsoft OneDrive](../../protocols/onedrive.md)
 - [Microsoft Sharepoint](../../protocols/sharepoint.md)

@@ -11,7 +11,7 @@ Login using OAuth is currently failing with the default OAuth Client ID applicat
 Sign in with Google temporarily disabled for this app. This app has not been verified yet by Google in order to use Google Sign In.
 ```
 
-As a workaround, you can register your own OAuth Client ID to connect to [Google Drive](../google_drive.md). For [Google Storage](../google_cloud_storage.md) you can use [Interoperable Access](../google_cloud_storage.md#interoperable-access) as a workaround.
+As a workaround, you can register your own OAuth Client ID to connect to [Google Drive](../googledrive.md). For [Google Storage](../googlecloudstorage.md) you can use [Interoperable Access](../googlecloudstorage.md#interoperable-access) as a workaround.
 
 ## Register Client ID
 

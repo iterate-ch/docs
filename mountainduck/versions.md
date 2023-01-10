@@ -15,8 +15,8 @@ The versions feature within the *Info* window is supported for the following pro
 | --- | --- | --- | --- |
 | **[S3](../protocols/s3/index.md)** | ✅ | ✅ | ✅ |
 | **[Backblaze B2](../protocols/b2.md)** | ✅ | ✅ | ✅ |
-| **[Google Drive](../protocols/google_drive.md)** | ❌ | ✅ | ✅ |
-| **[Google Storage](../protocols/google_cloud_storage.md)** | ✅ | ✅ | ✅ |
+| **[Google Drive](../protocols/googledrive.md)** | ❌ | ✅ | ✅ |
+| **[Google Storage](../protocols/googlecloudstorage.md)** | ✅ | ✅ | ✅ |
 | **[Microsoft OneDrive](../protocols/onedrive.md)** | ✅ | ✅ | ❌ |
 | **[Microsoft Sharepoint](../protocols/sharepoint.md)** | ❌ | ✅ | ❌ |
 | **[DRACOON](../protocols/dracoon.md)** | ✅ | ❌ | ✅ |

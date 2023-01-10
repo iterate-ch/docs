@@ -167,7 +167,7 @@ Both [Cyberduck](https://cyberduck.io/) and [Mountain Duck](https://mountainduck
 :width: 400px
 ```
 
-In your local disk connection, you can access all directories which are saved on your local disk. This includes for example your local synchronized [Dropbox](../protocols/dropbox), [Google Drive](../protocols/google_drive) and [OneDrive](../protocols/onedrive) directories.
+In your local disk connection, you can access all directories which are saved on your local disk. This includes for example your local synchronized [Dropbox](../protocols/dropbox), [Google Drive](../protocols/googledrive) and [OneDrive](../protocols/onedrive) directories.
 
 ````{admonition} Access a Cryptomator Vault on local disk on the example of Dropbox
 :class: note

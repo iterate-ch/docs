@@ -14,12 +14,12 @@ eucalyptus
 exoscale
 filebase
 iam
-ibm_cos
-idrive_cloud
+ibmcos
+idrivecloud
 ionos
 linode
 minio
-oracle_cloud
+oraclecloud
 pilvio
 polycloud
 scaleway
@@ -27,7 +27,7 @@ scality
 seagate
 spectra
 storadera
-storj_dcs
+storjdcs
 verizon
 vitanium
 wasabi
@@ -231,15 +231,15 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Eucalyptus Walrus](eucalyptus.md)
 - [Exoscale Swiss Object Storage](exoscale.md)
 - [Filebase](filebase.md)
-- [Google Storage](../google_cloud_storage.md)
-- [IBM Cloud Object Storage (COS)](ibm_cos.md)
-- [IDrive® Cloud](idrive_cloud.md#idrive-cloud)
-- [IDrive® e2](idrive_cloud.md#idrive-e2)
+- [Google Storage](../googlecloudstorage.md)
+- [IBM Cloud Object Storage (COS)](ibmcos.md)
+- [IDrive® Cloud](idrivecloud.md#idrive-cloud)
+- [IDrive® e2](idrivecloud.md#idrive-e2)
 - [IONOS Cloud Object Storage](ionos.md)
 - [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
 - [MinIO Cloud Storage](minio.md)
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
-- [Oracle Storage Cloud Service](oracle_cloud.md#oci-object-storage)
+- [Oracle Storage Cloud Service](oraclecloud.md#oci-object-storage)
 - [Outscale (using CEPH Opensource)](https://www.outscale.com/)
 - [Pilvio](pilvio.md)
 - [Polycloud](polycloud.md)
@@ -250,7 +250,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Seeweb](https://www.seeweb.it/)
 - [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 - [Storadera](storadera.md)
-- [Storj DCS](storj_dcs.md)
+- [Storj DCS](storjdcs.md)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
 - [Verizon Cloud Storage](verizon.md)
 - [Vitanium Cloud](vitanium.md)

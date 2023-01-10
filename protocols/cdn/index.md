@@ -19,7 +19,7 @@ Using the [Info](../../cyberduck/info.md) panel, the following content distribut
 
 ## Logging & Analytics
 
-Configuration for the delivery of access logs can be configured from within Cyberduck in the [Info window](../../cyberduck/info.md) for [S3](../s3/index.md), [Google Cloud Storage](../google_cloud_storage.md) and [Amazon CloudFront](cloudfront.md) CDN distributions. The server create a massive amount of log files which is best analyzed with a third-party service.
+Configuration for the delivery of access logs can be configured from within Cyberduck in the [Info window](../../cyberduck/info.md) for [S3](../s3/index.md), [Google Cloud Storage](../googlecloudstorage.md) and [Amazon CloudFront](cloudfront.md) CDN distributions. The server create a massive amount of log files which is best analyzed with a third-party service.
 
 ## Amazon CloudFront
 

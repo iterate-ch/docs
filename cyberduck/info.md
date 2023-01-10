@@ -54,8 +54,8 @@ The following protocols support to view previous versions of files.  Some protoc
 | --- | --- | --- | --- | --- |
 | **[S3](../protocols/s3/index.md)** | ✅ | ✅ | ✅ | ✅ |
 | **[Backblaze B2](../protocols/b2.md)** | ✅ | ✅ | ✅ | ✅ |
-| **[Google Drive](../protocols/google_drive.md)** | ❌ | ✅ | ✅ | ✅ |
-| **[Google Storage](../protocols/google_cloud_storage.md)** | ✅ | ✅ | ✅ | ✅ |
+| **[Google Drive](../protocols/googledrive.md)** | ❌ | ✅ | ✅ | ✅ |
+| **[Google Storage](../protocols/googlecloudstorage.md)** | ✅ | ✅ | ✅ | ✅ |
 | **[Microsoft OneDrive](../protocols/onedrive.md)** | ✅ | ✅ | ❌ | ❌ |
 | **[Microsoft Sharepoint](../protocols/sharepoint.md)** | ❌ | ✅ | ❌ | ❌ |
 | **[DRACOON](../protocols/dracoon.md)** | ✅ | ❌ | ✅ | ❌ | 
@@ -76,10 +76,10 @@ Change the permissions on a particular file or folder when connected to a [FTP](
 
 ## Access Control List (ACL)
 
-Edit access control list for fine grained user permissions when connected to [Amazon S3](../protocols/s3/index.md) or [Google Cloud Storage](../protocols/google_cloud_storage.md).
+Edit access control list for fine grained user permissions when connected to [Amazon S3](../protocols/s3/index.md) or [Google Cloud Storage](../protocols/googlecloudstorage.md).
 
 - [S3 ACLs](../protocols/s3/index.md#access-control-acl)
-- [Google Storage ACLs](../protocols/google_cloud_storage.md#acls)
+- [Google Storage ACLs](../protocols/googlecloudstorage.md#acls)
 
 ```{image} _images/Access_Control_Lists.png
 :alt: Access Control Lists
@@ -151,7 +151,7 @@ View and modify metadata attributes of files.
 
 Any non-standard HTTP header values are (transparently) prefixed with the following values following the guidelines from the different providers:
 
-- Values are prefixed with `x-amz-meta-` for [S3](../protocols/s3/index.md) and [Google Storage](../protocols/google_cloud_storage.md).
+- Values are prefixed with `x-amz-meta-` for [S3](../protocols/s3/index.md) and [Google Storage](../protocols/googlecloudstorage.md).
 - Values are prefixed with `X-Object-Meta-` for [CloudFiles](../protocols/openstack/cloudfiles.md).
 
 ```{image} _images/Metadata.png
