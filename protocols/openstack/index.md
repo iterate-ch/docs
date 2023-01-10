@@ -6,9 +6,9 @@ Swift (OpenStack Object Storage)
 :titlesonly:
 auro
 cloud.ca
-cloud_a
+clouda
 cloudfiles
-enter_cloud_suite
+entercloudsuite
 flexcloud
 hubic
 infomaniak
@@ -102,19 +102,19 @@ Refer to the [Cyberduck CLI](../../cli/index.md) documentation for more operatio
 - [Internap AgileFILES](internap.md)
 - [Cloud.ca Object Store](cloud.ca.md)
 - [Memset Memstore Object Storage](memset.md)
-- [Enter Cloud Suite](enter_cloud_suite.md)
-- [Oracle Storage Cloud Service](../s3/oracle_cloud.md#oci-object-storage-classic)
+- [Enter Cloud Suite](entercloudsuite.md)
+- [Oracle Storage Cloud Service](../s3/oraclecloud.md#oci-object-storage-classic)
 - [Oktawave Cloud Storage](oktawave.md)
 - [SwiftStack](swiftstack.md)
 - [RunAbove](https://runabove.readthedocs.io/en/latest/en/-posts/2014-04-22-how-to-use-cyberduck-with-openstack-swift/)
-- [Cloud A](cloud_a.md)
+- [Cloud A](clouda.md)
 - [AURO](auro.md)
 - [OVH](ovh.md)
 - [HubiC (OVH)](hubic.md)
 - [Zetta.IO](zetta.io.md)
 - [Selectel Cloud Storage](selectel.md)
 - [Infomaniak](infomaniak.md)
-- [IDrive® Cloud](../s3/idrive_cloud.md#openstack-swift) 
+- [IDrive® Cloud](../s3/idrivecloud.md#openstack-swift) 
 - [OpenStack FlexCloud](flexcloud.md)
 
 ## Temporary URLs

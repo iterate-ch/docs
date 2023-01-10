@@ -50,7 +50,7 @@ Search is case-insensitive and does look for matching sequences in the filename 
 
 The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
 
-- [Google Drive](../protocols/google_drive.md)
+- [Google Drive](../protocols/googledrive.md)
 - [Dropbox](../protocols/dropbox.md)
 - [Amazon S3](../protocols/s3/index.md)
 - [Backblaze B2](../protocols/b2.md)
@@ -120,7 +120,7 @@ Some protocols support the trashing of files instead of permanently deleting the
 	browser.delete.trash=false
 
 This is supported for the following protocols: 
-- [Google Drive](../protocols/google_drive.md)
+- [Google Drive](../protocols/googledrive.md)
 
 ### Create a Symbolic Link
 
@@ -191,7 +191,7 @@ You can view all revisions of a file in the browser by choosing *View → Show H
 
 - [S3](../protocols/s3/index.md)
 - [Backblaze B2](../protocols/b2.md)
-- [Google Drive](../protocols/google_drive.md)
+- [Google Drive](../protocols/googledrive.md)
 
 #### Revert
 

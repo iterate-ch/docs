@@ -11,12 +11,12 @@ sftp
 webdav/index
 webdav/nextcloud
 s3/index
-google_cloud_storage
+googlecloudstorage
 openstack/index
 azure
 b2
 dropbox
-google_drive
+googledrive
 onedrive
 sharepoint
 box
@@ -36,7 +36,7 @@ Transfer files to your S3 account and browse the S3 buckets and files in a hiera
 
 - [S3 providers](s3/index.md#third-party-providers)
 
-### [Google Cloud Storage](google_cloud_storage.md)
+### [Google Cloud Storage](googlecloudstorage.md)
 
 Transfer files to your Google Storage account and browse files, manage ACLs and bucket configurations.
 
@@ -65,7 +65,7 @@ Access OneDrive without syncing to your computer.
 ### [Microsoft SharePoint](sharepoint.md)
 Connect to SharePoint Server and SharePoint Online.
 
-### [Google Drive](google_drive.md)
+### [Google Drive](googledrive.md)
 Access all your documents and upload files of any type to use your Google Drive account for storage.
 
 ### [Box](box.md)
