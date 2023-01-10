@@ -108,7 +108,7 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 | :--- | :--- |
 | Protocol | Your hosting service provider will let you know what protocol to use. Change the [protocol](connection.md#supported-protocols) in the<br/>topmost popup menu. |
 | Nickname | Any name for the bookmark describing it for easy access using the bookmark filter. You can<br/>also type this name in the bookmark view to select it by name. |
-| Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. |
+| Server | The hostname of the server. This is not editable if you have chosen a protocol with a predefined,<br/>non-configurable hostname. *Make sure no server path is included but only the domain name and instead set any server path in _Path_.* |
 | Username | The login credentials from your service provider. |
 | SSH Private<br/>Key | For [SFTP](../protocols/sftp.md) connections only. Choose a private key for public key authentication instead of a<br/>password. If the key is password-protected, you are prompted to enter the passphrase to<br/>decrypt the key. |
 | Client<br/>Certificate | For [HTTPS](../protocols/webdav/index.md#mutual-tls-mtls) connections only. Choose a client certificate for mutual transport level security (TLS). |
