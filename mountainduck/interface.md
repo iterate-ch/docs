@@ -137,8 +137,7 @@ You can mount volumes using your command-line interface (CLI) by opening a bookm
 ````{group-tab} macOS
 
 Use
-`open -a ''Mountain Duck'' ~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Bookmarks/*.duck`
-in *Terminal.app*
+`open -a "Mountain Duck" ~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Bookmarks/*.duck` in *Terminal.app*
 
 ````
 
