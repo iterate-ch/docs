@@ -186,7 +186,7 @@ Choose *File → Share…*. to share the web link to open download or open the f
 
 Choose *Share…* from the [context menu](../mountainduck/interface.md#share) to share the web link to open download or open the file in Google Docs. This will set the permission of the file to `reader/anyone`.
 
-```{image} ../cyberduck/_images/Share_File_googledrive_.png
+```{image} ../cyberduck/_images/Share_File_Google_Drive_.png
 :alt: Share File Google Drive
 :width: 400px
 ```
