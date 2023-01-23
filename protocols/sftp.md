@@ -98,19 +98,28 @@ The agent `ssh-agent` is running by default on macOS. You add private key identi
 ```
 
 ```{group-tab} Windows
- * Support for [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
- * Support for using the agent over the OpenSSH pipe (\\.\pipe\openssh-ssh-agent).
+The following agents are supported:
+ * [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
+ * OpenSSH for Windows using the pipe (`\\.\pipe\openssh-ssh-agent`) by default. Use `IdentityAgent` to set a custom socket path for any other compatible agent if needed. 
 ```
 ````
 
 ```{tip}
-When authenticating using Public Key Authentication with an SSH agent, make sure to set the SSH Private
-Key in your bookmark to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many authentication failures.
+When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many authentication failures.
 ```
+
+Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
+
+Example `~/.ssh/config` configuration:
+
+	Host myhostname
+		User myusername
+		IdentityFile ~/.ssh/mykey-rsa.pub
+		IdentitiesOnly yes
 
 ### One-Time Passcodes (2FA)
 
-Using a challenge-response authentication with one-time password generators like *SecurID* is supported. After the initial login prompt for the username and password, a second login prompt is displayed to enter the one-time passcode.
+Using a challenge-response authentication with one-time password generators such as [*DUO*](https://duo.com/product/multi-factor-authentication-mfa), [*SecurID*](https://www.rsa.com/products/securid/) or [*Google Authenticator*](https://github.com/google/google-authenticator) is supported. After the initial login prompt for the username and password, a second login prompt is displayed to enter the one-time passcode.
 
 #### Google Authenticator
 
