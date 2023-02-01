@@ -57,7 +57,9 @@ The default path `/remote.php/dav/files/<username>` will be used with no custom 
 In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
 In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 4. Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to *WebDAV (HTTPS)* and split the WebDAV address into two parts – the server address and the path.
+
 ![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
+
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
 6. Upon connecting, enter your password when requested in the login prompt.
 
