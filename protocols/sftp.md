@@ -47,6 +47,18 @@ To use the same key for all hosts add a wildcard entry such as
 
 which is then used when configuring a new bookmark.
 
+```{important}
+If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as hostname in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
+	
+	Host myhostalias
+		HostName myverylonghostname.exmaple.com
+		User myusername
+		IdentityFile ~/.ssh/mykey-rsa.pub
+		
+For the configuration above the hostname to specify in your bookmark is `myhostalias`.
+	
+```
+
 #### Default Public Key Authentication Keys
 
 You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
@@ -81,17 +93,6 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
-```{important}
-If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as hostname in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
-	
-	Host myhostalias
-		HostName myverylonghostname.exmaple.com
-		User myusername
-		IdentityFile ~/.ssh/mykey-rsa.pub
-		
-For the configuration above the hostname to specify in your bookmark is `myhostalias`.
-	
-```
 
 #### CA signed SSH Certificate Interoperability
 
