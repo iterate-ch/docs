@@ -223,8 +223,10 @@ A [hidden configuration option](preferences.md#hidden-configuration-options). Ad
 
     defaults write ch.sudo.cyberduck queue.dock.badge true
 
-### Prioritize Certain Files
+### Prioritize Files in Transfers
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order. For example:
+A [hidden configuration option](preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order of files transferred in folders. For example:
 
     defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"
+
+will prioritize files ending with `.html` and transfer before any other files in a folder.
