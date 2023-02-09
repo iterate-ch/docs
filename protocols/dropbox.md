@@ -24,7 +24,7 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
 
-### OAuth Reset
+### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark delete the current bookmark and create a new one to start a new authentication flow. Alternatively, you can reset the OAuth token by deleting the entries related to `duck:dropbox?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `api.dropboxapi.com` out of *Keychain Access.app*.
 

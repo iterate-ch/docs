@@ -29,7 +29,7 @@ The OneDrive connection profile is bundled by default and connects to the endpoi
 
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow.
 
-### OAuth Reset
+### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong OneDrive Account or want to change the login of the OneDrive bookmark delete the current bookmark and create a new one to start a new authentication flow.
 

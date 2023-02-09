@@ -38,7 +38,7 @@ Refer to [Signing in using application-specific passwords](http://support.google
 
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
 
-### OAuth Reset
+### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong Google Drive Account or want to change the login of the Google Drive bookmark delete the current bookmark and create a new one to start a new authentication flow.
 

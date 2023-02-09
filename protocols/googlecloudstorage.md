@@ -39,7 +39,7 @@ You access the page with the authorization code from the link displayed in the l
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
 ```
 
-#### OAuth Reset
+#### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark delete the current bookmark and create a new one to start a new authentication flow.
 
