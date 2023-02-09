@@ -22,6 +22,7 @@ The OneDrive connection profile is bundled by default and connects to the endpoi
 	:width: 500px
 	``` 
 2. Copy the authorization code into the login prompt in Cyberduck to complete authentication. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
+
 ![OAuth 2 Prompt](_images/OneDrive_OAuth_2_Authorization.png)
 
 ### Multiple Accounts

@@ -13,8 +13,11 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 ## Connecting
 
 1. You will be asked to link Cyberduck to your Dropbox account on your first connection attempt.
+
 ![Dropbox Link](_images/Dropbox_Link.png)
-2. Log in to Dropbox and paste the authorization code obtained to the login prompt.
+
+3. Log in to Dropbox and paste the authorization code obtained to the login prompt.
+
 ![Dropbox Authorization Code](_images/Dropbox_Authorization_Code.png)
 
 ### Multiple Accounts
@@ -23,9 +26,7 @@ You can connect to multiple accounts at the same time. Create a new bookmark for
 
 ### OAuth Reset
 
-If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark delete the current bookmark and create a new one to start a new authentication flow.
-
-Alternatively, you can reset the OAuth token by deleting the entries related to `duck:dropbox?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `api.dropboxapi.com` out of *Keychain Access.app*.
+If you have accidentally logged in with the wrong Dropbox Account or want to change the login of the Dropbox bookmark delete the current bookmark and create a new one to start a new authentication flow. Alternatively, you can reset the OAuth token by deleting the entries related to `duck:dropbox?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `api.dropboxapi.com` out of *Keychain Access.app*.
 
 ## Cyberduck CLI
 
