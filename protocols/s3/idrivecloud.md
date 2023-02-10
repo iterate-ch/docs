@@ -12,7 +12,9 @@ IDrive®
 
 ### Connecting
 
-Double-click on the downloaded file to activate the connection profile.
+```{Note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
 
 #### S3
 
