@@ -18,8 +18,8 @@ Double-click on the downloaded file to activate the connection profile.
 
 Create S3 Access Keys from the IDrive® Cloud Console.
 
-- {download}`Download<https://s3.us-west-1.idrivecloud.io/v1/d6fb089f27314160b3464ed223e0b283/cyberduck-profiles/IDrive%20Cloud%20S3(us-west-1).cyberduckprofile>` the *IDrive® Cloud S3 Oregon region profile* for preconfigured settings for authentication.
-- {download}`Download<https://s3.us-west-1.idrivecloud.io/v1/d6fb089f27314160b3464ed223e0b283/cyberduck-profiles/IDrive%20Cloud%20S3(us-east-1).cyberduckprofile>` the *IDrive® Cloud S3 Virginia region profile* for preconfigured settings for authentication.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IDrive%20Cloud%20S3(us-west-1).cyberduckprofile>` the *IDrive® Cloud S3 Oregon region profile* for preconfigured settings for authentication.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IDrive%20Cloud%20S3(us-east-1).cyberduckprofile>` the *IDrive® Cloud S3 Virginia region profile* for preconfigured settings for authentication.
 
 **How to create a S3 Access Key**</br>
 Keys can be generated in the *Settings* section of the *Profile Details* within the *IDrive® Cloud Console*:
@@ -57,7 +57,7 @@ The API Password can be obtained from *Swift API Password* section of *IDrive® 
 
 #### Connection Profile
 
-{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IDrive520e2.cyberduckprofile>` the *IDrive® e2 Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IDrive%20e2.cyberduckprofile>` the *IDrive® e2 Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 #### Manual Configuration
 
