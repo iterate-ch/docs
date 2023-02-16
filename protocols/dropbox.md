@@ -20,9 +20,10 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 ![Dropbox Authorization Code](_images/Dropbox_Authorization_Code.png)
 
-### Multiple Accounts
-
+```{admonition} Multiple Accounts
+:class: tip
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
+```
 
 ### Reset OAuth Tokens
 

@@ -34,9 +34,10 @@ To access the Google Docs storage of your company's [Google Apps](https://worksp
 
 Refer to [Signing in using application-specific passwords](http://support.google.com/accounts/bin/answer.py?answer=185833) on how to set an application-specific password to access Google Drive with 2-step verification enabled for your Google Account.
 
-### Multiple Accounts
-
+```{admonition} Multiple Accounts
+:class: tip
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
+```
 
 ### Reset OAuth Tokens
 

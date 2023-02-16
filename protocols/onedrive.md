@@ -25,9 +25,10 @@ The OneDrive connection profile is bundled by default and connects to the endpoi
 
 ![OAuth 2 Prompt](_images/OneDrive_OAuth_2_Authorization.png)
 
-### Multiple Accounts
-
+```{admonition} Multiple Accounts
+:class: tip
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow.
+```
 
 ### Reset OAuth Tokens
 
