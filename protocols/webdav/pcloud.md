@@ -5,6 +5,10 @@ pCloud
 
 ## Connecting
 
+```{attention}
+WebDAV access is only available for paid plans.
+```
+
 ### Connection Profiles
 
 ```{Note}
