@@ -5,6 +5,10 @@ pCloud
 
 ## Connecting
 
+```{attention}
+WebDAV access is only available for paid plans.
+```
+
 ### Connection Profiles
 
 ```{Note}
@@ -32,7 +36,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ## Interoperability
 
-Using Mountain Duck and pCloud Client simultaneously can cause issues for the pCloud Client. The Client requires an older version of the system driver than Mountain Duck and can't deal with the newer version intalled by Mountain Duck. 
+Using Mountain Duck and pCloud Client simultaneously can cause issues for the pCloud Client. The Client requires an older version of the device driver than Mountain Duck and can't deal with the newer version installed by Mountain Duck. 
 
 ```{note}
 Reported for pCloud Client version 4.0.0 (Windows).
