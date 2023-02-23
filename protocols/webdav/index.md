@@ -95,13 +95,13 @@ You can temporarily or permanently allow connecting nevertheless by choosing *Co
 
 You can edit custom properties using File → Info → Metadata.
 
-## Locks
+## Locking
 
 ````{tabs}
 
 ```{tab} Cyberduck
 
-Files aren't locked when [editing](../../cyberduck/edit.md) with Cyberduck.
+Locking is not supported [editing](../../cyberduck/edit.md) with Cyberduck.
 
 ```
 
