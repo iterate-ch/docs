@@ -15,7 +15,6 @@ exoscale
 filebase
 iam
 ibmcos
-idrivecloud
 ionos
 linode
 minio
@@ -233,8 +232,6 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Filebase](filebase.md)
 - [Google Storage](../googlecloudstorage.md)
 - [IBM Cloud Object Storage (COS)](ibmcos.md)
-- [IDrive® Cloud](idrivecloud.md#idrive-cloud)
-- [IDrive® e2](idrivecloud.md#idrive-e2)
 - [IONOS Cloud Object Storage](ionos.md)
 - [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
 - [MinIO Cloud Storage](minio.md)
