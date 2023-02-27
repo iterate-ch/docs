@@ -66,7 +66,7 @@ Using the MSI Installer, you'll have to install the *MSI Package Shell Extension
 
 Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<https://dotnet.microsoft.com/download/dotnet-framework/net472>` fails, download it manually.
 
-- Mountain Duck 4.13 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
+- Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain DUck 3.0.1 or later requires *Windows 7* or later.
 ````
