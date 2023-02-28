@@ -95,6 +95,17 @@ The following protocols allow duplicating files on the server without downloadin
 
 To move a file, use *Edit → Cut (macOS `⌘X` Windows `Ctrl+X`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*. To duplicate a file, use *Edit → Copy (macOS `⌘C` Windows `Ctrl+C`)* followed by *Edit → Paste (macOS `⌘V` Windows `Ctrl+V`)*.
 
+The following protocols support server-sided copying without intermediate downloads:
+
+- [OpenStack Swift](../protocols/openstack/index.md)
+- [OneDrive](../protocols/onedrive.md)
+- [Sharepoint](../protocols/sharepoint.md)
+- [Google Drive](../protocols/googledrive.md)
+- [Google Cloud Storage](../protocols/googlecloudstorage.md)
+- [Files.com](../protocols/files.com.md)
+- [Box](../protocols/box.md)
+- [Backblaze B2](../protocols/b2.md)
+
 ### Copy Files and Folders to Different Server
 
 You can copy files between arbitrary servers when connected to with two open browser windows. Drag files from one browser to the other to transfer files between servers.
