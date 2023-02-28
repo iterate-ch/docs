@@ -263,10 +263,12 @@ By default, files starting with `.` aren't hidden by Windows Explorer. You can c
 
     browser.hidden.regex=\\..*
 
-**Timestamp Accuracy**<br/>
+**Robocopy Timestamp Accuracy**<br/>
 Windows has a sub-second timestamp accuracy while protocols like SFTP has an accuracy of a second. This discrepancy causes problems while copying files. 
-- Reported for [Robocopy](https://stackoverflow.com/questions/15145659/what-do-i-and-i-in-regex-mean):<br/>
-Using the command `robocopy /MIR /FET` instead of `robocopy /MIR` fixes the behavior.
+
+Using the command `robocopy /MIR /FFT` instead of `robocopy /MIR` fixes the behavior.
+
+Additional information on *robocopy* can be found in the microsoft [documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy).
 
 ````
 
