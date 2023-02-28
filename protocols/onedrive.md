@@ -38,7 +38,7 @@ Alternatively, you can reset the OAuth token by deleting the entries related to 
 
 ### Expiry
 
-All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue you need to reauthenticate by performing an [OAuth Reset](#oauth-reset).
+All authentication codes expire after 90 days. If you get the error message `Forbidden. The caller doesn't have permission to perform the action. [...]` due to this known issue you need to reauthenticate by performing an [OAuth Reset](#reset-oauth-tokens).
 
 ### Available Connection Profiles
 

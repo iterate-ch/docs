@@ -45,7 +45,7 @@ Spring-loaded folders are a feature that allows you to move a file or even anoth
 Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. To search recursively, hit the return key (`⏎`). Only files matching the search or folders with containing files matching the pattern will be displayed in the browser.
 
 ```{note}
-Search is case-insensitive and does look for matching sequences in the filename supporting glob patterns `*` and `?`.  
+Search is case-insensitive and does look for matching sequences in the filename supporting glob patterns `*` and `?`.
 ```
 
 The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
@@ -59,6 +59,13 @@ The following protocols have a server-side index that is used to give fast resul
 ```{tip}
 You can also search for files by _Version_ where applicable.
 ```
+
+#### Supported Wildcards
+
+| Wildcard | Description | Example | Matches |
+| -------- | :---: | :---: | :---: |
+| `*` |matches any number of any characters including none | Te* | Test, Tee, or Termin |
+| `?` | matches any single character | ?bc | Abc, abc, or lbc |
 
 ### Sorting
 
