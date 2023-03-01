@@ -19,10 +19,15 @@ Open a [free account](https://www.dracoon.com/en/free) with 10 users including 1
 ## Connecting
 
 - {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/DRACOON%20(OAuth).cyberduckprofile>` the *DRACOON (OAuth) connection profile*.
+- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/DRACOON%20(CLI).cyberduckprofile>` the *DRACOON (OAuth Password Flow) connection profile*.
 
 ```{note}
 The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.
 ```
+
+### Password grant OAuth 
+
+To authenticate with your login credentials (username and password), use the _DRACOON (OAuth Password Flow)_ profile. Instead of retrieving the authentication code by logging in using a web browser the profile uses the OAuth password flow for authentication purpose.
 
 ## Client-Side Encryption
 
