@@ -54,6 +54,10 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Default Port` Prefilled port number.
 - `Port Configurable` Boolean if port number is configurable.
 - `Default Path`
+- `Schemes` Additional array of schemes this profile can be referenced with in [Cyberduck CLI](../../cli/index.md)
+```{note}
+All additional schemes are registered as a scheme handler when opening [Mountain Duck](../../mountainduck/index.md). This allows to reference files and folders in a web application using a custom scheme like `customscheme:/(/<hostname>)/path` to open in Windows Explorer or Finder.
+```
 - `Username Configurable` Boolean if username is configurable.
 - `Username Placeholder` Suggestion for username in login credentials.
 - `Password Placeholder` Suggestion for password in login credentials.
