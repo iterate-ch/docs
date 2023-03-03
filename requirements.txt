@@ -1,3 +1,6 @@
 myst-parser
 sphinx-tabs
 sphinx_rtd_theme
+
+# Pin docutils
+docutils~=0.18.0
