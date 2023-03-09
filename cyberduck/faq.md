@@ -162,7 +162,7 @@ To get help with bugs, feature requests, or other issues please refer to the [su
 
 ## Snapshot and Beta builds
 
-See [Preferences → Update](preferences.md#update).
+See _[Preferences → Update](preferences.md#update)_ to switch the update feed.
 
 ## Incompatibilities
 
