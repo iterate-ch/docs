@@ -27,6 +27,7 @@ seagate
 spectra
 storadera
 storjdcs
+synology
 verizon
 vitanium
 wasabi
@@ -249,6 +250,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Storadera](storadera.md)
 - [Storj DCS](storjdcs.md)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
+- [Synology C2 Object Storage](synology.md)
 - [Verizon Cloud Storage](verizon.md)
 - [Vitanium Cloud](vitanium.md)
 - [Vultr Object Storage](https://www.vultr.com/docs/vultr-object-storage#Cyberduck_GUI_tool)
