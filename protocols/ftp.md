@@ -165,7 +165,7 @@ Alternatively, you can use one of the connection profiles below for which the me
 * {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 * {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
-```{Note}
+```{note}
 Connection profiles are available through the *Preferences → Profiles* tab.
 ```
 

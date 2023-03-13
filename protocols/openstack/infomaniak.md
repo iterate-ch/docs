@@ -9,7 +9,7 @@ Infomaniak
 
 ### Connecting
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
@@ -39,7 +39,7 @@ Swiss Backup is a solution that automatically backs up your files, workstations,
 
 ### Connecting
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 

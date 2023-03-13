@@ -10,7 +10,7 @@ DigitalOcean Spaces
 
 ## Connecting
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 

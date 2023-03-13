@@ -9,7 +9,7 @@ You create storage keys from the [console](https://console.cloud.verizon.com/) a
 
 ### Connection Profiles
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 

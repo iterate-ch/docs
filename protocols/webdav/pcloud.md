@@ -11,7 +11,7 @@ WebDAV access is only available for paid plans.
 
 ### Connection Profiles
 
-```{Note}
+```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
