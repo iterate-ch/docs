@@ -5,6 +5,10 @@ Synology C2 Object Storage
 
 ## Connecting
 
+```{note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
 - **C2 Object Europe** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Synology%20C2%20(eu-001).cyberduckprofile>` the *Synology C2 Object Storage (eu-001) Connection Profile* for preconfigured settings.
 
 - **C2 Object North America** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Synology%20C2%20(us-001).cyberduckprofile>` the *Synology C2 Object Storage (us-001) Connection Profile* for preconfigured settings.
