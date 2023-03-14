@@ -194,7 +194,12 @@ Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of 
 You can work around this by setting `defaults write com.apple.finder AppleShowAllFiles YES` in a *Terminal.app* window and restart *Finder.app* using *→ Force Quit ... → Finder → Relaunch*. If you are running macOS Sierra (10.12) you can choose `⌘⇧.` to toggle files starting with a dot to show in Finder.app.
 
 **Original Document can't be Changed (Preview.app)**<br/>
-Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Connection → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
+Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Sync → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
+
+**Fatal: error when closing loose object file: permission denied (.git)**<br/>
+Working on a `.git` repository stored on a mounted drive causes a permission issue while trying to push changes. As a workaround, access the repository through and use git commands or clone the directory locally and work on the local copy.
+
+    git clone ~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes/<Bookmark Nickname>/<Path>/Git-Workspace/.git Desktop/Git-Klon
 
 **Enable Application Icon in Dock**<br/>
 As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property:
