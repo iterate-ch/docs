@@ -13,6 +13,7 @@ dunkel
 eucalyptus
 exoscale
 filebase
+garage
 iam
 ibmcos
 ionos
@@ -231,6 +232,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Eucalyptus Walrus](eucalyptus.md)
 - [Exoscale Swiss Object Storage](exoscale.md)
 - [Filebase](filebase.md)
+- [Garage](garage.md)
 - [Google Storage](../googlecloudstorage.md)
 - [IBM Cloud Object Storage (COS)](ibmcos.md)
 - [IONOS Cloud Object Storage](ionos.md)
