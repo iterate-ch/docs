@@ -125,7 +125,7 @@ Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/late
 
 - {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
-### Access single bucket
+### Connecting to a single bucket
 
 Connecting to a bucket owned by you or even a third party is possible without requiring permission to list all buckets. You can access buckets owned by someone else if the ACL allows you to access it by *either*:
 
