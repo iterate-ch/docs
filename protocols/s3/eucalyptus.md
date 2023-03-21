@@ -5,7 +5,7 @@ Eucalyptus Walrus
 
 ## Connecting 
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Eucalyptus%20Walrus%20S3.cyberduckprofile>` the *Eucalyptus Walrus S3 Connection Profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Eucalyptus%20Walrus%20S3.cyberduckprofile>` the *Eucalyptus Walrus S3 Connection Profile* for preconfigured settings.
 
 Choose *Eucalyptus Walrus S3* from the protocol dropdown menu in the [Open Connection](../../cyberduck/connection.md) or [Bookmark](../../cyberduck/bookmarks.md) settings and enter the hostname of your installation. Refer to [S3](index.md) in general.
 

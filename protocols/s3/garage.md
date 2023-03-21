@@ -9,4 +9,4 @@ Garage
 
 ## Connecting
 
-{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Garage.cyberduckprofile>` the *Garage Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/Garage.cyberduckprofile>` the *Garage Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.

@@ -7,7 +7,7 @@ Enter Cloud Suite Object Storage
 
 ### Connection Profile
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/default/Enter%20Cloud%20Suite.cyberduckprofile>` the *Enter Cloud Suite (Keystone) Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/default/Enter%20Cloud%20Suite.cyberduckprofile>` the *Enter Cloud Suite (Keystone) Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 Use the Tenant ID `email` and password to login. See [API Access](https://cm.entercloudsuite.com/project/access_and_security/).
 

@@ -23,23 +23,23 @@ For connecting to OCI Object Storage, Cyberduck version 6.4.0 or later is requir
 Follow these instructions:
 1. Create an Amazon S3 Compatibility API key by following the instructions within the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/Content/Identity/Tasks/managingcredentials.htm#Working2).
 2. Download the connection profile for the [region](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) you want to use:
-	- {download}`OCI Object Storage (ap-sydney-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-sydney-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-melbourne-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-melbourne-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (sa-saopaulo-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(sa-saopaulo-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ca-montreal-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ca-montreal-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ca-toronto-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ca-toronto-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (eu-frankfurt-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(eu-frankfurt-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-hyderabad-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-hyderabad-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-mumbai-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-mumbai-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-osaka-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-osaka-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-tokyo-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-tokyo-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (eu-amsterdam-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(eu-amsterdam-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (me-jeddah-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(me-jeddah-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-seoul-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-seoul-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (ap-chuncheon-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(ap-chuncheon-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (eu-zurich-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(eu-zurich-1.cyberduckprofile>`
-	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
-	- {download}`OCI Object Storage (us-ashburn-1).cyberduckprofile<http://profiles.cyberduck.io.s3.amazonaws.com/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-sydney-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-sydney-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-melbourne-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-melbourne-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (sa-saopaulo-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(sa-saopaulo-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ca-montreal-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ca-montreal-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ca-toronto-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ca-toronto-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (eu-frankfurt-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(eu-frankfurt-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-hyderabad-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-hyderabad-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-mumbai-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-mumbai-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-osaka-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-osaka-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-tokyo-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-tokyo-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (eu-amsterdam-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(eu-amsterdam-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (me-jeddah-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(me-jeddah-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-seoul-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-seoul-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (ap-chuncheon-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(ap-chuncheon-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (eu-zurich-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(eu-zurich-1.cyberduckprofile>`
+	- {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
+	- {download}`OCI Object Storage (us-ashburn-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile>`
 3. Open the downloaded profile by double-clicking on it in Finder or Explorer. It will be opened by Cyberduck. On macOS, the connection profile will be opened automatically in edit mode. On Windows, you may need to edit the bookmark manually.
 4. Set a nickname (e.g. *OCI Ashburn*)
 5. Update the entry in the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))

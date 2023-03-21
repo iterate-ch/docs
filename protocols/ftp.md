@@ -162,8 +162,8 @@ To disable `MLSD` for directory listings, open a Terminal.app window and enter
 Restart Cyberduck.
 
 Alternatively, you can use one of the connection profiles below for which the mentioned directory listing commands are already disabled.
-* {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
-* {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+* {download}`Download<https://profiles.cyberduck.io/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+* {download}`Download<https://profiles.cyberduck.io/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ```{note}
 Connection profiles are available through the *Preferences → Profiles* tab.

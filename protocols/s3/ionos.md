@@ -11,9 +11,9 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ### Connection Profile
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IONOS%20Cloud%20Object%20Storage%20(Berlin).cyberduckprofile>` the *IONOS Cloud Object Storage (Berlin) Connection Profile* for preconfigured settings.
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IONOS%20Cloud%20Object%20Storage%20(Frankfurt).cyberduckprofile>` the *IONOS Cloud Object Storage (Frankfurt) Connection Profile* for preconfigured settings.
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/IONOS%20Cloud%20Object%20Storage%20(Logrono).cyberduckprofile>` the *IONOS Cloud Object Storage (Logrono) Connection Profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/IONOS%20Cloud%20Object%20Storage%20(Berlin).cyberduckprofile>` the *IONOS Cloud Object Storage (Berlin) Connection Profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/IONOS%20Cloud%20Object%20Storage%20(Frankfurt).cyberduckprofile>` the *IONOS Cloud Object Storage (Frankfurt) Connection Profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/IONOS%20Cloud%20Object%20Storage%20(Logrono).cyberduckprofile>` the *IONOS Cloud Object Storage (Logrono) Connection Profile* for preconfigured settings.
 
 ### Object storage keys
 

@@ -7,7 +7,7 @@ Storadera
 
 ### Connection Profile
 
-{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Storadera%20(eu-east-1).cyberduckprofile>` the *Storadera (eu-east-1) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/Storadera%20(eu-east-1).cyberduckprofile>` the *Storadera (eu-east-1) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 

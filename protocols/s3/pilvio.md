@@ -7,7 +7,7 @@ Located in Estonia. S3 compatible object storage with perfect cost and reliabili
 
 ## Connecting
 
-{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Pilvio.cyberduckprofile>` the *Pilvio Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/Pilvio.cyberduckprofile>` the *Pilvio Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ## References
 
