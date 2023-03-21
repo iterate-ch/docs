@@ -8,7 +8,7 @@ Mountain Duck supports locking files to prevent conflicting edits from others wh
 File locking is natively supported for the following protocols:
 
 - [Dropbox for Business](../protocols/dropbox.md)
-- [Microsoft OneDrive](../protocols/onedrive.md)
+- [Microsoft OneDrive Business](../protocols/onedrive.md)
 - [Microsoft SharePoint](../protocols/sharepoint.md)
 - [WebDAV](../protocols/webdav/index.md)
 
