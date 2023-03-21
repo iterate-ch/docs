@@ -51,8 +51,8 @@ Legacy authentication option.
 
 Legacy authentication option.
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Swauth).cyberduckprofile>` the *Openstack Swift (Swauth HTTPS) profile* for preconfigured settings.
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Swauth%20HTTP).cyberduckprofile>` the *Openstack Swift (Swauth HTTP)* profile for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Swauth).cyberduckprofile>` the *Openstack Swift (Swauth HTTPS) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Swauth%20HTTP).cyberduckprofile>` the *Openstack Swift (Swauth HTTP)* profile for preconfigured settings.
 
 #### Authentication with `Keystone 2.0` for Context `/v2.0/tokens`
 
@@ -60,21 +60,21 @@ To get the login tokens from an OpenStack Identity service no configuration chan
 
 Bundled by default since Cyberduck version 4.4.4.
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Keystone%202).cyberduckprofile>` the *Openstack Swift (Keystone 2) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Keystone%202).cyberduckprofile>` the *Openstack Swift (Keystone 2) profile* for preconfigured settings.
 
 If you have a Swift installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security.
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Keystone%202%20HTTP).cyberduckprofile>` the *Openstack Swift (Keystone 2 HTTP) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Keystone%202%20HTTP).cyberduckprofile>` the *Openstack Swift (Keystone 2 HTTP) profile* for preconfigured settings.
 
 #### Authentication with `Keystone 3.0` for Context `/v3/tokens`
 
 Bundled by default since Cyberduck version 4.8.
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *Openstack Swift (Keystone 3) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Keystone%203).cyberduckprofile>` the *Openstack Swift (Keystone 3) profile* for preconfigured settings.
 
 If you have a Swift installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security.
 
-- {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Openstack%20Swift%20(Keystone%203%20HTTP).cyberduckprofile>` the *Openstack Swift (Keystone 3 HTTP) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/Openstack%20Swift%20(Keystone%203%20HTTP).cyberduckprofile>` the *Openstack Swift (Keystone 3 HTTP) profile* for preconfigured settings.
 
 You will get prompted to provide the project name with a *Provide additional login credentials prompt* or can provide it with the username in the format `<project>:<user>`.
 

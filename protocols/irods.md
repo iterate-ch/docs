@@ -21,9 +21,9 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ### Provider
 
-- [CyVerse Data Store](http://www.cyverse.org/data-store) (Formerly iPlant Collaborative) - {download}`Connection Profile<http://profiles.cyberduck.io.s3.amazonaws.com/iRODS%20(iPlant%20Collaborative).cyberduckprofile>`
-- RENCI - {download}`Connection Profile<http://profiles.cyberduck.io.s3.amazonaws.com/iRODS%20(RENCI).cyberduckprofile>`
-- TACC - {download}`Connection Profile<http://profiles.cyberduck.io.s3.amazonaws.com/iRODS%20(TACC).cyberduckprofile>`
+- [CyVerse Data Store](http://www.cyverse.org/data-store) (Formerly iPlant Collaborative) - {download}`Connection Profile<https://profiles.cyberduck.io/iRODS%20(iPlant%20Collaborative).cyberduckprofile>`
+- RENCI - {download}`Connection Profile<https://profiles.cyberduck.io/iRODS%20(RENCI).cyberduckprofile>`
+- TACC - {download}`Connection Profile<https://profiles.cyberduck.io/iRODS%20(TACC).cyberduckprofile>`
 
 ### Authentication
 

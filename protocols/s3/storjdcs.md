@@ -5,7 +5,7 @@ Storj DCS
 
 ### Connection Profile
 
-{download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Storj.cyberduckprofile>` the *Storj Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/Storj.cyberduckprofile>` the *Storj Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 

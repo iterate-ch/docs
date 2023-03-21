@@ -11,10 +11,10 @@ Linode Object Storage
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- **Linode Object Storage (Atlanta, GA, USA)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Linode%20Object%20Storage%20(us-southeast-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Frankfurt, Germany)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Linode%20Object%20Storage%20(eu-central-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Newark, NJ, USA)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Singapore)** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Linode%20Object%20Storage%20(ap-south-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Atlanta, GA, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-southeast-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Frankfurt, Germany)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(eu-central-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Newark, NJ, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Singapore)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(ap-south-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
 
 ## Manual Configuration
 

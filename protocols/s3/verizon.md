@@ -13,9 +13,9 @@ You create storage keys from the [console](https://console.cloud.verizon.com/) a
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- **Verizon Cloud Storage (East Coast USA):** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Verizon%20Cloud%20Storage%20(IAD3A).cyberduckprofile>` the *Verizon Cloud Storage (IAD3A) Connection Profile* for preconfigured settings.
-- **Verizon Cloud Storage (Netherlands, EU):** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Verizon%20Cloud%20Storage%20(AMS1A).cyberduckprofile>` the *Verizon Cloud Storage (AMS1A) Connection Profile* for preconfigured settings.
-- **Verizon Cloud Storage (3 Data Center Spread, USA):** {download}`Download<http://profiles.cyberduck.io.s3.amazonaws.com/Verizon%20Cloud%20Storage%20(USHAA).cyberduckprofile>` the *Verizon Cloud Storage (USHAA) Connection Profile* for preconfigured settings.
+- **Verizon Cloud Storage (East Coast USA):** {download}`Download<https://profiles.cyberduck.io/Verizon%20Cloud%20Storage%20(IAD3A).cyberduckprofile>` the *Verizon Cloud Storage (IAD3A) Connection Profile* for preconfigured settings.
+- **Verizon Cloud Storage (Netherlands, EU):** {download}`Download<https://profiles.cyberduck.io/Verizon%20Cloud%20Storage%20(AMS1A).cyberduckprofile>` the *Verizon Cloud Storage (AMS1A) Connection Profile* for preconfigured settings.
+- **Verizon Cloud Storage (3 Data Center Spread, USA):** {download}`Download<https://profiles.cyberduck.io/Verizon%20Cloud%20Storage%20(USHAA).cyberduckprofile>` the *Verizon Cloud Storage (USHAA) Connection Profile* for preconfigured settings.
 
 ### Manual Configuration
 
