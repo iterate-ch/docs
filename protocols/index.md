@@ -7,7 +7,7 @@ Protocols
 profiles/index
 cdn/index
 ftp
-sftp
+sftp/index
 webdav/index
 webdav/nextcloud
 s3/index
@@ -48,7 +48,7 @@ Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom o
 
 - [WebDAV providers](webdav/index.md#providers)
 
-### [SSH/SFTP](sftp.md)
+### [SSH/SFTP](sftp/index.md)
 Advanced configuration for SSH connections using public key authentication and custom origin [Amazon CloudFront (Content Delivery Network) distribution](cdn/cloudfront.md) option.
 
 ### [OpenStack Object Storage](openstack/index.md)

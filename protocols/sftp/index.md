@@ -1,7 +1,13 @@
 SFTP
 ====
 
-```{image} _images/ftp.png
+```{toctree}
+:hidden:
+:titlesonly:
+sftptogo
+```
+
+```{image} ../_images/ftp.png
 :alt: FTP Drive Icon
 :width: 128px
 ```
@@ -10,6 +16,17 @@ SFTP
 :depth: 2
 :local:
 ```
+
+## Providers
+
+Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
+
+```{note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
+- [SFTP To Go](sftptogo.md)
+
 
 ## Connecting
 
@@ -146,7 +163,7 @@ Use the following configuration steps:
 
 When logging in, enter the time-based token requested after providing username and password.
 
-![Verification Code Prompt](_images/Verification_Code_Prompt.png)
+![Verification Code Prompt](../_images/Verification_Code_Prompt.png)
 
 - [PAM Module Instructions](https://github.com/google/google-authenticator/wiki/PAM-Module-Instructions)
 - [How To Set Up Multi-Factor Authentication for SSH on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-16-04)
@@ -155,7 +172,7 @@ When logging in, enter the time-based token requested after providing username a
 
 Upon connecting to an SSH server for the first time, you will see a message to verify the host key uniquely identifying the server. You can ask your provider for the public fingerprint of the server to make sure you are connecting to the right host. Subsequent connections to the SSH server will make sure that the host key does not have changed to prevent spoofing attacks.
 
-![Unknown Host Key](_images/Unknown_host_key.png)
+![Unknown Host Key](../_images/Unknown_host_key.png)
 
 ### Connect via SSH Tunnel Through Bastion Server
 
@@ -197,7 +214,7 @@ The feature is not supported when running Cyberduck from the Mac App Store becau
 
 Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to your browser.
 
-![Terminal](_images/Terminal.png)
+![Terminal](../_images/Terminal.png)
 
 **Customize SSH Command:**<br/>
 You can change the SSH command using the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options)
@@ -253,7 +270,7 @@ There is a [hidden configuration option](../cyberduck/preferences.md#hidden-conf
 
 Use *View → Customize Toolbar...* to add the *Open in Putty* toolbar icon to your browser.
 
-![Putty](_images/putty.png)
+![Putty](../_images/putty.png)
 
 **Location of the PuTTY installation:**<br/>
 By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `terminal.command.ssh` to point to the path of the executable.
@@ -278,7 +295,7 @@ _Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to F
 
 Select one or more files to archive in the browser. For multiple files, a file with the name `Archive` with the given extension of the archive format will be created.
 
-![Compress](_images/Compress.png)
+![Compress](../_images/Compress.png)
 
 ### Expand
 
@@ -291,7 +308,7 @@ You can send any remote command to a remote SSH server. This is for example usef
 ```{note}
 The current working directory is always your use home. Determine using pwd to get the absolute path.
 ```
-```{image} _images/command.png
+```{image} ../_images/command.png
 :alt: Send Command
 :width: 600px
 ```
@@ -356,7 +373,7 @@ The error message `Invalid packet: indicated length 1114795883 too large` may in
 
 This error can occur if you are connecting the first time to a device with a slow processor. You can raise the tmeout value in *Preferences → Connection → Timeout*.
 
-![Kex Timeout](_images/Kex_Timeout.png)
+![Kex Timeout](../_images/Kex_Timeout.png)
 
 ### Connect Does not Work
 
