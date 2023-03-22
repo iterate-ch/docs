@@ -3,6 +3,7 @@ Garage
 
 ```{image} _images/garage.png
 :alt: Garage Logo
+:width: 128px
 ```
 
 > [Garage](https://garagehq.deuxfleurs.fr/) is an open-source distributed object storage service tailored for self-hosting.
