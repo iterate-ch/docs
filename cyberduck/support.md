@@ -13,10 +13,10 @@ For issues with your remote storage user account credentials, please instead wri
 
 ### Bug Reports
 
-[Open a new ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose) with a description of what you have done and what went wrong. Make sure to look or search for existing issues first.
+[Open a new ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose) with a description of what you have done and what went wrong. Make sure to look or search for existing issues first. If you have trouble connecting to a server or your login credentials are not valid, try to resolve the issue with the assistance of your hosting service provider.
 
 ```{note}
-Discuss features and issues you are having in the [Cyberduck Google Group](http://groups.google.com/group/cyberduck). For licensing issues and other support questions, please send an mail to [support@cyberduck.io](mailto:support@cyberduck.io).
+Discuss features and issues you are having in the [Cyberduck Google Group](https://github.com/iterate-ch/cyberduck/discussions). For issues with the registration key, please send an mail to [support@cyberduck.io](mailto:support@cyberduck.io).
 ```
 
 ```{warning}
