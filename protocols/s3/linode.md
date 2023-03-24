@@ -3,9 +3,9 @@ Linode Object Storage
 
 > S3-compatible [Linode Object Storage](https://www.linode.com/products/object-storage/) makes it easy and more affordable to manage unstructured data such as content assets, as well as sophisticated and data-intensive storage challenges around artificial intelligence and machine learning.
 
-# Connecting
+## Connecting
 
-## Connection Profile
+### Connection Profile
 
 ```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
@@ -16,7 +16,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - **Linode Object Storage (Newark, NJ, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
 - **Linode Object Storage (Singapore)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(ap-south-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
 
-## Manual Configuration
+### Manual Configuration
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md). Choose the endpoint based on the bucket location. Refer to [Availability](https://www.linode.com/docs/products/storage/object-storage/)
 
@@ -25,7 +25,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md).
 - Access Key ID: `<your access key>`
 - Secret Access Key: `<your secret access key>`
 
-## Generate Access Keys
+### Generate Access Keys
 
 You have to generate an access key before you can connect to Linode Object storage:
 
@@ -46,7 +46,7 @@ The window will only be displayed once and the *Secret Key* cannot be retrieved 
 Make sure to keep the credential somewhere safe.
 ```
 
-# References
+## References
 
 - [Linode Object Storage Documentation](https://www.linode.com/docs/products/storage/object-storage/)
 - [Using Cyberduck with Object Storage](https://www.linode.com/docs/products/storage/object-storage/guides/cyberduck/)
