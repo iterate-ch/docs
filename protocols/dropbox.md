@@ -57,9 +57,15 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 
 ## Share & Request Files
 
-You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Request others to add files to your Dropbox with *File → Request Files…".
+You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Request others to add files to your Dropbox with *File → Request Files…".*
 
 ## Known Limitations
+
+### Transfer speed Comparison
+
+Do not compare against the desktop client for upload and download speeds. Due to server side caching the comparison may not be meaningful.
+
+For significant comparison, test against the website which seems to ignore the server side caching.
 
 ### Modification Date
 
