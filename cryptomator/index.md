@@ -192,6 +192,7 @@ In your local disk connection, you can access all directories which are saved on
 
 ## Known Limitations
 
+- As [Name shortening](https://docs.cryptomator.org/en/latest/security/architecture/#name-shortening) is not supported the maximum length for a filename (including extension) is 146 characters. Note that using non-ASCII characters in your filenames may lower this limit.   
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
 
