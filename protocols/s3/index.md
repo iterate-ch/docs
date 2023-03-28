@@ -25,6 +25,7 @@ polycloud
 scaleway
 scality
 seagate
+../sftp/sftptogo
 spectra
 storadera
 storjdcs
@@ -248,6 +249,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [Scality (proprietary technology)](scality.md)
 - [Seagate Lyve Cloud](seagate.md)
 - [Seeweb](https://www.seeweb.it/)
+- [SFTP To Go](../sftp/sftptogo.md)
 - [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 - [Storadera](storadera.md)
 - [Storj DCS](storjdcs.md)

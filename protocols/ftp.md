@@ -11,6 +11,16 @@ FTP & FTP-TLS
 :local:
 ```
 
+## Providers
+
+Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
+
+```{note}
+All connection profiles are available through the *Preferences → Profiles* tab.
+```
+
+- [SFTP To Go](../sftp/sftptogo.md) - FTP with explicit TLS
+
 ## FTP Connect Mode
 
 Choose between an [Active (PORT) or Passive (PASV) connect mode](http://en.wikipedia.org/wiki/File_Transfer_Protocol#Connection_methods) per [bookmark](../cyberduck/bookmarks.md) or when opening a [new connection](../cyberduck/connection.md#toolbar-button). The default setting can be set in the System Preferences in *Network → Advanced... → Proxies → Use Passive FTP Mode (PASV)*.
