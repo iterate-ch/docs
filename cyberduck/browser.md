@@ -198,11 +198,7 @@ Drop Folder where you can only upload files to but are not allowed to view its c
 
 ### Versions 
 
-You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*. The following protocols support versioning
-
-- [S3](../protocols/s3/index.md)
-- [Backblaze B2](../protocols/b2.md)
-- [Google Drive](../protocols/googledrive.md)
+You can view all revisions of a file in the browser by choosing *View → Show Hidden Files*. Refer to [Info Window → Versions](info.md#versions).
 
 #### Revert
 
