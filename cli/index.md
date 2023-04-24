@@ -157,7 +157,7 @@ Run `--help` to get the option screen.
 URLs in arguments must be fully qualified. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
 
 ```{attention}
-Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing slash. 
+Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing `/`. 
 ```
 
 ### Connection Profiles
@@ -269,7 +269,7 @@ duck --upload ftps://<hostname>/directory/ ~/*.jpg
 
 #### Specification for folders
 
-Note the inclusion or absence of a trailing slash delimiter character to denote a file or directory on the server.
+Note the inclusion or absence of a trailing `/` delimiter character to denote a file or directory on the server.
 
 * Integrate `folder` (e.g. folder contents) to `<name>` using
 ```{code-block}
@@ -308,7 +308,7 @@ Set a default ACL for the upload with
 
 ### Remote Directory Listing with `--list`
 
-Make sure to include a trailing '/' in the path argument to denote a directory. Use the `-L` option to print permission mask and modification date in addition to the filename.
+Make sure to include a trailing `/` in the path argument to denote a directory. Use the `-L` option to print permission mask and modification date in addition to the filename.
 
 ### Edit with `--edit`
 
