@@ -135,7 +135,7 @@ This is supported for the following protocols:
 
 ### Create a Symbolic Link
 
-Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../protocols/sftp.md) connection and some [FTP](../protocols/ftp.md) with `SITE SYMLINK` extension.
+Choose *File → New Symbolic Link...* to create a symbolic link. This is supported on UNIX systems with a [SFTP](../protocols/sftp/index.md) connection and some [FTP](../protocols/ftp.md) with `SITE SYMLINK` extension.
 
 ### Info Window
 
@@ -168,7 +168,7 @@ Refer to [Share](share.md).
 
 ### Open in Terminal
 
-Refer to [Open in Terminal](../protocols/sftp.md#open-in-terminal).
+Refer to [Open in Terminal](../protocols/sftp/index.md#open-in-terminal).
 
 ### Print Browser Folder Listing
 

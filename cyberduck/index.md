@@ -47,8 +47,8 @@ FTP, SFTP, WebDAV, OpenStack Swift, Google Storage, Amazon S3, and many more pro
 - **[Info Window](info.md):** Edit access permissions and configure [CDN](../protocols/cdn/index.md) options
 - **QuickLook:** Preview files in the browser window
 - **Open Web URL:** Configuration steps to open HTTP URL of selected file
-- **[Create and expand ZIP/TAR Archives](../protocols/sftp.md#create-and-expand-zip-or-tar-archives)**
-- **[Send custom commands](../protocols/sftp.md#remote-commands):** Send commands to a server not available in the graphical user interface.
+- **[Create and expand ZIP/TAR Archives](../protocols/sftp/index.md#create-and-expand-zip-or-tar-archives)**
+- **[Send custom commands](../protocols/sftp/index.md#remote-commands):** Send commands to a server not available in the graphical user interface.
 - **[Activity](browser.md#activity):** The activity window shows a list of all pending background tasks.
 
 ### [Edit Files](edit.md)

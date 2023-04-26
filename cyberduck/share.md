@@ -240,7 +240,7 @@ Create download shares for files and folders by choosing *Share…* from the [co
 
 ### FTP, SFTP & WebDAV
 
-If you connect to a web root using ### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md) or [WebDAV](../protocols/webdav/index.md), refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
+If you connect to a web root using ### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md) or [WebDAV](../protocols/webdav/index.md), refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).
 
 ```{note}
 You must use [Cyberduck](https://cyberduck.io) to edit the Web URL in a bookmark. The Web URL will replace your server address in URLs available in *Copy URL* .
