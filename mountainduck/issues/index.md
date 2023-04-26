@@ -148,7 +148,7 @@ This quota information is only available for the following protocols:
 - [Dropdox](../../protocols/dropbox.md)
 - [Microsoft OneDrive](../../protocols/onedrive.md)
 - [Microsoft Sharepoint](../../protocols/sharepoint.md)
-- [SFTP](../../protocols/sftp.md)
+- [SFTP](../../protocols/sftp/index.md)
 
 ### View files from Synplogy Drive 
 

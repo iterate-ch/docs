@@ -125,14 +125,14 @@ Skip existing files that match a checksum if available. If a checksum is not ava
 Append to existing files and skip files that match the file size and checksum if available. The following protocols support resume for uploads:
 
 - [FTP](../protocols/ftp.md)
-- [SFTP](../protocols/sftp.md)
+- [SFTP](../protocols/sftp/index.md)
 - [WebDAV](../protocols/webdav/index.md)
 - [S3](../protocols/s3/index.md) (for multipart uploads)
 
 The following protocols support resume for downloads:
 
 - [FTP](../protocols/ftp.md)
-- [SFTP](../protocols/sftp.md)
+- [SFTP](../protocols/sftp/index.md)
 - [WebDAV](../protocols/webdav/index.md)
 - [S3](../protocols/s3/index.md)
 - [Openstack](../protocols/openstack/index.md)
@@ -195,7 +195,7 @@ Choose between a default permission mask to apply to downloaded files or to appl
 
 ### Transfers → Permissions → Uploads
 
-Adjust the permission mask of uploaded files or leave it to the default mask chosen by the server. The setting for permissions apply when connected to a UNIX host using [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp.md). When connected to [S3](../protocols/s3/index.md) and [Azure](../protocols/azure.md) this will update the access control list (ACL).
+Adjust the permission mask of uploaded files or leave it to the default mask chosen by the server. The setting for permissions apply when connected to a UNIX host using [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp/index.md). When connected to [S3](../protocols/s3/index.md) and [Azure](../protocols/azure.md) this will update the access control list (ACL).
 
 ```{note}
 Enabling change of permissions slows down the transfer rate when uploading many files with [FTP](../protocols/ftp.md).

@@ -13,13 +13,13 @@ FTP & FTP-TLS
 
 ## Providers
 
-Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
+Settings are specific to service providers. Use the provided [connection profiles](index.md#connection-profiles).
 
 ```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- [SFTP To Go](../sftp/sftptogo.md) - FTP with explicit TLS
+- [SFTP To Go](sftp/sftptogo.md) - FTP with explicit TLS
 
 ## FTP Connect Mode
 
@@ -31,7 +31,7 @@ The character encoding used to parse directory listings can be set as a per book
 
 ## TLS Connections (FTPS)
 
-FTP with [explicit](http://en.wikipedia.org/wiki/FTPS.md#explicit) TLS is supported. Interoperable with *TLSv1.2*. Implicit FTPS with no negotiation is deprecated and not supported. FTPS should not be confused with the [SSH File Transfer Protocol (SFTP)](sftp.md).
+FTP with [explicit](http://en.wikipedia.org/wiki/FTPS.md#explicit) TLS is supported. Interoperable with *TLSv1.2*. Implicit FTPS with no negotiation is deprecated and not supported. FTPS should not be confused with the [SSH File Transfer Protocol (SFTP)](sftp/index.md).
 
 :::{admonition} TLSv1 and TLSv1.1 deprecation
 :class: warning
@@ -66,7 +66,7 @@ You can temporarily or permanently allow to connect nevertheless by choosing *Co
 
 ## Distribution (CDN)
 
-You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
+You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
 ## Remote Commands
 
