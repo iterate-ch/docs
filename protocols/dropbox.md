@@ -65,7 +65,7 @@ You can share an URL to provide access to a document in your Dropbox from *File 
 
 Do not compare against the desktop client for upload and download speeds. Due to server side caching the comparison may not be representativ.
 
-For accurate comparison, test against the website where the server-side caching doesn't take place
+For accurate comparison, test against the website where the server-side caching doesn't take place.
 
 ### Modification Date
 
