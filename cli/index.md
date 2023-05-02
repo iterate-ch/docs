@@ -270,7 +270,7 @@ duck --download protocol:/<file> <folder>/<name>
 
 You can transfer multiple files with a single command using a glob pattern for filename inclusion such as
 ```{code-block}
-duck --download ftps://<hostname>/directory/*.css
+duck --download protocol://<hostname>/directory/*.css
 ```
 
 ### Uploads with `--upload`
@@ -296,7 +296,7 @@ duck --upload protocol:/<folder>/<name> <file>
 
 If your shell supports glob expansion you can use a wildcard pattern to select files for upload like 
 ```{code-block}
-duck --upload ftps://<hostname>/directory/ ~/*.jpg
+duck --upload protocol://<hostname>/directory/ ~/*.jpg
 ```
 
 ### Synchronize folders with `--synchronize`
