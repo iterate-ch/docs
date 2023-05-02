@@ -1,7 +1,7 @@
 Synology C2 Object Storage
 ====
 
-> [Synology C2 Object Storage](https://c2.synology.com/en-global/object-storage/overview) provide secure, S3-compatible, and cost-effective cloud storage solution without API request, download fees and deletion penalty. [Get your first 15 GB for free](https://c2.synology.com/en-global/object-storage/overview)
+> [Synology C2 Object Storage](https://c2.synology.com/en-global/object-storage/overview) provides a secure, S3-compatible, and cost-effective cloud storage solution without API request, download fees, and deletion penalty.
 
 ## Connecting
 
