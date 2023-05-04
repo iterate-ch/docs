@@ -30,7 +30,7 @@ Connection profiles can be activated by either installing the file by double cli
 ```{admonition} Info
 :class: tip
 
-To contribute new connection profiles, open a pull regest in the [`iterate-ch/profiles` repository](https://github.com/iterate-ch/docs/issues/profiles). Once the pull request is approved the profile will be available through the _Preferences → Profiles_ tab in [Mountain Duck](../../mountainduck/preferences.md#profiles) and Cyberduck.
+To contribute new connection profiles, open a pull request in the [`iterate-ch/profiles` repository](https://github.com/iterate-ch/profiles). Once the pull request is approved the profile will be available through the _Preferences → Profiles_ tab in [Mountain Duck](../../mountainduck/preferences.md#profiles) and Cyberduck.
 ```
 
 ### Technical File Format Specification
