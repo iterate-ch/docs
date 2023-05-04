@@ -49,7 +49,7 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *ProxyJump* to connect via SSH tunnel through bastion server.
 - *PreferredAuthentications* to limit authentication methods tried to login.
 - *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
-- A [bookmark](../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
+- A [bookmark](../../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
 
@@ -78,7 +78,7 @@ For the configuration above the hostname to specify in your bookmark is `myhosta
 
 #### Default Public Key Authentication Keys
 
-You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
+You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
 
 	defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
 
@@ -88,7 +88,7 @@ Public-key authentication allows you to connect to a remote server without sendi
 1. a private key that only you have that should be kept in a secure place and protected with a password
 2. the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
 
-Private keys containing a `DSA` or `RSA` private key in *PEM* format are supported (look for `-----BEGIN DSA PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----` in the file) and can be configured in the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) panel.
+Private keys containing a `DSA` or `RSA` private key in *PEM* format are supported (look for `-----BEGIN DSA PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----` in the file) and can be configured in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
 
 #### PuTTY Key Format Interoperability
 
@@ -217,7 +217,7 @@ Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to yo
 ![Terminal](../_images/Terminal.png)
 
 **Customize SSH Command:**<br/>
-You can change the SSH command using the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options)
+You can change the SSH command using the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)
 
 	defaults write ch.sudo.cyberduck terminal.command.ssh \"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
 
@@ -237,7 +237,7 @@ Because of all the escaping of characters, it might be easier to edit the key us
 No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term* and restart Cyberduck. To revert, set the default application for a file named `.command` to *Terminal.app* in *Finder → Info → Open With…*.
 
 **Previous versions:**<br/>
-You can change a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) to use a thirdparty terminal application instead of Terminal.app.
+You can change a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) to use a thirdparty terminal application instead of Terminal.app.
 
 - Example for iTerm2 Version 2
 	```
@@ -261,7 +261,7 @@ To reset to the default settings use:
 
 **Disable WSL**
 
-There is a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
+There is a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
 
 - Disabling OpenSSH: `terminal.openssh.enable=false`
 - Disabling WSL: `terminal.windowssubsystemlinux.enable=false`
@@ -273,7 +273,7 @@ Use *View → Customize Toolbar...* to add the *Open in Putty* toolbar icon to y
 ![Putty](../_images/putty.png)
 
 **Location of the PuTTY installation:**<br/>
-By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `terminal.command.ssh` to point to the path of the executable.
+By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `terminal.command.ssh` to point to the path of the executable.
 
 ```
 
@@ -281,7 +281,7 @@ By default, the executable `putty.exe` must be located in your user home folder.
 
 ## Distribution (CDN)
 
-You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
+You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
 ## Create and Expand ZIP or TAR Archives
 
@@ -353,7 +353,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 Running an SSH agent with many added identities can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
 
-- Select the identity in the [bookmark](../cyberduck/bookmarks.md#edit-bookmark) with _SSH Private Key_.
+- Select the identity in the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark) with _SSH Private Key_.
 - Increase the allowed authentication tries on the *server* by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
 
 Possible remedies using configuration in [OpenSSH configuration file](#openssh-configuration-interoperability):
@@ -405,4 +405,4 @@ The available space for a volume mounted over SFTP is determined using quota fea
 
 You can work around the issue using one of the following options:
 - Set a default path you want to connect to within the bookmark *Path* option.
-- Disable the feature within Mountain Duck by setting the [hidden property](../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/deafult.properties* on macOS. If the file doesn't exist create it within the [application support folder](../mountainduck/support.md#application-support-folder).
+- Disable the feature within Mountain Duck by setting the [hidden property](../../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/deafult.properties* on macOS. If the file doesn't exist create it within the [application support folder](../../mountainduck/support.md#application-support-folder).
