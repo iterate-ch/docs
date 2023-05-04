@@ -59,8 +59,8 @@ The value of `Vendor` must be unique among all installed connection profiles.
 All additional schemes are registered as a scheme handler when opening [Mountain Duck](../../mountainduck/index.md). This allows to reference files and folders in a web application using a custom scheme like `customscheme:/(/<hostname>)/path` to open in Windows Explorer or Finder.
 ```
 - `Username Configurable` Boolean if username is configurable.
-- `Username Placeholder` Suggestion for username in login credentials.
-- `Password Placeholder` Suggestion for password in login credentials.
+- `Username Placeholder` Suggestion for username in login credentials. Used for input field label when editing bookmark.
+- `Password Placeholder` Suggestion for password in login credentials. Used for input field label when editing bookmark.
 - `Password Configurable` Boolean if password is configurable.
 - `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a provider profile image.
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
