@@ -46,7 +46,7 @@ Copy the `RTMP` URL for a given file in a bucket with a streaming distribution e
 
 ## Custom Origin (HHTP/HTTPS) Distributions
 
-A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html#forward-custom-headers-restrict-access) is an origin server that isn't hosted on Amazon S3. The origin server holds the original, definitive versions of your content. You can connect to any [FTP](../ftp.md), [SFTP](../sftp.md) or [WebDAV](../webdav/index.md) server and configure it as an origin server for content distribution with Amazon CloudFront in the *Distribution (CDN)* tab of the [Info](../../cyberduck/info.md) panel. The hostname from the *Web URL* configured in the bookmark is used to configure the origin of the CDN.
+A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html#forward-custom-headers-restrict-access) is an origin server that isn't hosted on Amazon S3. The origin server holds the original, definitive versions of your content. You can connect to any [FTP](../ftp.md), [SFTP](../sftp/index.md) or [WebDAV](../webdav/index.md) server and configure it as an origin server for content distribution with Amazon CloudFront in the *Distribution (CDN)* tab of the [Info](../../cyberduck/info.md) panel. The hostname from the *Web URL* configured in the bookmark is used to configure the origin of the CDN.
 
 ![Custom Origin CDN](_images/Custom_Origin_CDN.png)
 

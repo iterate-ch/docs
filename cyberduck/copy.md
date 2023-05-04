@@ -17,7 +17,7 @@ This is supported for the following protocols
 
 ### Copying Files Using Download and Upload
 
-[FTP](../protocols/ftp.md) and [SFTP](../protocols/sftp.md) do not support a copy operation. 
+[FTP](../protocols/ftp.md) and [SFTP](../protocols/sftp/index.md) do not support a copy operation. 
 
 ```{important}
 Transfer speed depends on your local connectivity as files are routed through your computer for transfer between the remote servers.
