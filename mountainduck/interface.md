@@ -32,6 +32,11 @@ Right-click on the taskbar and select *Taskbar setting → Notification area →
 
 `````
 
+```{admonition} macOS only
+:class: tip
+Make sure there is enough space left on right side of the notch or application menu items to make sure the _Mountain Duck_ is visible in the the system status bar.
+```
+
 ### Auto start
 
 You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](preferences.md#login-item). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
