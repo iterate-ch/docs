@@ -206,6 +206,11 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 
 #### Examples
 
+```{admonition} Home Directory
+:class: tip
+You can use the `~` character to abbreviate the remote path pointing to the home folder on the server as in `duck --list sftp://duck.sh/~/`.
+```
+
 - List all buckets in S3 with 
 ```{code-block}
 duck --username <Access Key ID> --list s3:/
@@ -251,49 +256,55 @@ When connecting with `OpenStack Swift` you can set the tenant name (*OpenStack I
 
 ### Downloads with `--download`
 
+* Download file `<file>` to directory `<folder>` on disk using
+```{code-block}
+duck --download protocol:/<file> <folder>/
+```
+
+* Download file `<file>` as `<name>` to directory `<folder>` on disk using
+```{code-block}
+duck --download protocol:/<file> <folder>/<name>
+```
+
 #### Glob pattern support for selecting files to transfer
 
 You can transfer multiple files with a single command using a glob pattern for filename inclusion such as
 ```{code-block}
-duck --download ftps://<hostname>/directory/*.css
+duck --download protocol://<hostname>/directory/*.css
 ```
 
 ### Uploads with `--upload`
+
+Note the inclusion or absence of a trailing `/` delimiter character to denote a file or directory on the server.
+
+* Upload the `<folder>` on disk to remote directory `<name>/` using
+```{code-block}
+duck --upload protocol:/<name>/ <folder>/
+```
+
+* Upload file `<file>` to remote directory `<folder>` using
+```{code-block}
+duck --upload protocol:/<folder>/ <file>
+```
+
+* Upload file `<file>` as `<name>` to remote directory `<folder>` using
+```{code-block}
+duck --upload protocol:/<folder>/<name> <file>
+```
 
 #### Glob Pattern Support for Selecting Files to Transfer
 
 If your shell supports glob expansion you can use a wildcard pattern to select files for upload like 
 ```{code-block}
-duck --upload ftps://<hostname>/directory/ ~/*.jpg
+duck --upload protocol://<hostname>/directory/ ~/*.jpg
 ```
 
-#### Specification for folders
+### Synchronize folders with `--synchronize`
 
-Note the inclusion or absence of a trailing `/` delimiter character to denote a file or directory on the server.
-
-* Integrate `folder` (e.g. folder contents) to `<name>` using
+* Synchronize directory `<name>` with directory `folder` on disk using
 ```{code-block}
-duck --upload protocol:/<name> folder/
+duck --synchronize protocol:/<name>/ folder/
 ```
-
-* Upload the `folder` itself to `<name>/` using
-```{code-block}
-duck --upload protocol:/<name>/ folder/
-```
-
-* Upload file `file` to folder `<name>` using
-```{code-block}
-duck --upload protocol:/<name>/ file
-```
-
-* Upload file `file` as `<name>` to folder `<folder>` using
-```{code-block}
-duck --upload protocol:/<folder>/<name> file
-```
-
-#### Use of `~`
-
-You can use the tilde to abbreviate the remote path pointing to the remote home folder as in `sftp://duck.sh/~/`. It will be expanded when constructing absolute paths.
 
 #### Custom configuration options for uploads to S3
 
