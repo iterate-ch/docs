@@ -597,12 +597,14 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 ### Modification Date
 
-The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://profiles.cyberduck.io/S3%20(Timestamps).cyberduckprofile>`. 
-
-While using this connection profile the modification dates get written into the metadata for files uploaded to S3. The metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time) using `X-Amz-Meta-Mtime`.
+The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://profiles.cyberduck.io/S3%20(Timestamps).cyberduckprofile>`. When using this connection profile, the modification dates get written into the metadata for files uploaded to S3. The metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time) using `X-Amz-Meta-Mtime`. 
 
 ```{attention}
 Make sure to enable the modification date preservation within *Preferences → Transfers*.
+```
+
+```{attention}
+Listing folders will require an additional `HEAD` request for every file to read the modification date from the object metadata.
 ```
 
 ### Disable use of Virtual Host Style Requests
