@@ -89,12 +89,17 @@ You can choose to use single or multiple connections for file transfers. Choose 
 
 ### Limit Number of Parallel Connections
 
-The maximum number of connections for transfers using multiple connections can be limited using the toggle in the lower right of the *transfer window* on Windows or the *toolbar dropdown* on macOS. The same toggle limits the maximum allowed concurrent transfers in the transfer window to the same number.
+The maximum number of connections for transfers using multiple connections can be limited using the toggle in the lower right of the *transfer window* on Windows or the *toolbar dropdown* on macOS.
 
 ```{image} _images/Limit_Connections.png
 :alt: Limit Connections
 :width: 500px
 ```
+
+The setting limits
+* The number of parallel transfers in progress the _Transfers_ window. Transfers awaiting will show _Maximum allowed connections exceeded. Waiting…_.
+* The number of connections used to download multiple parts using [segmented downloads](download.md#segmented-downloads).
+* The number of connections used when downloading or uploading multiple files in a transfer with the option _Use multiple connections_.
 
 ## Overwrite Prompt
 
