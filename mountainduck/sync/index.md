@@ -53,7 +53,7 @@ The file or directory is currently syncing with the server or cloud storage. Che
 There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu. Refer to [Sync Conflicts](#sync-conflicts) for possible error scenarios.
 
 ### ![](../_images/overlay_ignored.png) Ignored
-The file is only saved in a local temporary location and never synced to the server or cloud storage.
+The file is only saved in a local [temporary](../issues/index.md#temporary-files) location and never synced to the server or cloud storage.
 
 ```{tip}
 Rename a file to synchronize with the server.
