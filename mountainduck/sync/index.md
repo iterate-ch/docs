@@ -60,6 +60,9 @@ Rename a file to synchronize with the server.
 ```
 
 ## Context Menu Options
+
+Refer to [Context Menu in Finder and Windows File Explorer](../interface.md#context-menu-in-finder-and-windows-file-explorer).
+
 ```{image} ../_images/Mountain_Duck_Screenshot_Finder_Dark.png
 :alt: Mountain Duck Finder Dark
 :width: 800px
