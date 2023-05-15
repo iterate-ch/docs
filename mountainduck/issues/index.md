@@ -109,11 +109,14 @@ It is not possible to share a mounted drive within the local network.
 
 ### Changes from server not immediately visible
 
-In _Smart Synchronization_ connect mode changes from the server must be synced with cached contents on your computer. The directory listing in *Finder.app* or *File Explorer* may become out of date when another application is adding, removing, or modifying files on the server. No push notifications are received for changes on the server. Thus, the following strategies are in place to detect changes to existing and new files as soon as possible:
-* Periodically polls for changes for open folders in _Finder_ or _Windows Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes.
-* With [_Preferences → Sync → Index Files_](../preferences.md#index-files) enabled, remote directories previously opened are polled for changes and new files.
-* When browsing a directory in Finder.app or Windows Explorer will attempt to sync with contents with the server.
-* You can explicitly request to look for changes on the server in a directory by choosing [*Reload*](../interface.md#reload) within the context menu.
+The directory listing in *Finder.app* on macOS or *File Explorer* on Windows may become out of date when another application is adding, removing, or modifying files on the server. No push notifications are received for changes on the server. The following strategies are in place to detect changes to existing and new files as soon as possible:
+* Periodically polls for changes for open folders in _Finder_ or _File Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes.
+* With [_Preferences → Sync → Index Files_](../preferences.md#index-files) enabled, folders previously opened are polled for changes and new files in _Smart Synchronization_ connect mode.
+* Immediately look for changes from the server when opening a new folder in _Finder.app_ on macOS or _File Explorer_ on Windows.
+
+```{tip}
+You can explicitly request to look for changes on the server in a folder by choosing *Reload* from the [context menu](../interface.md#reload).
+```
 
 ### New folder not uploaded to remote server
 
