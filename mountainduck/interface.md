@@ -76,7 +76,7 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 
 The nickname determines the display of the bookmark in the menu and can be customized.
 ```{tip}
-The nickname determines the name of the mounted volume in Finder on macOS or drive in Windows Explorer. Also refer to [Mount Location](preferences.md#mount-location).
+The nickname determines the name of the mounted volume in Finder.app on macOS or drive in File Explorer on Windows. Also refer to [Mount Location](preferences.md#mount-location).
 ```
 
 ### Labels
@@ -221,16 +221,16 @@ Refer to [Sync Options](sync/index.md#keep-offline).
 
 ### Reload
 
-Changes from the server are not immediately visible. The folder listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Mountain Duck periodically polls for changes for open folders in _Finder_ or _Windows Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes. Choose *Reload* from the context menu in _Finder_ or _Windows Explorer_ to refresh the directory listing.
+Changes from the server are not immediately visible. The folder listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Mountain Duck periodically polls for changes for open folders in _Finder.app_ on macOS or _File Explorer_ on Windows about every minute in both _Online_ and _Smart Synchronization_ connect modes. Choose *Reload* from the context menu to refresh the directory listing.
 
 ```{admonition} Windows only
 :class: tip
 
-Use _F5_ in _Windows Explorer_ to refresh the folder listing.
+Use _F5_ in _File Explorer_ to refresh the folder listing.
 ```
 
 ```{tip}
-Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories regardless of any open window for the folder in _Finder_ or _Windows Explorer_ in _Smart Synchronization_ connect mode.
+Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories regardless of any open window for the folder in _Finder.app_ on macOS or _File Explorer_ on Windows in _Smart Synchronization_ connect mode.
 ```
 
 ### Share

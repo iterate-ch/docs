@@ -124,7 +124,7 @@ Folders that weren't renamed after creation don't get uploaded to the server. Ch
 
 ### Cache uses a lot of disk space
 
-Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../sync/index.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ or _Windows Explorer_) or explicitly with [*Keep Offline on Local Disk*](../sync/index.md#keep-offline).
+Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../sync/index.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ on macOS or _File Explorer_ on Windows) or explicitly with [*Keep Offline on Local Disk*](../sync/index.md#keep-offline).
 
 The cache size can be limited per bookmark in *Preferences → Sync*. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
 
