@@ -208,6 +208,12 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 :width: 600px
 ```
 
+```{admonition} macOS only
+:class: tip
+
+Please make sure to enable the Mountain Duck [Integration](../interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
+```
+
 ### Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.

@@ -65,12 +65,6 @@ Rename a file to synchronize with the server.
 :width: 800px
 ```
 
-```{admonition} macOS only
-:class: tip
-
-Please make sure to enable the Mountain Duck [Integration](../interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
-```
-
 ### Keep Offline
 
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
