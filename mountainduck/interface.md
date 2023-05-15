@@ -221,7 +221,7 @@ Refer to [Sync Options](sync/index.md#keep-offline).
 
 ### Reload
 
-Changes from the server are not immediately visible. The folder listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Choose *Reload* from the context menu in _Finder_ or _Windows Explorer_ to refresh the directory listing.
+Changes from the server are not immediately visible. The folder listing in the file browser may become outdated when another application adds, removes, or modifies files on the server. Mountain Duck periodically polls for changes for open folders in _Finder_ or _Windows Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes. Choose *Reload* from the context menu in _Finder_ or _Windows Explorer_ to refresh the directory listing.
 
 ```{admonition} Windows only
 :class: tip
@@ -229,9 +229,8 @@ Changes from the server are not immediately visible. The folder listing in the f
 Use _F5_ in _Windows Explorer_ to refresh the folder listing.
 ```
 
-
-```{note}
-Mountain Duck periodically polls for changes for open folders in _Finder_ or _Windows Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes. Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories regardless of any open window for the folder in _Finder_ or _Windows Explorer_.
+```{tip}
+Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index-files) to allow new files on the remote storage to be detected periodically for previously opened directories regardless of any open window for the folder in _Finder_ or _Windows Explorer_ in _Smart Synchronization_ connect mode.
 ```
 
 ### Share
