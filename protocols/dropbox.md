@@ -59,6 +59,10 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 
 You can share an URL to provide access to a document in your Dropbox from *File → Share…*. Optionally set a password required to download the file. Request others to add files to your Dropbox with *File → Request Files…*.
 
+```{note}
+Password protected share links are only available for [paid business plans](https://help.dropbox.com/share/set-link-permissions).
+```
+
 ## Known Limitations
 
 ### Transfer speed Comparison
@@ -82,3 +86,4 @@ The file cannot be transferred because the content is restricted. For example, s
 ### Will not save the file or folder because of its name.
 
 Uploads may fail with a `409 (disallowed_name)` error reply for files with certain characters in the filename.
+
