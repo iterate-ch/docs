@@ -242,6 +242,7 @@ There are a growing number of third parties besides Amazon offering S3 compatibl
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
 - [Oracle Storage Cloud Service](oraclecloud.md#oci-object-storage)
 - [Outscale (using CEPH Opensource)](https://www.outscale.com/)
+- [OVH](../openstack/ovh.md)
 - [Pilvio](pilvio.md)
 - [Polycloud](polycloud.md)
 - [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
