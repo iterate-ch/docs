@@ -309,6 +309,16 @@ When this option is enabled in the S3 panel of the Info (*File → Info (macOS `
 
 To toggle CloudFront access logging, select the the [Distribution](../../protocols/cdn/cloudfront.md) panel in the File → Info (macOS `⌘I` Windows `Alt+Return`) window.
 
+### Requester Pays Buckets
+
+Per default, buckets are accessed with the parameter `x-amz-requester-payer` in the header to allow access to files in buckets with the *Requester Pays* option enabled. 
+
+You can change the parameter using the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
+
+	s3.bucket.requesterpays=true
+
+* [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html)
+
 ### Versions
 
 [Versioning](http://aws.amazon.com/s3/faqs/#What_is_Versioning) can be enabled per bucket in *File → Info (macOS `⌘I` Windows `Alt+Return`) → S3*. Make sure the user has the following permissions:
