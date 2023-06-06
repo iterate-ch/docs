@@ -215,7 +215,7 @@ Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder �
 The Spotlight search does not work on remote volumes.
 
 **Spotlight indexer**<br/>
-To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location-) to a directory without the extension `.noindex`.
+To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location) to a directory without the extension `.noindex`.
 ```{attention}
 Enabling Spotlight can cause high CPU and bandwith usage while indexing folders. 
 ```
