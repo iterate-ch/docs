@@ -179,6 +179,7 @@ When you have other applications installed that register a Finder Extension (mac
 - [*Keka*](https://www.keka.io/en/)
 
 Please check in *System Preferences → Extension → Finder* for other applications that may override the badge icons.
+For **macOS Ventura and later**, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
 
 ```{note}
 If none of those applications are in use, a Finder re-launch can make the badge icons appear again.

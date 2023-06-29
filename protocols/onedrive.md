@@ -106,3 +106,7 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 |-------------|:--------------:|
 | My Files    | Personal files |
 | Shared      | Shared folders |
+
+```{note}
+You may experience quota issues while connecting without adding the path to one of the virtual top level folders to your bookmark.
+```

@@ -38,7 +38,7 @@ A file or folder was added or changed *by you* and uploaded to the server.
 A file is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
 
 #### ![Error](../_images/alert.png) Error
-The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](sync.md#sync-errors).
+The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](index.md#sync-errors).
 
 ### Application Display
 

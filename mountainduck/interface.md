@@ -160,7 +160,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](connect/sync.md#notifications)
+- [Sync Notifications](connect/index.md#notifications)
 
 ```{image} _images/File_Added_Notification_Windows.png
 :alt: File Added Notification (Windows)
@@ -212,6 +212,7 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 :class: tip
 
 Please make sure to enable the Mountain Duck [Integration](#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
+For **macOS Ventura and later**, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
 ```
 
 ### Sync Options

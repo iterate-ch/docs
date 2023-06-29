@@ -22,6 +22,8 @@ Files and folders on a mounted volume have a status icon overlay in File Explore
 
 ```{note}
 Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS.
+
+For macOS Ventura and later, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
 ```
 
 ### ![](../_images/overlay_infinite.png) Online Only
@@ -35,7 +37,11 @@ The file is only saved in a local [temporary](../issues/index.md#temporary-files
 
 ## Sync paused
 
+You can manually pause uploads and indexing by selecting *Pause Sync* in the submenu for the sync status. Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
+```{warning}
+As long as the sync status is paused, uncached files marked as [Online Only](#online-only) can't be opened. An error message will be shown by the application attempting to open the file and a *Access Denied* notification will show up.
+```
 
 ## Sync Errors
 
