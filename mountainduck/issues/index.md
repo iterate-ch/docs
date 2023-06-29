@@ -122,13 +122,17 @@ You can explicitly request to look for changes on the server in a folder by choo
 
 Folders that weren't renamed after creation don't get uploaded to the server. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows, and the folder should be uploaded to the server and be visible on the server.
 
+### Missing files
+
+Files matching the following naming pattern are excluded from the file listing per default and not synchronized from the server: `.`, `..`, `*/*`, `*\*`, `*:*`
+
 ### Cache uses a lot of disk space
 
-Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../sync/index.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ on macOS or _File Explorer_ on Windows) or explicitly with [*Keep Offline on Local Disk*](../sync/index.md#keep-offline).
+Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../connect/sync.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ on macOS or _File Explorer_ on Windows) or explicitly with [*Keep Offline on Local Disk*](../connect/sync.md#keep-offline).
 
 The cache size can be limited per bookmark in *Preferences → Sync*. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
 
-The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](../preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](../sync/index.md#delete-on-local-disk) option.
+The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](../preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](../connect/sync.md#delete-on-local-disk) option.
 
 ```{image} ../_images/Custom_Location_Sync_Cache.png
 :alt: Send Command
@@ -193,6 +197,12 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 
 `````{tabs}
 ````{group-tab} macOS
+
+**Missing status bar icon**<br/>
+Using applications customizing the status bar may lead to a missing status bar icon of Mountain Duck. This has been reported for the following applications:
+- _xbar_
+- _MenuMeters_
+- _IP in menubar_
 
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](../preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
@@ -314,10 +324,6 @@ Be aware that Bitdefender may interfere with connections.
 #### Sophos Endpoint Protection
 
 May interfere with installation.
-
-#### xbar
-
-Using the _xbar_ for macOS, the Mountain Duck icon in the status bar may not appear.
 
 ### Backups
 

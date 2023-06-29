@@ -58,7 +58,7 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 In _Online_ connect mode, changes to a file are immediately uploaded and in sync when an application has finished saving a file.
 ```
 
-- **Smart Synchronization:** Directories can be browsed when offline and files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](sync/index.md#keep-offline). See [Smart Synchronization](sync/index.md).
+- **Smart Synchronization:** Directories can be browsed when offline and files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](connect/sync.md#keep-offline). See [Smart Synchronization](connect/sync.md).
 ```{tip}
 In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
 ```
@@ -160,7 +160,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](sync/index.md#notifications)
+- [Sync Notifications](connect/sync.md#notifications)
 
 ```{image} _images/File_Added_Notification_Windows.png
 :alt: File Added Notification (Windows)
@@ -211,13 +211,13 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 ```{admonition} macOS only
 :class: tip
 
-Please make sure to enable the Mountain Duck [Integration](../interface.md#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
+Please make sure to enable the Mountain Duck [Integration](#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
 ```
 
 ### Sync Options
 
 *Keep Offline on Local Disk* or *Delete on Local Disk* to manage caching status.
-Refer to [Sync Options](sync/index.md#keep-offline).
+Refer to [Sync Options](connect/sync.md#keep-offline).
 
 ### Reload
 
