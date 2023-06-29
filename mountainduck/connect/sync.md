@@ -4,9 +4,7 @@ Smart Synchronization
 ```{toctree}
 :hidden:
 :titlesonly:
-
-
-history
+synchistory
 ```
 
 ```{image} ../_images/Disk_Syncing.png
@@ -23,11 +21,7 @@ The smart synchronization [connect mode](../interface.md#connect-mode) allows wo
 
 ## Status of Files
 
-Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
-
-```{note}
-Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS.
-```
+Additional to the [general file states](index.md#status-of-files) available using the *Online* mode, there are some more while using the *Smart Synchronization* mode:
 
 ### ![](../_images/overlay_uptodate.png) Up to Date
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
@@ -43,21 +37,8 @@ The file or directory is selected to be synced with the server or cloud storage 
 Files explicitly selected to keep offline are **not** automatically purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
 ```
 
-### ![](../_images/overlay_infinite.png) Online Only
-The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
-
 ### ![](../_images/overlay_syncing.png) Sync in Progress
 The file or directory is currently syncing with the server or cloud storage. Check the menu with the sync status for current download or upload progress.
-
-### ![](../_images/overlay_error.png) Sync Error
-There was an error updating the file after changes. You are missing permission to write to the file or another problem occured. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory or use the _Retry_ option within the context menu. Refer to [Sync Conflicts](#sync-conflicts) for possible error scenarios.
-
-### ![](../_images/overlay_ignored.png) Ignored
-The file is only saved in a local [temporary](../issues/index.md#temporary-files) location and never synced to the server or cloud storage.
-
-```{tip}
-Rename a file to synchronize with the server.
-```
 
 ## Context Menu Options
 
@@ -134,14 +115,14 @@ Changes to files are uploaded in the background as soon as a connection is avail
 :alt: Sync in Progress
 :width: 600px
 ```
-Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](../sync/history.md#sync-progress).
+Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](synchistory.md#sync-progress).
 
 ### Pause Sync
 
 You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
 ```{warning}
-When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected.
+When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](index.md#online-only) can't be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
 ```
 
 The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
@@ -165,36 +146,6 @@ To abort the download of a file, follow these steps:
 2. Select *Delete on local Disk* within the Mountain Duck [context menu](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 3. *Resume Synchronization* in the dropdown menu.
 
-## Sync Errors
-
-Files that failed to sync get a sync error badge. You can try to repeat the failed transfer by selecting *Mountain Duck → Retry* in the context menu.
-
-### Resolve Errors
-
-If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operation (i.e. due to a permission issue), you can resolve the error state on the file or folder by
-
-- Move the file or folder to another location on the volume
-- Delete the file or folder 
-
-To upload files to a target directory no longer existing on the server, you have to move the files to a location found on the server.
-
 ## File History
 
-You can lookup the latest changes to files. Refer to [Recent Files](history.md#recent-files)
-
-### Notifications
-
-```{image} ../_images/File_Updated_Notification.png
-:alt: File Updated Notification
-:width: 500px
-```
-
-- **File Added:** New file found on server for previously indexed folder.
-- **File Updated:** File changed on server since previously indexing a folder
-- **Sync Conflict:** Conflicting change in file lead to duplicate of file being created with previous content edited on server.
-
-You can adjust which notifications you want to receive within [*Preferences → Notifications*](../preferences.md#notifications).
-
-## Preferences
-
-Refer to [Preferences](../preferences.md).
+You can lookup the latest changes to files. Refer to [Recent Files](synchistory.md#recent-files)

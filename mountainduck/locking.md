@@ -112,4 +112,4 @@ If you get a warning that the document is *Read-Only*, ask other users to close 
 
 ## Preferences
 
-Locking is disabled by default. Refer to [Preferences](preferences.md) to enable it in *Connection → Locking → Lock Files*.
+Locking is disabled by default. Refer to [Preferences](preferences.md) to enable it in *Sync → Locking → Lock Files*.

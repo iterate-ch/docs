@@ -8,7 +8,7 @@ installation/index
 interface
 info
 share
-sync/index
+connect/index
 locking
 versions
 preferences
@@ -40,11 +40,15 @@ Edit access permissions and configure [CDN](../protocols/cdn/index.md) options.
 
 Share files with others using signed or temporary URLs.
 
-## [Smart Synchronization](sync/index.md)
+## [Connect](connect/index.md)
+
+Choose between different connect modes based on use case and available disk space.
+
+### [Smart Synchronization](connect/sync.md)
 
 The smart sync feature allows making files available offline.
 
-### [File History](sync/history.md)
+### [File History](connect/synchistory.md)
 
 Recently changed files and pending file transfers.
 
