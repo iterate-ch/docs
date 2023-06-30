@@ -6,9 +6,9 @@ Mountain Duck
 :titlesonly:
 installation/index
 interface
+connect/index
 info
 share
-connect/index
 locking
 versions
 preferences
