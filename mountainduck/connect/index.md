@@ -21,9 +21,7 @@ While transferring files and folders, a transfer window will popup showing the t
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
 ```{note}
-Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS.
-
-For macOS Ventura and later, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
+Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS. For macOS Ventura and later, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 ```
 
 ### ![](../_images/overlay_infinite.png) Online Only

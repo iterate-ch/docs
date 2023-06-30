@@ -178,8 +178,7 @@ When you have other applications installed that register a Finder Extension (mac
 - [*Sophos*](https://www.sophos.com/en-us). Documented in [SAV for Mac OS - Sophos Finder Extension Known Issues](https://community.sophos.com/kb/en-us/132136)
 - [*Keka*](https://www.keka.io/en/)
 
-Please check in *System Preferences → Extension → Finder* for other applications that may override the badge icons.
-For **macOS Ventura and later**, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
+Please check in *System Preferences → Extension → Finder* for other applications that may override the badge icons. For **macOS Ventura and later**, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 
 ```{note}
 If none of those applications are in use, a Finder re-launch can make the badge icons appear again.
