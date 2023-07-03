@@ -211,8 +211,7 @@ A context menu in *Finder* on macOS and *File Explorer* on Windows allows variou
 ```{admonition} macOS only
 :class: tip
 
-Please make sure to enable the Mountain Duck [Integration](#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*.
-For **macOS Ventura and later**, the setting can be found in *System Preferences → Privacy & Security → Extensions → Added Extensions*.
+Please make sure to enable the Mountain Duck [Integration](#context-menu-in-finder-and-windows-file-explorer) in *System Preferences → Extensions → Finder Extensions*. For **macOS Ventura and later**, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 ```
 
 ### Sync Options
