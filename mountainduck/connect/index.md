@@ -20,7 +20,7 @@ While transferring files and folders, a transfer window will popup showing the t
 
 Files and folders on a mounted volume have a status icon overlay in File Explorer (Windows) and Finder (macOS).
 
-```{note}
+```{macOS only}
 Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS. For macOS Ventura and later, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 ```
 
@@ -47,7 +47,7 @@ Files that failed to sync get a sync error badge. You can try to repeat the fail
 
 ### Resolve Errors
 
-If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operation (i.e. due to a permission issue), you can resolve the error state on the file or folder by
+If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operation (i.e. due to a permission issue), you can resolve the error state on the file or folder by one of the options below.
 
 - Move the file or folder to another location on the volume
 - Delete the file or folder 
@@ -56,19 +56,19 @@ To upload files to a target directory no longer existing on the server, you have
 
 ## Sync Limitations
 
-Specific file types are excluded from sync operations per default. Files matching those criteria won't be synced from or to the server and marked with the *ignored* badge icon.
+Specific file types are excluded from sync operations by default. Files matching those criteria won't be synced from or to the server and marked with the *ignored* badge icon.
 
 ### New Files and Folders
 
-New files created via context menu are created as 0-byte files and therefore not transfered to the server. The same goes for new folders with default name.
+New folders created with the default name won't be transfered to the server.
 * In Finder.app: *Untitled folder* and localized variants
 * In Windows Explorer: *New folder* and localized variants
 
-The files and folders will be synchronized after being renamed.
+The folders will be synchronized after being renamed.
 
 ### Files excluded by Name
 
-Some file types especially temporary files are excluded from sync processes per default. They are listed in the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
+Some file types especially temporary files are excluded from sync processes per default and won't be synced from the server. They are listed in the following [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options).
 
 	fs.filenames.temporary.regexp=\.nfs\..* \.VolumeIcon.icns \.DS_Store .*~$ .*~\..* \._~\$.* \.~(?!lock).*[^#] .*\.tmp ~.*\.tmp .*~.*\.TMP .*\.swap .*\.swp Word\sWork\sFile.*\.tmp \._Word\sWork\sFile.*\.tmp (.*)\.sb-[\w]{8}-[\w]{6} \._.*\.(doc|docx)\.sb-.* \.TemporaryItems \.dat\.nosync.* TestFile[\d]+-[\d]+$ .*~[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}$ Adobe\ Photoshop\ [\d]+$ DBTmp.* .*\.lck [0-9A-Z]+\.tmp .*\.idlk Desktop\.ini desktop\.ini Thumbs\.db \(A\ Document\ Being\ Saved\ By\ .*\) ai[\d]{10}.* AI\ Temp.* .*\.crdownload .*\.part .*\.onetmp \.goutputstream-.* Adobe\ Premiere\ Pro\ Auto-Save
 
@@ -76,7 +76,7 @@ Some file types especially temporary files are excluded from sync processes per 
 
 Files matching the following default pattern won't be synced from the server or remote storage as they are excluded from the listing process: `.`, `..`, `*/*`, `*\*`, `*:*`
 
-You can exclude additional file types from the listing by using following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
+You can exclude additional file types from the listing by using following [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options).
 
 	fs.filenames.filter.name.regexp=[\\.]{1,2} .*[:\\/\\\\].*
 
