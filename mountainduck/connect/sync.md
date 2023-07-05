@@ -58,7 +58,7 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 ```
 
 ```{note}
-As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. This is made possible by caching file contents in an obfuscated cache on a local disk, which is unavailable for direct use.
+As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. 
 ```
 
 ### Delete on Local Disk
@@ -82,7 +82,8 @@ Choose _Mountain Duck → Retry_ to retry a sync operation failed previously wit
 
 ## Cache Size
 
-The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
+The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations). The cache contains obfuscated file contents on local disk to make files available when offline.
+
 
 
 ## Sync Progress
