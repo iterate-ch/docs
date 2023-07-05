@@ -47,7 +47,8 @@ When enabled _Preferences → Sync → Enable buffering_ is enabled:
 
 ## Filenames
 
-The following characters should be avoided within file and folder names.
+### Files and folders not synced from Server
+Files matching the following naming pattern are excluded from folder listings per default and not synchronized from the server.
 
 `````{tabs}
 ````{group-tab} macOS
@@ -68,6 +69,27 @@ The following characters should be avoided within file and folder names.
 - `|` (vertical bar or pipe)
 - `?` (question mark)
 - `*` (asterik)
+
+````
+`````
+
+### Files and Folders not uploaded to Server
+Files and folders matching temporary filename patterns are excluded from sync by default. This includes `.DS_Store`,`*~$`, `*~.*`, `._~$*`, `*.tmp`, `~*.tmp`, `*~*.TMP`, `*.swap`, `*.swp`, `.TemporaryItems`, `.dat.nosync*`, `DBTmp*`, `*.lck`, `*.idlk`, `Desktop.ini`, `Thumbs.db`, `*.crdownload`, `*.part`
+
+
+### New Files and Folders
+
+New empty (0-byte) files created in _Windows Explorer_ using _New → …_ are not transferred to the server. New folders created in _Finder.app_ or _Windows Explorer_ not renamed are not uploaded to the server. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows to synchronize to the server.
+
+`````{tabs}
+````{group-tab} macOS
+
+In _Finder.app_: *Untitled folder* and localized variants created using _File → New Folder_
+
+````
+````{group-tab} Windows
+
+In _Windows Explorer_: *New folder* and localized variants created using _New → Folder_
 
 ````
 `````
@@ -117,14 +139,6 @@ The directory listing in *Finder.app* on macOS or *File Explorer* on Windows may
 ```{tip}
 You can explicitly request to look for changes on the server in a folder by choosing *Reload* from the [context menu](../interface.md#reload).
 ```
-
-### New folder not uploaded to remote server
-
-Folders that weren't renamed after creation don't get uploaded to the server. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows, and the folder should be uploaded to the server and be visible on the server.
-
-### Missing files
-
-Files matching the following naming pattern are excluded from the file listing per default and not synchronized from the server: `.`, `..`, `*/*`, `*\*`, `*:*`
 
 ### Cache uses a lot of disk space
 
