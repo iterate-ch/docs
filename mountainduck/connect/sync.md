@@ -138,8 +138,6 @@ To abort the upload of a file, follow these steps:
 2. Delete the file
 3. *Resume Synchronization* in the dropdown menu.
 
-You can use the steps as well to cancel *Keep Offline* processes.
-
 ### Cancel download in progress
 To abort the download of a file, follow these steps:
 1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
