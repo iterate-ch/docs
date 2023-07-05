@@ -32,7 +32,7 @@ This feature is not available in *Online* connect mode. You cannot browse folder
 ### Enable Buffering
 Choose whether the file contents should be buffered. The option allows buffering file contents in a temporary location which is only deleted when quitting the application.
 - Allows faster access when reading or writing files with random access patterns from applications in _Online_ [mode](interface.md#connect-mode).
-- With the option enabled in _Smart Synchronization_ [mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](sync/index.md#status-of-files).
+- With the option enabled in _Smart Synchronization_ [mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](connect/sync.md#status-of-files).
 
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
@@ -85,19 +85,7 @@ The settings apply separately for each bookmark which must be connected for the 
 
 ## Notifications
 
-Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. The following types of notifications can be toggled:
-- **Filesystem mounted**. The volume is now connected. 
-- **Filesystem unmounted**. The volume has been disconnected.
-- **Pause Sync**. Synchronization has paused due to the server not reachable because of a network or login error.
-- **Resume Sync**. Synchronization has automatically resumed as after reachability change.
-- **File Added**. New file has been found on the server not previously synced.
-- **File Deleted**. File has been deleted on the server previously synced.
-- **File Updated**. File has been updated on the server previously synced.
-- **File Uncached**. File previously cached for offline access has been purged.
-- **Download complete**. File download completed in the background.
-- **Upload complete**. File upload completed in the background.
-- **Sync Error**. Error synchronizing file because of a server error response.
-- **Sync Conflict**. Error synchronizing file because of a sync conflict.
+Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. 
 
 ```{image} _images/Notification_Preferences.png
 :alt: Notification Preferences
@@ -128,6 +116,16 @@ The connection profiles for [default protocols](../protocols/index.md) are alway
 
 ## Login Item
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
+
+## Cryptomator
+Choose wheather or not your [Cryptomator vaults](../cryptomator/index.md) should be auto detected and unlocked while browsing the parent folder or not by using the *Auto detect and open vault in browser* option.
+
+```{note}
+Without saving the vaults passwords using keychain, you will receive passwords prompts for the vaults after reconnecting to the server or cloud storage.
+``` 
+
+### Use Keychain
+Specify if you want the *Save Password* option enabled by default while entering the password to unlock your vault. With the option disabled you have to check the checkbox to save the password in keychain manually. 
 
 ## Updates
 An auto-update feature will alert you when a new version is available and self updates the application. Choose *Preferences → Automatically check for updates*. You can also choose to update to snapshot or beta builds.
