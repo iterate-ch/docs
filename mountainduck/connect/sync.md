@@ -85,6 +85,9 @@ Choose _Mountain Duck → Retry_ to retry a sync operation failed previously wit
 The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations). The cache contains obfuscated file contents on local disk to make files available when offline.
 
 
+## Transfer progress
+
+While transferring files and folders, a transfer [progress](../interface.md#copying-files) window shows in _Finder.app_ or _Windows Explorer_. When completed, the file(s) are queued for synchronization with the server.
 
 ## Sync Progress
 
