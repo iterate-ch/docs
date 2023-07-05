@@ -4,7 +4,6 @@ Smart Synchronization
 ```{toctree}
 :hidden:
 :titlesonly:
-synchistory
 ```
 
 ```{image} ../_images/Disk_Syncing.png
@@ -150,6 +149,37 @@ To abort the download of a file, follow these steps:
 2. Select *Delete on local Disk* within the Mountain Duck [context menu](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 3. *Resume Synchronization* in the dropdown menu.
 
-## File History
+## Recent Files
+The *Recent Files* area shows the last 20 changes to files by you or on the server:
+```{image} ../_images/Recent_Files.png
+:alt: Recent Files
+:width: 600px
+```
 
-You can lookup the latest changes to files. Refer to [Recent Files](synchistory.md#recent-files)
+#### ![Delete](../_images/delete.png) Delete
+A file or folder has been deleted either *by you* or *on the server*
+
+#### ![Create](../_images/plus.png) Create
+A file or folder was created or updated *on the server*.
+
+#### ![Upload](../_images/transfer_upload.png) Upload
+A file or folder was added or changed *by you* and uploaded to the server.
+
+#### ![Download](../_images/transfer_download.png) Download
+A file is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
+
+#### ![Error](../_images/alert.png) Error
+The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](#sync-errors).
+
+### Application Display
+
+```{admonition} Windows Only
+:class: tip
+
+The application that was used for editing the file is displayed within the *Recent Files* area.
+```
+### Reveal file
+Selecting an item in the *Recent Files* section reveals the file in the Finder (macOS) of File Explorer (Windows).
+
+### Clear Menu
+Clear out all entries of the list by clicking on the *Clear Menu* button at the bottom of the menu.
