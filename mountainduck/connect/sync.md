@@ -111,25 +111,31 @@ A conflict may be caused by two or more users editing the same files at the same
 
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
-```{image} ../_images/Sync_in_Progress.gif
+```{image} ../_images/Icon_Sync_in_Progress.gif
 :alt: Sync in Progress
 :width: 600px
 ```
-Detailed status for current transfers is available in the *Sync* submenu. Refer to [Sync Progress](synchistory.md#sync-progress).
+Detailed status for current transfers is available in the *Sync* submenu. The sync progress shows the files that currently get synchronized and pending changes after the current transfer.
 
-### Pause Sync
-
-You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
-
-```{warning}
-When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](index.md#online-only) can't be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
+```{image} ../_images/Menu_Sync_in_Progress.png
+:alt: Sync Progress
+:width: 800px
 ```
 
-The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
+Shown for the current transfers are transfer rate, remaining data, and already transferred data. If Mountain Duck synchronizes files in a badge, the file state might differ from the state within the file browser. The sync progress display is limited to 5 entries.
+
+
+### Pause Sync
+You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
 
 ```{image} ../_images/Sync_Paused_macOS.png
 :alt: Sync Paused (macOS)
 :width: 500px
+```
+Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
+
+```{warning}
+When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](#online-only) cannot be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
 ```
 
 ### Cancel upload in progress
