@@ -32,6 +32,10 @@ Refer to our licensing FAQ.
 
 Mountain Duck runs in the *status bar* on macOS and *tray area* on Windows. Refer to our user interface documentation.
 
+## [Connect Mode](connect/index.md)
+
+Choose between different connect modes based on use case and available disk space.
+
 ## [Info Window](info.md)
 
 Edit access permissions and configure [CDN](../protocols/cdn/index.md) options.
@@ -39,18 +43,6 @@ Edit access permissions and configure [CDN](../protocols/cdn/index.md) options.
 ## [Share](share.md)
 
 Share files with others using signed or temporary URLs.
-
-## [Connect](connect/index.md)
-
-Choose between different connect modes based on use case and available disk space.
-
-### [Smart Synchronization](connect/sync.md)
-
-The smart sync feature allows making files available offline.
-
-### [File History](connect/synchistory.md)
-
-Recently changed files and pending file transfers.
 
 ## [Client-Side Encryption](../cryptomator/index.md)
 

@@ -85,19 +85,7 @@ The settings apply separately for each bookmark which must be connected for the 
 
 ## Notifications
 
-Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. The following types of notifications can be toggled:
-- **Filesystem mounted**. The volume is now connected. 
-- **Filesystem unmounted**. The volume has been disconnected.
-- **Pause Sync**. Synchronization has paused due to the server not reachable because of a network or login error.
-- **Resume Sync**. Synchronization has automatically resumed as after reachability change.
-- **File Added**. New file has been found on the server not previously synced.
-- **File Deleted**. File has been deleted on the server previously synced.
-- **File Updated**. File has been updated on the server previously synced.
-- **File Uncached**. File previously cached for offline access has been purged.
-- **Download complete**. File download completed in the background.
-- **Upload complete**. File upload completed in the background.
-- **Sync Error**. Error synchronizing file because of a server error response.
-- **Sync Conflict**. Error synchronizing file because of a sync conflict.
+Set which type of notifications you want to receive. Alternatively, you can choose *Open System Preferences* to disable the notifications all together. 
 
 ```{image} _images/Notification_Preferences.png
 :alt: Notification Preferences

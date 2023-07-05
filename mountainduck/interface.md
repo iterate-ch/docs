@@ -51,17 +51,9 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 
 ### Connect Mode
 
-- **Default:** Use setting from *Preferences*
-- **Online:** Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
-
-```{tip}
-In _Online_ connect mode, changes to a file are immediately uploaded and in sync when an application has finished saving a file.
-```
-
-- **Smart Synchronization:** Directories can be browsed when offline and files opened are made available for later offline access. You can explicitly make files available offline using the [context menu](connect/sync.md#keep-offline). See [Smart Synchronization](connect/sync.md).
-```{tip}
-In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
-```
+- **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
+- **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
+- **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
 
 ```{image} _images/Edit_Bookmark_macOS.png
 :alt: Edit Bookmark (macOS)
@@ -160,7 +152,7 @@ Notifications of the connection status are posted to the *Notification Center* o
 - *Filesystem mounted*
 - *Filesystem unmounted*
 - *Errors:* If there is a network connectivity issue while the remote server is mounted, an alert is displayed that allows you to retry the connection or disconnect and unmount the volume.
-- [Sync Notifications](connect/index.md#notifications)
+- [Sync Notifications](connect/sync.md#notifications)
 
 ```{image} _images/File_Added_Notification_Windows.png
 :alt: File Added Notification (Windows)
