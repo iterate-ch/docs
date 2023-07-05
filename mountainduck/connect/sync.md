@@ -76,6 +76,10 @@ Files will get cached again regardless this setting if accessed again later (e.g
 <br>
 <br>
 
+### Retry
+
+Choose _Mountain Duck → Retry_ to retry a sync operation failed previously with an error.
+
 ## Cache Size
 
 The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
