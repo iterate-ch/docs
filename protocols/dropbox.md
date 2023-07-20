@@ -65,11 +65,11 @@ Password protected share links are only available for [paid business plans](http
 
 ## Known Limitations
 
-### Transfer speed Comparison
+### Comparison with Dropbox desktop app
 
-Do not compare against the desktop client for upload and download speeds. Due to server side caching the comparison may not be representativ.
-
-For accurate comparison, test against the website where the server-side caching doesn't take place.
+The Dropbox desktop app has the following advantages to improve upload performance not available through the public API.
+- Server side caching to skip transferring previously uploaded files ([#247](https://github.com/iterate-ch/docs/issues/247)).
+- Binary diff uploads transferring only changed contents within a single file.
 
 ### Modification Date
 
