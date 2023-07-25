@@ -171,7 +171,7 @@ This quota information is only available for the following protocols:
 - [Microsoft Sharepoint](../../protocols/sharepoint.md)
 - [SFTP](../../protocols/sftp/index.md)
 
-### View files from Synplogy Drive 
+### View files from Synology Drive 
 
 *Synology Drive* is not supported natively. You can try to view your *Synology Drive* files by connecting to your *Synology NAS*. To do that connect to your *Synology NAS* using the protocol **SFTP, FTP,** or **WebDAV** with the path `home/Drive`.
 
