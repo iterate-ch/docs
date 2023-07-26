@@ -19,4 +19,13 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 
 ## Feature Comparison
 
-
+|| **Online** | **Smart Synchronization** |
+| --- | --- | --- |
+| **Offline Access** | - | Save files in the sync cache for file access once the internet connection drops |
+| **File Locking** | Depending on the protocol in use | Depending on the protocol in use |
+| **Index Files** | - | Index the files in folders you open for faster access |
+| **Buffering** | Temporary save the metadata of the files in opened folders for faster access | - |
+| **Background Sync** | - | Synchronize changes between cloud and local cache automatically |
+| **Transfer Window** | Popup during activ transfers | - |
+| **Recent File History** | - | Available in the dropdown menu |
+| **Caching** | Temporary caching in th system temp cache | Cache files in the sync cache for offline Access |	
