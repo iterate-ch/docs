@@ -21,13 +21,13 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 
 ## Feature Comparison
 
-|                         | **Online**                                | **Smart Synchronization**                                                       |
-|-------------------------|-------------------------------------------|---------------------------------------------------------------------------------|
-| **Offline Access**      | -                                         | Save files in the sync cache for file access once the internet connection drops |
-| **Lock Files**          | Depending on the protocol in use          | Depending on the protocol in use                                                |
-| **Index Files**         | -                                         | Index the files in folders you open for faster access                           |
-| **Buffering**           | Temporary save opened files faster access | -                                                                               |
-| **Background Sync**     | -                                         | Synchronize changes between cloud and local cache automatically                 |
-| **Transfer Window**     | Popup during activ transfers              | -                                                                               |
-| **Recent File History** | -                                         | Available in the dropdown menu                                                  |
-| **Caching**             | Temporary caching in th system temp cache | Cache files in the sync cache for offline Access                                |	
+|                                          | **Online**                                                            | **Smart Synchronization**                                                     |
+|------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Offline Access**                       | –                                                                     | Save files in cache on disk for access with no server connectivity            |
+| **Index Files**                          | –                                                                     | Index folder contents in cache on disk for access with no server connectivity |
+| **Buffer file contents**                 | ︎Temporarily save opened files for faster access later                | Temporarily save opened files to copy to cache on disk                        |
+| **Synchronization**                      | Changes are immediately uploaded                                      | Synchronize changes in the background                                         |
+| **Transfer Progress**                    | Upload shown in progress window in _Finder.app_ or _Windows Explorer_ | Uploads shown in the status bar (macOS) or taskbar (Windows)                  |
+| **[Recent Files](sync.md#recent-files)** | –                                                                     | Available in the status bar (macOS) or taskbar (Windows)                      |
+| **[Lock Files](../locking.md)**          | ✔︎                                                                    | ✔                                                                             |
+| **[Share Files](../share.md)**           | ✔                                                                     | ✔                                                                             |
