@@ -23,6 +23,7 @@ box
 files.com
 dracoon
 irods
+smb
 spectra
 ```
 
@@ -82,6 +83,9 @@ Files.com is Smart Cloud Storage for modern teams
 
 ### [iRODS](irods.md)
 The Integrated Rule-Oriented Data System (iRODS) is an open source data management software used by research organizations and government agencies worldwide.
+
+### [SMB](smb.md)
+SMB (Server Message Block) is used to access Windows File Shares.
 
 ### [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 
@@ -145,6 +149,7 @@ Protocols with limited support for modification dates only allow to set the modi
 | Nextcloud            | ❌ | ✅ |
 | ownCloud             | ❌	| ✅ |
 | S3                   | ❌ | ✅ |
+| SMB                  | ❌ | ✅ |
 | Windows Azure        | ❌ | ❌ |
 | OpenStack Object Storage        | ❌ | ❌ |
 
