@@ -14,13 +14,6 @@ DigitalOcean Spaces
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-### NYC3
-
-{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(nyc3).cyberduckprofile>` the *DigitalOcean Spaces (nyc3) Connection Profile* for preconfigured settings.
-
-- Protocol: `Amazon S3`
-- Server: `nyc3.digitaloceanspaces.com`
-
 ### AMS3
 
 {download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(ams3).cyberduckprofile>` the *DigitalOcean Spaces (ams3) Connection Profile* for preconfigured settings.
@@ -28,12 +21,26 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - Protocol: `Amazon S3`
 - Server: `ams3.digitaloceanspaces.com`
 
-### SGP1
+### BLR1
 
-{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(sgp1).cyberduckprofile>` the *DigitalOcean Spaces (sgp1) Connection Profile* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(blr1).cyberduckprofile>` the *DigitalOcean Spaces (blr1) Connection Profile* for preconfigured settings.
 
 - Protocol: `Amazon S3`
-- Server: `sgp1.digitaloceanspaces.com`
+- Server: `blr1.digitaloceanspaces.com`
+
+### FRA1
+
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(fra1).cyberduckprofile>` the *DigitalOcean Spaces (fra1) Connection Profile* for preconfigured settings.
+
+- Protocol: `Amazon S3`
+- Server: `fra1.digitaloceanspaces.com`
+
+### NYC3
+
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(nyc3).cyberduckprofile>` the *DigitalOcean Spaces (nyc3) Connection Profile* for preconfigured settings.
+
+- Protocol: `Amazon S3`
+- Server: `nyc3.digitaloceanspaces.com`
 
 ### SFO2
 
@@ -42,12 +49,26 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - Protocol: `Amazon S3`
 - Server: `sfo2.digitaloceanspaces.com`
 
-### FRA1
+### SFO3
 
-{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(fra1).cyberduckprofile>` the *DigitalOcean Spaces (fra1) Connection Profile* for preconfigured settings.
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(sfo3).cyberduckprofile>` the *DigitalOcean Spaces (sfo3) Connection Profile* for preconfigured settings.
 
 - Protocol: `Amazon S3`
-- Server: `fra1.digitaloceanspaces.com`
+- Server: `sfo3.digitaloceanspaces.com`
+
+### SGP1
+
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(sgp1).cyberduckprofile>` the *DigitalOcean Spaces (sgp1) Connection Profile* for preconfigured settings.
+
+- Protocol: `Amazon S3`
+- Server: `sgp1.digitaloceanspaces.com`
+
+### SYD1
+
+{download}`Download<https://profiles.cyberduck.io/DigitalOcean%20Spaces%20(syd1).cyberduckprofile>` the *DigitalOcean Spaces (syd1) Connection Profile* for preconfigured settings.
+
+- Protocol: `Amazon S3`
+- Server: `syd1.digitaloceanspaces.com`
 
 ## Buckets
 
