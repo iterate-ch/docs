@@ -11,10 +11,14 @@ Linode Object Storage
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
 
-- **Linode Object Storage (Atlanta, GA, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-southeast-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Frankfurt, Germany)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(eu-central-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Newark, NJ, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (France, Paris)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(fr-par-1).cyberduckprofile>` the *Linode Object Storage (Paris) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Milan, Italy)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(it-mil-1).cyberduckprofile>` the *Linode Object Storage (Milan) Connection Profile* for preconfigured settings.
 - **Linode Object Storage (Singapore)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(ap-south-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Frankfurt, Germany)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(eu-central-1).cyberduckprofile>` the *Linode Object Storage (Frankfurt) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Newark, NJ, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Newark) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Atlanta, GA, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-southeast-1).cyberduckprofile>` the *Linode Object Storage (Atlanta) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Washington, DC, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-iad-1).cyberduckprofile>` the *Linode Object Storage (Washington) Connection Profile* for preconfigured settings.
+- **Linode Object Storage (Chicago, IL, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-ord-1).cyberduckprofile>` the *Linode Object Storage (Chicago) Connection Profile* for preconfigured settings.
 
 ### Manual Configuration
 
