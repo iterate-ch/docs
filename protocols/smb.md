@@ -34,3 +34,9 @@ SMB protocol support has been tested with connections to the following server im
 - Windows 2016 Server 10.0.14393 (`SMB_3_1_1` dialect)
 - Linux Samba (`SMB_3_1_1` dialect)
 - macOS 13.5 (22G74) (`SMB_3_0_2` dialect)
+
+### Cyberduck CLI
+
+You can list shares with [Cyberduck CLI](https://duck.sh/) using
+
+	duck --list smb:/server/share/
