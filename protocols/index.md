@@ -8,6 +8,7 @@ profiles/index
 cdn/index
 ftp
 sftp/index
+smb
 webdav/index
 webdav/nextcloud
 s3/index
@@ -23,7 +24,6 @@ box
 files.com
 dracoon
 irods
-smb
 spectra
 ```
 
