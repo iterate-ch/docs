@@ -18,7 +18,10 @@ SMB
 
 To connect to a SMB server, choose _SMB (Server Message Block)_.
 
-![SMB Connection](_images/SMB_Connection.png)
+```{image} _images/SMB_Connection.png
+:alt: SMB Connection
+:width: 700px
+```
 
 ### Authentication
 Username and password must be provided for authentication using NTLM. The optional domain name defaults to `WORKGROUP` and can be customized as part of the username in the format `username@domain` in the _Username_ input field when adding a bookmark.
@@ -26,7 +29,10 @@ Username and password must be provided for authentication using NTLM. The option
 ### Share Name
 To connect to a specific share, you can configure a _Path_ in the bookmark. When omitted an attempt is made to list all available shares from the server. On failure retrieving share names from the server, a prompt is displayed to enter the share name when connecting.
 
-![SMB Share Input](_images/SMB_Share.png)
+```{image} _images/SMB_Share.png
+:alt: SMB Share Input
+:width: 700px
+```
 
 ### Interoperability
 
