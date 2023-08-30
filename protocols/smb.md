@@ -29,7 +29,12 @@ To connect to a SMB server, choose _SMB (Server Message Block)_.
 ```
 
 ### Authentication
-Username and password must be provided for authentication using NTLM. The optional domain name defaults to `WORKGROUP` and can be customized as part of the username in the format `username@domain` in the _Username_ input field when adding a bookmark.
+Username and password must be provided for authentication using NTLM. The optional domain name defaults to `WORKGROUP` and can be customized as part of the username in the format `REALM\username` in the _Username_ input field when adding a bookmark. Depending on the server setup this can be
+- `COMPUTERNAME\username`
+- `NETBIOSDOMAINNAME\username`
+
+#### Guest Login
+To login as a guest select _Anonymous_ in the bookmark configuration or login prompt.
 
 ### Share Name
 To connect to a specific share, you can configure a _Path_ in the bookmark. When omitted an attempt is made to list all available shares from the server. On failure retrieving share names from the server, a prompt is displayed to enter the share name when connecting.
@@ -42,7 +47,8 @@ To connect to a specific share, you can configure a _Path_ in the bookmark. When
 ### Interoperability
 
 SMB protocol support has been tested with connections to the following server implementations
-- Windows 2016 Server 10.0.14393 (`SMB_3_1_1` dialect)
+- Windows 2016 Server (`SMB_3_1_1` dialect)
+- Windows 2022 Server (`SMB_3_1_1` dialect)
 - Linux Samba (`SMB_3_1_1` dialect)
 - macOS 13.5 (22G74) (`SMB_3_0_2` dialect)
 
