@@ -153,7 +153,10 @@ Example configuration:
 :width: 600px
 ```
 
+Web URLs are supported for [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md) and [WebDAV](../protocols/webdav/index.md). 
+
 See also [Open or copy HTTP URL](browser.md#open-or-copy-http-url).
+
 
 ## Exporting Bookmarks
 
