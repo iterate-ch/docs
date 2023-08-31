@@ -221,7 +221,7 @@ This only works properly while using the standalone version of Cyberduck or Moun
 1. Install the Dropbox app, log into your Dropbox account and synchronize the folder where you want to have the bookmarks to the local disk.
 2. Quit *Cyberduck* and/or *Mountain Duck*.
 3. Navigate to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` and move the folders *Bookmarks* and if available *Profiles* to the desired location on Dropbox.
-4. Open *Terminal.app* and execute the command `ln -s <AppSupportDirectory/foldername> <CloudDirectory>` to create the symbolic link.
+4. Open *Terminal.app* and execute the command `ln -s <CloudDirectory> <AppSupportDirectory/foldername>` to create the symbolic link.
 
 ````
 ````{group-tab} Windows
