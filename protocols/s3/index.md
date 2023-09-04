@@ -156,9 +156,9 @@ You might be interested in scripts maintained by third parties to facilitate man
 - [Manage configuration files for Cyberduck S3 (AssumeRoles from AWS STS)](https://github.com/jmvbxx/cyberduck-s3-config)
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
 
-#### AWS Single Sign-On
+#### AWS IAM Identity Center
 
-For a SSO connection the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are needed within the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows. The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
+For a SSO connection authenticating with AWS IAM Identity Center (Successor to AWS Single Sign-On), the properties `sso_start_url`, `sso_account_id`, and `sso_role_name` are required within the standard credentials property file `~/.aws/credentials` (macOS) or `%USERPROFILE%\.aws\credentials` (Windows). The access key, secret key, and session token cached by AWS CLI are retrieved from `~/.aws/cli/cache` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
 
 To populate the correct cache locations follow these steps:
 1. Run the command `aws sso login` to populate `~/.aws/sso/cache` on macOS or respectively `%USERPROFILE%\.aws\sso\cache` on Windows. This adds client secrets but doesn't add any usable AWS credentials.
