@@ -173,6 +173,30 @@ Preferences are stored in `%AppData%\iterate_GmbH\Cyberduck.exe_Url_[id]\[versio
 ````
 `````
 
+### Complete Uninstall
+
+Follow the steps below to uninstall Cyberduck completely.
+
+`````{tabs}
+````{group-tab} macOS
+
+1. Close the application and navigate to the application folder using the shortcut `⌘⇧A`. Select *Cyberduck.app* and delete the application by choosing *File → Move to Trash*.
+2. Navigate to the *Group Containers* folder within *~/Library/* and delete the folder *G69SCX94XU.duck*.
+3. **Optional:** Delete all saved login credentials in *Keychain Access.app*.
+
+````
+
+````{group-tab} Windows
+
+1. Close the application and open the start menu using the shortcut `Ctrl Esc`. Search for *Apps & Features* and move to the entry *Cyberduck*. Click on the application, choose *Uninstall*, and confirm your intentions by clicking *Uninstall* again.
+2. Navigate to the `%AppData%`and delete the folder *Cyberduck*
+3. Navigate to `%LocalAppData%`and delete the folder *Cyberduck*
+4. **Optional:** Delete all saved login credentials in *Windows Credential Manager*.
+
+````
+
+`````
+
 ## Bug Reports and Feature Requests
 
 To get help with bugs, feature requests, or other issues please refer to the [support page](support.md).
