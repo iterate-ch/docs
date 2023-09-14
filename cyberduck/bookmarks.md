@@ -222,6 +222,7 @@ This only works properly while using the standalone version of Cyberduck or Moun
 2. Quit *Cyberduck* and/or *Mountain Duck*.
 3. Navigate to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` and move the folders *Bookmarks* and if available *Profiles* to the desired location on Dropbox.
 4. Open *Terminal.app* and execute the command `ln -s <CloudDirectory> <AppSupportDirectory/foldername>` to create the symbolic link.
+e.g.: `ln -s ~/Dropbox/Bookmarks ~/Library/Group\ Containers/G69SCX94XU.duck/Library/Application\ Support/duck/Bookmarks`
 
 ````
 ````{group-tab} Windows
