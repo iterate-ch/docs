@@ -54,3 +54,6 @@ SMB protocol support has been tested with connections to the following server im
 You can list shares with [Cyberduck CLI](https://duck.sh/) using
 
 	duck --list smb:/server/share/
+
+## Limitations
+- Copying or moving files between shares is not supported
