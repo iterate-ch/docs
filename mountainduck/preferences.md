@@ -34,6 +34,10 @@ Choose whether the file contents should be buffered. The option allows buffering
 - Allows faster access when reading or writing files with random access patterns from applications in _Online_ [mode](interface.md#connect-mode).
 - With the option enabled in _Smart Synchronization_ [mode](interface.md#connect-mode), buffered file contents will be copied to the cache and the file can be opened when offline. Refer to [Status of Files](connect/sync.md#status-of-files).
 
+#### Temp Buffer
+
+Buffered files are saved in `%temp%` for Windows or in `~/Volumes/External/private/tmp` for macOS.
+
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
