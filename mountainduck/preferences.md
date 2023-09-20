@@ -80,7 +80,7 @@ Files selected to always keep offline are never automatically removed from the c
 By default, files are kept in cache for 30 days and the cache is limited to a maximum size of 5GiB.
 
 ```{attention}
-The settings apply separately for each bookmark which must be connected for the cache management to run.
+The settings apply separately for each bookmark. The synchronization cache gets cleared based on the choosen cache limit after Mountain Duck is started and every 24h as long as Mountain Duck is running.
 ```
 
 ## Notifications
