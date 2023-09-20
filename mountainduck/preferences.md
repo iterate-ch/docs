@@ -36,7 +36,7 @@ Choose whether the file contents should be buffered. The option allows buffering
 
 #### Temp Buffer
 
-Buffered files are saved in `%temp%` for Windows or in `~/Volumes/External/private/tmp` for macOS.
+Buffered files are saved in `%temp%` for Windows or in `/private/tmp` for macOS.
 
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
