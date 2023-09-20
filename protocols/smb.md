@@ -33,9 +33,6 @@ Username and password must be provided for authentication using NTLM. The option
 - `COMPUTERNAME\username`
 - `NETBIOSDOMAINNAME\username`
 
-#### Guest Login
-To login as a guest select _Anonymous_ in the bookmark configuration or login prompt.
-
 ### Share Name
 To connect to a specific share, you can configure a _Path_ in the bookmark. When omitted an attempt is made to list all available shares from the server. On failure retrieving share names from the server, a prompt is displayed to enter the share name when connecting.
 
