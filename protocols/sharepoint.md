@@ -20,7 +20,7 @@ Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connectio
 2. Enter your email address into the username field. The email address is solely used for internal identification and not actual authentication against SharePoint using OAuth.
 3. Double click to connect to the newly created bookmark. You are prompted to enter an *Authorization Code* you obtain in the web browser window opened. Login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
 4. Grant permission to *Cyberduck* for *OneDrive* and *SharePoint*.
-5. You are redirected to `https://cyberduck.io/oauth/` where you can copy the *Authorization Code* to paste in the login prompt.
+5. The authorization code will be submitted to Cyberduck automatically.
 6. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
 
 ### Microsoft SharePoint Site Connection Profile
@@ -59,6 +59,10 @@ If applicable and trusted you may set `Users can consent to apps accessing compa
 There is a preview method of review application consent through the Azure Active Directory (AAD) Portal. Please enable `Users can request admin consent to apps they are unable to consent to` to `Yes` in the [Enterprise applications - User settings](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings). The domain administrator may now review all consents centrally at [Admin consent requests (Preview)](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests).
 
 ## SharePoint Server
+
+```{note}
+Currently limited to connect mode [smart synchronisation](../mountainduck/connect/sync.md).
+```
 
 To connect to a SharePoint Server, choose [WebDAV](webdav/index.md) for the connection type. This is available to
 
