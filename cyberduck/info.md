@@ -128,9 +128,12 @@ When you define a default root object, a user request that calls the root of you
 Use the Invalidate option *File → Info → Distribution (CDN)* to invalidate files from edge locations.
 ```
 
-## Amazon S3 Panel
+## Provider Panel
 
-Settings specific to the [Amazon S3](../protocols/s3/index.md) service.
+Settings specific for the cloud service in use. Available for [Amazon S3](../protocols/s3/index.md), [Backblaze B2](../protocols/b2.md), [Windows Azure Blob Storage](../protocols/azure.md), and [Google Cloud Storage](../protocols/googlecloudstorage.md).
+
+``````{tabs}
+`````{group-tab} Amazon S3
 
 - The geographic location of the bucket.
 - [Publicly accessible URL](../protocols/s3/index.md#pre-signed-temporary-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
@@ -144,6 +147,46 @@ Settings specific to the [Amazon S3](../protocols/s3/index.md) service.
 :alt: Amazon S3
 :width: 500px
 ```
+
+`````
+`````{group-tab} Windows Azure Blob Storage
+
+- [Publicly accessible URL](../protocols/azure.md#shared-access-signature-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
+- Enabling [access logs](../protocols/azure.md#access-logs) for the bucket.
+
+```{image} _images/Azure_tab_info_macOS.png
+:alt: Windows Azure Blob Storage
+:width: 500px
+```
+
+`````
+`````{group-tab} Backblaze B2
+
+- [Publicly accessible URL](../protocols/b2.md#authorized-url) to the file with a validity of 7 days.
+- Configure [bucket versioning](../protocols/b2.md#file-versioning).
+
+
+```{image} _images/B2_tab_info_macOS.png
+:alt: Backblaze B2
+:width: 500px
+```
+
+`````
+`````{group-tab} Google Cloud Storage
+
+- The geographic location of the bucket.
+- Enabling [access logs](../protocols/googlecloudstorage.md#bucket-access-logging) for the bucket.
+- Choose [storage class](../protocols/googlecloudstorage.md#storage-class)). Settings will be applied recursively if a folder is selected.
+- Configure [bucket versioning](../protocols/googlecloudstorage.md#versioning).
+- Configure Transfer Acceleration.
+
+```{image} _images/GCS_tab_info_macOS.png
+:alt: Google Cloud Storage
+:width: 500px
+```
+
+`````
+``````
 
 ## Metadata (HTTP headers)
 

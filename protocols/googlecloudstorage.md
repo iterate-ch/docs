@@ -79,7 +79,11 @@ You can set the default [storage class](https://cloud.google.com/storage/docs/st
 
 When this option is enabled in the *Google Cloud Storage* panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to root in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.
 
-![Access Log Configuration](_images/Google_Storage_Access_Log_Configuration.png)
+
+```{image} _images/GCS_tab_info_macOS.png
+:alt: Google Cloud Storage
+:width: 500px
+```
 
 ## Folders
 
@@ -94,6 +98,14 @@ You can edit standard HTTP headers [add](../cyberduck/info.md#metadata-http-head
 #### Support for `Custom-Time`
 
 Modification dates are supported through the `Custom-Time` metadata parameter. The parameter gets set on file upload through Mountain Duck and Cyberduck.
+
+### Versioning 
+
+A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
+
+```{note}
+`Bucket Versioning` has to be enabled within the *Google Storage* tab of the *Info* window before the versions of the files are displayed.
+```
 
 ## ACLs
 

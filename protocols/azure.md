@@ -79,6 +79,11 @@ Currently only signed URLs with a validity of 24 hours are available.
 
 Configure access logging for buckets in the *Info* panel.
 
+```{image} _images/Azure_tab_info_macOS.png
+:alt: Windows Azure Blob Storage
+:width: 500px
+```
+
 ## Limitations
 
 - Container and blob [naming conventions](https://docs.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata).
