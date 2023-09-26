@@ -30,7 +30,6 @@ spectra
 storadera
 storjdcs
 synology
-verizon
 vitanium
 wasabi
 z1
