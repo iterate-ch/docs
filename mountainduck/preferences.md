@@ -38,6 +38,16 @@ Choose whether the file contents should be buffered. The option allows buffering
 
 Buffered files are saved in `%temp%` for Windows or in `/private/tmp` for macOS.
 
+```{admonition} macOS only
+:class: tip
+
+You can change the temp cache location by using a [hidden configuration option](preferences.md#hidden-configuration-options) with a customized path.
+
+	tmp.dir=/Volumes/External/private/tmp
+
+```
+
+
 ### Lock Files
 Enable to prevent conflicting edits when accessing documents from a shared environment. Refer to [File Locking](locking.md).
 
