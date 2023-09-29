@@ -13,7 +13,7 @@ File locking is natively supported for the following protocols:
 - [WebDAV](../protocols/webdav/index.md)
 
 ```{note}
-Some WebDAV implementations including [NextCloud & ownCloud](../protocols/webdav/nextcloud.md) may not support locking documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
+Some WebDAV implementations may not support locking documents.
 ```
 
 Files opened from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.
@@ -113,3 +113,8 @@ If you get a warning that the document is *Read-Only*, ask other users to close 
 ## Preferences
 
 Locking is disabled by default. Refer to [Preferences](preferences.md) to enable it in *Sync → Locking → Lock Files*.
+
+## Limitations
+
+- Due to Dropbox file restrictions lock files are forbidden files and can't be uploaded. Therefore, pseudo file locking is not available using Dropbox.
+- [NextCloud & ownCloud via WebDAV](../protocols/webdav/nextcloud.md) don't support locking documents. Make sure to select *Nextcloud & ownCloud* in the bookmark configuration to make use of pseudo locking.
