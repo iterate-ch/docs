@@ -4,8 +4,8 @@ Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIde
 > With web identity federation, you don't need to create custom sign-in code or manage your own user identities. Instead, users of your app can sign in using a well-known external identity provider (IdP), such as Login with Amazon, Facebook, Google, or any other OpenID Connect (OIDC)-compatible IdP. They can receive an authentication token, and then exchange that token for temporary security credentials in AWS that map to an IAM role with permissions to use the resources in your AWS account.
 
 ```{important}
-* Cyberduck [9.0.0](https://cyberduck.io/changelog/) or later required
-* Mountain Duck [5.0.0](https://mountainduck.io/changelog/) or later required
+* Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [4.15.0](https://mountainduck.io/changelog/) or later required
 ```
 
 Connection profiles must include the `OAuth Authorization Url`, `OAuth Token Url`, `OAuth Redirect Url` and `Scopes` of the OpenID Connect (OIDC) identity provider and the `STS Endpoint` for the STS API endpoint which defaults to `https://sts.amazonaws.com/`. Set the property `s3.assumerole.rolearn` in the connection profile to the Role ARN configured in AWS. Set it to `s3.assumerole.rolearn=` for a prompt to enter on login.

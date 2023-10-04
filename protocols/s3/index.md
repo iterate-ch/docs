@@ -140,8 +140,8 @@ No regional endpoint should be set while connecting to a single bucket. The endp
 ### Connecting with OpenID Connect (OIDC) identity provider
 
 ```{important}
-* Cyberduck [9.0.0](https://cyberduck.io/changelog/) or later required
-* Mountain Duck [5.0.0](https://mountainduck.io/changelog/) or later required
+* Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [4.15.0](https://mountainduck.io/changelog/) or later required
 ```
 
 Connecting to AWS S3 with web identity federation using AWS Security Token Service (STS) is supported with connection profiles specifying configuration properties specific to your identity provider (IdP).
