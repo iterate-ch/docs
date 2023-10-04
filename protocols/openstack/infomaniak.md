@@ -5,7 +5,7 @@ Infomaniak
 
 ## Infomaniak Public Cloud
 
-- [Test Infomaniak Public Cloud with free tiers](https://www.infomaniak.com/en/hosting/public-cloud)
+> [High Performance Cloud Infrastructure. In Switzerland, at the right price.](https://www.infomaniak.com/en/hosting/public-cloud)
 
 ### Connecting
 
@@ -35,7 +35,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
 Swiss Backup is a solution that automatically backs up your files, workstations, mobiles, and servers. Your data is stored in Switzerland in Tier 3+ datacenters in at least three different physical locations. Infomaniak is a leading Swiss hosting service provider that is recognized for the reliability of its services and the quality of its 7/7 support in over five languages.
 
-- [Test Swiss Backup free for 90 days](https://www.infomaniak.com/en/swiss-backup)
+> [Swiss Backup enables you to back up and recover your workstations, servers, virtual machines, NAS and much more besides in total peace of mind.](https://www.infomaniak.com/en/swiss-backup)
 
 ### Connecting
 
