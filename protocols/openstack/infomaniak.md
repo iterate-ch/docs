@@ -3,6 +3,11 @@ Infomaniak
 
 ![Infomaniak Drive Icon](_images/blue-128.png)
 
+```{contents} Content
+:depth: 2
+:local:
+```
+
 ## Infomaniak Public Cloud
 
 > [High Performance Cloud Infrastructure. In Switzerland, at the right price.](https://www.infomaniak.com/en/hosting/public-cloud)
