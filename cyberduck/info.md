@@ -154,7 +154,7 @@ Settings specific for the cloud service in use. Available for [Amazon S3](../pro
 - [Publicly accessible URL](../protocols/azure.md#shared-access-signature-urls) to the file with a validity of 24 hours. Signed URLs with a different life are available in the *Edit → Copy URL* menu.
 - Enabling [access logs](../protocols/azure.md#access-logs) for the bucket.
 
-```{image} _images/Azure_tab_info_macOS.png
+```{image} ../protocols/_images/Azure_tab_info_macOS.png
 :alt: Windows Azure Blob Storage
 :width: 500px
 ```
@@ -166,7 +166,7 @@ Settings specific for the cloud service in use. Available for [Amazon S3](../pro
 - Configure [bucket versioning](../protocols/b2.md#file-versioning).
 
 
-```{image} _images/B2_tab_info_macOS.png
+```{image} ../protocols/_images/B2_tab_info_macOS.png
 :alt: Backblaze B2
 :width: 500px
 ```
@@ -180,7 +180,7 @@ Settings specific for the cloud service in use. Available for [Amazon S3](../pro
 - Configure [bucket versioning](../protocols/googlecloudstorage.md#versioning).
 - Configure Transfer Acceleration.
 
-```{image} _images/GCS_tab_info_macOS.png
+```{image} ../protocols/_images/GCS_tab_info_macOS.png
 :alt: Google Cloud Storage
 :width: 500px
 ```
