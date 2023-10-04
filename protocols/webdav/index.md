@@ -10,6 +10,7 @@ ikeepincloud
 nextcloud
 pcloud
 seafile
+kdrive
 ```
 
 You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mutual TLS with a client certificate for authentication is supported.
@@ -35,6 +36,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 - [iKeepinCloud](ikeepincloud.md)
 - [pCloud](pcloud.md)
 - [Seafile](seafile.md)
+- [Infomaniak kDrive](kdrive.md)
 
 ## Supported Authentication Methods
 
