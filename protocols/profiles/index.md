@@ -5,6 +5,7 @@ Connection Profiles
 :hidden:
 :titlesonly:
 google_client_id
+aws_oidc
 ```
 
 ```{contents} Content
@@ -166,3 +167,12 @@ Create a *multi-TIFF* containing the needed icon sizes:
     /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/disk.tiff
     ```
 3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
+
+## Sample Connection Profiles
+
+### Google Custom OAuth Client ID
+- [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
+
+### S3 and OpenID Connect Federation 
+Customization of connection profiles using OpenID Connect provider and AssumeRoleWithWebIdentity STS API
+- [Sample connection profiles for S3 and OpenID Connect Federation](aws_oidc.md)

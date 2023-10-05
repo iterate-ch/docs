@@ -136,6 +136,40 @@ Connecting to a bucket owned by you or even a third party is possible without re
 No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically by querying the region of the bucket.
 ```
 
+### Connecting with OpenID Connect (OIDC) identity provider
+
+```{important}
+* Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [4.15.0](https://mountainduck.io/changelog/) or later required
+```
+
+Connecting to AWS S3 with web identity federation using AWS Security Token Service (STS) is supported with connection profiles specifying configuration properties specific to your identity provider (IdP).
+
+```{attention}
+The usage of these connection profiles requires the [configuration](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) of an OpenID Connect (OIDC) identity provider and role and trust policy in AWS IAM.
+```
+
+The connection profiles connect using temporary security credentials from the AWS Security Token Service (STS) obtained using a web identity token from your OpenID Connect (OIDC) identity provider. Refer to [Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIdentity STS API](../profiles/aws_oidc.md).
+
+```{admonition} Interoperability
+`AssumeRoleWithWebIdentity` API from AWS Security Token Service (STS) is used to exchange the JSON Web Token with temporary security credentials. In addition to AWS, the following combinations of S3 & STS APIs with OpenID Connect (OIDC) have been tested:
+- Connect to Minio S3 authenticating with [Minio STS](https://min.io/docs/minio/linux/developers/security-token-service.html) and Keycloak (OIDC)
+- Connect to AWS S3 authenticating with AWS STS and Keycloak (OIDC)
+```
+
+#### Sample connection profiles for authorization with well known identity providers
+
+```{note}
+When connecting the user is requested to enter the Role ARN of the IAM role that has a trust relationship configured with the identity provider in _Identity and Access Management (IAM)_.
+```
+
+##### S3 with Azure Active Directory (Azure AD)
+
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>` the *AWS S3+STS &amp; Azure Active Directory (Azure AD) profile* for preconfigured settings
+
+##### S3 with Google OpenID Connect
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Google%20OpenID%20Connect.cyberduckprofile>` the *AWS S3+STS &amp; Google OpenID Connect profile* for preconfigured settings
+
 ### Connecting with Temporary Access Credentials (Token) from EC2
 
 If you are running Cyberduck for Windows or [Cyberduck CLI](https://duck.sh/) on EC2 and have setup [IAM Roles for Amazon EC2](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) to provide access to S3 from the EC2 instance, you can use the connection profile below that will fetch temporary credentials from EC2 instance metadata service at `http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access` to authenticate. Edit the profile to change the role name `s3access` to match your IAM configuration.
@@ -169,13 +203,11 @@ You can also do this for a specific profile by adding `--profile myProfile` to t
 
 - [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
-### Connecting Using AssumeRole from AWS Security Token Service (STS)
+#### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer to U[sing IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
-
-- {download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Security%20Token%20Service).cyberduckprofile>` the *S3 (Credentials from AWS Security Token Service) profile* for preconfigured settings.
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in `~/.aws/credentials`* matching the profile name from `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows with the `role_arn` configuration.
 
