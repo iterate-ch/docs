@@ -43,6 +43,8 @@ Connection profiles must include the `OAuth Authorization Url`, `OAuth Token Url
             <string>openid</string>
             <string>offline_access</string>
         </array>
+        <key>Authorization</key>
+        <string>AuthorizationCode</string>
         <key>Password Configurable</key>
         <false/>
         <key>Username Configurable</key>
