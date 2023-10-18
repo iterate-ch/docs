@@ -17,7 +17,7 @@ SMB
 ## Connecting
 
 ```{important}
-* Cyberduck [9.0.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [5.0.0](https://mountainduck.io/changelog/) or later required
 ```
 
