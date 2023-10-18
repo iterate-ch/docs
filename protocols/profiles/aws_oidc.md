@@ -18,6 +18,8 @@ Connection profiles must include the `OAuth Authorization Url`, `OAuth Token Url
 
 ## Blueprint
 
+Refer to [Sample connection profiles for S3 and OpenID Connect Federation](https://github.com/iterate-ch/profiles/issues/55)
+
 ```xml
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
