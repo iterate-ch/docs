@@ -153,7 +153,7 @@ The connection profiles connect using temporary security credentials from the AW
 
 ```{admonition} Interoperability
 `AssumeRoleWithWebIdentity` API from AWS Security Token Service (STS) is used to exchange the JSON Web Token with temporary security credentials. In addition to AWS, the following combinations of S3 & STS APIs with OpenID Connect (OIDC) have been tested:
-- Connect to Minio S3 authenticating with [Minio STS](https://min.io/docs/minio/linux/developers/security-token-service.html) and Keycloak (OIDC)
+- Connect to MinIO S3 authenticating with [MinIO STS](https://min.io/docs/minio/linux/developers/security-token-service.html) and Keycloak (OIDC)
 - Connect to AWS S3 authenticating with AWS STS and Keycloak (OIDC)
 ```
 
