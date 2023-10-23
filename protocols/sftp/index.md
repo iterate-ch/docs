@@ -88,7 +88,7 @@ Public-key authentication allows you to connect to a remote server without sendi
 1. a private key that only you have that should be kept in a secure place and protected with a password
 2. the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
 
-Private keys containing a `DSA` or `RSA` private key in *PEM* format are supported (look for `-----BEGIN DSA PRIVATE KEY-----` or `-----BEGIN RSA PRIVATE KEY-----` in the file) and can be configured in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
+Private keys can be configured in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
 
 #### PuTTY Key Format Interoperability
 
