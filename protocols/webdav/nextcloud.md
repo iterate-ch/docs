@@ -87,14 +87,6 @@ Create [public shares](../../cyberduck/share.md#nextcloud--owncloud) for people 
 
 If you are running an Apache configuration make sure to disable `fastcgi` and `php-fpm`. Refer to our [best practice for Nextcloud and ownCloud installations](../../mountainduck/issues/fastcgi.md).
 
-### Slow Listings for Large Folder Structures
-
-In order to retain timestamps for uploaded files, we make use of custom WebDAV properties. In Nextcloud and ownCloud these properties are stored in a dedicated database table `oc_properties`. This table unfortunately does not define any index to speed up the lookup for these properties when doing a listing. The database always has to do a full scan to find the properties for the requested resources. For installations with a large number of files, this can highly impact the response times for file listing. To overcome this issue you can create the following index:
-
-	CREATE INDEX properties_path_index ON oc_properties(userid, propertypath)
-
-Also, refer to the [issue](https://github.com/nextcloud/server/issues/8962) in GitHub.
-
 ### Modification Date
 
 The modification date retention is supported using `X-OC-Mtime` for new files uploaded but without the option to adjust the modification date later.
