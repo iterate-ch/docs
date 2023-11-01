@@ -29,7 +29,7 @@ You must obtain the project ID (`x-goog-project-id`) of your project from the Go
 
 ![Project ID Bookmark Configuration](_images/Project_ID_Bookmark_Configuration.png)
 
-In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username and enter the *Authorization Code* retrieved from the website where you grant Cyberduck access to your account.
+In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username. The authorization code will be submitted to Cyberduck automatically.
 
 ![Cyberduck OAuth Permissions](_images/Google_Storage_OAuth_Token.png)
 

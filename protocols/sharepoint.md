@@ -60,10 +60,6 @@ There is a preview method of review application consent through the Azure Active
 
 ## SharePoint Server
 
-```{note}
-Currently limited to connect mode [smart synchronisation](../mountainduck/connect/sync.md).
-```
-
 To connect to a SharePoint Server, choose [WebDAV](webdav/index.md) for the connection type. This is available to
 
 - SharePoint Server 2013
