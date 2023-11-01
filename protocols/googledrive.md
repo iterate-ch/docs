@@ -16,11 +16,9 @@ Connect to your [Google Drive](http://drive.google.com/) to store plain files.
 
 ### Authentication
 
-Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to *View and manage the files in your Google Drive*. Copy the authentication code displayed into the login prompt.
+Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to *View and manage the files in your Google Drive*. The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
 
 ![OAuth 2 Authentication](_images/Google_Drive_OAuth_2_Authentication.png)
-
-![OAuth 2 Prompt](_images/Google_Drive_OAuth_2_Authentication_Code_Prompt.png)
 
 ```{attention}
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 

@@ -20,7 +20,7 @@ Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connectio
 2. Enter your email address into the username field. The email address is solely used for internal identification and not actual authentication against SharePoint using OAuth.
 3. Double click to connect to the newly created bookmark. You are prompted to enter an *Authorization Code* you obtain in the web browser window opened. Login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
 4. Grant permission to *Cyberduck* for *OneDrive* and *SharePoint*.
-5. You are redirected to `https://cyberduck.io/oauth/` where you can copy the *Authorization Code* to paste in the login prompt.
+5. The authorization code will be submitted to Cyberduck automatically.
 6. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
 
 ### Microsoft SharePoint Site Connection Profile

@@ -16,18 +16,16 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to the *One
 
 The OneDrive connection profile is bundled by default and connects to the endpoint `https://graph.microsoft.com/v1.0/me`. Login with your personal or business account to `login.microsoftonline.com` when prompted to grant access to Cyberduck.
 
-1. OneDrive uses OAuth 2 for authentication with `graph.microsoft.com`. When opening a connection, a web browser window is opened to grant access to OneDrive for Cyberduck.
-	```{image} _images/Microsoft_OneDrive_OAuth_Authorization.png
-	:alt: OAuth 2 Authentication
-	:width: 500px
-	``` 
-2. Copy the authorization code into the login prompt in Cyberduck to complete authentication. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
+- OneDrive uses OAuth 2 for authentication with `graph.microsoft.com`. When opening a connection, a web browser window is opened to grant access to OneDrive for Cyberduck.
+	
+![OneDrive sign in](_images/OneDrive_Sign_In.png)
 
-![OAuth 2 Prompt](_images/OneDrive_OAuth_2_Authorization.png)
+- The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
+
 
 ```{admonition} Multiple Accounts
 :class: tip
-You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow.
+You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out of any account in web browser before triggering the OAuth flow for a new account.
 ```
 
 ### Reset OAuth Tokens
