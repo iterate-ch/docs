@@ -201,12 +201,17 @@ For connections to [NextCloud & ownCloud](../protocols/webdav/nextcloud.md) serv
 `````{tabs}
 ````{group-tab} Cyberduck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Skip* to create a public URL with no password protection. Choose *File → Share…* for download shares or *File → Request files…* for upload shares.
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Skip* to create a public URL with no password protection. 
+
+- Choose *File → Share…* for download shares. You can create a public link by choosing `Everyone` or a private link for a specific user by selecting the users email. The user will be notified about the shared file by email.
+- Choose *File → Request files…* for upload shares. 
 
 ````
 ````{group-tab} Mountain Duck
 
-Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Skip* to create a public share with no password protection. Choose *Share…* for download shares or *Request files…* for upload shares from the [context menu](../mountainduck/interface.md#share).
+Create public shares for people who are not Nextcloud users. Optionally set a password required to download the file. Choose *Skip* to create a public share with no password protection. 
+
+Choose *Share…* for download shares or *Request files…* for upload shares from the [context menu](../mountainduck/interface.md#share).
 
 ```{image} ../cyberduck/_images/Download_Share_Context_Menu.png
 :alt: Download Share Context Menu

@@ -79,7 +79,15 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../..
 
 ### Share & Request Files
 
-Create [public shares](../../cyberduck/share.md#nextcloud--owncloud) for people who are not Nextcloud/ownCloud users using *File → Share…* for download shares or *File → Request files…* for upload shares.
+Create different [shares](../../cyberduck/share.md#nextcloud--owncloud) using the context menu. By adding a passphrase in the corresponding you can build a password protected share. Alternatively skip the prompt to create a public share.
+
+![Nextcloud Share Passphrase](_images/Nextcloud_Share_Passphrase.png)
+
+- Use *File → Request files…* to create upload shares for folders.
+
+- Use *File → Share…* to create download shares. Choose between a public link by selecting `Everyone` and a privat link for another user by choosing a specific email address. The user will be notified about the shared file by email.
+
+![Nextcloud Download Everyone](_images/Nextcloud_Download_Everyone.png)
 
 ## Known Limitations
 
