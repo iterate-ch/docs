@@ -29,11 +29,7 @@ You must obtain the project ID (`x-goog-project-id`) of your project from the Go
 
 ![Project ID Bookmark Configuration](_images/Project_ID_Bookmark_Configuration.png)
 
-In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username. The authorization code will be submitted to Cyberduck automatically.
-
-![Cyberduck OAuth Permissions](_images/Google_Storage_OAuth_Token.png)
-
-You access the page with the authorization code from the link displayed in the login prompt. Click it to open it in a web browser window. You only need to get the authorization code from the website on the first login attempt. Subsequent OAuth authentications will use a refresh token retrieved from the service.
+In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username. The authorization code will be submitted to Cyberduck automatically. You access the page with the authorization code from the link displayed in the login prompt. Click it to open it in a web browser window. You only need to get the authorization code from the website on the first login attempt. Subsequent OAuth authentications will use a refresh token retrieved from the service.
 
 ```{attention}
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
