@@ -464,6 +464,10 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 	s3.glacier.restore.expiration.days=2
 
+### Restored Glacier files in Mountain Duck
+
+Temporarly restored files from *Glacier* won't change the storage class and therefor won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
+
 ## Access Control (ACL)
 
 Amazon S3 uses Access Control List (ACL) settings to control who may access or modify items stored in S3. You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Permissions*. Alternatively, permissions can be changed using [bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
