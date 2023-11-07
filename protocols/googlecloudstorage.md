@@ -25,6 +25,10 @@ In the login prompt of Cyberduck you enter the *Access Key* for the username and
 
 ### OAuth 2.0 Access
 
+```{attention}
+Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google Cloud Storage anymore because of the deprescated OAuth out-of-band flow.
+```
+
 You must obtain the project ID (`x-goog-project-id`) of your project from the Google Cloud Platform under *Storage Access* from the Google Cloud Storage tab. [Direct link to Google Cloud Storage settings.](https://console.cloud.google.com/storage/settings)
 
 ![Project ID Bookmark Configuration](_images/Project_ID_Bookmark_Configuration.png)
