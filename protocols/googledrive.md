@@ -16,6 +16,10 @@ Connect to your [Google Drive](http://drive.google.com/) to store plain files.
 
 ### Authentication
 
+```{attention}
+Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google Drive anymore because of the deprescated OAuth out-of-band flow.
+```
+
 Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to *View and manage the files in your Google Drive*. The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
 
 ```{attention}
