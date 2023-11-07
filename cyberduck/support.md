@@ -25,21 +25,12 @@ Please be aware that you are possibly using our software at no charge if you hav
 
 ## Logging Output
 
-
-```````{tabs}
-``````{group-tab} macOS
-
 `````{tabs}
-````{tab} Log
+````{group-tab} macOS
 
-Reveal the log output named `cyberduck.log` by choosing _Preferences → Connection → Log → Show_.
+Log output can be found in the `cyberduck.log` file in`~/Library/Logs/Cyberduck`. You can also reveal the file by clicking on the _Show_ button within the Cyberduck preferences _Connection_ tab.
 
-Alternatively, the `cyberduck.log` file can be found in `~/Library/Logs/Cyberduck`.
-
-````
-````{tab} Console.app
-
-You can easily `cyberduck.log` in *Console.app* (Open from `/Applications/Utilities`) under `Reports → Log Reports → cyberduck.log`.
+Alternatively, you can find `cyberduck.log` in *Console.app* (Open from `/Applications/Utilities`) under `Reports → Log Reports → cyberduck.log`.
 
 ```{image} _images/Console.app.png
 :alt: Console.app
@@ -47,37 +38,18 @@ You can easily `cyberduck.log` in *Console.app* (Open from `/Applications/Utilit
 ```
 
 ````
+````{group-tab} Windows
+
+Log output can be found in the `cyberduck.log` file in `%AppData%\cyberduck`. You can also reveal the file by clicking on the *Show* button within the Mountain Duck *Preferences Connection* tab. The file is named *cyberduck.log*.
+
+````
 `````
 
-**Transcript**
+### Debug Log
 
-You can only access the transcript which will log protocol request and responses. It's particular useful for protocols using HTTP. Open a *Terminal.app* window and enter 
+To enable debug logging tick the corresponding checkmark in the Cyberduck *Preferences Connection* tab. You can reach the logging output by clicking on the *Show* button within the same Cyberduck *Preferences* section. The file is called *cyberduck.log*.
 
-`log stream --predicate '(process == "Cyberduck") && (category == "transcript")' --level info`
-
-```{note}
-The transcript will be written in the *Terminal.app* window. Make sure to keep the window open after executing the command.
-```
-
-
-**Heap Dump**
-
-To create a heap dump of the Cyberduck process on macOS (in case of excessive memory usage for example) you can use `jmap` from the {download}`OpenJDK 13<https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_mac_hotspot_13.0.2_8.pkg>`.
-
-`jmap -dump:file=cyberduck-dump.hprof [PID of Cyberduck process]`
-
-``````
-``````{group-tab} Windows
-
-Reveal the log output named `cyberduck.log` by choosing _Preferences → Connection → Log → Show_.
-
-Alternatively, the `cyberduck.log` file can be found in `%AppData%\cyberduck`.
-
-``````
-```````
-
-### Debug Logging Level
-Enable debug logging by choosing _Preferences → Connection → Log → Enable debug log_. Alternatively this can be configured using the following command line options.
+Alternatively this can be configured using the following command line options.
 
 ````{tabs}
 ```{group-tab} macOS
@@ -101,6 +73,29 @@ Debug logging can be enabled with a [hidden setting](preferences.md#hidden-confi
 
 ```
 ````
+
+### Additional Log Outputs
+
+`````{tabs}
+````{tab} Transcript
+
+You can only access the transcript which will log protocol request and responses. It's particular useful for protocols using HTTP. Open a *Terminal.app* window and enter 
+
+`log stream --predicate '(process == "Cyberduck") && (category == "transcript")' --level info`
+
+```{note}
+The transcript will be written in the *Terminal.app* window. Make sure to keep the window open after executing the command.
+```
+````
+
+````{tab} Heap Dump
+
+To create a heap dump of the Cyberduck process on macOS (in case of excessive memory usage for example) you can use `jmap` from the {download}`OpenJDK 13<https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_mac_hotspot_13.0.2_8.pkg>`.
+
+`jmap -dump:file=cyberduck-dump.hprof [PID of Cyberduck process]`
+
+````
+`````
 
 ## Application Support Folder
 
