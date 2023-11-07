@@ -48,7 +48,7 @@ When enabled _Preferences → Sync → Enable buffering_ is enabled:
 ## Filenames
 
 ### Files and folders not synced from Server
-Files matching the following naming pattern are excluded from folder listings per default and not synchronized from the server.
+Files matching the following naming pattern are excluded from folder listings and not synchronized from the server. These characters are reserved for the operating system or file system and can't be used to name files or directories.
 
 `````{tabs}
 ````{group-tab} macOS
