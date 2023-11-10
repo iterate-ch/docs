@@ -97,7 +97,7 @@ To reach the context menu right-click on a file or folder in _File Explorer_ (Wi
 
 ### Keep Offline
 
-Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available even when the network connection drops. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
+Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available even offline with no network connectivity. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
 ```{image} ../_images/Sync_Context_Menu_macOS.png
 :alt: Sync Context Menu (macOS)
