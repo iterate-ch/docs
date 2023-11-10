@@ -97,15 +97,17 @@ To reach the context menu right-click on a file or folder in _File Explorer_ (Wi
 
 ### Keep Offline
 
-Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
+Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available even offline with no network connectivity. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
 ```{image} ../_images/Sync_Context_Menu_macOS.png
 :alt: Sync Context Menu (macOS)
 :width: 500px
 ```
 
+The files are saved in the obfuscated sync cache and the local copy can't be accessed without using the volume mounted by Mountain Duck. Changes on cached files from a mounted volume without an activ network connection will be written to the sync cache and will be synchronized in the background when the server is reachable again.
+
 ```{note}
-As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. 
+As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. 
 ```
 
 ### Delete on Local Disk
