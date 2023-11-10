@@ -141,6 +141,10 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 
 File transfers require you to unlock the vault again unless you have chosen to save your vault passphrase in the keychain.
 
+### Renaming
+
+Make sure that the vault is locked before it gets renamed. Otherwise the vault will be changed to a normal folder. Using [Smart Synchronization](../mountainduck/connect/sync.md) mode an additional vault with the original name will appear.
+
 ## Browser
 
 You can open and browse multiple vaults on a server in a single browser window. For each vault to be opened you will be prompted to enter your passphrase to decrypt the filenames. Decrypted filenames when browsing a vault will show a padlock overlay icon.
