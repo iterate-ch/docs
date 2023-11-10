@@ -51,6 +51,12 @@ Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 
 
 You must obtain the login credentials (Access Key ID and Secret Access Key) of your [Amazon Web Services Account](http://aws.amazon.com/account/) from the [*AWS Access Identifiers page*](https://console.aws.amazon.com/iam/home?#security_credential). Enter the *Access Key ID* and *Secret Access Key* in the login prompt.
 
+The default ports are:
+- HTTPS: 443
+- HTTP: 80
+
+Unless you configured a custom port make sure to stick to the default ports to avoid connection failures.
+
 ```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
