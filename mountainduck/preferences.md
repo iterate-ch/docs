@@ -54,7 +54,7 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 
 The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
 
-**Note:** Make sure to change the mount location pack to default before using the App Store version of Mountain Duck.
+**Note:** Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
 
 ### Cache Location
 
