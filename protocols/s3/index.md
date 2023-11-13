@@ -51,12 +51,6 @@ Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 
 
 You must obtain the login credentials (Access Key ID and Secret Access Key) of your [Amazon Web Services Account](http://aws.amazon.com/account/) from the [*AWS Access Identifiers page*](https://console.aws.amazon.com/iam/home?#security_credential). Enter the *Access Key ID* and *Secret Access Key* in the login prompt.
 
-The default ports are:
-- HTTPS: 443
-- HTTP: 80
-
-Unless you configured a custom port make sure to stick to the default ports to avoid connection failures.
-
 ```{note}
 All connection profiles are available through the *Preferences → Profiles* tab.
 ```
@@ -82,9 +76,14 @@ It is discouraged to enable this option to connect plaintext to Amazon S3.
 
 If you have an S3 installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security. You will then have the added option S3 (HTTP) in the protocol dropdown selection in the [Connection](../../cyberduck/connection) and [Bookmark](../../cyberduck/bookmarks) panels.
 
+The default port is `80`.
+
 * {download}`Download<https://profiles.cyberduck.io/S3%20(HTTP).cyberduckprofile>` the *S3 (HTTP) profile* for preconfigured settings.
 
 **HTTPS**</br>
+
+The defaut port is `443`.
+
 - {download}`Download<https://profiles.cyberduck.io/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings.
 ````
 
@@ -97,9 +96,15 @@ An incomplete list of known providers that require the use of AWS2
 - EMC Elastic Cloud Storage
 
 **HTTP**</br>
+
+The defaut port is `80`.
+
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
 
 **HTTPS**</br>
+
+The defaut port is `443`.
+
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
 ````
 
