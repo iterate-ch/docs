@@ -143,9 +143,9 @@ File transfers require you to unlock the vault again unless you have chosen to s
 
 ### Renaming
 
-The expected behavior for renaming vaults is:
-- Renaming locked vaults: The vault gets renamed correctly.
-- Renaming unlocked vaults: The vault gets changed to a normal folder with the new name. The vaults content will be shown decrypted in the folder.
+When renaming a vault the behaviour depends on whether the vault is locked or unlocked:
+- Renaming a _locked_ vault will rename the vault folder with no changes to the encrypted contents.
+- Renaming an _unlocked_ vault changes it to regular folder with decrypted contents.
 
 ## Browser
 
