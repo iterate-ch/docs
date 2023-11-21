@@ -29,25 +29,25 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 `````{tabs}
 ````{group-tab} macOS
 
-Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. You can also reveal the file by clicking on the _Show_ button within the Mountain Duck preferences _Connection_ tab.
+Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file.
 
 ````
 ````{group-tab} Windows
 
-Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. You can also reveal the file by clicking on the *Show* button within the Mountain Duck *Preferences Connection* tab. The file is named *mountainduck.log*.
+Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file named *mountainduck.log*.
 
 ````
 `````
 
 #### Debug Log
 
-To enable debug logging tick the corresponding checkmark in the Mountain Duck *Preferences Connection* tab. You can reach the logging output by clicking on the *Show* button within the same Mountain Duck *Preferences* section. The file is called *mountainduck.log*.
+To enable verbose log output select _Enable debug log_ in _Mountain Duck → Preferences → Connection_.
 
 #### Error Log
 
 An error log is a record of critical errors that occur during the operation of the application or server. It can be a useful tool for troubleshooting.
 
-It can be reached by clicking on the Show button within the Mountain Duck *Preferences Connection* tab. The file is named *mountainduck.error*.
+It can be reached by clicking on the Show button within _Mountain Duck → Preferences → Connection_. The file is named *mountainduck.error*.
 
 ### Feature Request
 
