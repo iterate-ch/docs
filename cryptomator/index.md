@@ -143,7 +143,9 @@ File transfers require you to unlock the vault again unless you have chosen to s
 
 ### Renaming
 
-Make sure that the vault is locked before it gets renamed. Otherwise the vault will be changed to a normal folder. Using [Smart Synchronization](../mountainduck/connect/sync.md) mode an additional vault with the original name will appear.
+When renaming a vault the behaviour depends on whether the vault is locked or unlocked:
+- Renaming a _locked_ vault will rename the vault folder with no changes to the encrypted contents.
+- Renaming an _unlocked_ vault changes it to regular folder with decrypted contents.
 
 ## Browser
 
