@@ -156,11 +156,11 @@ Skip transfer of files that already exist.
 
 ## Preferences
 
-### Transfers → General → Browser connection for file transfers
+### Browser connection for file transfers
 
 If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](bookmarks.md#edit-bookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](preferences.md).
 
-### Transfers → General → Downloads/Uploads → Existing Files
+### Download/Upload setting for Existing Files
 
 - **Prompt:** Asks what action to take for each transfer.
 - **Overwrite:** Overwrite existing files at the destination.
