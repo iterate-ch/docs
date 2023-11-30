@@ -104,10 +104,8 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 :width: 500px
 ```
 
-The files are saved in the obfuscated sync cache and the local copy can't be accessed without using the volume mounted by Mountain Duck. Changes on cached files from a mounted volume without an activ network connection will be written to the sync cache and will be synchronized in the background when the server is reachable again.
-
 ```{note}
-As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. 
+As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. 
 ```
 
 ### Delete on Local Disk
