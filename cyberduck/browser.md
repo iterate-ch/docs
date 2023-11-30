@@ -236,7 +236,7 @@ This is not the size of its content but the size of the folder itself. Use *File
 
 Restore browser sessions that were left open when the application was last closed.
 
-### General → Browser → Open new browser window on startup
+### Browser → Browser → Open new browser window on startup
 
 Open new browser window after application launch.
 
