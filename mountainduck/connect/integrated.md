@@ -27,9 +27,9 @@ Files and folders on a mounted volume have a status icon overlay in _File Explor
 
 An additional icon next to the filename is displayed in Finder denoting the synchronization status in _Integrated_ connect mode.
 
- - ![](../_images/File_Provider_Online_Only.png) **Online Only**
- - ![](../_images/File_Provider_Ignored.png) **Ignored**
- - ![](../_images/File_Provider_Error.png) **Sync Error**
+### ![](../_images/File_Provider_Online_Only.png) Online Only
+### ![](../_images/File_Provider_Ignored.png) Ignored
+### ![](../_images/File_Provider_Error.png) Sync Error
 
 
 ````
