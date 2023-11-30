@@ -22,10 +22,6 @@ You can access files in _Integrated_ connect mode without being always connected
 
 Files and folders on a mounted volume have a status icon overlay in _File Explorer_ (Windows) and _Finder_ (macOS).
 
-```{admonition} macOS only
-:class: tip
-Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS. For macOS Ventura and later, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
-```
 `````{tabs}
 ````{group-tab} macOS
 
