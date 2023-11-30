@@ -15,17 +15,17 @@ mode.
 ::::{tabs}
 :::{tab} Integrated
 
-The _Integrated_ connect mode synchronizes files and folders from a directory on the local disk with support from macOS and Windows.
+The [_Integrated_ connect mode](integrated.md) synchronizes files and folders from a directory on the local disk with support from macOS and Windows.
 
 :::
 :::{tab} Online
 
-In _Online_ connect mode, changes to a file are immediately uploaded and in sync when an application has finished saving a file.
+In [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has finished saving a file.
 
 :::
 :::{tab} Smart Synchronization
 
-In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
+In [_Smart Synchronization_ connect mode](sync.md), files are copied to a local cache for faster access prior synchronization with the server in the background.
 
 :::
 ::::
