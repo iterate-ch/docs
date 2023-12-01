@@ -562,7 +562,7 @@ This deprecated signature version is not compatible with new regions such as `eu
 
 ### Limitations
 
-Mountain Duck can't create shar links because it fails to change the permissions when either
+Share links cannot be created when failing to update the ACLs on a file because
 
 * Bucket has "Object Ownership" set to "Bucket owner enforced" ([ACLs disabled](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console)). 
 Error message: `This bucket does not allow ACLs`
