@@ -544,7 +544,7 @@ You can access all URLs (including from [CDN](../../protocols/cdn/cloudfront.md)
 ```{important}
 Public URLs are only accessible if the permission `READ` is granted for `EVERYONE`.
 ```
-
+ 
 Choose *File → Share…* to change the ACL on the file permanently allowing read for everyone. You can reset the changed ACL in [Info → ACL](../../cyberduck/info.md#access-control-list-acl).
 
 ### Pre-signed Temporary URLs
@@ -564,6 +564,14 @@ Using the AWS4 signature version used in Cyberduck version 5.0 and later, pre-si
 ```{note}
 This deprecated signature version is not compatible with new regions such as `eu-central-1`.
 ```
+
+### Limitations
+
+Share links cannot be created when failing to update the ACLs on a file because
+
+* Bucket has "Object Ownership" set to "Bucket owner enforced" ([ACLs disabled](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console)). 
+Error message: `This bucket does not allow ACLs`
+* ["Block public acccess"](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html?icmpid=docs_amazons3_console) is enabled on bucket. Error message: `Access denied` 
 
 ## Metadata
 
