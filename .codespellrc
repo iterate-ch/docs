@@ -2,5 +2,5 @@
 skip = .git,*.pdf,*.svg,go.sum,*.css,.codespellrc
 check-hidden = true
 # Some German and custom names and regexes
-ignore-regex = .*\b(ist ein|SAV for Mac)\b|ü.*|\bTe\*|\b_static/Ressources\b
+ignore-regex = .*\b(ist ein|SAV for Mac)\b|.*ü.*|\bTe\*|\b_static/Ressources\b
 # ignore-words-list =
