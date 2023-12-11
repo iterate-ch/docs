@@ -477,7 +477,7 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 ### Restored Glacier files in Mountain Duck
 
-Temporarly restored files from *Glacier* won't change the storage class and therefor won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
+Temporarily restored files from *Glacier* won't change the storage class and therefore won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
 
 ## Access Control (ACL)
 

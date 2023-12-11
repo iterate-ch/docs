@@ -22,7 +22,7 @@ No admin privileges for installation is required.
 Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
 
 **Login Item**<br/>
-You can choose to open Mountain Duck when you log into your computer. Tha application will appear in *Login Items* of the *User & Groups* system preferences panel.
+You can choose to open Mountain Duck when you log into your computer. The application will appear in *Login Items* of the *User & Groups* system preferences panel.
 
 ![Login Item](_images/Login_Item.png)
 
