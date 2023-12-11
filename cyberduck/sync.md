@@ -54,5 +54,5 @@ No files are downloaded.
 
 You have to manually restart the synchronization in the transfer window. If you want to automate things you will be better off with either
 
-- [Cyberduck CLI](https://duck.sh/) which allows you to write a script and schedule ot with your preferred method such as `cron`.
+- [Cyberduck CLI](https://duck.sh/) which allows you to write a script and schedule it with your preferred method such as `cron`.
 - [Mountain Duck](https://mountainduck.io/) which allows you to mount the remote volume and synchronise files with any of your preferred tools such as `rsync`.
