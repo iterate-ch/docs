@@ -14,7 +14,7 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Box Dri
 
 ## Connecting
 
-Use the default *Box* connection profile to connect to your server using the Box API. This allows to have Multi-Factor Authentication enabled for your accout.
+Use the default *Box* connection profile to connect to your server using the Box API. This allows to have Multi-Factor Authentication enabled for your account.
 
 ### Alternate Connection Options
 

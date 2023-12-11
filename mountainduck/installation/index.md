@@ -51,7 +51,7 @@ For **macOS Ventura and later**, the setting can be found in *System Settings â†
 [Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.5.2*.
 
 ```{note}
-Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separatly. Both packages are needed to enable the explorer extension.
+Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
 ```
 
 ````

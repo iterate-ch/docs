@@ -191,7 +191,7 @@ Choose *Cyberduck → Preferences → Connection → Use system proxy settings*.
 
 ### Additional Settings
 
-#### Prefer IPv6 Adresses of DNS Lookups
+#### Prefer IPv6 Addresses of DNS Lookups
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
@@ -203,7 +203,7 @@ A [hidden configuration option](preferences.md#hidden-configuration-options).
 
     defaults write ch.sudo.cyberduck rendezvous.enable false
 
-#### Disable Bonjour Notifications in Notification Center and Sytem Tray
+#### Disable Bonjour Notifications in Notification Center and System Tray
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 

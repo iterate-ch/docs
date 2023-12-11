@@ -68,7 +68,7 @@ Files matching the following naming pattern are excluded from folder listings an
 - `\` (backslash)
 - `|` (vertical bar or pipe)
 - `?` (question mark)
-- `*` (asterik)
+- `*` (asterisk)
 
 ````
 `````
@@ -241,7 +241,7 @@ The Spotlight search does not work on remote volumes.
 **Spotlight indexer**<br/>
 To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location) to a directory without the extension `.noindex`.
 ```{attention}
-Enabling Spotlight can cause high CPU and bandwith usage while indexing folders. 
+Enabling Spotlight can cause high CPU and bandwidth usage while indexing folders. 
 ```
 
 
@@ -254,7 +254,7 @@ It may be that Finder closes the connection because Mountain Duck hasn't answere
 This is an issue within the operating system that can occur to any network drive.
 
 <del> **Additional `._*` Files Saved on Remote Volumes** </del> <br/>
-<del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata suppport, an auxiliary file is created to contain this information. You can delete metadata on files using `xattr -d <filename>`. </del>
+<del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata support, an auxiliary file is created to contain this information. You can delete metadata on files using `xattr -d <filename>`. </del>
 
 As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window:
 
@@ -273,7 +273,7 @@ If you get this error message you most likely haven't restarted your system afte
 **Missing Files in Windows Explorer**<br/>
 Windows has a limitation on the maximum path length. It might happen that Mountain Duck exceeds this maximum for long file names when trying to create placeholders in the local cache. If Mountain Duck is unable to create a placeholder file for a remote file it will not appear in the Windows Explorer listing.
 
-To work around this Windows limitaion you can enable long path support in Windows 10 as of version 1607.
+To work around this Windows limitation you can enable long path support in Windows 10 as of version 1607.
 
 1. Open the *Local Group Policy editor* (search for *Edit Group Policy*)
 2. Navigate to *Local Computer Policy → Computer Configuration → Administrative Templates → System → Filesystem*

@@ -41,7 +41,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ### Authentication Context Path
 
-#### Authetication with `devauth` for Context `/v1.0`
+#### Authentication with `devauth` for Context `/v1.0`
 
 Legacy authentication option.
 
