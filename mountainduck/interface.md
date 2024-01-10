@@ -140,7 +140,7 @@ Use
 
 ````{group-tab} Windows
 
-Enter the commmand `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Bookmarkfile>` in *cmd.exe*.
+Enter the command `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Bookmarkfile>` in *cmd.exe*.
 
 ````
 `````
@@ -178,7 +178,7 @@ You can unmount volumes using your command-line interface (CLI). Use `umount <bo
 In *File Explorer* in "This PC" view or the sidebar on the left of the *File Explorer* window, open the context menu for your mounted drive and select *Disconnect*.
 
 **Disconnect using command line**<br/>
-You can unmount volumes using your commmand-line interface (CLI). Use `net use <drive letter>: /delete` in *cmd.exe*
+You can unmount volumes using your command-line interface (CLI). Use `net use <drive letter>: /delete` in *cmd.exe*
 
 ````
 

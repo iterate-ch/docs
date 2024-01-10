@@ -82,7 +82,7 @@ The default port is `80`.
 
 **HTTPS**</br>
 
-The defaut port is `443`.
+The default port is `443`.
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings.
 ````
@@ -97,13 +97,13 @@ An incomplete list of known providers that require the use of AWS2
 
 **HTTP**</br>
 
-The defaut port is `80`.
+The default port is `80`.
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
 
 **HTTPS**</br>
 
-The defaut port is `443`.
+The default port is `443`.
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
 ````
@@ -477,7 +477,7 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 ### Restored Glacier files in Mountain Duck
 
-Temporarly restored files from *Glacier* won't change the storage class and therefor won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
+Temporarily restored files from *Glacier* won't change the storage class and therefore won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
 
 ## Access Control (ACL)
 
@@ -571,7 +571,7 @@ Share links cannot be created when failing to update the ACLs on a file because
 
 * Bucket has "Object Ownership" set to "Bucket owner enforced" ([ACLs disabled](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console)). 
 Error message: `This bucket does not allow ACLs`
-* ["Block public acccess"](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html?icmpid=docs_amazons3_console) is enabled on bucket. Error message: `Access denied` 
+* ["Block public access"](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html?icmpid=docs_amazons3_console) is enabled on bucket. Error message: `Access denied` 
 
 ## Metadata
 

@@ -27,7 +27,7 @@ The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.
 
 ### Authentication with username and password 
 
-To authenticate with your username and password, use the _DRACOON (OAuth Password Flow)_ profile. Instead of retrieving an authentication code by logging in using a web browser, the profile uses the OAuth password flow to authenticate. This is most usefull when working with [Cyberduck CLI](https://duck.sh/).
+To authenticate with your username and password, use the _DRACOON (OAuth Password Flow)_ profile. Instead of retrieving an authentication code by logging in using a web browser, the profile uses the OAuth password flow to authenticate. This is most useful when working with [Cyberduck CLI](https://duck.sh/).
 
 ## Client-Side Encryption
 

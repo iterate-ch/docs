@@ -22,7 +22,7 @@ No admin privileges for installation is required.
 Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
 
 **Login Item**<br/>
-You can choose to open Mountain Duck when you log into your computer. Tha application will appear in *Login Items* of the *User & Groups* system preferences panel.
+You can choose to open Mountain Duck when you log into your computer. The application will appear in *Login Items* of the *User & Groups* system preferences panel.
 
 ![Login Item](_images/Login_Item.png)
 
@@ -51,7 +51,7 @@ For **macOS Ventura and later**, the setting can be found in *System Settings �
 [Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.5.2*.
 
 ```{note}
-Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separatly. Both packages are needed to enable the explorer extension.
+Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
 ```
 
 ````

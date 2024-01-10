@@ -220,7 +220,7 @@ Enabling change of modification date slows down the transfer rate when uploading
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Edit the available options (in bytes).
 
-    defaults write ch.sudo.cyberduck queue.bandwith.options 102400,1073741824
+    defaults write ch.sudo.cyberduck queue.bandwidth.options 102400,1073741824
 
 ### Badge Dock Icon
 

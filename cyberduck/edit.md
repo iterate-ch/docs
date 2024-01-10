@@ -4,7 +4,7 @@ Edit Files
 You can edit a file just as a local file in an external editor by clicking the Edit toolbar button or by choosing *File → Edit With*. The file will be downloaded to a temporary directory and opened with the preferred editor. The file will be uploaded to the server every time you choose *File → Save* in the Editor application. The file is not changed on the server if you just close the document without saving it or if the content has not changed.
 
 ## Default Editor
-The default editor opened for a file is selected depeding on the file type. If no application is found to handle the file type the default eidtor chosen in *Preferences* is used instead.
+The default editor opened for a file is selected depending on the file type. If no application is found to handle the file type the default eidtor chosen in *Preferences* is used instead.
 
 ```{image} _images/Edit_With_Application.png
 :alt: Edit with Application

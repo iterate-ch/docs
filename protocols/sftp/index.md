@@ -68,7 +68,7 @@ which is then used when configuring a new bookmark.
 If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as hostname in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
 	
 	Host myhostalias
-		HostName myverylonghostname.exmaple.com
+		HostName myverylonghostname.example.com
 		User myusername
 		IdentityFile ~/.ssh/mykey-rsa.pub
 		
@@ -135,7 +135,7 @@ The following agents are supported:
 ````
 
 ```{tip}
-When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many login failures and you will recieve the error _Too many authentication failures_.
+When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many login failures and you will receive the error _Too many authentication failures_.
 ```
 
 Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
@@ -405,4 +405,4 @@ The available space for a volume mounted over SFTP is determined using quota fea
 
 You can work around the issue using one of the following options:
 - Set a default path you want to connect to within the bookmark *Path* option.
-- Disable the feature within Mountain Duck by setting the [hidden property](../../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/deafult.properties* on macOS. If the file doesn't exist create it within the [application support folder](../../mountainduck/support.md#application-support-folder).
+- Disable the feature within Mountain Duck by setting the [hidden property](../../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/default.properties* on macOS. If the file doesn't exist create it within the [application support folder](../../mountainduck/support.md#application-support-folder).
