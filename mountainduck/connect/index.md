@@ -31,3 +31,36 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 | **[Recent Files](sync.md#recent-files)** | –                                                                     | Available in the status bar (macOS) or taskbar (Windows)                      |
 | **[Lock Files](../locking.md)**          | ✔︎                                                                    | ✔                                                                             |
 | **[Share Files](../share.md)**           | ✔                                                                     | ✔                                                                             |
+
+## Quota support
+Mountain Duck has support for the overall quota of a server but quota reporting is not supported for all protocols.
+
+| Protocol                 | Support |
+|--------------------------| :---: |
+| Local Disk               | ✅ |
+| SFTP                     | ✅ |
+| FTP                      | ❌ |
+| WebDAV			       | ✅ |
+| Google Drive             | ✅ |
+| Google Cloud Storage     | ❌ |
+| Microsoft OneDrive       | ✅ |
+| Microsoft Sharepoint     | ✅ |
+| Files.com                | ❌ |
+| DRACOON                  | ✅ |
+| Backblaze B2             | ❌ |
+| Box.com                  | ❌ |
+| Dropbox                  | ✅ |
+| Nextcloud                | ✅ |
+| ownCloud                 | ✅ |
+| S3                       | ❌ |
+| SMB                      | ✅ |
+| Windows Azure            | ❌ |
+| OpenStack Object Storage | ✅ |
+
+```{admonition} Limited Support
+:class: attention
+- **[Microsoft OneDrive](../../protocols/onedrive.md#quota)**: Quota is only supported if a folder other than the virtual root is mounted.
+- **[Microsoft SharePoint](../../protocols/sharepoint.md#quota)**: Quota is only supported for the *Drives* folders within the respective SharePoint site folders.
+```
+
+Mountain Duck can't display the correct remaining free space for protocols that can't report quota. Finder and Windows Explorer will show exabyte values within the *Online* mode and the available space within the synchronization cache location within the *Smart Synchronization* mode for servers and protocols that don't have support for quota reporting.

@@ -108,3 +108,6 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Drives      |
 | Groups      |
 | Sites       |
+
+### Quota
+Quota reporting is only supported for the *Drives* folder within their respective site folder.

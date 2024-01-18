@@ -104,3 +104,6 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 |-------------|:--------------:|
 | My Files    | Personal files |
 | Shared      | Shared folders |
+
+### Quota
+Mountain Duck can only display the correct remaining disk space on the server if a folder other than the default virtual root gets mounted, for example *My Files*.
