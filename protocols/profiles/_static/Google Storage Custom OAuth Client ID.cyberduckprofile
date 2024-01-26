@@ -18,7 +18,7 @@
             <string>https://www.googleapis.com/auth/devstorage.full_control</string>
         </array>
         <key>OAuth Redirect Url</key>
-        <string>urn:ietf:wg:oauth:2.0:oob</string>
+        <string>${oauth.application.identifier}:oauth</string>
         <key>OAuth Client ID</key>
         <string>…</string>
         <key>OAuth Client Secret</key>
