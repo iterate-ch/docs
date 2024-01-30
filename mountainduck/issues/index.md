@@ -268,6 +268,9 @@ Extended attributes containing metadata about the files some applications write 
 fs.filenames.metadata.enable=false
 ```
 
+**Quick Look**<br/>
+Preview for files only work downloaded files with _In Sync_ or _Up to Date_ [status](../connect/sync.md#status-of-files) in _Smart Synchronization_ or _Integrated_ connect mode.
+
 ::::
 ::::{group-tab} Windows
 

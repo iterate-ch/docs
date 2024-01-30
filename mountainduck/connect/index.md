@@ -9,8 +9,8 @@ sync
 online
 :::
 
-When connecting to a server, you can choose between *[Online](online.md)* and *[Smart Synchronization](sync.md)* connect
-mode.
+When connecting to a server, you can choose between *[Online](online.md)*, *[Smart Synchronization](sync.md)*, and *[Integrated](integrated.md)* connect
+mode:
 
 ::::{tabs}
 :::{tab} Integrated
@@ -20,7 +20,7 @@ The [_Integrated_ connect mode](integrated.md) synchronizes files and folders fr
 :::
 :::{tab} Online
 
-In [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has finished saving a file.
+Using [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has finished saving a file.
 
 :::
 :::{tab} Smart Synchronization
