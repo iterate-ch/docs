@@ -168,7 +168,7 @@ For the Windows Store version refer to
 
 - `%LocalAppData%\Packages\iterate.37637C3DE32E5_gr99yradmgg3r\LocalCache\Roaming\Cyberduck`
 
-Preferences are stored in `%AppData%\iterate_GmbH\Cyberduck.exe_Url_[id]\[version]\user.config`. Please note that settings in `%AppData%\Cyberduck\default.properties` takes precedence over `user.config`.
+Preferences are stored in `%AppData%\Cyberduck\cyberduck.user.config`. Please note that settings in `%AppData%\Cyberduck\default.properties` takes precedence over `user.config`.
 
 ````
 `````
