@@ -75,9 +75,8 @@ All additional schemes are registered as a scheme handler when opening [Mountain
 - `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../s3/index.md#creating-a-bucket) for [S3](../s3/index.md) and [OpenStack Swift](../openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
 - `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider. Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
-```{note}
-A profile can define an empty OAuth Client Secret key. The OAuth authorization flow will then use no client secret in client parameters to authenticate with the server.
-```
+  * A profile can define an empty OAuth Client Secret key. The OAuth authorization flow will then use no client secret in client parameters to authenticate with the server.
+  * A profile can omit the OAuth Client ID and Secret to prompt the user for manual input when connecting.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
 - `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP%20(Compatibility%20Mode).cyberduckprofile)
