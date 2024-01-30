@@ -104,3 +104,6 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 |-------------|:--------------:|
 | My Files    | Personal files |
 | Shared      | Shared folders |
+
+### Quota
+Mountain Duck can only display the correct cloud storage quota as remaining disk space when setting the *Path* in the bookmark configuration to a folder different from `/`, for example `My Files`.

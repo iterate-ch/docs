@@ -37,7 +37,7 @@ Choose *File Explorer → Folder Options*.
 `````
 
 ## Temporary Files
-When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data ist stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file. Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. 
+When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data is stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file. Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. 
 
 ```{tip}
 When enabled _Preferences → Sync → Enable buffering_ is enabled:
@@ -68,7 +68,7 @@ Files matching the following naming pattern are excluded from folder listings an
 - `\` (backslash)
 - `|` (vertical bar or pipe)
 - `?` (question mark)
-- `*` (asterik)
+- `*` (asterisk)
 
 ````
 `````
@@ -241,7 +241,7 @@ The Spotlight search does not work on remote volumes.
 **Spotlight indexer**<br/>
 To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location) to a directory without the extension `.noindex`.
 ```{attention}
-Enabling Spotlight can cause high CPU and bandwith usage while indexing folders. 
+Enabling Spotlight can cause high CPU and bandwidth usage while indexing folders. 
 ```
 
 
@@ -264,7 +264,7 @@ If you get this error message you most likely haven't restarted your system afte
 **Missing Files in Windows Explorer**<br/>
 Windows has a limitation on the maximum path length. It might happen that Mountain Duck exceeds this maximum for long file names when trying to create placeholders in the local cache. If Mountain Duck is unable to create a placeholder file for a remote file it will not appear in the Windows Explorer listing.
 
-To work around this Windows limitaion you can enable long path support in Windows 10 as of version 1607.
+To work around this Windows limitation you can enable long path support in Windows 10 as of version 1607.
 
 1. Open the *Local Group Policy editor* (search for *Edit Group Policy*)
 2. Navigate to *Local Computer Policy → Computer Configuration → Administrative Templates → System → Filesystem*

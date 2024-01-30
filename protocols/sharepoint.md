@@ -18,7 +18,7 @@ Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connectio
 
 1. Create a bookmark with Microsoft SharePoint connection profile
 2. Enter your email address into the username field. The email address is solely used for internal identification and not actual authentication against SharePoint using OAuth.
-3. Double click to connect to the newly created bookmark. You are prompted to enter an *Authorization Code* you obtain in the web browser window opened. Login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
+3. Double click to connect to the newly created bookmark. A web browser window will open to login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
 4. Grant permission to *Cyberduck* for *OneDrive* and *SharePoint*.
 5. The authorization code will be submitted to Cyberduck automatically.
 6. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
@@ -108,3 +108,6 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Drives      |
 | Groups      |
 | Sites       |
+
+### Quota
+Quota reporting is only supported for the *Drives* folder within their respective site folder.

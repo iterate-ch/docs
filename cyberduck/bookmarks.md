@@ -11,12 +11,12 @@ Bookmarks
 `````{tabs}
 ````{group-tab} macOS
 
-You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`⌘B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Cyberduck → Preferences → Browser → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
+You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`⌘B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Cyberduck → Preferences → General → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
 
 ````
 ````{group-tab} Windows
 
-You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`Strg+B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Edit → Preferences → Browser → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
+You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`Strg+B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Edit → Preferences → General → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
 
 ````
 `````
@@ -244,7 +244,7 @@ e.g.: `ln -s ~/Dropbox/Bookmarks ~/Library/Group\ Containers/G69SCX94XU.duck/Lib
 
 ### Open Default Bookmark
 
-Choose a default bookmark to open after opening the application. Choose *Preferences → General → Open new browser window on startup → Connect to bookmark ...*.
+Choose a default bookmark to open after opening the application. Choose *Preferences → Browser → Open new browser window on startup → Connect to bookmark ...*.
 
 ### Do not Read favicon.ico from HTTP URL
 

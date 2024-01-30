@@ -89,4 +89,4 @@ An option to upload with a temporary name and rename the file after the transfer
 
     defaults write ch.sudo.cyberduck queue.upload.file.temporary.format "'{0}-{1}'"
 
-where `{0}` is the original filename and `{1}` is a random UUID. The default setting uses a temprary filename of `filename-uuid`.
+where `{0}` is the original filename and `{1}` is a random UUID. The default setting uses a temporary filename of `filename-uuid`.

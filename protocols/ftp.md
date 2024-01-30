@@ -109,7 +109,7 @@ Example configuration:
 
 ## Preferences
 
-### Connection → Text Encoding
+### FTP → Text Encoding
 
 The text encoding selected is used to decode the filenames in a directory listing sent by the server. It is important this matches the text encoding used by the server to encode the characters as otherwise characters not in the ASCII range (such as German Umlaute) are not displayed correctly. `UTF-8` (the default), `ISO-8859-1` and `Windows-1252` are the most common. You can also change the text encoding per browser using *View → Text Encoding*.
 

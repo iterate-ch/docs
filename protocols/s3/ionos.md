@@ -17,7 +17,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ### Object storage keys
 
-1. Sign into your **IONOS Data Center Designer** and navigate to the **User Manager** via the menu bar **Ressource Manager** section.
+1. Sign into your **IONOS Data Center Designer** and navigate to the **User Manager** via the menu bar **Resource Manager** section.
 2. Select a user and click on the **Object Storage Keys** tab on the right.
 3. Choose **Generate Key** and confirm the action with **OK**.
 The object storage key will be generated automatically.

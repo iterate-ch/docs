@@ -71,7 +71,7 @@ TLSv1 and TLSv1.1 are no longer supported as of
 
 Mutual (two-way) TLS with a client certificate for authentication is supported.
 
-#### Prompt to Authenticate with Certificate When Negociating Secure (TLS) Connection
+#### Prompt to Authenticate with Certificate When Negotiating Secure (TLS) Connection
 
 When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the *Keychain* on macOS or the *Windows Certificate Manager* respectively.
 

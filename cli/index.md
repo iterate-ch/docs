@@ -224,7 +224,7 @@ duck --username <Access Key ID> --list s3:/<bucketname>/
 
 #### `--retry`
 
-Retry requests with I/O failures once per default. Useful on connnection timeout or latency issues.
+Retry requests with I/O failures once per default. Useful on connection timeout or latency issues.
 
 #### `--verbose`
 

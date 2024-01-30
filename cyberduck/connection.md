@@ -163,10 +163,6 @@ Integrated Windows Authentication (IWA) for proxy authentication of HTTP connect
 
 ## Preferences
 
-### General → Connection → Use Keychain
-
-Search for and save password for connections.
-
 ### Profiles
 
 Select connection protocols to be installed in addition to the default protocols. The connection profile will be installed after enabling the corresponding checkbox. To disable a connection profile simply uncheck the checkbox. The profile will be disabled after closing the application.
@@ -176,6 +172,10 @@ You cannot disable default protocols or connection profiles currently in use in 
 ```
 
 ### Connection
+
+#### Use Keychain
+
+Search for and save password for connections.
 
 #### Timeout
 
@@ -189,19 +189,21 @@ Failed transfers due to network connection issues such as a low latency can be c
 
 Choose *Cyberduck → Preferences → Connection → Use system proxy settings*. No additional configuration needed.
 
-### Prefer IPv6 Adresses of DNS Lookups
+### Additional Settings
+
+#### Prefer IPv6 Addresses of DNS Lookups
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
     defaults write ch.sudo.cyberduck connection.dns.ipv6 true
 
-### Disable Bonjour Support
+#### Disable Bonjour Support
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
     defaults write ch.sudo.cyberduck rendezvous.enable false
 
-### Disable Bonjour Notifications in Notification Center and Sytem Tray
+#### Disable Bonjour Notifications in Notification Center and System Tray
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). By default, the limit is set to allow not more than `30` notifications per minute.
 

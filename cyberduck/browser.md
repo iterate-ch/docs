@@ -20,7 +20,7 @@ Navigate into a folder with a double-click *(`⌘↓`)* or one level up by using
 ````
 ````{group-tab} Windows
 
-You can expand and collaps folders using the right and left arrow keys in the outline view.
+You can expand and collapse folders using the right and left arrow keys in the outline view.
 
 Navigate into a folder with a doubl-click *(`Ctrl+Down`)* or one level up by using the ▲ button next to the path-field *(`Ctrl+Up`)*.
 
@@ -183,7 +183,7 @@ Use the *File → Print* option where you can open a PDF from the browser listin
 
 ### Folder Icon Badges
 
-Folder icons are badged for paticular access permissions.
+Folder icons are badged for particular access permissions.
 
 ```{image} _images/privatefolderbadge.png
 :alt: Private Folder Badge
@@ -236,7 +236,7 @@ This is not the size of its content but the size of the folder itself. Use *File
 
 Restore browser sessions that were left open when the application was last closed.
 
-### General → Browser → Open new browser window on startup
+### Browser → Browser → Open new browser window on startup
 
 Open new browser window after application launch.
 

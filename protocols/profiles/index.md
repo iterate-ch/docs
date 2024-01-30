@@ -24,7 +24,7 @@ All connection profiles are available through the *Preferences → Profiles* tab
 
 ## Installation
 
-Connection profiles can be activated by either installing the file by double clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
+Connection profiles can be activated by either installing the file by double-clicking a `.cyberduckprofile` file to open and register or enabling in _Preferences → Profiles_.
 
 ## Contributing Connection Profiles
 

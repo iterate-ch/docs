@@ -87,7 +87,7 @@ Files selected to always keep offline are never automatically removed from the c
 By default, files are kept in cache for 30 days and the cache is limited to a maximum size of 5GiB.
 
 ```{attention}
-The settings apply separately for each bookmark. The synchronization cache gets cleared based on the choosen cache limit after Mountain Duck is started and every 24h as long as Mountain Duck is running.
+The settings apply separately for each bookmark. The synchronization cache gets cleared based on the chosen cache limit after Mountain Duck is started and every 24h as long as Mountain Duck is running.
 ```
 
 ## Notifications
@@ -125,7 +125,7 @@ The connection profiles for [default protocols](../protocols/index.md) are alway
 Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 
 ## Cryptomator
-Choose wheather or not your [Cryptomator vaults](../cryptomator/index.md) should be auto detected and unlocked while browsing the parent folder or not by using the *Auto detect and open vault in browser* option.
+Choose whether or not your [Cryptomator vaults](../cryptomator/index.md) should be auto detected and unlocked while browsing the parent folder or not by using the *Auto detect and open vault in browser* option.
 
 ```{note}
 Without saving the vaults passwords using keychain, you will receive passwords prompts for the vaults after reconnecting to the server or cloud storage.

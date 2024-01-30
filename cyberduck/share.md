@@ -33,7 +33,7 @@ Providers with support to share a file using a public, password protected or tem
 
 ### S3
 
-For connections using [S3](../protocols/s3/index.md) protocol.
+For connections using [S3](../protocols/s3/index.md) protocol, make sure the bucket allows [ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console) and doesn't block [public access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html?icmpid=docs_amazons3_console).
 
 `````{tabs}
 ````{group-tab} Cyberduck

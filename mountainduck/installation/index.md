@@ -22,7 +22,7 @@ No admin privileges for installation is required.
 Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
 
 **Login Item**<br/>
-You can choose to open Mountain Duck when you log into your computer. Tha application will appear in *Login Items* of the *User & Groups* system preferences panel.
+You can choose to open Mountain Duck when you log into your computer. The application will appear in *Login Items* of the *User & Groups* system preferences panel.
 
 ![Login Item](_images/Login_Item.png)
 
@@ -48,10 +48,10 @@ For **macOS Ventura and later**, the setting can be found in *System Settings �
 ![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
 
 **MSI**<br/>
-[Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.5.2*.
+[Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.7.2*.
 
 ```{note}
-Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separatly. Both packages are needed to enable the explorer extension.
+Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
 ```
 
 ````
@@ -115,23 +115,29 @@ After upgrading a license, a new license file will be generated.
 3. Apply the new license file using double-click or copy the file into the application support folder.
 
 ### Windows Installation
-#### Error Code 0x24C
-If you're experiencing the error code `0x24C` `A volume has been accessed for which a file system driver is required that has not yet been loaded.`, please uninstall the client, reboot the system, and reinstall the client.
+#### Error Code 0x24C 
+If you get the error code `0x24C` uninstall the client, reboot the system, and reinstall the client.
+
+	0x24C. A volume has been accessed for which a file system driver is required that has not yet been loaded.
 
 #### Installer goes haywire
 In some cases, the windows gets confused over the installed product and goes haywire. As a result the product can't be modified anymore. To fix the state, run the following command:
-	`reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Product Name"`
-	`reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products" /s /f "Product Name"`
+
+	reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Product Name"
+	reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products" /s /f "Product Name"
 
 You should get an output like this:
-	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}
-    DisplayName    REG_SZ    Cyberduck`
+	
+	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}
+    DisplayName    REG_SZ    Cyberduck
 
 Delete the key using the following command: 
-	`reg delete "output" /f`
+	
+	reg delete "output" /f
 
 Based on the example output it should look like this:
-	`reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}" /f`
+	
+	reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}" /f
 
 After restarting the system, the installer shouldn't complain anymore.
 
