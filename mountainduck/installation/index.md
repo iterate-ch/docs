@@ -141,6 +141,15 @@ Based on the example output it should look like this:
 
 After restarting the system, the installer shouldn't complain anymore.
 
+## Installation with Device Management Software
+
+You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
+
+### Pre-configurations 
+You can add preconfigured connection profiles and bookmarks this way by copying the connection profile file (.mountainduckprofile) into the *Profiles* folder or the bookmark file (.duck) into the *Bookmarks* folder within the [application support folder](../support.md#application-support-folder).
+
+You can share settings by using the [default.properties file](../preferences#hidden-configuration-options). 
+
 ## Uninstall
 
 Using Windows Command Line:
