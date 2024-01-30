@@ -163,3 +163,23 @@ These settings are shared with Cyberduck.
 ````
 
 `````
+
+### Change default [connect mode](#connect-mode)
+
+A [hidden configuration option](preferences.md#hidden-configuration-options).
+
+	defaults write io.mountainduck fs.sync.mode <connect mode>
+
+### Limit available connect mode options
+
+A [hidden configuration option](preferences.md#hidden-configuration-options).
+
+	defaults write io.mountainduck fs.sync.mode.enable <connect mode>
+
+### Metadata
+
+As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window:
+
+    defaults write io.mountainduck fs.filenames.metadata.enable false
+
+If you want to delete metadata files, you can open a *Terminal.app* window and enter `dot_clean -m <folder>`.
