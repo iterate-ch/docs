@@ -22,6 +22,6 @@
         <key>OAuth Client ID</key>
         <string>…</string>
         <key>OAuth Client Secret</key>
-        <string>…</string>
+        <string/>
     </dict>
 </plist>
