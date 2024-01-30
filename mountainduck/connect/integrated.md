@@ -121,3 +121,7 @@ Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The 
 Choose _Remove Download_ instead when using _Integrated_ connect mode.
 ```
 
+## Limitations
+
+- Custom mount locations are not honoured using the Integrated mode.
+- The *Pseudo File locking* available in the Mountain Duck preferences *Connection* tab is not supported in *Integrated* mode.

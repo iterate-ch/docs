@@ -68,7 +68,7 @@ The default is set to `~/Library/Application Support/Mountain Duck/Volumes.noind
 :::
 
 ```{attention}
-Custom mount location is not honoured in _Integrated_ connect mode but always in `~/Library/CloudStorage`. Changing the connect mode to _Integrated will cause applications to fail open recently opened documents because due to the change of the folder location not matching the previous volume.
+Custom mount location is not honoured in _Integrated_ connect mode but always in `~/Library/CloudStorage`. Changing the connect mode to _Integrated_ will cause applications to fail open recently opened documents because due to the change of the folder location not matching the previous volume.
 ```
 
 ### Cache Location
