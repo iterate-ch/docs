@@ -70,7 +70,7 @@ This additional icon displayed next to the filename in Finder.app indicates the 
 :::
 
 ### ![](../_images/overlay-pause.png) Sync Paused
-The file or folder is pending syncing with the server but synchronization has been [paused](#pause-sync).
+The file or folder is pending syncing with the server but synchronization has been [paused](sync.md#pause-sync).
 
 ### ![](../_images/overlay_ignored.png) Ignored
 The file or folder is only saved in local cache and not synced. New _Folders_, empty files and files matching [excluded filename patterns](../issues/index.md#filenames) are not uploaded. Folders are uploaded after being renamed.
@@ -99,11 +99,16 @@ Progress is shown when downloading or uploading a file with a progress bar over 
 
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 
-Choose _Download Now_ when using _Integrated_ connect mode to download the file but allow it to be removed from cache on low disk space. 
+```{image} ../_images/File_Provider_Online_Only.png
+:alt: File Provider Icon
+:width: 24px
+:align: left
 ```
+_Download Now_ when using _Integrated_ connect mode downloads the file but allows it to be removed from cache on low disk space. 
+:::
 
 
 ### Delete on Local Disk
