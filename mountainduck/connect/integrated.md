@@ -121,6 +121,21 @@ Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The 
 Choose _Remove Download_ instead when using _Integrated_ connect mode.
 ```
 
+## Cache 
+
+There are different ways to delete the sync cache:
+* Delete the bookmark with connection mode set to *Smart Synchronization* or *Integrated*
+* Use the deletion prompt when switching the connect mode between *Integrated* and *Smart Synchronization*
+```{image} ../_images/Prompt_Delete_Cache.png
+:alt: Delete Cache Prompt
+:width: 400px
+```
+* Use the delete option in Finder.app once the bookmark is disconnected. You will be prompt to confirm the deletion as it can lead to file loss if some changes aren't synchronized to the server
+```{image} ../_images/Finder_Option_Delete_Cache.png
+:alt: Delete Cache Option
+:width: 800px
+```
+
 ## Limitations
 
 - Custom mount locations are not honoured using the Integrated mode.
