@@ -219,7 +219,7 @@ duck --username <Access Key ID> --list s3:/
 ```{code-block}
 duck --username <Access Key ID> --list s3:/<bucketname>/
 ```
-- List a vault on OneDrive
+- List a vault on OneDrive without using the `--vault` option
 ```{code-block}
 duck --list "onedrive:/My Files/<vault name>/"
 ```
