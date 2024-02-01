@@ -219,6 +219,14 @@ duck --username <Access Key ID> --list s3:/
 ```{code-block}
 duck --username <Access Key ID> --list s3:/<bucketname>/
 ```
+- List a vault on OneDrive
+```{code-block}
+duck --list "onedrive:/My Files/<vault name>/"
+```
+- Download a single file from a vault on OneDrive
+```{code-block}
+duck --download "onedrive:/My Files/<vault name>/<file name>" ~/Downloads/ --vault "/My Files/<vault name>/"
+```
 
 ### Generic Options
 
