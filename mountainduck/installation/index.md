@@ -147,7 +147,7 @@ You can distribute Mountain Duck with the help of Active Directory or a system m
 
 ### Defaults
 - Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support.md#application-support-folder).
-- Share default settings by using the [default.properties file](../preferences#hidden-configuration-options). 
+- Share default settings by using the [default.properties file](../preferences.md#hidden-configuration-options). 
 
 ## Uninstall
 
