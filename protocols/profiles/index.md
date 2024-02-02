@@ -66,18 +66,17 @@ All additional schemes are registered as a scheme handler when opening [Mountain
 - `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a provider profile image.
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
 - `Context` Currently used for 
-* Login context path for [OpenStack Swift](../openstack/index.md) profiles.
-* Prefix all requests with path for [S3](../s3/index.md) profiles.
+  * Login context path for [OpenStack Swift](../openstack/index.md) profiles.
+  * Prefix all requests with path for [S3](../s3/index.md) profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
 - `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
 - `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../s3/index.md#creating-a-bucket) for [S3](../s3/index.md) and [OpenStack Swift](../openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
-- `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider.
-```{note}
-Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
-```
+- `OAuth Client Secret` For protocols using OAuth 2.0 you can override the registered application client secret with the provider. Refer to [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
+  * A profile can define an empty value for `OAuth Client Secret`. The OAuth authorization flow will then use no client secret in client parameters to authenticate with the server.
+  * A profile can omit the `OAuth Client ID` and/or `OAuth Client Secret` keys to prompt the user for manual input when connecting.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
 - `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP%20(Compatibility%20Mode).cyberduckprofile)
