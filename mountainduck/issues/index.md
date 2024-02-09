@@ -253,14 +253,12 @@ It may be that Finder closes the connection because Mountain Duck hasn't answere
 
 This is an issue within the operating system that can occur to any network drive.
 
-<del> **Additional `._*` Files Saved on Remote Volumes** </del> <br/>
-<del> The `._*` files contain metadata about the files some applications write in additional to the file content. On macOS, this metadata can be stored alongside the file on the filesystem, but on remote volumes, with no metadata support, an auxiliary file is created to contain this information. You can delete metadata on files using `xattr -d <filename>`. </del>
-
-As of version [2.1](https://mountainduck.io/changelog/), extended attributes are only saved in a temporary location and not stored on the mounted remote volume. If you want to revert to saving extended attributes to the server, enter in a *Terminal.app* window:
+**Extended Attributes**
+Additional `._*` Files Saved on Remote Volumes**<br/>
+Extended attributes containing metadata about the files some applications write in addition to the file content are saved in auxiliary `._*` files. These are only saved in a temporary location and not synchronized. If you want to save `._*` files to the server set the [hidden configuration option](../preferences.md#hidden-configuration-options):
 
     defaults write io.mountainduck fs.filenames.metadata.enable false
 
-If you want to delete metadata files, you can open a *Terminal.app* window and enter `dot_clean -m <folder>`.
 
 ````
 ````{group-tab} Windows
