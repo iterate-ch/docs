@@ -52,17 +52,19 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 
 **Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
 
-#### Show mount point on desktop
+#### Show volumes on Desktop
 
-Using Mountain Duck version 4.15.4 or later, the problem with mounts displaying as "/" or ":" respectively in macOS 14.4. As part of the workaround, the connections won't be shown on desktop or in the Location section of Finder.
-
-You can reverse the display of the volumes on the desktop and the Locations section in the sidebar using a [hidden configuration option](#hidden-configuration-options).
+`````{tabs}
+````{group-tab} macOS
+Part of a workaround for a bug in macOS 14.4 and later displaying volumes as "/" or ":" respectively, Mountain Duck 4.15.4 no longer displays volumes on the desktop or in the Location sidebar in Finder.app by default regardless of the setting in _Finder → Settings… → General_. You can reverse the display of the volumes on the desktop and the Locations section in the sidebar in Finder.app using a [hidden configuration option](#hidden-configuration-options).
 
 	fs.nfs.mount.nobrowse=false
 
 ```{note}
-Due to the bug introduced by Apple in macOS version 14.4 beta, the volume will always be display as `:` in the _Network_ section of Finder.app until Apple provides a bug fix update.
+Due to the bug introduced by Apple in macOS 14.4, the volume will always display as `:` in the _Network_ section of Finder.app until a bugfix is provided by Apple.
 ```
+````
+`````
 
 ### Cache Location
 
