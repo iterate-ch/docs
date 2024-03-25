@@ -170,7 +170,7 @@ The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize`
 
 - Each URL must start with a scheme and a colon (`https:`) unless you specify a `--profile`.
 - Depending on the type of protocol you are referencing different rules apply
-    - For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI `https://user@hostname/path`
+    - For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI: `https://user@hostname/path` or `sftp://user:password@hostname/path` 
     - For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or 
     *Absolute paths:* `s3:/bucket/path`,
     *Relative paths:* `s3:user@path` or `s3:user@/path`. 
@@ -252,7 +252,7 @@ Throttle bandwidth to the number of bytes per second.
 
 ### Credentials
 
-You can pass username as part of the URI prepending to the hostname with `username@host`. Alternatively, use the `--username` option. You can give the password with the `--password` option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).
+You can pass username and password as part of the URI prepending to the hostname with `username:password@host`. Alternatively, use the `--username` option. You can give the password with the `--password` option or you will be prompted before the connection is opened by the program if no password matching the host is found in your login keychain (OS X) or user configuration shared with Cyberduck (Windows).
 
 #### Private Key
 
