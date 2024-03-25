@@ -89,6 +89,10 @@ The default port is `443`.
 
 ````{tab} AWS2
 
+```{attention}
+Connection profiles using legacy AWS2 signature authentication are not recommended to be used with AWS S3 as some features like _Key Management Service_ and _CloudFront configuration_ won't be supported
+```
+
 **Authentication with signature version AWS2**
 
 An incomplete list of known providers that require the use of AWS2
@@ -106,8 +110,10 @@ The default port is `80`.
 The default port is `443`.
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
-````
 
+
+
+````
 `````
 
 ### AWS Gov Cloud
