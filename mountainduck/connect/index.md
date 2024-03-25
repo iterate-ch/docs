@@ -64,3 +64,7 @@ Mountain Duck displays the overall quota present on the server as available disk
 ```
 
 Some protocols do not report the available quota. Finder and Windows Explorer will show exabyte values in *Online* connect mode and the available space within the synchronization cache location on your local disk in *Smart Synchronization* connect mode for the affected protocols.
+
+```{note}
+Quota support can be [disabled](../../protocols/sftp/index.md#free-space-calculation-is-incorrect) for all protocols.
+```
