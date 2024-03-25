@@ -222,7 +222,7 @@ You can also do this for a specific profile by adding `--profile myProfile` to t
 
 #### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
-Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer to U[sing IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
+Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer to [Using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
 
@@ -243,6 +243,17 @@ Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-
 ### Read Credentials from `~/.aws/credentials`
 
 When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows if such a profile exists.
+
+### Connecting without using AWS credentials
+
+Use the *S3 (HTTPS)* connection profile to access public data sets on [AWS Open Data](https://registry.opendata.aws/) without using access keys by using the *Anonymous Login* option in the bookmark configuration.
+
+```{image} _images/S3_Anonymous_Login.png
+:alt: S3 Anonymous Login
+:width: 400px
+```
+
+- {download}`Download<https://profiles.cyberduck.io/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings
 
 ## Cyberduck CLI
 
