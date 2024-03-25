@@ -92,6 +92,9 @@ SMB (Server Message Block) is used to access Windows File Shares.
 ### Local Disk
 Open a window to browse your local hard disk to drag files for download or upload to a remote server from within the application. You can browse [Cryptomator Vaults](../cryptomator/index.md#access-vaults-on-local-disk) stored on your computer.
 
+```{warning}
+If folder contents are not shown, make sure to grant access from Mountain Duck in *System Settings → Privacy & Security → Files and Folders*.
+```
 
 ## Connection Profiles
 
