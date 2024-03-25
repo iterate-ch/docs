@@ -439,6 +439,10 @@ You can override default [preferences](../cyberduck/preferences.md#hidden-config
 
 As a workaround run `haveged`, a service to generate random numbers and feed Linux random device.
 
+### Interoperabilities
+
+Duck CLI is currently not available for Linux installations or servers using [Alpine Linux](https://github.com/iterate-ch/cyberduck/issues/10651).
+
 ## Third-Party References
 
 - [Using Cyberduck and duck CLI to access Oracle Cloud Infrastructure Classic Storage](https://medium.com/oracledevs/using-cyberduck-and-duck-cli-to-access-oracle-cloud-infrastructure-classic-storage-edfeb04c82c4)
