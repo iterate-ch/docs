@@ -170,7 +170,7 @@ The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize`
 
 - Each URL must start with a scheme and a colon (`https:`) unless you specify a `--profile`.
 - Depending on the type of protocol you are referencing different rules apply
-    - For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI: `https://user@hostname/path` or `sftp://user:password@hostname/path`
+    - For all protocols where no default hostname is set (e.g. `WebDAV`, `SFTP`, and `FTPS`) you must use a fully qualified URI: `https://user@hostname/path` or `sftp://user:password@hostname/path` 
     - For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or 
     *Absolute paths:* `s3:/bucket/path`,
     *Relative paths:* `s3:user@path` or `s3:user@/path`. 
