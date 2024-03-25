@@ -45,14 +45,24 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 ```{attention} 
 
-The setting is not available in the App Store version.
+The setting is not available in the App Store version. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
 ```
 
 Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
 
 **Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
 
-**Note:** Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
+#### Show mount point on desktop
+
+Using Mountain Duck version 4.15.4 or later, the problem with mounts displaying as "/" or ":" respectively in macOS 14.4. As part of the workaround, the connections won't be shown on desktop or in the Location section of Finder.
+
+You can reverse the display of the volumes on the desktop and the Locations section in the sidebar using a [hidden configuration option](#hidden-configuration-options).
+
+	fs.nfs.mount.nobrowse=false
+
+```{note}
+Due to the bug introduced by Apple in macOS version 14.4 beta, the volume will always be display as `:` in the _Network_ section of Finder.app until Apple provides a bug fix update.
+```
 
 ### Cache Location
 
