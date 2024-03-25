@@ -179,6 +179,10 @@ This quota information is only available for the following protocols:
 This won't allow you to view and access shared files and folders.
 ```
 
+### Graphical Artifacts with VLC player
+
+Playing video files from a mounted drive using VLC player can cause graphical artifacts and video corruption when pausing and resuming the playback. As a workaround, increase the caching time in *VLC → Preferences → Show All → Input/Codecs → Scroll down to Advanced → set File Caching (ms)*.
+
 ### Missing Sync Status Icons
 
 `````{tabs}
