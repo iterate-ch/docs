@@ -116,6 +116,10 @@ The bookmark can show three different status lights:
 - **Green light:** Currently connected to this bookmark. The bookmark is completely synced and idle.
 - **Orange light:** Currently connected to this bookmark. There is at least one active process.
 
+You can can put the currently connected bookmarks on top of the bookmark list regardless of the sorting by using a [hidden configuration option](preferences.md#hidden-configuration-options):
+
+	bookmark.menu.sort.connected=true
+
 ## Connect
 
 Choose *<Bookmark> → Connect* to mount the server as a volume in the *Finder.app* on macOS or the *File Explorer* on Windows. You can connect to multiple servers and have several volumes mounted. All operations on the remote files and folders can then be performed like on local files.
