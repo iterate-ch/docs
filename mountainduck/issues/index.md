@@ -257,8 +257,7 @@ It may be that Finder closes the connection because Mountain Duck hasn't answere
 
 This is an issue within the operating system that can occur to any network drive.
 
-**Extended Attributes**
-Additional `._*` Files Saved on Remote Volumes**<br/>
+**Extended Attributes**<br/>
 Extended attributes containing metadata about the files some applications write in addition to the file content are saved in auxiliary `._*` files. These are only saved in a temporary location and not synchronized. If you want to save `._*` files to the server set the [hidden configuration option](../preferences.md#hidden-configuration-options):
 
     defaults write io.mountainduck fs.filenames.metadata.enable false
