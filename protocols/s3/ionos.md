@@ -6,7 +6,7 @@ IONOS Cloud Object Storage
 ## Connection
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 ### Connection Profile

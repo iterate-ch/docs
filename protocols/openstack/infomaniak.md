@@ -15,7 +15,7 @@ Infomaniak
 ### Connecting
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 #### Connection Profiles
@@ -45,7 +45,7 @@ Swiss Backup is a solution that automatically backs up your files, workstations,
 ### Connecting
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 #### Connection Profiles

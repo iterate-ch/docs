@@ -8,7 +8,7 @@ Linode Object Storage
 ### Connection Profile
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 - **Linode Object Storage (France, Paris)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(fr-par-1).cyberduckprofile>` the *Linode Object Storage (Paris) Connection Profile* for preconfigured settings.

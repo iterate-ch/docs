@@ -11,7 +11,7 @@ Spectra BlackPearl Deep Storage Gateway
 ## Connecting
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 - {download}`Download<https://profiles.cyberduck.io/Spectra%20S3%20(HTTPS).cyberduckprofile>` the *Spectra S3 (HTTPS) Connection Profile* for preconfigured settings.

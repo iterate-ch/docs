@@ -6,7 +6,7 @@ Synology C2 Object Storage
 ## Connecting
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 1. Download the desired region for the Synology C2 Object Storage Connection Profile with preconfigured settings.

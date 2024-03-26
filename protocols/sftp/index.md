@@ -22,7 +22,7 @@ sftptogo
 Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
 
 ```{note}
-All connection profiles are available through the *Preferences → Profiles* tab.
+Connection profiles can be installed from *Preferences → Profiles*..
 ```
 
 - [SFTP To Go](sftptogo.md)
