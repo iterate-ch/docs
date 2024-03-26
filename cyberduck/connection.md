@@ -95,13 +95,21 @@ Drag an URL from any third-party application to a browser window.
 
 ## Problems Connecting
 
-### I get an Error `IO Error: Broken pipe`
+### Error `IO Error: Broken pipe`
 
 There was a problem with the underlying network stream either because the connection was too slow or the server wouldn't give a response anymore. Often this is caused when you run out of quota on the server - meaning that your user account is not allowed to use any more disk space.
 
-### I get an Error `IO Error: Read Timed Out`
+### Error `IO Error: Read Timed Out`
 
 When attempting to open a connection, there is either a firewall blocking requests, or no server is listening at the given address and port. If you get this error while already connected to the server, the network connection to the server is too slow or has too high latency. You can try to increase the connection timeout in *Preferences → Connection → Timeouts*.
+
+### Autofill of Passwords
+
+Passwords will be autofilled as long as you choose to enable the _Use Keychain_ option and saved a corresponding credentials.
+
+### Reachability Alert
+
+A warning sign next to the URL indicates the server may not be reachable due to a missing or invalid hostname in the _Server_ field.
 
 ## Passwords
 
