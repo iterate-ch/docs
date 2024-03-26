@@ -222,6 +222,8 @@ Using applications customizing the status bar may lead to a missing status bar i
 - _MenuMeters_
 - _IP in menubar_
 
+If there are several elements in the status bar area so that they reach the center of the screen or more, it is possible that the duck symbol will be hidden behind the notch.
+
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](../preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
 
