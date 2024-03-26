@@ -22,8 +22,10 @@ Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might *
 
 Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to *View and manage the files in your Google Drive*. The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
 
-```{attention}
-Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
+```{admonition} Advanced Protection Program
+:class: warning
+
+Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
 ```
 
 ### Google Apps Accounts
@@ -118,3 +120,4 @@ Please remove the previously saved OAuth tokens `Google Drive (Email) OAuth2 Acc
 ### Abusive Files
 
 Google Drive may require the user is acknowledging the risk of downloading known malware or other abusive files. For such files a prompt *Acknowledge the risk of downloading known malware or other abusive file* is shown when the file has been flagged by Google as possible malware.
+
