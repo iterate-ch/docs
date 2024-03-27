@@ -23,7 +23,7 @@ Cyberduck is free software. Free software is a matter of the users' freedom to r
 
 #### What payment options are available?
 
-Donations can be made by using PayPal or Credit card. Alternativly, you can purchase Cyberduck via App Store.
+Donations can be made by using PayPal or Credit card. Alternatively, you can purchase Cyberduck via App Store.
 
 #### Mac App Store
 
@@ -127,6 +127,16 @@ See _[Preferences → Update](preferences.md#update)_ to switch the update feed.
 - Sophos Anti-Virus *On-access Scanning*
 - Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).
 
-## Why does Cyberduck autofil the passwords?
+## Use cases
+
+### Why does Cyberduck autofil the passwords?
 
 Password will be autofilled as long as you choose to enable the _Use Keychain_ option in the Cyberduck preferences [Connection tab](connection.md#passwords).
+
+### Why do I always get a warning sign when I try to set up a bookmark connection?
+
+A warning sign next to the URL indicates that the URL may not be accessible due to a missing hostname in the _Server_ field or an invalid combination of hostname, credentials, and path.
+
+### Is there a way to change the font size in file listing?
+
+The font size can't be adjusted in the Cyberduck preferences but by using a hidden configuration option. Refer to the [Browser](browser.md#adjust-the-browser-font-size) section.
