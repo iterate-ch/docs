@@ -24,9 +24,9 @@ Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Driv
 
 #### Advanced Protection Program
 
-Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. Mostly with the error message: `400 admin_policy_enforced`.
+Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
 
-You can resolve the error, please reach out to your Google Workspace admin to grant access to Mountain Duck or Cyberduck.
+Reach out to your Google Workspace admin to grant access to Mountain Duck or Cyberduck.
 
 ### Google Apps Accounts
 
