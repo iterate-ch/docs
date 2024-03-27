@@ -56,6 +56,14 @@ If these steps are not resolving the trial expired message please follow these a
 3. Paste it into the window
 4. Run it and wait for completion.
 
+### What are the System requirements for Cyberduck?
+
+The system requirements are listed in the [installation section](installation.md#system-requirements).
+
+#### Can I install older version if necessary?
+
+The recent release can be found on our [website](https://cyberduck.io/download/). In case your operating system requires an older version of Cyberduck you can download installers for previous versions in our [changelog](https://cyberduck.io/changelog/).
+
 ## Registration Keys
 
 As a contributor to Cyberduck, you receive a registration key that disables the donation prompt that is displayed when quitting Cyberduck.
@@ -118,3 +126,7 @@ See _[Preferences → Update](preferences.md#update)_ to switch the update feed.
 - *WindowDragon*. Cyberduck is [not compatible](http://sourceforge.net/tracker/index.php?func=detail&aid=1942730&group_id=208546&atid=1006129) with WindowDragon.
 - Sophos Anti-Virus *On-access Scanning*
 - Opening the web browser to authenticate using OAuth does not work with [Browser Chooser 2](https://browserchooser2.com/).
+
+## Why does Cyberduck autofil the passwords?
+
+Password will be autofilled as long as you choose to enable the _Use Keychain_ option in the Cyberduck preferences [Connection tab](connection.md#passwords).
