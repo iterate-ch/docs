@@ -103,6 +103,14 @@ There was a problem with the underlying network stream either because the connec
 
 When attempting to open a connection, there is either a firewall blocking requests, or no server is listening at the given address and port. If you get this error while already connected to the server, the network connection to the server is too slow or has too high latency. You can try to increase the connection timeout in *Preferences → Connection → Timeouts*.
 
+### Cyberduck keeps autofilling the passwords
+
+Passwords will be autofilled as long as you choose to enable the _Use Keychain_ option and saved a corresponding credentials.
+
+### I always get a warning sign when I try to set up a connection
+
+A warning sign next to the URL indicates that the URL may not be reachable due to a missing or invalid hostname in the _Server_ field.
+
 ## Passwords
 
 `````{tabs}
