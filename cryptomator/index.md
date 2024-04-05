@@ -202,12 +202,21 @@ In your local disk connection, you can access all directories which are saved on
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
 - Creating or accessing a vault in a vault is currently not supported using Cyberduck.
+- Locking or unlocking a vault requires network connectivity using Mountain Duck regardless of the [connect mode](../mountainduck/connect/index.md).
 
 ## Preferences
 
 ### Auto Detect
 
 Uncheck *Preferences → Cryptomator → Auto detect and open Vault in browser* to disable opening vaults by default when opening the vault directory in the browser.
+
+### Use Keychain
+
+Save the password in Keychain or Credential Manager to unlock vaults automatically upon connecting.
+
+```{note}
+Without saving the vaults passwords using keychain, you will receive passwords prompts for the vaults after reconnecting to the server or cloud storage.
+```
 
 ## References
 
