@@ -202,7 +202,7 @@ In your local disk connection, you can access all directories which are saved on
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
 - Creating or accessing a vault in a vault is currently not supported using Cyberduck.
-- Using Smart synchronization mode, only the current status is cached. As soon as you are working offline, you can only use the current status of the vault, i.e. either locked or unlocked. Unlocking a vault is only possible once the network connection has been restored, even if the vault is to be kept offline, as the listing request cannot be executed without a network connection.
+- Locking or unlocking a vault requires network connectivity using Mountain Duck regardless of the [connect mode](../mountainduck/connect/index.md).
 
 ## Preferences
 
