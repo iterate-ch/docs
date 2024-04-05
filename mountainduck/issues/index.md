@@ -217,12 +217,12 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 ````{group-tab} macOS
 
 **Missing status bar icon**<br/>
-Using applications customizing the status bar may lead to a missing status bar icon of Mountain Duck. This has been reported for the following applications:
+Using applications customizing the status menus may lead to a missing status icon of Mountain Duck. This has been reported for the following applications:
 - _xbar_
 - _MenuMeters_
 - _IP in menubar_
 
-If there are several elements in the status bar area so that they reach the center of the screen or more, it is possible that the duck symbol will be hidden behind the notch.
+When you have an application open with many items in the menu bar or have numerous status menus enabled toward the right end of the menu bar so that they reach the center of the screen, the status icon of Mountain Duck may be hidden.
 
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](../preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
