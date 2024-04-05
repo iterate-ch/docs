@@ -141,10 +141,6 @@ Based on the example output it should look like this:
 
 After restarting the system, the installer shouldn't complain anymore.
 
-### Tray Icon on Windows 11
-
-If Mountain Duck is newly installed on a Windows 11 system, the tray icon must be revealed manually within *System Preferences → Personalization → Taskbar → Taskbar corner overflow*.
-
 ## Installation with Device Management Software
 
 You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.

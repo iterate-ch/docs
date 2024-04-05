@@ -21,6 +21,10 @@ Mountain Duck runs in the status bar (macOS) and taskbar (Windows).
 <br/>
 
 Find the mounted volume in Finder. Choose *Go → Computer* or choose *Finder → General → Show these items on the desktop:* *Connected servers* to make it appear on your desktop.
+
+```{tip}
+Make sure there is enough space left on right side of the notch or application menu items to make sure the _Mountain Duck_ is visible in the the system status bar. To rearrange status menus, press and hold the Command key while you drag an icon.
+```
 ````
 
 ````{group-tab} Windows
@@ -28,14 +32,13 @@ Find the mounted volume in Finder. Choose *Go → Computer* or choose *Finder �
 ![Task Bar Menu Windows](_images/Task_Bar_Menu_Windows.png)
 
 Right-click on the taskbar and select *Taskbar setting → Notification area → Select which icons appear on the taskbar*. Make sure Mountain Duck is selected in the list.
+
+```{tip}
+If Mountain Duck is newly installed on a Windows 11 system, the tray icon must be revealed manually in *System Preferences → Personalization → Taskbar → Taskbar corner overflow*.
+```
 ````
 
 `````
-
-```{admonition} macOS only
-:class: tip
-Make sure there is enough space left on right side of the notch or application menu items to make sure the _Mountain Duck_ is visible in the the system status bar.
-```
 
 ### Auto start
 

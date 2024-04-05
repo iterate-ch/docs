@@ -217,7 +217,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 ````{group-tab} macOS
 
 **Missing status bar icon**<br/>
-Using applications customizing the status bar may lead to a missing status bar icon of Mountain Duck. This has been reported for the following applications:
+Using applications customizing the status menus may lead to a missing status icon of Mountain Duck. This has been reported for the following applications:
 - _xbar_
 - _MenuMeters_
 - _IP in menubar_
