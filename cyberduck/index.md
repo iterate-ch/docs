@@ -4,6 +4,7 @@ Cyberduck
 ```{toctree}
 :hidden:
 :titlesonly:
+installation
 bookmarks
 connection
 browser

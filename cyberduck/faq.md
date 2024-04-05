@@ -21,17 +21,21 @@ Cyberduck is free software. Free software is a matter of the users' freedom to r
 :width: 600px
 ```
 
-### Mac App Store
+#### What payment options are available?
+
+Donations can be made by using PayPal or Credit card. Alternatively, you can purchase Cyberduck via App Store.
+
+#### Mac App Store
 
 The presence of Cyberduck is important for the visibility of the project in particular for new and average users on the Mac platform. The caveat is that the donation key model is not supported in the App Store per the developer agreement. Software asking for voluntary contributions does not get approved. We have therefore opted to distribute Cyberduck in the App Store for a fixed price with no donation prompt. It is your choice to buy the version from the App Store or download from the website and opt in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
 Your purchase receipt from the App Store version is copied to the Application Support folder and recognized as a key when running any version of Cyberduck.
 
-### Windows App Store
+#### Windows App Store
 
 The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
-#### Troubleshooting
+##### Troubleshooting
 
 If you bought Cyberduck on Windows Store, but you are not allowed to use Cyberduck due to a Trial Expired error message, please execute the following steps to ensure that your local app license cache is up-to-date – a reinstall of Cyberduck via Windows Store does not refresh your license.
 
@@ -51,6 +55,14 @@ If these steps are not resolving the trial expired message please follow these a
 2. Copy `Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}`
 3. Paste it into the window
 4. Run it and wait for completion.
+
+### What are the System requirements for Cyberduck?
+
+The system requirements are listed in the [installation section](installation.md#system-requirements).
+
+#### Can I install older version if necessary?
+
+The recent release can be found on our [website](https://cyberduck.io/download/). In case your operating system requires an older version of Cyberduck you can download installers for previous versions in our [changelog](https://cyberduck.io/changelog/).
 
 ## Registration Keys
 
@@ -73,78 +85,6 @@ The registration key is sent to you by email automatically after the Paypal tran
 - If you are using a webmail provider, try using a different browser or email client application to access your mail.
 - Contact you hosting service provider how to download attachments.
 - Forward the mail to a different mail account where you possibly don't have an issue downloading attachments.
-
-## System Requirements
-
-`````{tabs}
-````{group-tab} macOS
-
-- Cyberduck [8.1](https://trac.cyberduck.io/milestone/8.1) or later requires *Mac OS X 10.12* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) or [Apple silicon](https://support.apple.com/en-us/HT211814) architecture
-- Cyberduck [7.7](https://trac.cyberduck.io/milestone/7.7.0) or later requires *Mac OS X 10.9* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
-- Cyberduck 7.1 or later requires *Mac OS x 10.8* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
-- Cyberduck 4.7 or later requires *Mac OS X 10.7* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
-- Cyberduck 4.4 or later requires *Mac OS X 10.6* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
-- Cyberduck [3.3](https://trac.cyberduck.io/milestone/3.3) or later requires *Mac OS X 10.5* or later.
-- Cyberduck [3.0](https://trac.cyberduck.io/milestone/3.0) or later requires *Mac OS X 10.4* or later. The latest version [available](http://cyberduck.ch/changelog) is [3.2.1](http://update.cyberduck.ch/Cyberduck-3.2.1.dmg) supporting *Mac OS X 10.4*.
-- Cyberduck 2.5 or later requires *Mac OS X 10.3.9* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.8.5](http://update.cyberduck.ch/Cyberduck-2.8.5.dmg) supporting *Mac OS X 10.3.9*.
-- Cyberduck 2.3 or later requires *Mac OS X 10.2* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.3.3](http://update.cyberduck.ch/Cyberduck-2.3.3.dmg) supporting *Mac OS X 10.2*.
-
-````
-````{group-tab} Windows
-
-Requires *.NET Framework 4.7.2*. If the [.NET Framework installation](https://dotnet.microsoft.com/download/dotnet-framework/net472) fails, download it manually.
-
-- Cyberduck [7.1](https://trac.cyberduck.io/milestone/7.1) or later requires *Windows 7 SP1, Windows 8.1, or Windows 10 (14393)* or later on 64bit.
-- Cyberduck [5.3](https://trac.cyberduck.io/milestone/5.3) or later requires *Windows 7* or later
-- Cyberduck [4.8](https://trac.cyberduck.io/milestone/4.8) or later requires *Windows Vista* or later.
-- Cyberduck [4.0](https://trac.cyberduck.io/milestone/4.0) or later requires *Windows XP or Windows 7* or later.
-
-````
-`````
-
-## Installation
-
-`````{tabs}
-````{group-tab} macOS
-
-Move the unzipped application bundle *Cyberduck.app* from the *Downloads* to the */Applications* folder on your harddisk.
-
-````
-````{group-tab} Windows
-
-**EXE Installer**
-
-Run the *Cyberduck Installer* executable. For an unattached installation, use the silent option (command line option `/s`).
-
-
-**MSI Installer**
-
-Download *MSI Installer* for corporate environments. Requires prior installation of [Microsoft .NET Framework 4.5.1](https://www.microsoft.com/en-us/download/details.aspx?id=40779).
-
-
-**Chocolatey**
-
-There is also a [Chocolatey](http://chocolatey.org/packages?q=cyberduck) package maintained.
-
-**What to do if Windows Installer goes haywire?**
-In some cases, the windows gets confused over the installed product and goes haywire. As a result the product can't be modified anymore. To fix the state, run the following command:
-	`reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Product Name"`
-	`reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products" /s /f "Product Name"`
-
-You should get an output like this:
-	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}
-    DisplayName    REG_SZ    Cyberduck`
-
-Delete the key using the following command: 
-	`reg delete "output" /f`
-
-Based on the example output it should look like this:
-	`reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}" /f`
-
-After restarting the system, the installer shouldn't complain anymore.
-
-````
-`````
 
 ### Preferences and Application Support Files Location
 
@@ -173,31 +113,7 @@ Preferences are stored in `%AppData%\Cyberduck\cyberduck.user.config`. Please no
 ````
 `````
 
-### Complete Uninstall
-
-Follow the steps below to uninstall Cyberduck completely.
-
-`````{tabs}
-````{group-tab} macOS
-
-1. Close the application and navigate to the application folder using the shortcut `⌘⇧A`. Select *Cyberduck.app* and delete the application by choosing *File → Move to Trash*.
-2. Navigate to the *Group Containers* folder within *~/Library/* and delete the folder *G69SCX94XU.duck*.
-3. **Optional:** Delete all saved login credentials in *Keychain Access.app*.
-
-````
-
-````{group-tab} Windows
-
-1. Close the application and open the start menu using the shortcut `Ctrl Esc`. Search for *Apps & Features* and move to the entry *Cyberduck*. Click on the application, choose *Uninstall*, and confirm your intentions by clicking *Uninstall* again.
-2. Navigate to the `%AppData%`and delete the folder *Cyberduck*
-3. Navigate to `%LocalAppData%`and delete the folder *Cyberduck*
-4. **Optional:** Delete all saved login credentials in *Windows Credential Manager*.
-
-````
-
-`````
-
-## Bug Reports and Feature Requests
+## Where can I issue Bug Reports and Feature Requests?
 
 To get help with bugs, feature requests, or other issues please refer to the [support page](support.md).
 
