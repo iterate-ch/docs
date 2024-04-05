@@ -678,15 +678,19 @@ To configure Amazon CloudFront for your website endpoints, refer to [Website Con
 
 ### Modification Date
 
-The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://profiles.cyberduck.io/S3%20(Timestamps).cyberduckprofile>`. When using this connection profile, the modification dates get written into the metadata for files uploaded to S3. The metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time) using `X-Amz-Meta-Mtime`. 
+The modification date retention is only supported using the {download}`S3 (Timestamps) profile<https://profiles.cyberduck.io/S3%20(Timestamps).cyberduckprofile>`. When using this connection profile, the modification and creation dates get written into the metadata in form of `x-amz-meta-Mtime` and `x-amz-meta-Btime` for files uploaded to S3. .
 
-```{attention}
-Make sure to enable the modification date preservation within *Preferences → Transfers*.
+Listing folders will require an additional `HEAD` request for every file to read the modification date from the object metadata. This can cause performance issues due to the excessive number of requests required with large directory contents.
+
+```{tip}
+Make sure to enable _Preserve modification date_ in *Preferences → Transfers → Timestamps* in Cyberduck.
 ```
 
-```{attention}
-Listing folders will require an additional `HEAD` request for every file to read the modification date from the object metadata.
-```
+The {download}`S3 (Timestamps) profile<https://profiles.cyberduck.io/S3%20(Timestamps).cyberduckprofile> is only necessary if you want to view the timestamps set in the browser.
+
+#### Interoperability
+
+The timestamp metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time).
 
 ### Disable use of Virtual Host Style Requests
 
