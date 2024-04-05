@@ -222,8 +222,6 @@ Using applications customizing the status menus may lead to a missing status ico
 - _MenuMeters_
 - _IP in menubar_
 
-When you have an application open with many items in the menu bar or have numerous status menus enabled toward the right end of the menu bar so that they reach the center of the screen, the status icon of Mountain Duck may be hidden.
-
 **Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](../preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
 
