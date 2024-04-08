@@ -117,9 +117,9 @@ A warning sign next to the URL indicates the server may not be reachable due to 
 This bug can affect OneDrive, Sharepoint, Google Drive, and Dropbox
 ```
 
-Within Cyberduck version 8.7.2, there is a non-zero change that the refresh OAuth token is not accepted. The refusal is caused by a falsly configured OAuth client ID in the Credential Manager.
+Within Cyberduck version 8.7.2, there is a non-zero change that the refresh OAuth token is not accepted. The refusal is caused by a falsely configured OAuthClient ID in the Credential Manager.
 
-To fix this error, delete the corresponding Credential Manager entry formated like `app:Protocol`.
+To fix this error, delete the corresponding Credential Manager entry formatted like `app:Protocol`.
 
 ## Passwords
 
