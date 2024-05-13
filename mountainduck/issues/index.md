@@ -47,7 +47,7 @@ When enabled _Preferences → Sync → Enable buffering_ is enabled:
 
 ## Filenames
 
-### Files and folders not synced from Server
+### Files and Folders not Synced from Server
 Files matching the following naming pattern are excluded from folder listings and not synchronized from the server. These characters are reserved for the operating system or file system and can't be used to name files or directories.
 
 `````{tabs}
@@ -73,7 +73,7 @@ Files matching the following naming pattern are excluded from folder listings an
 ````
 `````
 
-### Files and Folders not uploaded to Server
+### Files and Folders not Uploaded to Server
 Files and folders matching temporary filename patterns are excluded from sync by default. This includes `.DS_Store`,`*~$`, `*~.*`, `._~$*`, `*.tmp`, `~*.tmp`, `*~*.TMP`, `*.swap`, `*.swp`, `.TemporaryItems`, `.dat.nosync*`, `DBTmp*`, `*.lck`, `*.idlk`, `Desktop.ini`, `Thumbs.db`, `*.crdownload`, `*.part`
 
 
@@ -114,7 +114,7 @@ As a workaround uncheck *edit → Preferences... → Security (Enhanced) → Ena
 
 - Adobe Documentation: [Protected mode (Windows)](https://helpx.adobe.com/reader/11/using/protected-mode-windows.html)
 
-### rsync fails with error
+### rsync Fails with Error
 
 If your server does not accept the creation of `.` temporary files you might need to add the `--inplace` when running `rsync`.
 
@@ -125,11 +125,11 @@ If your server does not accept the creation of `.` temporary files you might nee
 - You might want to [turn off Git support in Sublime](https://www.sublimetext.com/docs/git_integration.html) which has caused high CPU usage for some users when scanning `.git` folders. <br/>
 `"show_git_status": false`
 
-### Sharing a mounted drive in local network
+### Sharing a Mounted Drive in Local Network
 
 It is not possible to share a mounted drive within the local network.
 
-### Changes from server not immediately visible
+### Changes from Server not Immediately Visible
 
 The directory listing in *Finder.app* on macOS or *File Explorer* on Windows may become out of date when another application is adding, removing, or modifying files on the server. No push notifications are received for changes on the server. The following strategies are in place to detect changes to existing and new files as soon as possible:
 * Periodically polls for changes for open folders in _Finder_ or _File Explorer_ about every minute in both _Online_ and _Smart Synchronization_ connect modes.
@@ -140,7 +140,7 @@ The directory listing in *Finder.app* on macOS or *File Explorer* on Windows may
 You can explicitly request to look for changes on the server in a folder by choosing *Reload* from the [context menu](../interface.md#reload).
 ```
 
-### Cache uses a lot of disk space
+### Cache Uses a lot of Disk Space
 
 Disk space is used on your computer for every cached file marked as _Up to Date_ or _In Sync_ in Smart Synchronization [connect mode](../connect/sync.md). Files are cached as soon as accessed (e.g. open in any application or previewing in _Finder.app_ on macOS or _File Explorer_ on Windows) or explicitly with [*Keep Offline on Local Disk*](../connect/sync.md#keep-offline).
 
@@ -153,7 +153,7 @@ The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or
 :width: 600px
 ```
 
-### Insufficient disk space 
+### Insufficient Disk Space 
 
 If the available disk space on the mounted volume is below 100MB a soft quota notification will be displayed saying *Insufficient space*. 
 Synchronization is paused when the soft quota is reached.
@@ -171,7 +171,7 @@ This quota information is only available for the following protocols:
 - [Microsoft Sharepoint](../../protocols/sharepoint.md)
 - [SFTP](../../protocols/sftp/index.md)
 
-### View files from Synology Drive 
+### View Files from Synology Drive 
 
 *Synology Drive* is not supported natively. You can try to view your *Synology Drive* files by connecting to your *Synology NAS*. To do that connect to your *Synology NAS* using the protocol **SFTP, FTP,** or **WebDAV** with the path `home/Drive`.
 
@@ -211,7 +211,7 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 ````
 ````` 
 
-### Operating System specific Issues
+### Operating System Specific Issues
 
 `````{tabs}
 ````{group-tab} macOS
@@ -242,7 +242,7 @@ Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder �
 **Search in Finder.app (Spotlight)**<br/>
 The Spotlight search does not work on remote volumes.
 
-**Spotlight indexer**<br/>
+**Spotlight Indexer**<br/>
 To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location) to a directory without the extension `.noindex`.
 ```{attention}
 Enabling Spotlight can cause high CPU and bandwidth usage while indexing folders. 
