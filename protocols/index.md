@@ -52,6 +52,9 @@ Connect to any WebDAV compliant server using both HTTP and HTTP/SSL and custom o
 ### [SSH/SFTP](sftp/index.md)
 Advanced configuration for SSH connections using public key authentication and custom origin [Amazon CloudFront (Content Delivery Network) distribution](cdn/cloudfront.md) option.
 
+### [SMB](smb.md)
+SMB (Server Message Block) is used to access Windows File Shares.
+
 ### [OpenStack Object Storage](openstack/index.md)
 Connect to cloud storage providers using OpenStack Swift for the storage protocol. Includes support for [Rackspace Cloud Files](openstack/cloudfiles).
 
@@ -83,9 +86,6 @@ Files.com is Smart Cloud Storage for modern teams
 
 ### [iRODS](irods.md)
 The Integrated Rule-Oriented Data System (iRODS) is an open source data management software used by research organizations and government agencies worldwide.
-
-### [SMB](smb.md)
-SMB (Server Message Block) is used to access Windows File Shares.
 
 ### [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 
