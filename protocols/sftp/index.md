@@ -96,7 +96,19 @@ PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not 
 
 #### OpenSSH Key Format Interoperability
 
-OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
+OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
+
+#### OpenSSH User Certificate Authentication
+
+:::{note}
+Applies to Cyberduck 8.9 and Mountain Duck 4.16
+
+Applies to SSH servers, which are configured with `TrustedUserCAKeys`, refer to your software vendor for configuration.
+:::
+
+Authentication using User CA signed private keys is supported, as long as both files (the private key, and the certificate file) are present at the same location.
+The certificate file has to be suffixed by either "-cert.pub" or ".pub" to be eligible for authentication. The OpenSSH configuration directive `CertificateFile` is not used.
+Pay attention to the server configuration and `PubkeyAcceptedAlgorithms`, which private key algorithms are allowed. The algorithm used is `${Private Key Type}-cert-v01@openssh.com`.
 
 #### Configure Public Key Authentication
 
@@ -109,11 +121,6 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
-
-
-#### CA signed SSH Certificate Interoperability
-
-*Certification Authority (CA)* sigend SSH certificates are supported for keys of type  `rsa`, `dsa`, `ecdsa`, and `ed25519`.
 
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
@@ -333,13 +340,17 @@ You can set Cyberduck or a third-party application as the default application (p
 
 `ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`
 
+:::{note}
+With Cyberduck 8.9 and Mountain Duck 4.16: Support for `${Private Key Type}-cert-v01@openssh.com`
+:::
+
 ### Compression
 
 Compression with `zlib` and `zlib@openssh.com` is supported.
 
 ### Private Key Files
 
-`pkcs5`, `pkcs8`, `openssh-key-v1`, `ssh-rsa-cert-v01@openssh.com`, `ssh-dsa-cert-v01@openssh.com`
+`pkcs5`, `pkcs8`, `openssh-key-v1`
 
 ## Incompatibilities
 
