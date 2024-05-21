@@ -340,7 +340,7 @@ You can set Cyberduck or a third-party application as the default application (p
 
 ### Signatures
 
-`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`
+`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`, `rsa-sha2-256`, `rsa-sha2-512`
 
 With Cyberduck 8.9 and Mountain Duck 4.16, support for
 - `ssh-rsa-cert-v01@openssh.com`
