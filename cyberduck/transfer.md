@@ -190,9 +190,17 @@ The default pattern excludes metadata files from common revision control softwar
 
 `.*~\..*|\.DS_Store|\.svn|CVS`
 
-### Transfers → General → Transfer Files
+### Transfers → General → Transfers
 
 Files can be transferred using either the connection from the browser or by opening a new dedicated transfer connection. Using the setting *Open new connection* will add files to be transferred to the *Transfer* Window and open a new connection to the server to initiate the transfer. The option *Use browser connection* will transfer files using the connection from the browser. The file transfer is only reported at the bottom of the browser window without any detailed progress indicator. The transferred files will not get added to the *Transfer* Window. This setting is a also available per [bookmark](bookmarks.md).
+
+Manage the behavior of the *Transfer* Window during active transfers and decide if you want to delete the file once the transfer is complete.
+
+### Transfers → General → Downloads
+
+Downloads can be performed in segments to increase the download speed. Segmented downloads requires server sided support for concurrent connections as the parts will be downloaded simultaneously. Once all segments are downloaded the parts will be merged to the actual file. Note that only the actual file is usable.
+
+Additionally, you can choose the default directory to save the downloads to and decide if you always want to open the files after the download is finished.
 
 ### Transfers → Permissions → Downloads
 
