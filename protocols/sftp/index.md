@@ -100,15 +100,17 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 
 #### OpenSSH User Certificate Authentication
 
-:::{note}
-Applies to Cyberduck 8.9 and Mountain Duck 4.16
+:::{important}
+* Cyberduck [8.9.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [4.16.0](https://mountainduck.io/changelog/) or later required
 
 Applies to SSH servers, which are configured with `TrustedUserCAKeys`, refer to your software vendor for configuration.
 :::
 
 Authentication using User CA signed private keys is supported, as long as both files (the private key, and the certificate file) are present at the same location.
 The certificate file has to be suffixed by either "-cert.pub" or ".pub" to be eligible for authentication. The OpenSSH configuration directive `CertificateFile` is not used.
-Pay attention to the server configuration and `PubkeyAcceptedAlgorithms`, which private key algorithms are allowed. The algorithm used is `${Private Key Type}-cert-v01@openssh.com`.
+
+Pay attention to the server configuration and `PubkeyAcceptedAlgorithms`, which private key algorithms are allowed
 
 #### Configure Public Key Authentication
 
@@ -340,9 +342,13 @@ You can set Cyberduck or a third-party application as the default application (p
 
 `ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`
 
-:::{note}
-With Cyberduck 8.9 and Mountain Duck 4.16: Support for `${Private Key Type}-cert-v01@openssh.com`
-:::
+With Cyberduck 8.9 and Mountain Duck 4.16, support for
+- `ssh-rsa-cert-v01@openssh.com`
+- `ssh-dss-cert-v01@openssh.com`
+- `ecdsa-sha2-nistp256-cert-v01@openssh.com`
+- `ecdsa-sha2-nistp384-cert-v01@openssh.com`
+- `ecdsa-sha2-nistp521-cert-v01@openssh.com`
+- `ssh-ed25519-cert-v01@openssh.com`
 
 ### Compression
 
