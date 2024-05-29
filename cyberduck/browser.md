@@ -242,15 +242,15 @@ Open new browser window after application launch.
 
 ### Browser → General 
 
-### Browser → General → Double click opens file in external editor
-Open files in a external editor by double-clicking
-
-### Browser → General → Double click opens file in external editor
-Use ⏎ key to select a file or folder for renaming 
-
 ### Browser → General → Show Hidden Files
 
 Display files in the browser that start with `.` and [previous revisions (S3)](../protocols/s3/index.md#versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
+
+### Browser → General → Double click opens file in external editor
+Open files in a external editor by double-clicking
+
+### Browser → General → Return key selects folder or file to rename
+Use ⏎ key to select a file or folder for renaming 
 
 ### Browser → General → Info window always shows current selection
 
