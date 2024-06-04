@@ -71,6 +71,20 @@ Make sure to use the actual username instead of the email address for login cred
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
 
+### ownCloud Infinite Scale (oCIS)
+
+Connecting to *ownCloud Infinite Scale* the default authentication scheme is OpenID Connect. It requires the client registration in the identity provider in ownCloud via *Keycloak*. Additionally you need a custom [connection profile](https://github.com/iterate-ch/profiles/pull/83/files) to connect via Mountain Duck or Cyberduck. The file has to be saved with the suffix `.cyberduckprofile` and installed via double-clicking.
+
+```{note}
+Basic Authentication is disabled by default. For additional information refer to the [ownCloud documentation](https://doc.owncloud.com/ocis/next/deployment/services/s-list/auth-basic.html).
+```
+
+#### Import client configuration for Keycloak
+
+To test without a custom deployment, use the public instance running at `ocis.ocis-keycloak.latest.owncloud.works` with the identity provider at `keycloak.ocis-keycloak.latest.owncloud.works` (username and password: `admin`).
+
+The client configuration to match the provided connection profile can be imported from the [ownCloud Github repository](https://github.com/owncloud/ocis/blob/7af9cd9e53183acbaac2ffbc6414402bdef1f5d4/deployments/examples/ocis_keycloak/config/keycloak/clients/cyberduck.json) to allow OAuth authentications from Cyberduck & Mountain Duck
+
 ## Features
 
 ### Versioning
