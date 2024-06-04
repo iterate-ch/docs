@@ -72,19 +72,20 @@ The default path `/remote.php/dav/files/<username>` will be used with no custom 
 You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
 ```
 
-### Step-by-Step Instructions
+### Obtain WebDAV address from the server
 
-1. Connect to your NextCloud or OwnCloud instance in your web browser and log in.
-2. Click on the option Settings in the lower left of the screen and copy the displayed WebDAV address.
+1. Connect to your Nextcloud or ownCloud instance in your web browser and log in.
+2. Click on the option Settings in the lower left of the screen and copy the displayed server address.
 3. Create a new [bookmark](../../cyberduck/bookmarks.md):
 In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
 In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
-4. Paste the previously copied WebDAV address into the Server field and press tab. After that, the bookmark will be set to *WebDAV (HTTPS)* and split the WebDAV address into two parts – the server address and the path.
-
-![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
-
+4. Paste the previously copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
 6. Upon connecting, enter your password when requested in the login prompt.
+
+Alternatively use the *WebDAV (HTTPS)* profile.
+
+![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
 
 ```{warning}
 Make sure to use the actual username instead of the email address for login credential.
