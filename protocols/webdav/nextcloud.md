@@ -67,6 +67,12 @@ In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 Make sure to use the actual username instead of the email address for login credential.
 ```
 
+### Connect directly to sub directories
+
+The default root for nextcloud connections is set to `remote.php/webdav` or `remote.php/dav/user/files`. The path must not be added to the bookmark configuration.
+
+If servers are only accessible by using a subpath such as `example.net/directory/` this can be indicated by configuring default path as `directory/remote.php/webdav`. The default path can be set in the bookmark configuration or configured using a [custom profil](../profiles/index.md).
+
 ### 2-Factor Authentication
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
