@@ -237,7 +237,7 @@ Because of all the escaping of characters, it might be easier to edit the key us
 No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term* and restart Cyberduck. To revert, set the default application for a file named `.command` to *Terminal.app* in *Finder → Info → Open With…*.
 
 **Previous versions:**<br/>
-You can change a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) to use a thirdparty terminal application instead of Terminal.app.
+You can change a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) to use a third-party terminal application instead of Terminal.app.
 
 - Example for iTerm2 Version 2
 	```
