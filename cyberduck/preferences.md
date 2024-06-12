@@ -20,7 +20,7 @@ Change the row height of bookmarks displayed in the browser window. Choose betwe
 
 Choose a bookmark you want to connect upon startup and manage general settings for files and folders like shortcuts to open files or hidden file settings.
 
-## [Transfers](transfers.md)
+## [Transfers](transfer.md)
 
 Manage transfer settings for uploads and downloads as well as the connection typ to use.
 
