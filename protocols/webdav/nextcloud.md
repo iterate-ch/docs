@@ -89,6 +89,14 @@ Create different [shares](../../cyberduck/share.md#nextcloud--owncloud) using th
 
 ![Nextcloud Download Everyone](_images/Nextcloud_Download_Everyone.png)
 
+### Resumable Uploads
+
+Connecting to *ownCloud Infinite Scale*, interrupted uploads can be resumed at any time.
+
+```{note}
+Cyberduck 8.9.0 or later is required.
+```
+
 ## Known Limitations
 
 ### 0-Byte Files
