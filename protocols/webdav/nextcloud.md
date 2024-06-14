@@ -9,6 +9,10 @@ NextCloud & ownCloud
 :alt: Nextcloud Logo
 :height: 128px
 ```
+```{image} _images/Nextcloud_Drive_icon.png
+:alt: Nextcloud Drive Icon
+:height: 128px
+```
 
 > [Nextcloud Files](https://nextcloud.com/files/) is an on-premise, open-source file sync and share solution designed to be easy-to-use and highly secure.
 
@@ -20,6 +24,10 @@ NextCloud & ownCloud
 :alt: ownCloud Logo
 :height: 128px
 ```
+```{image} _images/ownCloud_Drive_icon.png
+:alt: ownCloud Drive Icon
+:height: 128px
+```
 
 > [ownCloud](https://owncloud.org/features/) is the most straightforward way to file sync and share data. You don’t need to worry about where or how to access your files. With ownCloud, all your data is where ever you are; accessible on all devices, any time.
 
@@ -28,7 +36,7 @@ NextCloud & ownCloud
 `````
 
 ```{tip}
-Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client" from Nextcloud & ownCloud.
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client* from Nextcloud & ownCloud.
 ```
 
 ## Connecting
