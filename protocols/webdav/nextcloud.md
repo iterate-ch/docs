@@ -33,20 +33,20 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop
 
 ## Connecting
 
-### Manual Configuration
-
-Choose one of the protocols if you require a custom server path for your installation:
-
-- Protocol: `WebDAV (HTTPS)`
-- Default Path: `/remote.php/webdav/`
-
 ### Connection Profiles
 
-- Protocol: `Nextcloud` 
+Select the connection profile in _Protocol_ bundled by default:
+- Protocol: `Nextcloud`
 - Protocol: `ownCloud`
 
+Alternatively you can connect using `WebDAV (HTTPS)` with the default path set to `/remote.php/webdav/`.
+
 ```{tip}
-The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_.
+The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_ to access the WebDAV API.
+```
+
+```{attention}
+You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
 ```
 
 ### Step-by-Step Instructions

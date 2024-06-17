@@ -184,25 +184,27 @@ The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize`
 Spaces and other special-characters are not required to be percent-encoded (e.g. `%20` for space) as long as the path is quoted `duck --upload "scheme://hostname/path with/spaces" "/Path/To/Local/File With/Spaces"`.
 ```
 
-| Protocol | Fully Qualified URI required | Absolute Path | Relative Path |
-| --- | --- | --- | --- |
-| Windows Azure Storage | No | `azure:/<container>/<key>` | `azure:<container>/<key>` |
-| Backblaze B2 Cloud Storage | No | `b2:/<container>/<key>` | `b2:<container>/<key>` |
-| WebDAV (HTTP) | Yes (`dav://<hostname>/<path>`) |||
-| WebDAV (HTTPS) | Yes (`davs://<hostname>/<path>`) |||
-| Dracoon (Email Address) | Yes (`dracoon://<hostname>/<path>`) |||
-| Dropbox | No | `dropbox:/<path>` | `dropbox:<path>` |
-| Local | No | `file:/<path>` | `file:<path>` |
-| FTP (File Transfer Protocol) | Yes (`ftp://<hostname>/<path>`) |||
-| FTPS (Explicit Auth TSL) | Yes (`ftps://<hostname>/<path>`) |||
-| Google Drive | No | `googledrive:/<path>` | `googledrive:<path>` |
-| Google Cloud Storage | No | `gs:/<path>` | `gs:<path>` |
-| Microsoft OneDrive | No | `onedrive:/<path>` | `onedrive:<path>` |
-| Amazon S3 | `s3://<hostname>/<container>/<key>` | `s3:/<container>/<key>` <br/>(using `s3.amazonaws.com`) | `s3:<container>/<key>` <br/>(using `s3.amazonaws.com`) |
-| SFTP (SSH File Transfer <br/>Protocol) | Yes (`sftp://<hostname>/<path>`) |||
-| Spectra S3 (HTTPS) | Yes<br/>(`spectra://<hostname>/<container>/<key>`) |||
-| Rackspace Cloud Files (US) | No | `rackspace:/<container>/<key>` | `rackspace:<container>/<key>` |
-| Swift (OpenStack Object<br/>Storage) | Yes (`swift://<hostname>/<container>/<key>`) |||
+| Protocol                               | Fully Qualified URI required                       | Absolute Path                                           | Relative Path                                          |
+|----------------------------------------|----------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
+| Windows Azure Storage                  | No                                                 | `azure:/<container>/<key>`                              | `azure:<container>/<key>`                              |
+| Backblaze B2 Cloud Storage             | No                                                 | `b2:/<container>/<key>`                                 | `b2:<container>/<key>`                                 |
+| WebDAV (HTTP)                          | Yes (`dav://<hostname>/<path>`)                    |                                                         |                                                        |
+| WebDAV (HTTPS)                         | Yes (`davs://<hostname>/<path>`)                   |                                                         |                                                        |
+| Nextcloud                              | Yes (`nextcloud://<hostname>/<path>`)              |                                                         |                                                        |
+| ownCloud                               | Yes (`owncloud://<hostname>/<path>`)               |                                                         |                                                        |
+| DRACOON (Email Address)                | Yes (`dracoon://<hostname>/<path>`)                |                                                         |                                                        |
+| Dropbox                                | No                                                 | `dropbox:/<path>`                                       | `dropbox:<path>`                                       |
+| Local                                  | No                                                 | `file:/<path>`                                          | `file:<path>`                                          |
+| FTP (File Transfer Protocol)           | Yes (`ftp://<hostname>/<path>`)                    |                                                         |                                                        |
+| FTPS (Explicit Auth TSL)               | Yes (`ftps://<hostname>/<path>`)                   |                                                         |                                                        |
+| Google Drive                           | No                                                 | `googledrive:/<path>`                                   | `googledrive:<path>`                                   |
+| Google Cloud Storage                   | No                                                 | `gs:/<path>`                                            | `gs:<path>`                                            |
+| Microsoft OneDrive                     | No                                                 | `onedrive:/<path>`                                      | `onedrive:<path>`                                      |
+| Amazon S3                              | `s3://<hostname>/<container>/<key>`                | `s3:/<container>/<key>` <br/>(using `s3.amazonaws.com`) | `s3:<container>/<key>` <br/>(using `s3.amazonaws.com`) |
+| SFTP (SSH File Transfer <br/>Protocol) | Yes (`sftp://<hostname>/<path>`)                   |                                                         |                                                        |
+| Spectra S3 (HTTPS)                     | Yes<br/>(`spectra://<hostname>/<container>/<key>`) |                                                         |                                                        |
+| Rackspace Cloud Files (US)             | No                                                 | `rackspace:/<container>/<key>`                          | `rackspace:<container>/<key>`                          |
+| Swift (OpenStack Object<br/>Storage)   | Yes (`swift://<hostname>/<container>/<key>`)       |                                                         |                                                        |
 
 #### Examples
 
