@@ -58,11 +58,16 @@ Basic Authentication is disabled by default. For additional information refer to
 To test without a custom deployment, use the public instance running at `ocis.ocis-keycloak.latest.owncloud.works` with the identity provider at `keycloak.ocis-keycloak.latest.owncloud.works` (username and password: `admin`).
 
 The client configuration to match the provided connection profile can be imported from the [ownCloud Github repository](https://github.com/owncloud/ocis/blob/7af9cd9e53183acbaac2ffbc6414402bdef1f5d4/deployments/examples/ocis_keycloak/config/keycloak/clients/cyberduck.json) to allow OAuth authentications from [Cyberduck](https://cyberduck.io) & [Mountain Duck](https://mountainduck.io).
+````
 
+````{tab} WebDAV
+
+Alternatively you can connect using `WebDAV (HTTPS)` with the default path set to `/remote.php/webdav/`.
+
+![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
 ````
 `````
 
-Alternatively you can connect using `WebDAV (HTTPS)` with the default path set to `/remote.php/webdav/`.
 
 ```{tip}
 The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_ to access the WebDAV API.
@@ -82,10 +87,6 @@ In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 4. Paste the previously copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
 5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
 6. Upon connecting, enter your password when requested in the login prompt.
-
-Alternatively use the *WebDAV (HTTPS)* profile.
-
-![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
 
 ```{warning}
 Make sure to use the actual username instead of the email address for login credential.
