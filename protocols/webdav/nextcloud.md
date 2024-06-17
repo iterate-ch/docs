@@ -5,10 +5,6 @@ NextCloud & ownCloud
 
 ````{tab} Nextcloud
 
-```{image} _images/logo_nextcloud.png
-:alt: Nextcloud Logo
-:height: 128px
-```
 ```{image} _images/Nextcloud_Drive_icon.png
 :alt: Nextcloud Drive Icon
 :height: 128px
@@ -20,10 +16,6 @@ NextCloud & ownCloud
 
 ````{tab} ownCloud
 
-```{image} _images/owncloud-logo.png
-:alt: ownCloud Logo
-:height: 128px
-```
 ```{image} _images/ownCloud_Drive_icon.png
 :alt: ownCloud Drive Icon
 :height: 128px
