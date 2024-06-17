@@ -35,9 +35,32 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop
 
 ### Connection Profiles
 
-Select the connection profile in _Protocol_ bundled by default:
-- Protocol: `Nextcloud`
-- Protocol: `ownCloud`
+`````{tabs}
+````{tab} Nextcloud
+
+Select the connection profile `Nextcloud` for _Protocol_ bundled by default.
+````
+
+````{tab} ownCloud
+
+Select the connection profile `ownCloud` for _Protocol_ bundled by default. 
+
+**ownCloud Infinite Scale (oCIS)**
+
+Connecting to *ownCloud Infinite Scale* the default authentication scheme is OpenID Connect. It requires the client registration in the identity provider in ownCloud via *Keycloak*. Additionally you need a custom [connection profile](https://github.com/iterate-ch/profiles/pull/83/files) to connect.
+
+```{note}
+Basic Authentication is disabled by default. For additional information refer to the [ownCloud documentation](https://doc.owncloud.com/ocis/next/deployment/services/s-list/auth-basic.html).
+```
+
+**Import client configuration for Keycloak**
+
+To test without a custom deployment, use the public instance running at `ocis.ocis-keycloak.latest.owncloud.works` with the identity provider at `keycloak.ocis-keycloak.latest.owncloud.works` (username and password: `admin`).
+
+The client configuration to match the provided connection profile can be imported from the [ownCloud Github repository](https://github.com/owncloud/ocis/blob/7af9cd9e53183acbaac2ffbc6414402bdef1f5d4/deployments/examples/ocis_keycloak/config/keycloak/clients/cyberduck.json) to allow OAuth authentications from [Cyberduck](https://cyberduck.io) & [Mountain Duck](https://mountainduck.io).
+
+````
+`````
 
 Alternatively you can connect using `WebDAV (HTTPS)` with the default path set to `/remote.php/webdav/`.
 
@@ -70,6 +93,7 @@ Make sure to use the actual username instead of the email address for login cred
 ### 2-Factor Authentication
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
+
 
 ## Features
 
