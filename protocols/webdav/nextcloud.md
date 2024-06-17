@@ -46,7 +46,11 @@ Choose one of the protocols if you require a custom server path for your install
 - Protocol: `ownCloud`
 
 ```{tip}
-The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_.
+The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_ to access the WebDAV API.
+```
+
+```{attention}
+You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
 ```
 
 ### Step-by-Step Instructions
@@ -66,12 +70,6 @@ In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
 ```{warning}
 Make sure to use the actual username instead of the email address for login credential.
 ```
-
-### Connect directly to sub directories
-
-The default root for nextcloud connections is set to `remote.php/webdav` or `remote.php/dav/user/files`. The path must not be added to the bookmark configuration.
-
-If servers are only accessible by using a subpath such as `example.net/directory/` this can be indicated by configuring default path as `directory/remote.php/webdav`. The default path can be set in the bookmark configuration or configured using a [custom profil](../profiles/index.md).
 
 ### 2-Factor Authentication
 
