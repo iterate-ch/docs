@@ -96,7 +96,7 @@ PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not 
 
 #### OpenSSH Key Format Interoperability
 
-OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
+OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
 
 #### Configure Public Key Authentication
 
@@ -110,10 +110,14 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL`PEM
 	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
+##### OpenSSH User Certificate Authentication
 
-#### CA signed SSH Certificate Interoperability
+```{important}
+* Cyberduck [8.9.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [4.16.0](https://mountainduck.io/changelog/) or later required
+```
 
-*Certification Authority (CA)* sigend SSH certificates are supported for keys of type  `rsa`, `dsa`, `ecdsa`, and `ed25519`.
+Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://man.openbsd.org/sshd_config#TrustedUserCAKeys), refer to your software vendor for configuration. To configure authentication with a User CA signed private key, configure the private key as described in [Configure Public Key Authentication](#configure-public-key-authentication) step 3. The signed public key file _must_ reside next to the private key file, suffixed `-cert.pub` or `.pub`. The [`CertificateFile`](https://man.openbsd.org/ssh_config#CertificateFile) configuration directive in `~/.ssh/config` is not supported. Pay attention to the server configuration and [`PubkeyAcceptedAlgorithms`](https://man.openbsd.org/sshd_config#PubkeyAcceptedAlgorithms) specifically which determines the allowed private key algorithms to authenticate with.
 
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
@@ -329,9 +333,13 @@ You can set Cyberduck or a third-party application as the default application (p
 
 `diffie-hellman-group1-sha1`, `diffie-hellman-group14-sha1`, `diffie-hellman-group14-sha256`, `diffie-hellman-group15-sha512`, `diffie-hellman-group16-sha512`, `diffie-hellman-group17-sha512`, `diffie-hellman-group18-sha512 diffie-hellman-group-exchange-sha1`, `diffie-hellman-group-exchange-sha256`, `ecdh-sha2-nistp256`, `ecdh-sha2-nistp384`, `ecdh-sha2-nistp521`, `curve25519-sha256@libssh.org`
 
-### Signatures
+### SSH Key Types
 
-`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`
+`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`, `rsa-sha2-256`, `rsa-sha2-512`
+
+### SSH Certificate Key Types
+
+`ssh-rsa-cert-v01@openssh.com`, `ssh-dss-cert-v01@openssh.com`, `ecdsa-sha2-nistp256-cert-v01@openssh.com`, `ecdsa-sha2-nistp384-cert-v01@openssh.com`, `ecdsa-sha2-nistp521-cert-v01@openssh.com`, `ssh-ed25519-cert-v01@openssh.com`
 
 ### Compression
 
@@ -339,7 +347,7 @@ Compression with `zlib` and `zlib@openssh.com` is supported.
 
 ### Private Key Files
 
-`pkcs5`, `pkcs8`, `openssh-key-v1`, `ssh-rsa-cert-v01@openssh.com`, `ssh-dsa-cert-v01@openssh.com`
+`pkcs5`, `pkcs8`, `openssh-key-v1`
 
 ## Incompatibilities
 
