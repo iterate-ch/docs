@@ -5,8 +5,8 @@ NextCloud & ownCloud
 
 ````{tab} Nextcloud
 
-```{image} _images/logo_nextcloud.png
-:alt: Nextcloud Logo
+```{image} _images/Nextcloud_Drive_icon.png
+:alt: Nextcloud Drive Icon
 :height: 128px
 ```
 
@@ -16,8 +16,8 @@ NextCloud & ownCloud
 
 ````{tab} ownCloud
 
-```{image} _images/owncloud-logo.png
-:alt: ownCloud Logo
+```{image} _images/ownCloud_Drive_icon.png
+:alt: ownCloud Drive Icon
 :height: 128px
 ```
 
@@ -28,7 +28,7 @@ NextCloud & ownCloud
 `````
 
 ```{tip}
-Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client" from Nextcloud & ownCloud.
+Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client* from Nextcloud & ownCloud.
 ```
 
 ## Connecting
