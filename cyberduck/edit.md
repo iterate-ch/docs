@@ -29,6 +29,16 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 :width: 500px
 ```
 
+## Versioning
+
+```{note}
+Cyberduck 9.0 or later required
+```
+
+Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in *Edit → Info → Versions*.
+
+The versions are stored in a hidden folder named `.duckversions` in each folder on the mount.
+
 ## Hidden Preferences
 
 ### Disable Upload of Temporary File on Save
