@@ -57,7 +57,7 @@ Files can be excluded from versioning by using a [hidden configuration option](p
 
 Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit.
 
-The number of saved verions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
     versioning.limit=5
 
