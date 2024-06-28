@@ -65,6 +65,14 @@ The following protocols support to view previous versions of files.  Some protoc
 Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
 ```
 
+### Custom versioning 
+
+```{note}
+Cyberduck 9.0 or later required
+```
+
+To keep versions for protocols without native versioning support like [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md) or [OpenStack Swift](../protocols/openstack/index.md), enable the [custom versioning option](edit.md#versioning) in *Preferences → Editor*.
+
 ## UNIX Permissions
 
 Change the permissions on a particular file or folder when connected to a [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp/index.md) server. You can also select multiple files in the browser to edit permissions. Click the checkboxes or enter the [octal notation](http://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation). The recursive options will update all files within a folder but will not change the executable bit for files if not already set when recursively updating a directory.
