@@ -69,21 +69,18 @@ files in [browser](../cyberduck/browser.md) when enabling *View → Show Hidden*
 | **[DRACOON](../protocols/dracoon.md)**                       | ✅                           | ❌                                    | ✅                  | ❌                                                  | 
 | **[Dropbox](../protocols/dropbox.md)**                       | ✅                           | ✅                                    | ❌                  | ❌                                                  |
 | **[Nextcloud & ownCloud](../protocols/webdav/nextcloud.md)** | ✅                           | ✅                                    | ❌                  | ❌                                                  |
+| **[FTP](../protocols/ftp.md)**                               | ✅                           | ✅                                    | ✅                  | ❌                                                  |
+| **[SFTP](../protocols/sftp/index.md)**                       | ✅                           | ✅                                    | ✅                  | ❌                                                  |
+| **[WebDAV](../protocols/webdav/index.md)**                   | ✅                           | ✅                                    | ✅                  | ❌                                                  |
+| **[SMB](../protocols/smb.md)**                               | ✅                           | ✅                                    | ✅                  | ❌                                                  |
 
 ```{note}
 Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
 ```
 
-### Custom versioning
-
 ```{important}
-Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
+Enable _Versioning_ in *Preferences → Editor* to view revisions of edited files for protocols with no native versioning support.
 ```
-
-To keep versions for protocols without native versioning support
-like [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md), [SMB](../protocols/smb.md), 
-or [OpenStack Swift](../protocols/openstack/index.md), enable the [custom versioning option](edit.md#versioning) in
-*Preferences → Editor*.
 
 ## UNIX Permissions
 
