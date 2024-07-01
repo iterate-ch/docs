@@ -36,17 +36,17 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
 ```
 
-Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in *Edit → Info → Versions*.
+Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in the *File → Info → Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. The feature only applies for protocols without native versioning like [FTP](../protocols/ftp.md)/[SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md), [OpenStack Swift](../protocols/openstack/index.md). The file versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named with a pattern like `filename.extension → filename-20230906102017.762.extension`.
 
-The versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named like the following pattern: `filename.extension → filename-20230906102017.762.extension`
+## Hidden Preferences
 
-### Versions while transferring
+### Disable Upload of Temporary File on Save
 
-Enable versioning for [overwriting](transfer.md#overwrite-prompt) existing files by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-    versioning.enable=true
+    defaults write ch.sudo.cyberduck editor.upload.temporary false
 
-### Exclude files
+### Exclude files from versioning
 
 Files can be excluded from versioning by using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
@@ -60,13 +60,6 @@ The number of saved versions can be customized by using a [hidden configuration 
 
     versioning.limit=5
 
-## Hidden Preferences
-
-### Disable Upload of Temporary File on Save
-
-A [hidden configuration option](preferences.md#hidden-configuration-options).
-
-    defaults write ch.sudo.cyberduck editor.upload.temporary false
 
 ## Problems
 
