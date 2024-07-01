@@ -81,7 +81,7 @@ Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
 ```
 
 To keep versions for protocols without native versioning support
-like [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md)
+like [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md), [SMB](../protocols/smb.md), 
 or [OpenStack Swift](../protocols/openstack/index.md), enable the [custom versioning option](edit.md#versioning) in
 *Preferences → Editor*.
 

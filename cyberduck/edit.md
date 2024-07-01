@@ -36,7 +36,7 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
 ```
 
-Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in the *File → Info → Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. The feature only applies for protocols without native versioning like [FTP](../protocols/ftp.md)/[SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md), [OpenStack Swift](../protocols/openstack/index.md). The file versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named with a pattern like `filename.extension → filename-20230906102017.762.extension`.
+Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in the *File → Info → Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. The feature only applies for protocols without native versioning like [FTP](../protocols/ftp.md)/[SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md), [SMB](../protocols/smb.md), [OpenStack Swift](../protocols/openstack/index.md). The file versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named with a pattern like `filename.extension → filename-20230906102017.762.extension`.
 
 ## Hidden Preferences
 
