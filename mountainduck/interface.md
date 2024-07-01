@@ -76,9 +76,6 @@ The nickname determines the name of the mounted volume in Finder.app on macOS or
 
 ### Labels
 
-```{note}
-Version 4.0 or later required.
-```
 Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the status bar menu by their assigned labels.
 
 ```{image} _images/Taskbar_Menu_Bookmark_Groups_Large_Icons_Windows.png
@@ -99,10 +96,6 @@ The number of concurrent connected bookmarks is limited by the number of availab
 ```
 
 ## Filter
-
-```{note}
-Version 4.4 or later required.
-```
 
 You can search for bookmarks with the filter input field in the menu. Bookmarks not matching the input are greyed out.
 
