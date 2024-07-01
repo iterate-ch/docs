@@ -60,6 +60,7 @@ The following protocols support to view previous versions of files.  Some protoc
 | **[Microsoft Sharepoint](../protocols/sharepoint.md)** | ❌ | ✅ | ❌ | ❌ |
 | **[DRACOON](../protocols/dracoon.md)** | ✅ | ❌ | ✅ | ❌ | 
 | **[Dropbox](../protocols/dropbox.md)** | ✅ | ✅ | ❌ | ❌ |
+| **[Nextcloud & ownCloud](../protocols/webdav/nextcloud.md)** | ✅ | ✅ | ❌ |
 
 ```{note}
 Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), versions will only be displayed if bucket versioning is enabled.
