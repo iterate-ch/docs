@@ -26,7 +26,7 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 
 ```{image} _images/Editor_Preferences.png
 :alt: Editor Preferences
-:width: 500px
+:width: 700px
 ```
 
 ## Versioning
