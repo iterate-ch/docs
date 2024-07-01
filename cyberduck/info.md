@@ -67,8 +67,8 @@ Using [S3](../protocols/s3/index.md) or [Backblaze B2](../protocols/b2.md), vers
 
 ### Custom versioning 
 
-```{note}
-Cyberduck 9.0 or later required
+```{important}
+Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
 ```
 
 To keep versions for protocols without native versioning support like [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md), [WebDAV](../protocols/webdav/index.md) or [OpenStack Swift](../protocols/openstack/index.md), enable the [custom versioning option](edit.md#versioning) in *Preferences → Editor*.

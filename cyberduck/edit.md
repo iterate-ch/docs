@@ -31,10 +31,8 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 
 ## Versioning
 
-```{note}
-Cyberduck 9.0 or later required
-
-Only available for protocols without native versioning like FTP/SFTP, WebDAV, OpenStack Swift
+```{important}
+Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
 ```
 
 Enable the custom versioning option in *Preferences → Editor* to store previous versions of a file. The versions can be previewed, deleted or restored in *Edit → Info → Versions*.
