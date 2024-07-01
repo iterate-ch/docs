@@ -22,6 +22,7 @@ To edit file type associations choose *Properties → General → Type of file �
 
 ## Preferences
 
+### Default Editor
 Set your preferred editor in *Preferences*. Select *Always use default editor* in *Preferences → Editor* if you always want to use the default editor set regardless of the file type.
 
 ```{image} _images/Editor_Preferences.png
@@ -29,7 +30,7 @@ Set your preferred editor in *Preferences*. Select *Always use default editor* i
 :width: 700px
 ```
 
-## Versioning
+### Versioning
 
 ```{important}
 Cyberduck [9.0](https://cyberduck.io/changelog/) or later required
