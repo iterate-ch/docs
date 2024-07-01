@@ -181,7 +181,7 @@ Upon connecting to an SSH server for the first time, you will see a message to v
 ### Connect via SSH Tunnel Through Bastion Server
 
 ```{important}
-Cyberduck version 7.7 or later required
+Cyberduck [7.7](https://cyberduck.io/changelog/) or later required
 ```
 
 Using the `ProxyJump` configuration directive in `~/.ssh/config` you can connect through a tunnel. The bookmark configuration refers to the target host in the internal network. We should find a `ProxyJump` directive in the OpenSSH configuration `~/.ssh/config` matching the hostname in the bookmark.
