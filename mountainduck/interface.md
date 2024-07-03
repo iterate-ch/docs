@@ -34,7 +34,7 @@ Make sure there is enough space left on right side of the notch or application m
 Right-click on the taskbar and select *Taskbar setting → Notification area → Select which icons appear on the taskbar*. Make sure Mountain Duck is selected in the list.
 
 ```{tip}
-If Mountain Duck is newly installed on a Windows 11 system, the tray icon must be revealed manually in *System Preferences → Personalization → Taskbar → Taskbar corner overflow*.
+If Mountain Duck is newly installed on a Windows 11 system, the tray icon must be revealed manually in *System Preferences → Personalization → Taskbar → Other system tray items*.
 ```
 ````
 
