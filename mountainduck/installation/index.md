@@ -141,6 +141,12 @@ Based on the example output it should look like this:
 
 After restarting the system, the installer shouldn't complain anymore.
 
+#### Troubleshooting 
+
+For troubleshooting purposes when reaching out to Mountain Duck support, please share the latest installation log.
+
+The installation log can be found by navigating to `%Temp%`. The file starts with `Mountain Duck_`.
+
 ## Installation with Device Management Software
 
 You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
@@ -167,7 +173,9 @@ Follow the steps below to uninstall Mountain Duck completely.
 
 1. Close the application and navigate to the application folder using the shortcut `⌘⇧A`. Select *Mountain Duck.app* and delete the application by choosing *File → Move to Trash*.
 2. Navigate to the *Group Containers* folder within *~/Library/* and delete the folder *G69SCX94XU.duck*. If you changed the cache location you will have to delete that folder as well.
-3. **Optional:** Delete all saved login credentials regarding Mountain Duck within *Keychain Access.app*.
+3. Run the _Terminal.app_ command to reset and erase the settings for Mountain Duck:
+	`defaults delete io.mountainduck`
+4. **Optional:** Delete all saved login credentials regarding Mountain Duck within *Keychain Access.app*.
 
 ````
 
