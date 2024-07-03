@@ -226,6 +226,10 @@ Instead of providing Access Key ID and Secret Access Key, authenticate using tem
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
 
+```{note}
+The [*S3 (Credentials from AWS Command Line Interface) profile*](#connecting-using-credentials-from-aws-command-line-interface) can be used instead of the previous available *S3 (Credentials from AWS Security Token Service)* profile.
+```
+
 You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html). Configure a bookmark with the field titled *Profile Name in `~/.aws/credentials`* matching the profile name from `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows with the `role_arn` configuration.
 
 #### Example Configuration
