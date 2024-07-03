@@ -77,19 +77,12 @@ The default path `/remote.php/dav/files/<username>` will be used with no custom 
 You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
 ```
 
-### Obtain WebDAV address from the server
+### Obtain WebDAV address from Server
 
-1. Connect to your Nextcloud or ownCloud instance in your web browser and log in.
-2. Click on the option Settings in the lower left of the screen and copy the displayed server address.
-3. Create a new [bookmark](../../cyberduck/bookmarks.md):
-In *Mountain Duck*, click on the icon in the tray area or status bar and choose the option *New Bookmark*.
-In *Cyberduck*, click on *Bookmark* and choose the option *New Bookmark*.
-4. Paste the previously copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
-5. Type your *Username* into the corresponding field and press *Connect* in the bookmark window if available or double click from the bookmark window.
-6. Upon connecting, enter your password when requested in the login prompt.
+Connect to your Nextcloud or ownCloud server in your web browser and obtain the WebDAV address from _Settings_ in the lower left. Paste the copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
 
 ```{warning}
-Make sure to use the actual username instead of the email address for login credential.
+Make sure to set in _Username_ the actual username instead of the email address.
 ```
 
 ### 2-Factor Authentication
