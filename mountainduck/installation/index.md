@@ -120,27 +120,6 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 
 	0x24C. A volume has been accessed for which a file system driver is required that has not yet been loaded.
 
-#### Installer goes haywire
-In some cases, the windows gets confused over the installed product and goes haywire. As a result the product can't be modified anymore. To fix the state, run the following command:
-
-	reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Product Name"
-	reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products" /s /f "Product Name"
-
-You should get an output like this:
-	
-	HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}
-    DisplayName    REG_SZ    Cyberduck
-
-Delete the key using the following command: 
-	
-	reg delete "output" /f
-
-Based on the example output it should look like this:
-	
-	reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{23067521-119B-4B0A-BCDD-38835D58077B}" /f
-
-After restarting the system, the installer shouldn't complain anymore.
-
 #### Troubleshooting 
 
 For troubleshooting purposes when reaching out to Mountain Duck support, please share the latest installation log.
