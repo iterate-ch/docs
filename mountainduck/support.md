@@ -49,6 +49,16 @@ An error log is a record of critical errors that occur during the operation of t
 
 It can be reached by clicking on the Show button within _Mountain Duck → Preferences → Connection_. The file is named *mountainduck.error*.
 
+#### Installation Log
+
+```
+Windows only
+```
+
+The installation log contains records of all actions performed by the setup program and by other executable files related to installation. It is needed if you encounter errors during the installation process.
+
+The installation log can be found by navigating to `%Temp%`. The file starts with `Mountain Duck_`.
+
 ### Feature Request
 
 Please make sure to include a detailed description of the feature you'd like to request within [your ticket](mailto:support@mountainduck.io).
