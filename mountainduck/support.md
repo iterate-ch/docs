@@ -51,7 +51,7 @@ It can be reached by clicking on the Show button within _Mountain Duck → Prefe
 
 #### Installation Log
 
-```
+```{admonition} Windows only
 Windows only
 ```
 
