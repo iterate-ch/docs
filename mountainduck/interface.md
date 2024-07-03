@@ -24,6 +24,8 @@ Find the mounted volume in Finder. Choose *Go â†’ Computer* or choose *Finder â†
 
 ```{tip}
 Make sure there is enough space left on right side of the notch or application menu items to make sure the _Mountain Duck_ is visible in the the system status bar. To rearrange status menus, press and hold the Command key while you drag an icon.
+
+In case you're using multiple monitors the status bar item may not be visible on the main monitor. Check the other monitors as well.
 ```
 ````
 
