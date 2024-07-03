@@ -122,9 +122,7 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 
 #### Troubleshooting 
 
-For troubleshooting purposes when reaching out to Mountain Duck support, please share the latest installation log.
-
-The installation log can be found by navigating to `%Temp%`. The file starts with `Mountain Duck_`.
+For troubleshooting purposes when reaching out for support, please share the latest installation log. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
 
 ## Installation with Device Management Software
 

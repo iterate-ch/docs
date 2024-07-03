@@ -55,9 +55,7 @@ It can be reached by clicking on the Show button within _Mountain Duck → Prefe
 Windows only
 ```
 
-The installation log contains records of all actions performed by the setup program and by other executable files related to installation. It is needed if you encounter errors during the installation process.
-
-The installation log can be found by navigating to `%Temp%`. The file starts with `Mountain Duck_`.
+The installation log contains records of all actions performed by the setup program and by other executable files related to installation. It is required for troubleshooting if you encounter errors during the installation process. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
 
 ### Feature Request
 
