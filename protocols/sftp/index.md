@@ -391,6 +391,19 @@ Cyberduck refuses to connect if there are malformed entries in your `known_hosts
 
 Symbolic links only work within Mountain Duck if the target of the symbolic link is available within the mounted path.
 
+````{tabs}
+```{group-tab} macOS
+
+Symlinks can only be displayed as such if the target is included in the mount, otherwise they are displayed and function as a regular file or folder.
+
+```
+```{group-tab} Windows
+
+Symlink is displayed and treated as a regular file or folder.
+
+```
+````
+
 ### File Permissions Reset When Saving File (macOS)
 
 Mountain Duck will forward all permission changes done by Finder or the editing application to the SFTP server. There is a hidden preference to disable the writing of permissions. Enter the following command in a *Terminal.app* window
