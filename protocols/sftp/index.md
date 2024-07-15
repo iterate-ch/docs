@@ -383,23 +383,43 @@ This error can occur if you are connecting the first time to a device with a slo
 
 ![Kex Timeout](../_images/Kex_Timeout.png)
 
-### Connect Does not Work
+### Malformed `known_hosts`
 
 Cyberduck refuses to connect if there are malformed entries in your `known_hosts` file located under `~/.ssh`. Renaming this file and recreating it usually resolves this. An alternative requires manually editing the `known_hosts` file removing all malformed entries. Please refer to [sshd(8)](https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) for a valid format.
 
-### Symbolic Link isn't Accessible
+### Mountain Duck
 
-Symbolic links only work within Mountain Duck if the target of the symbolic link is available within the mounted path.
+#### Symbolic Link not Accessible
 
-### File Permissions Reset When Saving File (macOS)
+Symbolic links are only resolved as such when the target points to a location on the mounted volume.
 
-Mountain Duck will forward all permission changes done by Finder or the editing application to the SFTP server. There is a hidden preference to disable the writing of permissions. Enter the following command in a *Terminal.app* window
+````{tabs}
+```{group-tab} macOS
 
-	defaults write io.mountainduck fs.setattr.chmod false
+Symlinks can only be displayed as such if the target is pointing to a location on the mounted volume. Otherwise, they are displayed as a regular file or folder.
 
-to disable. Make sure to quit Mountain Duck before making the change and then re-open the application.
+```
+```{group-tab} Windows
 
-### File Owner Reset When Saving File (macOS)
+Symlink is displayed as a regular file or folder.
+
+```
+````
+
+#### File Permissions Reset when Saving File
+
+````{tabs}
+```{group-tab} macOS
+
+Mountain Duck will forward all permission changes from Finder or any other application to the SFTP server. There is a [hidden configuration option](../../mountainduck/preferences.md#hidden-configuration-options) `fs.setattr.chmod=false` to disable the writing of permissions.
+
+```
+````
+
+#### File Owner Reset When Saving File
+
+````{tabs}
+```{group-tab} macOS
 
 Some editors save files using an *Atomic Save* feature that writes changes to a file to a temporary file later replacing the edited file by renaming the temporary file to the name of the edited file. This works well on local filesystems, where there is support to retain the owner of the file that is different from the editing user using a special [function call](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man2/exchangedata.2.html). This does not work for volumes mounted with Mountain Duck and the file owner will be reset to the default owner for new files created on the server by the logged-in user. As a workaround, try to find a setting for the editor to disable the *Atomic Save* feature.
 
@@ -407,10 +427,11 @@ Some editors save files using an *Atomic Save* feature that writes changes to a 
 - [TextMate Atomic Saving](https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving)
 ```
 
-### Free Space Calculation is Incorrect
+```
+````
 
-The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the space-available extension of the SFTP protocol or the `statvfs@openssh.com` extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space.
+#### Free Space Calculation is Incorrect
 
-You can work around the issue using one of the following options:
+The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the `space-available` extension of the SFTP protocol or the `statvfs@openssh.com` extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space. You can work around the issue using one of the following options:
 - Set a default path you want to connect to within the bookmark *Path* option.
-- Disable the feature within Mountain Duck by setting the [hidden property](../../cyberduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false` in *%AppData%\Cyberduck\default.properties* on Windows or in *\~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/default.properties* on macOS. If the file doesn't exist create it within the [application support folder](../../mountainduck/support.md#application-support-folder).
+- Disable the feature in Mountain Duck by setting the [hidden configuration option](../../mountainduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false`.
