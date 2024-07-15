@@ -214,8 +214,20 @@ Selecting an item in the *Recent Files* section reveals the file in the _Finder_
 ### Clear Menu
 Clear out all entries of the list by clicking on the *Clear Menu* button at the bottom of the menu.
 
+## Troubleshooting
 
-## Sync Conflicts
+### Connectivity Issues
+
+Depending on the error type, synchronization may be paused or an [error badge](#status-of-files) is set on the file that failed synchronization.
+
+| Error Type             | Notification | Sync Paused | Error Badge |
+|------------------------|:------------:|:-----------:|:-----------:|
+| Generic Server Error	  |      ✅       |      ❌      |      ✅      |
+| Network            	   |      ❌       |      ✅      |      ❌      |
+| Authentication       	 |      ❌       |      ✅      |      ❌      |
+| Quota             	    |      ✅       |      ✅      |      ❌      |
+
+### Sync Conflicts
 
 A conflict may be caused by two or more users editing the same files at the same time or while on the road before the files are synced. We do not merge changes to files like version control systems do. The file with conflicting edits will be renamed with the current time added to the filename. You will have to compare the changes manually and delete the duplicate file afterwards.
 

@@ -48,3 +48,11 @@ Notifications can be posted for the following events:
 
 
 You can adjust which notifications you want to receive in [*Preferences → Notifications*](../preferences.md#notifications).
+
+## Connectivity Issues
+
+Network problems and quota or authentication failures will cause the mounted volume to be disconnected. When enabled in *Preferences → Connection → Confirm disconnect* a disconnect prompt is shown.
+
+### Auto Unmount on Connection Error
+
+To disable the unmount upon failure use a [hidden configuration option](../preferences.md#hidden-configuration-options) `unmount.auto=false`.
