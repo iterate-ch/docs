@@ -30,7 +30,7 @@ Some servers may not support resumable transfers and the file will be reloaded i
 
 You can interrupt a transfer using the *Stop* toolbar button.
 
-## Open downloaded files
+## Open Downloaded Files
 
 Use the *Open* toolbar button to open a downloaded file or folder.
 
@@ -156,11 +156,11 @@ Skip transfer of files that already exist.
 
 ## Preferences
 
-### Browser connection for file transfers
+### Browser Connection for File Transfers
 
 If your server only allows one single connection to be opened for a given user, you'll have to transfer files using the browser connection. This will cause you to stop browsing files and folders while the transfer is in progress. You can choose to *Use the browser connection* or to a *Open a new connection* for file transfers in the [bookmark](bookmarks.md#edit-bookmark) setting. The default setting is configurable in the *Transfers* tab of [Preferences](preferences.md).
 
-### Download/Upload setting for Existing Files
+### Download/Upload Setting for Existing Files
 
 - **Prompt:** Asks what action to take for each transfer.
 - **Overwrite:** Overwrite existing files at the destination.

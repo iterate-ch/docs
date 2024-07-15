@@ -32,7 +32,7 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 | **[Lock Files](../locking.md)**          | ✔︎                                                                    | ✔                                                                             |
 | **[Share Files](../share.md)**           | ✔                                                                     | ✔                                                                             |
 
-## Quota support
+## Quota Support
 Mountain Duck displays the overall quota present on the server as available disk space on the mounted volume.
 
 | Protocol                 | Support |

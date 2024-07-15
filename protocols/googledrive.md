@@ -90,7 +90,7 @@ For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displ
 
 Use the regular Google Drive connection type to see the *Team Drives* besides *My Drive* and *Shared with me*.
 
-#### Shared with me
+#### Shared With Me
 
 Documents shared with you from another Google account can be found inside the top-level folder *Shared with me*.
 

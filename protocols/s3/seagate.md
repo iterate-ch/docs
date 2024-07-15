@@ -17,7 +17,7 @@ Available [endpoints](https://help.lyvecloud.seagate.com/en/s3-api-endpoint.html
 - AP-Southeast-1 (Singapore): `https://s3.ap-southeast-1.lyvecloud.seagate.com`
 ```
 
-### Create access keys
+### Create Access Keys
 
 You have to create service accounts within the *Lyve Cloud console* to use third party tools:
 

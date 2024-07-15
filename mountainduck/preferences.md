@@ -52,7 +52,7 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 
 **Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
 
-#### Show volumes on Desktop
+#### Show Volumes on Desktop
 
 `````{tabs}
 ````{group-tab} macOS

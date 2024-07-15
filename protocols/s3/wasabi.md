@@ -32,7 +32,7 @@ Connection profiles can be installed from *Preferences → Profiles*..
 
 ## Known Issues
 
-### 301 Moved Permanently but no location header
+### 301 Moved Permanently but no Location Header
 
 You are connected with a connection profile specific to a region not matching the bucket region. Please install the additional connection profile for the specific region of the bucket.
 

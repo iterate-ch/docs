@@ -145,11 +145,11 @@ All additional schemes are registered as a scheme handler when opening [Mountain
 </plist>
 ```
 
-### Disk icon template
+### Disk Icon Template
 
 - {download}`Adobe Photoshop disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>`
 
-### Icon set
+### Icon Set
 
 Create a *multi-TIFF* containing the needed icon sizes:
 1. Create a high-resolution *.png* file based on the PSD template

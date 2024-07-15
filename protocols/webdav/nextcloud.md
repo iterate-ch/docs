@@ -77,7 +77,7 @@ The default path `/remote.php/dav/files/<username>` will be used with no custom 
 You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
 ```
 
-### Obtain WebDAV address from Server
+### Obtain WebDAV Address From Server
 
 Connect to your Nextcloud or ownCloud server in your web browser and obtain the WebDAV address from _Settings_ in the lower left. Paste the copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
 

@@ -1,7 +1,7 @@
 Spotlight (macOS)
 ====
 
-## Search bookmarks with Spotlight
+## Search Bookmarks with Spotlight
 
 Cyberduck includes a custom *Spotlight Importer Plugin* to search the contents of its bookmarks files.
 

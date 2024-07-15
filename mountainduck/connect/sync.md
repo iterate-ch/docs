@@ -65,7 +65,6 @@ The file or folder is only saved in local cache and not synced. New _Folders_, e
 
 ## Notifications
 
-
 ```{image} ../_images/File_Updated_Notification.png
 :alt: File Updated Notification
 :width: 500px
@@ -132,7 +131,7 @@ Choose _Mountain Duck → Retry_ to retry a sync operation failed previously wit
 The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations). The cache contains obfuscated file contents on local disk to make files available when offline.
 
 
-## Transfer progress
+## Transfer Progress
 
 While transferring files and folders, a transfer [progress](../interface.md#copying-files) window shows in _Finder.app_ or _Windows Explorer_. When completed, the file(s) are queued for synchronization with the server.
 
@@ -167,13 +166,13 @@ Syncing is also paused automatically when your network connection to the server 
 When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](#online-only) cannot be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
 ```
 
-### Cancel upload in progress
+### Cancel Upload in Progress
 To abort the upload of a file, follow these steps:
 1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
 2. Delete the file
 3. *Resume Synchronization* in the dropdown menu.
 
-### Cancel download in progress
+### Cancel Download in Progress
 To abort the download of a file, follow these steps:
 1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
 2. Select *Delete on local Disk* within the Mountain Duck [context menu](../interface.md#context-menu-in-finder-and-windows-file-explorer).
@@ -208,7 +207,7 @@ The sync operation failed for the file. A file may show up with an error state i
 
 The application that was used for editing the file is displayed within the *Recent Files* area.
 ```
-### Reveal file
+### Reveal File
 Selecting an item in the *Recent Files* section reveals the file in the _Finder_ (macOS) of _File Explorer_ (Windows).
 
 ### Clear Menu

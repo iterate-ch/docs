@@ -21,7 +21,7 @@ Cyberduck is free software. Free software is a matter of the users' freedom to r
 :width: 600px
 ```
 
-#### What payment options are available?
+#### What Payment Options are Available?
 
 Donations can be made by using PayPal or Credit card. Alternatively, you can purchase Cyberduck via App Store.
 
@@ -56,11 +56,11 @@ If these steps are not resolving the trial expired message please follow these a
 3. Paste it into the window
 4. Run it and wait for completion.
 
-### What are the System requirements for Cyberduck?
+### What are the System Requirements for Cyberduck?
 
 The system requirements are listed in the [installation section](installation.md#system-requirements).
 
-#### Can I install older version if necessary?
+#### Can I Install Older Version if Necessary?
 
 The recent release can be found on our [website](https://cyberduck.io/download/). In case your operating system requires an older version of Cyberduck you can download installers for previous versions in our [changelog](https://cyberduck.io/changelog/).
 
@@ -113,7 +113,7 @@ Preferences are stored in `%AppData%\Cyberduck\cyberduck.user.config`. Please no
 ````
 `````
 
-## Where can I issue Bug Reports and Feature Requests?
+## Where can I Issue Bug Reports and Feature Requests?
 
 To get help with bugs, feature requests, or other issues please refer to the [support page](support.md).
 

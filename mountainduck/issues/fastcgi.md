@@ -20,7 +20,7 @@ Most clients out there, including web browsers, use the former method and thus d
 
 In step 3 [Mountain Duck](https://mountainduck.io/) opens a connection to the remote server, send a `PUT` request with the HTTP header `Transfer-Encoding: chunked` and streams through all subsequent write callbacks. Finally, in step 6, the connection is closed.
 
-### Related bug Reports
+### Related Bug Reports
 
 Since the expected length is missing in the header the streaming characteristic of such requests makes them more difficult to be handled in the components being passed. From our research the issue only exists in environments that use Fast CGI to speak to their PHP application. See related bug reports
 

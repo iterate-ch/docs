@@ -118,7 +118,7 @@ As a workaround uncheck *edit → Preferences... → Security (Enhanced) → Ena
 
 If your server does not accept the creation of `.` temporary files you might need to add the `--inplace` when running `rsync`.
 
-### High CPU usage when working with Sublime Text
+### High CPU Usage when Working with Sublime Text
 
 - When working with Sublime Text we recommend turning off indexing by adding the following setting to your user preferences in Sublime Text. <br/>
 `"index_files": false`
@@ -216,13 +216,13 @@ You can find this well documented by Microsoft at [Sync icon overlays are missin
 `````{tabs}
 ````{group-tab} macOS
 
-**Missing status bar icon**<br/>
+**Missing Status Bar Icon**<br/>
 Using applications customizing the status menus may lead to a missing status icon of Mountain Duck. This has been reported for the following applications:
 - _xbar_
 - _MenuMeters_
 - _IP in menubar_
 
-**Mount is not Visible within the Media Browser (Adobe Premiere)**<br/>
+**Mount is not Visible Within the Media Browser (Adobe Premiere)**<br/>
 Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of Adobe Premiere. The mount location needs to be [changed](../preferences.md#mount-location) (e.g. to the desktop) to make the mount visible.
 
 **Finder.app Does not Show Files Prefixed with `.` on Remote Volumes**<br/>
@@ -297,7 +297,7 @@ See Windows sessions above. It is not possible to run Mountain Duck as a Service
 **Mountain Duck Tooltip Persists on Screen**<br/>
 You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.
 
-**Dot files are not hidden**<br/>
+**Dot Files are not Hidden**<br/>
 By default, files starting with `.` aren't hidden by Windows Explorer. You can change the default by using a [hidden configuration option](../preferences.md#hidden-configuration-options).
 
     browser.hidden.regex=\\..*

@@ -184,6 +184,6 @@ Connection profiles are available through the *Preferences → Profiles* tab.
 Asus Routers are incapable of performing basic `STAT`-requests. This is in direct violation of [RFC9591](https://tools.ietf.org/html/rfc959) which states that `STAT` should behave like `LIST` when a path name is given - which is not the case.
 Because of this, the usage of the *FTP (Compatibility Mode) Connection Profile* is mandatory to get proper access to drives connected to an ASUS Router.
 
-### File Locks with vsFTPd
+### File Locks With vsFTPd
 
 Set the property `lock_upload_files=NO` in *vsftpd_conf*.

@@ -40,7 +40,7 @@ If Mountain Duck is newly installed on a Windows 11 system, the tray icon must b
 
 `````
 
-### Auto start
+### Auto Start
 
 You can choose to automatically open Mountain Duck when logging in. Refer to [Preferences](preferences.md#login-item). Re-opening the application will open previously mounted volumes. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
 

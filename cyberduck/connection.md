@@ -189,7 +189,7 @@ Search for and save password for connections.
 
 You might need to adjust the timeout to wait for an answer from the server. The default is set to `30` seconds.
 
-#### Repeat failed networking tasks
+#### Repeat Failed Networking Tasks
 
 Failed transfers due to network connection issues such as a low latency can be chosen to be repeated with a configurable number of retries.
 
