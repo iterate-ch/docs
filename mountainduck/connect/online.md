@@ -55,6 +55,4 @@ Server-side issues like general network problems, quota mismatches, or authentic
 
 ### Auto Unmount on Connection Error
 
-To disable the unmount upon failure use a [hidden configuration option](../preferences.md#hidden-configuration-options).
-
-    unmount.auto=false
+To disable the unmount upon failure use a [hidden configuration option](../preferences.md#hidden-configuration-options) `unmount.auto=false`.
