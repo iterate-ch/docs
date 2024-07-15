@@ -218,7 +218,7 @@ Clear out all entries of the list by clicking on the *Clear Menu* button at the 
 
 ### Connectivity Issues
 
-Server-side issues can cause different behavior based on the error type:
+Server-side issues can cause different behaviour based on the error type:
 
 | Error Type            | Notification | Sync Paused | Error Badge | Remove Operation in Queue |
 |-----------------------| :---: | :---: | :---: | :---: |
