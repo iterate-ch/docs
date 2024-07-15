@@ -53,7 +53,7 @@ You can adjust which notifications you want to receive in [*Preferences → Noti
 
 Server-side issues like general network problems, quota mismatches, or authentication failures will cause the mounted volume to be disconnected. If enabled in *Preferences → Connection → Confirm disconnect* a disconnect prompt is shown.
 
-### Auto unmount on connection error
+### Auto Unmount on Connection Error
 
 To disable the unmount upon failure use a [hidden configuration option](../preferences.md#hidden-configuration-options).
 
