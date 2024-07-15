@@ -218,7 +218,7 @@ Clear out all entries of the list by clicking on the *Clear Menu* button at the 
 
 ### Connectivity Issues
 
-Server-side issues can cause different behaviour based on the error type:
+Depending on the error type, synchronization may be paused or an [error badge](#status-of-files) is set on the file that failed synchronization.
 
 | Error Type             | Notification | Sync Paused | Error Badge |
 |------------------------|:------------:|:-----------:|:-----------:|
