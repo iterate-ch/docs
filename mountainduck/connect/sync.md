@@ -220,12 +220,12 @@ Clear out all entries of the list by clicking on the *Clear Menu* button at the 
 
 Server-side issues can cause different behaviour based on the error type:
 
-| Error Type            | Notification | Sync Paused | Error Badge | Remove Operation in Queue |
-|-----------------------| :---: | :---: | :---: | :---: |
-| Generic Server Error	| ✅ | ❌ | ✅ | ✅ |
-| Network            	| ❌ | ✅ | ❌ | ❌ |
-| Authentication       	| ❌ | ✅ | ❌ | ❌ |
-| Quota             	| ✅ | ✅ | ❌ | ❌ |
+| Error Type             | Notification | Sync Paused | Error Badge |
+|------------------------|:------------:|:-----------:|:-----------:|
+| Generic Server Error	  |      ✅       |      ❌      |      ✅      |
+| Network            	   |      ❌       |      ✅      |      ❌      |
+| Authentication       	 |      ❌       |      ✅      |      ❌      |
+| Quota             	    |      ✅       |      ✅      |      ❌      |
 
 ### Sync Conflicts
 
