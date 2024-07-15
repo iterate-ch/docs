@@ -203,7 +203,6 @@ You must provide configuration in the standard credentials property file `~/.aws
 
 You might be interested in scripts maintained by third parties to facilitate managing credentials
 
-- [Manage configuration files for Cyberduck S3 (AssumeRoles from AWS STS)](https://github.com/jmvbxx/cyberduck-s3-config)
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
 
 #### AWS IAM Identity Center
