@@ -16,7 +16,7 @@ aws_oidc
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 - [Third-Party S3 providers](../s3/index.md#third-party-providers)

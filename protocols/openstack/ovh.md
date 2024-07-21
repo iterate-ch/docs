@@ -10,7 +10,7 @@ OVH Public Cloud Storage
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 ### OpenStack Swift

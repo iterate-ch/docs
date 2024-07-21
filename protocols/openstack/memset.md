@@ -11,7 +11,7 @@ Sign up for a free account that comes with 5GB of storage and 5GB of transfer pe
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 ### Connection Profile

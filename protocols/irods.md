@@ -16,7 +16,7 @@ iRODS (Integrated Rule-Oriented Data System)
 Download the corresponding *Connection Profile* for preconfigured settings and double-click on it to install it. Choose the profile from the list of protocols when editing a [bookmark](../cyberduck/bookmarks.md) or use the `<vendor>:/` scheme when using the [CLI](../cli/index).
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 ### Provider

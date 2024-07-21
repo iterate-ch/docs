@@ -13,7 +13,7 @@ Wasabi Storage
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 - **Wasabi CA Central 1 (Toronto)** {download}`Download<https://profiles.cyberduck.io/Wasabi%20(ca-central-1%20).cyberduckprofile>` the *Wasabi Storage (ca-central-1) Connection Profile* for preconfigured settings.

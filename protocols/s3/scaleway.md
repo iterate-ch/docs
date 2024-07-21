@@ -6,7 +6,7 @@ Scaleway Object Storage
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 - **NL-AMS** {download}`Download<https://profiles.cyberduck.io/Scaleway%20(NL-AMS).cyberduckprofile>` the *Scaleway Object Storage (NL-AMS) Connection Profile* for preconfigured settings.

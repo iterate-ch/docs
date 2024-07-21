@@ -10,7 +10,7 @@ Rackspace Cloud Files
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 ### Connection Profiles

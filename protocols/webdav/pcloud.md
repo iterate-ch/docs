@@ -12,7 +12,7 @@ WebDAV access is only available for paid plans.
 ### Connection Profiles
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 - **pCloud Europe (Luxemburg):** {download}`Download<https://profiles.cyberduck.io/pCloud%20Europe%20(Luxemburg).cyberduckprofile>` the *pCloud Europe (Luxemburg) Connection Profile* for preconfigured settings.

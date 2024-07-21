@@ -60,7 +60,7 @@ You can also connect using [IAM](iam.md) credentials that have the `Amazon S3 Fu
 For use with third party S3 installations.
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 `````{tabs}

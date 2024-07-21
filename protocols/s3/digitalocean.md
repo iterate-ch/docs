@@ -11,7 +11,7 @@ DigitalOcean Spaces
 ## Connecting
 
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*..
+Connection profiles can be installed from *Preferences → Profiles*.
 ```
 
 ### AMS3
