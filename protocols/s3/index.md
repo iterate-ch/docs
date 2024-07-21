@@ -443,13 +443,15 @@ You can view unfinished multipart uploads in the browser by choosing *View → S
 
 You can set options with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
-Part size for multipart uploads
+ * Part size for multipart uploads
+```
+s3.upload.multipart.size=10485760
+```
 
-	s3.upload.multipart.size=10485760
-
-Threshold to use multipart uploads is set to 100MB by default
-
-	s3.upload.multipart.threshold=104857600
+ * Threshold to use multipart uploads is set to 100MB by default
+```
+s3.upload.multipart.threshold=104857600
+```
 
 ## Storage Class
 
