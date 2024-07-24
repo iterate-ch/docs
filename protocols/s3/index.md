@@ -119,6 +119,8 @@ Use the endpoint `s3.us-gov-west-1.amazonaws.com` or install the connection prof
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing)
   profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/S3%20China%20(Ningxia).cyberduckprofile>` the *S3 China (Ningxia)
+  profile* for preconfigured settings.
 
 ````
 
