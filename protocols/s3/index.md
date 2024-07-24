@@ -41,7 +41,6 @@ z1
 ```
 
 Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 buckets and files in a hierarchical way.
-For a short overview of Amazon S3, refer to the [Wikipedia article](http://en.wikipedia.org/wiki/Amazon_S3).
 
 ```{contents} Content
 :depth: 2
