@@ -58,8 +58,7 @@ in the login prompt.
 ### IAM User
 
 You can also connect using [IAM](iam.md) credentials that have the `Amazon S3 Full Access` template policy permissions
-attached and optionally the `CloudFront Full Access`. Make sure you are connecting with `AWS4-HMAC-SHA256` signature
-version (see above).
+attached and optionally the `CloudFront Full Access`.
 
 ### Generic S3 Profiles
 
