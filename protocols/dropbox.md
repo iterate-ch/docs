@@ -67,7 +67,7 @@ Password protected share links are only available for [paid business plans](http
 
 ## Known Limitations
 
-### Comparison with Dropbox desktop app
+### Comparison With Dropbox Desktop App
 
 The Dropbox desktop app has the following advantages to improve upload performance not available through the public API.
 - Server side caching to skip transferring previously uploaded files ([#247](https://github.com/iterate-ch/docs/issues/247)).
@@ -85,7 +85,7 @@ Downloads may fail with a `409 Conflict (restricted_content)` error reply for fi
 The file cannot be transferred because the content is restricted. For example, sometimes there are legal restrictions due to copyright claims.
 ```
 
-### Will not save the file or folder because of its name.
+### Will not Save the File or Folder Because of its Name.
 
 Uploads may fail with a `409 (disallowed_name)` error reply for files with certain characters in the filename.
 

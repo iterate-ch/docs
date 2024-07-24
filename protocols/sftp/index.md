@@ -357,7 +357,7 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 ## Known Issues
 
-### Too many authentication failures
+### Too Many Authentication Failures
 
 Running an SSH agent with many added identities can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
 
@@ -368,7 +368,7 @@ Possible remedies using configuration in [OpenSSH configuration file](#openssh-c
 - [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try to authenticate with explicitly set private key instead of all identities retrieved from SSH agent.
 - Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to disable public key authentication for example.
 
-### Illegal sftp packet length. Invalid packet: indicated length 1114795883 too large
+### Illegal SFTP Packet Length: `Invalid packet: indicated length 1114795883 too large`
 
 The error message `Invalid packet: indicated length 1114795883 too large` may indicate you have either:
 

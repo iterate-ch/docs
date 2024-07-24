@@ -33,7 +33,7 @@ The file can only be opened when a connection to the server or cloud storage can
 The file or folder is only saved in a local [temporary](../issues/index.md#temporary-files) location and not uploaded. This includes files matching a [temporary filename pattern](../issues/index.md#filenames), empty files and new folders.
 
 
-## Transfer progress
+## Transfer Progress
 
 While transferring files and folders, a transfer [progress](../interface.md#copying-files) window shows in _Finder.app_ or _Windows Explorer_. When completed, the file(s) have been uploaded to the server.
 

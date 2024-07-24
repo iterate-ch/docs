@@ -16,7 +16,7 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
 ### Known Issues
 
-#### Can't upload files (Mountain Duck)
+#### Can't Upload Files (Mountain Duck)
 
 kDrive doesn't accept uploads with unknown file sizes. Because of this files can't be uploaded within the *Online* mode as the actual file size can't be reported at the beginning of the upload. The *Smart Synchronization* mode can be used instead as a workaround.
 

@@ -36,7 +36,7 @@ Enable tabs by default when choosing *File → New Browser (`⌘N`)* by selectin
 
 ```
 
-### Spring-loaded Folders
+### Spring-Loaded Folders
 
 Spring-loaded folders are a feature that allows you to move a file or even another folder, into a folder deeply nested within several other folders using drag and drop. To enable, choose *Preferences → Browser → Use spring-loaded folders when dragging files* and adjust the delay for the folder to expand when hovering over with the mouse. Note that spring-loaded folders are only supported in the outline view.
 

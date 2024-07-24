@@ -37,7 +37,7 @@ Access your containers via S3 by creating an S3 user via *OVHcloud Control Panel
 - {download}`Download<https://profiles.cyberduck.io/OVH%20Public%20Cloud%20Storage%20(uk).cyberduckprofile>` the *OVH Public Cloud Storage (London) Connection Profile* for preconfigured settings.
 - {download}`Download<https://profiles.cyberduck.io/OVH%20Public%20Cloud%20Storage%20(waw).cyberduckprofile>` the *OVH Public Cloud Storage (Warsaw) Connection Profile* for preconfigured settings.
 
-#### Creating S3 access using the control panel
+#### Creating S3 Access Using the Control Panel
 
 - Log into your [OVHcloud Control Panel](https://us.ovhcloud.com/manager/).
 - Choose a *Standard Object Storage* container from your public cloud project.

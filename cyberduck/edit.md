@@ -46,13 +46,13 @@ A [hidden configuration option](preferences.md#hidden-configuration-options).
 
     defaults write ch.sudo.cyberduck editor.upload.temporary false
 
-### Exclude files from versioning
+### Exclude Files from Versioning
 
 Files can be excluded from versioning by using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
     versioning.include.regex=.*
 
-### Number of saved versions
+### Number of Saved Versions
 
 Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit.
 

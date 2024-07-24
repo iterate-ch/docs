@@ -27,11 +27,11 @@ Connection profiles can be installed from *Preferences → Profiles*..
 
 ### Authentication
 
-#### Authentication with Native Scheme
+#### Authentication With Native Scheme
 
 This is the default with no additional configuration required.
 
-#### Authentication with PAM Scheme
+#### Authentication With PAM Scheme
 
 To authenticate with PAM, prefix the username with PAM:or set it in the [connection profile](index.md#connection-profiles) using as
 

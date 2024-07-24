@@ -276,7 +276,7 @@ duck --download protocol:/<file> <folder>/
 duck --download protocol:/<file> <folder>/<name>
 ```
 
-#### Glob pattern support for selecting files to transfer
+#### Glob Pattern Support for Selecting Files to Transfer
 
 You can transfer multiple files with a single command using a glob pattern for filename inclusion such as
 ```{code-block}
@@ -309,14 +309,14 @@ If your shell supports glob expansion you can use a wildcard pattern to select f
 duck --upload protocol://<hostname>/directory/ ~/*.jpg
 ```
 
-### Synchronize folders with `--synchronize`
+### Synchronize Folders with `--synchronize`
 
 * Synchronize directory `<name>` with directory `folder` on disk using
 ```{code-block}
 duck --synchronize protocol:/<name>/ folder/
 ```
 
-#### Custom configuration options for uploads to S3
+#### Custom Configuration Options for Uploads to S3
 
 Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../protocols/s3/index.md#default-metadata).
 

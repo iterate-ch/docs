@@ -142,7 +142,7 @@ Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/late
 
 - {download}`Download<https://profiles.cyberduck.io/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>` the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
-### Connecting to a single bucket
+### Connecting to a Single Bucket
 
 Connecting to a bucket owned by you or even a third party is possible without requiring permission to list all buckets. You can access buckets owned by someone else if the ACL allows you to access it by *either*:
 
@@ -153,7 +153,7 @@ Connecting to a bucket owned by you or even a third party is possible without re
 No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically by querying the region of the bucket.
 ```
 
-### Connecting with OpenID Connect (OIDC) identity provider
+### Connecting with OpenID Connect (OIDC) Identity Provider
 
 ```{important}
 * Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
@@ -174,7 +174,7 @@ The connection profiles connect using temporary security credentials from the AW
 - Connect to AWS S3 authenticating with AWS STS and Keycloak (OIDC)
 ```
 
-#### Sample connection profiles for authorization with well known identity providers
+#### Sample Connection Profiles for Authorization with Well Known Identity Providers
 
 ```{note}
 When connecting the user is requested to enter the Role ARN of the IAM role that has a trust relationship configured with the identity provider in _Identity and Access Management (IAM)_.
@@ -243,7 +243,7 @@ Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-
 
 When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows if such a profile exists.
 
-### Connecting without using AWS credentials
+### Connecting Without Using AWS credentials
 
 Use the *S3 (HTTPS)* connection profile to access public data sets on [AWS Open Data](https://registry.opendata.aws/) without using access keys by using the *Anonymous Login* option in the bookmark configuration.
 
@@ -266,7 +266,7 @@ List the contents of a bucket with
 
 Refer to the [Cyberduck CLI documentation](../../cli/index.md) for more operations.
 
-### Uploads using CLI
+### Uploads Using CLI
 
 Add default metadata for uploads using the [preferences option to read from the environment](../../cli/index.md#preferences). The property is documented in [Default metadata](#default-metadata).
 
@@ -491,7 +491,7 @@ Sets the time, in days, between when an object is uploaded to the bucket and whe
 
 	s3.glacier.restore.expiration.days=2
 
-### Restored Glacier files in Mountain Duck
+### Restored Glacier Files in Mountain Duck
 
 Temporarily restored files from *Glacier* won't change the storage class and therefore won't be listed by Mountain Duck. To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
 
@@ -697,7 +697,7 @@ Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
-### `Listing directory / failed.` with path in custom S3 endpoint
+### `Listing directory / failed.` with Path in Custom S3 Endpoint
 
 When connecting to a service that requires a path prefix in all requests, you must set the `Context` property in a custom [connection profile](../profiles/index.md).
 
@@ -722,7 +722,7 @@ The bucket can be created within the Smart Synchronization mode as the folder on
 ```
 
 
-### Saving a file in TextEdit.app will Attempt to Create a Folder `/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
+### Saving a File in TextEdit.app will Attempt to Create a Folder `/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
 
 <del>You will get the error message `Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`.</del> As of Mountain Duck version 2.1, `.DS_Store` files are only saved in a temporary location and not stored on the mounted remote volume.
 

@@ -209,7 +209,7 @@ You are asked if you want to import bookmarks from the following list of applica
 :width: 600px
 ```
 
-## Sharing Bookmarks between Different Computers
+## Sharing Bookmarks Between Different Computers
 
 You can share bookmarks between different computers and users by uploading the *Bookmarks* and *Profiles* folder to a Cloud Storage of your liking and creating a symbolic link to it.
 
@@ -217,7 +217,7 @@ You can share bookmarks between different computers and users by uploading the *
 This only works properly while using the standalone version of Cyberduck or Mountain Duck. The App Store version is unable to list the existing bookmarks from the symbolic link. 
 ```
 
-**Step by step instructions using Dropbox as an example:**</br>
+**Step by Step Instructions Using Dropbox as an Example:**</br>
 `````{tabs}
 ````{group-tab} macOS
 
