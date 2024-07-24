@@ -146,6 +146,17 @@ You can access buckets owned by someone else if the ACL allows you to access it 
 No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically by querying the region of the bucket.
 ```
 
+### Connecting using Deprecated Path Style Requests
+
+For S3 compatible storage only supporting path style requests to reference buckets. Connect with a connection profile
+disabling virtual host style requests.
+
+- {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the
+  *S3 (Deprecated path style requests) profile* for preconfigured settings.
+
+Alternatively set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable`
+to `true`.
+
 ### Connecting with OpenID Connect (OIDC) Identity Provider
 
 ```{important}
@@ -821,15 +832,6 @@ necessary if you want to view the timestamps set in the browser.
 #### Interoperability
 
 The timestamp metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time).
-
-### Disable use of Virtual Host Style Requests
-
-Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable`
-to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a
-custom connection [profile](../profiles/index.md) with the property set in `Properties`.
-
-- {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the
-  *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
 ### `Listing directory / failed.` with Path in Custom S3 Endpoint
 
