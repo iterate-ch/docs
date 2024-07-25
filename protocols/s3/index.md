@@ -41,7 +41,6 @@ z1
 ```
 
 Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 buckets and files in a hierarchical way.
-For a short overview of Amazon S3, refer to the [Wikipedia article](http://en.wikipedia.org/wiki/Amazon_S3).
 
 ```{contents} Content
 :depth: 2
@@ -58,15 +57,12 @@ in the login prompt.
 ### IAM User
 
 You can also connect using [IAM](iam.md) credentials that have the `Amazon S3 Full Access` template policy permissions
-attached and optionally the `CloudFront Full Access`. Make sure you are connecting with `AWS4-HMAC-SHA256` signature
-version (see above).
+attached and optionally the `CloudFront Full Access`.
 
 ### Generic S3 Profiles
 
-For use with third party S3 installations.
-
 ```{note}
-Connection profiles can be installed from *Preferences → Profiles*.
+Connection profiles for use with third-party S3 installations. can be installed from *Preferences → Profiles*.
 ```
 
 `````{tabs}
@@ -75,84 +71,66 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 **Authentication with signature version AWS4-HMAC-SHA256**
 
-**HTTP**</br>
 ```{Important}
 It is discouraged to enable this option to connect plaintext to Amazon S3.
 ```
 
 If you have an S3 installation without SSL configured, you need an optional connection profile to connect using HTTP only without transport layer security. You will then have the added option S3 (HTTP) in the protocol dropdown selection in the [Connection](../../cyberduck/connection) and [Bookmark](../../cyberduck/bookmarks) panels.
 
-The default port is `80`.
-
-* {download}`Download<https://profiles.cyberduck.io/S3%20(HTTP).cyberduckprofile>` the *S3 (HTTP) profile* for preconfigured settings.
-
-**HTTPS**</br>
-
-The default port is `443`.
-
-- {download}`Download<https://profiles.cyberduck.io/S3%20(HTTPS).cyberduckprofile>` the *S3 (HTTPS) profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/S3%20(HTTP).cyberduckprofile>` the *S3 (HTTP) profile* for preconfigured settings.
+- *S3 (HTTPS) profile* bundled by default.
 ````
 
 ````{tab} AWS2
 
-```{attention}
-Connection profiles using legacy AWS2 signature authentication are not recommended to be used with AWS S3 as some features like _Key Management Service_ and _CloudFront configuration_ won't be supported
-```
-
 **Authentication with signature version AWS2**
 
-An incomplete list of known providers that require the use of AWS2
-- Riak Cloud Storage
-- EMC Elastic Cloud Storage
-
-**HTTP**</br>
-
-The default port is `80`.
+```{attention}
+Connection profiles using legacy AWS2 signature authentication are not recommended to be used with AWS S3 as some regions and features like _Key Management Service_ and _CloudFront configuration_ are not supported.
+```
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTP).cyberduckprofile>` the S3 AWS2 Signature Version (HTTP) profile for preconfigured settings.
-
-**HTTPS**</br>
-
-The default port is `443`.
-
 - {download}`Download<https://profiles.cyberduck.io/S3%20AWS2%20Signature%20Version%20(HTTPS).cyberduckprofile>` the S3 AWS2 Signature Version (HTTPS) profile for preconfigured settings.
 
-
-
 ````
-`````
 
-### AWS Gov Cloud
+````{tab} AWS Gov Cloud
 
-#### S3 GovCloud (US-East)
+**S3 GovCloud (US-East)**
 
 Use the endpoint `s3.us-gov-east-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (
   US-East) profile* for preconfigured settings.
 
-#### S3 GovCloud (Us-West)
+**S3 GovCloud (Us-West)**
 
 Use the endpoint `s3.us-gov-west-1.amazonaws.com` or install the connection profile
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20GovCloud%20(US-East).cyberduckprofile>` the *S3 GovCloud (
   US-West) profile* for preconfigured settings.
 
-### AWS China (Beijiing)
+````
 
-Connect to the region *AWS China (Beijing)*
+````{tab} AWS China (Beijing)
+**Connect to the region _AWS China (Beijing)_**
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20China%20(Beijing).cyberduckprofile>` the *S3 China (Beijing)
   profile* for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/S3%20China%20(Ningxia).cyberduckprofile>` the *S3 China (Ningxia)
+  profile* for preconfigured settings.
 
-### AWS Private Link
+````
 
-Connect
-to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
+````{tab} AWS Private Link
 
--
-{download}`Download<https://profiles.cyberduck.io/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>`
+**Connect to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)**
+
+- {download}`Download<https://profiles.cyberduck.io/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>`
 the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
+````
+
+`````
 
 ### Connecting to a Single Bucket
 
@@ -166,6 +144,24 @@ You can access buckets owned by someone else if the ACL allows you to access it 
 
 ```{attention}
 No regional endpoint should be set while connecting to a single bucket. The endpoint will be determined automatically by querying the region of the bucket.
+```
+
+### Connecting using Deprecated Path Style Requests
+
+For S3 compatible storage only supporting path style requests to reference buckets. Connect with a connection profile
+disabling virtual host style requests.
+
+- {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the
+  *S3 (Deprecated path style requests) profile* for preconfigured settings.
+
+Alternatively set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable`
+to `true`.
+
+```{admonition} Interoperability
+:class: note
+
+Attempting to connect using the regular S3 connection profile to a server with no support for virtual host style requests will cause
+the error `Cannot read container configuration` with the message _DNS is the network service that translates a server name to its Internet address. This error is most often caused by having no connection to the  Internet or a misconfigured network. It can also be caused by an unresponsive DNS server or a firewall preventing access to the network._
 ```
 
 ### Connecting with OpenID Connect (OIDC) Identity Provider
@@ -200,8 +196,7 @@ When connecting the user is requested to enter the Role ARN of the IAM role that
 
 ##### S3 with Azure Active Directory (Azure AD)
 
--
-{download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>`
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>`
 the *AWS S3+STS &amp; Azure Active Directory (Azure AD) profile* for preconfigured settings
 
 ##### S3 with Google OpenID Connect
@@ -226,8 +221,7 @@ change the role name `s3access` to match your IAM configuration.
 Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials`
 on macOS or `%USERPROFILE%\.aws\credentials` on Windows using third-party tools.
 
--
-{download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>`
+- {download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>`
 the *S3 (Credentials from AWS Command Line Interface) profile* for preconfigured settings.
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS
@@ -845,15 +839,6 @@ necessary if you want to view the timestamps set in the browser.
 #### Interoperability
 
 The timestamp metadata is interoperable with [rclone](https://rclone.org/s3/#modified-time).
-
-### Disable use of Virtual Host Style Requests
-
-Set the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable`
-to `true` if your S3 compatible storage does only support path style requests to reference buckets. Alternatively a
-custom connection [profile](../profiles/index.md) with the property set in `Properties`.
-
-- {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the
-  *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
 ### `Listing directory / failed.` with Path in Custom S3 Endpoint
 
