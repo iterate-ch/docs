@@ -157,6 +157,13 @@ disabling virtual host style requests.
 Alternatively set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable`
 to `true`.
 
+```{admonition} Interoperability
+:class: note
+
+Attempting to connect using the regular S3 connection profile to a server with no support for virtual host style requests will cause
+the error `Cannot read container configuration` with the message _DNS is the network service that translates a server name to its Internet address. This error is most often caused by having no connection to the  Internet or a misconfigured network. It can also be caused by an unresponsive DNS server or a firewall preventing access to the network._
+```
+
 ### Connecting with OpenID Connect (OIDC) Identity Provider
 
 ```{important}
