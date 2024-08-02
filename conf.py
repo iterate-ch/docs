@@ -30,6 +30,7 @@ extensions = [
 	"sphinx_rtd_theme",
 	"sphinx_tabs.tabs",
 	"myst_parser",
+	"sphinx_rtd_dark_mode",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -55,7 +56,7 @@ html_theme_options = {
 
 	# Toc options
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
 }
 html_favicon = '_static/favicon.ico'
 html_logo = 'cyberduck-icon-64.png'
@@ -84,3 +85,5 @@ myst_enable_extensions = [
 	"html_image",
 	"colon_fence"
 ]
+
+default_dark_mode = False
