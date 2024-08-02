@@ -6,7 +6,7 @@ Selectel S3 Storage
 :width: 128px
 ```
 
-> [Selectel Cloud Storage](https://selectel.ru/en/services/cloud/storage/) is a durable S3 for developers and businesses.
+> [Selectel Cloud Storage](https://docs.selectel.ru/en/cloud/object-storage/) is a durable S3 for developers and businesses.
 
 ## Connecting
 
