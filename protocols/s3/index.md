@@ -515,8 +515,9 @@ Files larger than 100MB are uploaded in parts with up to 10 parallel connections
 file size limit is 100GB with a maximum of 10'000 parts allowed by S3. The number of connections used can be limited
 using the toggle in the lower right of the transfer window.
 
-Multipart uploads can be resumed later when interrupted. Make sure the user has the
-permission `s3:ListBucketMultipartUploads`.
+```{note}
+Multipart uploads can be resumed later when interrupted. Make sure the IAM user has the permission `s3:ListBucketMultipartUploads`.
+```
 
 #### Unfinished Multipart Uploads
 
