@@ -487,18 +487,21 @@ Do not name objects in S3 containing `/` as this will break navigation.
 
 ### Transfer Acceleration
 
-When enabled for the bucket, downloads, and uploads using the S3 Transfer Acceleration endpoints to transfer data
-through CloudFront’s globally distributed edge locations. The name of the bucket used for Transfer Acceleration must be
-DNS-compliant and must not contain periods ("."). You do **not** need to enter transfer accelerated endpoints manually.
-When using Transfer Acceleration, additional data transfer charges may apply to connect
-to `s3-accelerate.dualstack.amazonaws.com`.
+When [enabled](../../cyberduck/info.md#provider-panel) for the bucket, downloads and uploads use the _S3 Transfer Acceleration_ 
+endpoints to transfer data through the globally distributed edge locations of AWS CloudFront. 
 
-![Transfer Acceleration](_images/Amazon_S3_Transfer_Acceleration.png)
+```{warning}
+The name of the bucket used for Transfer Acceleration must be DNS-compliant and must not contain periods ("."). 
+```
 
-#### Permissions
+```{important}
+You do **not** need to enter transfer accelerated endpoints manually. When using Transfer Acceleration, additional data transfer charges may apply to connect to `s3-accelerate.dualstack.amazonaws.com`.
+```
 
-Make sure the user has `s3:GetAccelerateConfiguration` permission permits users to return the Transfer Acceleration
-state of a bucket.
+```{note}
+Make sure the IAM user has the `s3:GetAccelerateConfiguration` permission required to query the Transfer Acceleration
+status of a bucket.
+```
 
 ### Checksums
 
