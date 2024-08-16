@@ -12,8 +12,8 @@ Notifications
 - Transfer queued
 - Bonjour
 
-`````{tabs}
-````{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 **Notification Center**
 
@@ -23,16 +23,15 @@ On *OS x 10.8 or later*, notifications are sent to the *Notification Center*.
 
 Notifications can be configured in *System Preferences → Notifications*.
 
-
-```{image} _images/Notification_Center.png
+:::{image} _images/Notification_Center.png
 :alt: Notification Center
 :width: 700px
-```
+:::
 
 The default alert style is *Banner* which is dismissed automatically after some delay. You can change the type to *Alert* if you want to have a *Close* and *Show* button to dismiss the alert manually.
 
-````
-````{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 **Notification Area**
 
@@ -40,9 +39,10 @@ Notifications are displayed in the notification area commonly referred to as the
 
 **Settings**
 
-```{image} _images/Notifications_Area_Settings.png
+:::{image} _images/Notifications_Area_Settings.png
 :alt: Notification Area Settings
 :width: 700px
-```
-````
-`````
+:::
+
+::::
+:::::

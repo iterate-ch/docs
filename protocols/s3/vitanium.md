@@ -1,10 +1,10 @@
 Vitanium Cloud
 ===
 
-```{image} https://cdn.cyberduck.io/img/providers/vitanium.png
+:::{image} https://cdn.cyberduck.io/img/providers/vitanium.png
 :alt: Vitanium Cloud
 :width: 128px
-```
+:::
 
 ## Connecting
 

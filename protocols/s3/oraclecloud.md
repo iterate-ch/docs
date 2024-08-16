@@ -1,10 +1,10 @@
 Oracle Cloud Infrastructure
 ====
 
-```{image} _images/OCI_Object_Storage.png
+:::{image} _images/OCI_Object_Storage.png
 :alt: Oracle Drive Icon
 :width: 128px
-```
+:::
 
 > [Oracle Cloud Infrastructure (OCI)](https://oracle.com/cloud) provides two separate Object Storage solutions: *OCI Object Storage* and *OCI Object Storage Classic*. Both of them can be accessed using Cyberduck.
 
@@ -14,9 +14,9 @@ Oracle Cloud Infrastructure
 
 ### Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 For connecting to OCI Object Storage, Cyberduck version 6.4.0 or later is required. You need to use the [OCI Amazon S3 Compatible API](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/s3compatibleapi.htm).
 
@@ -41,9 +41,9 @@ Follow these instructions:
     - {download}`OCI Object Storage (uk-london-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(uk-london-1).cyberduckprofile>`
     - {download}`OCI Object Storage (us-ashburn-1).cyberduckprofile<https://profiles.cyberduck.io/OCI%20Object%20Storage%20(us-ashburn-1).cyberduckprofile>`
 3. Create a new bookmark and select the connection profile installed as the protocol.
-4Update the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))
-4. Enter the *Access Key* that you obtained while creating *Amazon S3 Compatible API Key*
-5. Enter the *Secret Key* that you obtained while creating *Amazon S3 Compatible API Key*
+4. Update the *Server* field and replace `<namespace>` with your tenancy's namespace (For more information about namespaces, and ways to find your namespace refer to the [Oracle Cloud Documentation](https://docs.oracle.com/en-us/iaas/Content/Object/Tasks/understandingnamespaces.htm))
+5. Enter the *Access Key* that you obtained while creating *Amazon S3 Compatible API Key*
+6. Enter the *Secret Key* that you obtained while creating *Amazon S3 Compatible API Key*
 
 ## OCI Object Storage Classic
 

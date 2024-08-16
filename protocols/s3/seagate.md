@@ -10,12 +10,12 @@ Seagate Lyve Cloud
 - Access Key ID: `<your access key>`
 - Secret Access Key: `<your secret access key>`
 
-```{hint}
+:::{hint}
 Available [endpoints](https://help.lyvecloud.seagate.com/en/s3-api-endpoint.html) are
 - US-East-1 (Virginia): `https://s3.us-east-1.lyvecloud.seagate.com`
 - US-West-1 (California): `https://s3.us-west-1.lyvecloud.seagate.com`
 - AP-Southeast-1 (Singapore): `https://s3.ap-southeast-1.lyvecloud.seagate.com`
-```
+:::
 
 ### Create Access Keys
 
@@ -26,9 +26,9 @@ You have to create service accounts within the *Lyve Cloud console* to use third
 3. Enter the name and permissions.
 4. Choose *Create*. The access key will be generated and the details of the key will be displayed in a popup window.
 
-```{note}
+:::{note}
 The prompt containing the access key information will only be displayed once. Make sure to save the details for future use.
-```
+:::
 
 ## References
 

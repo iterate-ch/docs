@@ -19,6 +19,6 @@ This is supported for the following protocols
 
 [FTP](../protocols/ftp.md) and [SFTP](../protocols/sftp/index.md) do not support a copy operation. 
 
-```{important}
+:::{important}
 Transfer speed depends on your local connectivity as files are routed through your computer for transfer between the remote servers.
-```
+:::

@@ -1,14 +1,14 @@
 Microsoft SharePoint
 ====
 
-```{image} _images/onedrive.png
+:::{image} _images/onedrive.png
 :alt: Microsoft OneDrive
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) to access in Finder on macOS & Windows Explorer.
-```
+:::
 
 ## SharePoint Online
 
@@ -27,11 +27,12 @@ Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connectio
 
 In case you are trying to access a site that isn't listed when connecting with the *Microsoft SharePoint* connection profile you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. While using the *Microsoft SharePoint Site* connection profile you are required to use your SharePoint hostname (`contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
 
-```{note}
+:::{note}
 You can't mount a specific directory with this method as the Path field is used for the URL prefix path.
-```
+:::
 
 ### SharePoint Hybrid
+
 If you have your own SharePoint Server but opted in to enable *Microsoft Graph*-connectivity to your SharePoint Server, you may be able to use the built-in *Microsoft SharePoint*-Profile.
 
 Please refer to the official documentation from Microsoft for detailed setup guides.
@@ -76,8 +77,10 @@ Basic Authentication should only be used when using secured connection over TLS 
 
 If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
 
-	defaults write ch.sudo.cyberduck webdav.ntlm.workstation MYWORKSTATION
-	defaults write ch.sudo.cyberduck webdav.ntlm.domain MYDOMAIN
+```
+defaults write ch.sudo.cyberduck webdav.ntlm.workstation MYWORKSTATION
+defaults write ch.sudo.cyberduck webdav.ntlm.domain MYDOMAIN
+```
 
 #### Configuration
 
@@ -100,6 +103,7 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 ## Limitations
 
 ### Top Level folder
+
 It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
 
 | Folder Name |
@@ -110,4 +114,5 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Sites       |
 
 ### Quota
+
 Quota reporting is only supported for the *Drives* folder within their respective site folder.

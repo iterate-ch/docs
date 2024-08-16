@@ -1,14 +1,14 @@
 Box.com
 ====
 
-```{image} _images/box.png
+:::{image} _images/box.png
 :alt: Box Drive Icon
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Box Drive*.
-```
+:::
 
 > [Box](https://box.com/) Simple, secure file sharing and collaboration from anywhere.
 
@@ -20,9 +20,9 @@ Use the default *Box* connection profile to connect to your server using the Box
 
 #### FTP
 
-```{important}
+:::{important}
 Only available for Box business and enterprise accounts
-```
+:::
 
 Enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
@@ -33,9 +33,9 @@ Enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
 #### WebDAV
 
-```{warning}
+:::{warning}
 Box WebDAV support reached end-of-life at October 25th, 2019
-```
+:::
 
 1. {download}`Download<https://svn.cyberduck.ch/trunk/profiles/Box.cyberduckprofile>` the *Box Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 2. Enter your email address for the username.
@@ -50,9 +50,9 @@ Alternatively, enter the following information in the [bookmark](../cyberduck/bo
 
 ## Share
 
-```{note}
+:::{note}
 Only available using the default *Box* connection profile.
-```
+:::
 
 Create download [shares](../cyberduck/share.md#box) of files or folders for people who are not Box users by using *File → Share...*.
 

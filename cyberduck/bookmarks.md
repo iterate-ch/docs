@@ -1,25 +1,25 @@
 Bookmarks
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Toggle Bookmarks
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`⌘B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Cyberduck → Preferences → General → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 You can toggle between the bookmarks and the browser using *Bookmarks → Toggle Bookmarks (`Strg+B`)* or by clicking the bookmarks icon in the navigation toolbar. Depending on the bookmark icon size chosen in *Edit → Preferences → General → Bookmarks*, the nickname, URL, username, and comment are shown per bookmark.
 
-````
-`````
+:::
+::::
 
 ## Sorting 
 
@@ -31,63 +31,63 @@ Use the search field *(macOS `⌘/` Windows `Strg+F`)* to filter bookmarks by ni
 
 ## Labels & Groups
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 
 Only supported in Cyberduck for macOS.
-```
+:::
 
 ### Edit Labels for Bookmarks
 
 Assign multiple labels to a bookmark to group them in folders in the menu.
 
-```{image} _images/Edit_Labels_for_Bookmark.png
+:::{image} _images/Edit_Labels_for_Bookmark.png
 :alt: Edit Labels for Bookmark
 :width: 500px
-```
+:::
 
 ### Groups in Bookmarks Menu
 
 Bookmarks are grouped in folders in the menu by their assigned labels. Groups in bookmark view forthcoming.
 
-```{image} _images/Groups_in_Bookmarks_Menu.png
+:::{image} _images/Groups_in_Bookmarks_Menu.png
 :alt: Groups in Bookmarks Menu
 :width: 400px
-```
+:::
 
 ## Add new Bookmark
 
 ### From Current Connection
 
-`````{tabs}
-````{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 Select *Bookmarks → Toggle Bookmarks (`⌘B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
-```{image} _images/Add_Bookmark.png
+:::{image} _images/Add_Bookmark.png
 :alt: Add Bookmark
 :width: 400px
-```
+:::
 
 Drag the proxy icon in the browser window title bar to the bookmark drawer or to the *Finder.app*. You can double-click this file in the *Finder.app* to open a new connection.
 
-```{image} _images/Proxy_Icon.png
+:::{image} _images/Proxy_Icon.png
 :alt: Proxy Icon
 :width: 400px
-```
+:::
 
-````
-````{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 Select *Bookmarks → Toggle Bookmarks (`Strg+B`)*. Click the + button in lower left corner to add the server that's currently connected to this browser window to the Bookmarks. An editor window will open where you can adjust the bookmark properties (i.e. nickname) further.
 
-```{image} _images/Add_Bookmark.png
+:::{image} _images/Add_Bookmark.png
 :alt: Add Bookmark
 :width: 400px
-```
+:::
 
-````
-`````
+::::
+:::::
 
 ### From a Third-Party Application
 
@@ -97,10 +97,10 @@ Drag an URL from a third-party application to the bookmark table to create a new
 
 Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel where you can edit the bookmark's properties will appear. If the server configured is not reachable, an alert icon is displayed next to the URL. Clicking it opens *Network Diagnostics*.
 
-```{image} _images/WebDAV_Bookmark_Client_Certificate.png
+:::{image} _images/WebDAV_Bookmark_Client_Certificate.png
 :alt: WebDAV Bookmark Client Certificate
 :width: 600px
-```
+:::
 
 ### Bookmark Options
 
@@ -121,18 +121,18 @@ Select *Bookmark → Edit Bookmark (macOS `⌘E` Windows `Strg+E`)*. A panel whe
 
 ### Passwords
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Manage your passwords with *Keychain Access.app*. Refer to [Keychain for Mac: Kexchain Access overview](https://support.apple.com/kb/PH20093?locale=en_US).
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Passwords are saved in the *Credential Manager*. You can view and delete your saved login information in *Control Panel → User Accounts → Credential Manager → Windows Credentials*.
 
-````
-`````
+:::
+::::
 
 ## HTTP URL
 
@@ -148,28 +148,27 @@ Example configuration:
 | Selected File | `/home/dkocher/public_html/stylsheet.css` | *A file selected in the browser* |
 | HTTP URL | [http://sudo.ch/stylesheet.css](http://sudo.ch/stylesheet.css) | *Accessible in the web browser* |
 
-```{image} _images/HTTP_URL.png
+:::{image} _images/HTTP_URL.png
 :alt: HTTP URL
 :width: 600px
-```
+:::
 
 Web URLs are supported for [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md) and [WebDAV](../protocols/webdav/index.md). 
 
 See also [Open or copy HTTP URL](browser.md#open-or-copy-http-url).
 
-
 ## Exporting Bookmarks
 
 Drag the bookmark from the Bookmark Drawer anywhere to the *Finder.app/ Explorer* (e.g. the Desktop). You can double-click the document in the file browser to open a new connection to the server specified in the bookmark. To back up all bookmarks, refer to [this FAQ entry](faq.md#preferences-and-application-support-files-location).
 
-```{image} _images/Drag_Bookmark.png
+:::{image} _images/Drag_Bookmark.png
 :alt: Drag Bookmark
 :width: 300px
-```
+:::
 
-```{note}
+:::{note}
 You can share bookmarks between Mac & Windows as the file format is the same on both platforms.
-```
+:::
 
 ## Importing Bookmarks
 
@@ -204,22 +203,22 @@ You are asked if you want to import bookmarks from the following list of applica
 - *Total Commander*
 - *Cloud Mounter* from `~/Library/Preferences/com.eltima.cloudmounter.plist`
 
-```{image} _images/Filezilla_Import.png
+:::{image} _images/Filezilla_Import.png
 :alt: FileZilla Import
 :width: 600px
-```
+:::
 
 ## Sharing Bookmarks Between Different Computers
 
 You can share bookmarks between different computers and users by uploading the *Bookmarks* and *Profiles* folder to a Cloud Storage of your liking and creating a symbolic link to it.
 
-```{warning}
+:::{warning}
 This only works properly while using the standalone version of Cyberduck or Mountain Duck. The App Store version is unable to list the existing bookmarks from the symbolic link. 
-```
+:::
 
 **Step by Step Instructions Using Dropbox as an Example:**</br>
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 1. Install the Dropbox app, log into your Dropbox account and synchronize the folder where you want to have the bookmarks to the local disk.
 2. Quit *Cyberduck* and/or *Mountain Duck*.
@@ -227,8 +226,8 @@ This only works properly while using the standalone version of Cyberduck or Moun
 4. Open *Terminal.app* and execute the command `ln -s <CloudDirectory> <AppSupportDirectory/foldername>` to create the symbolic link.
 e.g.: `ln -s ~/Dropbox/Bookmarks ~/Library/Group\ Containers/G69SCX94XU.duck/Library/Application\ Support/duck/Bookmarks`
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 1. Install the Dropbox app, log into your Dropbox account and synchronize the folder where you want to have the bookmarks to the local disk.
 2. Quit *Cyberduck* and/or *Mountain Duck*.
@@ -237,8 +236,8 @@ e.g.: `ln -s ~/Dropbox/Bookmarks ~/Library/Group\ Containers/G69SCX94XU.duck/Lib
 	- Open *CMD* and execute the command `mklink /J <AppSupportDirectory\foldername> <CloudDirectory>`.
 	- Open *PowerShell* and execute the command `New-Item -Type Junction -Target <CloudDirectory> -Path <AppSupportDirectory\foldername>`
 
-````
-`````
+:::
+::::
 
 ## Preferences
 
@@ -250,10 +249,14 @@ Choose a default bookmark to open after opening the application. Choose *Prefere
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Displayed in the bookmark edit window.
 
-    defaults write ch.sudo.cyberduck bookmark.favicon.download false
+```
+defaults write ch.sudo.cyberduck bookmark.favicon.download false
+```
 
 ### Open Bookmark View after Disconnecting
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-    defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true
+```
+defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true
+```

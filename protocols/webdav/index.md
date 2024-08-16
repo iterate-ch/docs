@@ -1,7 +1,7 @@
 WebDAV
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 bigcommerce
@@ -11,22 +11,22 @@ nextcloud
 pcloud
 seafile
 kdrive
-```
+:::
 
 You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mutual TLS with a client certificate for authentication is supported.
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Providers
 
 Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - [Nextcloud](nextcloud.md)
 - [ownCloud](nextcloud.md)
@@ -62,6 +62,7 @@ Choose *WebDAV (HTTP/SSL)* as the connection protocol to secure the connection u
 
 :::{admonition} TLSv1 and TLSv1.1 deprecation
 :class: warning
+
 TLSv1 and TLSv1.1 are no longer supported as of
 * Cyberduck [8.1.0](https://github.com/iterate-ch/cyberduck/milestone/184) or later
 * Mountain Duck [4.9.0](https://mountainduck.io/changelog/) or later
@@ -99,21 +100,18 @@ You can edit custom properties using File → Info → Metadata.
 
 ## Locking
 
-````{tabs}
-
-```{tab} Cyberduck
+::::{tabs}
+:::{group-tab} Cyberduck
 
 Locking is not supported [editing](../../cyberduck/edit.md) with Cyberduck.
 
-```
-
-```{tab} Mountain Duck
+:::
+:::{group-tab} Mountain Duck
 
 Mountain Duck supports locking using `LOCK` and `UNLOCK` methods when opening documents for editing. Refer to [File Locking](../../mountainduck/locking).
 
-```
-
-````
+:::
+::::
 
 ## Distribution (CDN)
 
@@ -137,13 +135,15 @@ Saving the modification dates requires support from server storing metadata in c
 
 If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)
 
-	http.credentials.encoding=UTF-8
+```
+http.credentials.encoding=UTF-8
+```
 
 ### Too Many Folders are Displayed
 
-```{attention}
+:::{attention}
 This only applies if you access a Synology Diskstation.
-```
+:::
 
 If the file listing shows additional folders of the file tree that are usually not visible try to uncheck the checkbox *disable directory browsing* within the advanced settings for a shared folder on your Synology Diskstation.
 
@@ -153,11 +153,15 @@ The virtual host set up by the hosting provider is most possibly misconfigured. 
 
 You can verify the wrong server setup by running `openssl` with server name indication (SNI) enabled.
 
-	openssl s_client -servername <servername> -tlsextdebug -msg -connect <servername>:443
+```
+openssl s_client -servername <servername> -tlsextdebug -msg -connect <servername>:443
+```
 
 This will print
 
-	<<< TLS 1.0 Alert [length 0002], warning unrecognized_name
+```
+<<< TLS 1.0 Alert [length 0002], warning unrecognized_name
+```
 
 during the handshake, if there is a configuration problem.
 

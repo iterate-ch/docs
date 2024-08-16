@@ -1,56 +1,63 @@
 Smart Synchronization
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
-```
+:::
 
-```{image} ../_images/Disk_Syncing.png
+:::{image} ../_images/Disk_Syncing.png
 :alt: Disk Syncing
 :width: 200px
-```
+:::
+
 > In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background. Directories can be browsed when offline and files opened are made available for later offline access. You can also choose to make explicitly all or only selected files and folders available for offline use. Changes to files are saved in a local cache first and uploaded in the background as soon as a connection is available.
 
-```{tip}
+:::{tip}
 You can access volumes in _Smart Synchronization_ connect mode without being always connected the server or cloud storage.
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 1
 :local:
-```
+:::
 
 ## Status of Files
 
 Files and folders on a mounted volume have a status icon overlay in _File Explorer_ (Windows) and _Finder_ (macOS).
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
+
 Please make sure to enable the Mountain Duck [Integration](../installation/index.md) in *System Preferences → Extensions → Finder* on macOS. For macOS Ventura and later, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
-```
+:::
 
 ### ![](../_images/overlay_uptodate.png) Up to Date
+
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
 
-```{note}
+:::{note}
 Files can be purged automatically from the cache when not accessed or the cache size limit is exceeded. Refer to [Cache Limitations](../preferences.md#cache-limitations).
-```
+:::
 
 ### ![](../_images/overlay_infinite.png) Online Only
+
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
 ### ![](../_images/overlay_sync.png) In Sync
+
 The file or folder is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.
 
-```{tip}
+:::{tip}
 Files explicitly selected to keep offline are **not** automatically purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
-```
+:::
 
 ### ![](../_images/overlay_syncing.png) Sync in Progress
+
 The file or folder is currently syncing with the server or cloud storage. Check the menu with the sync status for current download or upload progress.
 
 ### ![](../_images/overlay_error.png) Sync Error
+
 Files that failed to sync after changes. You are missing permission to write to the file or another problem occurred. Please contact your web hosting service provider for assistance. To resolve the error, move the file to your local disk, and reload the directory. Refer to [Sync Conflicts](sync.md#sync-conflicts) for possible error scenarios. You can try to repeat the failed transfer by selecting *Mountain Duck → Retry* in the [context menu](sync.md#context-menu-options). If a sync error cannot be solved using *Mountain Duck → Retry* because the server does not allow the operation (i.e. due to a permission issue), you can resolve the error state on the file or folder by
 
 - Move the file or folder to another location on the volume
@@ -58,17 +65,20 @@ Files that failed to sync after changes. You are missing permission to write to 
 - To upload files to a target directory no longer existing on the server, you have to move the files to a location found on the server.
 
 ### ![](../_images/overlay-pause.png) Sync Paused
+
 The file or folder is pending syncing with the server but synchronization has been [paused](#pause-sync).
 
 ### ![](../_images/overlay_ignored.png) Ignored
+
 The file or folder is only saved in local cache and not synced. New _Folders_, empty files and files matching [excluded filename patterns](../issues/index.md#filenames) are not uploaded. Folders are uploaded after being renamed.
 
 ## Notifications
 
-```{image} ../_images/File_Updated_Notification.png
+:::{image} ../_images/File_Updated_Notification.png
 :alt: File Updated Notification
 :width: 500px
-```
+:::
+
 Notifications can be posted for the following events:
 - **Filesystem mounted**. The volume is now connected.
 - **Filesystem unmounted**. The volume has been disconnected.
@@ -89,31 +99,31 @@ You can adjust which notifications you want to receive in [*Preferences → Noti
 
 To reach the context menu right-click on a file or folder in _File Explorer_ (Windows) or _Finder_ (macOS). Refer to [Finder Extension & Windows File Explorer Extension](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 
-```{image} ../_images/Mountain_Duck_Screenshot_Finder_Dark.png
+:::{image} ../_images/Mountain_Duck_Screenshot_Finder_Dark.png
 :alt: Mountain Duck Finder Dark
 :width: 800px
-```
+:::
 
 ### Keep Offline
 
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available even offline with no network connectivity. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
-```{image} ../_images/Sync_Context_Menu_macOS.png
+:::{image} ../_images/Sync_Context_Menu_macOS.png
 :alt: Sync Context Menu (macOS)
 :width: 500px
-```
+:::
 
-```{note}
+:::{note}
 As long as the volume is mounted, files marked _Up to Date_ or _In Sync_ with a green checkmark remain accessible even if the network connection drops. Changes are synchronized in the background when the server is reachable again. 
-```
+:::
 
 ### Delete on Local Disk
 
 Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk.
 
-```{note}
+:::{note}
 Files will get cached again regardless this setting if accessed again later (e.g. Finder and Windows Explorer thumbnail preview and media file metadata retrieval).
-```
+:::
 
 <video width="800" height="450" controls>
 	<source src="../../../_static/videos/mountainduck/keepoffline.mp4" type="video/mp4" />
@@ -139,78 +149,92 @@ While transferring files and folders, a transfer [progress](../interface.md#copy
 
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
-```{image} ../_images/Icon_Sync_in_Progress.gif
+:::{image} ../_images/Icon_Sync_in_Progress.gif
 :alt: Sync in Progress
 :width: 600px
-```
+:::
+
 Detailed status for current transfers is available in the *Sync* submenu. The sync progress shows the files that currently get synchronized and pending changes after the current transfer.
 
-```{image} ../_images/Menu_Sync_in_Progress.png
+:::{image} ../_images/Menu_Sync_in_Progress.png
 :alt: Sync Progress
 :width: 800px
-```
+:::
 
 Shown for the current transfers are transfer rate, remaining data, and already transferred data. If Mountain Duck synchronizes files in a badge, the file state might differ from the state within the file browser. The sync progress display is limited to 5 entries.
 
-
 ### Pause Sync
+
 You can manually pause background syncing by selecting *Pause Sync* in the submenu for the sync status. The paused sync status is indicated with a greyed-out icon in the tray (Windows) or status bar (macOS).
 
-```{image} ../_images/Sync_Paused_macOS.png
+:::{image} ../_images/Sync_Paused_macOS.png
 :alt: Sync Paused (macOS)
 :width: 500px
-```
+:::
+
 Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
-```{warning}
+:::{warning}
 When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](#online-only) cannot be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
-```
+:::
 
 ### Cancel Upload in Progress
+
 To abort the upload of a file, follow these steps:
 1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
 2. Delete the file
 3. *Resume Synchronization* in the dropdown menu.
 
 ### Cancel Download in Progress
+
 To abort the download of a file, follow these steps:
 1. Choose *Pause Synchronization* in the Mountain Duck _Synchronization_ menu.
 2. Select *Delete on local Disk* within the Mountain Duck [context menu](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 3. *Resume Synchronization* in the dropdown menu.
 
 ## Recent Files
+
 The *Recent Files* area shows the last 20 changes to files by you or on the server:
-```{image} ../_images/Recent_Files.png
+
+:::{image} ../_images/Recent_Files.png
 :alt: Recent Files
 :width: 600px
-```
+:::
 
-#### ![Delete](../_images/delete.png) Delete
+### ![Delete](../_images/delete.png) Delete
+
 A file or folder has been deleted either *by you* or *on the server*
 
-#### ![Create](../_images/plus.png) Create
+### ![Create](../_images/plus.png) Create
+
 A file or folder was created or updated *on the server*.
 
-#### ![Upload](../_images/transfer_upload.png) Upload
+### ![Upload](../_images/transfer_upload.png) Upload
+
 A file or folder was added or changed *by you* and uploaded to the server.
 
-#### ![Download](../_images/transfer_download.png) Download
+### ![Download](../_images/transfer_download.png) Download
+
 A file is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
 
-#### ![Error](../_images/alert.png) Error
+### ![Error](../_images/alert.png) Error
+
 The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 
 ### Application Display
 
-```{admonition} Windows Only
+:::{admonition} Windows Only
 :class: tip
 
 The application that was used for editing the file is displayed within the *Recent Files* area.
-```
+:::
+
 ### Reveal File
+
 Selecting an item in the *Recent Files* section reveals the file in the _Finder_ (macOS) of _File Explorer_ (Windows).
 
 ### Clear Menu
+
 Clear out all entries of the list by clicking on the *Clear Menu* button at the bottom of the menu.
 
 ## Troubleshooting

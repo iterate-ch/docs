@@ -1,10 +1,10 @@
 AURO
 ====
 
-```{image} _images/Auro_Logo.jpg
+:::{image} _images/Auro_Logo.jpg
 :alt: AURO Logo
 :height: 128px
-```
+:::
 
 > AURO is 100% Canadian owned and operated provider of public cloud infrastructure based on OpenStack.
 

@@ -9,9 +9,9 @@ Rackspace Cloud Files
 
 ## Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 ### Connection Profiles
 
@@ -58,9 +58,9 @@ You can enable private container access logging to `.ACCESS_LOGS` by adding the 
 
 You can access all URLs (including from [CDN](../../protocols/cdn/akamai.md) configurations) from the menu Edit → Copy URL and File → Open URL. 
 
-```{note}
+:::{note}
 You must first open *File → Info → Distribution (CDN)* before these URLs are available.
-```
+:::
 
 ![Copy URLs](_images/Copy_URLs.png)
 
@@ -76,4 +76,6 @@ You can add [custom HTTP headers](../../cyberduck/info.md#metadata-http-headers)
 
 Currently only possible using a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
 
-	defaults write ch.sudo.cyberduck openstack.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"
+```
+defaults write ch.sudo.cyberduck openstack.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"
+```

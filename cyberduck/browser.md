@@ -1,40 +1,39 @@
 Browser
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Navigation
 
 ### List and Outline View
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Select *View → as List (`⌘1`)* or *View → as Outline (`⌘2`)* for expandable folders. You can expand and collapse folders using the right and left arrow keys in the outline view.
 
 Navigate into a folder with a double-click *(`⌘↓`)* or one level up by using the ▲ button next to the path-field *(`⌘↑`)*.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 You can expand and collapse folders using the right and left arrow keys in the outline view.
 
 Navigate into a folder with a doubl-click *(`Ctrl+Down`)* or one level up by using the ▲ button next to the path-field *(`Ctrl+Up`)*.
 
-````
-`````
+:::
+::::
 
 ### Tabs
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 
 Enable tabs by default when choosing *File → New Browser (`⌘N`)* by selecting in System Preferences the checkbox *Dock → Prefer tabs when opening documents: Always*. New browser windows and the transfer window will then be displayed in a single window frame with a tab bar. You can merge windows with *View → Show Tab Bar and Window → Merge all Windows*
-
-```
+:::
 
 ### Spring-Loaded Folders
 
@@ -44,9 +43,9 @@ Spring-loaded folders are a feature that allows you to move a file or even anoth
 
 Use the search field (macOS `⌘/` Windows `Ctrl+F`) to display only files that match the search string in the browser. To search recursively, hit the return key (`⏎`). Only files matching the search or folders with containing files matching the pattern will be displayed in the browser.
 
-```{note}
+:::{note}
 Search is case-insensitive and does look for matching sequences in the filename supporting glob patterns `*` and `?`.
-```
+:::
 
 The following protocols have a server-side index that is used to give fast results without recursively descending into folders.
 
@@ -56,9 +55,9 @@ The following protocols have a server-side index that is used to give fast resul
 - [Backblaze B2](../protocols/b2.md)
 - [Microsoft OneDrive](../protocols/onedrive.md)
 
-```{tip}
+:::{tip}
 You can also search for files by _Version_ where applicable.
-```
+:::
 
 #### Supported Wildcards
 
@@ -117,25 +116,27 @@ The following protocols support server-sided copying without intermediate downlo
 
 You can copy files between arbitrary servers when connected to with two open browser windows. Drag files from one browser to the other to transfer files between servers.
 
-```{image} _images/Copy.png
+:::{image} _images/Copy.png
 :alt: Copy
 :width: 700px
-```
+:::
 
 ### Rename a File or Folder
 
 Select the file in the browser and press the *Return key*. Type the new name and press *Return* again to exit the editing mode. You can also rename files by choosing *File → Info (macOS `⌘I` Windows `Alt+Return`)* or press the *Get [Info](info.md)* toolbar button. Simply enter the new name in the very top field. The field must lose focus (e.g. by hitting Return or Tab) to commit the filename change.
 
-```{image} _images/Inline_Rename.png
+:::{image} _images/Inline_Rename.png
 :alt: Inline Rename
 :width: 300px
-```
+:::
 
 ### Deleting Files and Folders
 
 Some protocols support the trashing of files instead of permanently deleting them.  This feature is enabled by default. It can be disabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
-	browser.delete.trash=false
+```
+browser.delete.trash=false
+```
 
 This is supported for the following protocols: 
 - [Google Drive](../protocols/googledrive.md)
@@ -150,17 +151,16 @@ Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `
 
 ### Quick Look
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 
 You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*. A preview is rendered depending on a Quick Look Plugin available on your system for the given file type. Many file types like different image formats can be previewed with the bundled plugins in OS X and HTML is even rendered in the Quick Look preview panel.
+:::
 
-```
-
-```{image} _images/quicklook.png
+:::{image} _images/quicklook.png
 :alt: Quicklook
 :width: 500px
-```
+:::
 
 ### Open or Copy HTTP URL
 
@@ -185,22 +185,22 @@ Use the *File → Print* option where you can open a PDF from the browser listin
 
 Folder icons are badged for particular access permissions.
 
-```{image} _images/privatefolderbadge.png
+:::{image} _images/privatefolderbadge.png
 :alt: Private Folder Badge
 :width: 50px
-``` 
+:::
 Folder with no permission to access.
 
-```{image} _images/readonlyfolderbadge.png
+:::{image} _images/readonlyfolderbadge.png
 :alt: Read Only Folder Badge
 :width: 50px
-```
+:::
 Folder with read-only permissions. Uploading or editing files to this folder is not possible.
 
-```{image} _images/dropfolderbadge.png
+:::{image} _images/dropfolderbadge.png
 :alt: Drop folder Badge
 :width: 50px
-```
+:::
 Drop Folder where you can only upload files to but are not allowed to view its content.
 
 ### Versions 
@@ -215,10 +215,10 @@ To revert to a previous version and make it the current, choose *File → Revert
 
 Use *Window → Activity (macOS `⌘0` Windows `Ctrl+0`)* to toggle the activity window. It lists the currently running background tasks at the top and all queued activities subsequently.
 
-```{image} _images/Activity.png
+:::{image} _images/Activity.png
 :alt: Activity
 :width: 500px
-```
+:::
 
 ## Problems
 
@@ -242,17 +242,17 @@ Open new browser window after application launch.
 
 ### Browser → General 
 
-### Browser → General → Show Hidden Files
+#### Browser → General → Show Hidden Files
 
 Display files in the browser that start with `.` and [previous revisions (S3)](../protocols/s3/index.md#versions). Use *View → Show Hidden Files* to toggle the mode of a current browser window.
 
-### Browser → General → Double click opens file in external editor
+#### Browser → General → Double click opens file in external editor
 Open files in a external editor by double-clicking
 
-### Browser → General → Return key selects folder or file to rename
+#### Browser → General → Return key selects folder or file to rename
 Use ⏎ key to select a file or folder for renaming 
 
-### Browser → General → Info window always shows current selection
+#### Browser → General → Info window always shows current selection
 
 Use only one *Info* window which updates with the selection change in the browser. If unchecked, open multiple Info windows to compare files.
 
@@ -262,13 +262,17 @@ Use only one *Info* window which updates with the selection change in the browse
 
 A [hidden configuration option](preferences.md#hidden-configuration-options).
 
-    defaults write ch.sudo.cyberduck browser.font.size 18
+```
+defaults write ch.sudo.cyberduck browser.font.size 18
+```
 
 ### Duplicate Filename Format
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). Define a different format using 
 
-    defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"
+```
+defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"
+```
 
 where the plaseholders will be replaced with
 
@@ -280,30 +284,38 @@ where the plaseholders will be replaced with
 
 A [hidden configuration option](preferences.md#hidden-configuration-options). A confirmation is shown before renaming or moving files.
 
-    defaults write ch.sudo.cyberduck browser.move.confirm true
+```
+defaults write ch.sudo.cyberduck browser.move.confirm true
+```
 
 ### Re-Enable File Listing Limit Prompt
 
 A [hidden configuration option](preferences.md#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
 
-````{tabs}
-
-```{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Open *Terminal.app* and execute the command
 
-	defaults delete ch.sudo.cyberduck browser.list.limit.directory
-and the command
-
-	defaults delete ch.sudo.cyberduck browser.list.limit.container
+```
+defaults delete ch.sudo.cyberduck browser.list.limit.directory
 ```
 
-```{group-tab} Windows
+and the command
+
+```
+defaults delete ch.sudo.cyberduck browser.list.limit.container
+```
+
+:::
+:::{group-tab} Windows
 
 Navigate to `%AppData%\Cyberduck` and search within the existing `Cyberduck.exe_Url_<random characters>` folders after the folder that is named after your currently used Cyberduck version. Open the file *user.config* that is located within that folder and delete the lines
 
-	<setting name="browser.list.limit.directory"
-	<setting name="browser.list.limit.container"
+```
+<setting name="browser.list.limit.directory"
+<setting name="browser.list.limit.container"
 ```
 
-````
+:::
+::::

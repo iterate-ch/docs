@@ -3,10 +3,10 @@ DRACOON
 
 Cloud service made in Germany. DRACOON as a Cloud Service in ISO 27001 certified data centers.
 
-```{image} _images/dracoon.png
+:::{image} _images/dracoon.png
 :alt: DRACOON Drive Icon
 :width: 128px
-```
+:::
 
 > [DRACOON](https://www.dracoon.com/en/home#) is a highly secure, platform-independent enterprise file sharing solution, which has repeatedly won awards as a market leader. It is certified according to the highest compliance guidelines. Unique to the solution is the own developed TripleCrypt technology with end-to-end encryption as well as the authorization system for high demands in the enterprise business environment.
 
@@ -21,9 +21,9 @@ Open a [free account](https://www.dracoon.com/en/free) with 10 users including 1
 - {download}`Download<https://profiles.cyberduck.io/DRACOON%20(OAuth).cyberduckprofile>` the *DRACOON (OAuth) connection profile*.
 - {download}`Download<https://profiles.cyberduck.io/DRACOON%20(CLI).cyberduckprofile>` the *DRACOON (OAuth Password Flow) connection profile*.
 
-```{note}
+:::{note}
 The DRACOON (OAuth) connection profile is bundled by default with Cyberduck.
-```
+:::
 
 ### Authentication With Username and Password 
 

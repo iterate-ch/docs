@@ -1,10 +1,10 @@
 FAQ
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## General
 
@@ -16,10 +16,10 @@ Cyberduck is an open-source server and cloud storage browser for Mac and Windows
 
 Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this program useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key and it will help to make Cyberduck even better!
 
-```{image} _images/Donation_Prompt.png
+:::{image} _images/Donation_Prompt.png
 :alt: Donation Prompt
 :width: 600px
-```
+:::
 
 #### What Payment Options are Available?
 
@@ -88,8 +88,8 @@ The registration key is sent to you by email automatically after the Paypal tran
 
 ### Preferences and Application Support Files Location
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookmarks, history, and [connection profiles](../protocols/profiles/index.md) are saved in the application support directory. These settings are shared with [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
@@ -97,8 +97,8 @@ Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookma
 
 Navigate to the *Library* folder using `⌘⇧-L` or use *Go → Go to Folder...* in Finder.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Bookmarks, history, [connection profiles](../protocols/profiles/index.md), and workspace information are saved in the application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
 
@@ -110,8 +110,8 @@ For the Windows Store version refer to
 
 Preferences are stored in `%AppData%\Cyberduck\cyberduck.user.config`. Please note that settings in `%AppData%\Cyberduck\default.properties` takes precedence over `user.config`.
 
-````
-`````
+:::
+::::
 
 ## Where can I Issue Bug Reports and Feature Requests?
 

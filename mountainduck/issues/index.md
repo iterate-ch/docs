@@ -1,64 +1,66 @@
 Known Issues
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 
 fastcgi
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Performance Considerations
 
 To reduce the number of requests to the remote server for mounted volumes, we recommend the following settings when running in *Online* connect mode.
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
+
 **Finder.app**<br/>
 
 - Choose *View → Hide Preview* (⌘⇧P)
 - Disable *View → Show View Options → Show icon preview*
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
+
 **Windows Explorer**<br/>
 Choose *File Explorer → Folder Options*.
 
 - Check *Always show icons, never thumbnails*
 - Check *Display File Icon on thumbnails*
 - Uncheck *Show preview handlers in preview pane*
-````
 
-`````
+:::
+::::
 
 ## Temporary Files
 When opening files with status _Online only_ or when connected with _Online_ connect mode, it may be required to temporarily cache contents depending on the read pattern of the application opening the file. Data is stored in the temporary file location of the operating system and allows for faster access when repeatedly reading the file. Temporary files are deleted as soon as the application closes the file after reading, unless the option _Enable buffering_ checked in _Preferences → Sync_. 
 
-```{tip}
+:::{tip}
 When enabled _Preferences → Sync → Enable buffering_ is enabled:
 * In _Online_ connect mode, buffered content in temporary files is kept until disconnecting the bookmark.
 * In _Smart Synchronization_ connect mode, the buffer contents is moved from the temporary folder to the local cache and the status of the file changes to _Up to Date_.
-```
+:::
 
 ## Filenames
 
 ### Files and Folders not Synced from Server
 Files matching the following naming pattern are excluded from folder listings and not synchronized from the server. These characters are reserved for the operating system or file system and can't be used to name files or directories.
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 - `:` (colon)
 - `/` (forward slash)
 - `\` (backslash)
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 - `<` (less than)
 - `>` (greater than)
@@ -70,8 +72,8 @@ Files matching the following naming pattern are excluded from folder listings an
 - `?` (question mark)
 - `*` (asterisk)
 
-````
-`````
+:::
+::::
 
 ### Files and Folders not Uploaded to Server
 Files and folders matching temporary filename patterns are excluded from sync by default. This includes `.DS_Store`,`*~$`, `*~.*`, `._~$*`, `*.tmp`, `~*.tmp`, `*~*.TMP`, `*.swap`, `*.swp`, `.TemporaryItems`, `.dat.nosync*`, `DBTmp*`, `*.lck`, `*.idlk`, `Desktop.ini`, `Thumbs.db`, `*.crdownload`, `*.part`
@@ -81,18 +83,18 @@ Files and folders matching temporary filename patterns are excluded from sync by
 
 New empty (0-byte) files created in _Windows Explorer_ using _New → …_ are not transferred to the server. New folders created in _Finder.app_ or _Windows Explorer_ not renamed are not uploaded to the server. Change the folder name to something else than *Untitled Folder* on macOS or *New Folder* on Windows to synchronize to the server.
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 In _Finder.app_: *Untitled folder* and localized variants created using _File → New Folder_
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 In _Windows Explorer_: *New folder* and localized variants created using _New → Folder_
 
-````
-`````
+:::
+::::
 
 ## Known Issues
 
@@ -136,9 +138,9 @@ The directory listing in *Finder.app* on macOS or *File Explorer* on Windows may
 * With [_Preferences → Sync → Index Files_](../preferences.md#index-files) enabled, folders previously opened are polled for changes and new files in _Smart Synchronization_ connect mode.
 * Immediately look for changes from the server when opening a new folder in _Finder.app_ on macOS or _File Explorer_ on Windows.
 
-```{tip}
+:::{tip}
 You can explicitly request to look for changes on the server in a folder by choosing *Reload* from the [context menu](../interface.md#reload).
-```
+:::
 
 ### Cache Uses a lot of Disk Space
 
@@ -148,20 +150,20 @@ The cache size can be limited per bookmark in *Preferences → Sync*. Also files
 
 The cache directory is located in `%LocalAppData%\Cyberduck\Cache` on Windows or within *Application Support folder* on macOS by default. You can [change the cache location](../preferences.md#cache-location) to any writable location. You can clear cached files from the local disk with the *Delete on local disk* [context menu](../connect/sync.md#delete-on-local-disk) option.
 
-```{image} ../_images/Custom_Location_Sync_Cache.png
+:::{image} ../_images/Custom_Location_Sync_Cache.png
 :alt: Send Command
 :width: 600px
-```
+:::
 
 ### Insufficient Disk Space 
 
 If the available disk space on the mounted volume is below 100MB a soft quota notification will be displayed saying *Insufficient space*. 
 Synchronization is paused when the soft quota is reached.
 
-```{image} ../_images/Soft_Quota_Disk_Space.png
+:::{image} ../_images/Soft_Quota_Disk_Space.png
 :alt: Soft Quota Insufficient disk space
 :width: 400px
-```
+:::
 
 This quota information is only available for the following protocols:
 - [WebDAV](../../protocols/webdav/index.md)
@@ -175,9 +177,9 @@ This quota information is only available for the following protocols:
 
 *Synology Drive* is not supported natively. You can try to view your *Synology Drive* files by connecting to your *Synology NAS*. To do that connect to your *Synology NAS* using the protocol **SFTP, FTP,** or **WebDAV** with the path `home/Drive`.
 
-```{note}
+:::{note}
 This won't allow you to view and access shared files and folders.
-```
+:::
 
 ### Graphical Artifacts with VLC player
 
@@ -185,8 +187,8 @@ Playing video files from a mounted drive using VLC player can cause graphical ar
 
 ### Missing Sync Status Icons
 
-`````{tabs}
-````{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 **Finder**<br/>
 When you have other applications installed that register a Finder Extension (macOS) for the volume mounted, the status icon may not appear. This has been reported for the following applications:
@@ -198,23 +200,24 @@ When you have other applications installed that register a Finder Extension (mac
 
 Please check in *System Preferences → Extension → Finder* for other applications that may override the badge icons. For **macOS Ventura and later**, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 
-```{note}
+:::{note}
 If none of those applications are in use, a Finder re-launch can make the badge icons appear again.
-```
+:::
 
-````
-````{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 **Explorer**<br/>
 Windows has a limitation on the number of applications that can register for bagde icons in File Explorer. You will need to either uninstall other applications or edit your registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers`.
 You can find this well documented by Microsoft at [Sync icon overlays are missing](https://support.office.com/en-us/article/sync-icon-overlays-are-missing-from-onedrive-and-onedrive-for-business-b25070ab-2226-4ad8-b1fc-ae28cc44ecd2).
-````
-````` 
+
+::::
+::::: 
 
 ### Operating System Specific Issues
 
-`````{tabs}
-````{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 **Missing Status Bar Icon**<br/>
 Using applications customizing the status menus may lead to a missing status icon of Mountain Duck. This has been reported for the following applications:
@@ -234,7 +237,9 @@ Files opened in Preview.app and edited cannot be saved at the original location 
 **Enable Application Icon in Dock**<br/>
 As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property:
 
-    defaults write io.mountainduck application.dock.icon.enable true
+```
+defaults write io.mountainduck application.dock.icon.enable true
+```
 
 **Mounted Volumes do not Appear on the Desktop**<br/>
 Navigate to volumes using `⌘⇧C` in a *Finder.app* window or choose *Finder → Preferences ... → General → Show these items on the desktop: Connected Servers* to make the volume appear on the desktop. Mounted volumes are also listed in the *Finder.app* sidebar in *Favorites*.
@@ -244,10 +249,10 @@ The Spotlight search does not work on remote volumes.
 
 **Spotlight Indexer**<br/>
 To prevent the indexing through Spotlight the default mount location has been changed to `Volumes.noindex`. In case you **do** want the mount location to be indexed by Spotlight, use the *Terminal.app* command `mdutil -i on <mount location>`. Additionally, [mount location](../preferences.md#mount-location) to a directory without the extension `.noindex`.
-```{attention}
-Enabling Spotlight can cause high CPU and bandwidth usage while indexing folders. 
-```
 
+:::{attention}
+Enabling Spotlight can cause high CPU and bandwidth usage while indexing folders. 
+:::
 
 **Multiple Mountain Duck Finder Extensions Processes**<br/>
 The system may launch additional copies of *Mountain Duck Finder Extension* whenever an Open or Save dialog is displayed. This means there may be multiple copies of the extension running at once, and some may be very short-lived.
@@ -260,11 +265,12 @@ This is an issue within the operating system that can occur to any network drive
 **Extended Attributes**<br/>
 Extended attributes containing metadata about the files some applications write in addition to the file content are saved in auxiliary `._*` files. These are only saved in a temporary location and not synchronized. If you want to save `._*` files to the server set the [hidden configuration option](../preferences.md#hidden-configuration-options):
 
-    defaults write io.mountainduck fs.filenames.metadata.enable false
+```
+defaults write io.mountainduck fs.filenames.metadata.enable false
+```
 
-
-````
-````{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 **File System Driver isn't set up Properly**<br/>
 Error: `A volume has been accessed for which a file system driver is required that has not yet been loaded`
@@ -300,7 +306,9 @@ You can close that overlay by holding your mouse cursor for about 3 seconds on t
 **Dot Files are not Hidden**<br/>
 By default, files starting with `.` aren't hidden by Windows Explorer. You can change the default by using a [hidden configuration option](../preferences.md#hidden-configuration-options).
 
-    browser.hidden.regex=\\..*
+```
+browser.hidden.regex=\\..*
+```
 
 **Robocopy Timestamp Accuracy**<br/>
 Windows has a sub-second timestamp accuracy while protocols like SFTP have an accuracy of a second. This discrepancy causes unnecessary transfers when subsequent runs find non-matching timestamps on unchanged files. 
@@ -309,9 +317,8 @@ Using the command `robocopy /MIR /FFT` instead of `robocopy /MIR` fixes the beha
 
 Additional information on *robocopy* can be found in the microsoft [documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy).
 
-````
-
-`````
+::::
+:::::
 
 ## Interoperability
 
@@ -342,20 +349,20 @@ May interfere with installation.
 
 ### Backups
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 **Time Machine**<br/>
 Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks mounted using Apple File Protocol (AFP). See [Backup disks you can use with Time Machine](https://support.apple.com/en-us/HT202784).
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 **Windows Backup**<br/>
 Volumes mounted with Mountain Duck cannot be used by *Windows Backup*. It can only save backups on destinations that are located within your local system or within your local network.
 
-````
-`````
+:::
+::::
 
 ## Bug Reports and Feature Requests
 

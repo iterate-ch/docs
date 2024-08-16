@@ -1,7 +1,7 @@
 Mountain Duck
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 installation/index
@@ -14,7 +14,7 @@ versions
 preferences
 issues/index
 support
-```
+:::
 
 Cyberduck for mounting volumes in the file explorer is available for Mac & Windows.
 

@@ -1,10 +1,10 @@
 Selectel Cloud Storage
 ====
 
-```{image} _images/selectel.png
+:::{image} _images/selectel.png
 :alt: Selectel Drive Icon
 :width: 128px
-```
+:::
 
 > [Selectel Cloud Storage](https://selectel.ru/en/services/cloud/storage/) is a durable solution for developers and businesses.
 

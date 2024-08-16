@@ -1,14 +1,14 @@
 Google Drive
 ====
 
-```{image} _images/googledrive.png
+:::{image} _images/googledrive.png
 :alt: Google Drive Icon
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream* or *Drive for Desktop*.
-```
+:::
 
 ## Connecting
 
@@ -16,17 +16,17 @@ Connect to your [Google Drive](http://drive.google.com/) to store plain files.
 
 ### Authentication
 
-```{attention}
+:::{attention}
 Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google Drive anymore because of the deprescated OAuth out-of-band flow.
-```
+:::
 
 Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to *View and manage the files in your Google Drive*. The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
 
-```{admonition} Advanced Protection Program
+:::{admonition} Advanced Protection Program
 :class: warning
 
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
-```
+:::
 
 ### Google Apps Accounts
 
@@ -36,10 +36,11 @@ To access the Google Docs storage of your company's [Google Apps](https://worksp
 
 Refer to [Signing in using application-specific passwords](http://support.google.com/accounts/bin/answer.py?answer=185833) on how to set an application-specific password to access Google Drive with 2-step verification enabled for your Google Account.
 
-```{admonition} Multiple Accounts
+:::{admonition} Multiple Accounts
 :class: tip
+
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
-```
+:::
 
 ### Reset OAuth Tokens
 
@@ -54,11 +55,14 @@ You can register a [custom OAuth 2.0 client ID](profiles/google_client_id.md) wi
 ## Cyberduck CLI
 You can list the root contents of your Google Drive with [Cyberduck CLI](https://duck.sh/) using
 
-	duck --list googledrive:/
+```
+duck --list googledrive:/
+```
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Google to allow the lookup of previously saved OAuth tokens.
 
 ## Features
+
 ### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
@@ -71,7 +75,9 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 
 Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
 
-	browser.delete.trash=false
+```
+browser.delete.trash=false
+```
 
 ### Documents
 
@@ -82,9 +88,9 @@ For Google Docs documents (*Docs, Sheets, Slides*), URL shortcut files are displ
 - `.webloc` on macOS
 - `.url` on Windows
 
-```{attention}
+:::{attention}
 *Google Docs* files can't be managed (renamed, moved, or deleted) within Mountain Duck or Cyberduck. 
-```
+:::
 
 #### Team Drives
 
@@ -105,6 +111,7 @@ Create download [shares](../cyberduck/share.md#google-drive) of files or folders
 Google Drive is imposing rate limits to requests resulting in `403 Forbidden` replies indicating the *Rate Limit Exceeded* error. Make sure you have set to *Repeat failed networking tasks* in [Preferences → Connection](../cyberduck/connection.md#repeat-failed-networking-tasks) and set a delay.
 
 ### Top Level folder
+
 It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
 
 | Folder Name    |         Contents         |

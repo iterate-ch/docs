@@ -32,9 +32,9 @@ You can assign a default root object for your distribution. This default object 
 
 You can access all URLs (including from CDN configurations) from the menu *Edit → Copy URL* and *File → Open URL*. 
 
-```{note}
+:::{note}
 You must first open *File → Info → Distribution (CDN)* before these URLs are available.
-```
+:::
 
 ![Copy URL](_images/Copy_URLs.png)
 

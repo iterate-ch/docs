@@ -1,23 +1,23 @@
 Connection Profiles
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 google_client_id
 aws_oidc
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - [Third-Party S3 providers](../s3/index.md#third-party-providers)
 - [OpenStack Providers](../openstack/index.md#third-party-providers)
@@ -28,25 +28,25 @@ Connection profiles can be activated by either installing the file by double-cli
 
 ## Contributing Connection Profiles
 
-```{admonition} Info
+:::{admonition} Info
 :class: tip
 
 To contribute new connection profiles, open a pull request in the [`iterate-ch/profiles` repository](https://github.com/iterate-ch/profiles). Once the pull request is approved the profile will be available through the _Preferences → Profiles_ tab in [Mountain Duck](../../mountainduck/preferences.md#profiles) and Cyberduck.
-```
+:::
 
 ### Technical File Format Specification
 
-```{note}
+:::{note}
 Connection profile files ([XML Property List Format](http://en.wikipedia.org/wiki/Property_list)) can be created for customers to make it easier to connect with a double-click on that file without entering the connection details manually. [Contact us](mailto:support@cyberduck.io) if you are a service provider and need assistance in setting this up.
-```
+:::
 
 The following properties can be defined in a connection profile:
 
 - `Protocol` *(Required)*
 - `Vendor` (Hosting Provider) *(Required)*
-```{important}
+:::{important}
 The value of `Vendor` must be unique among all installed connection profiles.
-```
+:::
 - `Description` *(Required)*
 - `Default Nickname` Prefilled bookmark name.
 - `Default Hostname` Prefilled server name.
@@ -56,9 +56,9 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Port Configurable` Boolean if port number is configurable.
 - `Default Path`
 - `Schemes` Additional array of schemes this profile can be referenced with in [Cyberduck CLI](../../cli/index.md)
-```{note}
+:::{note}
 All additional schemes are registered as a scheme handler when opening [Mountain Duck](../../mountainduck/index.md). This allows to reference files and folders in a web application using a custom scheme like `customscheme:/(/<hostname>)/path` to open in Windows Explorer or Finder.
-```
+:::
 - `Username Configurable` Boolean if username is configurable.
 - `Username Placeholder` Suggestion for username in login credentials. Used for input field label when editing bookmark.
 - `Password Placeholder` Suggestion for password in login credentials. Used for input field label when editing bookmark.
@@ -154,25 +154,27 @@ All additional schemes are registered as a scheme handler when opening [Mountain
 Create a *multi-TIFF* containing the needed icon sizes:
 1. Create a high-resolution *.png* file based on the PSD template
 2. Use the following script to generate the different resolutions and the multi-TIFF *disk.tiff* file:
-    ```{code-block}
-    png=[LOCATION_OF_HIGH_RESOLUTION_PNG]
-    tmp=$TMPDIR
-    target=[TARGET_FOLDER]
-    /usr/bin/sips -s format png -z 128 128 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_64x64@2x.png
-    /usr/bin/sips -s format png -z 64 64 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_64x64.png
-    /usr/bin/sips -s format png -z 96 96 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_96@2x.png
-    /usr/bin/sips -s format png -z 48 48 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_96.png
-    /usr/bin/sips -s format png -z 256 256 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_256@2x.png
-    /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
-    /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/disk.tiff
-    ```
+  ```
+  png=[LOCATION_OF_HIGH_RESOLUTION_PNG]
+  tmp=$TMPDIR
+  target=[TARGET_FOLDER]
+  /usr/bin/sips -s format png -z 128 128 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_64x64@2x.png
+  /usr/bin/sips -s format png -z 64 64 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_64x64.png
+  /usr/bin/sips -s format png -z 96 96 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_96@2x.png
+  /usr/bin/sips -s format png -z 48 48 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_96.png
+  /usr/bin/sips -s format png -z 256 256 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_256@2x.png
+  /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
+  /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/ disk.tiff
+  ```
 3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
 
 ## Sample Connection Profiles
 
 ### Google Custom OAuth Client ID
+
 - [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](google_client_id.md).
 
 ### S3 and OpenID Connect Federation 
+
 Customization of connection profiles using OpenID Connect provider and AssumeRoleWithWebIdentity STS API
 - [Sample connection profiles for S3 and OpenID Connect Federation](aws_oidc.md)

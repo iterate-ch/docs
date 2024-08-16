@@ -1,7 +1,7 @@
 Cyberduck 
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 installation
@@ -21,21 +21,21 @@ notifications
 spotlight
 support
 faq
-```
+:::
 
 ## Quick Reference Cheat Sheet
 
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
-```{image} _images/Cyberduck_Quick_Reference_Page_1.png
+:::{image} _images/Cyberduck_Quick_Reference_Page_1.png
 :alt: Cyberduck Quick Reference Page 1
 :width: 700px
-```
+:::
 
-```{image} _images/Cyberduck_Quick_Reference_Page_2.png
+:::{image} _images/Cyberduck_Quick_Reference_Page_2.png
 :alt: Cyberduck Quick Reference Page 2
 :width: 700px
-```
+:::
 
 ## [Opening Connections](connection.md)
 
