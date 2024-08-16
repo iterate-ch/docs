@@ -24,7 +24,7 @@ Select _Enable APIs & services_ and search for "Google Drive API" in the search 
 :width: 600px
 :::
 
-The results will show three with the Google Drive icon. Select te result called _Google Drive API_ and enable it. The other two are optional but not necessary.
+The results will show three with the Google Drive icon. Select the result called _Google Drive API_ and enable it. The other two are optional but not necessary.
 
 :::{image} _images/Search_Google_API.png
 :alt: API Library Google Drive

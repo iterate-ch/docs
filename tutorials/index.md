@@ -21,4 +21,4 @@ Step-by-step instruction how to setup and use Mountain Duck
 
 ### [Workarounds](workarounds/index.md)
 
-Instructions for specific workarounds as well as generall topics.
+Instructions for specific workarounds as well as general topics.
