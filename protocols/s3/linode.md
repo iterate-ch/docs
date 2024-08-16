@@ -7,9 +7,9 @@ Linode Object Storage
 
 ### Connection Profile
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - **Linode Object Storage (France, Paris)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(fr-par-1).cyberduckprofile>` the *Linode Object Storage (Paris) Connection Profile* for preconfigured settings.
 - **Linode Object Storage (Milan, Italy)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(it-mil-1).cyberduckprofile>` the *Linode Object Storage (Milan) Connection Profile* for preconfigured settings.
@@ -45,10 +45,10 @@ Within the *Create an Access Key* menu:
 
 After submitting a window will be displayed containing the *Access Key* and *Secret Key*. 
 
-```{note}
+:::{note}
 The window will only be displayed once and the *Secret Key* cannot be retrieved once the window is closed!
 Make sure to keep the credential somewhere safe.
-```
+:::
 
 ## References
 

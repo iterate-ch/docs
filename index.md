@@ -1,42 +1,42 @@
 Cyberduck & Mountain Duck Help
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 :caption: Cyberduck
 
 cyberduck/index
-```
+:::
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 :caption: Cyberduck CLI
 cli/index
-```
+:::
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 :caption: Mountain Duck
 mountainduck/index
-```
+:::
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 :caption: Supported Protocols
 protocols/index
 protocols/profiles/index
-```
+:::
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 :caption: Cryptomator
 cryptomator/index
-```
+:::
 
 ## Support
 

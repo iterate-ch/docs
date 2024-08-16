@@ -5,20 +5,20 @@ Support
 
 Inside the application support folder, the application saves files needed for their operations e.g. settings, log data, history files, etc.
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 You can reach the application support folder by choosing `Go → Go to folder` within the *Finder* menu, copying the path below into the appearing window, and clicking on the *Open* button afterward.
 
 `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/`
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 You can reach the application support folder by navigating to `%AppData%\Cyberduck` by copying the path into the address bar of the Explorer and press *Return* afterward.
 
-````
-`````
+:::
+::::
 
 ## Bug Reports and Feature Requests
 
@@ -26,18 +26,18 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 
 ### Logging Output
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file named *mountainduck.log*.
 
-````
-`````
+:::
+::::
 
 #### Debug Log
 
@@ -51,11 +51,9 @@ It can be reached by clicking on the Show button within _Mountain Duck → Prefe
 
 #### Installation Log
 
-```{admonition} Windows only
-Windows only
-```
-
+:::{admonition} Windows only
 The installation log contains records of all actions performed by the setup program and by other executable files related to installation. It is required for troubleshooting if you encounter errors during the installation process. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
+:::
 
 ### Feature Request
 
@@ -63,18 +61,18 @@ Please make sure to include a detailed description of the feature you'd like to 
 
 ## Crash Reports
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.crash`. On macOS 12 or later crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.ips`.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Crash reports are saved to `%AppData%\cyberduck\CrashReporter`.
 
-````
-`````
+:::
+::::
 
 ## Get Support
 

@@ -1,2 +1,2 @@
-```{include} ../cyberduck/info.md
-```
+:::{include} ../cyberduck/info.md
+:::

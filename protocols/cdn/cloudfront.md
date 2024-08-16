@@ -3,9 +3,9 @@ Amazon CloudFront Support
 
 Amazon CloudFront delivers your static and streaming content using a global network of edge locations. Requests for your objects are automatically routed to the nearest edge location, so content is delivered with the best possible performance. You can enable download or streaming distributions using *File → Info → Distribution* for a [S3](../s3/index.md) bucket or a custom origin distribution for any other source.
 
-```{note}
+:::{note}
 Using CloudFront can be more cost effective if your users access your objects frequently because, at higher usage, the price for CloudFront data transfer is lower than the price for Amazon S3 data transfer. In addition, downloads are faster with CloudFront than with Amazon S3 alone because your objects are stored closer to your users.
-```
+:::
 
 ## Permissions
 
@@ -25,20 +25,21 @@ Delivery method _Website Configuration (HTTP)_ to enable a [website endpoint](..
 
 Delivery method _Website Configuration (HTTP) CDN_  is using a custom origin CDN distribution with a [website endpoint](../s3/index.md#website-configuration) as a source to make use of the website endpoint features in CloudFront.
 
-```{attention}
+:::{attention}
 You must also enable the website endpoint using the delivery method _Website Configuration (HTTP)_ to make sure the CloudFront edge locations can fetch the content from the origin.
-```
+:::
 
 ## References
 
 - [Using CloudFront with the new Amazon S3 static website hosting features](https://forums.aws.amazon.com/ann.jspa?annID=921)
 
 ## Streaming (RTMP) Distributions
+
 Delivery method _Streaming (RTMP) CDN)_ used to serve [media](http://en.wikipedia.org/wiki/Flash_Video) using a [streaming protocol](http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol).
 
-```{attention}
+:::{attention}
 Discontinued on December 31, 2020 within CloudFront. For further information refer to the [AWS announcement](https://forums.aws.amazon.com/ann.jspa?annID=7356).
-```
+:::
 
 ### Playback Configuration
 
@@ -73,15 +74,18 @@ The first time your content is served to a worldwide user (one in Tokyo, for exa
 | CDN CNAME URL | http://cdn.cyberduck.ch/img/cyberduck.icon.png | URL for resource in CDN with custom hostname registered in the DNS |
 
 ## Options
+
 Refer to [Info](../../cyberduck/info.md#cdn-panel) for configuration options.
 
 ## Copy URLs
+
 CloudFront URLs are available in the regular *Copy URL* menu. Refer to [Open or Copy HTTP URL](../../cyberduck/browser.md#open-or-copy-http-url).
 
 ## Access S3 through CloudFront
+
 You can access S3 buckets through CloudFront. Although not a typical use case, this may be of interest to save bandwidth costs when working with files in S3. For example using [Cyberduck CLI](../../cli/index.md).
 
-```{code-block}
+```
 duck --user anonymous --list s3://djynunjb246r8.cloudfront.net/
 ```
 

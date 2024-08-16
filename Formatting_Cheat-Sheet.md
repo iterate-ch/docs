@@ -5,6 +5,18 @@ orphan: true
 Formatting Cheat Sheet
 ====
 
+## General Formatting Guidelines
+
+Add an empty line...
+- ...after a heading
+- ...before and after an admonition or codeblock
+- ...after the admonition class for custom admonitions
+- ...after a tab opening and before a tab closing as shown in the [Tabs Section](#tabs)
+- ...before and after tables
+- ...before and after image inserts with custom properties
+
+Don't add an empty line around admonitions within lists
+
 ## Footnotes
 
 - This is a manually-numbered footnote reference.[^3]
@@ -28,19 +40,18 @@ that are not separated by a blank line
 
 ## Tabs
 
-````{tabs}
-
-```{group-tab} macOS
-
-test
-```
-
-```{group-tab} Windows
+::::{tabs}
+:::{group-tab} macOS
 
 test
-```
 
-````
+:::
+:::{group-tab} Windows
+
+test
+
+:::
+::::
 
 ---
 

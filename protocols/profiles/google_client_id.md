@@ -11,14 +11,15 @@ Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/
 
 * Choose _Desktop app_ as the _Application type_ which will result in a Client ID with a suffix like `number-id.apps.googleusercontent.com`.
 
-```{image} _images/Google_Create_OAuth_Client_ID.png
+:::{image} _images/Google_Create_OAuth_Client_ID.png
 :alt: Google Create OAuth Client ID
 :width: 600px
-```
-```{image} _images/Google_Client_ID_and_client_secret.png
+:::
+
+:::{image} _images/Google_Client_ID_and_client_secret.png
 :alt: Google Client ID and Client Secret
 :width: 600px
-```
+:::
 
 * Edit the OAuth Consent Screen* to add the scopes *Google Cloud Storage JSON API* `../auth/devstorage.read_write` and/or *Google Drive API* `../auth/drive`. You will first need to enable *Google Drive* in the Google API Library.
 
@@ -31,8 +32,8 @@ Create a custom [connection profile](index.md) with the following properties.
 - `OAuth Redirect Url`. Use the reverse notation of the client id and set it like
 
 ```
-<key>OAuth Redirect Url</key>
-<string>com.googleusercontent.apps.number-id:oauth</string>
+        <key>OAuth Redirect Url</key>
+        <string>com.googleusercontent.apps.number-id:oauth</string>
 ```
 
 ### Sample Google Drive with Custom OAuth Client ID Connection Profile

@@ -1,23 +1,23 @@
 Connect mode
 ===
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 sync
 online
-```
+:::
 
 When connecting to a server, you can choose between *[Online](online.md)* and *[Smart Synchronization](sync.md)* connect
 mode.
 
-```{admonition} Online
+:::{admonition} Online
 In _Online_ connect mode, changes to a file are immediately uploaded and in sync when an application has finished saving a file.
-```
+:::
 
-```{admonition} Smart Synchronization
+:::{admonition} Smart Synchronization
 In _Smart Synchronization_ connect mode, files are copied to a local cache for faster access prior synchronization with the server in the background.
-```
+:::
 
 ## Feature Comparison
 
@@ -33,6 +33,7 @@ In _Smart Synchronization_ connect mode, files are copied to a local cache for f
 | **[Share Files](../share.md)**           | ✔                                                                     | ✔                                                                             |
 
 ## Quota Support
+
 Mountain Duck displays the overall quota present on the server as available disk space on the mounted volume.
 
 | Protocol                 | Support |
@@ -57,14 +58,15 @@ Mountain Duck displays the overall quota present on the server as available disk
 | [Windows Azure ](../../protocols/azure.md)         | ❌ |
 | [OpenStack Object Storage](../../protocols/openstack/index.md)  | ✅ |
 
-```{admonition} Limited Support
+:::{admonition} Limited Support
 :class: attention
+
 - **[Microsoft OneDrive](../../protocols/onedrive.md#quota)**: Quota is only supported when setting the *Path* in the bookmark configuration to a folder different from `/`.
 - **[Microsoft SharePoint](../../protocols/sharepoint.md#quota)**: Quota is only supported when setting the *Path* in the bookmark configuration to a *Drives* folder in a SharePoint site folder.
-```
+:::
 
 Some protocols do not report the available quota. Finder and Windows Explorer will show exabyte values in *Online* connect mode and the available space within the synchronization cache location on your local disk in *Smart Synchronization* connect mode for the affected protocols.
 
-```{note}
+:::{note}
 Quota support can be [disabled](../../protocols/sftp/index.md#free-space-calculation-is-incorrect) for all protocols.
-```
+:::

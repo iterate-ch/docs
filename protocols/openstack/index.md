@@ -1,7 +1,7 @@
 Swift (OpenStack Object Storage)
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 auro
@@ -19,25 +19,25 @@ ovh
 selectel
 swiftstack
 zetta.io
-```
+:::
 
-```{image} _images/swift.png
+:::{image} _images/swift.png
 :alt: Swift Drive Icon
 :width: 128px
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Connecting
 
 Connect to a [Swift (OpenStack Object Storage)](https://docs.openstack.org/swift/latest/) installation. Choose *Swift (OpenStack Object Storage)* from the list of protocols.
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 ### Authentication Context Path
 
@@ -92,7 +92,9 @@ On your first login, you will need to create at least one container (folder) to 
 
 Connect with [Cyberduck CLI](https://duck.sh/) using the default connection profile using authentication with `Keystone 2.0` for context `/v2.0/tokens` with
 
-	duck --username OS_TENANT_ID:OS_USERNAME --password PASSWORD  --list swift://SWIFT_KEYSTONE_AUTH_SERVER/CONTAINERNAME
+```
+duck --username OS_TENANT_ID:OS_USERNAME --password PASSWORD  --list swift://SWIFT_KEYSTONE_AUTH_SERVER/CONTAINERNAME
+```
 
 Refer to the [Cyberduck CLI](../../cli/index.md) documentation for more operations.
 

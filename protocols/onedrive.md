@@ -1,14 +1,14 @@
 Microsoft OneDrive
 ====
 
-```{image} _images/onedrive.png
+:::{image} _images/onedrive.png
 :alt: Microsoft OneDrive
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to the *One Drive* client from Microsoft.
-```
+:::
 
 ## Connecting
 
@@ -22,11 +22,11 @@ The OneDrive connection profile is bundled by default and connects to the endpoi
 
 - The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
 
-
-```{admonition} Multiple Accounts
+:::{admonition} Multiple Accounts
 :class: tip
+
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out of any account in web browser before triggering the OAuth flow for a new account.
-```
+:::
 
 ### Reset OAuth Tokens
 
@@ -52,9 +52,9 @@ Depending on the setup of your AAD you may need to perform several steps in orde
 
 #### Manually Adding Cyberduck & Mountain Duck
 
-```{Important}
+:::{Important}
 Cyberduck 7.8 and later or Mountain Duck 4.4 and later required
-```
+:::
 
 Copy the link that corresponds to your used version, and send it to your domain administrator, this will add Cyberduck to the domain and all users are allowed to access Cyberduck in the future.
 
@@ -72,11 +72,14 @@ There is a preview method of review application consent through the AAD Portal. 
 
 You can list the root contents of your OneDrive with [Cyberduck CLI](https://duck.sh/) using
 
-	duck --list onedrive:/
+```
+duck --list onedrive:/
+```
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
 
 ## Features
+
 ### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
@@ -99,6 +102,7 @@ There are some limitations that you should keep in mind while working with.
 - OneDrive API does not list pending upload sessions therefore resuming uploads in Cyberduck will cause the upload to start all over again.
 
 ### Top Level folder
+
 It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
 
 | Folder Name |    Contents    |
@@ -107,4 +111,5 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Shared      | Shared folders |
 
 ### Quota
+
 Mountain Duck can only display the correct cloud storage quota as remaining disk space when setting the *Path* in the bookmark configuration to a folder different from `/`, for example `My Files`.

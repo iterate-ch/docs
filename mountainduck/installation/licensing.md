@@ -1,10 +1,10 @@
 Licensing
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 Mountain Duck is licensed on a per-seat basis. Each license is valid for one user. The license can be used on multiple devices as long as the same user is accessing the application.
 
@@ -14,9 +14,9 @@ Licenses are registered to the email address in use while purchasing. Buying mor
 
 Downloading the [trial version](https://mountainduck.io/) of Mountain Duck, a license popup will open. Select `Request Trial` to download a 14-days trial license.
 
-```{note}
+:::{note}
 Please reach out to [Mountain Duck support](mailto:support@mountainduck.io) for extended trial requirements in enterprise deployments.
-```
+:::
 
 ## FAQ
 
@@ -58,9 +58,9 @@ click the registration key file to register your license. In case you make use o
 Windows to deploy Mountain Duck you might add a post-deploy action to add the license key to the installation 
 copying alongside the application.
 
-```{note}
+:::{note}
 You always receive a single registration key containing all purchased licenses for multi-user deployments.
-```
+:::
 
 ### Is the Registration Key Valid for Future Version?
 

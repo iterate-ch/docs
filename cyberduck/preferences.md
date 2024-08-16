@@ -1,19 +1,21 @@
 Preferences
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
  
 In general, user adjustable preferences are discussed in the context of the topic in all wiki pages.
 
 ## General
 
 ### Save Workspace
+
 Save open connections when quitting and restore when opening the application.
 
 ### Bookmarks
+
 Change the row height of bookmarks displayed in the browser window. Choose between *Small, Medium,* and *Large* icons.
 
 ## [Browser](browser.md)
@@ -60,11 +62,12 @@ Manage general connection settings like the default protocol, timeouts, and prox
 
 Choose whether your [Cryptomator vaults](../cryptomator/index.md) should be auto detected and unlocked while browsing the parent folder or not by using the *Auto detect and open vault in browser* option.
 
-```{note}
+:::{note}
 Without saving the vaults passwords using keychain, you will receive passwords prompts for the vaults after reconnecting to the server or cloud storage.
-``` 
+::: 
 
 ### Use Keychain
+
 Specify if you want the *Save Password* option enabled by default while entering the password to unlock your vault. With the option disabled you have to check the checkbox to save the password in keychain manually. 
 
 ## Language
@@ -73,10 +76,10 @@ Choose the language of the user interface. It defaults to the system language wh
 
 - On macOS, the first matching language is chosen according to the *Languages* list within System *Preferences → International*. To change your preferred language for all applications, change the preset hierarchy.
 
-```{image} _images/Language_Preference.png
+:::{image} _images/Language_Preference.png
 :alt: Send Command
 :width: 500px
-```
+:::
 
 ## Update
 
@@ -86,10 +89,10 @@ An auto update feature will alert you when a new version is available and self u
 
 Snapshot builds include the latest changes and are published regularly. These builds are not tested.
 
-```{image} _images/Update.png
+:::{image} _images/Update.png
 :alt: Update
 :width: 500px
-```
+:::
 
 ### Beta Builds
 
@@ -99,8 +102,8 @@ Beta builds are published before a release and include the latest features and h
 
 There are some settings which aren't yet available in the *Preferences* either because they are not considered stable yet or not of general interest. Follow these steps to enable a hidden preference referenced in the wiki:
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Type the `defaults` command given in a *Terminal.app* (in `/Applications/Utilities`) window and restart Cyberduck.
 
@@ -112,8 +115,8 @@ Alternatively you can create a file `default.properties` in the [application sup
 `<property>=<value>`<br/>
 `...`
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 If not existing yet you need to create the file [%AppData%](faq.md#preferences-and-application-support-files-location)`\Cyberduck\default.properties`. To do that create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
 
@@ -122,9 +125,11 @@ Add the setting as follows:
 `...`<br/>
 `<property>=<value>`<br/>
 `...`
-````
-````{group-tab} CLI
+
+:::
+:::{group-tab} CLI
 
 Refer to [Preferences](../cli/index.md#preferences)
-````
-`````
+
+:::
+::::

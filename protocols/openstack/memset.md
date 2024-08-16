@@ -10,9 +10,9 @@ Sign up for a free account that comes with 5GB of storage and 5GB of transfer pe
 
 ## Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 ### Connection Profile
 
@@ -40,7 +40,6 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 - Password: `Memstore password (API key)`
 
 ![Memstore configuration](_images/Memstore.Swift.Config.png)
-
 
 ## References
 - [Documentation and Resources for Developers](https://docs.memset.com/cd/API-%2F-Developer-Resources.199072028.html)

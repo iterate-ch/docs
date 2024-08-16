@@ -1,29 +1,29 @@
 SFTP
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 sftptogo
-```
+:::
 
-```{image} ../_images/ftp.png
+:::{image} ../_images/ftp.png
 :alt: FTP Drive Icon
 :width: 128px
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Providers
 
 Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - [SFTP To Go](sftptogo.md)
 
@@ -53,34 +53,41 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 
 Example `~/.ssh/config` configuration:
 
-	Host myhostname
-		User myusername
-		IdentityFile ~/.ssh/mykey-rsa
+```
+Host myhostname
+	User myusername
+	IdentityFile ~/.ssh/mykey-rsa
+```
 
 To use the same key for all hosts add a wildcard entry such as
 
-	Host *
-		IdentityFile ~/.ssh/mykey-rsa
+```
+Host *
+	IdentityFile ~/.ssh/mykey-rsa
+```
 
 which is then used when configuring a new bookmark.
 
-```{important}
+:::{important}
 If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as hostname in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
-	
-	Host myhostalias
-		HostName myverylonghostname.example.com
-		User myusername
-		IdentityFile ~/.ssh/mykey-rsa.pub
-		
-For the configuration above the hostname to specify in your bookmark is `myhostalias`.
-	
+
 ```
+Host myhostalias
+	HostName myverylonghostname.example.com
+	User myusername
+	IdentityFile ~/.ssh/mykey-rsa.pub
+```
+
+For the configuration above the hostname to specify in your bookmark is `myhostalias`.
+:::
 
 #### Default Public Key Authentication Keys
 
 You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
 
-	defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
+```
+defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
+```
 
 ### Public Key Authentication
 
@@ -101,55 +108,60 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 #### Configure Public Key Authentication
 
 1. Run the command `ssh-keygen` from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a 'passphrase'. If you use a *passphrase* then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don't enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.
-	```
-	ssh-keygen -m PEM -t rsa
-	```
+```
+ssh-keygen -m PEM -t rsa
+```
 2. Copy the public key to the remote host you wish to access and add it to the file `authorized_keys` in your `~/.ssh` directory. (If that file does not exist then you should create it.) Anybody listed in the authorized_keys file (via their public key) is allowed to log-in, provided that they can prove that they possess the corresponding private key. Thus, if you have the private key in your .ssh directory on your home machine you'll be allowed in.
-	```
-	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
-	```
+```
+ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
+```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
 ##### OpenSSH User Certificate Authentication
 
-```{important}
+:::{important}
 * Cyberduck [8.9.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [4.16.0](https://mountainduck.io/changelog/) or later required
-```
+:::
 
 Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://man.openbsd.org/sshd_config#TrustedUserCAKeys), refer to your software vendor for configuration. To configure authentication with a User CA signed private key, configure the private key as described in [Configure Public Key Authentication](#configure-public-key-authentication) step 3. The signed public key file _must_ reside next to the private key file, suffixed `-cert.pub` or `.pub`. The [`CertificateFile`](https://man.openbsd.org/ssh_config#CertificateFile) configuration directive in `~/.ssh/config` is not supported. Pay attention to the server configuration and [`PubkeyAcceptedAlgorithms`](https://man.openbsd.org/sshd_config#PubkeyAcceptedAlgorithms) specifically which determines the allowed private key algorithms to authenticate with.
 
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
 
-```{warning}
+:::{warning}
 The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/13945).
-```
+:::
 
-````{tabs}
-```{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
+
 The agent `ssh-agent` is running by default on macOS. You add private key identities to the authentication agent using the program `ssh-add`. The SSH agent is located using the `IdentityAgent` directive in `~/.ssh/config` or if missing from the environment variable `SSH_AUTH_SOCK`.
-```
 
-```{group-tab} Windows
+:::
+:::{group-tab} Windows
+
 The following agents are supported:
  * [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
  * OpenSSH for Windows using the pipe (`\\.\pipe\openssh-ssh-agent`) by default. Use `IdentityAgent` to set a custom socket path for any other compatible agent if needed. 
-```
-````
 
-```{tip}
+:::
+::::
+
+:::{tip}
 When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many login failures and you will receive the error _Too many authentication failures_.
-```
+:::
 
 Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
 
 Example `~/.ssh/config` configuration:
 
-	Host myhostname
-		User myusername
-		IdentityFile ~/.ssh/mykey-rsa.pub
-		IdentitiesOnly yes
+```
+Host myhostname
+	User myusername
+	IdentityFile ~/.ssh/mykey-rsa.pub
+	IdentitiesOnly yes
+```
 
 ### One-Time Passcodes (2FA)
 
@@ -180,40 +192,47 @@ Upon connecting to an SSH server for the first time, you will see a message to v
 
 ### Connect via SSH Tunnel Through Bastion Server
 
-```{important}
+:::{important}
 Cyberduck [7.7](https://cyberduck.io/changelog/) or later required
-```
+:::
 
 Using the `ProxyJump` configuration directive in `~/.ssh/config` you can connect through a tunnel. The bookmark configuration refers to the target host in the internal network. We should find a `ProxyJump` directive in the OpenSSH configuration `~/.ssh/config` matching the hostname in the bookmark.
 
 Sample configuration:
 
-	Host internal
-    	HostName server.lan
-    	ProxyJump user-external@jump.example.org:2222
-    	User user-internal
+```
+Host internal
+   	HostName server.lan
+   	ProxyJump user-external@jump.example.org:2222
+   	User user-internal
+```
 
 You can also work with aliases like
 
-	Host bastion-host-nickname
-	    HostName bastion-hostname
-	    User username
-	    Port 2222
-	
-	Host remote-host-nickname
-	    HostName remote-hostname
-	    ProxyJump bastion-host-nickname
+```
+Host bastion-host-nickname
+    HostName bastion-hostname
+    User username
+    Port 2222
+```	
+
+```
+Host remote-host-nickname
+    HostName remote-hostname
+    ProxyJump bastion-host-nickname
+```
 
 ## Open in Terminal
 
 Open in *Terminal* allows you to open an SSH shell for the current working directory with a single click.
 
-```{warning}
+:::{warning}
 The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/7664).
-```
+:::
 
-````{tabs}
-```{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
+
 **Terminal.app**
 
 Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to your browser.
@@ -223,7 +242,9 @@ Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to yo
 **Customize SSH Command:**<br/>
 You can change the SSH command using the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)
 
-	defaults write ch.sudo.cyberduck terminal.command.ssh \"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
+```
+defaults write ch.sudo.cyberduck terminal.command.ssh \"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
+```
 
 where
 
@@ -244,24 +265,25 @@ No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term
 You can change a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) to use a third-party terminal application instead of Terminal.app.
 
 - Example for iTerm2 Version 2
-	```
-	defaults write ch.sudo.cyberduck terminal.bundle.identifier com.googlecode.iterm2
-	defaults write ch.sudo.cyberduck terminal.command \"set\ t\ to\ \(make\ new\ terminal\)\\ntell\ t\\nset\ s\ to\ \(launch\ session\ \\\"Default\ Session\\\"\)\\ntell\ s\\nwrite\ text\ \\\"{0}\\\"\\nend\ tell\\nend\ tell\"
-	```
+```
+defaults write ch.sudo.cyberduck terminal.bundle.identifier com.googlecode.iterm2
+defaults write ch.sudo.cyberduck terminal.command \"set\ t\ to\ \(make\ new\ terminal\)\\ntell\ t\\nset\ s\ to\ \(launch\ session\ \\\"Default\ Session\\\"\)\\ntell\ s\\nwrite\ text\ \\\"{0}\\\"\\nend\ tell\\nend\ tell\"
+```
 - Example for iTerm2 Version 3
-	```
-	defaults write ch.sudo.cyberduck terminal.bundle.identifier com.googlecode.iterm2
-	defaults write ch.sudo.cyberduck terminal.command \"set\ t\ to\ \(create\ window\ with\ default\ profile\)\\ntell\ t\\nset\ s\ to\ \(current\ session\)\\ntell\ s\\nwrite\ text\ \\\"{0}\\\"\\nend\ tell\\nend\ tell\"
-	```
+```
+defaults write ch.sudo.cyberduck terminal.bundle.identifier com.googlecode.iterm2
+defaults write ch.sudo.cyberduck terminal.command \"set\ t\ to\ \(create\ window\ with\ default\ profile\)\\ntell\ t\\nset\ s\ to\ \(current\ session\)\\ntell\ s\\nwrite\ text\ \\\"{0}\\\"\\nend\ tell\\nend\ tell\"
+```
 
 To reset to the default settings use:
 
-	defaults delete ch.sudo.cyberduck terminal.bundle.identifier
-	defaults delete ch.sudo.cyberduck terminal.command
-
+```
+defaults delete ch.sudo.cyberduck terminal.bundle.identifier
+defaults delete ch.sudo.cyberduck terminal.command
 ```
 
-```{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 **Disable WSL**
 
@@ -279,9 +301,8 @@ Use *View → Customize Toolbar...* to add the *Open in Putty* toolbar icon to y
 **Location of the PuTTY installation:**<br/>
 By default, the executable `putty.exe` must be located in your user home folder. You can change the install location by editing the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `terminal.command.ssh` to point to the path of the executable.
 
-```
-
-````
+:::
+::::
 
 ## Distribution (CDN)
 
@@ -291,9 +312,9 @@ You can enable custom origin [Amazon CloudFront (Content Delivery Network) distr
 
 The remote systems must have the archiving tools `tar` or `zip` installed respectively. Use *View → Customize Toolbar...* to add the Archive toolbar button to your browser window. It is not included in the default toolbar configuration.
 
-```{note}
+:::{note}
 _Send custom commands_ and _Create and expand ZIP/TAR Archives_ are limited to FTP and SFTP. 
-```
+:::
 
 ### Archive
 
@@ -309,13 +330,14 @@ Select one or more files to expand in the current working directory.
 
 You can send any remote command to a remote SSH server. This is for example useful if you want a HTTP server to reload its configuration or changing the ownership of files using *chown* on a `UNIX` system.
 
-```{note}
+:::{note}
 The current working directory is always your use home. Determine using pwd to get the absolute path.
-```
-```{image} ../_images/command.png
+:::
+
+:::{image} ../_images/command.png
 :alt: Send Command
 :width: 600px
-```
+:::
 
 ## Preferences
 
@@ -393,42 +415,39 @@ Cyberduck refuses to connect if there are malformed entries in your `known_hosts
 
 Symbolic links are only resolved as such when the target points to a location on the mounted volume.
 
-````{tabs}
-```{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Symlinks can only be displayed as such if the target is pointing to a location on the mounted volume. Otherwise, they are displayed as a regular file or folder.
 
-```
-```{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Symlink is displayed as a regular file or folder.
 
-```
-````
+:::
+::::
 
 #### File Permissions Reset when Saving File
 
-````{tabs}
-```{group-tab} macOS
+:::{admonition} macOS
+:class: note 
 
 Mountain Duck will forward all permission changes from Finder or any other application to the SFTP server. There is a [hidden configuration option](../../mountainduck/preferences.md#hidden-configuration-options) `fs.setattr.chmod=false` to disable the writing of permissions.
-
-```
-````
+:::
 
 #### File Owner Reset When Saving File
 
-````{tabs}
-```{group-tab} macOS
+::::{admonition} macOS
+:class: note 
 
 Some editors save files using an *Atomic Save* feature that writes changes to a file to a temporary file later replacing the edited file by renaming the temporary file to the name of the edited file. This works well on local filesystems, where there is support to retain the owner of the file that is different from the editing user using a special [function call](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man2/exchangedata.2.html). This does not work for volumes mounted with Mountain Duck and the file owner will be reset to the default owner for new files created on the server by the logged-in user. As a workaround, try to find a setting for the editor to disable the *Atomic Save* feature.
 
-```{seealso}
+:::{seealso}
 - [TextMate Atomic Saving](https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving)
-```
+:::
 
-```
-````
+::::
 
 #### Free Space Calculation is Incorrect
 

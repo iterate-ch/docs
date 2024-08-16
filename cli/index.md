@@ -1,43 +1,47 @@
 Command Line Interface (CLI)
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 support
-```
+:::
 
 [Cyberduck with a command-line interface (CLI)](https://duck.sh/) is available for Mac, Windows & Linux. It is installed as `duck`.
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Installation
 
-`````{tabs}
-````{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 **Homebrew**
 
 Available as a [Homebrew](http://brew.sh/) package. Use
-```{code-block}
+
+```
 brew install duck
 ```
-to install.
 
+to install.
 
 **MacPorts**
 
 The port is maintained by a third party. Use
-```{code-block}
+
+```
 sudo port install duck
 ```
+
 to install.
 
 **Snapshot Builds**
-```{code-block}
+
+```
 brew install iterate-ch/cyberduck/duck
 ```
 
@@ -45,35 +49,34 @@ brew install iterate-ch/cyberduck/duck
 
 [Download](https://dist.duck.sh) the latest installer package.
 
-````
-````{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 **Chocolatey**
 
 Available as a [Chocolatey](https://chocolatey.org) package. Use
-```{code-block}
+
+```
 choco install duck
 ```
+
 to install.
-
-
 
 **MSI Installer**
 
 [Download](https://dist.duck.sh) the latest setup.
 
-
 **Snapshot Builds**
 
 Not currently available.
 
-```{image} _images/CLI_Setup.png
+:::{image} _images/CLI_Setup.png
 :alt: CLI Setup
 :width: 500px
-```
+:::
 
-````
-````{group-tab} Linux
+::::
+:::::{group-tab} Linux
 
 **RPM Package Repository**
 
@@ -83,7 +86,7 @@ To add the `duck` repository to your system you need to put a file `duck.repo` w
 
 Copy and paste
 
-```{code-block}
+```
 echo -e "[duck-nightly]\n\
 name=duck-nightly\n\
 baseurl=https://repo.cyberduck.io/nightly/\$basearch/\n\
@@ -95,7 +98,7 @@ to add the configuration.
 
 **Stable Builds**
 
-```{code-block}
+```
 echo -e "[duck-stable]\n\
 name=duck-stable\n\
 baseurl=https://repo.cyberduck.io/stable/\$basearch/\n\
@@ -109,44 +112,41 @@ To install *Cyberduck CLI* use
 **DEB Package Repository**
 
 1. Add the nightly or stable `duck` repository to your `/etc/apt/sources.list` manually:
-```{code-block}
+```
 deb https://s3.amazonaws.com/repo.deb.cyberduck.io nightly main
 deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main
 ```
 or using 
-```{code-block}
+```
 echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
 ```
 2. You need to download the GPG public key from `keyserver.ubuntu.com` to verify the integrity of the packages:
-```{code-block}
+```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FE7097963FEFBE72
 ```
-
 3. Synchronize the repository using 
-```{code-block}
+```
 sudo apt-get update
 ```
-
 4. To install or upgrade *Cyberduck CLI* use
-```{code-block}
+```
 sudo apt-get install duck
 ```
 
-```{warning}
+:::{warning}
 You may get a conflict with another package named `duck`. As a workaround, install with a specific version number like `sudo apt-get install duck=6.7.1.28683`.
-```
+:::
 
 **Arch Linux Package**
 
 - [Package Details](https://aur.archlinux.org/packages/duck/). *Note*: This is maintained by a third party.
 
-
 **Manual Installation**
 
 Packages can also be found for [download](https://dist.duck.sh/).
 
-````
-`````
+::::
+:::::
 
 ## Usage
 
@@ -156,9 +156,9 @@ Run `--help` to get the option screen.
 
 URLs in arguments must be fully qualified. You can reference files relative to your home directory with `/~ftps://user@example.net/~/`.
 
-```{attention}
+:::{attention}
 Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing `/`. 
-```
+:::
 
 ### Connection Profiles
 
@@ -174,15 +174,15 @@ The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize`
     - For all protocols where a default hostname is set, but you are allowed to change it (e.g. S3) you may use fully qualified URIs or 
     *Absolute paths:* `s3:/bucket/path`,
     *Relative paths:* `s3:user@path` or `s3:user@/path`. 
-    ```{note}
+    :::{note}
     Omitting the first slash in a relative path uses the default home directory for this protocol.
-    ```
+    :::
     - For all protocols where a default hostname is set and you are not allowed to change it (e.g. `OneDrive`, `Dropbox`, `Google Drive`) you may use any combination of the above with the following rules: Fully Qualified URIs are parsed as relative paths. `onedrive://Some/Folder/` is parsed as `onedrive:Some/Folder`.
 - For all protocols where a default path is set and you are not allowed to change it (e.g. accessing a prebuilt `NextCloud` profile with a path set to `/remote.php/webdav`). You are allowed to change the path but it will be appended to the default path. Making nextcloud:/path really `nextcloud:/remote.php/webdav/path`.
 
-```{note}
+:::{note}
 Spaces and other special-characters are not required to be percent-encoded (e.g. `%20` for space) as long as the path is quoted `duck --upload "scheme://hostname/path with/spaces" "/Path/To/Local/File With/Spaces"`.
-```
+:::
 
 | Protocol                               | Fully Qualified URI required                       | Absolute Path                                           | Relative Path                                          |
 |----------------------------------------|----------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
@@ -208,25 +208,26 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 
 #### Examples
 
-```{admonition} Home Directory
+:::{admonition} Home Directory
 :class: tip
+
 You can use the `~` character to abbreviate the remote path pointing to the home folder on the server as in `duck --list sftp://duck.sh/~/`.
-```
+:::
 
 - List all buckets in S3 with 
-```{code-block}
+```
 duck --username <Access Key ID> --list s3:/
 ```
 - List all objects in a S3 bucket with
-```{code-block}
+```
 duck --username <Access Key ID> --list s3:/<bucketname>/
 ```
 - List a vault on OneDrive without using the `--vault` option
-```{code-block}
+```
 duck --list "onedrive:/My Files/<vault name>/"
 ```
 - Download a single file from a vault on OneDrive
-```{code-block}
+```
 duck --download "onedrive:/My Files/<vault name>/<file name>" ~/Downloads/ --vault "/My Files/<vault name>/"
 ```
 
@@ -266,20 +267,20 @@ When connecting with `OpenStack Swift` you can set the tenant name (*OpenStack I
 
 ### Downloads with `--download`
 
-* Download file `<file>` to directory `<folder>` on disk using
-```{code-block}
+- Download file `<file>` to directory `<folder>` on disk using
+```
 duck --download protocol:/<file> <folder>/
 ```
-
-* Download file `<file>` as `<name>` to directory `<folder>` on disk using
-```{code-block}
+- Download file `<file>` as `<name>` to directory `<folder>` on disk using
+```
 duck --download protocol:/<file> <folder>/<name>
 ```
 
 #### Glob Pattern Support for Selecting Files to Transfer
 
 You can transfer multiple files with a single command using a glob pattern for filename inclusion such as
-```{code-block}
+
+```
 duck --download protocol://<hostname>/directory/*.css
 ```
 
@@ -287,32 +288,31 @@ duck --download protocol://<hostname>/directory/*.css
 
 Note the inclusion or absence of a trailing `/` delimiter character to denote a file or directory on the server.
 
-* Upload the `<folder>` on disk to remote directory `<name>/` using
-```{code-block}
+- Upload the `<folder>` on disk to remote directory `<name>/` using
+```
 duck --upload protocol:/<name>/ <folder>/
 ```
-
-* Upload file `<file>` to remote directory `<folder>` using
-```{code-block}
+- Upload file `<file>` to remote directory `<folder>` using
+```
 duck --upload protocol:/<folder>/ <file>
 ```
-
-* Upload file `<file>` as `<name>` to remote directory `<folder>` using
-```{code-block}
+- Upload file `<file>` as `<name>` to remote directory `<folder>` using
+```
 duck --upload protocol:/<folder>/<name> <file>
 ```
 
 #### Glob Pattern Support for Selecting Files to Transfer
 
 If your shell supports glob expansion you can use a wildcard pattern to select files for upload like 
-```{code-block}
+
+```
 duck --upload protocol://<hostname>/directory/ ~/*.jpg
 ```
 
 ### Synchronize Folders with `--synchronize`
 
-* Synchronize directory `<name>` with directory `folder` on disk using
-```{code-block}
+- Synchronize directory `<name>` with directory `folder` on disk using
+```
 duck --synchronize protocol:/<name>/ folder/
 ```
 
@@ -320,12 +320,15 @@ duck --synchronize protocol:/<name>/ folder/
 
 Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property is documented in [Default metadata](../protocols/s3/index.md#default-metadata).
 
-	env "s3.metadata.default=Content-Type=application/xml" duck --upload …
+```
+env "s3.metadata.default=Content-Type=application/xml" duck --upload …
+```
 
 Set a default ACL for the upload with
 
-	env "s3.acl.default=public-read" duck --upload …
-
+```
+env "s3.acl.default=public-read" duck --upload …
+```
 
 ### Remote Directory Listing with `--list`
 
@@ -338,7 +341,8 @@ You can edit remote files with your preferred editor on your local system using 
 ### Purge Files in CDN with `--purge`
 
 Purge files in CloudFront or Akamai CDN for Amazon S3 or Rackspace CloudFiles connections. For example to invalidate all contents in a bucket run
-```{code-block}
+
+```
 duck --username AKIAIWQ7UM47TA3ONE7Q --purge s3:/github-cyberduck-docs/
 ```
 
@@ -358,7 +362,7 @@ Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allo
 
 `fswatch` is a file change monitor; an application to watch for file system changes. Refer to their [documentation](https://github.com/emcrisostomo/fswatch/wiki).
 
-```{code-block}
+```
 fswatch -0 ~/Sites/mywebsite/ | xargs -0 -I {} -t sh -c 'f="{}"; duck --upload ftps://<hostname>/sandbox`basename "${f}"` "${f}" -existing overwrite'
 ```
 
@@ -366,22 +370,25 @@ fswatch -0 ~/Sites/mywebsite/ | xargs -0 -I {} -t sh -c 'f="{}"; duck --upload f
 
 use a post [build script action](https://plugins.jenkins.io/postbuildscript/).
 
-```{code-block}
+```
 cd ${WORKSPACE}; find build -name '*.tar' -print0 | xargs -0 -I {} -t sh -c 'f="{}"; duck --quiet --retry --existing skip --region DFW --upload rackspace://<container>/ "${f}"'
 ```
 
 ### Upload Files Matching Glob Pattern to Windows Azure
-```{code-block}
+
+```
 duck --username kahy9boj3eix --upload azure://kahy9boj3eix.blob.core.windows.net/<containername>/ *.zip
 ```
 
 ### Download Files Matching Glob Pattern from S3
-```{code-block}
+
+```
 duck --user anonymous --verbose --download s3:/profiles.cyberduck.io/Wasabi* ~/Downloads/
 ```
 
 ### Download File from Amazon S3 Public Bucket
-```{code-block}
+
+```
 duck --user anonymous --download s3:/repo.maven.cyberduck.io/releases/ch/cyberduck/s3/6.1.0/s3-6.1.0.jar ~/Downloads/
 ```
 
@@ -391,49 +398,49 @@ duck --user anonymous --download s3:/repo.maven.cyberduck.io/releases/ch/cyberdu
 
 The directory location is printed with `--help` following the list of supported protocols.
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 The support directory is `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/` on Mac. You can install third party [profiles](../protocols/profiles/index.md) in `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Profiles`.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Install additional profiles in `%AppData%\Cyberduck\Profiles` on Windows.
 
-````
-````{group-tab} Linux
+:::
+:::{group-tab} Linux
 
 The support directory is `~/.duck/` on Linux. You can install third party [profiles](../protocols/profiles/index.md) in `~/.duck/profiles/`.
 
-````
-`````
+:::
+::::
 
 ## Preferences
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `set "property.name=value" & duck`
 
-````
-````{group-tab} Linux
+:::
+:::{group-tab} Linux
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
 `env "property.name=value" duck`
 
-````
-`````
+:::
+::::
 
 ## Known Issues
 

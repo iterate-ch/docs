@@ -1,10 +1,10 @@
 Dunkel Cloud Storage
 ====
 
-```{image} _images/Dunkel_Cloud_Storage.png
+:::{image} _images/Dunkel_Cloud_Storage.png
 :alt: Dunkel Cloud Storage Drive Icon
 :width: 128px
-```
+:::
 
 > [Dunkel Cloud Storage](http://www.dunkel.de/s3/) ist ein S3 kompatibler Cloud Storage in deutschen Rechenzentren. 
 

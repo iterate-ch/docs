@@ -1,17 +1,17 @@
 Google Cloud Storage
 ====
 
-```{image} _images/googlestorage.png
+:::{image} _images/googlestorage.png
 :alt: Google Cloud Storage Drive Icon
 :width: 128px
-```
+:::
 
 > [Google Cloud Storage](https://cloud.google.com/storage/docs) is an S3 compatible service with pricing based on usage. Google Cloud Storage is interoperable with [S3](s3/index.md).
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Connecting
 
@@ -25,9 +25,9 @@ In the login prompt of Cyberduck you enter the *Access Key* for the username and
 
 ### OAuth 2.0 Access
 
-```{attention}
+:::{attention}
 Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google Cloud Storage anymore because of the deprescated OAuth out-of-band flow.
-```
+:::
 
 You must obtain the project ID (`x-goog-project-id`) of your project from the Google Cloud Platform under *Storage Access* from the Google Cloud Storage tab. [Direct link to Google Cloud Storage settings.](https://console.cloud.google.com/storage/settings)
 
@@ -35,9 +35,9 @@ You must obtain the project ID (`x-goog-project-id`) of your project from the Go
 
 In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username. The authorization code will be submitted to Cyberduck automatically. You access the page with the authorization code from the link displayed in the login prompt. Click it to open it in a web browser window. You only need to get the authorization code from the website on the first login attempt. Subsequent OAuth authentications will use a refresh token retrieved from the service.
 
-```{attention}
+:::{attention}
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
-```
+:::
 
 #### Reset OAuth Tokens
 
@@ -53,7 +53,9 @@ You can register a [custom OAuth 2.0 client ID](profiles/google_client_id.md) wi
 
 You can list all buckets with [Cyberduck CLI](https://duck.sh/) using
 
-	duck --username <projectid> --list gs:/`
+```
+duck --username <projectid> --list gs:/`
+```
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations.
 
@@ -79,11 +81,10 @@ You can set the default [storage class](https://cloud.google.com/storage/docs/st
 
 When this option is enabled in the *Google Cloud Storage* panel of the Info (*File → Info (macOS `⌘I` Windows `Alt+Return`)*) window for a bucket or any file within, available log records for this bucket are periodically aggregated into log files and delivered to root in the target logging bucket specified. It is considered best practice to choose a logging target that is different from the origin bucket.
 
-
-```{image} _images/GCS_tab_info_macOS.png
+:::{image} _images/GCS_tab_info_macOS.png
 :alt: Google Cloud Storage
 :width: 500px
-```
+:::
 
 ## Folders
 
@@ -103,9 +104,9 @@ Modification dates are supported through the `Custom-Time` metadata parameter. T
 
 A list of file versions can be viewed in the *Versions* tab of the *[Info](../cyberduck/info.md#versions)* window. Files can be reverted to a chosen version of this list. Additionally, versions of the list can be deleted.
 
-```{note}
+:::{note}
 `Bucket Versioning` has to be enabled within the *Google Storage* tab of the *Info* window before the versions of the files are displayed.
-```
+:::
 
 ## ACLs
 
