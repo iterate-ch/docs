@@ -108,13 +108,13 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 #### Configure Public Key Authentication
 
 1. Run the command `ssh-keygen` from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a 'passphrase'. If you use a *passphrase* then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don't enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.
-```
-ssh-keygen -m PEM -t rsa
-```
+	```
+	ssh-keygen -m PEM -t rsa
+	```
 2. Copy the public key to the remote host you wish to access and add it to the file `authorized_keys` in your `~/.ssh` directory. (If that file does not exist then you should create it.) Anybody listed in the authorized_keys file (via their public key) is allowed to log-in, provided that they can prove that they possess the corresponding private key. Thus, if you have the private key in your .ssh directory on your home machine you'll be allowed in.
-```
-ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
-```
+	```
+	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
+	```
 3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
 
 ##### OpenSSH User Certificate Authentication

@@ -16,11 +16,11 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 ![Dropbox Link](_images/Dropbox_Link.png)
 
-3. Log in to Dropbox and grant permissions to *Cyberduck*.
+2. Log in to Dropbox and grant permissions to *Cyberduck*.
 
 ![Dropbox Permissions](_images/Dropbox_Permissions.png)
 
-4. The authorization code will be submitted to Cyberduck automatically.
+3. The authorization code will be submitted to Cyberduck automatically.
 
 :::{admonition} Multiple Accounts
 :class: tip

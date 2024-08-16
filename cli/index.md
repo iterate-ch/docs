@@ -112,26 +112,26 @@ To install *Cyberduck CLI* use
 **DEB Package Repository**
 
 1. Add the nightly or stable `duck` repository to your `/etc/apt/sources.list` manually:
-```
-deb https://s3.amazonaws.com/repo.deb.cyberduck.io nightly main
-deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main
-```
+    ```
+    deb https://s3.amazonaws.com/repo.deb.cyberduck.io nightly main
+    deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main
+    ```
 or using 
-```
-echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
-```
+    ```
+    echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
+    ```
 2. You need to download the GPG public key from `keyserver.ubuntu.com` to verify the integrity of the packages:
-```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FE7097963FEFBE72
-```
+    ```
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FE7097963FEFBE72
+    ```
 3. Synchronize the repository using 
-```
-sudo apt-get update
-```
+    ```
+    sudo apt-get update
+    ```
 4. To install or upgrade *Cyberduck CLI* use
-```
-sudo apt-get install duck
-```
+    ```
+    sudo apt-get install duck
+    ```
 
 :::{warning}
 You may get a conflict with another package named `duck`. As a workaround, install with a specific version number like `sudo apt-get install duck=6.7.1.28683`.

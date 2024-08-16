@@ -17,6 +17,8 @@ Add an empty line...
 
 Don't add an empty line around admonitions within lists
 
+Indent codeblocks within numbered lists, as the numbers aren't rendered correctly otherwise.
+
 ## Footnotes
 
 - This is a manually-numbered footnote reference.[^3]
@@ -75,47 +77,47 @@ test
 
 ## Admonitions
 
-```{note}
+:::{note}
 Here is a note!
-```
+:::
 
-```{warning}
+:::{warning}
 Here is a warning!
-```
+:::
 
-```{tip}
+:::{tip}
 Here is a tip!
-```
+:::
 
-```{caution}
+:::{caution}
 Caution!
-```
+:::
 
-```{attention}
+:::{attention}
 Attention!
-```
+:::
 
-```{danger}
+:::{danger}
 Here is a danger!
-```
+:::
 
-```{error}
+:::{error}
 Here is an error!
-```
+:::
 
-```{hint}
+:::{hint}
 Here is a hint!
-```
+:::
 
-```{important}
+:::{important}
 This is important!
-```
+:::
 
-```{seealso}
+:::{seealso}
 See also here!
-```
+:::
 
-```{admonition} Custom
+:::{admonition} Custom
 :class: tip
 Custom content
-```
+:::

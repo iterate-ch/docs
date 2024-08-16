@@ -1,31 +1,31 @@
 SMB
 ====
 
-```{image} _images/ftp.png
+:::{image} _images/ftp.png
 :alt: FTP Drive Icon
 :width: 128px
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 > [SMB (Server Message Block)](https://en.wikipedia.org/wiki/Server_Message_Block) is used to access Windows File Shares or a Samba Linux Server.
 
 ## Connecting
 
-```{important}
+:::{important}
 * Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [5.0.0](https://mountainduck.io/changelog/) or later required
-```
+:::
 
 To connect to a SMB server, choose _SMB (Server Message Block)_.
 
-```{image} _images/SMB_Connection.png
+:::{image} _images/SMB_Connection.png
 :alt: SMB Connection
 :width: 700px
-```
+:::
 
 ### Authentication
 
@@ -37,10 +37,10 @@ Username and password must be provided for authentication using NTLM. The option
 
 To connect to a specific share, you can configure a _Path_ in the bookmark. When omitted an attempt is made to list all available shares from the server. On failure retrieving share names from the server, a prompt is displayed to enter the share name when connecting.
 
-```{image} _images/SMB_Share.png
+:::{image} _images/SMB_Share.png
 :alt: SMB Share Input
 :width: 700px
-```
+:::
 
 ### Interoperability
 

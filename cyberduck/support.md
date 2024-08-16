@@ -35,7 +35,7 @@ Log output can be found in the `cyberduck.log` file in`~/Library/Logs/Cyberduck`
 :width: 600px  
 :::
 
-### Transcript
+**Transcript**
 
 You can access the transcript which will log protocol request and responses from the command line particularly useful for protocols using HTTP. Open a *Terminal.app* window and enter 
 

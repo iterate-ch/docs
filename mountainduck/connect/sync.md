@@ -201,23 +201,23 @@ The *Recent Files* area shows the last 20 changes to files by you or on the serv
 :width: 600px
 :::
 
-#### ![Delete](../_images/delete.png) Delete
+### ![Delete](../_images/delete.png) Delete
 
 A file or folder has been deleted either *by you* or *on the server*
 
-#### ![Create](../_images/plus.png) Create
+### ![Create](../_images/plus.png) Create
 
 A file or folder was created or updated *on the server*.
 
-#### ![Upload](../_images/transfer_upload.png) Upload
+### ![Upload](../_images/transfer_upload.png) Upload
 
 A file or folder was added or changed *by you* and uploaded to the server.
 
-#### ![Download](../_images/transfer_download.png) Download
+### ![Download](../_images/transfer_download.png) Download
 
 A file is downloaded to the local cache to be available for offline use. This state also occurs if a file that is marked as *Keep offline* has updated on the server.
 
-#### ![Error](../_images/alert.png) Error
+### ![Error](../_images/alert.png) Error
 
 The sync operation failed for the file. A file may show up with an error state indicating an issue while synchronizing. Further details are available through the [sync option menu item](../interface.md#context-menu-in-finder-and-windows-file-explorer).
 

@@ -19,9 +19,9 @@ Double-click on the downloaded file to activate the connection profile. Enter th
 3. Select *Generate* to confirm that you want to generate an access key.
 4. A window will show up containing the key information (Access Key ID, Secret Access Key)
 
-```{note}
+:::{note}
 The key information will only be shown once and can't be recovered. If you do lose them you can generate new keys, but you will then need to update all of your 3rd party applications with the new credentials.
-```
+:::
 
 ## References
 
