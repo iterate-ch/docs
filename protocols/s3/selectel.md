@@ -15,7 +15,7 @@ The integration Cyberduck with Selectel can be operated through a graphical or c
 - Configure access.
 - Configure client.
 
-### Configure access
+### Configure Access
 
 Access can be configured by a user with role Account Owner or User Administrator in Selectel S3.
 
