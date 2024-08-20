@@ -28,7 +28,7 @@ Issue the user an S3 key.
 - Launch Cyberduck and click New Connection.
 - Select he S3 Selectel (or the Amazon S3 profile). To work with this profile, the container must have Virtual-Hosted addressing enabled, see the [Detailed instructions for connection](https://docs.selectel.ru/en/cloud/object-storage/tools/cyberduck/) for more details.
 - In the _Server_ field, enter the domain `s3.ru-1.storage.selcloud.ru`, where ru-1 is the pool that hosts the object storage.
-- In the Access Key ID field, insert the value of the Access key field from S3-key.
+- In the _Access Key ID_ field, insert the value of the Access key field from your S3 key.
 - In the _Secret Access Key_ field, insert the value of the Secret key field from your S3 key.
 - Press Connect.
 
