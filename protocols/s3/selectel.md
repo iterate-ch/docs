@@ -22,7 +22,7 @@ Access can be configured by a user with role Account Owner or User Administrator
 Create a service user with a role with access to S3 object storage, see Role Model Access for details.
 Issue the user an S3 key.
 
-### Customize the client⁠
+### Configuration
 
 - Install Cyberduck client.
 - Launch Cyberduck and click New Connection.
