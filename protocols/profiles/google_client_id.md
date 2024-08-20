@@ -37,7 +37,7 @@ Create a custom [connection profile](index.md) with the following properties.
 - `OAuth Client Secret`. Optional. Override the registered application client secret.
 - `OAuth Redirect Url`. Use the reverse notation of the client id and set it like
 
-```
+```xml
         <key>OAuth Redirect Url</key>
         <string>com.googleusercontent.apps.number-id:oauth</string>
 ```
