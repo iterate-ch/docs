@@ -16,6 +16,11 @@ Currently the error `This app tried to access sensitive info in your Google Acco
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream* or *Drive for Desktop*.
 :::
 
+:::{contents} Content
+:depth: 2
+:local:
+:::
+
 ## Connecting
 
 Connect to your [Google Drive](http://drive.google.com/) to store plain files.
