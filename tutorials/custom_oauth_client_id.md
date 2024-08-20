@@ -3,6 +3,11 @@ Setup a Custom OAuth Client ID for Google Drive & Google Cloud Storage
 
 This is a step-by-step tutorial to connect with a custom OAuth 2.0 Client ID for [Google Cloud Storage](../protocols/googlecloudstorage.md) and [Google Drive](../protocols/googledrive.md).
 
+:::{contents} Content
+:depth: 2
+:local:
+:::
+
 ## Register Client ID
 
 Log in to your Google account, go to [Google Cloud resource manager](https://console.cloud.google.com/cloud-resource-manager) and create a new project.
