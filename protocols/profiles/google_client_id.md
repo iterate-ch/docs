@@ -7,6 +7,12 @@ Instructions to register a custom OAuth 2.0 Client ID in the [Google Cloud Conso
 
 ## Register Client ID
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/custom_oauth_client_id.md) to setup a Custom OAuth Client ID.
+:::
+
 Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/answer/6158849?hl=en). From Credentials copy the client ID and client secret by choosing the action Edit OAuth client.
 
 * Choose _Desktop app_ as the _Application type_ which will result in a Client ID with a suffix like `number-id.apps.googleusercontent.com`.
