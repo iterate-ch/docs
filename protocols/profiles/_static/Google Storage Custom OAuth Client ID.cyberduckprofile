@@ -18,9 +18,9 @@
             <string>https://www.googleapis.com/auth/devstorage.full_control</string>
         </array>
         <key>OAuth Redirect Url</key>
-        <string>${oauth.application.identifier}:oauth</string>
+        <string/>
         <key>OAuth Client ID</key>
-        <string>…</string>
+        <string/>
         <key>OAuth Client Secret</key>
         <string/>
     </dict>

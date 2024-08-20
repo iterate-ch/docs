@@ -1,11 +1,17 @@
 Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive
 ====
 
-Instructions to register a custom OAuth 2.0 Client ID in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials).  to connect to [Google Drive](../googledrive.md). For [Google Storage](../googlecloudstorage.md).
+Instructions to register a custom OAuth 2.0 Client ID in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) to connect to [Google Drive](../googledrive.md) or [Google Storage](../googlecloudstorage.md).
 
 > To use OAuth 2.0 in your application, you need an OAuth 2.0 client ID, which your application uses when requesting an OAuth 2.0 access token.
 
 ## Register Client ID
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/custom_oauth_client_id.md) to setup a Custom OAuth Client ID.
+:::
 
 Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/answer/6158849?hl=en). From Credentials copy the client ID and client secret by choosing the action Edit OAuth client.
 
@@ -31,7 +37,7 @@ Create a custom [connection profile](index.md) with the following properties.
 - `OAuth Client Secret`. Optional. Override the registered application client secret.
 - `OAuth Redirect Url`. Use the reverse notation of the client id and set it like
 
-```
+```xml
         <key>OAuth Redirect Url</key>
         <string>com.googleusercontent.apps.number-id:oauth</string>
 ```

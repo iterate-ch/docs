@@ -38,6 +38,13 @@ protocols/profiles/index
 cryptomator/index
 :::
 
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Tutorials
+tutorials/index
+```
+
 ## Support
 
 If you have a feature request or bug to report you can open a new ticket. The pages below has all the information on how to collect relevant log files.
