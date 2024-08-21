@@ -35,3 +35,26 @@ body {
 .sphinx-tabs-panel {
   padding: 1em 1em 0 1em;
 }
+
+.rst-content section ol.arabic, .rst-content section ol.arabic > li {
+    list-style: none;
+}
+
+.rst-content section ol.arabic > li {
+   position: relative;
+   counter-increment: step-counter;
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+
+.rst-content section ol > li::before {
+  text-align: center;
+  content: counter(step-counter);
+  background-color: #55a5d9;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  right: 100%;
+}
