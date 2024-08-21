@@ -14,19 +14,19 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 1. You will be asked to link Cyberduck to your Dropbox account on your first connection attempt.
 
-![Dropbox Link](_images/Dropbox_Link.png)
+    ![Dropbox Link](_images/Dropbox_Link.png)
 
 2. Log in to Dropbox and grant permissions to *Cyberduck*.
 
-![Dropbox Permissions](_images/Dropbox_Permissions.png)
+   ![Dropbox Permissions](_images/Dropbox_Permissions.png)
 
 3. The authorization code will be submitted to Cyberduck automatically.
 
-:::{admonition} Multiple Accounts
-:class: tip
-
-You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
-:::
+   :::{admonition} Multiple Accounts
+   :class: tip
+   
+   You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
+   :::
 
 ### Reset OAuth Tokens
 

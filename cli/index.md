@@ -116,7 +116,7 @@ To install *Cyberduck CLI* use
     deb https://s3.amazonaws.com/repo.deb.cyberduck.io nightly main
     deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main
     ```
-or using 
+    or using 
     ```
     echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
     ```

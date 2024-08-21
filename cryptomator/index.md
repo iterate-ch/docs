@@ -46,24 +46,24 @@ Choose *File → New Vault…* to create a new vault.
 ::::
 ::::{group-tab} Mountain Duck
 
-- Choose *New Vault…* from the Finder Extension toolbar or context menu using right-click in Finder or Windows Explorer.
+1. Choose *New Vault…* from the Finder Extension toolbar or context menu using right-click in Finder or Windows Explorer.
 
-:::{image} _images/Mountain_Duck_Create_New_Vault_Finder_Extension.png
-:alt: Mountain Duck Create New Vault (Finder Extension)
-:width: 400px
-:::
+    :::{image} _images/Mountain_Duck_Create_New_Vault_Finder_Extension.png
+    :alt: Mountain Duck Create New Vault (Finder Extension)
+    :width: 400px
+    :::
+    
+    :::{image} _images/Mountain_Duck_Create_New_Vault_Windows_Explorer.png
+    :alt: Mountain Duck Create New Vault (Windows Explorer)
+    :width: 400px
+    :::
 
-:::{image} _images/Mountain_Duck_Create_New_Vault_Windows_Explorer.png
-:alt: Mountain Duck Create New Vault (Windows Explorer)
-:width: 400px
-:::
+1. Choose a name for the Vault folder and a passphrase to secure the Vault.
 
-- Choose a name for the Vault folder and a passphrase to secure the Vault.
-
-:::{image} _images/Create_New_Vault.png
-:alt: Create New Vault
-:width: 400px
-:::
+    :::{image} _images/Create_New_Vault.png
+    :alt: Create New Vault
+    :width: 400px
+    :::
 
 ::::
 :::::
@@ -181,14 +181,14 @@ In your local disk connection, you can access all directories which are saved on
 1. Navigate to the Dropbox directory and open the subdirectories until you reach your vault.
 2. Double click your vault.
 3. Type your set password in the password box. If you want you can save the password for easier access to this directory for further usage.
-:::{image} _images/access_Cryptomator_vault_Mountain_Duck.png
-:alt: Mountain Duck Cryptomator Vault 
-:width: 400px
-:::
-:::{image} _images/access_Cryptomator_vault_Cyberduck.png
-:alt: Cyberduck Access Cryptomator Vault
-:width: 400px
-:::
+   :::{image} _images/access_Cryptomator_vault_Mountain_Duck.png
+   :alt: Mountain Duck Cryptomator Vault 
+   :width: 400px
+   :::
+   :::{image} _images/access_Cryptomator_vault_Cyberduck.png
+   :alt: Cyberduck Access Cryptomator Vault
+   :width: 400px
+   :::
 4. Click the Continue button and your vault should open.
 
 ::::
