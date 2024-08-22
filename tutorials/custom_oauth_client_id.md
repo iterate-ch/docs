@@ -3,6 +3,12 @@ Setup a Custom OAuth Client ID for Google Drive & Google Cloud Storage
 
 This is a step-by-step tutorial to connect with a custom OAuth 2.0 Client ID for [Google Cloud Storage](../protocols/googlecloudstorage.md) and [Google Drive](../protocols/googledrive.md).
 
+:::{admonition} Application blocked by Google
+:class: info
+
+Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Storage](../protocols/googlecloudstorage.md) and [Google Drive](../protocols/googledrive.md) and use it with a custom connection profile instead when encountering `This app is blocked` error when accessing Google Drive or Google Cloud Storage.
+:::
+
 :::{contents} Content
 :depth: 2
 :local:
