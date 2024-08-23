@@ -438,16 +438,15 @@ Mountain Duck will forward all permission changes from Finder or any other appli
 
 #### File Owner Reset When Saving File
 
-::::{admonition} macOS
+:::{admonition} macOS
 :class: note 
 
 Some editors save files using an *Atomic Save* feature that writes changes to a file to a temporary file later replacing the edited file by renaming the temporary file to the name of the edited file. This works well on local filesystems, where there is support to retain the owner of the file that is different from the editing user using a special [function call](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man2/exchangedata.2.html). This does not work for volumes mounted with Mountain Duck and the file owner will be reset to the default owner for new files created on the server by the logged-in user. As a workaround, try to find a setting for the editor to disable the *Atomic Save* feature.
+:::
 
 :::{seealso}
 - [TextMate Atomic Saving](https://github.com/textmate/textmate/blob/master/Applications/TextMate/about/Changes.md#atomic-saving)
 :::
-
-::::
 
 #### Free Space Calculation is Incorrect
 
