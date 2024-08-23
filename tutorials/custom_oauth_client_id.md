@@ -98,25 +98,40 @@ Download the [template](../protocols/profiles/google_client_id.md#sample-google-
 - {download}`Google Storage Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Storage Custom OAuth Client ID.cyberduckprofile>`
 
 
-Use the _OAuth Client ID_ created to edit the `OAuth Client ID` and `OAuth Redirect Url` in the template connection profile leaving other keys unchanged.
+Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Client Secret`, and `OAuth Redirect Url` in the template connection profile leaving other keys unchanged.
+
+:::::{tabs}
+::::{tab} Configuration
 
 ```xml
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
         …
-        <key>OAuth Client ID</key>
-        <string>NUMBER-ID.apps.googleusercontent.com</string>
         <key>OAuth Redirect Url</key>
         <string>com.googleusercontent.apps.NUMBER-ID:oauth</string>
-        …
+        <key>OAuth Client ID</key>
+        <string>NUMBER-ID.apps.googleusercontent.com</string>
+       <key>OAuth Client Secret</key>
+       <string>Client secret</string>
     </dict>
 </plist>
 ```
 
-- `OAuth Client ID`. Override the registered application OAuth Client ID.
 - `OAuth Redirect Url`. Use the reverse notation of the OAuth Client ID and append `:oauth` to it.
+- `OAuth Client ID`. Override the registered application OAuth Client ID.
 
+::::
+::::{tab} Example
+
+Based on the credentials shown in step 11 the correct configuration would look like this:
+
+:::{image} _images/Edit_Custom_Client_ID_Profile.png
+:alt: Example Configuration
+:::
+
+::::
+:::::
 
 Double-click the connection profile to open and register or copy to the _Profiles_ folder in the [application support folder](../cyberduck/support.md#application-support-folder).
 
