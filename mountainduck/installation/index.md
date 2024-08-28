@@ -29,11 +29,17 @@ You can choose to open Mountain Duck when you log into your computer. The applic
 **Finder Extension**<br/>
 Enable the Mountain Duck Finder Extension in *System Preferences → Extensions → Finder* by selecting the checkbox. This will enable:
 
-- **Context menu items** for files selectec on a mounted volume with options to *Reload* the folder listing and copy & open URLs of files
+- **Context menu items** for files selected on a mounted volume with options to *Reload* the folder listing and copy & open URLs of files
 - **Badges** on file icons to display sync status when *Smart Synchronization* is enabled for the bookmark
 
-:::{note}
-For **macOS Ventura and later**, the setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
+:::{admonition} macOS Ventura
+:class: note
+The setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
+:::
+
+:::{admonition} macOS Sequoia
+:class: warning
+The option to manage third-party extensions is no longer available in  *System Settings*.
 :::
 
 ![Mountain Duck Finder Integration](_images/Mountain_Duck_Finder_Integration.png) 
