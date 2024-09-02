@@ -126,9 +126,35 @@ Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect
 
 Based on the credentials shown in step 11 the correct configuration would look like this:
 
-:::{image} _images/Edit_Custom_Client_ID_Profile.png
-:alt: Example Configuration
-:::
+```xml
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Protocol</key>
+        <string>googledrive</string>
+        <key>Vendor</key>
+        <string>googledrive_custom</string>
+        <key>Description</key>
+        <string>Google Drive Custom OAuth Client ID</string>
+        <key>Default Hostname</key>
+        <string>www.googleapis.com</string>
+        <key>OAuth Authorization Url</key>
+        <string>https://accounts.google.com/o/oauth2/auth</string>
+        <key>OAuth Token Url</key>
+        <string>https://accounts.google.com/o/oauth2/token</string>
+        <key>Scopes</key>
+        <array>
+            <string>https://www.googleapis.com/auth/drive</string>
+        </array>
+        <key>OAuth Redirect Url</key>
+        <string>com.googleusercontent.apps.293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k:oauth</string>
+        <key>OAuth Client ID</key>
+        <string>293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k.apps.googleusercontent.com</string>
+        <key>OAuth Client Secret</key>
+        <string>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</string>      
+    </dict>
+</plist>
+```
 
 ::::
 :::::
