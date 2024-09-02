@@ -51,13 +51,17 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 ### Mount Location 
 
-:::{attention} 
-The setting is not available in the App Store version. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
-:::
-
 Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
 
-**Note:** You **cannot** set it to `/Volumes` on macOS Mojave (10.14 or later) where the directory is not writable. The setting is not available in the version from the Mac App Store. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the Mac App Store version. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
+:::
+
+:::{admonition} macOS only
+:class: tip
+The mount location **cannot** be set to `/Volumes` where the directory is not writable. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
+:::
 
 ### Cache Location
 
