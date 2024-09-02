@@ -93,74 +93,72 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
 
 ## Add Custom Connection Profile
 
-Download the [template](../protocols/profiles/google_client_id.md#sample-google-drive-with-custom-oauth-client-id-connection-profile) for Google Drive or Google Cloud Storage:
-- {download}`Google Drive Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Drive Custom OAuth Client ID.cyberduckprofile>`
-- {download}`Google Storage Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Storage Custom OAuth Client ID.cyberduckprofile>`
+1. Download the [template](../protocols/profiles/google_client_id.md#sample-google-drive-with-custom-oauth-client-id-connection-profile) for Google Drive or Google Cloud Storage:
+   - {download}`Google Drive Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Drive Custom OAuth Client ID.cyberduckprofile>`
+   - {download}`Google Storage Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Storage Custom OAuth Client ID.cyberduckprofile>`
 
+1. Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect Url`, and optionally the `OAuth Client Secret` in the template connection profile, leaving other keys unchanged.
 
-Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect Url`, and optionally the `OAuth Client Secret` in the template connection profile, leaving other keys unchanged.
+    :::::{tabs}
+    ::::{tab} Configuration
+    
+    ```xml
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+        <dict>
+            …
+            <key>OAuth Redirect Url</key>
+            <string>com.googleusercontent.apps.NUMBER-ID:oauth</string>
+            <key>OAuth Client ID</key>
+            <string>NUMBER-ID.apps.googleusercontent.com</string>
+           <key>OAuth Client Secret</key>
+           <string>Client secret</string>
+        </dict>
+    </plist>
+    ```
+    
+    - `OAuth Redirect Url`. Use the reverse notation of the OAuth Client ID and append `:oauth` to it.
+      - `OAuth Client ID`. Override the registered application OAuth Client ID.
+    
+    ::::
+    ::::{tab} Example
+    
+    Based on the credentials shown in step 11 the correct configuration would look like this:
+    
+    ```xml
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+        <dict>
+            <key>Protocol</key>
+            <string>googledrive</string>
+            <key>Vendor</key>
+            <string>googledrive_custom</string>
+            <key>Description</key>
+            <string>Google Drive Custom OAuth Client ID</string>
+            <key>Default Hostname</key>
+            <string>www.googleapis.com</string>
+            <key>OAuth Authorization Url</key>
+            <string>https://accounts.google.com/o/oauth2/auth</string>
+            <key>OAuth Token Url</key>
+            <string>https://accounts.google.com/o/oauth2/token</string>
+            <key>Scopes</key>
+            <array>
+                <string>https://www.googleapis.com/auth/drive</string>
+            </array>
+            <key>OAuth Redirect Url</key>
+            <string>com.googleusercontent.apps.293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k:oauth</string>
+            <key>OAuth Client ID</key>
+            <string>293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k.apps.googleusercontent.com</string>
+            <key>OAuth Client Secret</key>
+            <string>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</string>      
+        </dict>
+    </plist>
+    ```
+    
+    :::
+    ::::
 
-:::::{tabs}
-::::{tab} Configuration
-
-```xml
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-    <dict>
-        …
-        <key>OAuth Redirect Url</key>
-        <string>com.googleusercontent.apps.NUMBER-ID:oauth</string>
-        <key>OAuth Client ID</key>
-        <string>NUMBER-ID.apps.googleusercontent.com</string>
-       <key>OAuth Client Secret</key>
-       <string>Client secret</string>
-    </dict>
-</plist>
-```
-
-- `OAuth Redirect Url`. Use the reverse notation of the OAuth Client ID and append `:oauth` to it.
-- `OAuth Client ID`. Override the registered application OAuth Client ID.
-
-::::
-::::{tab} Example
-
-Based on the credentials shown in step 11 the correct configuration would look like this:
-
-```xml
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-    <dict>
-        <key>Protocol</key>
-        <string>googledrive</string>
-        <key>Vendor</key>
-        <string>googledrive_custom</string>
-        <key>Description</key>
-        <string>Google Drive Custom OAuth Client ID</string>
-        <key>Default Hostname</key>
-        <string>www.googleapis.com</string>
-        <key>OAuth Authorization Url</key>
-        <string>https://accounts.google.com/o/oauth2/auth</string>
-        <key>OAuth Token Url</key>
-        <string>https://accounts.google.com/o/oauth2/token</string>
-        <key>Scopes</key>
-        <array>
-            <string>https://www.googleapis.com/auth/drive</string>
-        </array>
-        <key>OAuth Redirect Url</key>
-        <string>com.googleusercontent.apps.293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k:oauth</string>
-        <key>OAuth Client ID</key>
-        <string>293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k.apps.googleusercontent.com</string>
-        <key>OAuth Client Secret</key>
-        <string>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</string>      
-    </dict>
-</plist>
-```
-
-::::
-:::::
-
-
-Double-click the connection profile to open and register or copy to the _Profiles_ folder in the [application support folder](../cyberduck/support.md#application-support-folder).
+1. Double-click the connection profile to open and register or copy to the _Profiles_ folder in the [application support folder](../cyberduck/support.md#application-support-folder).
 
 ## Update Protocol Selection in Bookmark
 
