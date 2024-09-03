@@ -35,7 +35,7 @@ With support for secure TLS connections and custom origin [Amazon CloudFront (Co
 
 Transfer files to your S3 account and browse the S3 buckets and files in a hierarchical way. Supports Amazon Web Services (AWS) and many third party providers.
 
-- [S3 providers](s3/index.md#third-party-providers)
+- [S3 providers](s3/providers.md)
 
 ## [Google Cloud Storage](googlecloudstorage.md)
 

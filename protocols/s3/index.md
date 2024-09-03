@@ -5,34 +5,15 @@ Amazon S3
 :hidden:
 :titlesonly:
 alibaba
-cloudflare
-cynny
 digitalocean
-dreamobjects
-dunkel
-eucalyptus
-exoscale
-filebase
-garage
 iam
-ibmcos
-ionos
 linode
-minio
 oraclecloud
-pilvio
-polycloud
+providers
 scaleway
 scality
-seagate
-../sftp/sftptogo
 spectra
-storadera
-storjdcs
-synology
-vitanium
 wasabi
-z1
 :::
 
 :::{image} _images/s3.png
@@ -283,50 +264,6 @@ Set a default ACL for the upload with
 ```
 env "s3.acl.default=public-read" duck --upload …
 ```
-
-## Third-Party Providers
-
-There are a growing number of third parties besides Amazon offering S3 compatible cloud storage software or solutions.
-Here is a non-exhaustive list:
-
-- [Alibaba Cloud Object Storage Service (OSS)](alibaba.md)
-- [Aruba Cloud](https://www.cloud.it/)
-- [Cloudian HyperStore Appliance](https://cloudian.com/products/hyperstore/)
-- [connectria Cloud Storage](https://www.mh.connectria.com/rp/order/cloud_storage_index)
-- [Cynny Space](cynny.md)
-- [DigitalOcean Spaces](digitalocean.md)
-- [DreamObjects Cloud Storage](dreamobjects.md)
-- [Dunkel Cloud Storage](dunkel.md)
-- [Eucalyptus Walrus](eucalyptus.md)
-- [Exoscale Swiss Object Storage](exoscale.md)
-- [Filebase](filebase.md)
-- [Garage](garage.md)
-- [Google Storage](../googlecloudstorage.md)
-- [IBM Cloud Object Storage (COS)](ibmcos.md)
-- [IONOS Cloud Object Storage](ionos.md)
-- [Linode Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#cyberduck)
-- [MinIO Cloud Storage](minio.md)
-- [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
-- [Oracle Storage Cloud Service](oraclecloud.md#oci-object-storage)
-- [Outscale (using CEPH Opensource)](https://www.outscale.com/)
-- [OVH](../openstack/ovh.md)
-- [Pilvio](pilvio.md)
-- [Polycloud](polycloud.md)
-- [Scaleway](https://www.scaleway.com/docs/store-object-with-cyberduck/)
-- [Scaleway Object Storage](scaleway.md)
-- [Scality (proprietary technology)](scality.md)
-- [Seagate Lyve Cloud](seagate.md)
-- [Seeweb](https://www.seeweb.it/)
-- [SFTP To Go](../sftp/sftptogo.md)
-- [Spectra BlackPearl Deep Storage Gateway](spectra.md)
-- [Storadera](storadera.md)
-- [Storj DCS](storjdcs.md)
-- [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
-- [Synology C2 Object Storage](synology.md)
-- [Vitanium Cloud](vitanium.md)
-- [Vultr Object Storage](https://www.vultr.com/docs/vultr-object-storage#Cyberduck_GUI_tool)
-- [Wasabi Storage](wasabi.md)
-- [Z1 Storage](z1.md)
 
 ## Buckets
 
