@@ -31,16 +31,11 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 ### Connecting
 
-Supported [regions](https://developers.cloudflare.com/ssl/edge-certificates/geokey-manager/supported-options/#available-regions) are:
+The connection profile supports the following [regions](https://developers.cloudflare.com/ssl/edge-certificates/geokey-manager/supported-options/#available-regions):
 
-- `AFR` (Africa)
 - `APAC` (Asia Pacific)
 - `EEUR` (Eastern Europe)
 - `ENAM` (Eastern North America)
-- `EU` (European Union)
-- `ME` (Middle East)
-- `OC` (Oceania)
-- `SAM` (South America)
 - `WEUR` (Western Europe)
 - `WNAM` (Western North America)
 
@@ -59,9 +54,12 @@ The following features are not supported within the [open beta](https://blog.clo
 
 > [DreamObjects](http://dreamhost.com/cloud/dreamobjects/) is a cost-effective, public cloud storage service built on top of the open source technology [Ceph](http://ceph.io/). It is compatible with the APIs of [Amazon S3](index.md) and [Swift](../openstack/index.md) based object storage services.
 
+### Connecting
+
+As `us-west-1` was shut down the connection profile only supports the region `us-east-1`. 
+
 ### Limitations
 
-- As `us-west-1` was shut down only `us-east-1` is available for connecting
 - View a feature support list in the [API documentation](https://help.dreamhost.com/hc/en-us/articles/217590537-How-To-Use-DreamObjects-S3-compatible-API).
 - No support for multipart uploads through Cyberduck.
 
@@ -99,6 +97,10 @@ Connection profiles are available for the following [regions](https://community.
 ## Filebase
 
 > [Filebase](https://docs.filebase.com/) is the first S3-compatible object storage platform that allows you to store data in a secure, redundant, and performant manner across multiple decentralized storage networks.
+
+### Connecting
+
+The connection profile is available for `us-east-1`.
 
 ### References
 
@@ -149,6 +151,10 @@ Make sure to enable [virtual-host-style requests](https://github.com/minio/minio
 Located in Estonia. S3 compatible object storage with perfect cost and reliability ratio. An ideal solution for file, image, video, cad file, backup, or archive storage.
 
 [Pilvio](https://pilvio.com/) is a S3 compatible object storage.
+
+### Connecting
+
+The connection profile is available with the default hostname `s3.pilw.io`.
 
 ### References
 
@@ -243,6 +249,8 @@ Connection profiles are available for the following regions:
 
 ### Credentials
 
+Using the connection profile the region will be set automatically.
+
 1. Sign into your **Storj DCS** webinterface and navigate to the **Access** section.
 2. Choose **Create S3 Credentials**, enter name and permissions, and select buckets.
 3. Click **Encrypt My Access** to select the encryption and confirm your choice by selecting **Create my Access**. 
@@ -269,23 +277,19 @@ Connection profiles are available for the following regions:
 
 ## More Providers
 
-- [Alibaba](alibaba.md)
 - [Aruba Cloud](https://www.cloud.it/)
 - [Cloudian HyperStore Appliance](https://cloudian.com/products/hyperstore/)
 - [connectria Cloud Storage](https://www.mh.connectria.com/rp/order/cloud_storage_index)
-- [DigitalOcean Spaces](digitalocean.md)
+- [Eucalyptus](https://www.eucalyptus.cloud/)
 - [Garage](https://garagehq.deuxfleurs.fr/)
 - [IBM Cloud Object Storage (COS)](https://www.ibm.com/cloud/object-storage)
-- [Linode Object Storage](linode.md)
+	Connection profiles available
 - [NetApp StorageGrid Webscale](https://docs.netapp.com/sgws-114/index.jsp)
 - [Oracle Cloud Infrastructure](oraclecloud.md)
 - [Outscale (using CEPH Opensource)](https://www.outscale.com/)
 - [OVH](../openstack/ovh.md)
-- [Scality RS2](scality.md)
 - [Seeweb](https://www.seeweb.it/)
-- [Spectra BlackPearl Deep Storage Gateway](spectra.md)
 - [Swisscom S3 Dynamic Storage](https://www.swisscom.ch/en/business/enterprise/offer/cloud-data-center/dynamic-computing-services.html)
 - [Vitanium Cloud](https://vitanium.com/using-vitaniums-object-storage-with-cyberduck/)
 - [Vultr Object Storage](https://www.vultr.com/docs/vultr-object-storage#Cyberduck_GUI_tool)
-- [Wasabi Storage](wasabi.md)
 - [Z1 Storage](https://www.z1storage.com/)
