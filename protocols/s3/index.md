@@ -4,12 +4,11 @@ Amazon S3
 :::{toctree}
 :hidden:
 :titlesonly:
+providers
 alibaba
 digitalocean
 linode
 oraclecloud
-providers
-scaleway
 scality
 spectra
 wasabi
