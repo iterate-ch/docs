@@ -6,7 +6,6 @@ Amazon S3
 :titlesonly:
 alibaba
 digitalocean
-iam
 linode
 oraclecloud
 providers
@@ -34,7 +33,7 @@ You must obtain the login credentials (Access Key ID and Secret Access Key) of y
 
 ### IAM User
 
-You can also connect using [IAM](iam.md) credentials that have the `Amazon S3 Full Access` template policy permissions attached and optionally the `CloudFront Full Access`.
+You can also connect using [IAM](../../tutorials/iam.md) credentials that have the `Amazon S3 Full Access` template policy permissions attached and optionally the `CloudFront Full Access`.
 
 ### Generic S3 Profiles
 
