@@ -5,13 +5,6 @@ Amazon S3
 :hidden:
 :titlesonly:
 providers
-alibaba
-digitalocean
-linode
-oraclecloud
-scality
-spectra
-wasabi
 :::
 
 :::{image} _images/s3.png

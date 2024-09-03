@@ -1,6 +1,18 @@
 Third-Party Providers
 ===
 
+:::{toctree}
+:hidden:
+:titlesonly:
+alibaba
+digitalocean
+linode
+oraclecloud
+scality
+spectra
+wasabi
+:::
+
 :::{contents} Content
 :depth: 1
 :local:
