@@ -118,7 +118,7 @@ Alternatively you can create a file `default.properties` in the [application sup
 :::
 :::{group-tab} Windows
 
-If not existing yet you need to create the file [%AppData%](faq.md#preferences-and-application-support-files-location)`\Cyberduck\default.properties`. To do that create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
+If not existing yet you need to create the `default.properties` file in the [application support folder](faq.md#preferences-and-application-support-files-location). To do so, create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
 
 Add the setting as follows:
 

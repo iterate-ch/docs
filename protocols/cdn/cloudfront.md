@@ -13,13 +13,13 @@ Make sure your objects in the bucket you want to enable distribution for are wor
 
 ## Basic (Download HTTP) Distributions
 
-Delivery method _Download (HTTP) CDN)_ used to serve static content from a S3 bucket as an origin.
+Delivery method _(Download (HTTP) CDN)_ used to serve static content from a S3 bucket as an origin.
 
 ![CloudFront Configuration](_images/CloudFront_Configuration.png)
 
 ## Website Configuration Endpoint Distributions
 
-Delivery method _Website Configuration (HTTP)_ to enable a [website endpoint](../s3/index.md#website-configuration) with no CDN features. This does *not* use any CloudFront feature.
+Delivery method _(Website Configuration (HTTP))_ to enable a [website endpoint](../s3/index.md#website-configuration) with no CDN features. This does *not* use any CloudFront feature.
 
 ## Website Configuration Endpoint Distributions with CloudFront CDN
 
@@ -35,7 +35,7 @@ You must also enable the website endpoint using the delivery method _Website Con
 
 ## Streaming (RTMP) Distributions
 
-Delivery method _Streaming (RTMP) CDN)_ used to serve [media](http://en.wikipedia.org/wiki/Flash_Video) using a [streaming protocol](http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol).
+Delivery method _(Streaming (RTMP) CDN)_ used to serve [media](http://en.wikipedia.org/wiki/Flash_Video) using a [streaming protocol](http://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol).
 
 :::{attention}
 Discontinued on December 31, 2020 within CloudFront. For further information refer to the [AWS announcement](https://forums.aws.amazon.com/ann.jspa?annID=7356).

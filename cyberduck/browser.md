@@ -151,16 +151,17 @@ Select the file in the browser and choose *File → Info (macOS `⌘I` Windows `
 
 ### Quick Look
 
-:::{admonition} macOS only
+::::{admonition} macOS only
 :class: tip
 
 You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*. A preview is rendered depending on a Quick Look Plugin available on your system for the given file type. Many file types like different image formats can be previewed with the bundled plugins in OS X and HTML is even rendered in the Quick Look preview panel.
-:::
 
 :::{image} _images/quicklook.png
 :alt: Quicklook
 :width: 500px
 :::
+
+::::
 
 ### Open or Copy HTTP URL
 

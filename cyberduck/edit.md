@@ -11,17 +11,18 @@ The default editor opened for a file is selected depending on the file type. If 
 :width: 700px
 :::
 
-:::{admonition} macOS only
-:class: tip
+::::{tabs}
+:::{group-tab} macOS
 
 To edit file type associations choose *File → Info* for a given file type in the *Finder.app*.
-:::
 
-:::{admonition} Windows only
-:class: tip
+:::
+:::{group-tab} Windows
 
 To edit file type associations choose *Properties → General → Type of file → Change…* for a given file type in Windows Explorer.
+
 :::
+::::
 
 ## Preferences
 

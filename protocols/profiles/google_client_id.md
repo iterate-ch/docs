@@ -15,7 +15,7 @@ Follow the [step-by-step instructions](../../tutorials/custom_oauth_client_id.md
 
 Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/answer/6158849?hl=en). From Credentials copy the client ID and client secret by choosing the action Edit OAuth client.
 
-* Choose _Desktop app_ as the _Application type_ which will result in a Client ID with a suffix like `number-id.apps.googleusercontent.com`.
+- Choose _Desktop app_ as the _Application type_ which will result in a Client ID with a suffix like `number-id.apps.googleusercontent.com`.
 
 :::{image} _images/Google_Create_OAuth_Client_ID.png
 :alt: Google Create OAuth Client ID
@@ -27,7 +27,7 @@ Follow the steps in [Setting up OAuth 2.0](https://support.google.com/googleapi/
 :width: 600px
 :::
 
-* Edit the OAuth Consent Screen* to add the scopes *Google Cloud Storage JSON API* `../auth/devstorage.read_write` and/or *Google Drive API* `../auth/drive`. You will first need to enable *Google Drive* in the Google API Library.
+- Edit the *OAuth Consent Screen* to add the scopes *Google Cloud Storage JSON API* `../auth/devstorage.read_write` and/or *Google Drive API* `../auth/drive`. You will first need to enable *Google Drive* in the Google API Library.
 
 ## Edit Custom Connection Profile
 
