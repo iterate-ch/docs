@@ -75,7 +75,8 @@ Choose *File → New Vault…* to create a new vault.
 When _Preferences → Cryptomator → Auto detect and open vault in browser_ is enabled, opening a directory in the browser that is a Cryptomator Vault, a prompt is displayed to unlock the vault using the provided passphrase and decrypt the directory and filenames. If you cancel the prompt, the encrypted vault content is displayed.
 
 :::{note}
-A vault is only detected if `masterkey.cryptomator` or `vault.cryptomator` are found as one of the 10 files of the directory listing retrieved from the server.
+
+The vault detection only works if the directory listing of the vault contains `masterkey.cryptomator` or `vault.cryptomator` in the first 10 files retrieved from the server.
 :::
 
 :::::{tabs}
