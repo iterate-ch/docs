@@ -4,8 +4,6 @@ Protocols
 :::{toctree}
 :hidden:
 :titlesonly:
-profiles/index
-cdn/index
 ftp
 sftp/index
 smb
