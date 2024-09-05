@@ -12,6 +12,8 @@ Preferences
 
 Save all mounted volumes when quitting to be restored while relaunching.
 
+If you enable *Save Workspace* and [*Enable Login Item*](#login-item) within *Preferences → Login Item* and do not manually eject the volume prior to quitting Mountain Duck, it will reconnect after login.
+
 ### Bookmarks
 
 Change the size of the menu items in the status bar menu. Choose between *Small, Medium,* and *Large* icons.
@@ -112,7 +114,7 @@ Set which type of notifications you want to receive. Alternatively, you can choo
 :::::{tabs}
 ::::{group-tab} macOS
 
-You can disable notifications in *System Preferences → Notifications*. Choose *None* for alert style and keep checked *Show* in *Notification Centre*. This way you will no longer be disturbed by any notification displays, but can still check back the notifications in *Notification Centre* anytime if required.
+You can disable notifications in *System Preferences → Notifications*. Choose *None* for alert style and keep checked *Show* in *Notification Centre*. This way you will no longer be disturbed by any notification displays, but can still check back the notifications in *Notification Center* anytime if required.
 
 ::::
 ::::{group-tab} Windows
@@ -137,7 +139,9 @@ The connection profiles for [default protocols](../protocols/index.md) are alway
 
 ## Login Item
 
-Reconnect after restarting the computer. If you choose *Enable Login Item* and *Save Workspace* in *Preferences → General* and do not manually eject the volume prior to reboot it will reconnect after login.
+Reconnect after restarting the computer. 
+
+If you enable *Enable Login Item* and [*Save Workspace*](#save-workspace) in *Preferences → General* and do not manually eject the volume prior to quitting Mountain Duck, it will reconnect after login.
 
 ## Cryptomator
 

@@ -29,12 +29,16 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 ::::{tabs}
 :::{group-tab} macOS
 
-Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file.
+Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. 
+
+Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file. In addition to the current log file, compressed versions of the latest five cycled log files named `mountainduck-*.log.zip` are available.
 
 :::
 :::{group-tab} Windows
 
-Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file named *mountainduck.log*.
+Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. 
+
+Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file named *mountainduck.log*. In addition to the current log file, there are compressed versions of the latest five cycled log files named `mountainduck-*.log.zip` are available.
 
 :::
 ::::

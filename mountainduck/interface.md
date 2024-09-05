@@ -46,7 +46,8 @@ You can choose to automatically open Mountain Duck when logging in. Refer to [Pr
 
 ## Bookmarks
 
-Choose *Open Connection…* to add a new bookmark or *<Bookmark> → Edit Bookmark* to change properties.
+Choose *Open Connection…* to add a new bookmark.
+To edit the connection settings of an existing bookmark choose *<Bookmark> → Edit Bookmark*.
 
 :::{note}
 Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
