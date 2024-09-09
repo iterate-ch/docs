@@ -34,14 +34,14 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md).
 You have to generate an access key before you can connect to Linode Object storage:
 
 1. Log into the [Linode Cloud Manager](https://cloud.linode.com/).
-2. Click on the *Object Storage* link in the sidebar, navigate to the *Access Keys* tab, and select *Create an Access Key*. 
-3. If you haven't enabled Object Storage till now you will be prompt to confirm that you want to *Enable Object Storage*.
+1. Click on the *Object Storage* link in the sidebar, navigate to the *Access Keys* tab, and select *Create an Access Key*. 
+1. If you haven't enabled Object Storage till now you will be prompt to confirm that you want to *Enable Object Storage*.
 
 Within the *Create an Access Key* menu:
 
-- Set a label as a reference for the key
-- Enable *Limited Access* to limit granted permissions per buckets
-- Select *Submit* to generate the key
+1. Set a label as a reference for the key
+1. Enable *Limited Access* to limit granted permissions per buckets
+1. Select *Submit* to generate the key
 
 After submitting a window will be displayed containing the *Access Key* and *Secret Key*. 
 
