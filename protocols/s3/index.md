@@ -30,7 +30,7 @@ You can also connect using [IAM](../../tutorials/iam.md) credentials that have t
 ### Generic S3 Profiles
 
 :::{note}
-Connection profiles for use with third-party S3 installations. can be installed from *Preferences → Profiles*.
+Connection profiles for use with [third-party S3 installations](providers.md) can be installed from *Preferences → Profiles*.
 :::
 
 :::::{tabs}
