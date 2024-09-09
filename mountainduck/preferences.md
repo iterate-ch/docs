@@ -166,20 +166,4 @@ You receive no update notification if your user is missing administrator permiss
 
 ## Hidden Configuration Options
 
-::::{tabs}
-:::{group-tab} macOS
-
-- Type the `defaults` command given in a *Terminal.app* (in `/Applications/Utilities`) window and restart Mountain Duck.
-`defaults write io.mountainduck <property> <value>`
-- Alternatively, create a file `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/default.properties` with the content formatted as `property=value`
-
-:::
-:::{group-tab} Windows
-
-If not existing yet you need to create the file `%AppData%\Cyberduck\default.properties`. Add the setting as follows:<br/>
-`property=value`
-
-These settings are shared with Cyberduck.
-
-:::
-::::
+Refer to [Add Hidden Configuration Options for Mountain Duck and Cyberduck](../tutorials/hidden_properties.md)

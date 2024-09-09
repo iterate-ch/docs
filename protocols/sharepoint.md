@@ -75,11 +75,11 @@ Basic Authentication should only be used when using secured connection over TLS 
 
 #### NTLM Authentication
 
-If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
+If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
-defaults write ch.sudo.cyberduck webdav.ntlm.workstation MYWORKSTATION
-defaults write ch.sudo.cyberduck webdav.ntlm.domain MYDOMAIN
+webdav.ntlm.workstation=MYWORKSTATION
+webdav.ntlm.domain=MYDOMAIN
 ```
 
 #### Configuration

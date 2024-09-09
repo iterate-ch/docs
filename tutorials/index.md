@@ -4,6 +4,7 @@ Tutorials
 :::{toctree}
 :hidden:
 :titlesonly:
+hidden_properties
 custom_oauth_client_id
 :::
 

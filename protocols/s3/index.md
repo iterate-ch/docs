@@ -139,7 +139,7 @@ For S3 compatible storage only supporting path style requests to reference bucke
 
 - {download}`Download<https://profiles.cyberduck.io/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile>` the *S3 (Deprecated path style requests) profile* for preconfigured settings.
 
-Alternatively set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `s3.bucket.virtualhost.disable` to `true`.
+Alternatively set the [hidden configuration option](../../tutorials/hidden_properties.md) `s3.bucket.virtualhost.disable` to `true`.
 
 :::{admonition} Interoperability
 :class: note
@@ -628,7 +628,7 @@ You can edit standard HTTP headers and add [custom HTTP headers](../../cyberduck
 
 ### Default Metadata
 
-Currently only possible using a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../../tutorials/hidden_properties.md) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for Cache-Control and one named `Creator` you would set
 
 ```
 s3.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
@@ -640,7 +640,7 @@ This option lets you control how long a client accessing objects from your S3 bu
 
 The default setting is `Cache-Control: public,max-age=2052000` when choosing to add a custom `Cache-Control` header in the [Info](../../cyberduck/info.md) panel which translates to a cache expiration of one month (one month in seconds equals more or less `60*60*24*30`).
 
-Use the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `s3.cache.seconds` to set a custom default value
+Use the [hidden configuration option](../../tutorials/hidden_properties.md) `s3.cache.seconds` to set a custom default value
 
 ```
 s3.cache.seconds=2052000

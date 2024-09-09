@@ -83,10 +83,10 @@ For the configuration above the hostname to specify in your bookmark is `myhosta
 
 #### Default Public Key Authentication Keys
 
-You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) `ssh.authentication.publickey.default.enable` to `true`.
+You can enable the use of a default set of keys `~/.ssh/id_rsa` and `~/.ssh/id_dsa` (in this order) by setting the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.publickey.default.enable` to `true`.
 
 ```
-defaults write ch.sudo.cyberduck ssh.authentication.publickey.default.enable true
+ssh.authentication.publickey.default.enable=true
 ```
 
 ### Public Key Authentication
@@ -240,10 +240,10 @@ Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to yo
 ![Terminal](../_images/Terminal.png)
 
 **Customize SSH Command:**<br/>
-You can change the SSH command using the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)
+You can change the SSH command using the [hidden configuration option](../../tutorials/hidden_properties.md)
 
 ```
-defaults write ch.sudo.cyberduck terminal.command.ssh \"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
+terminal.command.ssh=\"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
 ```
 
 where
@@ -262,7 +262,7 @@ Because of all the escaping of characters, it might be easier to edit the key us
 No configuration change is required. Choose *iTerm2 → Make iTerm2 Default Term* and restart Cyberduck. To revert, set the default application for a file named `.command` to *Terminal.app* in *Finder → Info → Open With…*.
 
 **Previous versions:**<br/>
-You can change a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) to use a third-party terminal application instead of Terminal.app.
+You can change a [hidden configuration option](../../tutorials/hidden_properties.md) to use a third-party terminal application instead of Terminal.app.
 
 - Example for iTerm2 Version 2
 ```
@@ -287,7 +287,7 @@ defaults delete ch.sudo.cyberduck terminal.command
 
 **Disable WSL**
 
-There is a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
+There is a [hidden configuration option](../../tutorials/hidden_properties.md) for toggling additional SSH-terminal applications. Currently implemented are `ssh.exe` (OpenSSH built-in to Windows 10 since version 1709), `bash.exe` (using WSL and invoking `ssh` there) as well as PuTTY.
 
 - Disabling OpenSSH: `terminal.openssh.enable=false`
 - Disabling WSL: `terminal.windowssubsystemlinux.enable=false`
@@ -433,7 +433,7 @@ Symlink is displayed as a regular file or folder.
 :::{admonition} macOS
 :class: note 
 
-Mountain Duck will forward all permission changes from Finder or any other application to the SFTP server. There is a [hidden configuration option](../../mountainduck/preferences.md#hidden-configuration-options) `fs.setattr.chmod=false` to disable the writing of permissions.
+Mountain Duck will forward all permission changes from Finder or any other application to the SFTP server. There is a [hidden configuration option](../../tutorials/hidden_properties.md) `fs.setattr.chmod=false` to disable the writing of permissions.
 :::
 
 #### File Owner Reset When Saving File
@@ -452,4 +452,4 @@ Some editors save files using an *Atomic Save* feature that writes changes to a 
 
 The available space for a volume mounted over SFTP is determined using quota features of the SSH protocol. Technically using the `space-available` extension of the SFTP protocol or the `statvfs@openssh.com` extension from OpenSSH. If the connected device returns an invalid value (e.g. from the disk the server is running instead of the data disk) you will get an incorrect calculation for the free space. You can work around the issue using one of the following options:
 - Set a default path you want to connect to within the bookmark *Path* option.
-- Disable the feature in Mountain Duck by setting the [hidden configuration option](../../mountainduck/preferences.md#hidden-configuration-options) `fs.quota.enable=false`.
+- Disable the feature in Mountain Duck by setting the [hidden configuration option](../../tutorials/hidden_properties.md) `fs.quota.enable=false`.

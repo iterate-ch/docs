@@ -100,34 +100,13 @@ Beta builds are published before a release and include the latest features and h
 
 ## Hidden Configuration Options
 
-There are some settings which aren't yet available in the *Preferences* either because they are not considered stable yet or not of general interest. Follow these steps to enable a hidden preference referenced in the wiki:
-
 ::::{tabs}
-:::{group-tab} macOS
+:::{tab} Cyberduck
 
-Type the `defaults` command given in a *Terminal.app* (in `/Applications/Utilities`) window and restart Cyberduck.
-
-    defaults write ~/Library/Preferences/ch.sudo.cyberduck.plist <property> <value>
-
-Alternatively you can create a file `default.properties` in the [application support folder](faq.md#preferences-and-application-support-files-location). Add the setting as follows:
-
-`...`<br/>
-`<property>=<value>`<br/>
-`...`
+Refer to [Add Hidden Configuration Options to Mountain Duck and Cyberduck](../tutorials/hidden_properties.md)
 
 :::
-:::{group-tab} Windows
-
-If not existing yet you need to create the `default.properties` file in the [application support folder](faq.md#preferences-and-application-support-files-location). To do so, create a new text file within `%AppData%\Cyberduck` and replace the preconfigured name including the file extension by *default.properties*.
-
-Add the setting as follows:
-
-`...`<br/>
-`<property>=<value>`<br/>
-`...`
-
-:::
-:::{group-tab} CLI
+:::{tab} CLI
 
 Refer to [Preferences](../cli/index.md#preferences)
 

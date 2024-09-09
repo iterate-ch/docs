@@ -55,4 +55,4 @@ Network problems and quota or authentication failures will cause the mounted vol
 
 ### Auto Unmount on Connection Error
 
-To disable the unmount upon failure use a [hidden configuration option](../preferences.md#hidden-configuration-options) `unmount.auto=false`.
+To disable the unmount upon failure use a [hidden configuration option](../../tutorials/hidden_properties.md) `unmount.auto=false`.

@@ -132,7 +132,7 @@ Select the file in the browser and press the *Return key*. Type the new name and
 
 ### Deleting Files and Folders
 
-Some protocols support the trashing of files instead of permanently deleting them.  This feature is enabled by default. It can be disabled using a [hidden configuration option](preferences.md#hidden-configuration-options).
+Some protocols support the trashing of files instead of permanently deleting them.  This feature is enabled by default. It can be disabled using a [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
 browser.delete.trash=false
@@ -261,18 +261,18 @@ Use only one *Info* window which updates with the selection change in the browse
 
 ### Adjust the Browser Font Size
 
-A [hidden configuration option](preferences.md#hidden-configuration-options).
+A [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
-defaults write ch.sudo.cyberduck browser.font.size 18
+browser.font.size=18
 ```
 
 ### Duplicate Filename Format
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Define a different format using 
+A [hidden configuration option](../tutorials/hidden_properties.md). Define a different format using 
 
 ```
-defaults write ch.sudo.cyberduck browser.duplicate.format "{0} ({1}){2}"
+browser.duplicate.format="{0} ({1}){2}"
 ```
 
 where the plaseholders will be replaced with
@@ -283,15 +283,15 @@ where the plaseholders will be replaced with
 
 ### Warning Before Renaming or Moving Files
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). A confirmation is shown before renaming or moving files.
+A [hidden configuration option](../tutorials/hidden_properties.md). A confirmation is shown before renaming or moving files.
 
 ```
-defaults write ch.sudo.cyberduck browser.move.confirm true
+browser.move.confirm=true
 ```
 
 ### Re-Enable File Listing Limit Prompt
 
-A [hidden configuration option](preferences.md#hidden-configuration-options) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
+A [hidden configuration option](../tutorials/hidden_properties.md) can re-enable the file listing limit prompt after dismissing it with enabled *Always* checkbox.
 
 ::::{tabs}
 :::{group-tab} macOS

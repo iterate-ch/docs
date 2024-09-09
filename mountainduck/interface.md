@@ -114,7 +114,7 @@ The bookmark can show three different status lights:
 - **Green light:** Currently connected to this bookmark. The bookmark is completely synced and idle.
 - **Orange light:** Currently connected to this bookmark. There is at least one active process.
 
-You can can put the currently connected bookmarks on top of the bookmark list regardless of the sorting by using a [hidden configuration option](preferences.md#hidden-configuration-options):
+You can can put the currently connected bookmarks on top of the bookmark list regardless of the sorting by using a [hidden configuration option](../tutorials/hidden_properties.md):
 
 ```
 bookmark.menu.sort.connected=true
