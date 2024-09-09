@@ -350,6 +350,13 @@ duck --username AKIAIWQ7UM47TA3ONE7Q --purge s3:/github-cyberduck-docs/
 
 Transfer files with multiple concurrent connections to a server.
 
+### Rename or move files using `--move`
+
+You can move or rename remote files using the `--move` command. Use an absolute path for the target filename.
+```{code-block}
+duck  --move protocol:/<folder>/<name> <file>
+```
+
 ### Cryptomator
 
 Access to your [Cryptomator](../cryptomator/index.md) Vaults from the command line. When accessing a vault using `--download`, `--list` or `--upload`, you will be prompted to provide the passphrase for the Vault if not found in the Keychain.
