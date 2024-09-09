@@ -45,9 +45,8 @@ Within the *Create an Access Key* menu:
 
 After submitting a window will be displayed containing the *Access Key* and *Secret Key*. 
 
-:::{note}
-The window will only be displayed once and the *Secret Key* cannot be retrieved once the window is closed!
-Make sure to keep the credential somewhere safe.
+:::{tip}
+The window will only be displayed once and the *Secret Key* cannot be retrieved once the window is closed. Make sure to keep the credential somewhere safe.
 :::
 
 ## References
