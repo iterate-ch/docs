@@ -7,7 +7,7 @@ For Cyberduck CLI refer to [Preferences](../cli/index.md)
 
 There are some settings which aren't yet available in the *Preferences* either because they are not considered stable yet or not of general interest. 
 
-For [Mountain Duck](../mountainduck/index.md) and [Cyberduck](../cyberduck/index.md) you can add the property line in the format `property=value` to the `defaul.properties` file within the [application support folder](../cyberduck/support.md#application-support-folder) on Windows and macOS.
+For [Mountain Duck](../mountainduck/index.md) and [Cyberduck](../cyberduck/index.md) you can add the property line in the format `property=value` to the `default.properties` file within the [application support folder](../cyberduck/support.md#application-support-folder) on Windows and macOS.
 
 :::{important}
 You'll have to create the `default.properties` file manually if it isn't present yet!
