@@ -27,7 +27,9 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 ## Buckets
 
+:::{tip}
 Names must be lowercase and start with a letter or number. They may contain dashes.
+:::
 
 ## References
 
