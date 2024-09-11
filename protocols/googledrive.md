@@ -6,12 +6,6 @@ Google Drive
 :width: 128px
 :::
 
-:::{admonition} Application blocked by Google
-:class: error
-
-Currently the error `This app tried to access sensitive info in your Google Account. To keep your account safe, Google blocked this access.` is shown when attempting to grant permission to access Google Drive ([#16178](https://github.com/iterate-ch/cyberduck/issues/16178)). As a workaround you will need to register your own [Custom OAuth 2.0 Client ID for Google Cloud Storage and Google Drive](https://docs.cyberduck.io/protocols/profiles/google_client_id/) to be used with a custom connection profile instead.
-:::
-
 :::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive File Stream* or *Drive for Desktop*.
 :::
