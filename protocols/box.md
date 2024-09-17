@@ -26,10 +26,10 @@ Only available for Box business and enterprise accounts
 
 Enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
-- Protocol: `FTP` or `FTPS`
-- Server: `ftp.box.com`
-- Username: Your Box account email address
-- Password: Your Box account password
+- **Protocol**: `FTP` or `FTPS`
+- **Server**: `ftp.box.com`
+- **Username**: Your Box account email address
+- **Password**: Your Box account password
 
 #### WebDAV
 
@@ -42,11 +42,11 @@ Box WebDAV support reached end-of-life at October 25th, 2019
 
 Alternatively, enter the following information in the [bookmark](../cyberduck/bookmarks.md):
 
-- Protocol: `WebDAV (HTTPS)`
-- Server: `dav.box.com`
-- Username: Your Box account email address
-- Password: Your Box account password
-- Path: `dav`
+- **Protocol**: `WebDAV (HTTPS)`
+- **Server**: `dav.box.com`
+- **Username**: Your Box account email address
+- **Password**: Your Box account password
+- **Path**: `dav`
 
 ## Share
 

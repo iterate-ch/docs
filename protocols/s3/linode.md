@@ -24,10 +24,10 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md). Choose the endpoint based on the bucket location. Refer to [Availability](https://www.linode.com/docs/products/storage/object-storage/)
 
-- Protocol: `Amazon S3`
-- Server: `us-southeast-1.linodeobjects.com, us-east-1.linodeobjects.com, eu-central-1.linodeobjects.com, ap-south-1.linodeobjects.com`
-- Access Key ID: `<your access key>`
-- Secret Access Key: `<your secret access key>`
+- **Protocol**: `Amazon S3`
+- **Server**: `us-southeast-1.linodeobjects.com`, `us-east-1.linodeobjects.com`, `eu-central-1.linodeobjects.com`, `ap-south-1.linodeobjects.com`
+- **Access Key ID**: your access key
+- **Secret Access Key**: your secret access key
 
 ### Generate Access Keys
 

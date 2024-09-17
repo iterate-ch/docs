@@ -10,11 +10,11 @@ AURO
 
 ## Connecting
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `api.van1.auro.io`
-- Port: `5000`
-- Username: `<os-tenant-name>:<os-username>`
-- Password: `<os-password>`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `api.van1.auro.io`
+- **Port**: `5000`
+- **Username**: `<os-tenant-name>:<os-username>`
+- **Password**: `<os-password>`
 
 The server name is found in the Cloud Dashboard under `Project/Compute/Access & Security/API Access`. Use the Identity server, not the Object Store server.
 

@@ -5,10 +5,10 @@ Seagate Lyve Cloud
 
 ## Connection
 
-- Protocol: `S3 (HTTPS)`
-- Server: `<your endpoint>`
-- Access Key ID: `<your access key>`
-- Secret Access Key: `<your secret access key>`
+- **Protocol**: `S3 (HTTPS)`
+- **Server**: your endpoint
+- **Access Key ID**: your access key
+- **Secret Access Key**: your secret access key
 
 :::{hint}
 Available [endpoints](https://help.lyvecloud.seagate.com/en/s3-api-endpoint.html) are

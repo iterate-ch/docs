@@ -7,10 +7,10 @@ Infomaniak kDrive
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `WebDAV (HTTPS)`
-- Server: `connect.drive.infomaniak.com`
-- Username: `Your kDrive login email.`
-- Password:
+- **Protocol**: `WebDAV (HTTPS)`
+- **Server**: `connect.drive.infomaniak.com`
+- **Username**: Your kDrive login email.
+- **Password**:
     - If two-step authentication is not activated, use the password for your Infomaniak account
     - If two-step authentication is activated, generate an [application password](https://manager.infomaniak.com/v3/profile/application-password)
 

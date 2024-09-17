@@ -30,9 +30,9 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Alternatively, enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `lon.auth.api.rackspacecloud.com`
-- Port: `443`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `lon.auth.api.rackspacecloud.com`
+- **Port**: `443`
 
 ## Features
 

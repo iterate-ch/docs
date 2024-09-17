@@ -19,10 +19,10 @@ Connect using the preconfigured [connection profile](../../cyberduck/connection.
 
 ### Manual Configuration
 
-- Server: `identity.api.zetta.io`
-- Port: `443`
-- Username: `<Project Name>:<Project Domain>:<Username>`
-- Password: `<Password>`
+- **Server**: `identity.api.zetta.io`
+- **Port**: `443`
+- **Username**: `<Project Name>:<Project Domain>:<Username>`
+- **Password**: Your Password
 
 You will need the [Openstack Swift (Keystone 3) profile](index.md) if you want to use manual configuration with Cyberduck or Mountainduck. We recommend that you use the official profile instead.
 

@@ -18,8 +18,8 @@ Refer also to [S3](index.md) wiki page in general.
 
 ### Manual Configuration
 
-- Protocol: `S3`
-- Server: `dcs.dunkel.de`
+- **Protocol**: `S3`
+- **Server**: `dcs.dunkel.de`
 
 ## Limitations
 

@@ -10,11 +10,11 @@ Cloud A
 
 ## Connecting
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `keystone.ca-ns-1.clouda.ca`
-- Port: `8443`
-- Username: `Email (Cloud-A login username)`
-- Password: `Cloud-A login password`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `keystone.ca-ns-1.clouda.ca`
+- **Port**: `8443`
+- **Username**: Email (Cloud-A login username)
+- **Password**: Cloud-A login password
 
 ## References
 

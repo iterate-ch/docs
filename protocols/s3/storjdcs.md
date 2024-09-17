@@ -9,10 +9,10 @@ Storj DCS
 
 ### Manual Configuration
 
-- Protocol: Amazon S3
-- Server: `gateway.storjshare.io`
-- Access Key ID: `<your access key>`
-- Secret Access Key: `<your secret access key>`
+- **Protocol**: `Amazon S3`
+- **Server**: `gateway.storjshare.io`
+- **Access Key ID**: your access key
+- **Secret Access Key**: your secret access key
 
 ### Credentials
 

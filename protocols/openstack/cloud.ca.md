@@ -15,8 +15,8 @@ Cloud.ca Object Storage
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `OpenStack`
-- Server: `objects.east-1.cloud.ca`
-- Port: `443`
-- Username: `Account Name`
-- Password: `API Key`
+- **Protocol**: `OpenStack`
+- **Server**: `objects.east-1.cloud.ca`
+- **Port**: `443`
+- **Username**: Account Name
+- **Password**: API Key
