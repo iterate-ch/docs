@@ -157,22 +157,22 @@ The error message `FTP Error: SITE not understood` or similar is displayed. The 
 
 Various options are available to adjust the usage of different directory listing commands (`LIST`, `STAT` and `MLSD`). Directory listings are requested using `STAT`, `MLSD`, `LIST -a` and `LIST` commands in that order. If a failure is detected (because the server may not support the command), the next option is tried. Because this can be fuzzy logic, it may still be that Cyberduck does not correctly fall back to a supported list command. You may then try to force the use of a given command.
 
-To disable `STAT` for directory listings, change the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) as follows:
+To disable `STAT` for directory listings, change the [hidden configuration option](../tutorials/hidden_properties.md) as follows:
 
 ```
-defaults write ch.sudo.cyberduck ftp.command.stat false
+ftp.command.stat=false
 ```
 
 To disable `LIST -a` for directory listings, open a Terminal.app window and enter
 
 ```
-defaults write ch.sudo.cyberduck ftp.command.lista false
+ftp.command.lista=false
 ```
 
 To disable `MLSD` for directory listings, open a Terminal.app window and enter
 
 ```
-defaults write ch.sudo.cyberduck ftp.command.mlsd false
+ftp.command.mlsd=false
 ```
 
 Restart Cyberduck.

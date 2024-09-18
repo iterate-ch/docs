@@ -133,7 +133,7 @@ Choose *Share…* from the [context menu](../mountainduck/interface.md#share)  t
 For bookmarks configured with [Microsoft OneDrive](../protocols/onedrive.md) & [Microsoft SharePoint](../protocols/sharepoint.md) protocols.
 
 ::::{tabs}
-::::{group-tab} Cyberduck
+:::{group-tab} Cyberduck
 
 Choose *File → Share…*. to create an [shared link](../protocols/onedrive.md) for a file or folder.
 

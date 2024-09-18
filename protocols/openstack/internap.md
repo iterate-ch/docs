@@ -13,10 +13,10 @@ Sign up for [Internap AgileCLOUD (includes AgileFILES object storage)](https://a
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `OpenStack`
-- Server: `auth.storage.santa-clara.internapcloud.net`
-- Port: `443`
-- Username: `[account/client login name]`
-- Password: `[your client password]`
+- **Protocol**: `OpenStack`
+- **Server**: `auth.storage.santa-clara.internapcloud.net`
+- **Port**: `443`
+- **Username**: account/client login name
+- **Password**: your client password
 
 For more user information please log in to the [Internap Customer Portal](https://login.internap.com/).

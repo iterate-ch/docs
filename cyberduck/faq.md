@@ -80,7 +80,7 @@ Registration keys can be [recovered](https://cyberduck.io/help#recover) using th
 
 ### The Registration Key Received Cannot be Opened
 
-The registration key is sent to you by email automatically after the Paypal transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
+The registration key is sent to you by email automatically after the transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
 
 - If you are using a webmail provider, try using a different browser or email client application to access your mail.
 - Contact you hosting service provider how to download attachments.

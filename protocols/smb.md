@@ -17,7 +17,7 @@ SMB
 
 :::{important}
 * Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
-* Mountain Duck [5.0.0](https://mountainduck.io/changelog/) or later required
+* Mountain Duck 5.0.0 required (not yet available)
 :::
 
 To connect to a SMB server, choose _SMB (Server Message Block)_.

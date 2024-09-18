@@ -67,6 +67,8 @@ Attempting to open a locked document, an error message is displayed notifying th
 
 ::::
 ::::{group-tab} Windows
+
+**Microsoft Word**<br/>
 `This file is already opend by another user. Would you like to make a copy of this file for your use?`
 
 :::{image} _images/File_in_Use_Microsoft_Word_Windows.png

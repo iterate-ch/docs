@@ -133,7 +133,7 @@ Saving the modification dates requires support from server storing metadata in c
 
 ### Cannot Login with Special Characters in Credentials
 
-If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options)
+If your server requires the use of UTF-8 character set for authentication, set the [hidden configuration option](../../tutorials/hidden_properties.md)
 
 ```
 http.credentials.encoding=UTF-8

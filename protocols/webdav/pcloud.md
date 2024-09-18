@@ -22,10 +22,10 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 #### Data Region: USA (Texas)
 
-- Server: `https://webdav.pcloud.com`
-- Port: `443`
-- Username: pCloud login Email
-- Password: pCloud login password
+- **Server**: `https://webdav.pcloud.com`
+- **Port**: `443`
+- **Username**: pCloud login Email
+- **Password**: pCloud login password
 
 #### Data Region: Europe (Luxemburg)
 

@@ -21,10 +21,10 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 You will need to create a new user in the [OVH manager](https://www.ovh.com/manager/cloud/) in *Cloud → Servers → Project → OpenStack*. Choose *Download OpenStack configuration file* (`openrc.sh`) and open it in a text editor. Copy the values `OS_TENANT_ID:OS_USERNAME` for the username from the file.
 
-- Server: `auth.cloud.ovh.net`
-- Port: `443`
-- Username: `OS_TENANT_ID:OS_USERNAME`
-- Password: `Password`. You will find the password in the user list in *Project → OpenStack*.
+- **Server**: `auth.cloud.ovh.net`
+- **Port**: `443`
+- **Username**: `OS_TENANT_ID:OS_USERNAME`
+- **Password**: Your Password. You will find the password in the user list in *Project → OpenStack*.
 
 ### S3
 

@@ -8,9 +8,9 @@ Polycloud
 {download}`Download<https://drive.google.com/file/d/1a-yZPNHGvm6PvR3JEvdiYzs8OHnf_g6T/view?usp=sharing>` the *Polycloud Connection Profile* for preconfigurated settings for authentication.
 
 Double-click on the downloaded file to activate the connection profile. Enter the following authentication credentials to the bookmark:
-- Server: `polycloud.crowdapis.com`
-- Access Key ID: Access Key Credentials
-- Secret Access Key: Access Key Credentials
+- **Server**: `polycloud.crowdapis.com`
+- **Access Key ID**: Access Key Credentials
+- **Secret Access Key**: Access Key Credentials
 
 ### How to Create Application Keys
 

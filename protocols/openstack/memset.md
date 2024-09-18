@@ -32,12 +32,12 @@ Use `admin` for the username, the Memstore name when prompted for the Tenant ID 
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `auth.storage.memset.com`
-- Port: `443`
-- Username: Memstore name and username e.g. `mstestaa1.admin`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `auth.storage.memset.com`
+- **Port**: `443`
+- **Username**: Memstore name and username e.g. `mstestaa1.admin`
 	- If you are not using the `admin` user then a container name will need to be specified under *More Options*
-- Password: `Memstore password (API key)`
+- **Password**: Memstore password (API key)
 
 ![Memstore configuration](_images/Memstore.Swift.Config.png)
 

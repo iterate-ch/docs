@@ -11,17 +11,18 @@ The default editor opened for a file is selected depending on the file type. If 
 :width: 700px
 :::
 
-:::{admonition} macOS only
-:class: tip
+::::{tabs}
+:::{group-tab} macOS
 
 To edit file type associations choose *File → Info* for a given file type in the *Finder.app*.
-:::
 
-:::{admonition} Windows only
-:class: tip
+:::
+:::{group-tab} Windows
 
 To edit file type associations choose *Properties → General → Type of file → Change…* for a given file type in Windows Explorer.
+
 :::
+::::
 
 ## Preferences
 
@@ -45,15 +46,15 @@ Enable the custom versioning option in *Preferences → Editor* to store previou
 
 ### Disable Upload of Temporary File on Save
 
-A [hidden configuration option](preferences.md#hidden-configuration-options).
+A [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
-defaults write ch.sudo.cyberduck editor.upload.temporary false
+editor.upload.temporary=false
 ```
 
 ### Exclude Files from Versioning
 
-Files can be excluded from versioning by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+Files can be excluded from versioning by using a [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
 versioning.include.regex=.*
@@ -63,7 +64,7 @@ versioning.include.regex=.*
 
 Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit.
 
-The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+The number of saved versions can be customized by using a [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
 versioning.limit=5

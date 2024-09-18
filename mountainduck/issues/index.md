@@ -235,10 +235,10 @@ You can work around this by setting `defaults write com.apple.finder AppleShowAl
 Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Connection → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
 
 **Enable Application Icon in Dock**<br/>
-As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following property:
+As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following [hidden configuration option](../../tutorials/hidden_properties.md):
 
 ```
-defaults write io.mountainduck application.dock.icon.enable true
+application.dock.icon.enable=true
 ```
 
 **Mounted Volumes do not Appear on the Desktop**<br/>
@@ -263,10 +263,10 @@ It may be that Finder closes the connection because Mountain Duck hasn't answere
 This is an issue within the operating system that can occur to any network drive.
 
 **Extended Attributes**<br/>
-Extended attributes containing metadata about the files some applications write in addition to the file content are saved in auxiliary `._*` files. These are only saved in a temporary location and not synchronized. If you want to save `._*` files to the server set the [hidden configuration option](../preferences.md#hidden-configuration-options):
+Extended attributes containing metadata about the files some applications write in addition to the file content are saved in auxiliary `._*` files. These are only saved in a temporary location and not synchronized. If you want to save `._*` files to the server set the [hidden configuration option](../../tutorials/hidden_properties.md):
 
 ```
-defaults write io.mountainduck fs.filenames.metadata.enable false
+fs.filenames.metadata.enable=false
 ```
 
 ::::
@@ -304,7 +304,7 @@ See Windows sessions above. It is not possible to run Mountain Duck as a Service
 You can close that overlay by holding your mouse cursor for about 3 seconds on the Mountain Duck icon within the Tray area.
 
 **Dot Files are not Hidden**<br/>
-By default, files starting with `.` aren't hidden by Windows Explorer. You can change the default by using a [hidden configuration option](../preferences.md#hidden-configuration-options).
+By default, files starting with `.` aren't hidden by Windows Explorer. You can change the default by using a [hidden configuration option](../../tutorials/hidden_properties.md).
 
 ```
 browser.hidden.regex=\\..*

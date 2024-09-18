@@ -78,7 +78,7 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 
 ### Deleting Files and Folders
 
-Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
+Deleted files are trashed instead of being permanently deleted. This feature is enabled by default. It can be disabled using a [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
 browser.delete.trash=false

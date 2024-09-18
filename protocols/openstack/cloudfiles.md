@@ -30,9 +30,9 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Alternatively, enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `lon.auth.api.rackspacecloud.com`
-- Port: `443`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `lon.auth.api.rackspacecloud.com`
+- **Port**: `443`
 
 ## Features
 
@@ -74,8 +74,8 @@ You can add [custom HTTP headers](../../cyberduck/info.md#metadata-http-headers)
 
 ### Default Metadata
 
-Currently only possible using a [hidden configuration option](../../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../../tutorials/hidden_properties.md) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add a HTTP header for Cache-Control and one named `Creator` you would set
 
 ```
-defaults write ch.sudo.cyberduck openstack.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"
+openstack.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
 ```

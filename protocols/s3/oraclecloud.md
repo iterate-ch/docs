@@ -53,11 +53,11 @@ Follow these instructions:
 
 1. {download}`Download<https://trac.cyberduck.io/attachment/wiki/help/en/howto/oraclecloud/Oracle%20Storage%20Cloud.cyberduckprofile>` the Oracle Storage Cloud profile for preconfigured settings using the `/auth/v1.0` authentication context.
 2. Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
-	- Protocol: Swift (OpenStack Object Storage)
-	- Server: `IdentityDomain.storage.oraclecloud.com`. For example, this is `cyduck.storage.oraclecloud.com`
-	- Username: `ServiceName-IdentityDomain:UserName`. For example this is `Storage-cyduck:dkocher@cyberduck.io`
-	- Password: Oracle Cloud Password
-	- Tenant: Oracle Cloud Username
+	- **Protocol**: Swift (OpenStack Object Storage)
+	- **Server**: `IdentityDomain.storage.oraclecloud.com`. For example, this is `cyduck.storage.oraclecloud.com`
+	- **Username**: `ServiceName-IdentityDomain:UserName`. For example this is `Storage-cyduck:dkocher@cyberduck.io`
+	- **Password**: Oracle Cloud Password
+	- **Tenant**: Oracle Cloud Username
  	- OCI Object Storage Classic Regions
 		- us2: Chicago, IL
 		- us6: Ashburn, VA

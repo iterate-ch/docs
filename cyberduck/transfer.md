@@ -227,26 +227,26 @@ Enabling change of modification date slows down the transfer rate when uploading
 
 ### Bandwidth Throttle Options
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Edit the available options (in bytes).
+A [hidden configuration option](../tutorials/hidden_properties.md). Edit the available options (in bytes).
 
 ```
-defaults write ch.sudo.cyberduck queue.bandwidth.options 102400,1073741824
+queue.bandwidth.options=102400,1073741824
 ```
 
 ### Badge Dock Icon
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
+A [hidden configuration option](../tutorials/hidden_properties.md). Add a badge with the number of currently running transfers to the dock icon.
 
 ```
-defaults write ch.sudo.cyberduck queue.dock.badge true
+queue.dock.badge=true
 ```
 
 ### Prioritize Files in Transfers
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order of files transferred in folders. For example:
+A [hidden configuration option](../tutorials/hidden_properties.md). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order of files transferred in folders. For example:
 
 ```
-defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"
+queue.upload.priority.regex=".*\.html"
 ```
 
 will prioritize files ending with `.html` and transfer before any other files in a folder.

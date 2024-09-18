@@ -430,21 +430,21 @@ The support directory is `~/.duck/` on Linux. You can install third party [profi
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
-`env "property.name=value" duck`
+`env "<property>=<value>" duck`
 
 :::
 :::{group-tab} Windows
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
-`set "property.name=value" & duck`
+`set "<property>=<value>" & duck`
 
 :::
 :::{group-tab} Linux
 
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment variables in your shell.
 
-`env "property.name=value" duck`
+`env "<property>=<value>" duck`
 
 :::
 ::::

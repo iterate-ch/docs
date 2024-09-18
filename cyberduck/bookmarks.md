@@ -247,16 +247,16 @@ Choose a default bookmark to open after opening the application. Choose *Prefere
 
 ### Do not Read favicon.ico from HTTP URL
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Displayed in the bookmark edit window.
+A [hidden configuration option](../tutorials/hidden_properties.md). Displayed in the bookmark edit window.
 
 ```
-defaults write ch.sudo.cyberduck bookmark.favicon.download false
+bookmark.favicon.download=false
 ```
 
 ### Open Bookmark View after Disconnecting
 
-A [hidden configuration option](preferences.md#hidden-configuration-options).
+A [hidden configuration option](../tutorials/hidden_properties.md).
 
 ```
-defaults write ch.sudo.cyberduck browser.disconnect.bookmarks.show true
+browser.disconnect.bookmarks.show=true
 ```

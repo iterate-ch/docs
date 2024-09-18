@@ -17,9 +17,9 @@ Use the Tenant ID `email` and password to login. See [API Access](https://cm.ent
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `api.entercloudsuite.com`
-- Port: `443`
-- Username: *Enter Cloud Suite* `credentials email`
-- Password: *Enter Cloud Suite* `credentials password`
-- Tenant: `Tenant ID` from the [OpenStack RC File](https://cm.entercloudsuite.com/project/access_and_security/).
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `api.entercloudsuite.com`
+- **Port**: `443`
+- **Username**: *Enter Cloud Suite* `credentials email`
+- **Password**: *Enter Cloud Suite* `credentials password`
+- **Tenant**: `Tenant ID` from the [OpenStack RC File](https://cm.entercloudsuite.com/project/access_and_security/).

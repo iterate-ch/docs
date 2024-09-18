@@ -11,10 +11,10 @@ Storadera
 
 ### Manual Configuration
 
-- Protocol: `Amazon S3`
-- Server: `eu-east-1.s3.storadera.com`
-- Access Key ID: `<your access key>`
-- Secret Access Key: `<your secret access key>`
+- **Protocol**: `Amazon S3`
+- **Server**: `eu-east-1.s3.storadera.com`
+- **Access Key ID**: your access key
+- **Secret Access Key**: your secret access key
 
 ## References
 

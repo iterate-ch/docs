@@ -28,8 +28,8 @@ Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connect
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Project:Domain:Username: `Information available in your Infomaniak manager. Example: PCP-XXXXXX:Default:PCU-XXXXXX`
-- Password: `password is the same as the one you use for the OpenStack dashboard`
+- **Project:Domain:Username**: Information available in your Infomaniak manager. Example: `PCP-XXXXXX:Default:PCU-XXXXXX`
+- **Password**: password is the same as the one you use for the OpenStack dashboard
 
 ### References
 
@@ -61,8 +61,8 @@ Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connect
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Project: Domain:Username: `information sent by email when you created your Swiss Backup space`
-- Password: `password sent by email when you created your Swiss Backup space`
+- **Project:Domain:Username**: information sent by email when you created your Swiss Backup space
+- **Password**: password sent by email when you created your Swiss Backup space
 
 ### References
 
