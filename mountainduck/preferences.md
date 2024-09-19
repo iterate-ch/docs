@@ -141,9 +141,11 @@ The connection profiles for [default protocols](../protocols/index.md) are alway
 
 ## Login Item
 
-Reconnect after restarting the computer. 
+Open Mountain Duck after restarting the computer. 
 
+:::{tip}
 If you enable *Enable Login Item* and [*Save Workspace*](#save-workspace) in *Preferences → General* and do not manually eject the volume prior to quitting Mountain Duck, it will reconnect after login.
+:::
 
 ## Cryptomator
 
