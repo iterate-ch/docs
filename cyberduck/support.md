@@ -30,6 +30,8 @@ Please be aware that you are possibly using our software at no charge if you hav
 
 Log output can be found in the `cyberduck.log` file in`~/Library/Logs/Cyberduck`. Select _Show_ in _Cyberduck → Preferences → Connection_ to reveal the log file. In addition to the current log file, compressed versions of the latest five cycled log files named `cyberduck-*.log.zip` are available.
 
+**Console.app**
+
 Alternatively, you can find `cyberduck.log` in *Console.app* (Open from `/Applications/Utilities`) under `Reports → Log Reports → cyberduck.log`.
 
 :::{image} _images/Console.app.png
