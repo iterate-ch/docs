@@ -10,4 +10,12 @@ IBM Cloud Object Storage (COS)
 
 ## Connecting
 
-### Credentials
+### Connection Profile
+
+:::{note}
+Connection profiles can be installed from *Preferences → Profiles*.
+:::
+
+- *IBM Cloud Object Storage (eu-geo)*
+- *IBM Cloud Object Storage (ap-geo)*
+- *IBM Cloud Object Storage (us-geo)*
