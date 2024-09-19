@@ -4,13 +4,7 @@ WebDAV
 :::{toctree}
 :hidden:
 :titlesonly:
-bigcommerce
-gmx
-ikeepincloud
-nextcloud
-pcloud
-seafile
-kdrive
+providers
 :::
 
 You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mutual TLS with a client certificate for authentication is supported.
@@ -22,21 +16,11 @@ You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mut
 
 ## Providers
 
-Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
+Settings are specific to service [providers](providers.md).
 
 :::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
 :::
-
-- [Nextcloud](nextcloud.md)
-- [ownCloud](nextcloud.md)
-- [GMX Mediacenter](gmx.md)
-- [Box](../box.md)
-- [BigCommerce](bigcommerce.md)
-- [iKeepinCloud](ikeepincloud.md)
-- [pCloud](pcloud.md)
-- [Seafile](seafile.md)
-- [Infomaniak kDrive](kdrive.md)
 
 ## Supported Authentication Methods
 
