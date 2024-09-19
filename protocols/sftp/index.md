@@ -4,7 +4,7 @@ SFTP
 :::{toctree}
 :hidden:
 :titlesonly:
-sftptogo
+providers
 :::
 
 :::{image} ../_images/ftp.png
@@ -19,18 +19,15 @@ sftptogo
 
 ## Providers
 
-Settings are specific to service providers. Use the provided [connection profiles](../index.md#connection-profiles).
+Settings are specific to service [providers](providers.md).
 
 :::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
 :::
 
-- [SFTP To Go](sftptogo.md)
-
-
 ## Connecting
 
-If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.org/wiki/Secure_Shell_Protocol)), most probably `sftp-server` is also installed and configured and you can connect using [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).
+If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.org/wiki/Secure_Shell_Protocol)), most probably `sftp-server` is also installed and configured, and you can connect using [SFTP](http://en.wikipedia.org/wiki/SSH_file_transfer_protocol).
 
 ### OpenSSH Configuration Interoperability
 

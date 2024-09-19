@@ -9,25 +9,25 @@ You can manage IAM users using the [AWS Console](https://console.aws.amazon.com/
 
 ## IAM Tools Setup
 
-- Download the [IAM Command Line Toolkit](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html). Unzip the download and move the folder `IAMCli-1.2.0` into the `bin` folder in your user home directory.
-- In a Terminal.app window, set the home environment for IAM
-```
-echo 'export JAVA_HOME=`/usr/libexec/java_home`' >> ~/.bash_profile
-echo 'export AWS_IAM_HOME=~/bin/IAMCli-1.2.0' >> ~/.bash_profile
-```
-- Set the environment variable to point to the credentials file.
-```
-echo 'export AWS_CREDENTIAL_FILE=$AWS_IAM_HOME/aws-credential.template' >> ~/.bash_profile
-```
-- Add the path to the IAM programs to your path
-```
-echo 'export PATH=$AWS_IAM_HOME/bin:$PATH' >> ~/.bash_profile
-```
-- Update the environment of the current shell (alternatively open a new Terminal.app window).
-```
-. ~/.bash_profile
-```
-- Edit the credentials file `aws-credential.template` with your AWS identifiers.
+1. Download the [IAM Command Line Toolkit](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html). Unzip the download and move the folder `IAMCli-1.2.0` into the `bin` folder in your user home directory.
+1. In a Terminal.app window, set the home environment for IAM
+    ```
+    echo 'export JAVA_HOME=`/usr/libexec/java_home`' >> ~/.bash_profile
+    echo 'export AWS_IAM_HOME=~/bin/IAMCli-1.2.0' >> ~/.bash_profile
+    ```
+1. Set the environment variable to point to the credentials file.
+    ```
+    echo 'export AWS_CREDENTIAL_FILE=$AWS_IAM_HOME/aws-credential.template' >> ~/.bash_profile
+    ```
+1. Add the path to the IAM programs to your path
+    ```
+    echo 'export PATH=$AWS_IAM_HOME/bin:$PATH' >> ~/.bash_profile
+    ```
+1. Update the environment of the current shell (alternatively open a new Terminal.app window).
+    ```
+    . ~/.bash_profile
+    ```
+1. Edit the credentials file `aws-credential.template` with your AWS identifiers.
 
 ## Create a new IAM User
 

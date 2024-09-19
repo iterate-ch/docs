@@ -20,3 +20,7 @@ Download the *Exoscale* connection profile for the region in which your bucket i
 - Switzerland
   - {download}`CH-DK-2<https://profiles.cyberduck.io/Exoscale (ch-dk-2).cyberduckprofile>`
   - {download}`CH-GVA-2<https://profiles.cyberduck.io/Exoscale (ch-gva-2).cyberduckprofile>`
+
+### References
+
+- [Exoscale documentation](https://community.exoscale.com/documentation/storage/quick-start/)

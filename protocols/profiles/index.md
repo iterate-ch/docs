@@ -19,7 +19,7 @@ aws_oidc
 Connection profiles can be installed from *Preferences → Profiles*.
 :::
 
-- [Third-Party S3 providers](../s3/index.md#third-party-providers)
+- [Third-Party S3 providers](../s3/providers.md)
 - [OpenStack Providers](../openstack/index.md#third-party-providers)
 
 ## Installation

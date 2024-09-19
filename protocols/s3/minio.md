@@ -14,4 +14,6 @@ Download and install the [generic S3 profile](index.md#generic-s3-profiles).
 
 ### Virtual Host Style Requests
 
+:::{attention}
 Make sure to enable [virtual-host-style requests](https://github.com/minio/minio/tree/master/docs/config#domain) in your MinIO configuration. Alternatively, refer to [Connecting using Deprecated Path Style Requests](index.md#connecting-using-deprecated-path-style-requests).
+:::
