@@ -4,21 +4,7 @@ Swift (OpenStack Object Storage)
 :::{toctree}
 :hidden:
 :titlesonly:
-auro
-cloud.ca
-clouda
-cloudfiles
-entercloudsuite
-flexcloud
-hubic
-infomaniak
-internap
-memset
-oktawave
-ovh
-selectel
-swiftstack
-zetta.io
+providers
 :::
 
 :::{image} _images/swift.png
