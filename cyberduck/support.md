@@ -7,7 +7,7 @@ Support
 
 If you have a feature request please make sure to include a detailed and comprehensible description of the requested feature in [the ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose). Make sure to check if someone already requested a similar feature.
 
-:::{warning}
+:::{tip}
 For issues with your remote storage user account credentials, please instead write to your hosting service provider. 
 :::
 
