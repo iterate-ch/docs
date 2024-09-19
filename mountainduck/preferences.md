@@ -10,9 +10,11 @@ Preferences
 
 ### Save Workspace
 
-Save all mounted volumes when quitting to be restored while relaunching.
+Save all mounted volumes when quitting to be restored when relaunching.
 
+:::{tip}
 If you enable *Save Workspace* and [*Enable Login Item*](#login-item) within *Preferences → Login Item* and do not manually eject the volume prior to quitting Mountain Duck, it will reconnect after login.
+:::
 
 ### Bookmarks
 
