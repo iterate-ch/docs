@@ -29,9 +29,13 @@ To connect to a SMB server, choose _SMB (Server Message Block)_.
 
 ### Authentication
 
-Username and password must be provided for authentication using NTLM. The optional domain name defaults to `WORKGROUP` and can be customized as part of the username in the format `REALM\username` in the _Username_ input field when adding a bookmark. Depending on the server setup this can be
+Username and password must be provided for authentication using NTLM. The optional domain name defaults to `WORKGROUP` and can be customized as part of the username in the format `REALM\username` in the _Username_ input field when adding a bookmark. Depending on the server setup, this can be
 - `COMPUTERNAME\username`
 - `NETBIOSDOMAINNAME\username`
+
+The default domain can be set using the [hidden configuration option](../tutorials/hidden_properties.md)
+    
+    smb.domain.default=WORKGROUP
 
 ### Share Name
 
