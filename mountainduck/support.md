@@ -26,22 +26,26 @@ You can reach the application support folder by navigating to `%AppData%\Cyberdu
 
 ### Logging Output
 
-::::{tabs}
-:::{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 Log output can be found in the `mountainduck.log` file in`~/Library/Logs/Mountain Duck`. You can easily reach this file in _Console.app_ (Open from `/Applications/Utilities`) under `Reports → Log Reports → mountainduck.log`. 
 
+:::{note}
+Using the AppStore version, logs are saved in `~/Library/Logs/Mountain\ Duck`.
+:::
+
 Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file. In addition to the current log file, compressed versions of the latest five cycled log files named `mountainduck-*.log.zip` are available.
 
-:::
-:::{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 Log output can be found in the `mountainduck.log` file in `%AppData%\cyberduck`. 
 
 Select _Show_ in _Mountain Duck → Preferences → Connection_ to reveal the log file named *mountainduck.log*. In addition to the current log file, there are compressed versions of the latest five cycled log files named `mountainduck-*.log.zip` are available.
 
-:::
 ::::
+:::::
 
 #### Debug Log
 
@@ -58,6 +62,21 @@ It can be reached by clicking on the Show button within _Mountain Duck → Prefe
 :::{admonition} Windows only
 The installation log contains records of all actions performed by the setup program and by other executable files related to installation. It is required for troubleshooting if you encounter errors during the installation process. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
 :::
+
+#### Thread dump
+
+In case of application freezes and beach ball issues a thread dump is helpful to find the cause.
+
+A thread dump can be obtained by following the steps below:
+
+1. Reproduce the issue that Mountain Duck hangs and you see the beachball cursor when hovering over the status bar menu.
+2. Open a _Terminal.app_ window, the application can be found in `/Applications/Utilities`
+3. Enter 
+```
+kill -USR1 $(ps aux|grep "Mountain Duck"| grep -v grep | awk '{print $2}')
+```
+
+The thread dump will be saved as _mountainduck.dmp_ in the default [log location](#logging-output).
 
 ### Feature Request
 
