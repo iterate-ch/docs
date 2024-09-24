@@ -64,7 +64,7 @@ The setting is not available in the Mac App Store version. Make sure to change t
 
 :::{admonition} macOS only
 :class: tip
-The mount location **cannot** be set to `/Volumes` where the directory is not writable. The default is set to `~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck/Volumes.noindex`.
+The default is set to `~/Library/Application Support/Mountain Duck/Volumes`. The mount location **cannot** be set to `/Volumes` where the directory is not writable.
 :::
 
 ### Cache Location
