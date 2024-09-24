@@ -34,7 +34,15 @@ Both *HTTP Basic Authentication* and *Digest Authentication* are supported.
 
 ### NTLM Authentication
 
-Used when connecting to [SharePoint](../sharepoint.md) using WebDAV.
+When connecting to a [SharePoint](../sharepoint.md) WebDAV server the domain must be provided using NTLM.
+
+The default domain is `WORKGROUP`. It can be set by using the [hidden property](../tutorials/hidden_properties.md)
+
+	webdav.ntlm.domain=WORKGROUP
+
+If your using a custom domain you can specify it by adding the workstation using the following hidden property
+
+	webdav.ntlm.workstation=REALM
 
 ### Integrated Windows Authentication (IWA)
 
