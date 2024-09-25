@@ -36,7 +36,7 @@ Both *HTTP Basic Authentication* and *Digest Authentication* are supported.
 
 When connecting to a [SharePoint](../sharepoint.md) WebDAV server the domain must be provided using NTLM.
 
-The default domain is `WORKGROUP`. It can be set by using the [hidden property](../tutorials/hidden_properties.md)
+The default domain is `WORKGROUP`. It can be set by using the [hidden property](../../tutorials/hidden_properties.md)
 
 	webdav.ntlm.domain=WORKGROUP
 
