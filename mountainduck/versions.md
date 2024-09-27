@@ -74,15 +74,9 @@ Alternatively, use the corresponding option in the bookmark configuration to ena
 
 The versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named like the following pattern: `filename.extension → filename-20230906102017.762.extension`
 
-### Versions while transferring
-
-Versioning for [overwriting](transfer.md#overwrite-prompt) existing files while uploading can be enabled by using a [hidden configuration option](preferences.md#hidden-configuration-options).
-
-    versioning.enable=true
-
 ### Exclude files
 
-To excluded files or file types from versioning use a [hidden configuration option](preferences.md#hidden-configuration-options).
+Versioning can be limited to files matching a regular expression using the [hidden configuration option](preferences.md#hidden-configuration-options).
 
     versioning.include.regex=.*
 
@@ -90,6 +84,6 @@ To excluded files or file types from versioning use a [hidden configuration opti
 
 Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit.
 
-The number of saved verions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
     versioning.limit=5
