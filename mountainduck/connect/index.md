@@ -16,24 +16,27 @@ mode:
 ::::{tabs}
 :::{tab} Integrated
 
-The [_Integrated_ connect mode](integrated.md) synchronizes files and folders from a directory on the local disk with support from macOS and Windows.
+The [_Integrated_ connect mode](integrated.md) synchronizes files and folders from a directory on the local disk with
+support from macOS and Windows.
 
 :::
 :::{tab} Online
 
-Using [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has finished saving a file.
+Using [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has
+finished saving a file.
 
 :::
 :::{tab} Smart Synchronization
 
-In [_Smart Synchronization_ connect mode](sync.md), files are copied to a local cache for faster access prior synchronization with the server in the background.
+In [_Smart Synchronization_ connect mode](sync.md), files are copied to a local cache for faster access prior
+synchronization with the server in the background.
 
 :::
 ::::
 
 ## Feature Comparison
 
-|                                          | **Online** Connect Mode                                               | **Smart Synchronization** Connect Mode                                        | **Integrated** Connect Mode                                 |
+|                                          | **Online**                                                            | **Smart Synchronization**                                                     | **Integrated**                                              |
 |------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------|
 | **Network Volume**                       | ✔                                                                     | ✔                                                                             | –                                                           |
 | **Offline Access**                       | –                                                                     | ✔ Save files in cache on disk for access with no server connectivity          | ✔                                                           |
@@ -46,6 +49,7 @@ In [_Smart Synchronization_ connect mode](sync.md), files are copied to a local 
 | **[Share Files](../share.md)**           | ✔                                                                     | ✔                                                                             | ✔                                                           |
 
 ## Quota Support
+
 Mountain Duck displays the overall quota present on the server as available disk space on the mounted volume.
 
 | Protocol                                                                  | Support |
@@ -73,9 +77,11 @@ Mountain Duck displays the overall quota present on the server as available disk
 :::{admonition} Limited Support
 :class: attention
 
-- **[Microsoft OneDrive](../../protocols/onedrive.md#quota)**: Quota is only supported when setting the *Path* in the bookmark configuration to a folder different from `/`.
-- **[Microsoft SharePoint](../../protocols/sharepoint.md#quota)**: Quota is only supported when setting the *Path* in the bookmark configuration to a *Drives* folder in a SharePoint site folder.
-:::
+- **[Microsoft OneDrive](../../protocols/onedrive.md#quota)**: Quota is only supported when setting the *Path* in the
+  bookmark configuration to a folder different from `/`.
+- **[Microsoft SharePoint](../../protocols/sharepoint.md#quota)**: Quota is only supported when setting the *Path* in
+  the bookmark configuration to a *Drives* folder in a SharePoint site folder.
+  :::
 
 Some protocols do not report the available quota. Finder and Windows Explorer will show exabyte values in *Online*
 connect mode and the available space within the synchronization cache location on your local disk in *Smart
