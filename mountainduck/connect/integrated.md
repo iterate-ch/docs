@@ -1,21 +1,21 @@
 Integrated
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
-```
+:::
 
-```{image} ../_images/Disk_Syncing.png
+:::{image} ../_images/Disk_Syncing.png
 :alt: Disk Syncing
 :width: 200px
-```
+:::
 
 > Local storage is managed by the operating system. The mount is not seen as a remote volume by applications but as a regular folder on disk. This option uses the tightly integrated _File Provider_ (macOS) and _Cloud Files_ (Windows) APIs. Directories can be browsed when offline and files opened are made available for later offline access. You can choose to make selected files and folders available for offline use. Changes to files are uploaded in the background as soon as a connection is available.
 
-```{tip}
+:::{tip}
 You can access files in _Integrated_ connect mode without being always connected the server or cloud storage.
-```
+:::
 
 
 ## Status of Files
@@ -25,29 +25,29 @@ Files and folders on a mounted volume have a status icon overlay in _File Explor
 ### ![](../_images/overlay_uptodate.png) Up to Date
 The file or the contents of a directory has been opened and downloaded to your computer and therefore currently synced with the server or cloud storage. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will appear as *Online Only* and are not downloaded automatically. Files copied to a volume are kept cached by default.
 
-```{note}
+:::{note}
 Files can be purged automatically from the cache when not accessed or the cache size limit is exceeded. Refer to [Cache Limitations](../preferences.md#cache-limitations).
-```
+:::
 
 ### ![](../_images/overlay_infinite.png) Online Only
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
 :::{admonition} macOS only
 :class: note
-```{image} ../_images/File_Provider_Online_Only.png
+:::{image} ../_images/File_Provider_Online_Only.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
-```
+:::
 Click this additional icon displayed next to the filename in Finder.app to request the download of the file.
 :::
 
 ### ![](../_images/overlay_sync.png) In Sync
 The file or folder is selected to be synced with the server or cloud storage to always keep offline. The file takes disk space on your computer and can always be opened even when no connection to the server or cloud storage is possible. New files in a directory on the remote server will be downloaded automatically.
 
-```{tip}
+:::{tip}
 Files explicitly selected to keep offline are **not** automatically purged. Refer to [Cache Limitations](../preferences.md#cache-limitations).
-```
+:::
 
 ### ![](../_images/overlay_syncing.png) Sync in Progress
 The file or folder is currently syncing with the server or cloud storage. Check the menu with the sync status for current download or upload progress.
@@ -61,11 +61,11 @@ Files that failed to sync after changes. You are missing permission to write to 
 
 :::{admonition} macOS only
 :class: note
-```{image} ../_images/File_Provider_Ignored.png
+:::{image} ../_images/File_Provider_Ignored.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
-```
+:::
 This additional icon displayed next to the filename in Finder.app indicates the file is not synced.
 :::
 
@@ -77,11 +77,11 @@ The file or folder is only saved in local cache and not synced. New _Folders_, e
 
 :::{admonition} macOS only
 :class: note
-```{image} ../_images/File_Provider_Error.png
+:::{image} ../_images/File_Provider_Error.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
-```
+:::
 This additional icon displayed next to the filename in Finder.app indicates a sync error for the file.
 :::
 
@@ -90,10 +90,10 @@ This additional icon displayed next to the filename in Finder.app indicates a sy
 
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 Progress is shown when downloading or uploading a file with a progress bar over the file icon or circular progress indicator adjacent the filename.
-```
+:::
 
 ### Keep Offline
 
@@ -102,11 +102,11 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 :::{admonition} macOS only
 :class: tip
 
-```{image} ../_images/File_Provider_Online_Only.png
+:::{image} ../_images/File_Provider_Online_Only.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
-```
+:::
 _Download Now_ when using _Integrated_ connect mode downloads the file but allows it to be removed from cache on low disk space. 
 :::
 
@@ -115,26 +115,26 @@ _Download Now_ when using _Integrated_ connect mode downloads the file but allow
 
 Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk.
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: tip
 
 Choose _Remove Download_ instead when using _Integrated_ connect mode.
-```
+:::
 
 ## Cache 
 
 There are different ways to delete the sync cache:
 * Delete the bookmark with connection mode set to *Smart Synchronization* or *Integrated*
 * Use the deletion prompt when switching the connect mode between *Integrated* and *Smart Synchronization*
-```{image} ../_images/Prompt_Delete_Cache.png
+:::{image} ../_images/Prompt_Delete_Cache.png
 :alt: Delete Cache Prompt
 :width: 400px
-```
+:::
 * Use the delete option in Finder.app once the bookmark is disconnected. You will be prompt to confirm the deletion as it can lead to file loss if some changes aren't synchronized to the server
-```{image} ../_images/Finder_Option_Delete_Cache.png
+:::{image} ../_images/Finder_Option_Delete_Cache.png
 :alt: Delete Cache Option
 :width: 800px
-```
+:::
 
 ## Limitations
 
