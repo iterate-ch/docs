@@ -140,6 +140,16 @@ Choose _Mountain Duck → Retry_ to retry a sync operation failed previously wit
 
 The cache size can be limited per bookmark within the *Preferences → Sync* tab. Also files not accessed within a chosen period of time can be purged. Refer to [Cache Limitations](../preferences.md#cache-limitations). The cache contains obfuscated file contents on local disk to make files available when offline.
 
+### Delete Cache
+
+There are different ways to delete the sync cache:
+* Delete the bookmark with connection mode set to *Smart Synchronization* or *Integrated*
+* Use the deletion prompt when switching the connect mode between *Integrated* and *Smart Synchronization*
+
+```{image} ../_images/Prompt_Delete_Cache.png
+:alt: Delete Cache Prompt
+:width: 600px
+```
 
 ## Transfer Progress
 
@@ -158,7 +168,7 @@ Detailed status for current transfers is available in the *Sync* submenu. The sy
 
 :::{image} ../_images/Menu_Sync_in_Progress.png
 :alt: Sync Progress
-:width: 800px
+:width: 400px
 :::
 
 Shown for the current transfers are transfer rate, remaining data, and already transferred data. If Mountain Duck synchronizes files in a badge, the file state might differ from the state within the file browser. The sync progress display is limited to 5 entries.
