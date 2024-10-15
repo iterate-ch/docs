@@ -30,20 +30,6 @@ Some servers may not support resumable transfers and the file will be reloaded i
 
 You can interrupt a transfer using the *Stop* toolbar button.
 
-## Open Downloaded Files
-
-Use the *Open* toolbar button to open a downloaded file or folder.
-
-:::{admonition} macOS only
-:class: tip
-
-A warning might be displayed before opening the file. See the [download quarantine](download.md#quarantine).
-:::
-
-## Show Downloaded Files
-
-Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.app* or *Explorer*.
-
 ## Progress
 
 ::::{admonition} Windows only
