@@ -109,8 +109,8 @@ Choose the *Cryptomator* button in the toolbar or *File → Unlock Vault* and *F
 
 Lock and unlock vaults within the Finder or Windows Explorer using the context menu:
 
-`Mountain Duck → Cryptomator → Lock Vault`
-`Mountain Duck → Cryptomator → Unlock Vault`
+ * *Mountain Duck → Cryptomator → Lock Vault*
+ * *Mountain Duck → Cryptomator → Unlock Vault*
 
 :::
 ::::
