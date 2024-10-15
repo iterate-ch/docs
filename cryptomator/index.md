@@ -131,7 +131,7 @@ You can check *Add to Keychain* to save the passphrase to open the vault with th
 ::::{tabs}
 :::{group-tab} macOS
 
-Manage your passwords with *Keychain Access.app* on Mac. Refer to [Keychain for Mac: Keychain Access overview](https://support.apple.com/kb/PH20093?locale=en_US).
+Manage your passwords with *Keychain Access.app* on Mac. Refer to the [Keychain Access User Guide](https://support.apple.com/kb/PH20093?locale=en_US).
 
 :::
 :::{group-tab} Windows
