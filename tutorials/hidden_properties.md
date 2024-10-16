@@ -76,8 +76,13 @@ You can also open the *Folder Options* window by searching for `File Explorer Op
 Type the `defaults` command in the format below in a *Terminal.app* (in `\Applications\Utilities`) window and restart
 Mountain Duck.
 
+* Overwrite default preference with custom setting
 ```
 defaults write io.mountainduck <property> <value>
+```
+* Revert to default setting
+```
+defaults delete io.mountainduck <property>
 ```
 
 :::
@@ -86,8 +91,13 @@ defaults write io.mountainduck <property> <value>
 Type the `defaults` command in the format below in a *Terminal.app* (in `\Applications\Utilities`) window and restart
 Cyberduck.
 
+* Overwrite default preference with custom setting
 ```
 defaults write ch.sudo.cyberduck <property> <value>
+```
+* Revert to default setting
+```
+defaults delete ch.sudo.cyberduck <property>
 ```
 
 :::
