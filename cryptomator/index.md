@@ -121,25 +121,25 @@ The menu option is disabled if you have set Preferences → Cryptomator → Auto
 
 ### Save Passphrase
 
-You can check *Add to Keychain* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. Another application that wants to access the vault passphrase from the login keychain will trigger a permission prompt.
+You can check *Add to Keychain* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. 
+
+:::::{tabs}
+::::{group-tab} macOS
+
+Manage your passwords with *Keychain Access.app* on Mac. Refer to the [Keychain Access User Guide](https://support.apple.com/kb/PH20093?locale=en_US). Another application that wants to access the vault passphrase from the login keychain will trigger a permission prompt.
 
 :::{image} _images/Keychain_Access_Cryptomator_Passphrase.png
 :alt: Keychain Access Cryptomator Passphrase
 :width: 400px
 :::
 
-::::{tabs}
-:::{group-tab} macOS
-
-Manage your passwords with *Keychain Access.app* on Mac. Refer to the [Keychain Access User Guide](https://support.apple.com/kb/PH20093?locale=en_US).
-
-:::
-:::{group-tab} Windows
+::::
+::::{group-tab} Windows
 
 Passwords are saved in the *Credential Manager*. You can view and delete your saved login information in *Control Panel → User Accounts → Credential Manager → Windows Credentials*.
 
-:::
 ::::
+:::::
 
 ### File Transfers
 
