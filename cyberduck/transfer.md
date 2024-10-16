@@ -1,6 +1,15 @@
 File Transfers
 ====
 
+:::{toctree}
+:hidden:
+:titlesonly:
+download
+upload
+sync
+copy
+:::
+
 :::{contents} Content
 :depth: 2
 :local:

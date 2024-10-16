@@ -9,10 +9,6 @@ bookmarks
 connection
 browser
 transfer
-download
-upload
-sync
-copy
 edit
 share
 info
