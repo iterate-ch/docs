@@ -193,7 +193,7 @@ The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize`
   `NextCloud` profile with a path set to `/remote.php/webdav`). You are allowed to change the path but it will be
   appended to the default path. Making nextcloud:/path really `nextcloud:/remote.php/webdav/path`.
 
-:::{note}
+:::{tip}
 Spaces and other special-characters are not required to be percent-encoded (e.g. `%20` for space) as long as the path is
 quoted `duck --upload "scheme://hostname/path with/spaces" "/Path/To/Local/File With/Spaces"`.
 :::
