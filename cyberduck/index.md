@@ -16,6 +16,7 @@ copy
 edit
 share
 info
+cryptomator
 preferences
 notifications
 spotlight
@@ -73,6 +74,10 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 - **[Upload](upload.md)** files and folders to a server.
 - **[Synchronize](sync.md)** folders between your computer and a server.
 - **[Copy](copy.md)** files and folders between servers.
+
+## [Cryptomator](cryptomator.md)
+
+Support for client-side encryption with Cryptomator interoperable vaults.
 
 ## [Notifications](notifications.md)
 
