@@ -197,7 +197,7 @@ Using the `ProxyJump` configuration directive in `~/.ssh/config` you can connect
 
 Sample configuration:
 
-```
+```{code-block}
 Host internal
    	HostName server.lan
    	ProxyJump user-external@jump.example.org:2222
@@ -206,14 +206,12 @@ Host internal
 
 You can also work with aliases like
 
-```
+```{code-block}
 Host bastion-host-nickname
     HostName bastion-hostname
     User username
     Port 2222
-```	
 
-```
 Host remote-host-nickname
     HostName remote-hostname
     ProxyJump bastion-host-nickname
