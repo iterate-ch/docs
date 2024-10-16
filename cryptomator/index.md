@@ -40,7 +40,7 @@ Choose *File → New Vault…* to create a new vault.
 
 :::{image} _images/New_Encrypted_Vault_File_Menu_Option.png
 :alt: New Encrypted Vault File Menu Option
-:width: 400px
+:width: 600px
 :::
 
 ::::
@@ -48,11 +48,6 @@ Choose *File → New Vault…* to create a new vault.
 
 1. Choose *New Vault…* from the Finder Extension toolbar or context menu using right-click in Finder or Windows Explorer.
 
-    :::{image} _images/Mountain_Duck_Create_New_Vault_Finder_Extension.png
-    :alt: Mountain Duck Create New Vault (Finder Extension)
-    :width: 400px
-    :::
-    
     :::{image} _images/Mountain_Duck_Create_New_Vault_Windows_Explorer.png
     :alt: Mountain Duck Create New Vault (Windows Explorer)
     :width: 400px
@@ -157,7 +152,7 @@ You can open and browse multiple vaults on a server in a single browser window. 
 
 :::{image} _images/Cryptomator_Vault_Browser.png
 :alt: Cryptomator Vault Browser
-:width: 400px
+:width: 600px
 :::
 
 ### Moving Files Into Vault
