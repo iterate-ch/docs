@@ -416,6 +416,10 @@ macOS `⌘I` Windows `Alt+Return`) → S3*. Available storage classes are
 - Glacier
 - Glacier Deep Archive
 
+:::{tip}
+As the storage class applies to files selectively, it cannot be set as a default on a bucket. Therefore the storage class is displayed as _Unknown_ for buckets.
+:::
+
 ## Lifecycle Configuration
 
 Specify after how many days a file in a bucket should be moved to Amazon Glacier or deleted.
