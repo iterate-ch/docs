@@ -202,27 +202,33 @@ Spaces and other special-characters are not required to be percent-encoded (e.g.
 quoted `duck --upload "scheme://hostname/path with/spaces" "/Path/To/Local/File With/Spaces"`.
 :::
 
-| Protocol                               | Fully Qualified URI required                       | Absolute Path                                           | Relative Path                                          |
-|----------------------------------------|----------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| Windows Azure Storage                  | No                                                 | `azure:/<container>/<key>`                              | `azure:<container>/<key>`                              |
-| Backblaze B2 Cloud Storage             | No                                                 | `b2:/<container>/<key>`                                 | `b2:<container>/<key>`                                 |
-| WebDAV (HTTP)                          | Yes (`dav://<hostname>/<path>`)                    |                                                         |                                                        |
-| WebDAV (HTTPS)                         | Yes (`davs://<hostname>/<path>`)                   |                                                         |                                                        |
-| Nextcloud                              | Yes (`nextcloud://<hostname>/<path>`)              |                                                         |                                                        |
-| ownCloud                               | Yes (`owncloud://<hostname>/<path>`)               |                                                         |                                                        |
-| DRACOON (Email Address)                | Yes (`dracoon://<hostname>/<path>`)                |                                                         |                                                        |
-| Dropbox                                | No                                                 | `dropbox:/<path>`                                       | `dropbox:<path>`                                       |
-| Local Disk                             | No                                                 | `file:/<path>`                                          | `file:<path>`                                          |
-| FTP (File Transfer Protocol)           | Yes (`ftp://<hostname>/<path>`)                    |                                                         |                                                        |
-| FTPS (Explicit Auth TSL)               | Yes (`ftps://<hostname>/<path>`)                   |                                                         |                                                        |
-| Google Drive                           | No                                                 | `googledrive:/<path>`                                   | `googledrive:<path>`                                   |
-| Google Cloud Storage                   | No                                                 | `gs:/<path>`                                            | `gs:<path>`                                            |
-| Microsoft OneDrive                     | No                                                 | `onedrive:/<path>`                                      | `onedrive:<path>`                                      |
-| Amazon S3                              | `s3://<hostname>/<container>/<key>`                | `s3:/<container>/<key>` <br/>(using `s3.amazonaws.com`) | `s3:<container>/<key>` <br/>(using `s3.amazonaws.com`) |
-| SFTP (SSH File Transfer <br/>Protocol) | Yes (`sftp://<hostname>/<path>`)                   |                                                         |                                                        |
-| Spectra S3 (HTTPS)                     | Yes<br/>(`spectra://<hostname>/<container>/<key>`) |                                                         |                                                        |
-| Rackspace Cloud Files (US)             | No                                                 | `rackspace:/<container>/<key>`                          | `rackspace:<container>/<key>`                          |
-| Swift (OpenStack Object<br/>Storage)   | Yes (`swift://<hostname>/<container>/<key>`)       |                                                         |                                                        |
+| Protocol                                             | Fully Qualified URI required                       | Absolute Path                                           | Relative Path                                          |
+|------------------------------------------------------|----------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
+| [FTP](../protocols/ftp.md) (File Transfer Protocol)  | Yes (`ftp://<hostname>/<path>`)                    |                                                         |                                                        |
+| [FTPS](../protocols/ftp.md) (Explicit Auth TSL)      | Yes (`ftps://<hostname>/<path>`)                   |                                                         |                                                        |
+| [SFTP](../protocols/sftp/index.md)                   | Yes (`sftp://<hostname>/<path>`)                   |                                                         |                                                        |
+| [WebDAV](../protocols/webdav/index.md) (HTTP)        | Yes (`dav://<hostname>/<path>`)                    |                                                         |                                                        |
+| [WebDAV](../protocols/webdav/index.md) (HTTPS)       | Yes (`davs://<hostname>/<path>`)                   |                                                         |                                                        |
+| [SMB](../protocols/smb.md)                           | Yes (`smb://<hostname>/<path>`)                    |                                                         |                                                        |
+| Local Disk                                           | No                                                 | `file:/<path>`                                          | `file:<path>`                                          |
+|                                                      |
+| [Nextcloud](../protocols/webdav/nextcloud.md)        | Yes (`nextcloud://<hostname>/<path>`)              |                                                         |                                                        |
+| [ownCloud](../protocols/webdav/nextcloud.md)         | Yes (`owncloud://<hostname>/<path>`)               |                                                         |                                                        |
+| [Amazon S3](../protocols/s3/index.md)                | `s3://<hostname>/<container>/<key>`                | `s3:/<container>/<key>` <br/>(using `s3.amazonaws.com`) | `s3:<container>/<key>` <br/>(using `s3.amazonaws.com`) |
+| [Google Storage](../protocols/googlecloudstorage.md) | No                                                 | `gs:/<path>`                                            | `gs:<path>`                                            |
+| [OpenStack Swift](../protocols/openstack/index.md)   | Yes (`swift://<hostname>/<container>/<key>`)       |                                                         |                                                        |
+| [Azure Blob Storage](../protocols/azure.md)          | No                                                 | `azure:/<container>/<key>`                              | `azure:<container>/<key>`                              |
+| [Backblaze B2](../protocols/b2.md)                   | No                                                 | `b2:/<container>/<key>`                                 | `b2:<container>/<key>`                                 |
+|                                                      |
+| [Microsoft OneDrive](../protocols/onedrive.md)       | No                                                 | `onedrive:/<path>`                                      | `onedrive:<path>`                                      |
+| [Microsoft Sharepoint](../protocols/sharepoint.md)   | No                                                 | `sharepoint:/<path>`                                    | `sharepoint:<path>`                                    |
+| [Dropbox](../protocols/dropbox.md)                   | No                                                 | `dropbox:/<path>`                                       | `dropbox:<path>`                                       |
+| [Google Drive](../protocols/googledrive.md)          | No                                                 | `googledrive:/<path>`                                   | `googledrive:<path>`                                   |
+| [Box](../protocols/box.md)                           | No                                                 | `box:/<path>`                                           | `box:<path>`                                           |
+|                                                      |
+| [DRACOON](../protocols/dracoon.md)                   | Yes (`dracoon://<hostname>/<path>`)                |                                                         |                                                        |
+| Spectra S3 (HTTPS)                                   | Yes<br/>(`spectra://<hostname>/<container>/<key>`) |                                                         |                                                        |
+| Rackspace Cloud Files (US)                           | No                                                 | `rackspace:/<container>/<key>`                          | `rackspace:<container>/<key>`                          |
 
 #### Examples
 
