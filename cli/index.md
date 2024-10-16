@@ -171,6 +171,10 @@ You can install additional [connection profiles](../protocols/profiles/index.md)
 the [application support directory](#profiles). Use the `--profile` option to reference
 a [connection profile](../protocols/index.md#connection-profiles) file to use not installed in the standard location.
 
+:::{tip}
+Install connection profiles in [Cyberduck](../cyberduck/index.md) from _Preferences → Profiles_
+:::
+
 ### URI
 
 The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize` must satisfy following rules:
