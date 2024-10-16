@@ -1,4 +1,4 @@
-Windows Azure Blob Storage
+Azure Blob Storage
 ====
 
 :::{image} _images/azure.png
@@ -8,7 +8,7 @@ Windows Azure Blob Storage
 
 > Massively scalable object storage for unstructured data
 
-## Connecting to Windows Azure Blob Storage
+## Connecting to Azure Blob Storage
 
 ### Hostname
 
