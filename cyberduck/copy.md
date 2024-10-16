@@ -15,10 +15,13 @@ File are copied using either a server-side operation or by downloading and uploa
 | [WebDAV](../protocols/webdav/index.md)                   |              ✅               |                         |
 | [SMB](../protocols/smb.md)                               |              ✅               |                         |
 | [Nextcloud & ownCloud](../protocols/webdav/nextcloud.md) |              ✅               |                         |
+| Local Disk                                               |              ✅               |                         |
+|                                                          |
 | [Amazon S3](../protocols/s3/index.md)                    |              ✅               |                         |
 | [Google Storage](../protocols/googlecloudstorage.md)     |              ✅               |                         |
 | [OpenStack Swift](../protocols/openstack/index.md)       |              ✅               |                         |
 | [Azure](../protocols/azure.md)                           |              ✅               |                         |
+| [Backblaze B2](../protocols/b2.md)                       |              ✅               |                         |
 |                                                          |
 | [Microsoft OneDrive](../protocols/onedrive.md)           |              ✅               |                         |
 | [Microsoft Sharepoint](../protocols/sharepoint.md)       |              ✅               |                         |
@@ -26,11 +29,9 @@ File are copied using either a server-side operation or by downloading and uploa
 | [Google Drive](../protocols/googledrive.md)              |              ✅               |                         |
 | [Box](../protocols/box.md)                               |              ✅               |                         |
 |                                                          |
-| [Backblaze B2](../protocols/b2.md)                       |              ✅               |                         |
 | [DRACOON](../protocols/dracoon.md)                       |              ✅               |                         |
 | [Files.com](../protocols/files.com.md)                   |              ✅               |                         |
 | [iRODS](../protocols/irods.md)                           |              ✅               |                         |
-| Local Disk                                               |              ✅               |                         |
 
 :::{important}
 Transfer speed depends on your local connectivity as files are routed through your computer for transfer between the
