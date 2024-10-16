@@ -14,11 +14,17 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 1. You will be asked to link Cyberduck to your Dropbox account on your first connection attempt.
 
-    ![Dropbox Link](_images/Dropbox_Link.png)
+   :::{image} _images/Dropbox_Link.png
+   :alt: Dropbox Link
+   :width: 500px
+   :::
 
 2. Log in to Dropbox and grant permissions to *Cyberduck*.
 
-   ![Dropbox Permissions](_images/Dropbox_Permissions.png)
+   :::{image} _images/Dropbox_Permissions.png
+   :alt: Dropbox Permissions
+   :width: 500px
+   :::
 
 3. The authorization code will be submitted to Cyberduck automatically.
 
