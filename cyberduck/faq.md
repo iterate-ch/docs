@@ -21,13 +21,26 @@ Cyberduck is free software. Free software is a matter of the users' freedom to r
 :width: 600px
 :::
 
-#### Mac App Store
+:::::{tabs}
+::::{tab} Mac App Store
 
 The presence of Cyberduck is important for the visibility of the project in particular for new and average users on the Mac platform. The caveat is that the donation key model is not supported in the App Store per the developer agreement. Software asking for voluntary contributions does not get approved. We have therefore opted to distribute Cyberduck in the App Store for a fixed price with no donation prompt. It is your choice to buy the version from the App Store or download from the website and opt in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
-#### Windows App Store
+:::{tip}
+Cyberduck is libre (FLOSS) software and will remain so in the future.
+:::
+::::
+::::{tab} Windows App Store
 
-The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
+The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like.
+
+:::{tip}
+Cyberduck is libre (FLOSS) software and will remain so in the future.
+:::
+::::
+:::::
+
+#### 
 
 ##### Troubleshooting
 
