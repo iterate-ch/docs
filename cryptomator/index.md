@@ -123,7 +123,7 @@ The menu option is disabled if you have set Preferences → Cryptomator → Auto
 
 You can check *Add to Keychain* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. Another application that wants to access the vault passphrase from the login keychain will trigger a permission prompt.
 
-:::{image} _images/Keychain_Access_Crpytomator_Passphrase.png
+:::{image} _images/Keychain_Access_Cryptomator_Passphrase.png
 :alt: Keychain Access Cryptomator Passphrase
 :width: 400px
 :::
