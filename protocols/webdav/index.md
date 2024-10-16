@@ -172,3 +172,11 @@ If you are running an Apache configuration make sure to disable `fastcgi` and `p
 ### mod_evasive
 
 Deployments with WebDAV on Apache HTTP server with the *mod_evasive* module may block requests leading to permission failures with `403` HTTP errors returned by the server.
+
+
+### Interoperability with Microsoft IIS
+
+The following configuration options are recommended for interoperability with Microsoft IIS WebDAV:
+- Enable [`HEAD` method](https://docs.microsoft.com/en-us/iis/manage/configuring-security/configure-request-filtering-in-iis#http-verbs)
+- Enable [double escaping](https://docs.microsoft.com/en-us/iis/manage/configuring-security/configure-request-filtering-in-iis#configure-double-escaping)
+- Disable [Filter Double-Encoded Requests](https://docs.microsoft.com/en-us/iis/manage/configuring-security/use-request-filtering#filter-double-encoded-requests)
