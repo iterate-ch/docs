@@ -37,12 +37,8 @@ The Windows Store does not support the donation key model. We have therefore opt
 :::{tip}
 Cyberduck is libre (FLOSS) software and will remain so in the future.
 :::
-::::
-:::::
 
-#### 
-
-##### Troubleshooting
+**Troubleshooting**
 
 If you bought Cyberduck on Windows Store, but you are not allowed to use Cyberduck due to a Trial Expired error message, please execute the following steps to ensure that your local app license cache is up-to-date – a reinstall of Cyberduck via Windows Store does not refresh your license.
 
@@ -62,6 +58,9 @@ If these steps are not resolving the trial expired message please follow these a
 2. Copy `Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}`
 3. Paste it into the window
 4. Run it and wait for completion.
+
+::::
+:::::
 
 ### What are the System Requirements for Cyberduck?
 
