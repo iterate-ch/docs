@@ -7,6 +7,7 @@ Tutorials
 hidden_properties
 custom_oauth_client_id
 iam
+vault_localdisk
 :::
 
 Find detailed step-by-step instructions for setup, connecting and most common use-cases as well as tutorials for more complicated workarounds.
@@ -19,3 +20,6 @@ Configure hidden preferences.
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
+
+## [Access Vaults on Local Disk](vault_localdisk.md)
+Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md) support accessing vaults on your local disk.

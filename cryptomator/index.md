@@ -165,32 +165,7 @@ The vault must be unlocked before you move files to it, otherwise the files won'
 
 ### Access Vaults on Local Disk
 
-Both [Cyberduck](https://cyberduck.io/) and [Mountain Duck](https://mountainduck.io/) support browsing your local disk to access vaults created on your computer. Create a new [bookmark](../cyberduck/bookmarks) to connect to your local disk.
-
-:::{image} _images/local_disk_connection.png
-:alt: Local Disk Connection
-:width: 400px
-:::
-
-In your local disk connection, you can access all directories which are saved on your local disk. This includes for example your local synchronized [Dropbox](../protocols/dropbox), [Google Drive](../protocols/googledrive) and [OneDrive](../protocols/onedrive) directories.
-
-::::{admonition} Access a Cryptomator Vault on local disk on the example of Dropbox
-:class: note
-
-1. Navigate to the Dropbox directory and open the subdirectories until you reach your vault.
-2. Double click your vault.
-3. Type your set password in the password box. If you want you can save the password for easier access to this directory for further usage.
-   :::{image} _images/access_Cryptomator_vault_Mountain_Duck.png
-   :alt: Mountain Duck Cryptomator Vault 
-   :width: 400px
-   :::
-   :::{image} _images/access_Cryptomator_vault_Cyberduck.png
-   :alt: Cyberduck Access Cryptomator Vault
-   :width: 400px
-   :::
-4. Click the Continue button and your vault should open.
-
-::::
+Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md) support browsing your local disk to access vaults created on your computer. Refer to the [tutorial](../tutorials/vault_localdisk.md).
 
 ## Known Limitations
 
