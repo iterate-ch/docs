@@ -176,7 +176,7 @@ Deployments with WebDAV on Apache HTTP server with the *mod_evasive* module may 
 
 ### Interoperability with Microsoft IIS
 
-The following configuration options are recommended for interoperability with Microsoft IIS WebDAV:
+The following configuration options are recommended for interoperability. Refer to [IIS Manager](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8) to configure these settings.
 - Enable [`HEAD` method](https://docs.microsoft.com/en-us/iis/manage/configuring-security/configure-request-filtering-in-iis#http-verbs)
 - Enable [double escaping](https://docs.microsoft.com/en-us/iis/manage/configuring-security/configure-request-filtering-in-iis#configure-double-escaping)
 - Disable [Filter Double-Encoded Requests](https://docs.microsoft.com/en-us/iis/manage/configuring-security/use-request-filtering#filter-double-encoded-requests)
