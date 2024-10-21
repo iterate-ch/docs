@@ -7,6 +7,10 @@ Cloudflare R2
 
 {download}`Download<https://profiles.cyberduck.io/Cloudflare%20R2%20Storage%20(S3).cyberduckprofile>` the *Cloudflare R2 Storage (S3) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
+:::{tip}
+Make sure to set `<ACCOUNT_ID>.r2.cloudflarestorage.com` for server. The `ACCOUNT_ID` can be found in the [Cloudflare dashboard](https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/).
+:::
+
 ### Regions
 The connection profile supports the following [regions](https://developers.cloudflare.com/ssl/edge-certificates/geokey-manager/supported-options/#available-regions):
 
