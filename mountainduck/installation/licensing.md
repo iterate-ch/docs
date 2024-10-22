@@ -93,26 +93,4 @@ version prior your purchase from the Mac App Store.
 Installations from the Mac App Store do not require a license file.
 :::
 
-Additional reasons for a missing license file can be:
-
-- A key is sent when the payment is no more pending.
-- The license file will be sent to the registered email. Typos can misslead the email.
-- Check the spam folder of your email application.
-
-### Not a Valid Registration Key
-
-Your license file is valid for an older version of Mountain Duck. Please upgrade your license file to use the latest
-version of the application or revert to an older version.
-
-An additional reason might be, that your email application changed the license file while downloading. Make sure that
-the filename of the registration key ends with `.mountainducklicense`. In this case please try the following:
-
-- If you are using a webmail provider, try using a different browser or email client application to access your mail.
-- Contact you hosting service provider how to download attachments.
-- Forward the mail to a different mail account where you possibly don’t have an issue downloading attachments.
-- Change the file extension of the license file back to `.mountainducklicense`.
-
-### Recover License Files
-
-Registration keys can be [recovered](https://mountainduck.io/help/) using the email address you registered while
-purchasing.
+You can always [lookup](https://mountainduck.io/help/#recover) your registration key with the email address registered.
