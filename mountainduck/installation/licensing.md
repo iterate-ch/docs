@@ -76,7 +76,9 @@ To use the version from the Mac App Store after testing the application, you hav
 
 ### No License File Received
 
-You won't receive a license file after purchasing via AppStore because the application is registered to the store account in use while purchasing.
+:::{tip}
+Installations from the Mac App Store do not require a license file.
+:::
 
 Additional reasons for a missing license file can be:
 - A key is sent when the payment is no more pending.
