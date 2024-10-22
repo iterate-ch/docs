@@ -1,13 +1,6 @@
 Installation
 ====
 
-:::{toctree}
-:hidden:
-:titlesonly:
-
-licensing
-:::
-
 :::::{tabs}
 ::::{group-tab} macOS
 
@@ -84,7 +77,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 
 ## Registration Key
 
-Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the [application support folder](../support.md#application-support-folder).
+Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the [application support folder](../support/index.md#application-support-folder).
 
 :::::{tabs}
 ::::{group-tab} macOS
@@ -127,11 +120,11 @@ For troubleshooting purposes when reaching out for support, please share the lat
 
 ## Installation with Device Management Software
 
-You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
+You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
 
 ### Defaults
 
-- Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support.md#application-support-folder).
+- Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support/index.md#application-support-folder).
 - Share default settings by using the [default.properties file](../preferences.md#hidden-configuration-options). 
 
 ## Uninstall

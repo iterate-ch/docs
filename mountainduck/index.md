@@ -14,7 +14,7 @@ versions
 cryptomator
 preferences
 issues/index
-support
+support/index
 :::
 
 Cyberduck for mounting volumes in the file explorer is available for Mac & Windows.
@@ -25,7 +25,7 @@ Cyberduck for mounting volumes in the file explorer is available for Mac & Windo
 
 Refer to our installation instructions.
 
-## [Licensing](installation/licensing.md)
+## [Licensing](support/licensing.md)
 
 Refer to our licensing FAQ.
 

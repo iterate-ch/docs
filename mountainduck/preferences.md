@@ -55,7 +55,7 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 ### Mount Location 
 
-Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
+Volumes are mounted in the *Volumes* folder in the [application support directory](support/index.md#application-support-folder). You can change the default to another folder that is writable.
 
 :::{admonition} Mac App Store
 :class: attention
@@ -72,7 +72,7 @@ The default is set to `~/Library/Application Support/Mountain Duck/Volumes`. The
 ::::{tabs}
 :::{group-tab} macOS
 
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md). The disk must be formatted as HFS+ or APFS.
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support/index.md#application-support-folder). The disk must be formatted as HFS+ or APFS.
 
 :::
 :::{group-tab} Windows
