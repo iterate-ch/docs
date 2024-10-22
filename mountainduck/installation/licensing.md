@@ -45,7 +45,9 @@ You need a multi-user license for the number of employees using Mountain Duck.
 
 Yes, we offer a 30% discount for college/university students, staff and faculty at all grade levels. Use your academic email address and drop us a line at [support@mountainduck.io](mailto:support@mountainduck.io) to get your discount coupon.
 
-Please note that for academic labs with non-personal computers a per device licensing model applies.
+:::{note}
+For academic labs with non-personal computers a per device licensing model applies.
+:::
 
 ### How Does the Licensing Work in a Terminal Services Environment?
 
