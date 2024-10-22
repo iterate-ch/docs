@@ -88,11 +88,11 @@ ssh.authentication.publickey.default.enable=true
 
 ### Public Key Authentication
 
-Public-key authentication allows you to connect to a remote server without sending your password over the Internet. Public-key authentication uses two keys:
-1. a private key that only you have that should be kept in a secure place and protected with a password
-2. the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
+Public-key authentication allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
+- a private key that only you have that should be kept in a secure place and protected with a password.
+- the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
 
-Private keys can be configured in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
+Private keys to authenticate with can be selected in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
 
 #### PuTTY Key Format Interoperability
 
@@ -104,15 +104,7 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 
 #### Configure Public Key Authentication
 
-1. Run the command `ssh-keygen` from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a 'passphrase'. If you use a *passphrase* then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don't enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.
-	```
-	ssh-keygen -m PEM -t rsa
-	```
-2. Copy the public key to the remote host you wish to access and add it to the file `authorized_keys` in your `~/.ssh` directory. (If that file does not exist then you should create it.) Anybody listed in the authorized_keys file (via their public key) is allowed to log-in, provided that they can prove that they possess the corresponding private key. Thus, if you have the private key in your .ssh directory on your home machine you'll be allowed in.
-	```
-	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
-	```
-3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
+See the tutorial [Configure Public Key Authentication for SFTP](../../tutorials/sftp_publickeyauth.md) to create a public/private key pair and configure public key authentication with an OpenSSH server. 
 
 ##### OpenSSH User Certificate Authentication
 
