@@ -42,6 +42,10 @@ In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the user
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 
 :::
 
+:::{tip}
+Users require an [IAM role](https://cloud.google.com/storage/docs/access-control/iam-roles) that includes the `storage.buckets.list` and `storage.buckets.get` permissions.
+:::
+
 #### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark delete the current bookmark and create a new one to start a new authentication flow.
