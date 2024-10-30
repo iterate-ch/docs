@@ -88,11 +88,13 @@ ssh.authentication.publickey.default.enable=true
 
 ### Public Key Authentication
 
-Public-key authentication allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
-- a private key that only you have that should be kept in a secure place and protected with a password.
-- the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
-
 Private keys to authenticate with can be selected in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth.md) to configure public key authentication with an OpenSSH server.
+:::
 
 #### PuTTY Key Format Interoperability
 
@@ -101,10 +103,6 @@ PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not 
 #### OpenSSH Key Format Interoperability
 
 OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
-
-#### Configure Public Key Authentication
-
-See the tutorial [Configure Public Key Authentication for SFTP](../../tutorials/sftp_publickeyauth.md) to create a public/private key pair and configure public key authentication with an OpenSSH server. 
 
 ##### OpenSSH User Certificate Authentication
 

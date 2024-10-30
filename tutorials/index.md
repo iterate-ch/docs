@@ -8,6 +8,7 @@ hidden_properties
 custom_oauth_client_id
 iam
 vault_localdisk
+sftp_publickeyauth
 :::
 
 Find detailed step-by-step instructions for setup, connecting and most common use-cases as well as tutorials for more complicated workarounds.
@@ -23,3 +24,6 @@ IAM allows you to create credentials for third parties accessing your S3 account
 
 ## [Access Vaults on Local Disk](vault_localdisk.md)
 Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md) support accessing vaults on your local disk.
+
+## [Configure Public Key Authentication for SFTP](sftp_publickeyauth.md)
+Configure Public Key Authentication for SFTP using OpenSSH tools.
