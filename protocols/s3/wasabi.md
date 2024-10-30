@@ -47,4 +47,4 @@ Connecting to buckets with dots in the bucket name can cause a certificate error
 
 ## References
 
-- [How do I use Cyberduck or Mountain Duck with Wasabi?](https://wasabi-support.zendesk.com/hc/en-us/articles/115001671012-How-do-I-use-Cyberduck-or-Mountain-Duck-with-Wasabi-)
+- [Cyberduck or Mountain Duck With Wasabi](https://docs.wasabi.com/docs/how-do-i-use-cyberduck-or-mountain-duck-with-wasabi)
