@@ -137,7 +137,7 @@ The following agents are supported:
 ::::
 
 :::{tip}
-When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many login failures and you will receive the error _Too many authentication failures_.
+When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise, the server may deny the connection because of too many login failures, and you will receive the error _Too many authentication failures_.
 :::
 
 Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
