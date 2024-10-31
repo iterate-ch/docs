@@ -12,7 +12,7 @@ Make sure to set `<ACCOUNT_ID>.r2.cloudflarestorage.com` for server. The `ACCOUN
 :::
 
 ### Regions
-The connection profile supports the following [regions](https://developers.cloudflare.com/ssl/edge-certificates/geokey-manager/supported-options/#available-regions):
+The connection profile supports the following [regions](https://developers.cloudflare.com/r2/reference/data-location/#available-hints):
 
 - `APAC` (Asia Pacific)
 - `EEUR` (Eastern Europe)
