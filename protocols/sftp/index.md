@@ -116,8 +116,9 @@ Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
 
-:::{warning}
-The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/13945).
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#13945](https://github.com/iterate-ch/cyberduck/issues/13945).
 :::
 
 ::::{tabs}
@@ -211,8 +212,9 @@ Host remote-host-nickname
 
 Open in *Terminal* allows you to open an SSH shell for the current working directory with a single click.
 
-:::{warning}
-The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/7664).
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#7664](https://github.com/iterate-ch/cyberduck/issues/7664).
 :::
 
 ::::{tabs}

@@ -256,8 +256,9 @@ Right-click on white space within the mounted drive in Finder or Explorer to add
 
 Right-click on a folder and choose *Open in Terminal* to open an SSH connection to the server in Terminal for SFTP bookmarks.
 
-:::{attention}
-This feature is not supported in the version available in the Mac App Store.
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#7664](https://github.com/iterate-ch/cyberduck/issues/7664).
 :::
 
 ### Info Panel

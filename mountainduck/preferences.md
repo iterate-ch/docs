@@ -59,7 +59,7 @@ Volumes are mounted in the *Volumes* folder in the [application support director
 
 :::{admonition} Mac App Store
 :class: attention
-The setting is not available in the Mac App Store version. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
+The setting is not available in the version installed from the Mac App Store. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
 :::
 
 :::{admonition} macOS only
