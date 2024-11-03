@@ -169,10 +169,10 @@ Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/inde
 
 ## Known Limitations
 
-- As [Name shortening](https://docs.cryptomator.org/en/latest/security/architecture/#name-shortening) is not supported the maximum length for a filename (including extension) is 146 characters. Note that using non-ASCII characters in your filenames may lower this limit.   
+- As [name shortening](https://docs.cryptomator.org/en/latest/security/architecture/#name-shortening) is not supported, the maximum length for a filename (including extension) is 146 characters. Note that using non-ASCII characters in your filenames may lower this limit.
 - Changing the vault passphrase is currently not supported.
 - To delete a vault it cannot be unlocked. Choose *Cancel* in the vault password prompt to skip unlocking the vault after selecting the vault folder for delete.
-- Creating or accessing a vault in a vault is currently not supported using Cyberduck.
+- Creating or accessing a vault within a vault is currently not supported using Cyberduck.
 - Locking or unlocking a vault requires network connectivity using Mountain Duck regardless of the [connect mode](../mountainduck/connect/index.md).
 
 ## Preferences
