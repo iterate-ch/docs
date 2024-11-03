@@ -127,7 +127,7 @@ The setting is not available in the version installed from the Mac App Store. Re
 The agent `ssh-agent` is running by default on macOS. You add private key identities to the authentication agent using the program `ssh-add`. The SSH agent is located using the `IdentityAgent` directive in `~/.ssh/config` or if missing from the environment variable `SSH_AUTH_SOCK`.
 
 The following agents are supported:
- * OpenSSH `ssh-agent.
+ * OpenSSH `ssh-agent`.
  * [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck)
 
 :::
