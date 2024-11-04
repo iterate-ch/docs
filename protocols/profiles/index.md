@@ -75,7 +75,12 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
+  :::{admonition} S3
+  :class: tip
+
+  This value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+  :::
 - `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../s3/index.md#creating-a-bucket) for [S3](../s3/index.md) and [OpenStack Swift](../openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
   * A profile can omit the `OAuth Client ID` to prompt the user for manual input when connecting.
