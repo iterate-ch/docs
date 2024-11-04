@@ -63,7 +63,11 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Username Placeholder` Suggestion for username in login credentials. Used for input field label when editing bookmark.
 - `Password Placeholder` Suggestion for password in login credentials. Used for input field label when editing bookmark.
 - `Password Configurable` Boolean if password is configurable.
-- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a provider profile image.
+- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels.
+
+  :::{tip} 
+  Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a custom icon.
+  :::
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
 - `Context` Currently used for 
   * Login context path for [OpenStack Swift](../openstack/index.md) profiles.
