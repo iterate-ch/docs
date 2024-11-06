@@ -11,6 +11,11 @@ Cloudflare R2
 Make sure to set `<ACCOUNT_ID>.r2.cloudflarestorage.com` for server. The `ACCOUNT_ID` can be found in the [Cloudflare dashboard](https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/).
 :::
 
+:::{warning}
+For tokens that are limited to _Object Read & Write_ or _Object Read only_ with no permission to list buckets, the bucket name to
+connect to must be set in `Path` when configuring the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark).
+:::
+
 ### Regions
 The connection profile supports the following [regions](https://developers.cloudflare.com/r2/reference/data-location/#available-hints):
 
