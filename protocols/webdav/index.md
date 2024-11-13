@@ -101,10 +101,6 @@ Mountain Duck supports locking using `LOCK` and `UNLOCK` methods when opening do
 
 You can enable custom origin [Amazon CloudFront (Content Delivery Network) distribution](../../protocols/cdn/cloudfront.md) using *File → Info → Distribution (CDN)*.
 
-### SharePoint
-
-Refer to [SharePoint](../sharepoint.md) to connect using WebDAV.
-
 ### Subversion (SVN) Repositories
 
 You can access publicly readable Subversion (SVN) repositories running behind `mod_dav_svn` of *Apache httpd* using anonymous WebDAV (HTTP) access with Cyberduck. For example the [Cyberduck Source Code Repository](http://svn.cyberduck.ch/trunk/).
