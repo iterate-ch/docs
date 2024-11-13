@@ -34,7 +34,7 @@ Both *HTTP Basic Authentication* and *Digest Authentication* are supported.
 
 ### NTLM Authentication
 
-Used when connecting to [SharePoint](../sharepoint.md) using WebDAV.
+Used when connecting to [SharePoint](../sharepoint.md#sharepoint-server) using WebDAV.
 
 ### Integrated Windows Authentication (IWA)
 
