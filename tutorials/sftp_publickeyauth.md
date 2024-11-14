@@ -2,7 +2,7 @@ Configure Public Key Authentication for SFTP using OpenSSH
 ====
 
 Public-key authentication allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
-- Private key that only you have kept in a secure place and protected with a password.
+- Private key kept in a file and protected with a password.
 - Public key placed on the server usually by the system administrator.
 
 1. Run the command `ssh-keygen` from the _Terminal.app_ (macOS) or _Console_ (Windows) to generate a public/private pair
@@ -24,4 +24,4 @@ Public-key authentication allows you to connect to a remote server without a pas
    ```
    ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
    ```
-3. In the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel, select *Use Public Key Authentication* and select the private key in your `~/.ssh` directory.
+3. In the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) window, select *Use Public Key Authentication* and select the private key in your `~/.ssh` directory. When connecting, you will be prompted to enter the password for the private key. Choose *Save Password* to [save the password](../cyberduck/connection.md#passwords).
