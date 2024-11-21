@@ -46,6 +46,12 @@ Using *[Advanced Protection Program](https://support.google.com/accounts/answer/
 Users require an [IAM role](https://cloud.google.com/storage/docs/access-control/iam-roles) that includes the `storage.buckets.list` and `storage.buckets.get` permissions.
 :::
 
+:::{admonition} Storage Object Viewer Role
+:class: note
+
+When connecting with a user with a viewer role only, attempting to list buckets will show the error `…does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist).`. You can still connect to a single bucket by entering the bucket name in _Path_.
+:::
+
 #### Reset OAuth Tokens
 
 If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark delete the current bookmark and create a new one to start a new authentication flow.
