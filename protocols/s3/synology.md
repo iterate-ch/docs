@@ -24,3 +24,4 @@ Connection profiles can be installed from *Preferences → Profiles*.
 ## References
 
 - [C2 Object Storage Quick Start Guide](https://kb.synology.com/en-global/C2/tutorial/Quick_Start_C2_Object_Storage)
+- [Explore and manage C2 Object Storage data on a client computer](https://kb.synology.com/en-global/C2/tutorial/C2_Object_Storage_client_device_exploring)
