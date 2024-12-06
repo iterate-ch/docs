@@ -438,19 +438,15 @@ You can temporarily restore files from *Glacier* and *Glacier Deep Archive* usin
 
 You can set retrieval options for the storage classes *Glacier* and *Glacier Deep Archive* with the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
-Sets Glacier retrieval tier at which the restore will be processed.
+* Set Glacier retrieval tier at which the restore will be processed. Valid values are `Standard`, `Bulk` and `Expedited`.
+  ```
+  s3.glacier.restore.tier=Standard
+  ```
 
-```
-s3.glacier.restore.tier=Standard
-```
-
-→ Valid values are `Standard`, `Bulk`, `Expedited`.
-
-Sets the time, in days, between when an object is uploaded to the bucket and when it expires.
-
-```
-s3.glacier.restore.expiration.days=2
-```
+* Set the time, in days, between when an object is uploaded to the bucket and when it expires.
+  ```
+  s3.glacier.restore.expiration.days=2
+  ```
 
 ### Restored Glacier Files in Mountain Duck
 
