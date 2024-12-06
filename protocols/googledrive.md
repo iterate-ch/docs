@@ -100,9 +100,8 @@ It is not possible to create additional top level folders or files.
 
 :::{admonition} Mountain Duck
 :class: tip
-Set the _Path_ in the [Bookmark](../cyberduck/bookmarks.md) to `/` to show the top level folders. By default only the
+Set the _Path_ in the [Bookmark](../cyberduck/bookmarks.md) to `/` to show the top level folders. By default, only the
 contents of _My Drive_ are shown.
-text
 :::
 
 ### Search
