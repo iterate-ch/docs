@@ -83,6 +83,23 @@ Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations.
 
 ## Features
 
+### Top Level Folders
+
+The following virtual top level folders are displayed:
+
+| Folder Name |    Contents    |
+|-------------|:--------------:|
+| My Files    | Personal files |
+| Shared      | Shared folders |
+
+It is not possible to create additional top level folders or files.
+
+:::{admonition} Mountain Duck
+:class: tip
+Set the _Path_ in the [Bookmark](../cyberduck/bookmarks.md) to `/` to show the top level folders. By default, only the
+contents of _My Files_ are shown.
+:::
+
 ### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
@@ -103,15 +120,6 @@ There are some limitations that you should keep in mind while working with.
 - No interoperability with Microsoft 365 for US Government (other services may apply as well)
 - Native file locking only exists for OneDrive Business (Microsoft 365 Business), it is not supported for regular consumer use.
 - OneDrive API does not list pending upload sessions therefore resuming uploads in Cyberduck will cause the upload to start all over again.
-
-### Top Level folder
-
-It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
-
-| Folder Name |    Contents    |
-|-------------|:--------------:|
-| My Files    | Personal files |
-| Shared      | Shared folders |
 
 ### Quota
 
