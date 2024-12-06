@@ -573,6 +573,16 @@ using [bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bu
 
 ![ACLs](_images/ACLs.png)
 
+:::{admonition} S3 Object Ownership
+:class: warning
+
+If you have
+a [bucket owner enforced policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) set
+with disabled ACLs for a bucket, it is required the IAM user
+you connect with has permissions to read the bucket ownership controls. Ensure the user has
+`s3:GetBucketOwnershipControls` permissions.
+:::
+
 ### Canonical User ID Grantee
 
 If you enter a user ID unknown to AWS, the error message `S3 Error Message. Bad Request. Invalid id.` will be displayed.
@@ -845,6 +855,7 @@ Thus we also forward this delete operation to S3 resulting in the delete marker 
 command-line tools which typically do not delete files prior to overwriting.
 
 ### In Finder.app, Creating a new Top-Level Folder in S3 Fails with
+
 `Interoperability failure. Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`
 
 A bucket name in S3 cannot have whitespace in the filename. Because a new folder created with Finder.app is named
@@ -857,7 +868,9 @@ the [AWS bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/usergu
 :::
 
 ### Saving a File in TextEdit.app will Attempt to Create a Folder
-`/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name of the Folder is not Allowed as in S3.
+
+`/Temporary Items` on the Remote Volume. On some Servers, this may fail due to a Permission Failure or Because the Name
+of the Folder is not Allowed as in S3.
 
 <del>You will get the error message
 `Bucket name is not DNS compatible. Please contact your web hosting service provider for assistance.`.</del> As of
