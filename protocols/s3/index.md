@@ -311,7 +311,7 @@ Per default, buckets are accessed with the parameter `x-amz-requester-payer` in 
 You can change the parameter using the following [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options).
 
 ```
-	s3.bucket.requesterpays=true
+s3.bucket.requesterpays=true
 ```
 
 - [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html)
