@@ -75,12 +75,23 @@ Basic Authentication should only be used when using secured connection over TLS 
 
 #### NTLM Authentication
 
-If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../tutorials/hidden_properties.md).
+[NTLM authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/ntlm-user-authentication) may additionally require the name of the computer (NTLM Workstation) and network domain name (NTLM Domain). The optional domain name can be customized as part of the username in the format `REALM\username` in the _Username_ input field when adding a [bookmark](../cyberduck/bookmarks.md#bookmark-options). 
 
-```
-webdav.ntlm.workstation=MYWORKSTATION
-webdav.ntlm.domain=MYDOMAIN
-```
+* The default domain used when not specified can be set by using the [hidden configuration option](../tutorials/hidden_properties.md)
+    ```
+    webdav.ntlm.domain=MYDOMAIN
+    ```
+
+* The default workstation can be set using the [hidden configuration option](../tutorials/hidden_properties.md)
+    ```
+    webdav.ntlm.workstation=MYWORKSTATION
+    ```
+
+:::{admonition} Windows
+:class: tip
+
+Alternatively, you can set the [hidden configuration option](../tutorials/hidden_properties.md) `webdav.ntlm.environment=true` to read the domain and workstation for NTLM authentication from the Windows environment.
+:::
 
 #### Configuration
 
