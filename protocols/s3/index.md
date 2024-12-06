@@ -429,7 +429,7 @@ Specify after how many days a file in a bucket should be moved to Amazon Glacier
 ## Restore from Glacier
 
 :::{attention}
-This function is currently Cyberduck only.
+This feature is currently Cyberduck only.
 :::
 
 You can temporarily restore files from *Glacier* and *Glacier Deep Archive* using *File → Restore*. The file will be restored using standard retrieval and expire 2 days after retrieval. Restoring takes some time and attempting to download an item not yet restored will lead to an error *The operation is not valid for the object's storage class*.
@@ -448,10 +448,12 @@ You can set retrieval options for the storage classes *Glacier* and *Glacier Dee
   s3.glacier.restore.expiration.days=2
   ```
 
-### Restored Glacier Files in Mountain Duck
+:::{admonition} Mountain Duck
+:class: note
 
-Temporarily restored files from *Glacier* won't change the storage class and therefore won't be listed by Mountain Duck.
-To make restored Glacier files available in Mountain Duck make sure to change the file's storage class in the S3 tab of the [Cyberduck Info window](../../cyberduck/info.md#provider-panel).
+Temporarily restored files from *Glacier* won't change the storage class and are not shown in Mountain Duck.
+To make restored Glacier files available for retrieval in Mountain Duck, make sure to change the storage class in [Info → S3 ](../../cyberduck/info.md#provider-panel) of Cyberduck.
+:::
 
 ## Access Control (ACL)
 
