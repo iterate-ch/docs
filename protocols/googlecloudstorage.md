@@ -25,18 +25,17 @@ In the login prompt of Cyberduck you enter the *Access Key* for the username and
 
 ### OAuth 2.0 Access
 
-:::{attention}
-Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google Cloud Storage anymore because of the deprecated OAuth out-of-band flow.
-:::
+1. Obtain the project ID (`x-goog-project-id`) of your project from the Google Cloud Platform under *Storage Access* from the Google Cloud Storage tab. [Direct link to Google Cloud Storage settings.](https://console.cloud.google.com/storage/settings)
 
-You must obtain the project ID (`x-goog-project-id`) of your project from the Google Cloud Platform under *Storage Access* from the Google Cloud Storage tab. [Direct link to Google Cloud Storage settings.](https://console.cloud.google.com/storage/settings)
-
-:::{image} _images/Project_ID_Bookmark_Configuration.png
-:alt: Project ID Bookmark Configuration
-:width: 500px
-:::
-
-In the login prompt of Cyberduck, you enter the `x-goog-project-id` for the username. The authorization code will be submitted to Cyberduck automatically. You access the page with the authorization code from the link displayed in the login prompt. Click it to open it in a web browser window. You only need to get the authorization code from the website on the first login attempt. Subsequent OAuth authentications will use a refresh token retrieved from the service.
+    :::{image} _images/Project_ID_Bookmark_Configuration.png
+    :alt: Project ID Bookmark Configuration
+    :width: 500px
+    :::
+2. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings.
+3. Enter the `x-goog-project-id` for the _Username_
+4. Choose _Connect_ to open your web browser.
+5. Login to your Google account and grant access to Google Cloud Storage.
+6. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Google Cloud Storage.  Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
 
 :::{attention}
 Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail. 

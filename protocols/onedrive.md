@@ -12,18 +12,22 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to the *One
 
 ## Connecting
 
-> Microsoft Graph, OneDrive, and SharePoint support using a standard OAuth2 authorization flow.
+:::{admonition} OAuth 2.0
+:class: note
+Microsoft Graph, OneDrive, and SharePoint use a OAuth 2.0 authorization code flow to grant access.
+:::
 
 The OneDrive connection profile is bundled by default and connects to the endpoint `https://graph.microsoft.com/v1.0/me`. Login with your personal or business account to `login.microsoftonline.com` when prompted to grant access to Cyberduck.
 
-- OneDrive uses OAuth 2 for authentication with `graph.microsoft.com`. When opening a connection, a web browser window is opened to grant access to OneDrive for Cyberduck.
+1. No credentials must be entered for opening a connection, but instead you need to log-in to your Microsoft account
+   and grant access in your web browser after choosing _Connect_.
 
-:::{image} _images/OneDrive_Sign_In.png
-:alt: OneDrive sign in
-:width: 500px
-:::
+    :::{image} _images/OneDrive_Sign_In.png
+    :alt: OneDrive sign in
+    :width: 500px
+    :::
 
-- The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
+2. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with OneDrive. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
 
 :::{admonition} Multiple Accounts
 :class: tip

@@ -19,24 +19,29 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Drive F
 
 Connect to your [Google Drive](http://drive.google.com/) to store plain files.
 
-### Authentication
-
-:::{attention}
-Using prior versions to 4.12.0 (Mountain Duck) or 8.4.0 (Cyberduck), you might **not** be able to connect to Google
-Drive anymore because of the deprecated OAuth out-of-band flow.
-:::
-
-Google Drive uses OAuth 2 to allow Cyberduck to access your files on Google Drive. Choose your account email as the
-username in the bookmark and choose *Allow* on the website opened in your default web browser to allow Cyberduck to
-*View and manage the files in your Google Drive*. The authorization code will be submitted to Cyberduck automatically.
-Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
-
 :::{admonition} Advanced Protection Program
 :class: warning
 
-Using
-*[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)*
-will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
+Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
+:::
+
+### Authentication
+
+:::{admonition} OAuth 2.0
+:class: note
+Google Drive uses a OAuth 2.0 authorization code flow to grant access.
+:::
+
+1. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings.
+2. No credentials must be entered for opening a connection, but instead you need to log-in to your Google account 
+and grant access in your web browser after choosing _Connect_.
+3. Choose *Allow* on the website opened in your default web browser to grant access. 
+4. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Google Drive. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
+
+:::{admonition} Multiple Accounts
+:class: tip
+
+You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth 2.0 flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
 :::
 
 ### Google Apps Accounts

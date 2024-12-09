@@ -12,20 +12,25 @@ Download [Mountain Duck](https://mountainduck.io/) to access in Finder on macOS 
 
 ## SharePoint Online
 
+:::{admonition} OAuth 2.0
+:class: note
+Microsoft SharePoint uses a OAuth 2.0 authorization code flow to grant access.
+:::
+
 ### Microsoft SharePoint Connection Profile
 
-Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connection profile*. Follow these steps to connect to your *SharePoint Online libraries*:
+Connect to *SharePoint Online* with the bundled *Microsoft SharePoint* connection profile. Follow these steps to connect to your *SharePoint Online libraries*:
 
-1. Create a bookmark with Microsoft SharePoint connection profile
-2. Enter your email address into the username field. The email address is solely used for internal identification and not actual authentication against SharePoint using OAuth.
-3. Double click to connect to the newly created bookmark. A web browser window will open to login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
-4. Grant permission to *Cyberduck* for *OneDrive* and *SharePoint*.
-5. The authorization code will be submitted to Cyberduck automatically.
-6. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
+1. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings and select the _Microsoft SharePoint_ connection profile.
+2. No credentials must be entered for opening a connection, but instead after choosing _Connect_ you need to log in to `login.microsoftonline.com` with your `onmicrosoft.com` account in your web browser.
+3. Grant permission to *Cyberduck* to access your *SharePoint* library.
+4. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Microsoft SharePoint. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
+5. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
 
 ### Microsoft SharePoint Site Connection Profile
 
-In case you are trying to access a site that isn't listed when connecting with the *Microsoft SharePoint* connection profile you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. While using the *Microsoft SharePoint Site* connection profile you are required to use your SharePoint hostname (`contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
+In case you are trying to access a site that is not listed when connecting with the *Microsoft SharePoint* connection profile,
+you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. When using the *Microsoft SharePoint Site* connection profile, you are required to enter the SharePoint hostname (such as `contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
 
 :::{note}
 You can't mount a specific directory with this method as the Path field is used for the URL prefix path.

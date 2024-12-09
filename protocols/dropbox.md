@@ -12,26 +12,33 @@ Access your [Dropbox](https://db.tt/49NiK95I) without syncing to your computer. 
 
 ## Connecting
 
-1. You will be asked to link Cyberduck to your Dropbox account on your first connection attempt.
+:::{admonition} OAuth 2.0
+:class: note
+Dropbox uses a OAuth 2.0 authorization code flow to grant access.
+:::
+
+1. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings.
+2. No credentials must be entered for opening a connection, but instead you need to log in to your Dropbox account
+   and grant access in your web browser after choosing _Connect_.
 
    :::{image} _images/Dropbox_Link.png
    :alt: Dropbox Link
    :width: 500px
    :::
 
-2. Log in to Dropbox and grant permissions to *Cyberduck*.
+3. Log in to Dropbox and grant permissions by selecting _Allow_.
 
    :::{image} _images/Dropbox_Permissions.png
    :alt: Dropbox Permissions
    :width: 500px
    :::
 
-3. The authorization code will be submitted to Cyberduck automatically.
+4. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Dropbox. Subsequent connections will not require authorization. 
 
 :::{admonition} Multiple Accounts
 :class: tip
 
-You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
+You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth 2.0 flow. Make sure to log out in your browser prior to setting up a new bookmark to make sure the new bookmark is linked to a newly authenticated account.
 :::
 
 ### Reset OAuth Tokens
