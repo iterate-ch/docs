@@ -175,7 +175,7 @@ Create a *multi-TIFF* containing the needed icon sizes:
     /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
     /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/ disk.tiff
     ```
-3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
+3. Use the command `cat disk.tiff | base64 -b 70` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
 
 ## Sample Connection Profiles
 
