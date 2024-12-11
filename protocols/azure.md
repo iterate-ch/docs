@@ -22,13 +22,17 @@ Azure Files Storage is not supported.
 
 #### Account and Key
 
-You must obtain the login credentials (Account Name and Primary Access Key) from [portal.azure.com](https://portal.azure.com/). You can find the keys in the section *Access keys*. In the login prompt of Cyberduck upon connecting to Windows Azure you enter the *Storage Account Name* for the username and *Primary Access Key* for the password.
+Obtain the login credentials _Storage Account Name_ and _Primary Access Key_ from [portal.azure.com](https://portal.azure.com/). You can find the keys in the section *Access keys*.
 
 #### Shared Access Signatures (SAS)
 
 You can use a [SAS](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) when you want to provide access to resources in your storage account to any client not possessing your storage account's access keys.
 
-- [Download](https://profiles.cyberduck.io/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile) the Azure (Shared Access Signature Token) profile or install it from *Preferences… → Profiles*.
+:::{note}
+Connection profiles can be installed from *Preferences → Profiles*.
+:::
+
+- {download}`Download<https://profiles.cyberduck.io/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile>` the *Azure (Shared Access Signature Token)* for preconfigured settings.
 
 ### Cyberduck CLI
 
