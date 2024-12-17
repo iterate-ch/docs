@@ -56,6 +56,7 @@ Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connect
 - {download}`Infomaniak Swiss Backup (01) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2001%20(Swift).cyberduckprofile>`
 - {download}`Infomaniak Swiss Backup (02) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2002%20(Swift).cyberduckprofile>`
 - {download}`Infomaniak Swiss Backup (03) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2003%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (04) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2004%20(Swift).cyberduckprofile>`
 
 #### Additional Fields Required
 
