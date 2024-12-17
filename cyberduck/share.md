@@ -287,7 +287,7 @@ folder. Choose *Skip* to create a public URL without password protection. A Box 
 ### FTP, SFTP & WebDAV
 
 If you connect to a web root using ### [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp/index.md)
-or [WebDAV](../protocols/webdav/index.md), refer to [HTTP URL](../cyberduck/bookmarks.md#http-url) on how to configure
+or [WebDAV](../protocols/webdav/index.md), refer to [HTTP URL](../cyberduck/bookmarks.md#web-url) on how to configure
 your bookmark to allow copying a HTTP URL for a selected file. With a valid configuration, you can open the
 corresponding HTTP URL of a file selected with your default web browser or copy the URL to the clipboard. To manage
 permissions, refer to [UNIX Permissions (FTP/SFTP)](info.md#unix-permissions).

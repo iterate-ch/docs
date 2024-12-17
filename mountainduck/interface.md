@@ -231,7 +231,7 @@ Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index
 - *Share…:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Request file…:* Create an URL to share with someone else to allow uploading files to the selected folder.
 
-Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../cyberduck/bookmarks.md#http-url) and [temporary signed URLs in S3](../protocols/s3/index.md#public-urls).
+Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../cyberduck/bookmarks.md#web-url) and [temporary signed URLs in S3](../protocols/s3/index.md#public-urls).
 
 - *Copy URL*
 - *Open URL*

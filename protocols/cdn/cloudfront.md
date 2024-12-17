@@ -51,7 +51,7 @@ A [custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperG
 
 ![Custom Origin CDN](_images/Custom_Origin_CDN.png)
 
-- Adjust the [Web URL](../../cyberduck/bookmarks.md#http-url) of the bookmark to the host where you want to CloudFront look for the original content. If the scheme of the Web URL is `http` the origin HTTP port of the distribution is set to the port number in the Web URL (defaults to `80`) and the HTTPS port is set to `443`. If the scheme is `https` the origin HTTPS port of the distribution is set to the port number in the Web URL (defaults to `443`) and the HTTP port is set to `80`.
+- Adjust the [Web URL](../../cyberduck/bookmarks.md#web-url) of the bookmark to the host where you want to CloudFront look for the original content. If the scheme of the Web URL is `http` the origin HTTP port of the distribution is set to the port number in the Web URL (defaults to `80`) and the HTTPS port is set to `443`. If the scheme is `https` the origin HTTPS port of the distribution is set to the port number in the Web URL (defaults to `443`) and the HTTP port is set to `80`.
 - Set the *Path* of the bookmark to the document root of your web server. This allows you to select files for [invalidation](../../cyberduck/info.md#object-invalidation) or set the [default root object](../../cyberduck/info.md#index-file).
 - Connect to the server and select the *Distribution (CDN)* panel from the [Info](../../cyberduck/info.md) window.
 - Check the *Origin URL* displayed and enable the distribution with *Enable Amazon CloudFront distribution*.
