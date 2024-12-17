@@ -53,6 +53,7 @@ SMB protocol support has been tested with connections to the following server im
 - Windows 2022 Server (`SMB_3_1_1` dialect)
 - Linux Samba (`SMB_3_1_1` dialect)
 - macOS 13.5 (22G74) (`SMB_3_0_2` dialect)
+- SMB [Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol)
 
 ### Cyberduck CLI
 
