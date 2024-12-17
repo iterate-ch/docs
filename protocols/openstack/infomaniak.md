@@ -22,7 +22,7 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- {download}`Infomaniak Public Cloud (01) - Cluster1 connection profile<https://profiles.cyberduck.io/Infomaniak%20Public%20Cloud%20(01).cyberduckprofile>`
+- {download}`Infomaniak Public Cloud (01) - connection profile<https://profiles.cyberduck.io/Infomaniak%20Public%20Cloud%2001%20(Swift).cyberduckprofile>`
 
 #### Additional Fields Required
 
@@ -53,9 +53,9 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- {download}`Infomaniak Swiss Backup (01) - Cluster1 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile>`
-- {download}`Infomaniak Swiss Backup (02) - Cluster2 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile>`
-- {download}`Infomaniak Swiss Backup (03) - Cluster3 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(03).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (01) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2001%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (02) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2002%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (03) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2003%20(Swift).cyberduckprofile>`
 
 #### Additional Fields Required
 
