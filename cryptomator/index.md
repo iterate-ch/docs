@@ -116,7 +116,7 @@ The menu option is disabled if you have set Preferences → Cryptomator → Auto
 
 ### Save Passphrase
 
-You can check *Save Password* to save the passphrase to open the vault with the master key file in your login keychain. The checkbox is disabled by default. 
+Check *Save Password* to save the master key file passphrase of vaults.
 
 :::::{tabs}
 ::::{group-tab} macOS
