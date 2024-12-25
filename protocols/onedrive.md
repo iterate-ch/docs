@@ -57,11 +57,16 @@ reauthenticate by performing an [OAuth Reset](#reset-oauth-tokens).
 
 ### Available Connection Profiles
 
-|                                            | Allows access to                                                                      | Remarks                                        | Bundled by default |
-|--------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------|:------------------:|
-| Microsoft OneDrive                         | Your Drive and shared files	                                                          | Works with your Personal and Business OneDrive |        Yes         |
-| [Microsoft SharePoint](sharepoint.md)      | All sites document libraries and accessible group document libraries                  |                                                |        Yes         |
-| [Microsoft SharePoint Site](sharepoint.md) | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* | Can't mount specific directories               |        Yes         |
+:::{note}
+Connection profiles not bundled by default can be installed from *Preferences → Profiles*.
+:::
+
+|                                                                                         | Allows access to                                                                      | Remarks                                        | Bundled by default |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------|:------------------:|
+| Microsoft OneDrive                                                                      | Your Drive and shared files	                                                          | Works with your Personal and Business OneDrive |        Yes         |
+| [Microsoft SharePoint](sharepoint.md)                                                   | All sites document libraries and accessible group document libraries                  |                                                |        Yes         |
+| [Microsoft SharePoint Site](sharepoint.md#microsoft-sharepoint-site-connection-profile) | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* |                                                |         No         |
+| Microsoft 365 China                                                                     |                                                                                       |                                                |         No         |
 
 ### Administrator Consent Required
 
@@ -142,8 +147,6 @@ organization using *File → Share...*.
 
 There are some limitations that you should keep in mind while working with.
 
-- We've added support for Microsoft 365 China in **Cyberduck 7.8 / Mountain Duck 4.4** but aren't able to verify if it
-  works properly.
 - No interoperability with Microsoft 365 for US Government (other services may apply as well)
 - Native file locking only exists for OneDrive Business (Microsoft 365 Business), it is not supported for regular
   consumer use.

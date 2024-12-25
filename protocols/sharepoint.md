@@ -29,12 +29,12 @@ Connect to *SharePoint Online* with the bundled *Microsoft SharePoint* connectio
 
 ### Microsoft SharePoint Site Connection Profile
 
+:::{note}
+Connection profiles not bundled by default can be installed from *Preferences → Profiles*.
+:::
+
 In case you are trying to access a site that is not listed when connecting with the *Microsoft SharePoint* connection profile,
 you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. When using the *Microsoft SharePoint Site* connection profile, you are required to enter the SharePoint hostname (such as `contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
-
-:::{note}
-You can't mount a specific directory with this method as the Path field is used for the URL prefix path.
-:::
 
 ### SharePoint Hybrid
 
