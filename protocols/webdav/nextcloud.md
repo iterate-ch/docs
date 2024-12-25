@@ -1,47 +1,44 @@
 NextCloud & ownCloud
 ====
 
-`````{tabs}
+:::::{tabs}
+::::{group-tab} Nextcloud
 
-````{tab} Nextcloud
-
-```{image} _images/Nextcloud_Drive_icon.png
+:::{image} _images/Nextcloud_Drive_icon.png
 :alt: Nextcloud Drive Icon
 :height: 128px
-```
+:::
 
 > [Nextcloud Files](https://nextcloud.com/files/) is an on-premise, open-source file sync and share solution designed to be easy-to-use and highly secure.
 
-````
+::::
+::::{group-tab} ownCloud
 
-````{tab} ownCloud
-
-```{image} _images/ownCloud_Drive_icon.png
+:::{image} _images/ownCloud_Drive_icon.png
 :alt: ownCloud Drive Icon
 :height: 128px
-```
+:::
 
 > [ownCloud](https://owncloud.org/features/) is the most straightforward way to file sync and share data. You don’t need to worry about where or how to access your files. With ownCloud, all your data is where ever you are; accessible on all devices, any time.
 
-````
+::::
+:::::
 
-`````
-
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop Client* from Nextcloud & ownCloud.
-```
+:::
 
 ## Connecting
 
 ### Connection Profiles
 
-`````{tabs}
-````{tab} Nextcloud
+:::::{tabs}
+::::{group-tab} Nextcloud
 
 Select the connection profile `Nextcloud` for _Protocol_ bundled by default.
-````
 
-````{tab} ownCloud
+::::
+::::{group-tab} ownCloud
 
 Select the connection profile `ownCloud` for _Protocol_ bundled by default. 
 
@@ -49,46 +46,46 @@ Select the connection profile `ownCloud` for _Protocol_ bundled by default.
 
 Connecting to *ownCloud Infinite Scale* the default authentication scheme is OpenID Connect. It requires the client registration in the identity provider in ownCloud via *Keycloak*. Additionally you need a custom [connection profile](https://github.com/iterate-ch/profiles/pull/83/files) to connect.
 
-```{note}
+:::{note}
 Basic Authentication is disabled by default. For additional information refer to the [ownCloud documentation](https://doc.owncloud.com/ocis/next/deployment/services/s-list/auth-basic.html).
-```
+:::
 
 **Import client configuration for Keycloak**
 
 To test without a custom deployment, use the public instance running at `ocis.ocis-keycloak.latest.owncloud.works` with the identity provider at `keycloak.ocis-keycloak.latest.owncloud.works` (username and password: `admin`).
 
 The client configuration to match the provided connection profile can be imported from the [ownCloud Github repository](https://github.com/owncloud/ocis/blob/7af9cd9e53183acbaac2ffbc6414402bdef1f5d4/deployments/examples/ocis_keycloak/config/keycloak/clients/cyberduck.json) to allow OAuth authentications from [Cyberduck](https://cyberduck.io) & [Mountain Duck](https://mountainduck.io).
-````
 
-````{tab} WebDAV
+::::
+::::{group-tab} WebDAV
 
 Alternatively you can connect using `WebDAV (HTTPS)` with the default path set to `/remote.php/webdav/`.
 
 ![Nextcloud Bookmark Window](_images/NextCloud_Bookmark_Window.png)
-````
-`````
+
+::::
+:::::
 
 
-```{tip}
+:::{tip}
 The default path `/remote.php/dav/files/<username>` will be used with no custom setting in _Path_ to access the WebDAV API.
-```
+:::
 
-```{attention}
+:::{attention}
 You are required to set a _Path_ only if your installation is accessible under a subdirectory such as `example.net/cloud/` this can be indicated by setting a default path of `directory/remote.php/webdav`. You can omit the value in _Path_ if your installation defaults to the root of your domain and is accessible at `example.net/remote.php/dav/files/<username>`. 
-```
+:::
 
 ### Obtain WebDAV Address From Server
 
 Connect to your Nextcloud or ownCloud server in your web browser and obtain the WebDAV address from _Settings_ in the lower left. Paste the copied server address into the *Server* field and finish editing. From the pasted URL the hostname is set in _Server_ and the document root of your Nextcloud or ownCloud installation in _Path_.
 
-```{warning}
+:::{warning}
 Make sure to set in _Username_ the actual username instead of the email address.
-```
+:::
 
 ### 2-Factor Authentication
 
 With 2-factor authentication enabled, you will need to create an app password instead of your regular login credentials. You should find it in *Personal → App passwords*.
-
 
 ## Features
 
@@ -112,9 +109,9 @@ Create different [shares](../../cyberduck/share.md#nextcloud--owncloud) using th
 
 Connecting to *ownCloud Infinite Scale*, interrupted uploads can be resumed at any time.
 
-```{note}
+:::{note}
 Cyberduck 8.9.0 or later is required.
-```
+:::
 
 ## Known Limitations
 

@@ -1,10 +1,10 @@
 FAQ
 ====
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## General
 
@@ -14,28 +14,31 @@ Cyberduck is an open-source server and cloud storage browser for Mac and Windows
 
 ### Is Cyberduck Free?
 
-Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this program useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key and it will help to make Cyberduck even better!
+Cyberduck is free software. Free software is a matter of the users' freedom to run, copy, distribute, study, change, and improve the software. If you find this program useful, please consider making a [donation](http://cyberduck.ch/donate). A donation would not only demonstrate your appreciation of this software but also help to advance development in the future. You receive a registration key, and it will help to make Cyberduck even better!  Alternatively, you can purchase Cyberduck via App Store.
 
-```{image} _images/Donation_Prompt.png
+:::{image} _images/Donation_Prompt.png
 :alt: Donation Prompt
 :width: 600px
-```
+:::
 
-#### What Payment Options are Available?
-
-Donations can be made by using PayPal or Credit card. Alternatively, you can purchase Cyberduck via App Store.
-
-#### Mac App Store
+:::::{tabs}
+::::{tab} Mac App Store
 
 The presence of Cyberduck is important for the visibility of the project in particular for new and average users on the Mac platform. The caveat is that the donation key model is not supported in the App Store per the developer agreement. Software asking for voluntary contributions does not get approved. We have therefore opted to distribute Cyberduck in the App Store for a fixed price with no donation prompt. It is your choice to buy the version from the App Store or download from the website and opt in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
 
-Your purchase receipt from the App Store version is copied to the Application Support folder and recognized as a key when running any version of Cyberduck.
+:::{tip}
+Cyberduck is libre (FLOSS) software and will remain so in the future.
+:::
+::::
+::::{tab} Windows App Store
 
-#### Windows App Store
+The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like.
 
-The Windows Store does not support the donation key model. We have therefore opted to distribute Cyberduck in the Windows Store for a fixed price with no donation prompt. It is your choice to buy the version from the Windows Store or download from the website and opt-in for a payment if you feel like. Cyberduck is libre (FLOSS) software and will remain so in the future.
+:::{tip}
+Cyberduck is libre (FLOSS) software and will remain so in the future.
+:::
 
-##### Troubleshooting
+**Troubleshooting**
 
 If you bought Cyberduck on Windows Store, but you are not allowed to use Cyberduck due to a Trial Expired error message, please execute the following steps to ensure that your local app license cache is up-to-date – a reinstall of Cyberduck via Windows Store does not refresh your license.
 
@@ -55,6 +58,9 @@ If these steps are not resolving the trial expired message please follow these a
 2. Copy `Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}`
 3. Paste it into the window
 4. Run it and wait for completion.
+
+::::
+:::::
 
 ### What are the System Requirements for Cyberduck?
 
@@ -80,7 +86,7 @@ Registration keys can be [recovered](https://cyberduck.io/help#recover) using th
 
 ### The Registration Key Received Cannot be Opened
 
-The registration key is sent to you by email automatically after the Paypal transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
+The registration key is sent to you by email automatically after the transaction has been completed. Make sure the filename of the registration key ends with `.cyberducklicense`. Some email applications change the extension to `.xml` when saving the attachment. If the key is invalid, the file must have been modified when saving it from your email application. Try the following:
 
 - If you are using a webmail provider, try using a different browser or email client application to access your mail.
 - Contact you hosting service provider how to download attachments.
@@ -88,8 +94,8 @@ The registration key is sent to you by email automatically after the Paypal tran
 
 ### Preferences and Application Support Files Location
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookmarks, history, and [connection profiles](../protocols/profiles/index.md) are saved in the application support directory. These settings are shared with [Cyberduck CLI](../cli/index.md) and [Mountain Duck](../mountainduck/index.md).
 
@@ -97,8 +103,8 @@ Preferences are saved in `~/Library/Preferences/ch.sudo.cyberduck.plist`. Bookma
 
 Navigate to the *Library* folder using `⌘⇧-L` or use *Go → Go to Folder...* in Finder.
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Bookmarks, history, [connection profiles](../protocols/profiles/index.md), and workspace information are saved in the application data directory. You can navigate to the `AppData` folder by opening a *File Explorer* window and paste `%AppData%\Cyberduck` in the Quick access location field.
 
@@ -110,8 +116,8 @@ For the Windows Store version refer to
 
 Preferences are stored in `%AppData%\Cyberduck\cyberduck.user.config`. Please note that settings in `%AppData%\Cyberduck\default.properties` takes precedence over `user.config`.
 
-````
-`````
+:::
+::::
 
 ## Where can I Issue Bug Reports and Feature Requests?
 

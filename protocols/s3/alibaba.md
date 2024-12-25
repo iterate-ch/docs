@@ -1,18 +1,18 @@
 Alibaba Cloud Object Storage Service (OSS)
 ====
 
-```{image} https://cdn.cyberduck.io/img/providers/alibaba.png
+:::{image} https://cdn.cyberduck.io/img/providers/alibaba.png
 :alt: Alibaba Cloud Object Storage Service
 :width: 128px
-```
+:::
 
 > [Alibaba Cloud Object Storage Service (OSS)](https://www.alibabacloud.com/help/doc-detail/31817.htm) is a storage service that enables you to store, back up, and archive any amount of data in the cloud. OSS is a cost-effective, highly secure, and highly reliable cloud storage solution. It uses RESTful APIs and provides 99.9999999999% (12 nines) durability (designed for) and 99.995% availability or service continuity (designed for).
 
 ## Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 ### Connection Profile
 

@@ -10,9 +10,9 @@ Sign up for a free account that comes with 5GB of storage and 5GB of transfer pe
 
 ## Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 ### Connection Profile
 
@@ -32,15 +32,14 @@ Use `admin` for the username, the Memstore name when prompted for the Tenant ID 
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `auth.storage.memset.com`
-- Port: `443`
-- Username: Memstore name and username e.g. `mstestaa1.admin`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `auth.storage.memset.com`
+- **Port**: `443`
+- **Username**: Memstore name and username e.g. `mstestaa1.admin`
 	- If you are not using the `admin` user then a container name will need to be specified under *More Options*
-- Password: `Memstore password (API key)`
+- **Password**: Memstore password (API key)
 
 ![Memstore configuration](_images/Memstore.Swift.Config.png)
-
 
 ## References
 - [Documentation and Resources for Developers](https://docs.memset.com/cd/API-%2F-Developer-Resources.199072028.html)

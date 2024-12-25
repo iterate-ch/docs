@@ -1,37 +1,43 @@
 Microsoft SharePoint
 ====
 
-```{image} _images/onedrive.png
+:::{image} _images/onedrive.png
 :alt: Microsoft OneDrive
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) to access in Finder on macOS & Windows Explorer.
-```
+:::
 
 ## SharePoint Online
 
+:::{admonition} OAuth 2.0
+:class: note
+Microsoft SharePoint uses a OAuth 2.0 authorization code flow to grant access.
+:::
+
 ### Microsoft SharePoint Connection Profile
 
-Connect to *SharePoint Online* with the built-in *Microsoft SharePoint connection profile*. Follow these steps to connect to your *SharePoint Online libraries*:
+Connect to *SharePoint Online* with the bundled *Microsoft SharePoint* connection profile. Follow these steps to connect to your *SharePoint Online libraries*:
 
-1. Create a bookmark with Microsoft SharePoint connection profile
-2. Enter your email address into the username field. The email address is solely used for internal identification and not actual authentication against SharePoint using OAuth.
-3. Double click to connect to the newly created bookmark. A web browser window will open to login to `login.microsoftonline.com` with your `onmicrosoft.com` account.
-4. Grant permission to *Cyberduck* for *OneDrive* and *SharePoint*.
-5. The authorization code will be submitted to Cyberduck automatically.
-6. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
+1. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings and select the _Microsoft SharePoint_ connection profile.
+2. No credentials must be entered for opening a connection, but instead after choosing _Connect_ you need to log in to `login.microsoftonline.com` with your `onmicrosoft.com` account in your web browser.
+3. Grant permission to *Cyberduck* to access your *SharePoint* library.
+4. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Microsoft SharePoint. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
+5. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
 
 ### Microsoft SharePoint Site Connection Profile
 
-In case you are trying to access a site that isn't listed when connecting with the *Microsoft SharePoint* connection profile you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. While using the *Microsoft SharePoint Site* connection profile you are required to use your SharePoint hostname (`contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
+In case you are trying to access a site that is not listed when connecting with the *Microsoft SharePoint* connection profile,
+you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. When using the *Microsoft SharePoint Site* connection profile, you are required to enter the SharePoint hostname (such as `contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
 
-```{note}
+:::{note}
 You can't mount a specific directory with this method as the Path field is used for the URL prefix path.
-```
+:::
 
 ### SharePoint Hybrid
+
 If you have your own SharePoint Server but opted in to enable *Microsoft Graph*-connectivity to your SharePoint Server, you may be able to use the built-in *Microsoft SharePoint*-Profile.
 
 Please refer to the official documentation from Microsoft for detailed setup guides.
@@ -74,10 +80,23 @@ Basic Authentication should only be used when using secured connection over TLS 
 
 #### NTLM Authentication
 
-If you need to set the `domain` and `workstation`, you can do so using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options).
+[NTLM authentication](https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/ntlm-user-authentication) may additionally require the name of the computer (NTLM Workstation) and network domain name (NTLM Domain). The optional domain name can be customized as part of the username in the format `REALM\username` in the _Username_ input field when adding a [bookmark](../cyberduck/bookmarks.md#bookmark-options). 
 
-	defaults write ch.sudo.cyberduck webdav.ntlm.workstation MYWORKSTATION
-	defaults write ch.sudo.cyberduck webdav.ntlm.domain MYDOMAIN
+* The default domain used when not specified can be set by using the [hidden configuration option](../tutorials/hidden_properties.md)
+    ```
+    webdav.ntlm.domain=MYDOMAIN
+    ```
+
+* The default workstation can be set using the [hidden configuration option](../tutorials/hidden_properties.md)
+    ```
+    webdav.ntlm.workstation=MYWORKSTATION
+    ```
+
+:::{admonition} Windows
+:class: tip
+
+Alternatively, you can set the [hidden configuration option](../tutorials/hidden_properties.md) `webdav.ntlm.environment=true` to read the domain and workstation for NTLM authentication from the Windows environment.
+:::
 
 #### Configuration
 
@@ -100,6 +119,7 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 ## Limitations
 
 ### Top Level folder
+
 It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
 
 | Folder Name |
@@ -110,4 +130,5 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 | Sites       |
 
 ### Quota
+
 Quota reporting is only supported for the *Drives* folder within their respective site folder.

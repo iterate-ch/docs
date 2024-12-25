@@ -5,21 +5,16 @@ Synchronize Folders
 
 Files can be synchronized by selecting the directory to synchronize in the browser and select *File → Synchronize*. You will be prompted to select the directory on your computer to synchronize the files with.
 
-```{important}
+:::{important}
 The options in *Preferences → Transfers → Timestamps* must be enabled.
-```
+:::
 
-The criteria to download or upload a file are given by
+Synchronization is based on the modification date and checksum of the files when available. You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.
 
-- the modification date of the files and if available
-- the MD5 checksum of the file (for [S3](../protocols/s3/index.md), [Azure](../protocols/azure.md), and [CloudFiles](../protocols/openstack/cloudfiles.md))
-
-You will be prompted to confirm the actions and if missing files should only be downloaded, uploaded, or mirrored.
-
-```{image} _images/Synchronize_Folders.png
+:::{image} _images/Synchronize_Folders.png
 :alt: Synchronize Folders
 :width: 700px
-```
+:::
 
 - **Checkbox:** Toggle to include or exclude files or directories from the transfer.
 - **Down Arrow:** The file is downloaded from the server replacing the local file if included.

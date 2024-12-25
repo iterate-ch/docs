@@ -9,9 +9,9 @@ Increase the download speed by enabling the segmented downloads option within *P
 
 The segments will be merged automatically after all parts are downloaded. Merging the segments may take a considerable amount of time.
 
-```{note}
+:::{note}
 The segments can only be merged successfully if all parts are downloaded. If some parts are missing the downloaded segments are saved within a folder and the file can't be restored unless you redownload the file or try to _Resume_ the failed transfer.
-```
+:::
 
 ## Double-Click
 
@@ -25,10 +25,10 @@ Drag the files or folders to the desired download location in the *Finder.app* o
 
 Customize the browser toolbar using menu *View → Customize Toolbar...* to add the *Download* toolbar button to the default configuration.
 
-```{image} _images/Download_Toolbar_Button.png
+:::{image} _images/Download_Toolbar_Button.png
 :alt: Download Toolbar Button
 :width: 500px
-```
+:::
 
 ## The Download Menu
 
@@ -40,30 +40,48 @@ Drag the file from the browser to the *Transfers* window to be downloaded later.
 
 ## Where From 
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: note
 
 Downloaded files have added metadata of its origin URL. *Finder.app* displays this information in *File → Get Info*.
-```
+:::
+
+## Open Downloaded Files
+
+Use the *Open* toolbar button to open a downloaded file or folder.
+
+:::{admonition} macOS only
+:class: tip
+
+A warning might be displayed before opening the file. See the [download quarantine](download.md#quarantine).
+:::
+
+## Show Downloaded Files
+
+Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.app* or *Explorer*.
 
 ## Hidden Preferences
 
 ### Quarantine
 
-```{admonition} macOS only
+:::{admonition} macOS only
 :class: note
 
 Downloaded files are flagged with the `com.apple.quarantine` attribute. The attributes associate basic information with the file, such as its type, when it was received, and the URL from which it came. When the Finder or any other program uses Launch Services to open a quarantined file, Launch Services inspects the file to see if it appears to be an application, script, or other executable file types. If so, the system displays an alert informing the user that the file is an application and asking for confirmation that it should be executed. The alert lets the user open the URL from which the file was downloaded, launch the program, or cancel. If the user proceeds to open the file, Launch Services removes the quarantine attributes from that file.
 
-A [hidden configuration option](preferences.md#hidden-configuration-options).
+A [hidden configuration option](../tutorials/hidden_properties.md).
 
-    defaults write ch.sudo.cyberduck queue.download.quarantine false
+```
+queue.download.quarantine=false
+```
 
 Files downloaded to edit do not have a quarantine flag set by default.
-```
+:::
 
 ### Temporary Document Icon
 
-Don't change the document icon while downloading. A [hidden configuration option](preferences.md#hidden-configuration-options).
+Don't change the document icon while downloading. A [hidden configuration option](../tutorials/hidden_properties.md).
 
-    defaults write ch.sudo.cyberduck queue.download.icon.update false
+```
+queue.download.icon.update=false
+```

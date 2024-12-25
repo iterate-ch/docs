@@ -7,14 +7,15 @@ Storadera
 
 ### Connection Profile
 
-{download}`Download<https://profiles.cyberduck.io/Storadera%20(eu-east-1).cyberduckprofile>` the *Storadera (eu-east-1) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+- `eu-central-1` (Amsterdam, Netherlands, Europe) {download}`Download<https://profiles.cyberduck.io/Storadera%20(eu-central-1).cyberduckprofile>` the *Storadera (eu-central-1) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
+- `eu-east-1` (Tallinn, Estonia, Europe) {download}`Download<https://profiles.cyberduck.io/Storadera%20(eu-east-1).cyberduckprofile>` the *Storadera (eu-east-1) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
 ### Manual Configuration
 
-- Protocol: `Amazon S3`
-- Server: `eu-east-1.s3.storadera.com`
-- Access Key ID: `<your access key>`
-- Secret Access Key: `<your secret access key>`
+- **Protocol**: `Amazon S3`
+- **Server**: `eu-east-1.s3.storadera.com`
+- **Access Key ID**: your access key
+- **Secret Access Key**: your secret access key
 
 ## References
 

@@ -1,7 +1,7 @@
 Mountain Duck
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 installation/index
@@ -11,10 +11,11 @@ info
 share
 locking
 versions
+cryptomator
 preferences
 issues/index
-support
-```
+support/index
+:::
 
 Cyberduck for mounting volumes in the file explorer is available for Mac & Windows.
 
@@ -24,7 +25,7 @@ Cyberduck for mounting volumes in the file explorer is available for Mac & Windo
 
 Refer to our installation instructions.
 
-## [Licensing](installation/licensing.md)
+## [Licensing](support/licensing.md)
 
 Refer to our licensing FAQ.
 
@@ -55,6 +56,10 @@ Support for locking files to prevent conflicting edits from others while a docum
 ## [File Versioning](versions.md)
 
 You can preview and revert previous versioned bucket in [Amazon S3](../protocols/s3/index.md)
+
+## [Cryptomator](cryptomator.md)
+
+Support for client-side encryption with Cryptomator interoperable vaults.
 
 ## [Preferences](preferences.md)
 

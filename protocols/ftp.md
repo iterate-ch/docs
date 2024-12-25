@@ -1,23 +1,23 @@
 FTP & FTP-TLS
 ====
 
-```{image} _images/ftp.png
+:::{image} _images/ftp.png
 :alt: FTP Drive Icon
 :width: 128px
-```
+:::
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Providers
 
 Settings are specific to service providers. Use the provided [connection profiles](index.md#connection-profiles).
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - [SFTP To Go](sftp/sftptogo.md) - FTP with explicit TLS
 
@@ -35,10 +35,11 @@ FTP with [explicit](http://en.wikipedia.org/wiki/FTPS.md#explicit) TLS is suppor
 
 :::{admonition} TLSv1 and TLSv1.1 deprecation
 :class: warning
+
 TLSv1 and TLSv1.1 are no longer supported as of
 * Cyberduck [8.1.0](https://github.com/iterate-ch/cyberduck/milestone/184) or later
 * Mountain Duck [4.9.0](https://mountainduck.io/changelog/) or later
-  :::
+:::
 
 ### Mutual TLS
 
@@ -82,23 +83,22 @@ Connected to a FTP server this allows to send arbitrary command not available th
 
 Example configuration:
 
-	TLSOptions
-
-      The NoSessionReuseRequired option has been added.  As of
-      ProFTPD 1.3.3rc1, mod_tls only accepts SSL/TLS data connections
-      that reuse the SSL session of the control connection, as a security
-      measure.  Unfortunately, there are some clients (e.g. curl) which
-      do not reuse SSL sessions.
-
-      To relax the requirement that the SSL session from the control
-      connection be reused for data connections, use the following in the
-      proftpd.conf:
-
-        <IfModule mod_tls.c>
-          ...
-          TLSOptions NoSessionReuseRequired
-          ...
-        </IfModule>
+```
+TLSOptions
+     The NoSessionReuseRequired option has been added.  As of
+     ProFTPD 1.3.3rc1, mod_tls only accepts SSL/TLS data connections
+     that reuse the SSL session of the control connection, as a security
+     measure.  Unfortunately, there are some clients (e.g. curl) which
+     do not reuse SSL sessions.
+     To relax the requirement that the SSL session from the control
+     connection be reused for data connections, use the following in the
+     proftpd.conf:
+       <IfModule mod_tls.c>
+         ...
+         TLSOptions NoSessionReuseRequired
+         ...
+       </IfModule>
+```
 
 - The option `TLSOptions AllowClientRenegotiations` must be set for FTP-TLS connections (Issue [#3012](https://github.com/iterate-ch/cyberduck/issues/3012)).
 - The option `TLSProtocol SSLv23` must be set for FTP-TLS connections (Issue [#5061](https://github.com/iterate-ch/cyberduck/issues/5061)).
@@ -157,17 +157,23 @@ The error message `FTP Error: SITE not understood` or similar is displayed. The 
 
 Various options are available to adjust the usage of different directory listing commands (`LIST`, `STAT` and `MLSD`). Directory listings are requested using `STAT`, `MLSD`, `LIST -a` and `LIST` commands in that order. If a failure is detected (because the server may not support the command), the next option is tried. Because this can be fuzzy logic, it may still be that Cyberduck does not correctly fall back to a supported list command. You may then try to force the use of a given command.
 
-To disable `STAT` for directory listings, change the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) as follows:
+To disable `STAT` for directory listings, change the [hidden configuration option](../tutorials/hidden_properties.md) as follows:
 
-	defaults write ch.sudo.cyberduck ftp.command.stat false
+```
+ftp.command.stat=false
+```
 
 To disable `LIST -a` for directory listings, open a Terminal.app window and enter
 
-	defaults write ch.sudo.cyberduck ftp.command.lista false
+```
+ftp.command.lista=false
+```
 
 To disable `MLSD` for directory listings, open a Terminal.app window and enter
 
-	defaults write ch.sudo.cyberduck ftp.command.mlsd false
+```
+ftp.command.mlsd=false
+```
 
 Restart Cyberduck.
 
@@ -175,9 +181,9 @@ Alternatively, you can use one of the connection profiles below for which the me
 * {download}`Download<https://profiles.cyberduck.io/FTP%20(Compatibility%20Mode).cyberduckprofile>` the *FTP (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 * {download}`Download<https://profiles.cyberduck.io/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile>` the *FTP-SSL (Compatibility Mode) Connection Profile* or install it from *Preferences… → Profiles* for preconfigured settings.
 
-```{note}
+:::{note}
 Connection profiles are available through the *Preferences → Profiles* tab.
-```
+:::
 
 #### Interoperability with ASUS Routers
 

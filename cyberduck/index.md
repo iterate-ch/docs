@@ -1,7 +1,7 @@
 Cyberduck 
 ====
 
-```{toctree}
+:::{toctree}
 :hidden:
 :titlesonly:
 installation
@@ -9,33 +9,30 @@ bookmarks
 connection
 browser
 transfer
-download
-upload
-sync
-copy
 edit
 share
 info
+cryptomator
 preferences
 notifications
 spotlight
 support
 faq
-```
+:::
 
 ## Quick Reference Cheat Sheet
 
 Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
 
-```{image} _images/Cyberduck_Quick_Reference_Page_1.png
+:::{image} _images/Cyberduck_Quick_Reference_Page_1.png
 :alt: Cyberduck Quick Reference Page 1
 :width: 700px
-```
+:::
 
-```{image} _images/Cyberduck_Quick_Reference_Page_2.png
+:::{image} _images/Cyberduck_Quick_Reference_Page_2.png
 :alt: Cyberduck Quick Reference Page 2
 :width: 700px
-```
+:::
 
 ## [Opening Connections](connection.md)
 
@@ -73,6 +70,10 @@ Create and edit [bookmarks](bookmarks.md) for your favorite servers.
 - **[Upload](upload.md)** files and folders to a server.
 - **[Synchronize](sync.md)** folders between your computer and a server.
 - **[Copy](copy.md)** files and folders between servers.
+
+## [Cryptomator](cryptomator.md)
+
+Support for client-side encryption with Cryptomator interoperable vaults.
 
 ## [Notifications](notifications.md)
 

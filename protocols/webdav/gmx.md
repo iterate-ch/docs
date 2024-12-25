@@ -11,9 +11,9 @@ GMX Cloud
 
 ### Manual Configuration
 
-- Protocol: `WebDAV (HTTPS)`
-- Server: `webdav.mc.gmx.net`
-- Username: `GMX Kundenummer` or `GMX email`
+- **Protocol**: `WebDAV (HTTPS)`
+- **Server**: `webdav.mc.gmx.net`
+- **Username**: `GMX Kundenummer` or `GMX email`
 
 ## References
 

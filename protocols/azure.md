@@ -1,44 +1,52 @@
-Windows Azure Blob Storage
+Azure Blob Storage
 ====
 
-```{image} _images/azure.png
+:::{image} _images/azure.png
 :alt: Azure Blob Storage
 :width: 128px
-```
+:::
 
 > Massively scalable object storage for unstructured data
 
-## Connecting to Windows Azure Blob Storage
+## Connecting to Azure Blob Storage
 
 ### Hostname
 
 Edit the hostname to connect to your account in the format `<account>.blob.core.windows.net`.
 
-```{warning}
+:::{warning}
 Azure Files Storage is not supported.
-```
+:::
 
 ### Credentials
 
 #### Account and Key
 
-You must obtain the login credentials (Account Name and Primary Access Key) from [portal.azure.com](https://portal.azure.com/). You can find the keys in the section *Access keys*. In the login prompt of Cyberduck upon connecting to Windows Azure you enter the *Storage Account Name* for the username and *Primary Access Key* for the password.
+Obtain the login credentials _Storage Account Name_ and _Primary Access Key_ from [portal.azure.com](https://portal.azure.com/). You can find the keys in the section *Access keys*.
 
 #### Shared Access Signatures (SAS)
 
 You can use a [SAS](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) when you want to provide access to resources in your storage account to any client not possessing your storage account's access keys.
 
-- [Download](https://profiles.cyberduck.io/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile) the Azure (Shared Access Signature Token) profile or install it from *Preferences… → Profiles*.
+:::{note}
+Connection profiles can be installed from *Preferences → Profiles*.
+:::
+
+- {download}`Download<https://profiles.cyberduck.io/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile>` the *Azure (Shared Access Signature Token)* for preconfigured settings.
 
 ### Cyberduck CLI
 
 You can list all containers with [Cyberduck CLI](https://duck.sh/) using
 
-	duck --username <storageaccount> --list azure://<storageaccount>.blob.core.windows.net/`
+```
+duck --username <storageaccount> --list azure://<storageaccount>.blob.core.windows.net/`
+```
 
 For a storage account named `kahy9boj3eib` that would be 
 
-	duck --username kahy9boj3eib --list azure://kahy9boj3eib.blob.core.windows.net/
+```
+duck --username kahy9boj3eib --list azure://kahy9boj3eib.blob.core.windows.net/
+```
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations.
 
@@ -53,7 +61,8 @@ You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Perm
 To create a new container in your account, browse to the root and choose *File → New Folder... (macOS `⇧⌘N` Windows `Ctrl+Shift+N`)*.
 
 ## Blob Type
-Uploads are stored as append blob type by default. You can use the [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.
+
+Uploads are stored as append blob type by default. You can use the [hidden configuration option](../tutorials/hidden_properties.md) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.
 
 ## Metadata
 
@@ -61,9 +70,11 @@ You can edit standard custom metadata. Choose *File → Info → Metadata* to ed
 
 ### Default Metadata
 
-Currently only possible using a [hidden configuration option](../cyberduck/preferences.md#hidden-configuration-options) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for `Cache-Control` and one named `Creator` you would set
+Currently only possible using a [hidden configuration option](../tutorials/hidden_properties.md) you can define default headers to be added for uploads. Multiple headers must be separated using a whitespace delimiter. Key and value of a header are separated with `=`. For example, if you want to add an HTTP header for `Cache-Control` and one named `Creator` you would set
 
-	defaults write ch.sudo.cyberduck azure.metadata.default "Cache-Control=public,max-age=86400 Creator=Cyberduck"
+```
+azure.metadata.default="Cache-Control=public,max-age=86400 Creator=Cyberduck"
+```
 
 ### Shared Access Signature URLs
 
@@ -71,18 +82,18 @@ A private object stored in Azure Storage can be made publicly available for a li
 
 ![Shared Access Signature URLs](_images/Azure_Shared_Access_Signature_URLs.png)
 
-```{note}
+:::{note}
 Currently only signed URLs with a validity of 24 hours are available.
-```
+:::
 
 ### Access Logs
 
 Configure access logging for buckets in the *Info* panel.
 
-```{image} _images/Azure_tab_info_macOS.png
+:::{image} _images/Azure_tab_info_macOS.png
 :alt: Windows Azure Blob Storage
 :width: 500px
-```
+:::
 
 ## Limitations
 

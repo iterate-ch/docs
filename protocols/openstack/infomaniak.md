@@ -3,10 +3,10 @@ Infomaniak
 
 ![Infomaniak Drive Icon](_images/blue-128.png)
 
-```{contents} Content
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 ## Infomaniak Public Cloud
 
@@ -14,24 +14,25 @@ Infomaniak
 
 ### Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 #### Connection Profiles
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- {download}`Infomaniak Public Cloud (01) - Cluster1 connection profile<https://profiles.cyberduck.io/Infomaniak%20Public%20Cloud%20(01).cyberduckprofile>`
+- {download}`Infomaniak Public Cloud (01) - connection profile<https://profiles.cyberduck.io/Infomaniak%20Public%20Cloud%2001%20(Swift).cyberduckprofile>`
 
 #### Additional Fields Required
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Project:Domain:Username: `Information available in your Infomaniak manager. Example: PCP-XXXXXX:Default:PCU-XXXXXX`
-- Password: `password is the same as the one you use for the OpenStack dashboard`
+- **Project:Domain:Username**: Information available in your Infomaniak manager. Example: `PCP-XXXXXX:Default:PCU-XXXXXX`
+- **Password**: password is the same as the one you use for the OpenStack dashboard
 
 ### References
+
 - [Official Infomaniak Public Cloud documentation](https://docs.infomaniak.cloud)
 - [Find out more about Infomaniak Public Cloud](https://www.infomaniak.com/en/hosting/public-cloud)
 - [Test Infomaniak Public Cloud with free tiers](https://www.infomaniak.com/en/hosting/public-cloud)
@@ -44,26 +45,28 @@ Swiss Backup is a solution that automatically backs up your files, workstations,
 
 ### Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 #### Connection Profiles
 
 Log in to your *Infomaniak OpenStack Swift space* via this preconfigured connection profile:
 
-- {download}`Infomaniak Swiss Backup (01) - Cluster1 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(01).cyberduckprofile>`
-- {download}`Infomaniak Swiss Backup (02) - Cluster2 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(02).cyberduckprofile>`
-- {download}`Infomaniak Swiss Backup (03) - Cluster3 connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%20(03).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (01) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2001%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (02) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2002%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (03) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2003%20(Swift).cyberduckprofile>`
+- {download}`Infomaniak Swiss Backup (04) connection profile<https://profiles.cyberduck.io/Infomaniak%20Swiss%20Backup%2004%20(Swift).cyberduckprofile>`
 
 #### Additional Fields Required
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Project: Domain:Username: `information sent by email when you created your Swiss Backup space`
-- Password: `password sent by email when you created your Swiss Backup space`
+- **Project:Domain:Username**: information sent by email when you created your Swiss Backup space
+- **Password**: password sent by email when you created your Swiss Backup space
 
 ### References
+
 - [Official Infomaniak documentation](https://www.infomaniak.com/en/support/faq/2284/startup-guide-swiss-backup)
 - [Cyberduck connection profile documentation](https://www.infomaniak.com/en/support/faq/2282/swiss-backup-backing-up-files-with-cyberduck)
 - [Find out more about Swiss Backup](https://www.infomaniak.com/en/swiss-backup)

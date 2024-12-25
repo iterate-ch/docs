@@ -5,10 +5,10 @@ iKeepinCloud
 
 ## Connecting
 
-- Protocol: `WebDAV (HTTP)`, `WebDAV (HTTPS)`, `SFTP`, `FTPS` or `FTP`
-- Server: `<subscription ID>.ikeepincloud.com` or public.`<subscription ID>.ikeepincloud.com`
-- Username: Your subscription ID
-- Password: the one sent by IKoula
+- **Protocol**: `WebDAV (HTTP)`, `WebDAV (HTTPS)`, `SFTP`, `FTPS` or `FTP`
+- **Server**: `<subscription ID>.ikeepincloud.com` or public.`<subscription ID>.ikeepincloud.com`
+- **Username**: Your subscription ID
+- **Password**: the one sent by IKoula
 
 ## References
 

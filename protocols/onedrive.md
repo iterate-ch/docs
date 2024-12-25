@@ -1,32 +1,39 @@
 Microsoft OneDrive
 ====
 
-```{image} _images/onedrive.png
+:::{image} _images/onedrive.png
 :alt: Microsoft OneDrive
 :width: 128px
-```
+:::
 
-```{tip}
+:::{tip}
 Download [Mountain Duck](https://mountainduck.io/) as an alternative to the *One Drive* client from Microsoft.
-```
+:::
 
 ## Connecting
 
-> Microsoft Graph, OneDrive, and SharePoint support using a standard OAuth2 authorization flow.
+:::{admonition} OAuth 2.0
+:class: note
+Microsoft Graph, OneDrive, and SharePoint use a OAuth 2.0 authorization code flow to grant access.
+:::
 
 The OneDrive connection profile is bundled by default and connects to the endpoint `https://graph.microsoft.com/v1.0/me`. Login with your personal or business account to `login.microsoftonline.com` when prompted to grant access to Cyberduck.
 
-- OneDrive uses OAuth 2 for authentication with `graph.microsoft.com`. When opening a connection, a web browser window is opened to grant access to OneDrive for Cyberduck.
-	
-![OneDrive sign in](_images/OneDrive_Sign_In.png)
+1. No credentials must be entered for opening a connection, but instead you need to log-in to your Microsoft account
+   and grant access in your web browser after choosing _Connect_.
 
-- The authorization code will be submitted to Cyberduck automatically. Subsequent connections will not require authorization, unless the refresh token itself is expired due to inactivity.
+    :::{image} _images/OneDrive_Sign_In.png
+    :alt: OneDrive sign in
+    :width: 500px
+    :::
 
+2. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with OneDrive. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
 
-```{admonition} Multiple Accounts
+:::{admonition} Multiple Accounts
 :class: tip
+
 You can connect to multiple accounts at the same time. Create a new bookmark for every account and run through the OAuth flow. Make sure to log out of any account in web browser before triggering the OAuth flow for a new account.
-```
+:::
 
 ### Reset OAuth Tokens
 
@@ -52,9 +59,9 @@ Depending on the setup of your AAD you may need to perform several steps in orde
 
 #### Manually Adding Cyberduck & Mountain Duck
 
-```{Important}
+:::{Important}
 Cyberduck 7.8 and later or Mountain Duck 4.4 and later required
-```
+:::
 
 Copy the link that corresponds to your used version, and send it to your domain administrator, this will add Cyberduck to the domain and all users are allowed to access Cyberduck in the future.
 
@@ -72,11 +79,31 @@ There is a preview method of review application consent through the AAD Portal. 
 
 You can list the root contents of your OneDrive with [Cyberduck CLI](https://duck.sh/) using
 
-	duck --list onedrive:/
+```
+duck --list onedrive:/
+```
 
 Refer to the [Cyberduck CLI](../cli/index.md) documentation for more operations. For subsequent invocations make sure to include the `--username` parameter and set it to the email address registered with Microsoft to allow the lookup of previously saved OAuth tokens.
 
 ## Features
+
+### Top Level Folders
+
+The following virtual top level folders are displayed:
+
+| Folder Name |    Contents    |
+|-------------|:--------------:|
+| My Files    | Personal files |
+| Shared      | Shared folders |
+
+It is not possible to create additional top level folders or files.
+
+:::{admonition} Mountain Duck
+:class: tip
+Set the _Path_ in the [Bookmark](../cyberduck/bookmarks.md) to `/` to show the top level folders. By default, only the
+contents of _My Files_ are shown.
+:::
+
 ### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
@@ -98,13 +125,6 @@ There are some limitations that you should keep in mind while working with.
 - Native file locking only exists for OneDrive Business (Microsoft 365 Business), it is not supported for regular consumer use.
 - OneDrive API does not list pending upload sessions therefore resuming uploads in Cyberduck will cause the upload to start all over again.
 
-### Top Level folder
-It is not possible to create a top level folder in Mountain Duck or Cyberduck. Instead, the following virtual top level folders are displayed which cannot be moved or renamed:
-
-| Folder Name |    Contents    |
-|-------------|:--------------:|
-| My Files    | Personal files |
-| Shared      | Shared folders |
-
 ### Quota
+
 Mountain Duck can only display the correct cloud storage quota as remaining disk space when setting the *Path* in the bookmark configuration to a folder different from `/`, for example `My Files`.

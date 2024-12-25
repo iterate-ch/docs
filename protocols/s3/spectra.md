@@ -1,18 +1,18 @@
 Spectra BlackPearl Deep Storage Gateway
 ====
 
-```{image} https://cdn.cyberduck.io/img/providers/spectra.png
+:::{image} https://cdn.cyberduck.io/img/providers/spectra.png
 :alt: DreamObject Cloud Storage
 :width: 128px
-```
+:::
 
 > S3 Gateway to Deep Storage. The Spectra Logic BlackPearl Converged Storage System provides an easy, cloud-like interface to on-premise storage solutions, including to disk, tape, and cloud targets for maximum protection.
 
 ## Connecting
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - {download}`Download<https://profiles.cyberduck.io/Spectra%20S3%20(HTTPS).cyberduckprofile>` the *Spectra S3 (HTTPS) Connection Profile* for preconfigured settings.
 - {download}`Download<https://profiles.cyberduck.io/Spectra%20S3%20(HTTP).cyberduckprofile>` the *Spectra S3 (HTTP) Connection Profile* for preconfigured settings.

@@ -9,9 +9,9 @@ SwiftStack
 
 ### Connection Profiles
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 Connect to a SwiftStack cluster via HTTP or HTTPS using these preconfigured [connection profiles](../../cyberduck/connection.md#connection-profiles):
 
@@ -27,9 +27,9 @@ Connect to a SwiftStack cluster via HTTP or HTTPS using these preconfigured [con
 
 Enter the following information in the [bookmark](../../cyberduck/bookmarks.md):
 
-- Server: `SwiftStack cluster API IP address`
-- Username: `SwiftStack cluster user`
-- Password: `SwiftStack cluster user's password`
+- **Server**: SwiftStack cluster API IP address
+- **Username**: SwiftStack cluster user
+- **Password**: SwiftStack cluster user's password
 
 ## References
 

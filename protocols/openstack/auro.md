@@ -1,20 +1,20 @@
 AURO
 ====
 
-```{image} _images/Auro_Logo.jpg
+:::{image} _images/Auro_Logo.jpg
 :alt: AURO Logo
 :height: 128px
-```
+:::
 
 > AURO is 100% Canadian owned and operated provider of public cloud infrastructure based on OpenStack.
 
 ## Connecting
 
-- Protocol: `Swift (OpenStack Object Storage)`
-- Server: `api.van1.auro.io`
-- Port: `5000`
-- Username: `<os-tenant-name>:<os-username>`
-- Password: `<os-password>`
+- **Protocol**: `Swift (OpenStack Object Storage)`
+- **Server**: `api.van1.auro.io`
+- **Port**: `5000`
+- **Username**: `<os-tenant-name>:<os-username>`
+- **Password**: `<os-password>`
 
 The server name is found in the Cloud Dashboard under `Project/Compute/Access & Security/API Access`. Use the Identity server, not the Object Store server.
 

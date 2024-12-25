@@ -5,15 +5,15 @@ pCloud
 
 ## Connecting
 
-```{attention}
+:::{attention}
 WebDAV access is only available for paid plans.
-```
+:::
 
 ### Connection Profiles
 
-```{note}
+:::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
-```
+:::
 
 - **pCloud Europe (Luxemburg):** {download}`Download<https://profiles.cyberduck.io/pCloud%20Europe%20(Luxemburg).cyberduckprofile>` the *pCloud Europe (Luxemburg) Connection Profile* for preconfigured settings.
 - **pCloud Texas (USA):** {download}`Download<https://profiles.cyberduck.io/pCloud%20Texas%20(USA).cyberduckprofile>` the *pCloud Texas (USA) Connection Profile* for preconfigured settings.	
@@ -22,10 +22,10 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 #### Data Region: USA (Texas)
 
-- Server: `https://webdav.pcloud.com`
-- Port: `443`
-- Username: pCloud login Email
-- Password: pCloud login password
+- **Server**: `https://webdav.pcloud.com`
+- **Port**: `443`
+- **Username**: pCloud login Email
+- **Password**: pCloud login password
 
 #### Data Region: Europe (Luxemburg)
 
@@ -38,9 +38,9 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Using Mountain Duck and pCloud Client simultaneously can cause issues for the pCloud Client. The Client requires an older version of the device driver than Mountain Duck and can't deal with the newer version installed by Mountain Duck. 
 
-```{note}
+:::{note}
 Reported for pCloud Client version 4.0.0 (Windows).
-```
+:::
 
 ## References
 

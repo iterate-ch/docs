@@ -1,10 +1,19 @@
 File Transfers
 ====
 
-```{contents} Content
+:::{toctree}
+:hidden:
+:titlesonly:
+download
+upload
+sync
+copy
+:::
+
+:::{contents} Content
 :depth: 2
 :local:
-```
+:::
 
 The *Transfers* window lists pending and completed transfers. The list is retained when the application is closed and can be retrieved after restarting so that the transfer can be restarted at a later time.
 
@@ -17,62 +26,49 @@ The *Transfers* window lists pending and completed transfers. The list is retain
 
 *Resume* will try to finish a transfer previously interrupted.
 
-```{note}
+:::{note}
 Some servers may not support resumable transfers and the file will be reloaded instead.
-```
+:::
 
-```{image} _images/Transfers.png
+:::{image} _images/Transfers.png
 :alt: Transfers
 :width: 700px
-```
+:::
 
 ## Interrupt
 
 You can interrupt a transfer using the *Stop* toolbar button.
 
-## Open Downloaded Files
-
-Use the *Open* toolbar button to open a downloaded file or folder.
-
-```{admonition} macOS only
-:class: tip
-
-A warning might be displayed before opening the file. See the [download quarantine](download.md#quarantine).
-```
-
-## Show Downloaded Files
-
-Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.app* or *Explorer*.
-
 ## Progress
 
-````{admonition} Windows only
+::::{admonition} Windows only
 :class: tip
 
 If the *Transfers* window is closed, progress is also visible in the application icon in the Taskbar.
 
-```{image} _images/Transfer_Progress.png
+:::{image} _images/Transfer_Progress.png
 :alt: Transfer Progress
 :width: 100px
-```
-````
+:::
+
+::::
 
 ## Bandwidth
 
 Limit the maximum bandwidth that is allowed for transfers. Useful when you don't want transfers to take all the bandwidth available on your internet connection that would slow down other connections. 
 
-`````{tabs}
-````{group-tab} macOS
+::::{tabs}
+:::{group-tab} macOS
 
 Select *Bandwidth* from the toolbar in the transfer window and set the maximum bandwidth allowed by the selected transfer from the drop-down window. The default setting is configurable in the [Preferences](preferences.md).
 
-````
-````{group-tab} Windows
+:::
+:::{group-tab} Windows
 
 Use the drop-down menu in the lower right of the transfer window to set the maximum bandwidth allowed by the selected transfer. The default setting is configurable in the [Preferences](preferences.md).
 
-````
-`````
+:::
+::::
 
 ## Connections
 
@@ -82,19 +78,19 @@ You can choose to use single or multiple connections for file transfers. Choose 
 **Open single connection:** Use a single connection additionally to the browser connection to transfer files from a transfer sequentially.<br/>
 **Open multiple connections:** Use multiple connections to transfer files from a transfer concurrently.
 
-```{image} _images/Transfer_Options.png
+:::{image} _images/Transfer_Options.png
 :alt: Transfer Options
 :width: 300px
-```
+:::
 
 ### Limit Number of Parallel Connections
 
 The maximum number of connections for transfers using multiple connections can be limited using the toggle in the lower right of the *transfer window* on Windows or the *toolbar dropdown* on macOS.
 
-```{image} _images/Limit_Connections.png
+:::{image} _images/Limit_Connections.png
 :alt: Limit Connections
 :width: 500px
-```
+:::
 
 The setting limits
 * The number of parallel transfers in progress the _Transfers_ window. Transfers awaiting will show _Maximum allowed connections exceeded. Waiting…_.
@@ -105,10 +101,10 @@ The setting limits
 
 A prompt is displayed if files already exist at the target location (on your local hard disk for downloads or on the server for uploads) and you have selected *Prompt* in *Transfers → General → Downloads/Uploads → Existing Files*. The prompt allows choosing the action for existing files. You can exclude selected files and folders from the transfer action by unchecking the checkbox next to it. If the checkbox is not selected, these files will be skipped.
 
-```{image} _images/Overwrite_Prompt.png
+:::{image} _images/Overwrite_Prompt.png
 :alt: Overwrite Prompt
 :width: 700px
-```
+:::
 
 **Exclamation mark triangle:** File size is zero or differs from the existing file.
 
@@ -116,10 +112,10 @@ A prompt is displayed if files already exist at the target location (on your loc
 
 Replace any existing file restarting the transfer from scratch. Existing files are moved to the trash.
 
-```{image} _images/Overwrite_Options.png
+:::{image} _images/Overwrite_Options.png
 :alt: Overwrite Options
 :width: 600px
-```
+:::
 
 ### Compare
 
@@ -210,36 +206,42 @@ Choose between a default permission mask to apply to downloaded files or to appl
 
 Adjust the permission mask of uploaded files or leave it to the default mask chosen by the server. The setting for permissions apply when connected to a UNIX host using [FTP](../protocols/ftp.md) or [SFTP](../protocols/sftp/index.md). When connected to [S3](../protocols/s3/index.md) and [Azure](../protocols/azure.md) this will update the access control list (ACL).
 
-```{note}
+:::{note}
 Enabling change of permissions slows down the transfer rate when uploading many files with [FTP](../protocols/ftp.md).
-```
+:::
 
 ### Transfers → Timestamps
 
 Preserve modification date when uploading or downloading files. For [synchronization](sync.md) to work, these options must be enabled.
 
-```{note}
+:::{note}
 Enabling change of modification date slows down the transfer rate when uploading many files with [FTP](../protocols/ftp.md).
-```
+:::
 
 ## Hidden Preferences
 
 ### Bandwidth Throttle Options
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Edit the available options (in bytes).
+A [hidden configuration option](../tutorials/hidden_properties.md). Edit the available options (in bytes).
 
-    defaults write ch.sudo.cyberduck queue.bandwidth.options 102400,1073741824
+```
+queue.bandwidth.options=102400,1073741824
+```
 
 ### Badge Dock Icon
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Add a badge with the number of currently running transfers to the dock icon.
+A [hidden configuration option](../tutorials/hidden_properties.md). Add a badge with the number of currently running transfers to the dock icon.
 
-    defaults write ch.sudo.cyberduck queue.dock.badge true
+```
+queue.dock.badge=true
+```
 
 ### Prioritize Files in Transfers
 
-A [hidden configuration option](preferences.md#hidden-configuration-options). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order of files transferred in folders. For example:
+A [hidden configuration option](../tutorials/hidden_properties.md). Use `queue.upload.priority.regex` and `queue.download.priority.regex` to determine order of files transferred in folders. For example:
 
-    defaults write ch.sudo.cyberduck queue.upload.priority.regex ".*\.html"
+```
+queue.upload.priority.regex=".*\.html"
+```
 
 will prioritize files ending with `.html` and transfer before any other files in a folder.

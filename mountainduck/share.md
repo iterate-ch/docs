@@ -1,2 +1,2 @@
-```{include} ../cyberduck/share.md
-```
+:::{include} ../cyberduck/share.md
+:::
