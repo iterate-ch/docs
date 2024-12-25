@@ -33,7 +33,7 @@ Issue the user an S3 key.
 
 To work with this profile, the container must have Virtual-Hosted addressing enabled, see the [Detailed instructions for connection](https://docs.selectel.ru/en/cloud/object-storage/tools/cyberduck/) for more details.
 
-## Selectel S3 API Domains⁠
+## Selectel S3 API Domains
 
 Only authorized access is possible through S3 API domains. You have to use S3-key to work with containers and upload objects via:
 
@@ -43,6 +43,6 @@ Only authorized access is possible through S3 API domains. You have to use S3-ke
 We strongly recommend using Virtual-Hosted addressing.
 Here ru-1 is the pool that hosts the object store.
 
-## Selectel FTP API Domains⁠
+## Selectel FTP API Domains
 
 - `ftp.ru-1.storage.selcloud.ru` domain, used if you need make a connect via ftp-protocol.
