@@ -34,6 +34,11 @@ body {
 
 .sphinx-tabs-panel {
   padding: 1em 1em 0 1em;
+  background: inherit !important;
+}
+
+.sphinx-tabs-tab {
+  background: inherit !important;
 }
 
 .rst-content section ol.arabic, .rst-content section ol.arabic > li {
