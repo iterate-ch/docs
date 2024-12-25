@@ -100,7 +100,6 @@ Refer to the [Cyberduck CLI](../../cli/index.md) documentation for more operatio
 - [OVH](ovh.md)
 - [HubiC (OVH)](hubic.md)
 - [Zetta.IO](zetta.io.md)
-- [Selectel Cloud Storage](selectel.md)
 - [Infomaniak](infomaniak.md)
 - [OpenStack FlexCloud](flexcloud.md)
 

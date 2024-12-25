@@ -56,14 +56,18 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Port Configurable` Boolean if port number is configurable.
 - `Default Path`
 - `Schemes` Additional array of schemes this profile can be referenced with in [Cyberduck CLI](../../cli/index.md)
-:::{note}
-All additional schemes are registered as a scheme handler when opening [Mountain Duck](../../mountainduck/index.md). This allows to reference files and folders in a web application using a custom scheme like `customscheme:/(/<hostname>)/path` to open in Windows Explorer or Finder.
-:::
+  :::{note}
+  All additional schemes are registered as a scheme handler when opening [Mountain Duck](../../mountainduck/index.md). This allows to reference files and folders in a web application using a custom scheme like `customscheme:/(/<hostname>)/path` to open in Windows Explorer or Finder.
+  :::
 - `Username Configurable` Boolean if username is configurable.
 - `Username Placeholder` Suggestion for username in login credentials. Used for input field label when editing bookmark.
 - `Password Placeholder` Suggestion for password in login credentials. Used for input field label when editing bookmark.
 - `Password Configurable` Boolean if password is configurable.
-- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels. Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a provider profile image.
+- `Disk` Base64 encoded disk TIFF image icon. Multi Page TIFF with formats `64x64` (72dpi) and `128x128` (144dpi) pixels.
+
+  :::{tip} 
+  Use the {download}`disk template file<https://github.com/iterate-ch/profiles/blob/master/assets/Template.psd>` to create a custom icon.
+  :::
 - `Icon` Base64 encoded disk TIFF image icon to be used in protocol dropdown menu instead of `Disk` icon
 - `Context` Currently used for 
   * Login context path for [OpenStack Swift](../openstack/index.md) profiles.
@@ -71,7 +75,12 @@ All additional schemes are registered as a scheme handler when opening [Mountain
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles. For S3, this value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
+  :::{admonition} S3
+  :class: tip
+
+  This value is used for AWS4 signatures when no location can be deferred from the URI for third-party S3 providers.
+  :::
 - `Regions` List of regions supported by the provider. This will populate options in the *Regions* dropdown when creating a new [top level folder](../s3/index.md#creating-a-bucket) for [S3](../s3/index.md) and [OpenStack Swift](../openstack/swiftstack.md) connections.
 - `OAuth Client ID` For protocols using OAuth 2.0 you can override the registered application client ID with the provider.
   * A profile can omit the `OAuth Client ID` to prompt the user for manual input when connecting.
@@ -166,7 +175,7 @@ Create a *multi-TIFF* containing the needed icon sizes:
     /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
     /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/ disk.tiff
     ```
-3. Use the command ``` base64 ./disk.tiff -b 70 ``` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
+3. Use the command `cat disk.tiff | base64 -b 70` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
 
 ## Sample Connection Profiles
 

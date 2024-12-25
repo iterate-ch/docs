@@ -46,6 +46,20 @@ Drag the file from the browser to the *Transfers* window to be downloaded later.
 Downloaded files have added metadata of its origin URL. *Finder.app* displays this information in *File → Get Info*.
 :::
 
+## Open Downloaded Files
+
+Use the *Open* toolbar button to open a downloaded file or folder.
+
+:::{admonition} macOS only
+:class: tip
+
+A warning might be displayed before opening the file. See the [download quarantine](download.md#quarantine).
+:::
+
+## Show Downloaded Files
+
+Using the *Show in Finder* or *Show* toolbar button, files are shown in *Finder.app* or *Explorer*.
+
 ## Hidden Preferences
 
 ### Quarantine

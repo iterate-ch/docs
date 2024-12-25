@@ -1,13 +1,6 @@
 Installation
 ====
 
-:::{toctree}
-:hidden:
-:titlesonly:
-
-licensing
-:::
-
 :::::{tabs}
 ::::{group-tab} macOS
 
@@ -27,20 +20,25 @@ You can choose to open Mountain Duck when you log into your computer. The applic
 ![Login Item](_images/Login_Item.png)
 
 **Finder Extension**<br/>
-Enable the Mountain Duck Finder Extension in *System Preferences → Extensions → Finder* by selecting the checkbox. This will enable:
+Enabling the _Mountain Duck Finder Extension_ provides the following options in Finder.app.
 
-- **Context menu items** for files selected on a mounted volume with options to *Reload* the folder listing and copy & open URLs of files
-- **Badges** on file icons to display sync status when *Smart Synchronization* is enabled for the bookmark
+- **Context menu items** for files selected on a mounted volume with [options](../connect/sync.md#context-menu-options) such as to *Reload* the folder listing and copy & open URLs of files.
+- **Badges** on file icons to display the [sync status](../connect/sync.md#status-of-files).
 
-:::{admonition} macOS Ventura
-:class: note
-The setting can be found in *System Settings → Privacy & Security → Extensions → Added Extensions*.
+::::{tabs}
+:::{tab} macOS 12
+Enable the extension in *System Preferences → Extensions → Finder*.
 :::
-
-:::{admonition} macOS Sequoia
-:class: warning
+:::{tab} macOS 13-14
+Enable the extension in *System Settings → Privacy & Security → Extensions → Added Extensions*.
+:::
+:::{tab} macOS 15.0-15.1
 The option to manage third-party extensions is no longer available in  *System Settings*.
 :::
+:::{tab} macOS 15.2-
+Enable the extension in *System Settings → General → Login Items & Extensions → File Providers*.
+:::
+::::
 
 ![Mountain Duck Finder Integration](_images/Mountain_Duck_Finder_Integration.png) 
 
@@ -86,7 +84,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 
 ## Registration Key
 
-Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the [application support folder](../support.md#application-support-folder).
+Double-click the file `.mountainducklicense` to apply the license and register Mountain Duck. Alternatively, you can copy the key file to the [application support folder](../support/index.md#application-support-folder).
 
 :::::{tabs}
 ::::{group-tab} macOS
@@ -138,11 +136,11 @@ For troubleshooting purposes when reaching out for support, please share the lat
 
 ## Installation with Device Management Software
 
-You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
+You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
 
 ### Defaults
 
-- Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support.md#application-support-folder).
+- Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support/index.md#application-support-folder).
 - Share default settings by using the [default.properties file](../preferences.md#hidden-configuration-options). 
 
 ## Uninstall

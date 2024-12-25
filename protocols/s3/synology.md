@@ -15,12 +15,15 @@ Connection profiles can be installed from *Preferences → Profiles*.
 - **C2 Object Europe**
   - {download}`eu-001 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-001).cyberduckprofile>`
   - {download}`eu-002 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-002).cyberduckprofile>`
+  - {download}`eu-003 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-003).cyberduckprofile>`
 - **C2 Object North America** 
   - {download}`us-001 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(us-001).cyberduckprofile>`
   - {download}`us-002 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(us-002).cyberduckprofile>`
+  - {download}`us-003 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(us-003).cyberduckprofile>`
 - **C2 Object APAC**
   - {download}`tw-001 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(tw-001).cyberduckprofile>` 
 
 ## References
 
 - [C2 Object Storage Quick Start Guide](https://kb.synology.com/en-global/C2/tutorial/Quick_Start_C2_Object_Storage)
+- [Explore and manage C2 Object Storage data on a client computer](https://kb.synology.com/en-global/C2/tutorial/C2_Object_Storage_client_device_exploring)

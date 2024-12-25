@@ -16,7 +16,6 @@ internap
 memset
 oktawave
 ovh
-selectel
 swiftstack
 zetta.io
 :::

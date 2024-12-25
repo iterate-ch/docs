@@ -103,10 +103,6 @@ There was a problem with the underlying network stream either because the connec
 
 When attempting to open a connection, there is either a firewall blocking requests, or no server is listening at the given address and port. If you get this error while already connected to the server, the network connection to the server is too slow or has too high latency. You can try to increase the connection timeout in *Preferences → Connection → Timeouts*.
 
-### Autofill of Passwords
-
-Passwords will be autofilled as long as you choose to enable the _Use Keychain_ option and saved a corresponding credentials.
-
 ### Reachability Alert
 
 A warning sign next to the URL indicates the server may not be reachable due to a missing or invalid hostname in the _Server_ field.
@@ -116,7 +112,7 @@ A warning sign next to the URL indicates the server may not be reachable due to 
 ::::{tabs}
 :::{group-tab} macOS
 
-Manage your password with *Keychain Access.app* on Mac. Refer to [Keychain for Mac: Keychain Access overview](https://support.apple.com/guide/keychain-access/ky1083/mac).
+Manage your passwords with *Keychain Access.app* on Mac. Refer to [Keychain for Mac: Keychain Access overview](https://support.apple.com/guide/keychain-access/ky1083/mac).
 
 :::
 :::{group-tab} Windows
@@ -125,6 +121,8 @@ Passwords are saved in the *Credential Manager*. You can view and delete your sa
 
 :::
 ::::
+
+Passwords will be autofilled as long as you choose to enable the _Use Keychain_ option and  corresponding credentials are found.
 
 ## Transcript
 
@@ -183,7 +181,7 @@ You cannot disable default protocols or connection profiles currently in use in 
 
 #### Use Keychain
 
-Search for and save password for connections.
+Save [passwords](#passwords) for connections.
 
 #### Timeout
 

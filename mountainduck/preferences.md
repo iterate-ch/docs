@@ -55,16 +55,16 @@ Enable to prevent conflicting edits when accessing documents from a shared envir
 
 ### Mount Location 
 
-Volumes are mounted in the *Volumes* folder in the [application support directory](support.md). You can change the default to another folder that is writable.
+Volumes are mounted in the *Volumes* folder in the [application support directory](support/index.md#application-support-folder). You can change the default to another folder that is writable.
 
 :::{admonition} Mac App Store
 :class: attention
-The setting is not available in the Mac App Store version. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
+The setting is not available in the version installed from the Mac App Store. Make sure to change the mount location back to default before using the App Store version of Mountain Duck otherwise you may experience permission issues.
 :::
 
 :::{admonition} macOS only
 :class: tip
-The default is set to `~/Library/Application Support/Mountain Duck/Volumes`. The mount location **cannot** be set to `/Volumes` where the directory is not writable.
+The default is set to `~/Library/Application Support/Mountain Duck/Volumes.noindex`. The mount location **cannot** be set to `/Volumes` where the directory is not writable.
 :::
 
 ```{attention}
@@ -75,7 +75,7 @@ Custom mount location is not honoured in _Integrated_ connect mode but always in
 
 ::::{tabs}
 :::{group-tab} macOS
-Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support.md). The disk must be formatted as HFS+ or APFS.
+Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support/index.md#application-support-folder). The disk must be formatted as HFS+ or APFS.
 
 :::{attention}
 Custom cache location is not honoured in _Integrated_ connect mode but always in `~/Library/CloudStorage`.

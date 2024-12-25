@@ -259,7 +259,7 @@ Enable the *Index Files* option in [*Preferences → Sync*](preferences.md#index
 - *Share…:* Create an URL to share with someone else to allow downloading the file or folder.
 - *Request file…:* Create an URL to share with someone else to allow uploading files to the selected folder.
 
-Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../cyberduck/bookmarks.md#http-url) and [temporary signed URLs in S3](../protocols/s3/index.md#public-urls).
+Right-click files on a mounted drive will open a menu with items to copy & open HTTP URLs or create share links of files. This will include the Origin URL, [HTTP URLs](../cyberduck/bookmarks.md#web-url) and [temporary signed URLs in S3](../protocols/s3/index.md#public-urls).
 
 - *Copy URL*
 - *Open URL*
@@ -284,8 +284,9 @@ Right-click on white space within the mounted drive in Finder or Explorer to add
 
 Right-click on a folder and choose *Open in Terminal* to open an SSH connection to the server in Terminal for SFTP bookmarks.
 
-:::{attention}
-This feature is not supported in the version available in the Mac App Store.
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#7664](https://github.com/iterate-ch/cyberduck/issues/7664).
 :::
 
 ### Info Panel

@@ -22,6 +22,7 @@ pilvio
 polycloud
 scaleway
 seagate
+selectel
 spectra
 storadera
 storjdcs

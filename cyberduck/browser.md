@@ -165,7 +165,7 @@ You can toggle Quick Look in a Cyberduck browser for any file using *Space Bar*.
 
 ### Open or Copy HTTP URL
 
-See bookmark [Web URL configuration](bookmarks.md#http-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
+See bookmark [Web URL configuration](bookmarks.md#web-url) for HTTP URLs. You can select multiple files to open/copy all URLs.
 
 - **Open Web URL:** The *Web URL* can be found in the *File → Open URL* menu and as an optional toolbar item in the browser window. Use *View → Customize Toolbar...* to add the *Open in Browser* button to your default browser toolbar.
 - **Copy Web URL:** The *Web URL* can be found in the *Edit → Copy URl* menu.

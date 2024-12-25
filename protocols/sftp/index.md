@@ -88,11 +88,13 @@ ssh.authentication.publickey.default.enable=true
 
 ### Public Key Authentication
 
-Public-key authentication allows you to connect to a remote server without sending your password over the Internet. Public-key authentication uses two keys:
-1. a private key that only you have that should be kept in a secure place and protected with a password
-2. the public key, which is placed on the server you wish to gain access to, usually by the system administrator when your account is set up. 
+Private keys to authenticate with can be selected in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
 
-Private keys can be configured in the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel.
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth.md) to configure public key authentication with an OpenSSH server.
+:::
 
 #### PuTTY Key Format Interoperability
 
@@ -102,18 +104,6 @@ PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not 
 
 OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
 
-#### Configure Public Key Authentication
-
-1. Run the command `ssh-keygen` from the Terminal.app (macOS) or console (Windows) to generate a public/private pair of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this location. When you generate the keys you will be asked for a 'passphrase'. If you use a *passphrase* then you will have to enter it each time you use the keys for authentication. That is, you will have to type in the passphrase every time you log in, just as you would with a password. If you don't enter a passphrase (just press the return key) then you will be allowed to log in without having to enter a passphrase. This can be more convenient, but it is less secure.
-	```
-	ssh-keygen -m PEM -t rsa
-	```
-2. Copy the public key to the remote host you wish to access and add it to the file `authorized_keys` in your `~/.ssh` directory. (If that file does not exist then you should create it.) Anybody listed in the authorized_keys file (via their public key) is allowed to log-in, provided that they can prove that they possess the corresponding private key. Thus, if you have the private key in your .ssh directory on your home machine you'll be allowed in.
-	```
-	ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
-	```
-3. In the Connection Dialog or the Bookmark editor in Cyberduck select *Use Public Key Authentication* and select the private key in your `.ssh` directory.
-
 ##### OpenSSH User Certificate Authentication
 
 :::{important}
@@ -121,13 +111,14 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 * Mountain Duck [4.16.0](https://mountainduck.io/changelog/) or later required
 :::
 
-Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://man.openbsd.org/sshd_config#TrustedUserCAKeys), refer to your software vendor for configuration. To configure authentication with a User CA signed private key, configure the private key as described in [Configure Public Key Authentication](#configure-public-key-authentication) step 3. The signed public key file _must_ reside next to the private key file, suffixed `-cert.pub` or `.pub`. The [`CertificateFile`](https://man.openbsd.org/ssh_config#CertificateFile) configuration directive in `~/.ssh/config` is not supported. Pay attention to the server configuration and [`PubkeyAcceptedAlgorithms`](https://man.openbsd.org/sshd_config#PubkeyAcceptedAlgorithms) specifically which determines the allowed private key algorithms to authenticate with.
+Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://man.openbsd.org/sshd_config#TrustedUserCAKeys), refer to your software vendor for configuration. To configure authentication with a User CA signed private key, configure the private key as described in [Configure Public Key Authentication](#public-key-authentication) step 3. The signed public key file _must_ reside next to the private key file, suffixed `-cert.pub` or `.pub`. The [`CertificateFile`](https://man.openbsd.org/ssh_config#CertificateFile) configuration directive in `~/.ssh/config` is not supported. Pay attention to the server configuration and [`PubkeyAcceptedAlgorithms`](https://man.openbsd.org/sshd_config#PubkeyAcceptedAlgorithms) specifically which determines the allowed private key algorithms to authenticate with.
 
 #### Public Key Authentication Using SSH Agent
 When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
 
-:::{warning}
-The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/13945).
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#13945](https://github.com/iterate-ch/cyberduck/issues/13945).
 :::
 
 ::::{tabs}
@@ -135,18 +126,23 @@ The feature is not supported when running Cyberduck from the Mac App Store becau
 
 The agent `ssh-agent` is running by default on macOS. You add private key identities to the authentication agent using the program `ssh-add`. The SSH agent is located using the `IdentityAgent` directive in `~/.ssh/config` or if missing from the environment variable `SSH_AUTH_SOCK`.
 
+The following agents are supported:
+ * OpenSSH `ssh-agent`.
+ * [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck)
+
 :::
 :::{group-tab} Windows
 
 The following agents are supported:
  * [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
  * OpenSSH for Windows using the pipe (`\\.\pipe\openssh-ssh-agent`) by default. Use `IdentityAgent` to set a custom socket path for any other compatible agent if needed. 
+ * [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck)
 
 :::
 ::::
 
 :::{tip}
-When authenticating using Public Key Authentication with an SSH agent containing multiple identities, it makes sense to add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise the server may deny the connection because of too many login failures and you will receive the error _Too many authentication failures_.
+When authenticating using Public Key Authentication with an SSH agent containing multiple identities, add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise, the server may deny the connection because of too many login failures, and you will receive the error _Too many authentication failures_.
 :::
 
 Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
@@ -197,7 +193,7 @@ Using the `ProxyJump` configuration directive in `~/.ssh/config` you can connect
 
 Sample configuration:
 
-```
+```{code-block}
 Host internal
    	HostName server.lan
    	ProxyJump user-external@jump.example.org:2222
@@ -206,14 +202,12 @@ Host internal
 
 You can also work with aliases like
 
-```
+```{code-block}
 Host bastion-host-nickname
     HostName bastion-hostname
     User username
     Port 2222
-```	
 
-```
 Host remote-host-nickname
     HostName remote-hostname
     ProxyJump bastion-host-nickname
@@ -223,8 +217,9 @@ Host remote-host-nickname
 
 Open in *Terminal* allows you to open an SSH shell for the current working directory with a single click.
 
-:::{warning}
-The feature is not supported when running Cyberduck from the Mac App Store because of [sandboxing restrictions](https://github.com/iterate-ch/cyberduck/issues/7664).
+:::{admonition} Mac App Store
+:class: attention
+The setting is not available in the version installed from the Mac App Store. Refer to [#7664](https://github.com/iterate-ch/cyberduck/issues/7664).
 :::
 
 ::::{tabs}
