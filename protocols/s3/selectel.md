@@ -45,4 +45,4 @@ Here ru-1 is the pool that hosts the object store.
 
 ## Selectel FTP API Domains
 
-- `ftp.ru-1.storage.selcloud.ru` domain, used if you need make a connect via ftp-protocol.
+- `ftp.ru-1.storage.selcloud.ru` domain, used if you need make a connection using FTP[](../ftp.md).
