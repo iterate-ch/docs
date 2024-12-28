@@ -103,11 +103,11 @@ defaults delete ch.sudo.cyberduck <property>
 :::::
 
 
-## Using connection profiles
+## In `.cyberduckprofile` Connection Profiles
 
 You can override defaults in specific [connection profiles](../protocols/profiles/index.md) only affecting connections that use the profile. 
 
-1. Open the `.cyberduckprofile` in a text editor.
+1. Open the `.cyberduckprofile` file in a text editor.
 2. Add a child element to `<dict>` with a `key` named `Properties` and the configuration options inside an `array` as follows:
 
    ```{code-block}
@@ -115,4 +115,19 @@ You can override defaults in specific [connection profiles](../protocols/profile
    <array>
       <string>property=value</string>
    </array>
+   ```
+   
+## In `.duck` Bookmark Files
+
+You can override defaults in specific [bookmarks](../cyberduck/bookmarks.md) only affecting a single connection.
+
+1. Open the `.duck` file in a text editor.
+2. Add a child element to `<dict>` with a `key` named `Custom` and the configuration options inside an `dict` as follows:
+
+   ```{code-block}
+   <key>Custom</key>
+   <dict>
+      <key>property</key>
+      <string>value</string>
+   </dict>
    ```
