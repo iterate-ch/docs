@@ -104,8 +104,7 @@ Use the endpoint `s3.us-gov-west-1.amazonaws.com` or install the connection prof
 to [S3 interface VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
 **
 
-- {download}
-  `Download<https://profiles.cyberduck.io/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>`
+- {download}`Download<https://profiles.cyberduck.io/AWS%20PrivateLink%20for%20Amazon%20S3%20(VPC%20endpoint).cyberduckprofile>`
   the *AWS PrivateLink for Amazon S3 (VPC endpoint) profile*.
 
 ::::
@@ -187,8 +186,7 @@ with the identity provider in _Identity and Access Management (IAM)_.
 
 ##### S3 with Azure Active Directory (Azure AD)
 
-- {download}
-  `Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>`
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>`
   the *AWS S3+STS &amp; Azure Active Directory (Azure AD) profile* for preconfigured settings
 
 ##### S3 with Google OpenID Connect
@@ -213,8 +211,7 @@ the role name `s3access` to match your IAM configuration.
 Instead of providing Access Key ID and Secret Access Key, authenticate using credentials managed in `~/aws/credentials`
 on macOS or `%USERPROFILE%\.aws\credentials` on Windows using third-party tools.
 
-- {download}
-  `Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>`
+- {download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>`
   the *S3 (Credentials from AWS Command Line Interface) profile* for preconfigured settings.
 
 You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or
