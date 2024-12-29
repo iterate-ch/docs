@@ -23,7 +23,7 @@ Issue the user an S3 key.
 
 ### Configuration
 
-1. Choose _[Open Connection…](../cyberduck/connection.md)_ or add a _[New Bookmark](../cyberduck/bookmarks.md)_ to save the connection settings.
+1. Choose _[Open Connection…](../../cyberduck/connection.md)_ or add a _[New Bookmark](../../cyberduck/bookmarks.md)_ to save the connection settings.
 2. Select the _S3 Selectel_ protocol or alterntively the generic Amazon S3 profile.
 3. In the _Server_ field, enter the domain `s3.ru-1.storage.selcloud.ru`, where `ru-1` is the pool that hosts the object storage.
 4. In the _Access Key ID_ field, insert the value of the _Access key_ field from your S3 key.
