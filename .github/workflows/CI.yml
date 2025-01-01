@@ -45,8 +45,8 @@ jobs:
           sudo apt-get update
           sudo apt-get -y install duck
       - name: Deploy
-        run: .github/sync.sh ./_build/dirhtml
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+        run: |
+          echo "Upload ./_build/dirhtml"
+          duck -y --username ${{ secrets.AWS_ACCESS_KEY_ID }} --password ${{ secrets.AWS_SECRET_ACCESS_KEY }} --existing compare --upload s3:/github-cyberduck-docs/ ./_build/dirhtml/* --region ${{ secrets.AWS_DEFAULT_REGION }}
+          echo "Purging CDN configuration"
+          duck -y --username ${{ secrets.AWS_ACCESS_KEY_ID }} --password ${{ secrets.AWS_SECRET_ACCESS_KEY }} --purge s3:/github-cyberduck-docs/
