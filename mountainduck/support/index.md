@@ -49,7 +49,7 @@ respectively. In addition to the current log file, compressed versions of the la
 `mountainduck-*.log.zip` are available.
 
 :::{tip}
-You can also reach this file in _Console.app_ (Open from `/Applications/Utilities`) under
+You can also reach this file in _Console.app_ found in _/Applications/Utilities_ under
 `Reports → Log Reports → mountainduck.log`.
 :::
 
@@ -87,19 +87,24 @@ within [your ticket](mailto:support@mountainduck.io).
 
 ## Crash Reports
 
-::::{tabs}
-:::{group-tab} macOS
+:::::{tabs}
+::::{group-tab} macOS
 
 Crash reports are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.crash`. On macOS 12 or later crash reports
 are saved to `~/Library/Logs/DiagnosticReports/Mountain Duck_*.ips`.
 
+:::{tip}
+You can also reach crash reports in _Console.app_ found in _/Applications/Utilities_ under
+`Reports → Diagnostic Reports`.
 :::
-:::{group-tab} Windows
+
+::::
+::::{group-tab} Windows
 
 Crash reports are saved to `%AppData%\cyberduck\CrashReporter`.
 
-:::
 ::::
+:::::
 
 ## Get Support
 
