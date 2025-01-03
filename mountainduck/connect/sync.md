@@ -175,7 +175,7 @@ You can manually pause background syncing by selecting *Pause Sync* in the subme
 Syncing is also paused automatically when your network connection to the server is interrupted but resumed automatically when a connection is restored.
 
 :::{warning}
-When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](#online-only) cannot be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
+When synchronization is paused by selecting _Pause Sync_ in the menu or caused by a connectivity problem, no changes from the server will be detected. Additionally, files marked as [Online Only](#-online-only) cannot be opened: The application attempting to open the file will show an error message and a *Access Denied* notification is shown.
 :::
 
 ### Cancel Upload in Progress
