@@ -24,4 +24,4 @@ Public-key authentication allows you to connect to a remote server without a pas
    ```
    ssh hostname < ~/.ssh/id_rsa.pub 'cat >> .ssh/authorized_keys'
    ```
-3. In the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) window, select *Use Public Key Authentication* and select the private key in your `~/.ssh` directory. When connecting, you will be prompted to enter the password for the private key. Choose *Save Password* to [save the password](../cyberduck/connection.md#passwords).
+3. In the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) window, select *Use Public Key Authentication* and select the private key in your `~/.ssh` directory. When connecting, you will be prompted to enter the password for the private key. Choose *Save Password* to [save the password](../cyberduck/connection.md#passwords).
