@@ -17,7 +17,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Cyberduck Help'
-copyright = '2022 iterate GmbH'
+copyright = '2022-2025 iterate GmbH'
 author = 'iterate GmbH'
 
 
