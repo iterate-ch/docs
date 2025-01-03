@@ -13,6 +13,7 @@ dunkel
 exoscale
 filebase
 garage
+hetzner
 ibmcos
 ionos
 linode
