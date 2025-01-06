@@ -408,6 +408,14 @@ You can move or rename remote files using the `--move` command. Use an absolute 
 duck  --move protocol:/<folder>/<name> <file>
 ```
 
+### Copy files using `--copy`
+
+You can copy files using the `--copy` command. Use an absolute path for the target filename. Server-side [copy support](../cyberduck/copy.md#copy-files-and-folders-between-servers) is limited to some protocols.
+
+```{code-block}
+duck  --copy protocol:/<folder>/<name> <file>
+```
+
 ### Cryptomator
 
 Access to your [Cryptomator](../cryptomator/index.md) Vaults from the command line. When accessing a vault using
