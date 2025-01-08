@@ -151,6 +151,33 @@ Packages can also be found for [download](https://dist.duck.sh/).
 ::::
 :::::
 
+### Docker Image
+
+_Cyberduck CLI_ is available as a [Docker Image](https://github.com/iterate-ch/cyberduck/pkgs/container/cyberduck). Install from the command line with
+
+    docker pull ghcr.io/iterate-ch/cyberduck:latest
+
+### GitHub Action
+
+_[Cyberduck CLI GitHub Action](https://github.com/iterate-ch/cyberduck-cli-action)_ is available for [GitHub Actions](https://github.com/features/actions). It runs Cyberduck CLI within a docker container. 
+
+    uses: iterate-ch/cyberduck-cli-action@v1
+    env:
+        USERNAME: <username>
+        PASSWORD: <password>
+        IDENTITY: <identity file>
+    with:
+        mode: list|longlist|upload|download|delete|purge|raw
+        url: <remote file or directory>
+        path: <local file or directory>
+        args: '<additional parameters>'
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../tutorials/cli_github_action.md) to use the Cyberduck CLI GitHub Action.
+:::
+
 ## Usage
 
 `Usage:duck [options...]`
@@ -161,8 +188,7 @@ URLs in arguments must be fully qualified. You can reference files relative to y
 `/~ftps://user@example.net/~/`.
 
 :::{attention}
-Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/`
-with a trailing `/`.
+Paths can either denote a remote file `ftps://user@example.net/resource` or folder `ftps://user@example.net/directory/` with a trailing `/`.
 :::
 
 ### Connection Profiles
