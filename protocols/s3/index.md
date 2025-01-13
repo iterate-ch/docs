@@ -125,6 +125,11 @@ No regional endpoint should be set while connecting to a single bucket. The endp
 querying the region of the bucket.
 :::
 
+### Connecting to a Public Bucket
+
+To access public buckets with no access key required, you can choose _Anonymous Login_ instead of providing 
+_Access Key ID_ and _Secret Access Key_.
+
 ### Connecting using Deprecated Path Style Requests
 
 For S3 compatible storage only supporting path style requests to reference buckets. Connect with a connection profile
