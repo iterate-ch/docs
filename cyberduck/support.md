@@ -7,20 +7,20 @@ Support
 
 If you have a feature request please make sure to include a detailed and comprehensible description of the requested feature in [the ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose). Make sure to check if someone already requested a similar feature.
 
-:::{tip}
-For issues with your remote storage user account credentials, please instead write to your hosting service provider. 
+:::{note}
+Discuss features and issues you are having in [GitHub Discussions](https://github.com/iterate-ch/cyberduck/discussions). For issues with the registration key, please email [support@cyberduck.io](mailto:support@cyberduck.io).
 :::
 
 ### Bug Reports
 
-[Open a new ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose) with a description of what you have done and what went wrong. Make sure to look or search for existing issues first. If you have trouble connecting to a server or your login credentials are not valid, try to resolve the issue with the assistance of your hosting service provider.
+[Open a new ticket](https://github.com/iterate-ch/cyberduck/issues/new/choose) with a description of what you have done and what went wrong. Make sure to look or search for existing issues first.
 
-:::{note}
-Discuss features and issues you are having in [GitHub Discussions](https://github.com/iterate-ch/cyberduck/discussions). For issues with the registration key, please send an email to [support@cyberduck.io](mailto:support@cyberduck.io).
+:::{tip}
+If you have trouble connecting to a server or your login credentials are not valid, try to resolve the issue with the assistance of your hosting service provider.
 :::
 
 :::{warning}
-Please be aware that you are possibly using our software at no charge if you have not purchased a registration key. Thus the support provided here is best effort only.
+Please be aware that you are possibly using our software at no charge if you have not purchased a registration key. Thus, the support provided here is best effort only.
 :::
 
 ## Logging Output
