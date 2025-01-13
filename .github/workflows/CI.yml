@@ -38,15 +38,24 @@ jobs:
         with:
           key: html-${{ github.sha }}
           path: ./_build/dirhtml
-      - name: Install Cyberduck CLI
-        run: |
-          echo -e "deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main" | sudo tee /etc/apt/sources.list.d/cyberduck.list > /dev/null
-          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FE7097963FEFBE72
-          sudo apt-get update
-          sudo apt-get -y install duck
       - name: Deploy
-        run: |
-          echo "Upload ./_build/dirhtml"
-          duck -y --username ${{ secrets.AWS_ACCESS_KEY_ID }} --password ${{ secrets.AWS_SECRET_ACCESS_KEY }} --existing compare --upload s3:/github-cyberduck-docs/ ./_build/dirhtml/* --region ${{ secrets.AWS_DEFAULT_REGION }}
-          echo "Purging CDN configuration"
-          duck -y --username ${{ secrets.AWS_ACCESS_KEY_ID }} --password ${{ secrets.AWS_SECRET_ACCESS_KEY }} --purge s3:/github-cyberduck-docs/
+        uses: iterate-ch/cyberduck-cli-action@v1
+        id: upload
+        env:
+          USERNAME: '${{ secrets.AWS_ACCESS_KEY_ID }}'
+          PASSWORD: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
+        with:
+          mode: upload
+          url: 's3:/github-cyberduck-docs/'
+          path: './_build/dirhtml/*'
+          args: '--existing compare --region ${{ secrets.AWS_DEFAULT_REGION }}'
+      - name: Purge CDN
+        uses: iterate-ch/cyberduck-cli-action@v1
+        id: purge
+        env:
+          USERNAME: '${{ secrets.AWS_ACCESS_KEY_ID }}'
+          PASSWORD: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
+        with:
+          mode: purge
+          url: 's3:/github-cyberduck-docs/'
+          args: '--region ${{ secrets.AWS_DEFAULT_REGION }}'
