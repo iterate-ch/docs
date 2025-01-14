@@ -5,7 +5,7 @@ Use Cyberduck CLI in a [GitHub Actions](https://docs.github.com/en/actions) work
 
 ## Usage in Custom Workflow
 
-1. Add the `cyberduck-cli-action` action to a workflow `.yml` with a step like 
+1. Add the `[cyberduck-cli-action](https://github.com/iterate-ch/cyberduck-cli-action)` action to a workflow `.yml` with a step like 
 
    ```
     - name: Upload
