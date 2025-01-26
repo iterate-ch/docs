@@ -75,7 +75,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
-- `Region` Region name to limit listing containers of a specific region only for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
+- `Region` Location constraint for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
   :::{admonition} S3
   :class: tip
 
