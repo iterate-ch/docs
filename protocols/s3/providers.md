@@ -11,6 +11,7 @@ digitalocean
 dreamobjects
 dunkel
 exoscale
+fastly
 filebase
 garage
 hetzner
