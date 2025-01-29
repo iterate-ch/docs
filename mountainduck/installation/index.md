@@ -1,8 +1,8 @@
 Installation
 ====
 
-:::::{tabs}
-::::{group-tab} macOS
+::::::{tabs}
+:::::{group-tab} macOS
 
 **Download**<br/>
 Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
@@ -42,8 +42,8 @@ Enable the extension in *System Settings → General → Login Items & Extension
 
 ![Mountain Duck Finder Integration](_images/Mountain_Duck_Finder_Integration.png) 
 
-::::
-::::{group-tab} Windows
+:::::
+:::::{group-tab} Windows
 
 **Installer**<br/>
 [Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* and install Mountain Duck with administrator privilege.
@@ -57,8 +57,8 @@ Enable the extension in *System Settings → General → Login Items & Extension
 Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
 :::
 
-::::
 :::::
+::::::
 
 ## System Requirements
 
