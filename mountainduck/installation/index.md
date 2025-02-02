@@ -67,7 +67,8 @@ Using the MSI Installer, you'll have to install the *MSI Package Shell Extension
 
 - Mountain Duck 3.3.5 or later requires *macOS 10.12* or later
 - Mountain Duck 3.0.1 or later requires *macOS 10.11* or later
-- Mountain Duck 5.0.0 or later requires *macOS 11.3* or later
+- Mountain Duck 4.14 or later requires *macOS 10.13* or later
+- Mountain Duck 5.0.0 or later requires *macOS 13* or later
 
 ::::
 ::::{group-tab} Windows
