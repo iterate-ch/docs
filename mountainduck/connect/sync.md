@@ -142,9 +142,9 @@ The cache size can be limited per bookmark within the *Preferences → Sync* tab
 
 ### Delete Cache
 
-There are different ways to delete the sync cache:
+Cache contents for a bookmark can be deleted by either:
 * Delete the bookmark with connection mode set to *Smart Synchronization* or *Integrated*
-* Use the deletion prompt when switching the connect mode between *Integrated* and *Smart Synchronization*
+* Switch the connect mode between *Integrated* and *Smart Synchronization*
 
 ```{image} ../_images/Prompt_Delete_Cache.png
 :alt: Delete Cache Prompt
