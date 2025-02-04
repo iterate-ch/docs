@@ -16,6 +16,7 @@ Connection profiles can be installed from *Preferences → Profiles*.
   - {download}`eu-001 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-001).cyberduckprofile>`
   - {download}`eu-002 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-002).cyberduckprofile>`
   - {download}`eu-003 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-003).cyberduckprofile>`
+  - {download}`eu-004 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(eu-004).cyberduckprofile>`
 - **C2 Object North America** 
   - {download}`us-001 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(us-001).cyberduckprofile>`
   - {download}`us-002 cyberduckprofile<https://profiles.cyberduck.io/Synology%20C2%20(us-002).cyberduckprofile>`
