@@ -1,6 +1,7 @@
 myst-parser
 sphinx-tabs
 sphinx_rtd_theme
+sphinx_rtd_dark_mode
 
 # Pin docutils
 docutils~=0.18.0
