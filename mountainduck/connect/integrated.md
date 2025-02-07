@@ -35,13 +35,12 @@ The file can only be opened when a connection to the server or cloud storage can
 ::::{admonition} macOS only
 :class: note
 
-Click this additional icon displayed next to the filename in Finder.app to request the download of the file.
-
 :::{image} ../_images/File_Provider_Online_Only.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
 :::
+Click this additional icon displayed next to the filename in Finder.app to request the download of the file.
 ::::
 
 ### ![](../_images/overlay_sync.png) In Sync
@@ -64,13 +63,12 @@ Files that failed to sync after changes. You are missing permission to write to 
 ::::{admonition} macOS only
 :class: note
 
-This additional icon displayed next to the filename in Finder.app indicates the file is not synced.
-
 :::{image} ../_images/File_Provider_Ignored.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
 :::
+This additional icon displayed next to the filename in Finder.app indicates the file is not synced.
 ::::
 
 ### ![](../_images/overlay-pause.png) Sync Paused
@@ -82,13 +80,12 @@ The file or folder is only saved in local cache and not synced. New _Folders_, e
 ::::{admonition} macOS only
 :class: note
 
-This additional icon displayed next to the filename in Finder.app indicates a sync error for the file.
-
 :::{image} ../_images/File_Provider_Error.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
 :::
+This additional icon displayed next to the filename in Finder.app indicates a sync error for the file.
 ::::
 
 
