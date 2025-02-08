@@ -68,7 +68,7 @@ Files that failed to sync after changes. You are missing permission to write to 
 :width: 24px
 :align: left
 :::
-This additional icon displayed next to the filename in _Finder.app_ indicates the file is not synced.
+This additional icon displayed next to the filename in _Finder.app_ indicates a sync error for the file.
 ::::
 
 ### ![](../_images/overlay-pause.png) Sync Paused
@@ -85,7 +85,7 @@ The file or folder is only saved in local cache and not synced. New _Folders_, e
 :width: 24px
 :align: left
 :::
-This additional icon displayed next to the filename in _Finder.app_ indicates a sync error for the file.
+This additional icon displayed next to the filename in _Finder.app_ indicates the file is not synced.
 ::::
 
 
