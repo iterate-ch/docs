@@ -105,13 +105,12 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 ::::{admonition} macOS only
 :class: tip
 
-_Download Now_ when using _Integrated_ connect mode downloads the file but allows it to be removed from cache on low disk space.
-
 :::{image} ../_images/File_Provider_Online_Only.png
 :alt: File Provider Icon
 :width: 24px
 :align: left
 :::
+_Download Now_ when using _Integrated_ connect mode downloads the file but allows it to be removed from cache on low disk space.
 ::::
 
 
