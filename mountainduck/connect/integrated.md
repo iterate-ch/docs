@@ -40,7 +40,7 @@ The file can only be opened when a connection to the server or cloud storage can
 :width: 24px
 :align: left
 :::
-Click this additional icon displayed next to the filename in Finder.app to request the download of the file.
+Click this additional icon displayed next to the filename in _Finder.app_ to request the download of the file.
 ::::
 
 ### ![](../_images/overlay_sync.png) In Sync
@@ -68,7 +68,7 @@ Files that failed to sync after changes. You are missing permission to write to 
 :width: 24px
 :align: left
 :::
-This additional icon displayed next to the filename in Finder.app indicates the file is not synced.
+This additional icon displayed next to the filename in _Finder.app_ indicates the file is not synced.
 ::::
 
 ### ![](../_images/overlay-pause.png) Sync Paused
@@ -85,7 +85,7 @@ The file or folder is only saved in local cache and not synced. New _Folders_, e
 :width: 24px
 :align: left
 :::
-This additional icon displayed next to the filename in Finder.app indicates a sync error for the file.
+This additional icon displayed next to the filename in _Finder.app_ indicates a sync error for the file.
 ::::
 
 
@@ -133,7 +133,7 @@ There are different ways to delete the sync cache:
 :alt: Delete Cache Prompt
 :width: 400px
 :::
-* Use the delete option in Finder.app once the bookmark is disconnected. You will be prompt to confirm the deletion as it can lead to file loss if some changes aren't synchronized to the server
+* Use the delete option in _Finder.app_ once the bookmark is disconnected. You will be prompt to confirm the deletion as it can lead to file loss if some changes aren't synchronized to the server
 :::{image} ../_images/Finder_Option_Delete_Cache.png
 :alt: Delete Cache Option
 :width: 800px
