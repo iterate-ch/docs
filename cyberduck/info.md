@@ -40,10 +40,6 @@ Calculate the size recursively of all contained files.
 
 ## Versions
 
-:::{important}
-Cyberduck [8.4](https://cyberduck.io/changelog/) or later required
-:::
-
 A list of file versions can be viewed in the *Versions* tab of the Info window. The following actions are available for
 a selected previous version:
 
