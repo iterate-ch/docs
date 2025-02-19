@@ -126,9 +126,10 @@ The value of `Vendor` must be unique among all installed connection profiles.
         <key>Password Placeholder</key>
         <string>Secret Key</string>
         <key>Properties</key>
-        <array>
-            <string>key=value</string>
-        </array>
+        <dict>
+            <key>property name</key>
+            <string>property value</string>
+        </dict>
         <key>Disk</key>
         <string>
             TU0AKgAFiw6AACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuOR2PR+QSGRSOSSWTSeU
