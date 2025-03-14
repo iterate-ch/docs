@@ -9,6 +9,7 @@ custom_oauth_client_id
 iam
 vault_localdisk
 sftp_publickeyauth
+sftp_publickeyauth_1password
 cli_github_action
 :::
 
@@ -28,6 +29,9 @@ Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/inde
 
 ## [Configure Public Key Authentication for SFTP](sftp_publickeyauth.md)
 Configure Public Key Authentication for SFTP using OpenSSH tools.
+
+### [Configure 1Password SSH Agent](sftp_publickeyauth_1password.md)
+Authenticate with SSH private key saved in 1Password.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
