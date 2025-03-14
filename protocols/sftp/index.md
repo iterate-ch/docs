@@ -129,6 +129,24 @@ The agent `ssh-agent` is running by default on macOS. You add private key identi
 The following agents are supported:
  * OpenSSH `ssh-agent`.
  * [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck)
+ * [Bitwarden](https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent)
+
+Example `~/.ssh/config` configuration for 1Password:
+
+```
+Host myhostname
+    # 1Password SSH agent
+	IdentityAgent ~/.1password/agent.sock
+```
+
+Example `~/.ssh/config` configuration for Bitwarden:
+
+```
+Host myhostname
+    # Bitwarden SSH agent
+	IdentityAgent ~/.bitwarden-ssh-agent.sock
+```
+
 
 :::
 :::{group-tab} Windows
@@ -145,7 +163,7 @@ The following agents are supported:
 When authenticating using Public Key Authentication with an SSH agent containing multiple identities, add `IdentitiesOnly yes` in `~/.ssh/config` to limit authentication attempts with this identity only. Otherwise, the server may deny the connection because of too many login failures, and you will receive the error _Too many authentication failures_.
 :::
 
-Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This can be used to authenticate using an SSH agent backed by a hardware token containing the private key for example.
+Since the private key is not always available on the filesystem, specifying a public key as `IdentifyFile` is also supported. This is particularly useful when the private key is saved in a password manager and only exposed by a custom SSH agent.
 
 Example `~/.ssh/config` configuration:
 
@@ -155,6 +173,8 @@ Host myhostname
 	IdentityFile ~/.ssh/mykey-rsa.pub
 	IdentitiesOnly yes
 ```
+
+Alternatively you can select the public key file in the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark) configuration.
 
 ### One-Time Passcodes (2FA)
 
