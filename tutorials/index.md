@@ -10,6 +10,7 @@ iam
 vault_localdisk
 sftp_publickeyauth
 sftp_publickeyauth_1password
+sftp_publickeyauth_bitwarden
 cli_github_action
 :::
 
@@ -32,6 +33,9 @@ Configure Public Key Authentication for SFTP using OpenSSH tools.
 
 ### [Configure 1Password SSH Agent](sftp_publickeyauth_1password.md)
 Authenticate with SSH private key saved in 1Password.
+
+### [Configure Bitwarden SSH Agent](sftp_publickeyauth_bitwarden.md)
+Authenticate with SSH private key saved in Bitwarden.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
