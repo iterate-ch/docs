@@ -11,7 +11,7 @@ Public-key authentication using Bitwarden SSH Agent allows you to connect to a r
     Host *
        IdentitiesOnly yes
        # Bitwarden SSH agent
-       IdentityAgent ~/.1password/agent.sock
+       IdentityAgent ~/.bitwarden-ssh-agent.sock
     ```
    This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck.
 3. In the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel, select *Use Public Key Authentication*
