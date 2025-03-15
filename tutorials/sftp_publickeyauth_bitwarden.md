@@ -14,8 +14,8 @@ Public-key authentication using Bitwarden SSH Agent allows you to connect to a r
        IdentityAgent ~/.bitwarden-ssh-agent.sock
     ```
    This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck.
-3. In the [Bookmark](../../cyberduck/bookmarks.md) or [Connection](../../cyberduck/connection.md) panel, select *Use Public Key Authentication*
-4. Select the public key corresponding to your SSH private key saved in Bitwarden. Typically, it is located in the `~/.ssh` directory.
+5. In the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) panel, select *Use Public Key Authentication*
+6. Select the public key corresponding to your SSH private key saved in Bitwarden. Typically, it is located in the `~/.ssh` directory.
 
 ## References
 
