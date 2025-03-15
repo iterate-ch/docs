@@ -66,7 +66,7 @@ Host *
 which is then used when configuring a new bookmark.
 
 :::{important}
-If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as hostname in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
+If you have a configuration in your `~/.ssh/config` make sure to specify the `Host` alias as _Server_ in your bookmark configuration. This is important for cases the `Host` alias is different from the `HostName`:
 
 ```
 Host myhostalias
@@ -75,7 +75,7 @@ Host myhostalias
 	IdentityFile ~/.ssh/mykey-rsa.pub
 ```
 
-For the configuration above the hostname to specify in your bookmark is `myhostalias`.
+For the configuration above set `myhostalias` in the _Server_ field when editing a bookmark.
 :::
 
 #### Default Public Key Authentication Keys
