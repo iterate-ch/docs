@@ -3,7 +3,7 @@ Configure Public Key Authentication for SFTP using OpenSSH
 
 Public-key authentication allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
 - Private key kept in a file and protected with a password.
-- Public key placed on the server usually by the system administrator.
+- Public key placed on the server.
 
 1. Run the command `ssh-keygen` from the _Terminal.app_ (macOS) or _Console_ (Windows) to generate a public/private pair
    of keys. They will be put in your directory `~/.ssh`, though you will probably be asked to approve or change this
