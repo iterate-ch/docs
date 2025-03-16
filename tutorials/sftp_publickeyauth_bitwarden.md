@@ -5,6 +5,8 @@ Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a
 - Private key managed by _Bitwarden_
 - Public key placed on the server
 
+:::::{tabs}
+::::{group-tab} macOS
 1. Ensure you have configured _Bitwarden_ to manage your SSH keys. For more information, refer to [Bitwarden SSH Agent](https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent). Open _Bitwarden → Settings…_ and select the checkbox _Enable SSH Agent_.
 
    :::{image} _images/Bitwarden_SSH_Agent_Settings.png
@@ -67,6 +69,9 @@ Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a
    :width: 800px
    :::
 
-## References
+::::
+:::::
 
+
+## References
 * [Bitwarden SSH Agent](https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent)

@@ -5,6 +5,8 @@ Public-key authentication using _1Password_ SSH Agent allows you to connect to a
 - Private key managed by 1Password
 - Public key placed on the server
 
+:::::{tabs}
+::::{group-tab} macOS
 1. Ensure you have configured _1Password_ to manage your SSH keys. For more information, refer to [1Password SSH Agent](https://developer.1password.com/docs/ssh/agent). Enable the _1Password SSH Agent_ in _1Password → Settings… → Developer_
 
    :::{image} _images/1Password_SSH_Agent_Settings.png
@@ -72,6 +74,9 @@ Public-key authentication using _1Password_ SSH Agent allows you to connect to a
    :alt: 1Password Confirm Key Usage
    :width: 600px
    :::
+
+::::
+:::::
 
 ## References
 
