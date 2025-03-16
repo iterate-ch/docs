@@ -1,11 +1,11 @@
 Configure Public Key Authentication for SFTP using Bitwarden SSH Agent
 ====
 
-Public-key authentication using Bitwarden SSH Agent allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
-- Private key managed by Bitwarden
-- Public key placed on the server.
+Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
+- Private key managed by _Bitwarden_
+- Public key placed on the server
 
-1. Ensure you have configured Bitwarden to manage your SSH keys. For more information, refer to [Bitwarden SSH Agent](https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent). Open _Bitwarden → Settings…_ and select the checkbox _Enable SSH Agent_.
+1. Ensure you have configured _Bitwarden_ to manage your SSH keys. For more information, refer to [Bitwarden SSH Agent](https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent). Open _Bitwarden → Settings…_ and select the checkbox _Enable SSH Agent_.
 
    :::{image} _images/Bitwarden_SSH_Agent_Settings.png
    :alt: Bitwarden Settings
@@ -19,7 +19,7 @@ Public-key authentication using Bitwarden SSH Agent allows you to connect to a r
    :width: 800px
    :::
 
-3. Confirm the Bitwarden SSH Agent is running as expected by attempting to list available SSH keys with
+3. Confirm the _Bitwarden SSH Agent_ is running as expected by attempting to list available SSH keys with
    ```
    SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock ssh-add -l
    ```
@@ -30,7 +30,7 @@ Public-key authentication using Bitwarden SSH Agent allows you to connect to a r
    pbpaste | ssh user@remotehost 'cat >> .ssh/authorized_keys
    ```
 
-5. Open the OpenSSH configuration file `~/.ssh/config` and add the following configuration specifying to use Bitwarden as the SSH agent:
+5. Open the OpenSSH configuration file `~/.ssh/config` and add the following configuration specifying to use _Bitwarden_ as the SSH agent:
     ```
    Host *
    IdentitiesOnly yes
@@ -60,7 +60,7 @@ Public-key authentication using Bitwarden SSH Agent allows you to connect to a r
    IdentityFile ~/.ssh/test.pub
    ```
 
-7. Connect to the server and acknowledge the prompt to use the private key stored in Bitwarden.
+7. Connect to the server and acknowledge the prompt to use the private key stored in _Bitwarden_.
 
    :::{image} _images/Bitwarden_Confirm_SSH_Key_Usage.png
    :alt: Bitwarden Confirm Key Usage
