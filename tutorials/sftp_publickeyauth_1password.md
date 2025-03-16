@@ -5,7 +5,7 @@ Public-key authentication using 1Password SSH Agent allows you to connect to a r
 - Private key managed by 1Password
 - Public key placed on the server.
 
-1. Ensure you have configured 1Password to manage your SSH keys. For more information, refer to [1Password SSH Agent](https://developer.1password.com/docs/ssh/agent). Enable the 1Password SSH Agent in _1Password > Settings… > Developer_
+1. Ensure you have configured 1Password to manage your SSH keys. For more information, refer to [1Password SSH Agent](https://developer.1password.com/docs/ssh/agent). Enable the 1Password SSH Agent in _1Password → Settings… → Developer_
 
    :::{image} _images/1Password_SSH_Agent_Settings.png
    :alt: 1Password SSH Agent Settings
