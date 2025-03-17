@@ -1,9 +1,7 @@
 Configure Public Key Authentication for SFTP using Bitwarden SSH Agent
 ====
 
-Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
-- Private key managed by _Bitwarden_
-- Public key placed on the server
+> Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a remote server without a password. Instead of passwords, you use a pair of keys (private and public) for authentication. The private key is kept secret, while the public key is shared with the server.
 
 :::::{tabs}
 ::::{group-tab} macOS
@@ -61,6 +59,8 @@ Public-key authentication using _Bitwarden SSH Agent_ allows you to connect to a
    # Public Key File used to filter identities from SSH agent
    IdentityFile ~/.ssh/test.pub
    ```
+
+   The public key selected allows to identify the corresponding private key retrieved from the SSH agent.
 
 7. Connect to the server and acknowledge the prompt to use the private key stored in _Bitwarden_.
 

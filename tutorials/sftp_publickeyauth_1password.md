@@ -1,9 +1,7 @@
 Configure Public Key Authentication for SFTP using 1Password SSH Agent
 ====
 
-Public-key authentication using _1Password_ SSH Agent allows you to connect to a remote server without a password. Instead, public-key authentication uses two keys:
-- Private key managed by 1Password
-- Public key placed on the server
+> Public-key authentication using _1Password_ SSH Agent allows you to connect to a remote server without a password. Instead of passwords, you use a pair of keys (private and public) for authentication. The private key is kept secret, while the public key is shared with the server.
 
 :::::{tabs}
 ::::{group-tab} macOS
