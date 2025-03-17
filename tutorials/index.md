@@ -11,6 +11,7 @@ vault_localdisk
 sftp_publickeyauth
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
+sftp_publickeyauth_yubikey
 cli_github_action
 :::
 
@@ -36,6 +37,9 @@ Authenticate with SSH private key saved in 1Password.
 
 ### [Configure Bitwarden SSH Agent](sftp_publickeyauth_bitwarden.md)
 Authenticate with SSH private key saved in Bitwarden.
+
+### [Use YubiKey](sftp_publickeyauth_yubikey.md)
+Authenticate with SSH private key saved on YubiKey.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
