@@ -41,7 +41,12 @@ Integration with Bitwarden is currently not working as expected. Refer to [#1698
    # Bitwarden SSH agent
    IdentityAgent ~/.bitwarden-ssh-agent.sock
    ```
-   This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck. If you are running Bitwarden installed from the Mac App Store the socket is located in `~/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock` instead.
+   
+   This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck. 
+
+   :::{tip}
+   If you are running Bitwarden installed from the Mac App Store the socket is located in `~/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock` instead. Make sure you are running a version of Bitwarden that has [#13075](https://github.com/bitwarden/clients/issues/13075) resolved.
+   :::
 
 6. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck. Enter the alias from your OpenSSH configuration or the hostname in _Server_. You do **not** need to set a value for _Password_.
 
