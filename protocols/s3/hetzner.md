@@ -21,7 +21,7 @@ Download the desired region for the Hetzner Object Storage Connection Profile wi
 
 You have to generate an access key before you can connect:
 
-1. Log into the [Hetner Cloud Console](https://console.hetzner.cloud/).
+1. Log into the [Hetzner Cloud Console](https://console.hetzner.cloud/).
 2. Click on the *Sicherheit* link in the sidebar and choose _Zugangsdaten generieren_.
 3. Copy the _Access Key_ and _Secret Key_
 
