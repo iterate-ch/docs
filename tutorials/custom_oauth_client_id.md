@@ -118,7 +118,7 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
     ```
     
     - `OAuth Redirect Url`. Use the reverse notation of the OAuth Client ID and append `:oauth` to it.
-      - `OAuth Client ID`. Override the registered application OAuth Client ID.
+    - `OAuth Client ID`. Override the registered application OAuth Client ID.
     
     ::::
     ::::{tab} Example
