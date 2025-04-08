@@ -23,73 +23,73 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
     :width: 800px
     :::
 
-1. Navigate to _APIs & Services_ → _Enabled APIs & services_.
+2. Navigate to _APIs & Services_ → _Enabled APIs & services_.
     :::{image} _images/APIs_Services_Client_ID.png
     :alt: APIs and Services
     :width: 800px
     :::
 
-1. Select _Enable APIs & Services_ and search for "Google Drive API" in the search box of the API library.
+3. Select _Enable APIs & Services_ and search for "Google Drive API" in the search box of the API library.
 
     :::{image} _images/Enable_APIs_Client_ID.png
     :alt: Enable APIs
     :width: 800px
     :::
 
-1. Select _Google Drive API_ from the search results and choose _Enable_. Repeat the same for _Google Cloud Storage JSON API_ when you want to access Google Cloud Storage.
+4. Select _Google Drive API_ from the search results and choose _Enable_. Repeat the same for _Google Cloud Storage JSON API_ when you want to access Google Cloud Storage.
 
     :::{image} _images/Search_Google_API.png
     :alt: API Library Google Drive
     :width: 800px
     :::
 
-1. Navigate to _APIs & Services → OAuth consent screen_.
+5. Navigate to _APIs & Services → OAuth consent screen_.
 
     :::{image} _images/Consent_Screen_Client_ID.png
     :alt: Consent Screen OAuth Client ID
     :width: 800px
     :::
 
-1. Choose _External_ from _User Type_ and select _Create_. Choose any _App Name_ and select _Save and Continue_.
+6. Choose _External_ from _User Type_ and select _Create_. Choose any _App Name_ and select _Save and Continue_.
 
     :::{image} _images/App_Information_Client_ID.png
     :alt: App Information OAuth Client ID
     :width: 800px
     :::
 
-1. Select _Add or Remove Scopes_ in the next step. Search for "Google Drive API" and enable the scope `.../auth/drive`. Repeat the same for `.../auth/devstorage.full_control` when you want to access Google Cloud Storage. Select _Update_ to confirm and _Save and Continue_ to move to the next step.
+7. Select _Add or Remove Scopes_ in the next step. Search for "Google Drive API" and enable the scope `.../auth/drive`. Repeat the same for `.../auth/devstorage.full_control` when you want to access Google Cloud Storage. Select _Update_ to confirm and _Save and Continue_ to move to the next step.
 
     :::{image} _images/List_of_Scopes_Client_ID.png
     :alt: List of Scopes OAuth Client ID
     :width: 800px
     :::
 
-1. Add an email address registered as a Google account after selecting _Add Users_. Confirm by selecting _Save and Continue_.
+8. Add an email address registered as a Google account after selecting _Add Users_. Confirm by selecting _Save and Continue_.
 
     :::{image} _images/Test_Users_Client_ID.png
     :alt: Test Users OAuth Client ID
     :width: 800px
     :::
 
-1. Navigate to _APIs & Services → Credentials_ and select _OAuth client ID_ from _Create Credentials_.
+9. Navigate to _APIs & Services → Credentials_ and select _OAuth client ID_ from _Create Credentials_.
 
     :::{image} _images/Client_ID_Credentials.png
     :alt: OAuth Client ID Credentials
     :width: 800px
     :::
 
-1. Select _Desktop app_ for _Application type_ and enter any _Name_. Select _Create_ to continue.
+10. Select _Desktop app_ for _Application type_ and enter any _Name_. Select _Create_ to continue.
 
-    :::{image} _images/Application_Type_Client_ID.png
-    :alt: Application Type for Credentials
-    :width: 800px
-    :::
+     :::{image} _images/Application_Type_Client_ID.png
+     :alt: Application Type for Credentials
+     :width: 800px
+     :::
 
-1. Copy the _Client ID_ displayed. You will need it to set up the custom connection profile in the next step.
+11. Copy the _Client ID_ displayed. You will need it to set up the custom connection profile in the next step.
 
-    :::{image} _images/OAuth_Client_ID_Credentials.png
-    :alt: OAuth Client ID Credentials
-    :::
+     :::{image} _images/OAuth_Client_ID_Credentials.png
+     :alt: OAuth Client ID Credentials
+     :::
 
 ## Add Custom Connection Profile
 
@@ -97,7 +97,7 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
    - {download}`Google Drive Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Drive Custom OAuth Client ID.cyberduckprofile>`
    - {download}`Google Storage Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Storage Custom OAuth Client ID.cyberduckprofile>`
 
-1. Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect Url`, and optionally the `OAuth Client Secret` in the template connection profile, leaving other keys unchanged.
+2. Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect Url`, and optionally the `OAuth Client Secret` in the template connection profile, leaving other keys unchanged.
 
     :::::{tabs}
     ::::{tab} Configuration
@@ -158,7 +158,7 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
     :::
     ::::
 
-1. Double-click the connection profile to open and register or copy to the _Profiles_ folder in the [application support folder](../cyberduck/support.md#application-support-folder).
+3. Double-click the connection profile to open and register or copy to the _Profiles_ folder in the [application support folder](../cyberduck/support.md#application-support-folder).
 
 ## Update Protocol Selection in Bookmark
 
