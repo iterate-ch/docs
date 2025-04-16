@@ -58,12 +58,26 @@ Refer to [Sample connection profiles for S3 and OpenID Connect Federation](https
         <key>STS Endpoint</key>
         <string>https://sts.amazonaws.com/</string>
         <key>Properties</key>
-        <array>
-            <string>s3.assumerole.rolearn=arn:aws:iam::…</string>
-        </array>
+        <dict>
+            <key>s3.assumerole.rolearn</key>
+            <string>arn:aws:iam::…</string>
+        </dict>
     </dict>
 </plist>
 ```
+
+::::{tip}
+Alternatively set the `s3.assumerole.rolearn` per user in a `.duck` [bookmark](../../tutorials/hidden_properties.md#in-duck-bookmark-files) file.
+
+```xml
+<key>Custom</key>
+<dict>
+    <key>s3.assumerole.rolearn</key>
+    <string>arn:aws:iam::…</string>
+</dict>
+```
+::::
+
 
 ### References 
 
