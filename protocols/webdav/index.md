@@ -181,9 +181,10 @@ authorization provider and the specified restrictions. You should configure it t
 authorization fails using the `AuthzSendForbiddenOnFailure` directive. Refer
 to [mod_authz_core](https://httpd.apache.org/docs/current/mod/mod_authz_core.html#authzsendforbiddenonfailure).
 
-> If authentication succeeds but authorization fails, Apache HTTPD will respond with an HTTP response code of '401
-> UNAUTHORIZED' by default. This usually causes browsers to display the password dialogue to the user again, which is not
-> wanted in all situations. AuthzSendForbiddenOnFailure allows changing the response code to '403 FORBIDDEN'.
+:::{tip}
+If authentication succeeds but authorization fails, Apache HTTPD will respond with an HTTP response code of `401 UNAUTHORIZED` by default. This usually causes browsers to display the password dialogue to the user again, which is not
+wanted in all situations. `AuthzSendForbiddenOnFailure` allows changing the response code to `403 Forbidden`.
+:::
 
 ### 0 Byte Files on WebDAV Server
 
