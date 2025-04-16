@@ -117,9 +117,10 @@ You can override defaults in specific [connection profiles](../protocols/profile
 
    ```{code-block}
    <key>Properties</key>
-   <array>
-      <string>property=value</string>
-   </array>
+   <dict>
+      <key>property</key>
+      <string>value</string>
+   </dict>
    ```
    
 ## In `.duck` Bookmark Files
