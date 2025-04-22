@@ -39,7 +39,7 @@ When connecting to a [SharePoint](../sharepoint.md#sharepoint-server) WebDAV ser
 
 ### Integrated Windows Authentication (IWA)
 
-Integrated Windows Authentication (IWA) is a Microsoft technology that allows users to automatically authenticate using Windows credentials without needing to manually enter a username and password. Supported using NTLM authentication protocol.
+> Integrated Windows Authentication (IWA) is a Microsoft technology that allows users to automatically authenticate using Windows credentials without needing to manually enter a username and password. Supported using NTLM authentication protocol.
 
 {download}`Download<https://profiles.cyberduck.io/WebDAV%20(Integrated%20Windows%20Authentication).cyberduckprofile>`
 and use the *WebDAV (Integrated Windows Authentication) profile* to connect to the server using *Integrated Windows
