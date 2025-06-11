@@ -11,14 +11,33 @@ Linode Object Storage
 Connection profiles can be installed from *Preferences → Profiles*.
 :::
 
-- **Linode Object Storage (France, Paris)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(fr-par-1).cyberduckprofile>` the *Linode Object Storage (Paris) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Milan, Italy)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(it-mil-1).cyberduckprofile>` the *Linode Object Storage (Milan) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Singapore)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(ap-south-1).cyberduckprofile>` the *Linode Object Storage (Singapore) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Frankfurt, Germany)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(eu-central-1).cyberduckprofile>` the *Linode Object Storage (Frankfurt) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Newark, NJ, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-east-1).cyberduckprofile>` the *Linode Object Storage (Newark) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Atlanta, GA, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-southeast-1).cyberduckprofile>` the *Linode Object Storage (Atlanta) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Washington, DC, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-iad-1).cyberduckprofile>` the *Linode Object Storage (Washington) Connection Profile* for preconfigured settings.
-- **Linode Object Storage (Chicago, IL, USA)** {download}`Download<https://profiles.cyberduck.io/Linode%20Object%20Storage%20(us-ord-1).cyberduckprofile>` the *Linode Object Storage (Chicago) Connection Profile* for preconfigured settings.
+Connection profiles for the following regions are available.
+
+- [Linode Object Storage (au-mel-1)(e2)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28au-mel-1%29%28e2%29.cyberduckprofile)
+- [Linode Object Storage (br-gru-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28br-gru-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (de-fra-1)(e3)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28de-fra-1%29%28e3%29.cyberduckprofile)
+- [Linode Object Storage (ap-south-1)(e0)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28ap-south-1%29%28e0%29.cyberduckprofile)
+- [Linode Object Storage (es-mad-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28es-mad-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (eu-central-1)(e0)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28eu-central-1%29%28e0%29.cyberduckprofile)
+- [Linode Object Storage (fr-par-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28fr-par-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (gb-lon-1)(e3)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28gb-lon-1%29%28e3%29.cyberduckprofile)
+- [Linode Object Storage (id-cgk-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28id-cgk-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (in-bom-1)(e3)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28in-bom-1%29%28e3%29.cyberduckprofile)
+- [Linode Object Storage (in-maa-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28in-maa-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (it-mil-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28it-mil-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (jp-osa-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28jp-osa-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (nl-ams-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28nl-ams-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (se-sto-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28se-sto-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (sg-sin-1)(e2)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28sg-sin-1%29%28e2%29.cyberduckprofile)
+- [Linode Object Storage (us-east-1)(e0)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-east-1%29%28e0%29.cyberduckprofile)
+- [Linode Object Storage (us-iad-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-iad-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-iad-2)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-iad-2%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-lax-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-lax-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-mia-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-mia-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-ord-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-ord-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-sea-1)(e1)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-sea-1%29%28e1%29.cyberduckprofile)
+- [Linode Object Storage (us-sea-9)(e3)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-sea-9%29%28e3%29.cyberduckprofile)
+- [Linode Object Storage (us-southeast-1)(e0)](https://profiles.cyberduck.io/Linode%20Object%20Storage%20%28us-southeast-1%29%28e0%29.cyberduckprofile)
 
 ### Manual Configuration
 
@@ -34,14 +53,14 @@ Enter the following information in the [bookmark](../../cyberduck/bookmarks.md).
 You have to generate an access key before you can connect to Linode Object storage:
 
 1. Log into the [Linode Cloud Manager](https://cloud.linode.com/).
-1. Click on the *Object Storage* link in the sidebar, navigate to the *Access Keys* tab, and select *Create an Access Key*. 
-1. If you haven't enabled Object Storage till now you will be prompt to confirm that you want to *Enable Object Storage*.
+2. Click on the *Object Storage* link in the sidebar, navigate to the *Access Keys* tab, and select *Create an Access Key*. 
+3. If you haven't enabled Object Storage till now you will be prompt to confirm that you want to *Enable Object Storage*.
 
 Within the *Create an Access Key* menu:
 
 1. Set a label as a reference for the key
-1. Enable *Limited Access* to limit granted permissions per buckets
-1. Select *Submit* to generate the key
+2. Enable *Limited Access* to limit granted permissions per buckets
+3. Select *Submit* to generate the key
 
 After submitting a window will be displayed containing the *Access Key* and *Secret Key*. 
 
