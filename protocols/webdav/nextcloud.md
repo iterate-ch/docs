@@ -125,5 +125,5 @@ The modification date retention is supported using `X-OC-Mtime` for new files up
 
 ## References
 
-- [Accessing Nextcloud Files Using WebDAV](https://docs.nextcloud.com/server/13/user_manual/files/access_webdav.html)
+- [Accessing Nextcloud Files Using WebDAV](https://docs.nextcloud.com/server/stable/user_manual/en/files/access_webdav.html)
 - [Zero byte file truncate issue with Nextcloud and ownCloud deployed with FastCGI](../../mountainduck/issues/fastcgi.md)
