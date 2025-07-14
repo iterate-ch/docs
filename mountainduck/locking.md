@@ -20,6 +20,10 @@ Files opened from one of the supported protocols are locked for editing by other
 
 ## Pseudo Locking for Protocols with no Native Lock Support Using Lock Owner Files
 
+```{warning}
+Not supported for _Integrated_ connect mode.
+```
+
 For connections other than [WebDAV](../protocols/webdav/index.md), we support detecting files opened by others by looking for owner lock files uploading to the server.
 
 :::{note}

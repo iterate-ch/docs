@@ -52,22 +52,6 @@ Choose *Open Connection…* to add a new bookmark. To edit the connection settin
 Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
 :::
 
-### Connect Mode
-
-- **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
-- **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
-- **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
-
-:::{image} _images/Edit_Bookmark_macOS.png
-:alt: Edit Bookmark (macOS)
-:width: 500px
-:::
-
-:::{image} _images/Edit_Bookmark_Windows.png
-:alt: Edit Bookmark (Windows)
-:width: 500px
-:::
-
 ### Nickname
 
 The nickname determines the display of the bookmark in the menu and can be customized.
@@ -84,6 +68,44 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 :alt: Taskbar Menu Bookmark Groups (Windows, Large Icons)
 :width: 400px
 :::
+
+### Connect Mode
+
+You can change the synchronization options for a bookmark with *Connect Mode*. Choose _Default_ to use the setting from _Preferences → Sync_. The _Online_ and _Smart Synchronization_ connect modes mount a volume like a network attached disk. The _Integrated_ connect mode synchronizes files and folders from a directory on the local disk with support from macOS and Windows.
+
+- **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
+- **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
+- **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
+- **Integrated:** See [Integrated](connect/integrated.md) connect mode.
+
+:::{image} _images/Edit_Bookmark_macOS.png
+:alt: Edit Bookmark (macOS)
+:width: 500px
+:::
+
+:::{image} _images/Edit_Bookmark_Windows.png
+:alt: Edit Bookmark (Windows)
+:width: 500px
+:::
+
+```{admonition} Windows Store
+:class: tip
+The connect mode _Online_ and _Smart Synchronization_ are not supported in Mountain Duck available from the Windows Store.
+```
+
+#### Online
+Do not synchronize any file to your computer. You can only access this volume when a connection is possible to the server or cloud storage. Files are accessed on demand from the remote when opened and do not take up any local disk space.
+
+#### Smart Synchronization
+Directories can be browsed when offline and files opened are made available for later offline access. Upload changes in the background when server is reachable. You can explicitly make files available offline using the [context menu](connect/sync.md#keep-offline). See [Smart Synchronization](connect/sync.md).
+
+#### Integrated
+
+```{admonition} Version 5
+:class: note
+Mountain Duck 5 (Beta) required for _Integrated_ connect mode.
+```
+Local storage is managed by the operating system. The mount is not seen as a remote volume by applications but as a regular folder on disk. This option uses the tightly integrated _File Provider_ (macOS) and _Cloud Files_ (Windows) APIs.
 
 ### Read-Only Volume
 
@@ -148,6 +170,20 @@ Enter the command `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Boo
 :::
 ::::
 
+## Activity
+
+```{admonition} Version 5
+:class: note
+Mountain Duck 5 (Beta) required.
+```
+
+Track and cancel currently running sync operations in the new Activity panel.
+
+:::{image} _images/Activity_macOS.png
+:alt: Edit Bookmark (macOS)
+:width: 500px
+:::
+
 ## Notifications
 
 Notifications of the connection status are posted to the *Notification Center* of the operating system.
@@ -191,6 +227,11 @@ Drag files in *Finder.app* an macOS or *File Explorer* on Windows to move and co
 
 ![Copy Operation Mountain Duck Finder](_images/Copy_Operation_Mountain_Duck_Finder.png)
 ![Copy Operation Mountain Duck File Explorer](_images/Copy_Operation_Mountain_Duck_File_Explorer.png)
+
+```{admonition} macOS only
+:class: tip
+Using _Integrated_ connect mode, files dragged are moved by default instead of copied. Drag the file with the ⌥ key pressed (macOS) to copy instead.
+```
 
 ## Context Menu in Finder and Windows File Explorer
 

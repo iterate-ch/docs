@@ -67,16 +67,22 @@ The setting is not available in the version installed from the Mac App Store. Ma
 The default is set to `~/Library/Application Support/Mountain Duck/Volumes.noindex`. The mount location **cannot** be set to `/Volumes` where the directory is not writable.
 :::
 
+```{attention}
+Custom mount location is not honoured in _Integrated_ connect mode but always in `~/Library/CloudStorage`. Changing the connect mode to _Integrated_ will cause applications to fail open recently opened documents because due to the change of the folder location not matching the previous volume.
+```
+
 ### Cache Location
 
 ::::{tabs}
 :::{group-tab} macOS
-
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in the [application support directory](support/index.md#application-support-folder). The disk must be formatted as HFS+ or APFS.
+
+:::{attention}
+Custom cache location is not honoured in _Integrated_ connect mode but always in `~/Library/CloudStorage`.
+:::
 
 :::
 :::{group-tab} Windows
-
 Change the location where to store cache files required for offline access. By default the *Cache* folder is in `%LocalAppData%\Cyberduck`. You must select NTFS formatted drives with support for *NTFS Alternate Data Stream (ADS)*. FAT, FAT32, exFAT, and similar formatted drives are not supported. Network drives may not support alternate data streams as well.
 
 :::
@@ -103,6 +109,10 @@ By default, files are kept in cache for 30 days and the cache is limited to a ma
 :::{attention}
 The settings apply separately for each bookmark. The synchronization cache gets cleared based on the chosen cache limit after Mountain Duck is started and every 24h as long as Mountain Duck is running.
 :::
+
+```{note}
+With _Integrated_ connect mode, the operating system may additionally automatically remove cached files to free up disk space.
+```
 
 ## Notifications
 

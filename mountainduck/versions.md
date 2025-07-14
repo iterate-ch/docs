@@ -53,3 +53,40 @@ Permanently delete a previous version of the selected file.
 
 This will open a *Quick Look preview* on macOS or open the previous version of the file in the default application on
 Windows.
+
+## Custom versioning
+
+```{admonition} Version 5
+:class: note
+Mountain Duck 5 (Beta) required.
+```
+
+Enable the custom versioning option in *Preferences → Versions* to store previous versions of a file for protocols without native versioning. The versions can be previewed, deleted or restored in *Info → Versions*.
+
+Select your preferred handling in case of sync conflicts with earlier changes. Choose between *Rename existing* and *Overwrite*.
+
+```{image} _images/Preferences_Versions_macOS.png
+:alt: Preferences Versions (macOS)
+:width: 600px
+```
+
+Alternatively, use the corresponding option in the bookmark configuration to enable or disable versioning for specific connections only.
+
+```{image} _images/Bookmark_Versioning_macOS.png
+:alt: Bookmark Versioning
+:width: 400px
+```
+
+The versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named like the following pattern: `filename.extension → filename-20230906102017.762.extension`
+
+### Exclude files
+
+Versioning can be limited to files matching a regular expression using the [hidden configuration option](preferences.md#hidden-configuration-options).
+
+    versioning.include.regex=.*
+
+### Number of saved versions
+
+Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit. The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+
+    versioning.limit=5
