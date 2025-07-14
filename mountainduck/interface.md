@@ -170,6 +170,20 @@ Enter the command `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Boo
 :::
 ::::
 
+## Activity
+
+```{admonition} Version 5
+:class: note
+Mountain Duck 5 (Beta) required.
+```
+
+Track and cancel currently running sync operations in the new Activity panel.
+
+:::{image} _images/Activity_macOS.png
+:alt: Edit Bookmark (macOS)
+:width: 500px
+:::
+
 ## Notifications
 
 Notifications of the connection status are posted to the *Notification Center* of the operating system.
