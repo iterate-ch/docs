@@ -141,5 +141,5 @@ There are different ways to delete the sync cache:
 
 ## Limitations
 
-- Custom mount locations are not honoured using the Integrated mode.
-- The *Pseudo File locking* available in the Mountain Duck preferences *Connection* tab is not supported in *Integrated* mode.
+- Custom mount locations are not honoured.
+- *[Pseudo File locking](../locking.md)* is not supported.
