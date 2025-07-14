@@ -52,23 +52,6 @@ Choose *Open Connection…* to add a new bookmark. To edit the connection settin
 Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duck.
 :::
 
-### Connect Mode
-
-- **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
-- **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
-- **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
-- **Integrated:** See [Integrated](connect/integrated.md) connect mode.
-
-:::{image} _images/Edit_Bookmark_macOS.png
-:alt: Edit Bookmark (macOS)
-:width: 500px
-:::
-
-:::{image} _images/Edit_Bookmark_Windows.png
-:alt: Edit Bookmark (Windows)
-:width: 500px
-:::
-
 ### Nickname
 
 The nickname determines the display of the bookmark in the menu and can be customized.
@@ -89,6 +72,21 @@ Assign multiple labels to bookmarks. Bookmarks are grouped in folders in the sta
 ### Connect Mode
 
 You can change the synchronization options for a bookmark with *Connect Mode*. Choose _Default_ to use the setting from _Preferences → Sync_. The _Online_ and _Smart Synchronization_ connect modes mount a volume like a network attached disk. The _Integrated_ connect mode synchronizes files and folders from a directory on the local disk with support from macOS and Windows.
+
+- **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
+- **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
+- **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
+- **Integrated:** See [Integrated](connect/integrated.md) connect mode.
+
+:::{image} _images/Edit_Bookmark_macOS.png
+:alt: Edit Bookmark (macOS)
+:width: 500px
+:::
+
+:::{image} _images/Edit_Bookmark_Windows.png
+:alt: Edit Bookmark (Windows)
+:width: 500px
+:::
 
 ```{admonition} Windows Store
 :class: tip
