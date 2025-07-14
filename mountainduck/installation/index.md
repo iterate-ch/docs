@@ -78,7 +78,7 @@ Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<h
 - Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
-- Mountain Duck 5.0.0 or later requires *Windows 10, version 2004* or later.
+- Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
 
 ::::
 :::::
