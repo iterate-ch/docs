@@ -57,6 +57,7 @@ Bookmarks are shared between [Cyberduck](https://cyberduck.io/) and Mountain Duc
 - **Default:** Use setting from *[Preferences](preferences.md#connect-mode)*
 - **Online:** Do not synchronize any file to your computer. See [Online](connect/online.md) connect mode.
 - **Smart Synchronization:** See [Smart Synchronization](connect/sync.md) connect mode.
+- **Integrated:** See [Integrated](connect/integrated.md) connect mode.
 
 :::{image} _images/Edit_Bookmark_macOS.png
 :alt: Edit Bookmark (macOS)
