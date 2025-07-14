@@ -58,7 +58,7 @@ Windows.
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 or later required.
+Mountain Duck 5 (Beta) required.
 ```
 
 Enable the custom versioning option in *Preferences → Versions* to store previous versions of a file for protocols without native versioning. The versions can be previewed, deleted or restored in *Info → Versions*.

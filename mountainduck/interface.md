@@ -104,7 +104,7 @@ Directories can be browsed when offline and files opened are made available for 
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 or later required for _Integrated_ connect mode.
+Mountain Duck 5 (Beta) required for _Integrated_ connect mode.
 ```
 Local storage is managed by the operating system. The mount is not seen as a remote volume by applications but as a regular folder on disk. This option uses the tightly integrated _File Provider_ (macOS) and _Cloud Files_ (Windows) APIs.
 
