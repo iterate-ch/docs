@@ -93,7 +93,7 @@ This additional icon displayed next to the filename in _Finder.app_ indicates th
 
 Changes to files are uploaded in the background as soon as a connection is available. Progress is reported by animating the status bar icon and a menu item titled *Sync in Progress*.
 
-:::{admonition} macOS only
+:::{admonition} Integrated Connect Mode
 :class: tip
 Progress is shown when downloading or uploading a file with a progress bar over the file icon or circular progress indicator adjacent the filename.
 :::
