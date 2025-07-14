@@ -87,8 +87,6 @@ Versioning can be limited to files matching a regular expression using the [hidd
 
 ### Number of saved versions
 
-Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit.
-
-The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
+Per default, the number of saved versions is limited to 5. The oldest version will be deleted once a new version is uploaded exceeding the limit. The number of saved versions can be customized by using a [hidden configuration option](preferences.md#hidden-configuration-options).
 
     versioning.limit=5
