@@ -63,7 +63,7 @@ Mountain Duck 5 or later required.
 
 Enable the custom versioning option in *Preferences → Versions* to store previous versions of a file for protocols without native versioning. The versions can be previewed, deleted or restored in *Info → Versions*.
 
-Select you preferred handling in case of sync conflicts with earlier changes. Choose between *Rename existing* and *Overwrite*.
+Select your preferred handling in case of sync conflicts with earlier changes. Choose between *Rename existing* and *Overwrite*.
 
 ```{image} _images/Preferences_Versions_macOS.png
 :alt: Preferences Versions (macOS)
