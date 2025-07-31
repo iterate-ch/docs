@@ -66,9 +66,7 @@ SMB protocol support has been tested with connections to the following server im
 ### Encryption
 
 By default, SMB connections are secured by signing and encrypting requests when supported by the server using SMBv3.
-Alternatively, use the connection profile with support for signing and encryption disabled.
-
-- {download}Install the *SMB (No Encryption) connection profile* from *Preferences… → Profiles*.
+Alternatively, use the *SMB (No Encryption)* profile with support for signing and encryption disabled from *Preferences… → Profiles*.
 
 ### Cyberduck CLI
 
