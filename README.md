@@ -60,7 +60,7 @@ A longer footnote definition.[^mylongdef]
 that are not separated by a blank line
 
 ### Tabs
-Group tabs allow to select a tab for the whole page. As an example: If a page contains three group tabs with macOS and Windows as options and you select macOS for one section then all the sections on the page will switch to macOS.
+Group tabs allow selecting a tab for the whole page. As an example: If a page contains three group tabs with macOS and Windows as options, and you select macOS for one section, then all the sections on the page will switch to macOS.
 
 ```
 ::::{tabs}
@@ -107,7 +107,7 @@ This is a codeblock
 > this is a single line Quote
 ```
 
-### Links und Downloadlinks
+### Links und Downloads
 Add those inline into the text where needed.
 
 ```
