@@ -232,7 +232,7 @@ Bookmarks mounted by Mountain Duck aren't visible within the *Media Browser* of 
 You can work around this by setting `defaults write com.apple.finder AppleShowAllFiles YES` in a *Terminal.app* window and restart *Finder.app* using *→ Force Quit ... → Finder → Relaunch*. If you are running macOS Sierra (10.12) you can choose `⌘⇧.` to toggle files starting with a dot to show in Finder.app.
 
 **Original Document can't be Changed (Preview.app)**<br/>
-Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Connection → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
+Files opened in Preview.app and edited cannot be saved at the original location but the message "The original document can't be changed, so a duplicate with your changes has been created" is displayed in the title bar. As a workaround, you can set a custom mount point in *Preferences → Sync → Mount Location* for volumes such as a `~/Volumes/` folder in your home directory.
 
 **Enable Application Icon in Dock**<br/>
 As a utility application with no application windows, no icon is displayed in the Dock but only in the system status bar. If you want to enable the application icon to appear in the Dock set the following [hidden configuration option](../../tutorials/hidden_properties.md):
