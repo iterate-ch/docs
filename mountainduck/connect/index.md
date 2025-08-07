@@ -13,26 +13,39 @@ When connecting to a server, you can choose between *[Online](online.md)*, *[Sma
 *[Integrated](integrated.md)* connect
 mode:
 
-::::{tabs}
-:::{tab} Integrated
+:::::{tabs}
+::::{tab} Integrated
 
 The [_Integrated_ connect mode](integrated.md) synchronizes files and folders from a directory on the local disk with
 support from macOS and Windows.
 
-:::
-:::{tab} Online
+::::
+::::{tab} Online
 
 Using [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has
 finished saving a file.
 
+
+:::{admonition} Windows only
+:class: tip
+
+You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on Windows.
 :::
-:::{tab} Smart Synchronization
+
+::::
+::::{tab} Smart Synchronization
 
 In [_Smart Synchronization_ connect mode](sync.md), files are copied to a local cache for faster access prior
 synchronization with the server in the background.
 
+:::{admonition} Windows only
+:class: tip
+
+You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on Windows.
 :::
+
 ::::
+:::::
 
 ## Feature Comparison
 
