@@ -63,7 +63,7 @@ Mountain Duck 5 (Beta) required.
 
 Enable the custom versioning option in *Preferences → Versions* to store previous versions of a file for protocols
 without native versioning. The versions can be previewed, deleted or restored in *Info → Versions*. Enable version
-history for protocols that don't natively support versioning, such as FTP or SFTP connections to safeguard against
+history for protocols that don't natively support versioning, such as FTP or SFTP connections, to safeguard against
 potential file loss.
 
 Alternatively, use the corresponding option in the bookmark configuration to enable or disable versioning for specific
@@ -74,8 +74,10 @@ connections only.
 :width: 400px
 ```
 
-The versions are stored in a hidden folder named `.duckversions` in each folder on the mount. The versions are named
-like the following pattern: `filename.extension → filename-20230906102017.762.extension`
+:::{tip}
+Alternatively restore or delete versions stored in the folder named `.duckversions` adjacent to the file. The versions
+are named like the following pattern: `filename.extension → filename-20230906102017.762.extension`
+:::
 
 ### Exclude files
 
