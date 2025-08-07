@@ -19,6 +19,11 @@ mode:
 The [_Integrated_ connect mode](integrated.md) synchronizes files and folders from a directory on the local disk with
 support from macOS and Windows.
 
+```{admonition} Version 5
+:class: note
+Mountain Duck 5 (Beta) required.
+```
+
 ::::
 ::::{tab} Online
 
