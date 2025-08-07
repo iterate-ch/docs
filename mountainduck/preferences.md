@@ -111,7 +111,7 @@ The settings apply separately for each bookmark. The synchronization cache gets 
 :::
 
 ```{note}
-With _Integrated_ connect mode, the operating system may additionally automatically remove cached files to free up disk space.
+With _Integrated_ connect mode, the operating system may automatically remove cached files not selected to keep offline to free up disk space.
 ```
 
 ## Notifications
