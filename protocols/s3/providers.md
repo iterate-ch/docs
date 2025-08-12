@@ -18,6 +18,7 @@ hetzner
 ibmcos
 ionos
 linode
+mega
 minio
 oraclecloud
 pilvio
