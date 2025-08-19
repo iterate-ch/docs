@@ -13,7 +13,7 @@ Integrated
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required.
+Mountain Duck 5 required.
 ```
 
 > Local storage is managed by the operating system. The mount is not seen as a network volume by applications but as a regular folder on disk. This option uses the tightly integrated _File Provider_ (macOS) and _Cloud Files_ (Windows) APIs. Directories can be browsed when offline and files opened are made available for later offline access. You can choose to make selected files and folders available for offline use. Changes to files are uploaded in the background as soon as a connection is available.

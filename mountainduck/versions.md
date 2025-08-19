@@ -58,7 +58,7 @@ Windows.
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required.
+Mountain Duck 5 required.
 ```
 
 Enable the custom versioning option in *Preferences → Versions* to store previous versions of a file for protocols
@@ -98,7 +98,7 @@ a [hidden configuration option](preferences.md#hidden-configuration-options).
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required.
+Mountain Duck 5 required.
 ```
 
 Select your preferred handling in case of sync conflicts with earlier changes. Choose between *Rename existing* and

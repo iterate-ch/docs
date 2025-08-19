@@ -21,7 +21,7 @@ support from macOS and Windows.
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required.
+Mountain Duck 5 required.
 ```
 
 ::::

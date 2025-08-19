@@ -103,7 +103,7 @@ Directories can be browsed when offline and files opened are made available for 
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required for _Integrated_ connect mode.
+Mountain Duck 5 required for _Integrated_ connect mode.
 ```
 Local storage is managed by the operating system. The mount is not seen as a remote volume by applications but as a regular folder on disk. This option uses the tightly integrated _File Provider_ (macOS) and _Cloud Files_ (Windows) APIs.
 
@@ -174,7 +174,7 @@ Enter the command `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Boo
 
 ```{admonition} Version 5
 :class: note
-Mountain Duck 5 (Beta) required.
+Mountain Duck 5 required.
 ```
 
 Track and cancel currently running sync operations in the new Activity panel. It shows all running operations on files, pending sync tasks as well as any pending mount process.
