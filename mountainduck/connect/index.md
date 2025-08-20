@@ -30,11 +30,11 @@ Mountain Duck 5 required.
 Using [_Online_ connect mode](online.md), changes to a file are immediately uploaded and in sync when an application has
 finished saving a file.
 
-
 :::{admonition} Windows only
 :class: tip
 
-You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on Windows.
+You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on
+Windows.
 :::
 
 ::::
@@ -46,7 +46,8 @@ synchronization with the server in the background.
 :::{admonition} Windows only
 :class: tip
 
-You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on Windows.
+You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on
+Windows.
 :::
 
 ::::
@@ -57,6 +58,7 @@ You may be prompted for additional driver [installation](../installation/index.m
 |                                          | **Online**                                             | **Smart Synchronization**                                                       | **Integrated**                                                                                         |
 |------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | **Network Volume**                       | ✔                                                      | ✔                                                                               | –                                                                                                      |
+| **Custom Cache Location**                | –                                                      | ✔                                                                               | –                                                                                                      |
 | **Offline Access**                       | –                                                      | ✔ Save files in cache on disk for access with no server connectivity            | ✔                                                                                                      |
 | **Index Files**                          | –                                                      | ✔ Index folder contents in cache on disk for access with no server connectivity | ✔                                                                                                      |
 | **Buffer file contents**                 | ︎Temporarily save opened files for faster access later | Temporarily save opened files to copy to cache on disk                          | –                                                                                                      |
