@@ -65,20 +65,20 @@ Using the MSI Installer, you'll have to install the *MSI Package Shell Extension
 :::::{tabs}
 ::::{group-tab} macOS
 
+- Mountain Duck 5.0.0 or later requires *macOS 13* or later
+- Mountain Duck 4.14 or later requires *macOS 10.13* or later
 - Mountain Duck 3.3.5 or later requires *macOS 10.12* or later
 - Mountain Duck 3.0.1 or later requires *macOS 10.11* or later
-- Mountain Duck 4.14 or later requires *macOS 10.13* or later
-- Mountain Duck 5.0.0 or later requires *macOS 13* or later
 
 ::::
 ::::{group-tab} Windows
 
 Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<https://dotnet.microsoft.com/download/dotnet-framework/net472>` fails, download it manually.
 
+- Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
 - Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
-- Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
 
 ::::
 :::::
