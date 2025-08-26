@@ -8,7 +8,7 @@ Installation
 Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
 
 :::{note}
-No admin privileges for installation is required.
+No admin privileges for installation are required.
 :::
 
 **Mac App Store**<br/>
