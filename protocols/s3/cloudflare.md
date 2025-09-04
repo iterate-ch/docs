@@ -35,3 +35,4 @@ The following features are not supported within the [open beta](https://blog.clo
 ## References
 
 - [Cloudflare documentation](https://developers.cloudflare.com/r2/get-started/)
+- [Cloudflare API Token documentation](https://developers.cloudflare.com/r2/api/tokens/)
