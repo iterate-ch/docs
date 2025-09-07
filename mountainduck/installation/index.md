@@ -41,12 +41,7 @@ Enable the extension in *System Settings → General → Login Items & Extension
 :::::{group-tab} Windows
 
 **Installer**<br/>
-[Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* and install Mountain Duck with administrator privilege.
-
-![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
-
-**MSI**<br/>
-[Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.7.2*.
+[Download](https://mountainduck.io/changelog/) the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
 Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
