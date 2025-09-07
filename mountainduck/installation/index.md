@@ -148,16 +148,7 @@ You can distribute Mountain Duck with the help of Active Directory or a system m
 - Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support/index.md#application-support-folder).
 - Share default settings by using the [default.properties file](../preferences.md#hidden-configuration-options). 
 
-## Uninstall
-
-Using Windows Command Line:
-
-- Regular uninstall:
-	`Mountain Duck Installer-<version>.exe /uninstall`
-- Silent uninstall:
-	`Mountain Duck Installer-<version>.exe /uninstall /quiet`
-
-### Complete Uninstall
+### Uninstall application and application data
 
 Follow the steps below to uninstall Mountain Duck completely.
 
