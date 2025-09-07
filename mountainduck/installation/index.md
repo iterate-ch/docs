@@ -39,7 +39,7 @@ Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.
 
 Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file: 
 ```
-Add-AppxProvisionedPackage -Path X:\MounatedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
+Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
 ```
 :::
 
