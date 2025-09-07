@@ -14,13 +14,8 @@ No admin privileges for installation are required.
 **Mac App Store**<br/>
 Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
 
-**Login Item**<br/>
-You can choose to open Mountain Duck when you log into your computer. The application will appear in *System Settings → General → Login Items & Extensions → Open At Login*.
-
-![Login Item](_images/Login_Item.png)
-
-**Finder Extension**<br/>
-Enabling the _Mountain Duck Finder Extension_ provides the following options in Finder.app.
+**Finder Sync Extension**<br/>
+Enabling the _Mountain Duck Finder Extension_ provides the following options in Finder.app for _Smart Synchronization_ and _Online_ [connect mode](../connect/index.md):
 
 - **Context menu items** for files selected on a mounted volume with [options](../connect/sync.md#context-menu-options) such as to *Reload* the folder listing and copy & open URLs of files.
 - **Badges** on file icons to display the [sync status](../connect/sync.md#status-of-files).
