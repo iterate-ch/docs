@@ -4,50 +4,32 @@ Installation
 ::::::{tabs}
 :::::{group-tab} macOS
 
-**Download**<br/>
+**Download ZIP**
+
 Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
 
 :::{note}
 No admin privileges for installation are required.
 :::
 
-**Mac App Store**<br/>
-Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
-
-**Finder Sync Extension**<br/>
-Enabling the _Mountain Duck Finder Extension_ provides the following options in Finder.app for _Smart Synchronization_ and _Online_ [connect mode](../connect/index.md):
-
-- **Context menu items** for files selected on a mounted volume with [options](../connect/sync.md#context-menu-options) such as to *Reload* the folder listing and copy & open URLs of files.
-- **Badges** on file icons to display the [sync status](../connect/sync.md#status-of-files).
-
-::::{tabs}
-:::{tab} macOS 12
-Enable the extension in *System Preferences → Extensions → Finder*.
+:::{tip}
+Mountain Duck is available in the [Mac App Store](https://mountainduck.io/buy/macappstore).
 :::
-:::{tab} macOS 13-14
-Enable the extension in *System Settings → Privacy & Security → Extensions → Added Extensions*.
-:::
-:::{tab} macOS 15.0-15.1
-The option to manage third-party extensions is not available in  *System Settings*.
-:::
-:::{tab} macOS 15.2-
-Enable the extension in *System Settings → General → Login Items & Extensions → File Providers*.
-:::
-::::
-
-![Mountain Duck Finder Integration](_images/Mountain_Duck_Finder_Integration.png) 
 
 :::::
 :::::{group-tab} Windows
 
-### Installer
+**Installer**
+
 [Download](https://mountainduck.io/changelog/) the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
 No admin privileges for installation are required.
 :::
 
-![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
+:::{tip}
+Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/windowsstore).
+:::
 
 :::{tip}
 You can perform system-wide installations using the command in an elevated PowerShell window:
@@ -63,6 +45,41 @@ Add-AppxProvisionedPackage -Path X:\MounatedWindowsImage -SkipLicense -PackagePa
 
 :::::
 ::::::
+
+#### Extensions
+
+:::::{tabs}
+::::{tab} macOS Finder Sync Extension
+
+Enabling the _Mountain Duck Finder Extension_ is required for *[Context menu items](../connect/sync.md#context-menu-options)* and sync status as *[Badges](../connect/sync.md#status-of-files)* on file icons in Finder.app for _Smart Synchronization_ and _Online_ [connect mode](../connect/index.md):
+
+- Enable _Mountain Duck_ in _System Settings → General → Login Items & Extensions → Allow in the Background_
+  :::{image} _images/System_Settings_Background.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+- Enable _Mountain Duck Helper_ in _System Settings → General → Login Items & Extensions → File Providers_
+  :::{image} _images/System_Settings_Helper.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+:::{tip}
+Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Helper_ albeit listed in the _file Providers_ category.
+:::
+
+::::
+::::{tab} macOS File Provider Extension
+
+Enabling the _Mountain Duck File Provider_ extension is always required for _Integrated_ [connect mode](../connect/index.md). Select _Mountain Duck_ in _System Settings → General → Login Items & Extensions → File Providers_
+  :::{image} _images/System_Settings_File_Provider.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+::::
+:::::
 
 ## System Requirements
 
