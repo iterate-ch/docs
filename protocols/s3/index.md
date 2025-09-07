@@ -231,6 +231,12 @@ You might be interested in scripts maintained by third parties to facilitate man
 
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA by assuming a role to access S3.
+:::
+
 #### AWS IAM Identity Center
 
 For a SSO connection authenticating with AWS IAM Identity Center (Successor to AWS Single Sign-On), the properties

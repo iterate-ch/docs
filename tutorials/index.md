@@ -6,6 +6,7 @@ Tutorials
 :titlesonly:
 hidden_properties
 custom_oauth_client_id
+s3_iam_role_mfa
 iam
 vault_localdisk
 sftp_publickeyauth
