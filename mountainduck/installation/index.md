@@ -66,7 +66,7 @@ Enabling the _Mountain Duck Finder Extension_ is required for *[Context menu ite
   :::
 
 :::{tip}
-Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Helper_ albeit listed in the _file Providers_ category.
+Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Helper_ albeit listed in the _File Providers_ category.
 :::
 
 ::::
