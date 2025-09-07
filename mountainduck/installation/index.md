@@ -28,7 +28,7 @@ Enable the extension in *System Preferences → Extensions → Finder*.
 Enable the extension in *System Settings → Privacy & Security → Extensions → Added Extensions*.
 :::
 :::{tab} macOS 15.0-15.1
-The option to manage third-party extensions is no longer available in  *System Settings*.
+The option to manage third-party extensions is not available in  *System Settings*.
 :::
 :::{tab} macOS 15.2-
 Enable the extension in *System Settings → General → Login Items & Extensions → File Providers*.
