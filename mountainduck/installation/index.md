@@ -40,11 +40,25 @@ Enable the extension in *System Settings → General → Login Items & Extension
 :::::
 :::::{group-tab} Windows
 
-**Installer**<br/>
+### Installer
 [Download](https://mountainduck.io/changelog/) the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
-Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
+No admin privileges for installation are required.
+:::
+
+![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
+
+:::{tip}
+You can perform system-wide installations using the command in an elevated PowerShell window:
+```
+Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
+```
+
+Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file: 
+```
+Add-AppxProvisionedPackage -Path X:\MounatedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
+```
 :::
 
 :::::
