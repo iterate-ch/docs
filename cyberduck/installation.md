@@ -4,7 +4,7 @@ Installation
 ::::{tabs}
 :::{group-tab} macOS
 
-Move the unzipped application bundle *Cyberduck.app* from the *Downloads* to the */Applications* folder on your harddisk.
+Move the unzipped application bundle *Cyberduck.app* from the *Downloads* to the */Applications* folder on your hard disk.
 
 :::
 :::{group-tab} Windows
