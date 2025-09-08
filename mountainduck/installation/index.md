@@ -4,81 +4,102 @@ Installation
 ::::::{tabs}
 :::::{group-tab} macOS
 
-**Download**<br/>
+**Download ZIP**
+
 Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
 
 :::{note}
-No admin privileges for installation is required.
+No admin privileges for installation are required.
 :::
 
-**Mac App Store**<br/>
-Mountain Duck is installed through the Mac App Store in `/Applications`. You can always reinstall Mountain Duck on any Mac you own from the Mac App Store in *→ App Store... → Purchased*.
-
-**Login Item**<br/>
-You can choose to open Mountain Duck when you log into your computer. The application will appear in *Login Items* of the *User & Groups* system preferences panel.
-
-![Login Item](_images/Login_Item.png)
-
-**Finder Extension**<br/>
-Enabling the _Mountain Duck Finder Extension_ provides the following options in Finder.app.
-
-- **Context menu items** for files selected on a mounted volume with [options](../connect/sync.md#context-menu-options) such as to *Reload* the folder listing and copy & open URLs of files.
-- **Badges** on file icons to display the [sync status](../connect/sync.md#status-of-files).
-
-::::{tabs}
-:::{tab} macOS 12
-Enable the extension in *System Preferences → Extensions → Finder*.
+:::{tip}
+Mountain Duck is available in the [Mac App Store](https://mountainduck.io/buy/macappstore).
 :::
-:::{tab} macOS 13-14
-Enable the extension in *System Settings → Privacy & Security → Extensions → Added Extensions*.
-:::
-:::{tab} macOS 15.0-15.1
-The option to manage third-party extensions is no longer available in  *System Settings*.
-:::
-:::{tab} macOS 15.2-
-Enable the extension in *System Settings → General → Login Items & Extensions → File Providers*.
-:::
-::::
-
-![Mountain Duck Finder Integration](_images/Mountain_Duck_Finder_Integration.png) 
 
 :::::
 :::::{group-tab} Windows
 
-**Installer**<br/>
-[Download](https://mountainduck.io/changelog/) the *Mountain Duck Installer.exe* and install Mountain Duck with administrator privilege.
+**Installer**
 
-![Mountain Duck Windows Installer](_images/Mountain_Duck_Windows_Installer.png)
-
-**MSI**<br/>
-[Download](https://mountainduck.io/changelog/) MSI Installer for corporate environments. Requires prior installation of *Microsoft .NET Framework 4.7.2*.
+[Download](https://mountainduck.io/changelog/) the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
-Using the MSI Installer, you'll have to install the *MSI Package Shell Extension for 32bit applications* **and** *MSI Package Shell Extension for 64bit applications* separately. Both packages are needed to enable the explorer extension.
+No admin privileges for installation are required.
+:::
+
+:::{tip}
+Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/windowsstore).
+:::
+
+:::{tip}
+You can perform system-wide installations using the command in an elevated PowerShell window:
+```
+Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
+```
+
+Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file: 
+```
+Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
+```
 :::
 
 :::::
 ::::::
+
+#### Extensions
+
+:::::{tabs}
+::::{tab} macOS Finder Sync Extension
+
+Enabling the _Mountain Duck Finder Extension_ is required for *[Context menu items](../connect/sync.md#context-menu-options)* and sync status as *[Badges](../connect/sync.md#status-of-files)* on file icons in Finder.app for _Smart Synchronization_ and _Online_ [connect mode](../connect/index.md):
+
+- Enable _Mountain Duck_ in _System Settings → General → Login Items & Extensions → Allow in the Background_
+  :::{image} _images/System_Settings_Background.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+- Enable _Mountain Duck Helper_ in _System Settings → General → Login Items & Extensions → File Providers_
+  :::{image} _images/System_Settings_Helper.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+:::{tip}
+Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Helper_ albeit listed in the _File Providers_ category.
+:::
+
+::::
+::::{tab} macOS File Provider Extension
+
+Enabling the _Mountain Duck File Provider_ extension is always required for _Integrated_ [connect mode](../connect/index.md). Select _Mountain Duck_ in _System Settings → General → Login Items & Extensions → File Providers_
+  :::{image} _images/System_Settings_File_Provider.png
+  :alt: System Settings
+  :width: 500px
+  :::
+
+::::
+:::::
 
 ## System Requirements
 
 :::::{tabs}
 ::::{group-tab} macOS
 
+- Mountain Duck 5.0.0 or later requires *macOS 13* or later
+- Mountain Duck 4.14 or later requires *macOS 10.13* or later
 - Mountain Duck 3.3.5 or later requires *macOS 10.12* or later
 - Mountain Duck 3.0.1 or later requires *macOS 10.11* or later
-- Mountain Duck 4.14 or later requires *macOS 10.13* or later
-- Mountain Duck 5.0.0 or later requires *macOS 13* or later
 
 ::::
 ::::{group-tab} Windows
 
 Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<https://dotnet.microsoft.com/download/dotnet-framework/net472>` fails, download it manually.
 
+- Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
 - Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
-- Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
 
 ::::
 :::::
@@ -144,16 +165,7 @@ You can distribute Mountain Duck with the help of Active Directory or a system m
 - Add preconfigured connection profiles and bookmarks this way by copying the connection profile file (`.cyberduckprofile`) into the *Profiles* folder or the bookmark file (`.duck`) into the *Bookmarks* folder within the [application support folder](../support/index.md#application-support-folder).
 - Share default settings by using the [default.properties file](../preferences.md#hidden-configuration-options). 
 
-## Uninstall
-
-Using Windows Command Line:
-
-- Regular uninstall:
-	`Mountain Duck Installer-<version>.exe /uninstall`
-- Silent uninstall:
-	`Mountain Duck Installer-<version>.exe /uninstall /quiet`
-
-### Complete Uninstall
+### Uninstall application and application data
 
 Follow the steps below to uninstall Mountain Duck completely.
 
