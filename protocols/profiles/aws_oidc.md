@@ -12,6 +12,12 @@ Connection [profiles](index.md#technical-file-format-specification) must include
 
 ## Prerequisites
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_microsoft_entra_oidc.md) to configure Microsoft Entra ID (formerly Azure AD) as a custom OIDC (OpenID Connect) identity provider (IdP) for S3.
+:::
+
 - Register the OAuth Client ID with your identity provider (IdP)
 - Configure the OIDC provider in AWS IAM or compatible implementation like [MinIO Security Token Service (STS)](https://min.io/docs/minio/linux/developers/security-token-service.html)
 - Make sure to restrict access by configuring the role and trust policy using rules referencing the claims available in the JWT token from the identity provider that is passed to `AssumeRoleWithWebIdentity` STS API.
