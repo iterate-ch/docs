@@ -54,7 +54,7 @@ Assign a role to the identity provider created in the previous step with permiss
     ```
    
     :::{tip}
-   The `<ACCOUNT_ID>` is replaced with your AWS account ID and `<Application (client) ID>` with the OAuth Client ID of the application you created in the previous [step](#configuration-in-microsoft-entra-id). For `Federated`, the ARN of the identity provider you created in the previous step is set. For the condition `aud` use the application client ID of the application you created in the previous step.
+    The `<ACCOUNT_ID>` is replaced with your AWS account ID and `<Application (client) ID>` with the OAuth Client ID of the application you created in the previous [step](#configuration-in-microsoft-entra-id). For `Federated`, the ARN of the identity provider you created in the previous step is set. For the condition `aud` use the application client ID of the application you created in the previous step.
     :::
 
 5. In the next step attach a permission policy to the role such as the managed policy `AmazonS3FullAccess`.
