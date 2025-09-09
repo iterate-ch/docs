@@ -261,6 +261,12 @@ profile for both steps.
 
 #### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA by assuming a role to access S3.
+:::
+
 Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security
 Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer
 to [Using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html).
