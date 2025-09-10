@@ -194,6 +194,12 @@ with the identity provider in _Identity and Access Management (IAM)_.
 - {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Azure%20Active%20Directory%20%28Azure%20AD%29%20OpenID%20Connect.cyberduckprofile>`
   the *AWS S3+STS &amp; Azure Active Directory (Azure AD) profile* for preconfigured settings
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_microsoft_entra_oidc.md) to configure Microsoft Entra ID as an OpenID Connect (OIDC) Identity Provider in AWS IAM and authenticate with S3.
+:::
+
 ##### S3 with Google OpenID Connect
 
 - {download}`Download<https://profiles.cyberduck.io/AWS%20S3%2BSTS%20%26%20Google%20OpenID%20Connect.cyberduckprofile>`
