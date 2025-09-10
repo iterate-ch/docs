@@ -80,7 +80,7 @@ Assign a role to the identity provider created in the previous step with permiss
    Alternatively set `OAuth Client ID` in a [custom connection profile](../protocols/profiles/aws_oidc.md).
    :::
 
-1. Enter the Role ARN from the previous step when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
+4. Enter the Role ARN from the previous step when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
 
    :::{image} _images/S3_Role_ARN_Prompt.png
    :alt: MFA Prompt
@@ -91,8 +91,7 @@ Assign a role to the identity provider created in the previous step with permiss
    Alternatively set `role_arn` as a custom property in a [custom connection profile](../protocols/profiles/aws_oidc.md).
    :::
 
-## Possible Errors
-
+:::{admonition} Troubleshooting
 ### `Not authorized to perform sts:AssumeRoleWithWebIdentity`
 Validate the _Trusted entities_ in _Trust relationships_ in the IAM console.
 
@@ -101,6 +100,7 @@ The role ARN entered is not valid.
 
 ### `The security token included in the request is invalid`
 Invalid client token ID. Check the OAuth Client ID in the connection profile.
+:::
 
 ## References
 - [OIDC federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)
