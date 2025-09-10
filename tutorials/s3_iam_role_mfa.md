@@ -115,6 +115,7 @@ No custom configuration required with *AWS S3 (STS Assume Role)* connection prof
 
 
 :::{admonition} Troubleshooting
+:class: warning
 ### `User: arn:aws:iam::<ACCOUNT_ID>:user/<USERNAME> is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action.`
 This error occurs when the user does not have permission to list all buckets in the account. Possibly no attempt to assume the role was made.
 
