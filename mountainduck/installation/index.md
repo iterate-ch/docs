@@ -1,12 +1,11 @@
 Installation
 ====
 
+
+## Download and Install
 ::::::{tabs}
 :::::{group-tab} macOS
-
-**Download ZIP**
-
-Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `/Applications` folder on your computer.
+Move the unzipped application bundle *Mountain Duck.app* from the Downloads to the `~/Applications`  or `/Applications` folder on your computer.
 
 :::{note}
 No admin privileges for installation are required.
@@ -18,10 +17,7 @@ Mountain Duck is available in the [Mac App Store](https://mountainduck.io/buy/ma
 
 :::::
 :::::{group-tab} Windows
-
-**Installer**
-
-[Download](https://mountainduck.io/changelog/) the *MSIX Installer Package* to install Mountain Duck.
+Open the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
 No admin privileges for installation are required.
@@ -46,24 +42,25 @@ Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePat
 :::::
 ::::::
 
-#### Extensions
+### Extensions
 
 :::::{tabs}
 ::::{tab} macOS Finder Sync Extension
 
 Enabling the _Mountain Duck Finder Extension_ is required for *[Context menu items](../connect/sync.md#context-menu-options)* and sync status as *[Badges](../connect/sync.md#status-of-files)* on file icons in Finder.app for _Smart Synchronization_ and _Online_ [connect mode](../connect/index.md):
 
-- Enable _Mountain Duck_ in _System Settings → General → Login Items & Extensions → Allow in the Background_
-  :::{image} _images/System_Settings_Background.png
-  :alt: System Settings
-  :width: 500px
-  :::
+1. Enable _Mountain Duck_ in _System Settings → General → Login Items & Extensions → Allow in the Background_
+    :::{image} _images/System_Settings_Background.png
+    :alt: System Settings
+    :width: 500px
+    :::
 
-- Enable _Mountain Duck Helper_ in _System Settings → General → Login Items & Extensions → File Providers_
-  :::{image} _images/System_Settings_Helper.png
-  :alt: System Settings
-  :width: 500px
-  :::
+2. Enable _Mountain Duck Helper_ in _System Settings → General → Login Items & Extensions → File Providers_
+   :::{image} _images/System_Settings_Helper.png
+   :alt: System Settings
+   :width: 500px
+   :::
+   :::
 
 :::{tip}
 Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Helper_ albeit listed in the _File Providers_ category.
@@ -72,7 +69,9 @@ Technically the extension is a _Finder Sync_ extension inside _Mountain Duck Hel
 ::::
 ::::{tab} macOS File Provider Extension
 
-Enabling the _Mountain Duck File Provider_ extension is always required for _Integrated_ [connect mode](../connect/index.md). Select _Mountain Duck_ in _System Settings → General → Login Items & Extensions → File Providers_
+Enabling the _Mountain Duck File Provider_ extension is always required for _Integrated_ [connect mode](../connect/index.md). 
+
+1. Select _Mountain Duck_ in _System Settings → General → Login Items & Extensions → File Providers_
   :::{image} _images/System_Settings_File_Provider.png
   :alt: System Settings
   :width: 500px
@@ -126,16 +125,16 @@ You can install the registration key either in:
 ::::
 :::::
 
-### Known Issues
+## Known Issues
 
-#### Not a Valid Registration Key
+### Not a Valid Registration Key
 
 This error message appears if you try to use an old license key for a newer version.
 [Upgrade](https://mountainduck.io/buy/upgrade/) your license to the latest version of Mountain Duck or download an older version from [Mountain Duck changelog](https://mountainduck.io/changelog/).
 
-### Windows Installation
+## Windows Installation
 
-#### Optional Driver Installation
+### Optional Driver Installation
 Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](../connect/sync.md) connect mode requires the installation of an additional file system driver in Windows. The following prompt is displayed when attempting to connect the first time.
 
 ![CBFS Driver Installation](_images/CBFS_Driver_Installation.png)
@@ -144,7 +143,7 @@ Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](.
 The installation of the file system driver is not required for [_Integrated_](../connect/integrated.md) connect mode.
 :::
 
-#### Error Code 0x24C 
+### Error Code 0x24C 
 
 If you get the error code `0x24C` uninstall the client, reboot the system, and reinstall the client.
 
@@ -152,7 +151,7 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 0x24C. A volume has been accessed for which a file system driver is required that has not yet been loaded.
 ```
 
-#### Troubleshooting 
+### Troubleshooting 
 
 For troubleshooting purposes when reaching out for support, please share the latest installation log. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
 
