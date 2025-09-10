@@ -63,9 +63,10 @@ Assign a role to the identity provider created in the previous step with permiss
 
 ### Create a bookmark in Cyberduck or Mountain Duck
 
-1. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck.
-2. Choose *AWS S3+STS & Microsoft Entra ID* profile in the protocol dropdown. If the [connection profile](../protocols/profiles/index.md) is not available, enable it by choosing _More Options…_.
-3. Enter the Application (client) ID from the application registration in Microsoft Entra for _OAuth Client ID_ when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
+1. Open _Preferences… → Profiles_ in Cyberduck or Mountain Duck.
+2. Enable the *AWS S3 (Microsoft Entra)* connection profile.
+3. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (Microsoft Entra)* in the protocol dropdown.
+4. Enter the Application (client) ID from the application registration in Microsoft Entra for _OAuth Client ID_ when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
     
    :::{image} _images/S3_Client_Id_Prompt.png
    :alt: OAuth Client ID Prompt
@@ -80,7 +81,7 @@ Assign a role to the identity provider created in the previous step with permiss
    Alternatively set `OAuth Client ID` in a [custom connection profile](../protocols/profiles/aws_oidc.md).
    :::
 
-4. Enter the Role ARN from the previous step when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
+5. Enter the Role ARN from the previous step when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
 
    :::{note}
    Alternatively set `role_arn` as a custom property in a [custom connection profile](../protocols/profiles/aws_oidc.md).
