@@ -4,7 +4,7 @@ MEGA S4
 > [MEGA S4](https://mega.io/objectstorage) Enjoy flexible object storage at a competitive price. No confusing tiers, no extra fees for data transfers or API calls—just a secure, simple, storage service you can trust.
 
 
-### Connecting
+## Connecting
 
 :::{note}
 Connection profiles can be installed from *Preferences → Profiles*.
@@ -21,6 +21,6 @@ Download the *MEGA S4* connection profile that best suits your location. All buc
 
 For a detailed list of supported actions and services in S4, see the [S4 specifications](https://github.com/meganz/s4-specs)
 
-### Help & Support
+## Help & Support
 
 For FAQs, troubleshooting, or to report an issue, please visit our [helpcenter](https://help.mega.io/megas4), contact our [support team](https://mega.io/contact) or email us at [S4@mega.nz](mailto:S4@mega.nz).
