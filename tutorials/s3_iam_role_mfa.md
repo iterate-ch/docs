@@ -87,10 +87,29 @@ No custom configuration required with *AWS S3 (STS Assume Role)* connection prof
     ```
 
 ## Connect to S3 using the bookmark
-1. When connecting enter the MFA code from your device when prompted.
+1. When not already configured in the bookmark, enter the static AWS credentials for the user with the permission to assume the IAM role when prompted.
 
-   :::{image} _images/S3_MFA_Prompt.png
-   :alt: MFA Prompt
+   :::{image} _images/S3_AssumeRole_Login_Prompt.png
+   :alt: Login Prompt
+   :width: 400px
+   :::
+
+2. Enter the MFA device identification when prompted.
+
+   :::{image} _images/S3_MFA_Device_Prompt.png
+   :alt: MFA Device Prompt
+   :width: 400px
+   :::
+
+   :::{tip}
+   Enter the identification number of the MFA device that is associated with the user. The value is either the serial number for a hardware device
+   (such as `<code>GAHT12345678</code>`) or an Amazon Resource Name (ARN) for a virtual device (such as `<code>arn:aws:iam::123456789012:mfa/device</code>`)
+   :::
+
+3. Enter the one-time MFA code from your device when prompted.
+
+   :::{image} _images/S3_MFA_Code_Prompt.png
+   :alt: MFA Code Prompt
    :width: 400px
    :::
 
