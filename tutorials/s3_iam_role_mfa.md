@@ -114,8 +114,7 @@ No custom configuration required with *AWS S3 (STS Assume Role)* connection prof
    :::
 
 
-## Troubleshooting
-
+:::{admonition} Troubleshooting
 ### `User: arn:aws:iam::<ACCOUNT_ID>:user/<USERNAME> is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action.`
 This error occurs when the user does not have permission to list all buckets in the account. Possibly no attempt to assume the role was made.
 
@@ -124,7 +123,7 @@ The AWS access key ID and secret access key set for the bookmark are invalid.
 
 ### `MultiFactorAuthentication failed with invalid MFA one time pass code.`
 The one-time MFA code already expired or is invalid.
-
+:::
 
 ## Alternative: Using AWS CLI Configuration
 
