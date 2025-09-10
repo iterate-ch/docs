@@ -130,22 +130,19 @@ Alternatively use the *[S3 (Credentials from AWS Command Line Interface) profile
 3. Enter the alias `<S3-ROLE-NAME>` for the role configuration from your AWS CLI configuration in _Server_ of the bookmark.
 
 
-## Alternative: Use custom Connection Profile
+## Alternative: Use Custom Connection Profile
 
-Add the `role_arn` and `mfa_serial` to a custom connection profile to skip the prompts on connect.
-```{code-block}
-<key>Token Configurable</key>
-<true/>
-<key>Properties</key>
-<dict>
-    <!-- Require Role ARN input from user -->
-    <key>role_arn</key>
-    <string>arn:aws:iam::<Account ID>:role/<S3-ROLE-NAME></string>
-    <!-- Can be left blank. Enter ARN for MFA device when assuming role requires token from MFA -->
-    <key>mfa_serial</key>
-    <string>arn:aws:iam::<Account ID>:mfa/<MFA-DEVICE-NAME></string>
-</dict>
-```
-
-## References
-
+1. Add the `role_arn` and `mfa_serial` to a [custom connection profile](../protocols/profiles/index.md) to skip the prompts on connect.
+    ```{code-block}
+    <key>Token Configurable</key>
+    <true/>
+    <key>Properties</key>
+    <dict>
+        <!-- Require Role ARN input from user -->
+        <key>role_arn</key>
+        <string>arn:aws:iam::<Account ID>:role/<S3-ROLE-NAME></string>
+        <!-- Can be left blank. Enter ARN for MFA device when assuming role requires token from MFA -->
+        <key>mfa_serial</key>
+        <string>arn:aws:iam::<Account ID>:mfa/<MFA-DEVICE-NAME></string>
+    </dict>
+    ```
