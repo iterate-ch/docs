@@ -37,7 +37,7 @@ Files can be purged automatically from the cache when not accessed or the cache 
 ### ![](../_images/overlay_infinite.png) Online Only
 The file can only be opened when a connection to the server or cloud storage can be made. The file does not take any space on your computer. The file is downloaded on demand when you open it.
 
-::::{admonition} macOS only
+::::{admonition} macOS
 :class: note
 
 :::{image} ../_images/File_Provider_Online_Only.png
@@ -65,7 +65,7 @@ Files that failed to sync after changes. You are missing permission to write to 
 - Delete the file or folder
 - To upload files to a target directory no longer existing on the server, you have to move the files to a location found on the server.
 
-::::{admonition} macOS only
+::::{admonition} macOS
 :class: note
 
 :::{image} ../_images/File_Provider_Ignored.png
@@ -80,9 +80,9 @@ This additional icon displayed next to the filename in _Finder.app_ indicates a 
 The file or folder is pending syncing with the server but synchronization has been [paused](sync.md#pause-sync).
 
 ### ![](../_images/overlay_ignored.png) Ignored
-The file or folder is only saved in local cache and not synced. New _Folders_, empty files and files matching [excluded filename patterns](../issues/index.md#filenames) are not uploaded. Folders are uploaded after being renamed.
+The file or folder is saved in local cache and not synced. New _Folders_, empty files and files matching [excluded filename patterns](../issues/index.md#filenames) are not uploaded. Folders are uploaded after being renamed.
 
-::::{admonition} macOS only
+::::{admonition} macOS
 :class: note
 
 :::{image} ../_images/File_Provider_Error.png
@@ -107,8 +107,8 @@ Progress is shown when downloading or uploading a file with a progress bar over 
 
 Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders available offline. The status of the file will change to *In Sync*. The action is recursive for all contained files when a folder is selected and applies to new files found on the remote storage.
 
-::::{admonition} macOS only
-:class: tip
+::::{admonition} macOS
+:class: note
 
 :::{image} ../_images/File_Provider_Online_Only.png
 :alt: File Provider Icon
@@ -121,29 +121,35 @@ _Download Now_ downloads the file but allows it to be removed from cache on low 
 
 ### Delete on Local Disk
 
-Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online Only*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk.
+Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The status of the file will change to *Online*. The action is recursive for all contained files when a folder is selected and allows you to quickly free up space used in the cache on your local disk.
 
-:::{admonition} macOS only
-:class: tip
+:::{admonition} macOS
+:class: note
 
 Choose _Remove Download_ instead.
 :::
 
-## Cache 
+## Cache
 
-There are different ways to delete the sync cache:
-* Choose _Delete_ for the bookmark with connect mode set to *Smart Synchronization* or *Integrated*
-* Use the deletion prompt when switching the connect mode between *Integrated* and *Smart Synchronization*
+Delete the sync cache for a bookmark on delete or changing the connect mode:
+- Choose _Delete_ for the bookmark with connect mode set to *Smart Synchronization* or *Integrated* deletes the bookmark and all cached files.
+- Confirm to delete cached files when switching the connect mode between *Integrated* and *Smart Synchronization*
 :::{image} ../_images/Prompt_Delete_Cache.png
 :alt: Delete Cache Prompt
 :width: 400px
 :::
-* Use the delete option in _Finder.app_ after choosing _Disconnect_ for the bookmark
+
+::::{admonition} macOS
+:class: tip
+1. Choose _Disconnect_ for the bookmark.
+2. Use the _Delete_ option in _Finder.app_ to delete all cached files.
 
 :::{image} ../_images/Finder_Option_Delete_Cache.png
 :alt: Delete Cache Option
 :width: 800px
 :::
+::::
+
 
 ## Limitations
 
