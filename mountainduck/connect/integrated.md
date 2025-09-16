@@ -115,7 +115,7 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 :width: 24px
 :align: left
 :::
-_Download Now_ when using _Integrated_ connect mode downloads the file but allows it to be removed from cache on low disk space.
+_Download Now_ downloads the file but allows it to be removed from cache on low disk space.
 ::::
 
 
@@ -126,7 +126,7 @@ Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The 
 :::{admonition} macOS only
 :class: tip
 
-Choose _Remove Download_ instead when using _Integrated_ connect mode.
+Choose _Remove Download_ instead.
 :::
 
 ## Cache 
