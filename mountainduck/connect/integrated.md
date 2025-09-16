@@ -118,6 +118,15 @@ Choose *Mountain Duck → Keep Offline on Local Disk* to make files and folders 
 _Download Now_ downloads the file but allows it to be removed from cache on low disk space.
 ::::
 
+::::{admonition} Windows
+:class: note
+
+Choose _Always keep on this device_ instead.
+:::{image} ../_images/Context_Menu_Windows_Always_Keep_On_This_Device.png
+:alt: Windows Context Menu Option
+:width: 400px
+:::
+::::
 
 ### Delete on Local Disk
 
@@ -127,6 +136,12 @@ Choose *Mountain Duck → Delete on Local Disk* to delete the offline copy. The 
 :class: note
 
 Choose _Remove Download_ instead.
+:::
+
+:::{admonition} Windows
+:class: note
+
+Choose _Free up space_ instead.
 :::
 
 ## Cache
