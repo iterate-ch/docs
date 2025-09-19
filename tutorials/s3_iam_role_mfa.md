@@ -16,7 +16,7 @@ No custom configuration required with *AWS S3 (STS Assume Role)* connection prof
 
 1. Open _Preferences… → Profiles_ in Cyberduck or Mountain Duck.
 2. Enable the *AWS S3 (STS Assume Role)* connection profile.
-3. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose **AWS S3 (STS Assume Role)* connection profile* in the protocol dropdown.
+3. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (STS Assume Role)* connection profile in the protocol dropdown.
 
 ## Create a user with both access keys and a MFA device configured
 
