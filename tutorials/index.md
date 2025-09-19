@@ -7,6 +7,7 @@ Tutorials
 hidden_properties
 custom_oauth_client_id
 s3_iam_role_mfa
+s3_iam_getsessiontoken_bucketpolicy_mfa
 iam
 vault_localdisk
 sftp_publickeyauth
@@ -25,7 +26,10 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
 Configure hidden preferences.
 
 ## [Use MFA with S3 IAM Role](s3_iam_role_mfa.md)
-Require user to use MFA when connecting to S3 by connecting with IAM Role assumed with AWS Security Token Service (STS).
+Require user to use MFA when connecting to S3 by connecting with IAM role assumed with AWS Security Token Service (STS).
+
+## [Use MFA with S3 IAM Role](s3_iam_role_mfa.md)
+Require user to use MFA when connecting to S3 bucket with policy requiring MFA by requesting temporary credentials obtained from IAM AWS Security Token Service (STS).
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
