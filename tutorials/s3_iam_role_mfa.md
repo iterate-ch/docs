@@ -157,14 +157,16 @@ Alternatively use the *[S3 (Credentials from AWS Command Line Interface) profile
 
 1. Add the `role_arn` and `mfa_serial` to a [custom connection profile](../protocols/profiles/index.md) to skip the prompts on connect.
     ```{code-block}
-    <key>Token Configurable</key>
+    <key>Role Configurable</key>
+    <true/>
+    <key>Multi Factor Configurable</key>
     <true/>
     <key>Properties</key>
     <dict>
-        <!-- Require Role ARN input from user -->
+        <!-- Can be left blank to require Role ARN input from user -->
         <key>role_arn</key>
         <string>arn:aws:iam::<Account ID>:role/<S3-ROLE-NAME></string>
-        <!-- Can be left blank. Enter ARN for MFA device when assuming role requires token from MFA -->
+        <!-- Can be left blank to require MFA ARN input from user when assuming role requires token from MFA -->
         <key>mfa_serial</key>
         <string>arn:aws:iam::<Account ID>:mfa/<MFA-DEVICE-NAME></string>
     </dict>
