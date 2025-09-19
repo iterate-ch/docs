@@ -231,6 +231,12 @@ You might be interested in scripts maintained by third parties to facilitate man
 
 - [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
 
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA by assuming a role to access S3.
+:::
+
 #### AWS IAM Identity Center
 
 For a SSO connection authenticating with AWS IAM Identity Center (Successor to AWS Single Sign-On), the properties
@@ -254,6 +260,12 @@ profile for both steps.
 - [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
 #### Connecting Using AssumeRole from AWS Security Token Service (STS)
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA by assuming a role to access S3.
+:::
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security
 Token Service (STS) with optional Multi-Factor Authentication (MFA). Refer
