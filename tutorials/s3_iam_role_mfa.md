@@ -3,6 +3,10 @@ Configure a user in AWS IAM that is required to use MFA to connect to S3
 
 > You want an IAM user who cannot directly access S3, but instead must assume a role (with MFA required) to access S3 buckets in the same AWS account. Create a configuration for AWS CLI that is supported in Cyberduck and Mountain Duck using the [S3 (Credentials from AWS Command Line Interface) connection profile](../protocols/s3/index.md#connecting-using-credentials-from-aws-command-line-interface).
 
+:::{important}
+* Cyberduck [8.3.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [5.2.0](https://mountainduck.io/changelog/) or later required
+  :::
 
 :::{note}
 No custom configuration required with *AWS S3 (STS Assume Role)* connection profile available from _Preferences… → Profiles_.
