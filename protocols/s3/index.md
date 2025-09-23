@@ -264,7 +264,13 @@ profile for both steps.
 :::{admonition} Tutorial
 :class: tip
 
-Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA by assuming a role to access S3.
+Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to require MFA with a user policy and connect by assuming a role from AWS Security Token Service (STS) granting access to S3.
+:::
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_iam_getsessiontoken_bucketpolicy_mfa.md) to require MFA with a bucket policy and connect using a session token from AWS Security Token Service (STS).
 :::
 
 Instead of providing Access Key ID and Secret Access Key, authenticate using temporary credentials from AWS Security
