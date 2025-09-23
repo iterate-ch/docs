@@ -171,3 +171,7 @@ Alternatively use the *[S3 (Credentials from AWS Command Line Interface) profile
         <string>arn:aws:iam::<Account ID>:mfa/<MFA-DEVICE-NAME></string>
     </dict>
     ```
+   
+## References
+
+- [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html).
