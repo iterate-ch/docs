@@ -255,7 +255,7 @@ profile for both steps.
 
 - [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
-#### Connecting Using AssumeRole from AWS Security Token Service (STS)
+### Connecting Using AssumeRole from AWS Security Token Service (STS)
 
 :::{admonition} Tutorial
 :class: tip
@@ -275,7 +275,9 @@ to [Using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_u
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
 
-You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(STS%20Assume%20Role).cyberduckprofile>` the *AWS S3 (STS AssumeRole)* profile for preconfigured settings
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(MFA%20Session%20Token).cyberduckprofile>` the *AWS S3 (MFA Session Token)* profile for preconfigured settings
+- {download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>` the *S3 (Credentials from AWS Command Line Interface) profile* to connect with settings from AWS CLI. You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or
 `%USERPROFILE%\.aws\credentials` on Windows
 from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html).
 Configure a bookmark with the field titled *Profile Name in `~/.aws/credentials`* matching the profile name from
@@ -298,7 +300,7 @@ mfa_serial=arn:aws:iam::123456789012:mfa/testuser
 ### Read Credentials from `~/.aws/credentials`
 
 When editing a bookmark, the *Access Key ID* is set from the `default` profile in the credentials file located at
-`~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows if such a profile exists.
+`~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows if such a profile exists or the profile name matching the .
 
 ### Connecting Without Using AWS credentials
 
