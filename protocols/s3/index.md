@@ -227,10 +227,6 @@ Configure a bookmark with the field titled *Profile Name in` ~/.aws/credentials`
 `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows. The properties `aws_access_key_id`,
 `aws_secret_access_key` and `aws_session_token` are supported.
 
-You might be interested in scripts maintained by third parties to facilitate managing credentials
-
-- [Utilities for easy management of AWS MFA and role sessions and virtual MFA devices](https://github.com/vwal/awscli-mfa)
-
 :::{admonition} Tutorial
 :class: tip
 
