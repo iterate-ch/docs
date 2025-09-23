@@ -90,6 +90,17 @@ static access keys and a MFA device.
    :width: 400px
    :::
 
+:::{admonition} Troubleshooting
+:class: warning
+
+### `User: arn:aws:iam::123456789012:user/<username> is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::<bucket>" with an explicit deny in a resource-based policy.`
+Attempted to connect to the bucket with access keys not obtained using `GetSessionToken` and MFA code.
+
+### `The security token included in the request is invalid.`
+The access keys used to obtain temporary credentials from AWS Security Token Service (STS) are not valid.
+:::
+
+
 ## References
 
 - [How do I require users from other AWS accounts to use MFA to access my Amazon S3 buckets?](https://repost.aws/knowledge-center/enforce-mfa-other-account-access-bucket)
