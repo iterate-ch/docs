@@ -20,14 +20,20 @@ Mountain Duck is available in the [Mac App Store](https://mountainduck.io/buy/ma
 Open the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
-No admin privileges for installation are required.
+No admin privileges for installation are required. You can determine the installation location by running 
+
+```
+(Get-AppxPackage io.mountainduck).InstallLocation
+```
 :::
 
-:::{tip}
+:::{admonition} Windows Store
+:class: tip
 Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/windowsstore).
 :::
 
-:::{tip}
+:::{admonition} System-wide Installation
+:class: tip
 You can perform system-wide installations using the command in an elevated PowerShell window:
 ```
 Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
@@ -93,10 +99,8 @@ Enabling the _Mountain Duck File Provider_ extension is always required for _Int
 ::::
 ::::{group-tab} Windows
 
-Requires *.NET Framework 4.7.2.* If the {download}`.Net Framework installation<https://dotnet.microsoft.com/download/dotnet-framework/net472>` fails, download it manually.
-
 - Mountain Duck 5.0.0 or later requires *Windows 10 1809 (17763)* or later.
-- Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit.
+- Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit. Requires *.NET Framework 4.7.2.*
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
 
@@ -120,7 +124,7 @@ You can manually install the registration key in
 You can install the registration key either in:
 
 - `%AppData%\Cyberduck`
-- `C:\Program Files\Mountain Duck`
+- `C:\ProgramData\Cyberduck`
 
 ::::
 :::::
@@ -143,6 +147,11 @@ Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](.
 The installation of the file system driver is not required for [_Integrated_](../connect/integrated.md) connect mode.
 :::
 
+:::{admonition} Manual Installation
+:class: tip
+msiexec /a "$((Get-AppxPackage io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
+:::
+
 ### Error Code 0x24C 
 
 If you get the error code `0x24C` uninstall the client, reboot the system, and reinstall the client.
@@ -157,7 +166,7 @@ For troubleshooting purposes when reaching out for support, please share the lat
 
 ## Installation with Device Management Software
 
-You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
+You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSIX (Windows) and PKG (macOS) formats.
 
 ### Defaults
 
@@ -167,6 +176,10 @@ You can distribute Mountain Duck with the help of Active Directory or a system m
 ### Uninstall application and application data
 
 Follow the steps below to uninstall Mountain Duck completely.
+
+:::{warning}
+Login credentials and bookmarks are shared with Cyberduck.
+:::
 
 :::::{tabs}
 ::::{group-tab} macOS
