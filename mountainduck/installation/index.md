@@ -160,7 +160,7 @@ For troubleshooting purposes when reaching out for support, please share the lat
 
 ## Installation with Device Management Software
 
-You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSI (Windows) and PKG (macOS) formats.
+You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSIX (Windows) and PKG (macOS) formats.
 
 ### Defaults
 
