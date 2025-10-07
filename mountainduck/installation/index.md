@@ -118,7 +118,7 @@ You can manually install the registration key in
 You can install the registration key either in:
 
 - `%AppData%\Cyberduck`
-- `C:\Program Files\Mountain Duck`
+- `C:\ProgramData\Cyberduck`
 
 ::::
 :::::
