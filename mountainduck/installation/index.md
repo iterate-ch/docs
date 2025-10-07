@@ -20,14 +20,20 @@ Mountain Duck is available in the [Mac App Store](https://mountainduck.io/buy/ma
 Open the *MSIX Installer Package* to install Mountain Duck.
 
 :::{note}
-No admin privileges for installation are required.
+No admin privileges for installation are required. You can determine the installation location by running 
+
+```
+(Get-AppxPackage io.mountainduck).InstallLocation
+```
 :::
 
-:::{tip}
+:::{admonition} Windows Store
+:class: tip
 Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/windowsstore).
 :::
 
-:::{tip}
+:::{admonition} System-wide Installation
+:class: tip
 You can perform system-wide installations using the command in an elevated PowerShell window:
 ```
 Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
