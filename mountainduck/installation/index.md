@@ -141,6 +141,11 @@ Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](.
 The installation of the file system driver is not required for [_Integrated_](../connect/integrated.md) connect mode.
 :::
 
+:::{admonition} Manual Installation
+:class: tip
+msiexec /a "$((Get-AppxPackage io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
+:::
+
 ### Error Code 0x24C 
 
 If you get the error code `0x24C` uninstall the client, reboot the system, and reinstall the client.
