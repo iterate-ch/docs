@@ -171,6 +171,10 @@ You can distribute Mountain Duck with the help of Active Directory or a system m
 
 Follow the steps below to uninstall Mountain Duck completely.
 
+:::{warning}
+Login credentials and bookmarks are shared with Cyberduck.
+:::
+
 :::::{tabs}
 ::::{group-tab} macOS
 
