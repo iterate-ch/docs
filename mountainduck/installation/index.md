@@ -149,7 +149,9 @@ The installation of the file system driver is not required for [_Integrated_](..
 
 :::{admonition} Manual Installation
 :class: tip
+```
 msiexec /a "$((Get-AppxPackage io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
+```
 :::
 
 ### Error Code 0x24C 
