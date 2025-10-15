@@ -22,7 +22,7 @@ faq
 
 ## Quick Reference Cheat Sheet
 
-Download the {download}`Cyberduck Quick Reference<https://trac.cyberduck.io/raw-attachment/wiki/help/en/howto/cyberduck/Cyberduck%20Quick%20Reference.pdf>` PDF.
+Download the {download}`Cyberduck Quick Reference Cheat Sheet<_static/cheatsheet.pdf>` PDF.
 
 :::{image} _images/Cyberduck_Quick_Reference_Page_1.png
 :alt: Cyberduck Quick Reference Page 1
