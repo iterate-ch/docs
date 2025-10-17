@@ -121,7 +121,11 @@ You can set Cyberduck or a third party application as the default application (p
 
 This has been fixed in Cyberduck 7.3.0. Cyberduck has overwritten the default Windows FTP protocol integration through Internet Explorer. This effectively disabled the Windows "Add Network location" for FTP-protocol. To reset this back to default you have to run following Registry-file which will reset the FTP-protocol registration back to default.
 
-- {download}`ftp-default.reg<../_static/Ressources/ftp-default.reg>` | This has been tested for Windows 10 1909 only. This may or may not work for previous versions of Windows.
+- {download}`ftp-default.reg<_static/ftp-default.reg>`
+
+:::{warning}
+This has been tested for Windows 10 1909 only. This may or may not work for previous versions of Windows.
+:::
 
 Applying Registry-files is not riskless and should be avoided if not necessary. Alternatively, you may apply following sequence to get the FTP-protocol handler definitions for your operating system version:
 
