@@ -75,6 +75,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
+- `Role Configurable`. Boolean if role is configurable. Typically an ARN referencing the AWS IAM role to assume using AWS STS API.
 - `Region` Location constraint for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
   :::{admonition} S3
   :class: tip
@@ -88,7 +89,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
   * A profile can define an empty value for `OAuth Client Secret`. The OAuth authorization flow will then use no client secret in client parameters to authenticate with the server.
   * A profile can omit the `OAuth Client Secret` to prompt the user for manual input when connecting.
 - `Authorization` Set to `AWS2` to default to AWS2 signature authentication for S3. Default is `AWS4HMACSHA256`.
-- `Properties` List of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
+- `Properties` Dictionary of custom protocol-specific properties. You can set [hidden configuration options](../../cyberduck/preferences.md#hidden-configuration-options) for a specific connection profile. Example usages can be found in:
   * [FTP (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP%20(Compatibility%20Mode).cyberduckprofile)
   * [FTP-SSL (Compatibility Mode).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/FTP-SSL%20(Compatibility%20Mode).cyberduckprofile)
   * [S3 (Deprecated path style requests).cyberduckprofile](https://github.com/iterate-ch/profiles/blob/master/S3%20(Deprecated%20path%20style%20requests).cyberduckprofile)
@@ -186,5 +187,5 @@ Create a *multi-TIFF* containing the needed icon sizes:
 
 ### S3 and OpenID Connect Federation 
 
-Customization of connection profiles using OpenID Connect provider and AssumeRoleWithWebIdentity STS API
+Customization of connection profiles using OpenID Connect provider and AssumeRoleWithWebIdentity STS API.
 - [Sample connection profiles for S3 and OpenID Connect Federation](aws_oidc.md)

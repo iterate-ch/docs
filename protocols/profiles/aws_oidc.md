@@ -8,7 +8,9 @@ Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIde
 * Mountain Duck [4.15.0](https://mountainduck.io/changelog/) or later required
 :::
 
-Connection [profiles](index.md#technical-file-format-specification) must include the `OAuth Authorization Url`, `OAuth Token Url`, `OAuth Redirect Url` and `Scopes` of the OpenID Connect (OIDC) identity provider and the `STS Endpoint` for the STS API endpoint which defaults to `https://sts.amazonaws.com/`. Set the property `s3.assumerole.rolearn` in the connection profile to the Role ARN configured in AWS. Set it to `s3.assumerole.rolearn=` for a prompt to enter on login.
+Connection [profiles](index.md#technical-file-format-specification) require the `Role Configurable` key to be set to `true` to enable authentication with temporary tokens from STS API. and include the `OAuth Authorization Url`, `OAuth Token Url`, `OAuth Redirect Url` and `Scopes` of the OpenID Connect (OIDC) identity provider and the `STS Endpoint` for the STS API endpoint which defaults to `https://sts.amazonaws.com/`. Set the property `role_arn` in the connection profile to the Role ARN configured in AWS to omit a prompt on login.
+
+Profiles 
 
 ## Prerequisites
 
@@ -59,13 +61,15 @@ Refer to [Sample connection profiles for S3 and OpenID Connect Federation](https
         <false/>
         <key>Token Configurable</key>
         <false/>
+        <key>Role Configurable</key>
+        <true/>
         <key>Username Placeholder</key>
         <string>Username</string>
         <key>STS Endpoint</key>
         <string>https://sts.amazonaws.com/</string>
         <key>Properties</key>
         <dict>
-            <key>s3.assumerole.rolearn</key>
+            <key>role_arn</key>
             <string>arn:aws:iam::…</string>
         </dict>
     </dict>
@@ -73,12 +77,12 @@ Refer to [Sample connection profiles for S3 and OpenID Connect Federation](https
 ```
 
 ::::{tip}
-Alternatively set the `s3.assumerole.rolearn` per user in a `.duck` [bookmark](../../tutorials/hidden_properties.md#in-duck-bookmark-files) file.
+Alternatively set the `role_arn` per user in a `.duck` [bookmark](../../tutorials/hidden_properties.md#in-duck-bookmark-files) file.
 
 ```xml
 <key>Custom</key>
 <dict>
-    <key>s3.assumerole.rolearn</key>
+    <key>role_arn</key>
     <string>arn:aws:iam::…</string>
 </dict>
 ```
