@@ -10,9 +10,9 @@ Refer to [Custom connection profile using OpenID Connect provider and AssumeRole
 
 ## Configuration in Microsoft Entra ID
 
-Create an application in the [Microsoft Entra ID portal](https://portal.microsoftonline.com/applications) and configure it as an OIDC Identity Provider.
+Create an application in the [Microsoft Entra ID portal](https://entra.microsoft.com/) and configure it as an OIDC Identity Provider.
 
-1. Navigate to _Identity → Applications → App registrations_ in the [Microsoft Entra ID portal](https://portal.microsoftonline.com/applications) and choose _New registration_.
+1. Navigate to _Entra ID → → App registrations_ in the [Microsoft Entra ID portal](https://entra.microsoft.com/) and choose _New registration_.
 2. In _Authentication_, add a redirect URI with the value `x-cyberduck-action://oauth` to allow authentication with Cyberduck.
 3. In _Authentication_, add a redirect URI with the value `x-mountainduck-action://oauth` to allow authentication with Mountain Duck.
 4. Copy the OAuth Client ID from _Overview → Essentials → Application (client) ID_.
