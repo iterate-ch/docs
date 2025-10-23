@@ -8,6 +8,11 @@ Connect to S3 authenticating with Microsoft Entra ID
 Refer to [Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIdentity STS API](../protocols/profiles/aws_oidc.md) for custom configuration of connection profiles using OIDC web identity federation to connect to AWS S3.
 :::
 
+:::{important}
+* Cyberduck [9.3.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [5.1.0](https://mountainduck.io/changelog/) or later required
+  :::
+
 ## Configuration in Microsoft Entra ID
 
 Create an application in the [Microsoft Entra ID portal](https://entra.microsoft.com/) and configure it as an OIDC Identity Provider.
