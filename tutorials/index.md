@@ -6,6 +6,8 @@ Tutorials
 :titlesonly:
 hidden_properties
 custom_oauth_client_id
+s3_iam_role_mfa
+s3_iam_getsessiontoken_bucketpolicy_mfa
 iam
 vault_localdisk
 sftp_publickeyauth
@@ -22,6 +24,12 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
 
 ## [Add Hidden Configuration Options to Mountain Duck and Cyberduck](hidden_properties.md)
 Configure hidden preferences.
+
+## [Connect to S3 with assuming role requiring MFA input](s3_iam_role_mfa.md)
+Require user to use MFA when connecting to S3 by connecting with IAM role assumed with AWS Security Token Service (STS).
+
+## [Connect to S3 with temporary session token and MFA input](s3_iam_role_mfa.md)
+Require user to use MFA when connecting to S3 bucket with policy requiring MFA by requesting temporary credentials obtained from IAM AWS Security Token Service (STS).
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
