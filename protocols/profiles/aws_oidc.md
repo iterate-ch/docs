@@ -10,14 +10,19 @@ Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIde
 
 Connection [profiles](index.md#technical-file-format-specification) require the `Role Configurable` key to be set to `true` to enable authentication with temporary tokens from STS API. and include the `OAuth Authorization Url`, `OAuth Token Url`, `OAuth Redirect Url` and `Scopes` of the OpenID Connect (OIDC) identity provider and the `STS Endpoint` for the STS API endpoint which defaults to `https://sts.amazonaws.com/`. Set the property `role_arn` in the connection profile to the Role ARN configured in AWS to omit a prompt on login.
 
-Profiles 
 
 ## Prerequisites
 
-:::{admonition} Tutorial
+:::{admonition} Microsoft Entra ID Tutorial
 :class: tip
 
 Follow the [step-by-step instructions](../../tutorials/s3_microsoft_entra_oidc.md) to configure Microsoft Entra ID (formerly Azure AD) as a custom OIDC (OpenID Connect) identity provider (IdP) for S3.
+:::
+
+:::{admonition} Google Cloud Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/s3_google_oidc.md) to configure Google as a custom OIDC (OpenID Connect) identity provider (IdP) for S3.
 :::
 
 - Register the OAuth Client ID with your identity provider (IdP)
