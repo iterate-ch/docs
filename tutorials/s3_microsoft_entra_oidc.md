@@ -30,9 +30,8 @@ Create an application in the [Microsoft Entra ID portal](https://entra.microsoft
 Assign a role to the identity provider created in the previous step with permissions to access S3.
 
 1. In AWS [IAM console](https://console.aws.amazon.com/iam/) add a new role.
-2. Choose _Amazon S3_ as the service to use.
-3. Choose _Assign role_ followed by _Create a new role_ with a _Web identity_ trusted entity type. It should have _Identity provider_ and _Audience_ options prefilled with the ARN of the identity provider and Client ID from Microsoft Entra.
-4. The resulting trust policy will look similar to the following:
+2. Choose _Assign role_ followed by _Create a new role_ with a _Web identity_ trusted entity type. It should have _Identity provider_ and _Audience_ options prefilled with the ARN of the identity provider and Client ID from Microsoft Entra.
+3. The resulting trust policy will look similar to the following:
 
     ```json
    {
@@ -58,8 +57,8 @@ Assign a role to the identity provider created in the previous step with permiss
     The `<ACCOUNT_ID>` is replaced with your AWS account ID and `<Application (client) ID>` with the OAuth Client ID of the application you created in the previous [step](#configuration-in-microsoft-entra-id). For `Federated`, the ARN of the identity provider you created in the previous step is set. For the condition `aud` use the application client ID of the application you created in the previous step.
     :::
 
-5. In the next step attach a permission policy to the role such as the managed policy `AmazonS3FullAccess`.
-6. Copy the Role ARN from the _Summary_ tab.
+4. In the next step attach a permission policy to the role such as the managed policy `AmazonS3FullAccess`.
+5. Copy the Role ARN from the _Summary_ tab.
 
 
 ### Create a bookmark in Cyberduck or Mountain Duck
