@@ -23,6 +23,7 @@ Create an application in the [Microsoft Entra ID portal](https://entra.microsoft
 ### Create an OIDC identity provider
 1. In AWS [IAM console](https://console.aws.amazon.com/iam/) add a new identity provider in _Identity providers_.
 2. Configure the provider as type _OpenID Connect_ with the provider URL set to `https://login.microsoftonline.com/<TENANT-ID>/v2.0`. Replace <TENANT-ID> with your Microsoft Entra ID tenant ID. Copy the ARN for the next [step](#create-a-role).
+3. Set the _Audience_ to the Application (client) ID from Microsoft Entra.
 
 ### Create a role
 
