@@ -7,6 +7,7 @@ Tutorials
 hidden_properties
 custom_oauth_client_id
 s3_microsoft_entra_oidc
+s3_google_oidc
 iam
 vault_localdisk
 sftp_publickeyauth
@@ -26,6 +27,9 @@ Configure hidden preferences.
 
 ## [Authenticate with Microsoft Entra ID to connect to S3](s3_microsoft_entra_oidc.md)
 Use Microsoft Entra ID to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+
+## [Authenticate with Google to connect to S3](s3_google_oidc.md)
+Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
