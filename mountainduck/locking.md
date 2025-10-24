@@ -18,7 +18,7 @@ Some WebDAV implementations may not support locking documents.
 
 Files opened from one of the supported protocols are locked for editing by other users. Mountain Duck locks files on the server when opened in an editor. This prevents other users from modifying the document until the file is closed by the user.
 
-## Pseudo Locking for Protocols with no Native Lock Support Using Lock Owner Files
+## Pseudo Locking for Protocols with no Native Lock Support using Lock Owner Files
 
 ```{warning}
 Not supported for _Integrated_ connect mode.
@@ -41,7 +41,7 @@ When a previously saved file is opened for editing, for printing, or for review,
 - [Description of how Word creates temporary files](https://support.microsoft.com/en-us/help/211632/description-of-how-word-creates-temporary-files)
 - [The document is locked for editing by another user error message when you try to open a document in Word](https://support.microsoft.com/en-us/help/313472/the-document-is-locked-for-editing-by-another-user-error-message-when)
 
-## Error Message When Opening Locked Documents
+## Error Message when Opening Locked Documents
 
 Attempting to open a locked document, an error message is displayed notifying the document can only be opened in read-only mode. Samples of error messages from different applications.
 
