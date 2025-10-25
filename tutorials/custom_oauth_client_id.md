@@ -78,7 +78,7 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
     :width: 800px
     :::
 
-10. Select _Desktop app_ for _Application type_ and enter any _Name_. Select _Create_ to continue.
+10. Select _iOS_ for _Application type_ and enter any _Name_. Select _Create_ to continue.
 
      :::{image} _images/Application_Type_Client_ID.png
      :alt: Application Type for Credentials
@@ -97,7 +97,7 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
    - {download}`Google Drive Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Drive Custom OAuth Client ID.cyberduckprofile>`
    - {download}`Google Storage Custom OAuth Client ID.cyberduckprofile<../protocols/profiles/_static/Google Storage Custom OAuth Client ID.cyberduckprofile>`
 
-2. Use the _OAuth Client ID_ created to edit the `OAuth Client ID`, `OAuth Redirect Url`, and optionally the `OAuth Client Secret` in the template connection profile, leaving other keys unchanged.
+2. Use the _OAuth Client ID_ created to edit the `OAuth Client ID` and `OAuth Redirect Url` in the template connection profile, leaving other keys unchanged.
 
     :::::{tabs}
     ::::{tab} Configuration
@@ -111,8 +111,6 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
             <string>com.googleusercontent.apps.NUMBER-ID:oauth</string>
             <key>OAuth Client ID</key>
             <string>NUMBER-ID.apps.googleusercontent.com</string>
-           <key>OAuth Client Secret</key>
-           <string>Client secret</string>
         </dict>
     </plist>
     ```
@@ -149,8 +147,6 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
             <string>com.googleusercontent.apps.293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k:oauth</string>
             <key>OAuth Client ID</key>
             <string>293168482058-dvjk8lh6u6n43kio156uerkqcgjl2i5k.apps.googleusercontent.com</string>
-            <key>OAuth Client Secret</key>
-            <string>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</string>      
         </dict>
     </plist>
     ```
