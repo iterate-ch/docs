@@ -8,7 +8,8 @@ Connect to S3 authenticating with Google
 Refer to [Custom connection profile using OpenID Connect provider and AssumeRoleWithWebIdentity STS API](../protocols/profiles/aws_oidc.md) for custom configuration of connection profiles using OIDC web identity federation to connect to AWS S3.
 :::
 
-:::{important}
+:::{admonition} Requirements
+:class: warning
 * Cyberduck [9.3.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [5.1.0](https://mountainduck.io/changelog/) or later required
   :::
