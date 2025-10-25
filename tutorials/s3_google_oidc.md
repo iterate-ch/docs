@@ -1,7 +1,7 @@
-Connect to S3 authenticating with Google
+Connect to S3 authenticating with Google Cloud
 ====
 
-> Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+> Use Google Cloud to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
 
 
 :::{tip}
@@ -16,7 +16,7 @@ Refer to [Custom connection profile using OpenID Connect provider and AssumeRole
 
 ## Configuration in Google Cloud Console
 
-Create an OAuth application in the [Google Cloud Console](https://console.cloud.google.com/) and configure it as an OIDC Identity Provider.
+Create an OAuth application in the [Google Cloud Console](https://console.cloud.google.com/auth/clients) and configure it as an OIDC Identity Provider.
 
 :::{admonition} Setup a Custom OAuth Client ID Tutorial
 :class: tip
@@ -25,9 +25,14 @@ Follow the [step-by-step instructions](custom_oauth_client_id.md) to Setup a Cus
 :::
 
 
-1. Navigate to _APIs & Services → Credentials_ in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) and choose _Create Credentials → OAuth client ID_.
-2. Select _Web application_ as the application type.
-3. Enter `io.cyberduck` for the _Bundle ID_
+1. Navigate to _Solutions → All products → Management → Google Auth Platform → Clients_ in the [Google Cloud Console](https://console.cloud.google.com/auth/clients) and choose _Create client → OAuth client ID_.
+2. Select _iOS_ as the application type.
+
+   :::{important}
+   Other types require a OAuth Client Secret and do not allow for a supported redirect URI.
+   :::
+
+3. Enter `io.cyberduck` for use with Cyberduck or `io.mountainduck` to use with Mountain Duck for the _Bundle ID_.
 4. Copy the OAuth Client ID from the credentials screen.
 
 
