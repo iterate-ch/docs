@@ -14,6 +14,8 @@ Download the *Exoscale* connection profile for the region in which your bucket i
   - {download}`AT-VIE-2<https://profiles.cyberduck.io/Exoscale (at-vie-2).cyberduckprofile>`
 - Bulgaria
   - {download}`BG-SOF-1<https://profiles.cyberduck.io/Exoscale (bg-sof-1).cyberduckprofile>`
+- Croatia
+  - {download}`HR-ZAG-1<https://profiles.cyberduck.io/Exoscale (hr-zag-1).cyberduckprofile>`
 - Germany
   - {download}`DE-FRA-1<https://profiles.cyberduck.io/Exoscale (de-fra-1).cyberduckprofile>`
   - {download}`DE-MUC-1<https://profiles.cyberduck.io/Exoscale (de-muc-1).cyberduckprofile>`
