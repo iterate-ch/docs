@@ -84,6 +84,24 @@ Enabling the _Mountain Duck File Provider_ extension is always required for _Int
   :::
 
 ::::
+::::{tab} Optional Windows Driver Installation
+
+Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](../connect/sync.md) connect mode requires the installation of an additional file system driver in Windows. The following prompt is displayed when attempting to connect the first time.
+
+![CBFS Driver Installation](_images/CBFS_Driver_Installation.png)
+
+:::{tip}
+The installation of the file system driver is not required for [_Integrated_](../connect/integrated.md) connect mode.
+:::
+
+:::{admonition} Manual Installation
+:class: tip
+```
+msiexec /i "$((Get-AppxPackage io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
+```
+:::
+
+::::
 :::::
 
 ## System Requirements
@@ -137,22 +155,6 @@ This error message appears if you try to use an old license key for a newer vers
 [Upgrade](https://mountainduck.io/buy/upgrade/) your license to the latest version of Mountain Duck or download an older version from [Mountain Duck changelog](https://mountainduck.io/changelog/).
 
 ## Windows Installation
-
-### Optional Driver Installation
-Connecting using [_Online_](../connect/online.md) or [_Smart Synchronization_](../connect/sync.md) connect mode requires the installation of an additional file system driver in Windows. The following prompt is displayed when attempting to connect the first time.
-
-![CBFS Driver Installation](_images/CBFS_Driver_Installation.png)
-
-:::{tip}
-The installation of the file system driver is not required for [_Integrated_](../connect/integrated.md) connect mode.
-:::
-
-:::{admonition} Manual Installation
-:class: tip
-```
-msiexec /i "$((Get-AppxPackage io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
-```
-:::
 
 ### Error Code 0x24C 
 
