@@ -45,6 +45,29 @@ Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePat
 ```
 :::
 
+:::{admonition} Windows 10 Enterprise LTSC
+:class: tip
+
+If you need a graphical installer, install the Windows Package Manager separately:
+
+1. Download Dependencies.zip, License1.xml and the MSIXBundle from the [Package Manager repository](https://github.com/microsoft/winget-cli/releases/)
+2. Extract the Dependencies.zip
+3. Install Desktop App Installer by running in an elevated PowerShell window:
+   ```
+   Add-AppxProvisionedPackage -Online `
+     -LicensePath e53e159d00e04f729cc2180cffd1c02e_License1.xml `
+     -DependencyPackagePath (Get-Item x64\*.appx) `
+     -PackagePath Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+   ```
+
+Alternatively, use the bundled `Dism.exe` or `PowerShell` commands to add or provision the application bundle. `Add-AppxPackage` and `Add-AppxProvisionedPackage` are available despite the Microsoft Store, Desktop App Installer and winget not being installed by default.
+
+You may have to allow sideloaded apps in the Windows Settings, or via PowerShell in an elevated window:
+```
+Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock -Name AllowAllTrustedApps -Value 1 -Type DWord
+```
+:::
+
 :::::
 ::::::
 
