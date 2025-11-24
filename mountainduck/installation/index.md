@@ -55,12 +55,13 @@ If you need a graphical installer, install the Windows Package Manager separatel
 3. Install Desktop App Installer by running in an elevated PowerShell window:
    ```
    Add-AppxProvisionedPackage -Online `
-     -LicensePath e53e159d00e04f729cc2180cffd1c02e_License1.xml `
+     -LicensePath <License1.xml filename> `
      -DependencyPackagePath (Get-Item x64\*.appx) `
      -PackagePath Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
    ```
+   Replace `<License1.xml filename>` with the actual license filename downloaded from the repository (e.g., `e53e159d00e04f729cc2180cffd1c02e_License1.xml`).
 
-Alternatively, use the bundled `Dism.exe` or `PowerShell` commands to add or provision the application bundle. `Add-AppxPackage` and `Add-AppxProvisionedPackage` are available despite the Microsoft Store, Desktop App Installer and winget not being installed by default.
+Alternatively, use the bundled `Dism.exe` or `PowerShell` commands such as `Add-AppxPackage` and `Add-AppxProvisionedPackage` to add or provision the Mountain Duck application bundle. These commands are available on Windows 10 Enterprise LTSC despite the Microsoft Store, Desktop App Installer and winget not being installed by default.
 
 You may have to allow sideloaded apps in the Windows Settings, or via PowerShell in an elevated window:
 ```
