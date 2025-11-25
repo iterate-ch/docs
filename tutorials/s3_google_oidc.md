@@ -82,7 +82,7 @@ Assign a role to the identity provider created in the previous step with permiss
 
 1. Open _Preferences… → Profiles_ in Cyberduck or Mountain Duck.
 2. Enable the *AWS S3 (Google OpenID Connect)* connection profile.
-3. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (Google)* in the protocol dropdown.
+3. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (Google OpenID Connect)* in the protocol dropdown.
 4. Enter the OAuth Client ID from the application registration in Google Cloud Console for _OAuth Client ID_ when prompted. It will be saved in the bookmark as a [custom property](hidden_properties.md#in-duck-bookmark-files).
 
    :::{image} _images/S3_Client_Id_Prompt.png
