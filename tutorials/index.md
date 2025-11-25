@@ -8,6 +8,8 @@ hidden_properties
 custom_oauth_client_id
 s3_iam_role_mfa
 s3_iam_getsessiontoken_bucketpolicy_mfa
+s3_microsoft_entra_oidc
+s3_google_oidc
 iam
 vault_localdisk
 sftp_publickeyauth
@@ -30,6 +32,12 @@ Require user to use MFA when connecting to S3 by connecting with IAM role assume
 
 ## [Connect to S3 with temporary session token and MFA input](s3_iam_role_mfa.md)
 Require user to use MFA when connecting to S3 bucket with policy requiring MFA by requesting temporary credentials obtained from IAM AWS Security Token Service (STS).
+
+## [Authenticate with Microsoft Entra ID to connect to S3](s3_microsoft_entra_oidc.md)
+Use Microsoft Entra ID to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+
+## [Authenticate with Google to connect to S3](s3_google_oidc.md)
+Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
