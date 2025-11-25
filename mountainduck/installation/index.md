@@ -43,6 +43,11 @@ Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file:
 ```
 Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
 ```
+
+On *Windows Enterprise LTSC* sideloaded apps must be enabled in _Windows Settings_ or using an elevated PowerShell with:
+```
+Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock -Name AllowAllTrustedApps -Value 1 -Type DWord
+```
 :::
 
 :::::
