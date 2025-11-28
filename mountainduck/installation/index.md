@@ -43,6 +43,18 @@ Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file:
 ```
 Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
 ```
+
+On *Windows 10* [sideloaded apps must be enabled](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#allowalltrustedapps) in _Windows Settings_ or using an elevated PowerShell with:
+
+* Configured by Windows Settings:
+```
+Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock -Name AllowAllTrustedApps -Value 1 -Type DWord
+```
+
+* Configured by Group Policy:
+```
+Set-ItemProperty HKLM:\Software\Policies\Microsoft\Windows\Appx -Name AllowAllTrustedApps -Value 1 -Type DWord
+```
 :::
 
 :::::
