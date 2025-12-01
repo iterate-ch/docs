@@ -22,6 +22,10 @@ Mountain Duck 5 required.
 You can access files in _Integrated_ connect mode without being always connected the server or cloud storage.
 :::
 
+:::{tip}
+In macOS, for applications to access the mount you will have to find the location on disk. This is by default accessible at _Macintosh HD → Users → YOURUSER → Library → CloudStorage_
+:::
+
 
 ## Status of Files
 
