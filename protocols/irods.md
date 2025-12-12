@@ -1,15 +1,15 @@
 iRODS (Integrated Rule-Oriented Data System)
 ====
 
-The Integrated Rule-Oriented Data System (iRODS) is an open-source, policy-based data management software used by research, commercial, and governmental organizations worldwide.
+> The Integrated Rule-Oriented Data System (iRODS) is an open-source, policy-based data management software used by research, commercial, and governmental organizations worldwide.
 
-:::{admonition} iRODS ...
+:::{admonition} iRODS
 :class: tip
 
-- ... enables data discovery using a metadata catalog that describes every file, every directory, and every storage resource in the data grid.
-- ... automates data workflows, with a rule engine that permits any action to be initiated by any trigger on any server or client in the grid.
-- ... enables secure collaboration, so users only need to log in to their home grid to access data hosted on a remote grid.
-- ... implements data virtualization, allowing access to distributed storage assets under a unified namespace, and freeing organizations from getting locked into single-vendor storage solutions.
+- Enables data discovery using a metadata catalog that describes every file, every directory, and every storage resource in the data grid.
+- Automates data workflows, with a rule engine that permits any action to be initiated by any trigger on any server or client in the grid.
+- Enables secure collaboration, so users only need to log in to their home grid to access data hosted on a remote grid.
+- Implements data virtualization, allowing access to distributed storage assets under a unified namespace, and freeing organizations from getting locked into single-vendor storage solutions.
 :::
 
 :::{important}
