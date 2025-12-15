@@ -21,7 +21,7 @@ jobs:
           docs-folder: "."
           build-command: "make dirhtml"
       - name: Cache artifacts
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         if: github.ref == 'refs/heads/main'
         with:
           key: html-${{ github.sha }}
@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Cache artifacts
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           key: html-${{ github.sha }}
           path: ./_build/dirhtml
