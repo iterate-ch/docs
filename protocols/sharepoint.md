@@ -47,14 +47,14 @@ Please refer to the official documentation from Microsoft for detailed setup gui
 
 ### Administrator Consent Required
 
-Administrator-consent may be required in certain situations. Depending on the setup of your Azure Active Directory (AAD) you may need to perform several steps in order for you to be able to access your SharePoint Online. Please get in contact with your domain administrator for following steps.
+Administrator-consent may be required in certain situations. Depending on the setup of your Azure Active Directory (AAD) you may need to perform several steps in order for you to be able to access your SharePoint Online. Please get in contact with your domain administrator.
 
-### Manually Adding Cyberduck
+#### Manual Approval Links
 
-Copy the link that corresponds to your used version, and send it to your domain administrator, this will add Cyberduck to the domain and all users are allowed to access Cyberduck in the future.
+The domain administrator can approve access for Cyberduck and Mountain Duck using the following links:
 
-- [Cyberduck 7.8 & Mountain Duck 4.4](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20group.read.all%20groupmember.read.all) or later.
-- [Cyberduck 6.9 & Mountain Duck 2.7](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=372770ba-bb24-436b-bbd4-19bc86310c0e&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20group.read.all%20groupmember.read.all) or older.
+- [Cyberduck](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all)
+- [Mountain Duck](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=94c5bafe-e6f8-4bd7-94e8-92d5cc8aa581&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all)
 
 ### Automatically Allow Users to add Apps to the Domain
 
