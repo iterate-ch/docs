@@ -281,27 +281,27 @@ to [Using IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_u
 
 ![MFA Token Prompt](_images/MFA_Token_Prompt.png)
 
-- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(STS%20Assume%20Role).cyberduckprofile>` the *AWS S3 (STS AssumeRole)* profile for preconfigured settings
-- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(MFA%20Session%20Token).cyberduckprofile>` the *AWS S3 (MFA Session Token)* profile for preconfigured settings
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(STS%20Assume%20Role).cyberduckprofile>` the *AWS S3 (STS AssumeRole)* profile for preconfigured settings.
+- {download}`Download<https://profiles.cyberduck.io/AWS%20S3%20(MFA%20Session%20Token).cyberduckprofile>` the *AWS S3 (MFA Session Token)* profile for preconfigured settings.
 - {download}`Download<https://profiles.cyberduck.io/S3%20(Credentials%20from%20AWS%20Command%20Line%20Interface).cyberduckprofile>` the *S3 (Credentials from AWS Command Line Interface) profile* to connect with settings from AWS CLI. You must provide configuration in the standard credentials property file `~/.aws/credentials` on macOS or
 `%USERPROFILE%\.aws\credentials` on Windows
 from [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html).
 Configure a bookmark with the field titled *Profile Name in `~/.aws/credentials`* matching the profile name from
 `~/.aws/credentials` on macOS or `%USERPROFILE%\.aws\credentials` on Windows with the `role_arn` configuration.
 
-#### Example Configuration
-
-Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html).
-
-```
-[testuser]
-aws_access_key_id=<access key for testuser>
-aws_secret_access_key=<secret key for testuser>
-[testrole]
-role_arn=arn:aws:iam::123456789012:role/testrole
-source_profile=testuser
-mfa_serial=arn:aws:iam::123456789012:mfa/testuser
-```
+    #### Example Configuration
+    
+    Refer to [Assuming a Role](https://docs.aws.amazon.com/cli/latest/userguide/cli-roles.html).
+    
+    ```
+    [testuser]
+    aws_access_key_id=<access key for testuser>
+    aws_secret_access_key=<secret key for testuser>
+    [testrole]
+    role_arn=arn:aws:iam::123456789012:role/testrole
+    source_profile=testuser
+    mfa_serial=arn:aws:iam::123456789012:mfa/testuser
+    ```
 
 ### Read Credentials from `~/.aws/credentials`
 
