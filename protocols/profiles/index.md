@@ -164,7 +164,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 
 Create a *multi-TIFF* containing the needed icon sizes:
 1. Create a high-resolution *.png* file based on the PSD template
-2. Use the following script to generate the different resolutions and the multi-TIFF *disk.tiff* file:
+2. Use the following script on a Mac to generate the different resolutions and the multi-TIFF *disk.tiff* file:
     ```
     png=[LOCATION_OF_HIGH_RESOLUTION_PNG]
     tmp=$TMPDIR
