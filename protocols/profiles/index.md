@@ -164,7 +164,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 
 Create a *multi-TIFF* containing the needed icon sizes:
 1. Create a high-resolution *.png* file based on the PSD template
-2. Use the following script to generate the different resolutions and the multi-TIFF *disk.tiff* file:
+2. Use the following script on a Mac to generate the different resolutions and the multi-TIFF *disk.tiff* file:
     ```
     png=[LOCATION_OF_HIGH_RESOLUTION_PNG]
     tmp=$TMPDIR
@@ -175,7 +175,7 @@ Create a *multi-TIFF* containing the needed icon sizes:
     /usr/bin/sips -s format png -z 48 48 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_96.png
     /usr/bin/sips -s format png -z 256 256 -s dpiHeight 144.0 -s dpiWidth 144.0 ${png} --out ${tmp}/icon_256@2x.png
     /usr/bin/sips -s format png -z 128 128 -s dpiHeight 72.0 -s dpiWidth 72.0 ${png} --out ${tmp}/icon_256.png
-    /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/ disk.tiff
+    /usr/bin/tiffutil -cathidpicheck ${tmp}/icon_64x64@2x.png ${tmp}/icon_64x64.png ${tmp}/icon_96.png ${tmp}/icon_96@2x.png ${tmp}/icon_256.png ${tmp}/icon_256@2x.png -out ${target}/disk.tiff
     ```
 3. Use the command `cat disk.tiff | base64 -b 70` to generate the base64 version of the multi-TIFF file. This final version will be used for the connection profile.
 
