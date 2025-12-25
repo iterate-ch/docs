@@ -73,16 +73,11 @@ Connection profiles not bundled by default can be installed from *Preferences â†
 Depending on the setup of your AAD you may need to perform several steps in order for you to be able to access your
 OneDrive. Please get in contact with your domain administrator for following steps.
 
-#### Manually Adding Cyberduck & Mountain Duck
+#### Manual Approval Links
 
-:::{Important}
-Cyberduck 7.8 and later or Mountain Duck 4.4 and later required
-:::
-
-Copy the link that corresponds to your used version, and send it to your domain administrator, this will add Cyberduck
-to the domain and all users are allowed to access Cyberduck in the future.
-
-* [Grant administrator consent](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read)
+The domain administrator can approve access for Cyberduck and Mountain Duck using the following links:
+* [Cyberduck](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=files.readwrite.all%20offline_access%20user.read)
+* [Mountain Duck](https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=94c5bafe-e6f8-4bd7-94e8-92d5cc8aa581&redirect_uri=https://cyberduck.io/oauth&scope=files.readwrite.all%20offline_access%20user.read)
 
 #### Automatically Allow Users to add Apps to the Domain
 
