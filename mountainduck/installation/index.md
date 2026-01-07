@@ -34,7 +34,8 @@ Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/wi
 
 :::{admonition} System-wide Installation
 :class: tip
-You can perform system-wide installations using the command in an elevated PowerShell window:
+You can perform system-wide installations using the command in an elevated PowerShell window. Updated versions are not available to currently logged in users but only after signing out and logging back in to their Windows account.
+
 ```
 Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
 ```
