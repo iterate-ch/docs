@@ -53,8 +53,8 @@ Administrator-consent may be required in certain situations. Depending on the se
 
 The domain administrator can approve access for Cyberduck and Mountain Duck using the following links:
 
-- <a href="https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all">Cyberduck</a>
-- <a href="https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=94c5bafe-e6f8-4bd7-94e8-92d5cc8aa581&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all">Mountain Duck</a>
+- <a target="_blank" href="https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=f40bc18f-cd02-4212-b7f1-15243e4e2ad3&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all">Cyberduck</a>
+- <a target="_blank" href="https://login.microsoftonline.com/organizations/v2.0/adminconsent?client_id=94c5bafe-e6f8-4bd7-94e8-92d5cc8aa581&redirect_uri=https://cyberduck.io/oauth&scope=sites.readwrite.all%20files.readwrite.all%20offline_access%20user.read%20groupmember.read.all">Mountain Duck</a>
 
 ### Automatically Allow Users to add Apps to the Domain
 
