@@ -33,7 +33,7 @@ finished saving a file.
 :::{admonition} Windows only
 :class: tip
 
-You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on
+You may be prompted for additional driver [installation](../installation/index.md#extensions) on
 Windows.
 :::
 
@@ -46,8 +46,7 @@ synchronization with the server in the background.
 :::{admonition} Windows only
 :class: tip
 
-You may be prompted for additional driver [installation](../installation/index.md#optional-driver-installation) on
-Windows.
+You may be prompted for additional driver [installation](../installation/index.md#extensions) on Windows.
 :::
 
 ::::
