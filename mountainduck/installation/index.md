@@ -181,6 +181,9 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 
 For troubleshooting purposes when reaching out for support, please share the latest installation log. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
 
+* [Debugging and troubleshooting issues with the WinGet tool](https://learn.microsoft.com/en-us/windows/package-manager/winget/troubleshooting)
+* [Troubleshooting packaging, deployment, and query of Windows apps](https://learn.microsoft.com/en-us/windows/win32/appxpkg/troubleshooting)
+
 ## Installation with Device Management Software
 
 You can distribute Mountain Duck with the help of Active Directory or a system management tool like Intune on Windows or JAMF on macOS and copy the license file into the [application support folder](../support/index.md#application-support-folder) after installing Mountain Duck. Installation packages are provided in MSIX (Windows) and PKG (macOS) formats.
