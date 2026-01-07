@@ -34,7 +34,8 @@ Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/wi
 
 :::{admonition} System-wide Installation
 :class: tip
-You can perform system-wide installations using the command in an elevated PowerShell window:
+You can perform system-wide installations using the command in an elevated PowerShell window. Updated versions are not available to currently logged in users but only after signing out and logging back in to their Windows account.
+
 ```
 Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
 ```
@@ -179,6 +180,9 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 ### Troubleshooting 
 
 For troubleshooting purposes when reaching out for support, please share the latest installation log. The installation log file prefixed `Mountain Duck_` can be found in `%Temp%`.
+
+* [Debugging and troubleshooting issues with the WinGet tool](https://learn.microsoft.com/en-us/windows/package-manager/winget/troubleshooting)
+* [Troubleshooting packaging, deployment, and query of Windows apps](https://learn.microsoft.com/en-us/windows/win32/appxpkg/troubleshooting)
 
 ## Installation with Device Management Software
 
