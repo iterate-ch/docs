@@ -177,7 +177,7 @@ Enter the command `<path to Mountainduck.exe> %AppData%/Cyberduck/Bookmarks/<Boo
 Mountain Duck 5 required.
 ```
 
-Track and cancel currently running sync operations in the new Activity panel. It shows all running operations on files, pending sync tasks as well as any pending mount process.
+Track and cancel currently running sync operations in the Activity panel from the submenu in the [status bar menu](#user-interface). It shows all running operations on files, pending sync tasks as well as any pending mount process.
 
 :::{image} _images/Activity_macOS.png
 :alt: Edit Bookmark (macOS)
