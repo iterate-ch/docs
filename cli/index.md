@@ -318,6 +318,14 @@ Alternatively, use the `--username` option. You can give the password with the `
 prompted before the connection is opened by the program if no password matching the host is found in your login
 keychain (OS X) or user configuration shared with Cyberduck (Windows).
 
+:::{tip}
+Use the `--nokeychain` option to disable saving credentials.
+:::
+
+:::{warning}
+On Linux, credentials are stored in plain text in the [application support directory](support.md#application-support-directory).
+:::
+
 #### Private Key
 
 When connecting with SFTP you can give a file path to a private key with `--identity` for use with public key
