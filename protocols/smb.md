@@ -62,6 +62,10 @@ SMB protocol support has been tested with connections to the following server im
 - macOS 13.5 (22G74) (`SMB_3_0_2` dialect)
 - SMB [Azure file shares](https://learn.microsoft.com/en-us/azure/storage/files/files-smb-protocol)
 
+:::{tip}
+To connect to macOS, enable _System Settings → Sharing → File Sharing → Share files and folders using SMB_ and _Window File Sharing_ for selected users.
+:::
+
 ### Encryption
 
 By default, SMB connections are secured by signing and encrypting requests when supported by the server using SMBv3.
