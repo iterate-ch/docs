@@ -1,6 +1,12 @@
 Google Cloud Storage
 ====
 
+:::{toctree}
+:hidden:
+:titlesonly:
+profiles/google_client_id
+:::
+
 :::{image} _images/googlestorage.png
 :alt: Google Cloud Storage Drive Icon
 :width: 128px

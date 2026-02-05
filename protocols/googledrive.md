@@ -1,6 +1,12 @@
 Google Drive
 ====
 
+:::{toctree}
+:hidden:
+:titlesonly:
+profiles/google_client_id
+:::
+
 :::{image} _images/googledrive.png
 :alt: Google Drive Icon
 :width: 128px
