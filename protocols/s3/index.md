@@ -9,6 +9,7 @@ providers
 ../../tutorials/s3_iam_getsessiontoken_bucketpolicy_mfa
 ../../tutorials/s3_microsoft_entra_oidc
 ../../tutorials/s3_google_oidc
+../profiles/aws_oidc
 :::
 
 :::{image} _images/s3.png
