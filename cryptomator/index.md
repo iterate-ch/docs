@@ -4,8 +4,8 @@ Cryptomator
 :::{toctree}
 :hidden:
 :titlesonly:
-
-architecture/index.md
+architecture/index
+../tutorials/vault_localdisk
 :::
 
 :::{image} _images/cryptomator.png
