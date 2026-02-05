@@ -5,6 +5,7 @@ Command Line Interface (CLI)
 :hidden:
 :titlesonly:
 support
+../tutorials/cli_github_action
 :::
 
 [Cyberduck with a command-line interface (CLI)](https://duck.sh/) is available for Mac, Windows & Linux. It is installed
