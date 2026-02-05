@@ -5,6 +5,10 @@ Amazon S3
 :hidden:
 :titlesonly:
 providers
+../../tutorials/s3_iam_role_mfa
+../../tutorials/s3_iam_getsessiontoken_bucketpolicy_mfa
+../../tutorials/s3_microsoft_entra_oidc
+../../tutorials/s3_google_oidc
 :::
 
 :::{image} _images/s3.png
