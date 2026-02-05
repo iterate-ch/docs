@@ -5,6 +5,10 @@ SFTP
 :hidden:
 :titlesonly:
 providers
+../../tutorials/sftp_publickeyauth
+../../tutorials/sftp_publickeyauth_1password
+../../tutorials/sftp_publickeyauth_bitwarden
+../../tutorials/sftp_publickeyauth_yubikey
 :::
 
 :::{image} ../_images/ftp.png
