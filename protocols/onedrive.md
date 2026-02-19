@@ -118,12 +118,6 @@ The following virtual top level folders are displayed:
 
 It is not possible to create additional top level folders or files.
 
-:::{admonition} Mountain Duck
-:class: tip
-Set the _Path_ in the [Bookmark](../cyberduck/bookmarks.md) to `/` to show the top level folders. By default, only the
-contents of _My Files_ are shown.
-:::
-
 ### Search
 
 You can [search recursively](../cyberduck/browser.md#filter-and-search) for files fast without browsing folders first.
