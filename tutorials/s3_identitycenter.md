@@ -34,7 +34,7 @@ in a dedicated region.
    as [Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/saas-apps/aws-single-sign-on-tutorial).
 
 2. Copy the following values or alternatively setup your configuration
-   with [AWS CLI](#alternative-using-aws-cli-configuration):
+   with AWS CLI:
 
    :::{admonition} Required Configuration Values
    :class: note
@@ -67,7 +67,7 @@ an external identity provider (IdP).
 
 1. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (IAM Identity
    Center)* in the protocol dropdown.
-2. Choose _Connect_ and select the AWS CLI profile name if [configured](#alternative-using-aws-cli-configuration).
+2. Choose _Connect_ and select the AWS CLI profile name when prompted.
 
    :::{image} _images/S3_CLI_Profile_Prompt.png
    :alt: AWS CLI Profile Prompt
