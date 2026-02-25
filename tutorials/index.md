@@ -6,6 +6,7 @@ Tutorials
 :titlesonly:
 hidden_properties
 custom_oauth_client_id
+s3_identitycenter
 s3_iam_role_mfa
 s3_iam_getsessiontoken_bucketpolicy_mfa
 s3_microsoft_entra_oidc
@@ -26,6 +27,9 @@ Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Sto
 
 ## [Add Hidden Configuration Options to Mountain Duck and Cyberduck](hidden_properties.md)
 Configure hidden preferences.
+
+## [Connect to S3 authenticating with AWS IAM Identity Center](s3_identitycenter.md)
+Use AWS IAM Identity Center to authenticate with S3 using single sign-on.
 
 ## [Connect to S3 with assuming role requiring MFA input](s3_iam_role_mfa.md)
 Require user to use MFA when connecting to S3 by connecting with IAM role assumed with AWS Security Token Service (STS).
