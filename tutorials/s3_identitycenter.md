@@ -114,7 +114,7 @@ an external identity provider (IdP).
    :width: 400px
    :::
 
-4. Enter the _Issuer URL_ or _AWS Access Portal URL_ when prompted.
+4. Enter the _Issuer URL_ or _AWS Access Portal URL_ when prompted for the SSO start URL.
 
    :::{image} _images/AWS_Identity_Center_Issuer_URL_Prompt.png
    :alt: AWS IAM Identity Center Issuer URL Prompt
