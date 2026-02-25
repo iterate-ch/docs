@@ -40,8 +40,12 @@ in a dedicated region.
    :class: note
     - _Account ID_ identifying your AWS account from the top right corner of the AWS console.
     - _Region_ from _Dashboard → Settings summary → Region_
-    - _Issuer URL_ from _Dashboard → Settings summary → Issuer URL_.
+    - SSO start URL from _Dashboard → Settings summary → Issuer URL_ or _AWS access portal URL → Dual-stack_.
       :::
+
+   :::{tip}
+   Users can copy the _SSO start URL_ from the _AWS access portal_ page at _Accounts → Access keys → AWS IAM Identity Center credentials (Recommended)_.
+   :::
 
 3. Create a permission set to limit access for users to S3 in _Permission sets → Create permission set_.
     - Choose _Custom permission set_ in _Select permission set type_ and select _Next_.
@@ -60,7 +64,8 @@ an external identity provider (IdP).
 1. Choose _Users → Add user_ and create a user with a password.
 2. The user must login to the AWS access portal URL `awsapps.com/start` with the username and one-time password.
 3. Assign a AWS account to the user in _Users → Username → AWS accounts → Assign accounts_.
-4. Select the _AWS Organization_ and assign the [previously created](#configuration-in-aws-iam-identity-center) _Permission Set_ and
+4. Select the _AWS Organization_ and assign the [previously created](#configuration-in-aws-iam-identity-center)
+   _Permission Set_ and
    select _Assign_.
 
 ## Create a bookmark in Cyberduck or Mountain Duck
