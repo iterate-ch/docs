@@ -44,7 +44,8 @@ in a dedicated region.
       :::
 
    :::{tip}
-   Users can copy the _SSO start URL_ from the _AWS access portal_ page at _Accounts → Access keys → AWS IAM Identity Center credentials (Recommended)_.
+   Users can copy the _SSO start URL_ from the _AWS access portal_ page at _Accounts → Access keys → AWS IAM Identity
+   Center credentials (Recommended)_.
    :::
 
 3. Create a permission set to limit access for users to S3 in _Permission sets → Create permission set_.
@@ -121,7 +122,8 @@ an external identity provider (IdP).
    :width: 400px
    :::
 
-5. Login to AWS or your third-party identity provider followed by allowing access to Cyberduck or Mountain Duck.
+5. Login to AWS or your third-party identity provider followed by choosing _Allow access_ to _Cyberduck_ or _Mountain Duck_
+   in the AWS access portal.
 
    :::{image} _images/IAM_IdentityCenter_Allow_Access.png
    :alt: Web Browser Screenshot
@@ -129,7 +131,8 @@ an external identity provider (IdP).
    :::
 
    :::{tip}
-   You can close the web browser window after confirming access.
+   The web browser will prompt to open _Cyberduck_ or _Mountain Duck_ afterwards to continue
+   with the connection setup. You can close the web browser window after confirming access.
    :::
 
 6. Choose the _AWS Account ID_ when prompted.
