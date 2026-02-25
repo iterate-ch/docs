@@ -60,7 +60,7 @@ an external identity provider (IdP).
 1. Choose _Users → Add user_ and create a user with a password.
 2. The user must login to the AWS access portal URL `awsapps.com/start` with the username and one-time password.
 3. Assign a AWS account to the user in _Users → Username → AWS accounts → Assign accounts_.
-4. Select the _AWS Organization_ and assign the [previously created](#setup-a-permission-set) _Permission Set_ and
+4. Select the _AWS Organization_ and assign the [previously created](#configuration-in-aws-iam-identity-center) _Permission Set_ and
    select _Assign_.
 
 ## Create a bookmark in Cyberduck or Mountain Duck
@@ -79,7 +79,7 @@ an external identity provider (IdP).
    :::
 
    :::{admonition} Using AWS CLI Configuration
-   :class:tip
+   :class: tip
    Pre-configure the settings using AWS CLI to allow reading configuration options from the `~/aws/config`
    file including the _Issuer URL_.
 
