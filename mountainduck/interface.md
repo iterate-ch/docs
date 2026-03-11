@@ -22,6 +22,10 @@ Mountain Duck runs in the status bar (macOS) and taskbar (Windows).
 
 Find the mounted volume in Finder. Choose *Go → Computer* or choose *Finder → General → Show these items on the desktop:* *Connected servers* to make it appear on your desktop.
 
+:::{note}
+Make sure Mountain Duck is enabled in _System Settings → Menu Bar → Allow in the Menu bar_
+:::
+
 :::{tip}
 Make sure there is enough space left on right side of the notch or application menu items to make sure the _Mountain Duck_ is visible in the the system status bar. To rearrange status menus, press and hold the Command key while you drag an icon. When having multiple displays attached to your computer the status bar item  may not be visible on the main display but on the secondary display.
 :::
