@@ -47,14 +47,19 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 #
 html_theme = 'shibuya'
 html_theme_options = {
-    'logo_only': True,
+	"accent_color": "blue",
+
+	'logo_only': True,
 	'style_nav_header_background': '#5a5a5a',
 	'style_external_links': True,
 	'vcs_pageview_mode': 'edit',
 
 	# Toc options
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
+
+	"github_url": "https://github.com/iterate-ch/docs",
+	"mastodon_url": "https://fosstodon.org/@cyberduck"
 }
 html_favicon = '_static/favicon.ico'
 html_logo = 'cyberduck-icon-64.png'
