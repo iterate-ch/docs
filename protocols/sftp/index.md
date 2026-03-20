@@ -16,11 +16,6 @@ providers
 :width: 128px
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Providers
 
 Settings are specific to service [providers](providers.md).

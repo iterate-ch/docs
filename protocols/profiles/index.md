@@ -8,11 +8,6 @@ google_client_id
 aws_oidc
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 [Connection profiles](../../cyberduck/connection.md#connection-profiles) (`.cyberduckprofile`) are documents describing connection settings for a hosting provider.
 
 :::{note}

@@ -10,11 +10,6 @@ providers
 You can connect to any WebDAV compliant server using both HTTP and HTTP/SSL. Mutual TLS with a client certificate for
 authentication is supported.
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Providers
 
 Settings are specific to service [providers](providers.md).

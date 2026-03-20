@@ -1,11 +1,6 @@
 Licensing
 ====
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 :::{note}
 Mountain Duck is licensed on a per-seat basis. Each license is valid for one user. The license can be used on multiple
 devices as long as the same user is accessing the application.

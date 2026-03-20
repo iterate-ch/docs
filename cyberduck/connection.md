@@ -1,11 +1,6 @@
 Opening Connections
 ====
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Supported Protocols
 
 All major server and cloud storage [protocols](../protocols/index.md) are supported to connect to just about any server you want.

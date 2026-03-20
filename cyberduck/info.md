@@ -1,11 +1,6 @@
 Info Window
 ====
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ::::{tabs}
 :::{group-tab} Cyberduck
 

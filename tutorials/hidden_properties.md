@@ -5,11 +5,6 @@ Add Hidden Configuration Options to Mountain Duck and Cyberduck
 For Cyberduck CLI refer to [Preferences](../cli/index.md)
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Using `default.properties`
 
 There are some settings which aren't yet available in the *Preferences* either because they are not considered stable

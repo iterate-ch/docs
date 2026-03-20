@@ -6,11 +6,6 @@ FTP & FTP-TLS
 :width: 128px
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Providers
 
 Settings are specific to service providers. Use the provided [connection profiles](index.md#connection-profiles).
