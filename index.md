@@ -49,9 +49,9 @@ tutorials/index
 
 If you have a feature request or bug to report you can open a new ticket. The pages below has all the information on how to collect relevant log files.
 
-- [Cyberduck Support](cyberduck/support.md)
-- [Mountain Duck Support](mountainduck/support/index.md)
-- [CLI Support](cli/support.md)
+- [Cyberduck Support](https://docs.cyberduck.io/cyberduck/support/)
+- [Mountain Duck Support](https://docs.mountainduck.io/mountainduck/support/)
+- [CLI Support](https://docs.duck.sh/cli/support/)
 
 <img src="_images/cyberduck-icon-64.png" alt="Cyberduck Application Icon" height="64px"> [Cyberduck](cyberduck/index.md)
 ----
