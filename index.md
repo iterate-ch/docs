@@ -49,12 +49,16 @@ tutorials/index
 
 If you have a feature request or bug to report you can open a new ticket. The pages below has all the information on how to collect relevant log files.
 
-- [Cyberduck Support](cyberduck/support.md)
-- [Mountain Duck Support](mountainduck/support/index.md)
-- [CLI Support](cli/support.md)
+- [Cyberduck Support](https://docs.cyberduck.io/cyberduck/support/)
+- [Mountain Duck Support](https://docs.mountainduck.io/mountainduck/support/)
+- [CLI Support](https://docs.duck.sh/cli/support/)
 
-<img src="_images/cyberduck-icon-64.png" alt="Cyberduck Application Icon" height="64px"> [Cyberduck](cyberduck/index.md)
-----
+## [Cyberduck](cyberduck/index.md)
+
+:::{image} https://cdn.cyberduck.io/img/cyberduck-icon-rect-128.png
+:alt: Cyberduck Application Icon
+:width: 128px
+:::
 
 Cyberduck is a libre server and cloud storage browser for Mac and Windows. With an easy-to-use interface, connect to servers, enterprise file sharing, and cloud storage.
 
@@ -62,8 +66,12 @@ Cyberduck is a libre server and cloud storage browser for Mac and Windows. With 
 
 Read more about system requirements, registration keys and incompatibilities.
 
-<img src="_images/mountainduck_y_64.png" alt="Mountain Duck Application Icon" height="64px"> [Mountain Duck](mountainduck/index.md)
-----
+## [Mountain Duck](mountainduck/index.md)
+
+:::{image} https://cdn.mountainduck.io/images/mountainduck_y_256.png
+:alt: Mountain Duck Application Icon
+:width: 128px
+:::
 
 Mountain Duck lets you mount server and cloud storage as a disk in Finder on macOS and the File Explorer on Windows with a minimal User Interface and Smart Synchronisation feature that allows making files available offline.
 

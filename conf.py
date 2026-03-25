@@ -27,7 +27,6 @@ author = 'iterate GmbH'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-	"sphinx_rtd_theme",
 	"sphinx_tabs.tabs",
 	"myst_parser",
 ]
@@ -46,16 +45,21 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'shibuya'
 html_theme_options = {
-    'logo_only': True,
+	"accent_color": "blue",
+
+	'logo_only': True,
 	'style_nav_header_background': '#5a5a5a',
 	'style_external_links': True,
 	'vcs_pageview_mode': 'edit',
 
 	# Toc options
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
+
+	"github_url": "https://github.com/iterate-ch/docs",
+	"mastodon_url": "https://fosstodon.org/@cyberduck"
 }
 html_favicon = '_static/favicon.ico'
 html_logo = 'cyberduck-icon-64.png'

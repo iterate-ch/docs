@@ -8,9 +8,9 @@ architecture/index
 ../tutorials/vault_localdisk
 :::
 
-:::{image} _images/cryptomator.png
+:::{image} https://cryptomator.org/img/logo.svg
 :alt: Cryptomator
-:width: 400px
+:width: 128px
 :::
 
 Support for client-side encryption with [Cryptomator](https://cryptomator.org/) interoperable vaults to secure your data on any server or cloud storage.

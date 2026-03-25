@@ -1,11 +1,6 @@
 FAQ
 ====
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## General
 
 ### What is Cyberduck?

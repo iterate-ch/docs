@@ -21,11 +21,6 @@ providers
 
 Transfer files to your [S3](http://aws.amazon.com/s3) account and browse the S3 buckets and files in a hierarchical way.
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Connecting
 
 You must obtain the login credentials (Access Key ID and Secret Access Key) of

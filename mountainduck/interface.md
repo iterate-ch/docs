@@ -1,11 +1,6 @@
 User Interface
 ====
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## User Interface
 
 Mountain Duck runs in the status bar (macOS) and taskbar (Windows).

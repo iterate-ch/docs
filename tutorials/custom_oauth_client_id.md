@@ -9,11 +9,6 @@ This is a step-by-step tutorial to connect with a custom OAuth 2.0 Client ID for
 Workaround to register your own Custom OAuth 2.0 Client ID for [Google Cloud Storage](../protocols/googlecloudstorage.md) and [Google Drive](../protocols/googledrive.md) and use it with a custom connection profile instead when encountering `This app is blocked` error when accessing Google Drive or Google Cloud Storage.
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Register Client ID
 
 1. Log in to [Google Cloud Resource Manager](https://console.cloud.google.com/cloud-resource-manager) and create a new project. You will be prompted to select a name of the project.

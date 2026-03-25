@@ -6,11 +6,6 @@ accessible link. Depending on the provider, the link may be auto expiring and no
 password can be set required to download the file. Some providers support to _Request files…_ from others by creating an
 URL that allows others to add files to your account.
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Availability
 
 The table below shows the protocols which support to share files using _Share…_ or _Request files…_.

@@ -7,11 +7,6 @@ Preferences
 ../tutorials/hidden_properties
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## General
 
 ### Save Workspace

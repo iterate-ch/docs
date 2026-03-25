@@ -11,11 +11,6 @@ support
 [Cyberduck with a command-line interface (CLI)](https://duck.sh/) is available for Mac, Windows & Linux. It is installed
 as `duck`.
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 ## Installation
 
 :::::{tabs}

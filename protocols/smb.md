@@ -6,11 +6,6 @@ SMB
 :width: 128px
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
-
 > [SMB (Server Message Block)](https://en.wikipedia.org/wiki/Server_Message_Block) is used to access Windows File Shares
 > or a Samba Linux Server.
 
