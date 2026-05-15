@@ -1,7 +1,7 @@
 MEGA S4
 ====
 
-> [MEGA S4](https://mega.io/objectstorage) Enjoy flexible object storage at a competitive price. No confusing tiers, no extra fees for data transfers or API calls—just a secure, simple, storage service you can trust.
+> [MEGA S4](https://mega.io/objectstorage) Enjoy secure, S3 compatible object storage designed for backups, media, archives, and large file workloads. MEGA S4 delivers flexible cloud storage with transparent pricing, no API request fees, and no hidden data transfer charges. With pricing that can be up to 90% lower than hyperscaler cloud storage providers, MEGA S4 offers a simple and cost effective alternative. Integrates seamlessly with Cyberduck and Mountain Duck for easy file access and management.
 
 
 ## Connecting
@@ -12,10 +12,13 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Download the *MEGA S4* connection profile that best suits your location. All buckets are accessible from any region.
 
-- **MEGA S4 EU Central 1 (Amsterdam)** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-1).cyberduckprofile>` the *MEGA S4 (eu-central-1) Connection Profile* for preconfigured settings.
-- **MEGA S4 EU Central 2 (Luxembourg)** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-2).cyberduckprofile>` the *MEGA S4 (eu-central-2) Connection Profile* for preconfigured settings.
-- **MEGA S4 CA Central 1 (Montreal)** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-central-1).cyberduckprofile>` the *MEGA S4 (ca-central-1) Connection Profile* for preconfigured settings.
-- **MEGA S4 CA West 1 (Vancouver)** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-west-1).cyberduckprofile>` the *MEGA S4 (ca-west-1) Connection Profile* for preconfigured settings.
+- **MEGA S4 Amsterdam** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-1).cyberduckprofile>` the *MEGA S4 Amsterdam Connection Profile* for preconfigured settings.
+- **MEGA S4 Barcelona** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Barcelona.cyberduckprofile>` the *MEGA S4 Barcelona Connection Profile* for preconfigured settings.
+- **MEGA S4 Luxembourg** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-2).cyberduckprofile>` the *MEGA S4 Luxembourg Connection Profile* for preconfigured settings.
+- **MEGA S4 Montreal** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-central-1).cyberduckprofile>` the *MEGA S4 Montreal Connection Profile* for preconfigured settings.
+- **MEGA S4 Paris** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Paris.cyberduckprofile>` the *MEGA S4 Paris Connection Profile* for preconfigured settings.
+- **MEGA S4 Tokyo** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Tokyo.cyberduckprofile>` the *MEGA S4 Tokyo Connection Profile* for preconfigured settings.
+- **MEGA S4 Vancouver** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-west-1).cyberduckprofile>` the *MEGA S4 Vancouver Connection Profile* for preconfigured settings.
 
 ### Supported S3 Operations
 
