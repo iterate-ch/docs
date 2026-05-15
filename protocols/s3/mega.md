@@ -12,13 +12,13 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 Download the *MEGA S4* connection profile that best suits your location. All buckets are accessible from any region.
 
-- **MEGA S4 Amsterdam** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Amsterdam.cyberduckprofile>` the *MEGA S4 Amsterdam Connection Profile* for preconfigured settings.
+- **MEGA S4 Amsterdam** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-1).cyberduckprofile>` the *MEGA S4 Amsterdam Connection Profile* for preconfigured settings.
 - **MEGA S4 Barcelona** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Barcelona.cyberduckprofile>` the *MEGA S4 Barcelona Connection Profile* for preconfigured settings.
-- **MEGA S4 Luxembourg** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Luxembourg.cyberduckprofile>` the *MEGA S4 Luxembourg Connection Profile* for preconfigured settings.
-- **MEGA S4 Montreal** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Montreal.cyberduckprofile>` the *MEGA S4 Montreal Connection Profile* for preconfigured settings.
+- **MEGA S4 Luxembourg** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(eu-central-2).cyberduckprofile>` the *MEGA S4 Luxembourg Connection Profile* for preconfigured settings.
+- **MEGA S4 Montreal** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-central-1).cyberduckprofile>` the *MEGA S4 Montreal Connection Profile* for preconfigured settings.
 - **MEGA S4 Paris** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Paris.cyberduckprofile>` the *MEGA S4 Paris Connection Profile* for preconfigured settings.
 - **MEGA S4 Tokyo** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Tokyo.cyberduckprofile>` the *MEGA S4 Tokyo Connection Profile* for preconfigured settings.
-- **MEGA S4 Vancouver** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20Vancouver.cyberduckprofile>` the *MEGA S4 Vancouver Connection Profile* for preconfigured settings.
+- **MEGA S4 Vancouver** {download}`Download<https://profiles.cyberduck.io/MEGA%20S4%20(ca-west-1).cyberduckprofile>` the *MEGA S4 Vancouver Connection Profile* for preconfigured settings.
 
 ### Supported S3 Operations
 
