@@ -7,11 +7,6 @@ Preferences
 ../tutorials/hidden_properties
 :::
 
-:::{contents} Content
-:depth: 2
-:local:
-:::
- 
 In general, user adjustable preferences are discussed in the context of the topic in all wiki pages.
 
 ## General

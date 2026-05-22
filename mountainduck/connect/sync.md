@@ -17,11 +17,6 @@ Smart Synchronization
 You can access volumes in _Smart Synchronization_ connect mode without being always connected the server or cloud storage.
 :::
 
-:::{contents} Content
-:depth: 1
-:local:
-:::
-
 ## Status of Files
 
 Files and folders on a mounted volume have a status icon overlay in _File Explorer_ (Windows) and _Finder_ (macOS).
