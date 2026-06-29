@@ -29,6 +29,10 @@ Compared to other client-side-encryption solutions, the Cryptomator based approa
 - No need to share your cloud storage provider credentials.
 :::
 
+## Vault Format
+
+Cyberduck and Mountain Duck support Cryptomator vault format versions 7 and 8. New vaults are created using version 8 by default. If you have a version 6 vault, it must be [migrated](#migration-from-version-6) before use.
+
 ## Create new Vault
 
 You can create a new vault directory anywhere on your remote storage. This will initialize the vault with a `masterkey.cryptomator`. A backup of the master key file (`masterkey.cryptomator`) is saved in user defaults. The encrypted keys in `masterkey.cryptomator` are not more sensitive than the encrypted files in the vault. For technical aspects, refer to [Masterkey Derivation](https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation).
@@ -166,6 +170,36 @@ The vault must be unlocked before you move files to it, otherwise the files won'
 ### Access Vaults on Local Disk
 
 Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md) support browsing your local disk to access vaults created on your computer. Refer to the [tutorial](../tutorials/vault_localdisk.md).
+
+## Migration from Version 6
+
+Vault format version 6 is no longer supported. To continue using a version 6 vault, you need to migrate it using the [Cryptomator](https://cryptomator.org/) desktop app. Migration requires two steps:
+
+1. Migrate from version 6 to version 7 using Cryptomator [1.5.19 (macOS)](https://github.com/cryptomator/cryptomator/releases/download/1.5.19/Cryptomator-1.5.19.dmg) or [1.5.17 (Windows)](https://github.com/cryptomator/cryptomator/releases/download/1.5.17/Cryptomator-1.5.17-x64.exe).
+2. Optionally migrate from version 7 to version 8 using the latest Cryptomator version.
+
+:::{attention}
+Create a backup of your version 6 vault before starting the migration.
+:::
+
+The migration process differs depending on whether you use Cyberduck or Mountain Duck:
+
+:::::{tabs}
+::::{group-tab} Cyberduck
+
+Because Cyberduck does not mount the remote storage as a local drive, the vault must be migrated offline:
+
+1. Download the vault folder to your local disk.
+2. Open and migrate the local copy using the Cryptomator app.
+3. Upload the migrated vault back to your remote storage.
+
+::::
+::::{group-tab} Mountain Duck
+
+Because Mountain Duck mounts the remote storage as a local drive, the Cryptomator app can access and migrate the vault directly on the mounted drive without downloading it first.
+
+::::
+:::::
 
 ## Known Limitations
 
