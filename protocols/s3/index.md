@@ -153,13 +153,23 @@ Internet or a misconfigured network. It can also be caused by an unresponsive DN
 to the network._
 :::
 
+### Connecting with AWS IAM Identity Center
+
+:::{important}
+
+- Cyberduck [9.5.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [5.3.0](https://mountainduck.io/changelog/) or later required
+:::
+
+Refer to [Connect to S3 authenticating with AWS IAM Identity Center](../../tutorials/s3_identitycenter.md)
+
 ### Connecting with OpenID Connect (OIDC) Identity Provider
 
 :::{important}
 
 - Cyberduck [8.7.0](https://cyberduck.io/changelog/) or later required
 - Mountain Duck [4.15.0](https://mountainduck.io/changelog/) or later required
-  :::
+:::
 
 Connecting to AWS S3 with web identity federation using AWS Security Token Service (STS) is supported with connection
 profiles specifying configuration properties specific to your identity provider (IdP).
@@ -245,21 +255,7 @@ Follow the [step-by-step instructions](../../tutorials/s3_iam_role_mfa.md) to re
 
 For a SSO connection authenticating with AWS IAM Identity Center (Successor to AWS Single Sign-On), the properties
 `sso_start_url`, `sso_account_id`, and `sso_role_name` are required within the standard credentials property file
-`~/.aws/credentials` (macOS) or `%USERPROFILE%\.aws\credentials` (Windows). The access key, secret key, and session
-token cached by AWS CLI are retrieved from `~/.aws/cli/cache` on macOS or `%USERPROFILE%\.aws\cli\cache` on Windows.
-
-To populate the correct cache locations follow these steps:
-
-1. Run the command `aws sso login` to populate `~/.aws/sso/cache` on macOS or respectively
-   `%USERPROFILE%\.aws\sso\cache` on Windows. This adds client secrets but doesn't add any usable AWS credentials.
-2. Seed the second cache in `~/.aws/cli/cache` on macOS or respectively `%USERPROFILE%\.aws\cli\cache` on Windows by
-   running the command `aws sts get-caller-identity`. This adds the usable credentials to the location Cyberduck and
-   Mountain Duck reads from.
-
-:::{note}
-You can also do this for a specific profile by adding `--profile myProfile` to the commands. Make sure to use the same
-profile for both steps.
-:::
+`~/.aws/credentials` (macOS) or `%USERPROFILE%\.aws\credentials` (Windows).
 
 - [Configuring the AWS CLI to use AWS Single Sign-On](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
 
