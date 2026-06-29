@@ -153,6 +153,16 @@ Internet or a misconfigured network. It can also be caused by an unresponsive DN
 to the network._
 :::
 
+### Connecting with AWS IAM Identity Center
+
+:::{important}
+
+- Cyberduck [9.5.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [5.3.0](https://mountainduck.io/changelog/) or later required
+:::
+
+Refer to [Connect to S3 authenticating with AWS IAM Identity Center](../../tutorials/s3_identitycenter.md)
+
 ### Connecting with OpenID Connect (OIDC) Identity Provider
 
 :::{important}
