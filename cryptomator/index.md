@@ -29,6 +29,10 @@ Compared to other client-side-encryption solutions, the Cryptomator based approa
 - No need to share your cloud storage provider credentials.
 :::
 
+## Vault Format
+
+Cyberduck and Mountain Duck support Cryptomator vault [format versions 7 and 8](https://docs.cryptomator.org/misc/vault-format-history/). New vaults are created using version 8 by default. If you have a version 6 vault, it must be [migrated](#migration-from-version-6) before use.
+
 ## Create new Vault
 
 You can create a new vault directory anywhere on your remote storage. This will initialize the vault with a `masterkey.cryptomator`. A backup of the master key file (`masterkey.cryptomator`) is saved in user defaults. The encrypted keys in `masterkey.cryptomator` are not more sensitive than the encrypted files in the vault. For technical aspects, refer to [Masterkey Derivation](https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation).
@@ -166,6 +170,39 @@ The vault must be unlocked before you move files to it, otherwise the files won'
 ### Access Vaults on Local Disk
 
 Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md) support browsing your local disk to access vaults created on your computer. Refer to the [tutorial](../tutorials/vault_localdisk.md).
+
+## Migration from Version 6
+
+Vault format version 6 is no longer supported. You need to migrate it using the [Cryptomator](https://cryptomator.org/) desktop app to access with Cyberduck or Mountain Duck. Migration requires two steps:
+
+1. Migrate from version 6 to version 7 using Cryptomator Desktop [1.5.19 (macOS)](https://github.com/cryptomator/cryptomator/releases/download/1.5.19/Cryptomator-1.5.19.dmg) or [1.5.17 (Windows)](https://github.com/cryptomator/cryptomator/releases/download/1.5.17/Cryptomator-1.5.17-x64.exe).
+2. Optionally migrate from version 7 to version 8 using the latest Cryptomator Desktop.
+
+:::{attention}
+Create a backup of your version 6 vault before starting the migration.
+:::
+
+:::::{tabs}
+::::{group-tab} Cyberduck
+
+1. Uncheck _Cyberduck → Preferences → Cryptomator → Auto detect and open vault in browser_. 
+2. Download the vault folder to your local disk.
+3. Choose _Add Vault_ in the Cryptomator Desktop application.
+4. Choose _Open Existing Vault_ and select the *masterkey.cryptomator* file in the root of the vault folder.
+5. Choose _Upgrade Vault_ to migrate the vault to the later newer format.
+6. Upload the migrated vault back to your remote storage using Cyberduck.
+
+::::
+::::{group-tab} Mountain Duck
+
+1. Uncheck _Preferences → Cryptomator → Auto detect and open vault in browser_.
+2. Locate the *masterkey.cryptomator* in the root of the vault folder.
+3. Choose _Add Vault_ in the Cryptomator Desktop application.
+4. Choose _Open Existing Vault_ and select the *masterkey.cryptomator* file in the root of the vault folder.
+5. Choose _Upgrade Vault_ to migrate the vault to the later newer format.
+
+::::
+:::::
 
 ## Known Limitations
 
