@@ -31,7 +31,7 @@ Compared to other client-side-encryption solutions, the Cryptomator based approa
 
 ## Vault Format
 
-Cyberduck and Mountain Duck support Cryptomator vault format versions 7 and 8. New vaults are created using version 8 by default. If you have a version 6 vault, it must be [migrated](#migration-from-version-6) before use.
+Cyberduck and Mountain Duck support Cryptomator vault [format versions 7 and 8](https://docs.cryptomator.org/misc/vault-format-history/). New vaults are created using version 8 by default. If you have a version 6 vault, it must be [migrated](#migration-from-version-6) before use.
 
 ## Create new Vault
 
