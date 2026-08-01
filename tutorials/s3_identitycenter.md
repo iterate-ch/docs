@@ -73,6 +73,13 @@ an external identity provider (IdP).
 
 1. Add a new [Bookmark](../cyberduck/bookmarks.md) in Cyberduck or Mountain Duck and choose *AWS S3 (IAM Identity
    Center)* in the protocol dropdown.
+
+   :::{tip}
+   If you already have a bookmark using *AWS S3 (IAM Identity Center)* and want to use new configuration details,
+   make sure you are not creating a bookmark in a browser window with it connected, otherwise the current values
+   will be copied to the new bookmark.
+   :::
+
 2. Choose _Connect_ and select the AWS CLI profile name when prompted.
 
    :::{image} _images/S3_CLI_Profile_Prompt.png
