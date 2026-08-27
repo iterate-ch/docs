@@ -3,6 +3,10 @@ Use Cyberduck CLI GitHub Action
 
 Use Cyberduck CLI in a [GitHub Actions](https://docs.github.com/en/actions) workflow conveniently in a docker container.
 
+    :::{note}
+    The action only works on Linux runners as GitHub Actions doesn't support Docker actions on Windows/macOS runners at all.
+    :::
+
 ## Usage in Custom Workflow
 
 1. Add the [cyberduck-cli-action](https://github.com/iterate-ch/cyberduck-cli-action) action to a workflow `.yml` with a step like 
