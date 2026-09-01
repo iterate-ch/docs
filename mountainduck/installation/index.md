@@ -1,6 +1,12 @@
 Installation
 ====
 
+:::{toctree}
+:hidden:
+:titlesonly:
+
+windowsserver
+:::
 
 ## Download and Install
 ::::::{tabs}
@@ -32,12 +38,13 @@ No admin privileges for installation are required. You can determine the install
 Mountain Duck is available in the [Windows Store](https://mountainduck.io/buy/windowsstore).
 :::
 
-:::{admonition} System-wide Installation
+::::{admonition} System-wide Installation
 :class: tip
+
 You can perform system-wide installations using the command in an elevated PowerShell window. Updated versions are not available to currently logged in users but only after signing out and logging back in to their Windows account.
 
 ```
-Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
+Add-AppxProvisionedPackage -Online -SkipLicense -LogPath "$env:Temp\MountainDuck-msix.log" -PackagePath "Mountain Duck_5.0.1.27950_x64.msix"
 ```
 
 Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file: 
@@ -45,7 +52,11 @@ Alternatively, with the `Path` argument pointing to a _Windows Disk Image_ file:
 Add-AppxProvisionedPackage -Path X:\MountedWindowsImage -SkipLicense -PackagePath "Mountain Duck-5.0.1.27950_x64.msix"
 ```
 
-On *Windows 10* [sideloaded apps must be enabled](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#allowalltrustedapps) in _Windows Settings_ or using an elevated PowerShell with:
+:::{note}
+Provisioning fails while other users are signed in to the computer. Sign out all other user sessions first.
+:::
+
+[Sideloading of trusted apps](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#allowalltrustedapps) must be allowed to install and run the provisioned package. Sideloading is enabled by default since *Windows 10 2004*. On earlier versions of *Windows 10*, on *Windows Server 2019*, and in environments where the setting is managed by a policy, it must be enabled in _Windows Settings_ or using an elevated PowerShell with:
 
 * Configured by Windows Settings:
 ```
@@ -56,7 +67,13 @@ Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock 
 ```
 Set-ItemProperty HKLM:\Software\Policies\Microsoft\Windows\Appx -Name AllowAllTrustedApps -Value 1 -Type DWord
 ```
+
+:::{warning}
+Do not reset the setting after the installation. If `AllowAllTrustedApps` is set back to `0`, users can no longer launch the installed app (it is listed in *Windows Settings* with a size of 0).
 :::
+
+Refer to [Windows Server, Terminal Services & Citrix](windowsserver.md) for installations in multi-user environments.
+::::
 
 :::::
 ::::::
@@ -109,8 +126,15 @@ The installation of the file system driver is not required for [_Integrated_](..
 
 :::{admonition} Manual Installation
 :class: tip
+
 ```
 msiexec /i "$((Get-AppxPackage -AllUsers io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi"
+```
+
+For unattended installation for all users:
+
+```
+msiexec /i "$((Get-AppxPackage -AllUsers io.mountainduck).InstallLocation)\Setup\Mountain Duck Support.msi" /qn /l*v "$env:Temp\MountainDuck-support.log" ALLUSERS=1 REBOOT=ReallySuppress
 ```
 :::
 
@@ -134,6 +158,10 @@ msiexec /i "$((Get-AppxPackage -AllUsers io.mountainduck).InstallLocation)\Setup
 - Mountain Duck 4.13.0 or later requires *Windows 10 (14393) or Windows Server 2016* or later on 64 Bit. Requires *.NET Framework 4.7.2.*
 - Mountain Duck 3.2.0 or later requires *Windows 7, Windows 8.1, Windows 10 (14393)* or later on 64Bit.
 - Mountain Duck 3.0.1 or later requires *Windows 7* or later.
+
+:::{note}
+Refer to [Supported Windows Server Versions](windowsserver.md#supported-windows-server-versions) when installing on Windows Server.
+:::
 
 ::::
 :::::
@@ -176,6 +204,10 @@ If you get the error code `0x24C` uninstall the client, reboot the system, and r
 ```
 0x24C. A volume has been accessed for which a file system driver is required that has not yet been loaded.
 ```
+
+### Installer Exits Without Message
+
+The `.exe` installer is a bootstrapper that installs the *MSIX Installer Package* in the background. If it briefly starts and exits without displaying a message, the MSIX deployment failed. Install the *MSIX Installer Package* directly instead — on servers using [`Add-AppxProvisionedPackage`](windowsserver.md#machine-wide-installation).
 
 ### Troubleshooting 
 
