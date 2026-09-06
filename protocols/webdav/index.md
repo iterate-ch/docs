@@ -68,7 +68,7 @@ private key that matches the given issuer name requested from the server. Matchi
 
 #### Select Client Certificate in Bookmark
 
-You can also pre-select a certificate to use for authentication when editing the bookmark.
+You can also preselect a certificate to use for authentication when editing the bookmark.
 
 ![WebDAV Bookmark Client Certificate](_images/WebDAV_Bookmark_Client_Certificate.png)
 
