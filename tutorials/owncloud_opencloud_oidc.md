@@ -295,9 +295,9 @@ Connection profile for the OpenCloud deployment at `cloud.example.net` with Micr
 ```
 
 ::::
-::::{tab} Example (OpenCloud Built-in Identity Provider)
+::::{tab} Example (Keycloak)
 
-Connection profile for an OpenCloud deployment at `cloud.example.net` using the built-in identity provider with the default `OpenCloudDesktop` client:
+Connection profile for an OpenCloud deployment at `cloud.example.net` with Keycloak at `keycloak.example.net` as identity provider using the realm `openCloud` and the public client `Cyberduck` imported from the [sample client configuration](https://github.com/opencloud-eu/opencloud/blob/main/devtools/deployments/multi-tenancy/config/keycloak/clients/cyberduck.json):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -307,9 +307,9 @@ Connection profile for an OpenCloud deployment at `cloud.example.net` using the 
         <key>Protocol</key>
         <string>owncloud</string>
         <key>Vendor</key>
-        <string>cloud.example.net-opencloud</string>
+        <string>cloud.example.net-keycloak</string>
         <key>Description</key>
-        <string>OpenCloud Built-in IdP (cloud.example.net)</string>
+        <string>OpenCloud Keycloak (cloud.example.net)</string>
         <key>Default Nickname</key>
         <string>OpenCloud</string>
         <key>Default Hostname</key>
@@ -317,15 +317,15 @@ Connection profile for an OpenCloud deployment at `cloud.example.net` using the 
         <key>Hostname Configurable</key>
         <false/>
         <key>OAuth Authorization Url</key>
-        <string>https://cloud.example.net/signin/v1/identifier/_/authorize</string>
+        <string>https://keycloak.example.net/realms/openCloud/protocol/openid-connect/auth</string>
         <key>OAuth Token Url</key>
-        <string>https://cloud.example.net/konnect/v1/token</string>
+        <string>https://keycloak.example.net/realms/openCloud/protocol/openid-connect/token</string>
         <key>OAuth Client ID</key>
-        <string>OpenCloudDesktop</string>
+        <string>Cyberduck</string>
         <key>OAuth Client Secret</key>
         <string></string>
         <key>OAuth Redirect Url</key>
-        <string>http://localhost/</string>
+        <string>${oauth.handler.scheme}:oauth</string>
         <key>OAuth PKCE</key>
         <true/>
         <key>Scopes</key>
