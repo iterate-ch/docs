@@ -156,6 +156,27 @@ The client registration is part of the default configuration of the built-in ide
 :::
 
 ::::
+::::{tab} ownCloud Infinite Scale Built-in Identity Provider
+
+No client registration is required when using the built-in identity provider of ownCloud Infinite Scale. The client registered by default for the _ownCloud desktop app_ accepts redirect URIs to the loopback interface with any port.
+
+1. Open _Preferences… → Profiles_ in Cyberduck or Mountain Duck.
+2. Enable the *ownCloud Infinite Scale (OpenID Connect)* connection profile.
+3. Add a new [bookmark](../cyberduck/bookmarks.md) and choose *ownCloud Infinite Scale (OpenID Connect)* in the protocol dropdown. Enter the hostname of your ownCloud Infinite Scale server in _Server_.
+
+:::{note}
+On first login you are asked to allow access for _ownCloud desktop app_. Consent is required to obtain a refresh token with the `offline_access` scope.
+:::
+
+:::{important}
+Unlike the client registered in OpenCloud, the client is confidential and requires the client secret validated by the token endpoint. The connection profile includes the default client secret published in the [ownCloud Infinite Scale configuration](https://github.com/owncloud/ocis/blob/master/services/idp/pkg/config/defaults/defaultconfig.go).
+:::
+
+:::{attention}
+The client registration is part of the default configuration of the built-in identity provider and may have been changed by the server administrator.
+:::
+
+::::
 :::::
 
 :::{note}
