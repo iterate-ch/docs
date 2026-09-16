@@ -184,3 +184,7 @@ Create a *multi-TIFF* containing the needed icon sizes:
 
 Customization of connection profiles using OpenID Connect provider and AssumeRoleWithWebIdentity STS API.
 - [Sample connection profiles for S3 and OpenID Connect Federation](aws_oidc.md)
+
+### ownCloud Infinite Scale & OpenCloud with OpenID Connect
+
+- [Connection profile for ownCloud Infinite Scale & OpenCloud with OpenID Connect](../../tutorials/owncloud_opencloud_oidc.md)

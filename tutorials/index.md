@@ -11,6 +11,7 @@ s3_iam_role_mfa
 s3_iam_getsessiontoken_bucketpolicy_mfa
 s3_microsoft_entra_oidc
 s3_google_oidc
+owncloud_opencloud_oidc
 iam
 vault_localdisk
 sftp_publickeyauth
@@ -42,6 +43,9 @@ Use Microsoft Entra ID to authenticate with S3 by configuring as an OpenID Conne
 
 ## [Authenticate with Google to connect to S3](s3_google_oidc.md)
 Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+
+## [Connect to ownCloud Infinite Scale & OpenCloud with OpenID Connect](owncloud_opencloud_oidc.md)
+Obtain the OAuth endpoints from the OpenID Connect discovery document of your ownCloud Infinite Scale or OpenCloud server and write a custom connection profile.
 
 ## [AWS Identity & Access Management (IAM)](iam.md)
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
