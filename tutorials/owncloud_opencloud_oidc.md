@@ -1,6 +1,12 @@
 Connect to ownCloud Infinite Scale & OpenCloud with OpenID Connect
 ====
 
+:::{important}
+
+- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [5.4.0](https://mountainduck.io/changelog/) or later required
+  :::
+
 > Authenticate with the OpenID Connect (OIDC) identity provider configured for your [ownCloud Infinite Scale (oCIS)](https://owncloud.dev/ocis/) or [OpenCloud](https://opencloud.eu/) deployment using a custom connection profile.
 
 Both ownCloud Infinite Scale and OpenCloud disable Basic Authentication by default and require OAuth 2.0 tokens issued by the identity provider (IdP) in use such as the built-in IdP, Keycloak or Microsoft Entra ID. This tutorial explains how to obtain the OAuth endpoints and client configuration from the public configuration published by your server and how to write a [connection profile](../protocols/profiles/index.md) for use with [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/index.md).
