@@ -109,7 +109,7 @@ Authentication fails when the clock of your computer differs by more than five m
 :::
 
 :::{note}
-The `GSSAPIAuthentication` directive in `~/.ssh/config` is not required. The authentication method is always attempted when offered by the server. Limit the methods tried with [`PreferredAuthentications`](../protocols/sftp/index.md#configuration-file) instead.
+The `GSSAPIAuthentication` directive in `~/.ssh/config` is not required. The authentication method is always attempted when offered by the server. Change the order in which methods are tried with [`PreferredAuthentications`](../protocols/sftp/index.md#configuration-file) instead. Methods not listed are still tried afterwards.
 :::
 
 ## References
