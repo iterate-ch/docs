@@ -15,9 +15,12 @@ owncloud_opencloud_oidc
 iam
 vault_localdisk
 sftp_publickeyauth
+sftp_publickeyauth_securitykey
+sftp_publickeyauth_pkcs11
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
 sftp_publickeyauth_yubikey
+sftp_kerberos
 cli_github_action
 :::
 
@@ -56,6 +59,12 @@ Both [Cyberduck](../cyberduck/index.md) and [Mountain Duck](../mountainduck/inde
 ## [Configure Public Key Authentication for SFTP](sftp_publickeyauth.md)
 Configure Public Key Authentication for SFTP using OpenSSH tools.
 
+### [Use a FIDO2 Security Key](sftp_publickeyauth_securitykey.md)
+Authenticate with a `sk-*` key in the Secure Enclave unlocked with Touch ID or on a hardware token such as a YubiKey.
+
+### [Use a PKCS#11 Smartcard](sftp_publickeyauth_pkcs11.md)
+Authenticate with a private key kept on a smartcard read with a PKCS#11 module such as OpenSC.
+
 ### [Configure 1Password SSH Agent](sftp_publickeyauth_1password.md)
 Authenticate with SSH private key saved in 1Password.
 
@@ -64,6 +73,9 @@ Authenticate with SSH private key saved in Bitwarden.
 
 ### [Use YubiKey](sftp_publickeyauth_yubikey.md)
 Authenticate with SSH private key saved on YubiKey.
+
+## [Configure Kerberos Authentication for SFTP](sftp_kerberos.md)
+Authenticate with a Kerberos ticket obtained with `kinit` using GSSAPI.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
