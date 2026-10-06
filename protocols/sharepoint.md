@@ -27,14 +27,35 @@ Connect to *SharePoint Online* with the bundled *Microsoft SharePoint* connectio
 4. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code used to retrieve the access token for authenticating with Microsoft SharePoint. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
 5. You are now able to access all sites, subsites, and document libraries thereof as well as all groups you are a member of.
 
+#### Reset OAuth Tokens
+
+If you have accidentally logged in with the wrong SharePoint Account or want to change the login of the OneDrive bookmark delete the current bookmark and create a new one to start a new authentication flow.
+
+Alternatively, you can reset the OAuth token by deleting the respective entries out of *Windows Credential Manager* or out of *Keychain Access.app* on macOS.
+
+::::::{tabs}
+:::::{group-tab} macOS
+
+Remove the entries lated to `login.microsoftonline.com` out of *Keychain Access.app*.
+
+:::::
+:::::{group-tab} Windows
+
+Remove the entries that correspond to the used application out of *Windows Credential Manager*.
+
+- *Cyberduck*: `duck:f40bc18f-cd02-4212-b7f1-15243e4e2ad3?user=(user)`
+- *Mountain Duck*: `duck:94c5bafe-e6f8-4bd7-94e8-92d5cc8aa581?user=(user)`
+
+:::::
+::::::
+
 ### Microsoft SharePoint Site Connection Profile
 
 :::{note}
 Connection profiles not bundled by default can be installed from *Preferences → Profiles*.
 :::
 
-In case you are trying to access a site that is not listed when connecting with the *Microsoft SharePoint* connection profile,
-you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. When using the *Microsoft SharePoint Site* connection profile, you are required to enter the SharePoint hostname (such as `contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
+In case you are trying to access a site that is not listed when connecting with the *Microsoft SharePoint* connection profile, you can try to access the missing site with help of the *Microsoft SharePoint Site* connection profile. When using the *Microsoft SharePoint Site* connection profile, you are required to enter the SharePoint hostname (such as `contoso.sharepoint.com`) and the URL prefix path configured for your SharePoint site. 
 
 ### SharePoint Hybrid
 
