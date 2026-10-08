@@ -18,6 +18,7 @@ sftp_publickeyauth
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
 sftp_publickeyauth_yubikey
+sftp_publickeyauth_pageant
 cli_github_action
 :::
 
@@ -64,6 +65,9 @@ Authenticate with SSH private key saved in Bitwarden.
 
 ### [Use YubiKey](sftp_publickeyauth_yubikey.md)
 Authenticate with SSH private key saved on YubiKey.
+
+### [Configure Pageant](sftp_publickeyauth_pageant.md)
+Authenticate with SSH private key loaded in Pageant.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
