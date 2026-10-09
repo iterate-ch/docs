@@ -344,6 +344,13 @@ Be aware that Bitdefender may interfere with connections.
 
 May interfere with installation.
 
+#### Dokany File System Driver
+
+Using third-party applications with an old Dokany file system driver version may cause issues within Mountain Duck such as freezing of the menu. This has been reported for the following applications:
+
+- _MXFS_: Dokany version 1.0.3
+- _Air Life Drive_: Dokany version 2.0.3
+
 ### Backups
 
 ::::{tabs}
