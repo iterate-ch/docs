@@ -56,7 +56,23 @@ When connecting with a user with a viewer role only, attempting to list buckets 
 
 If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark delete the current bookmark and create a new one to start a new authentication flow.
 
-Alternatively, you can reset the OAuth token by deleting the entries related to `duck:googlecloudstorage?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `accounts.google.com` out of *Keychain Access.app*.
+Alternatively, you can reset the OAuth token by deleting the respective entries out of *Windows Credential Manager* or out of *Keychain Access.app* on macOS.
+
+::::::{tabs}
+:::::{group-tab} macOS
+
+Remove the entries related to `accounts.google.com` out of *Keychain Access.app*.
+
+:::::
+:::::{group-tab} Windows
+
+Remove the entries that correspond to the used application out of *Windows Credential Manager*.
+
+- *Cyberduck*: `duck:996125414232-s922bvdt21nceeh5dq1gb6av8plpj7hr.apps.googleusercontent.com?user=(user)`
+- *Mountain Duck*: `duck:996125414232-nk3icebd7k519k2bla2vsc9h50hfrgdk.apps.googleusercontent.com?user=(user)`
+
+:::::
+::::::
 
 #### Custom OAuth Client ID
 
