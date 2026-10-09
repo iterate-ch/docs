@@ -350,7 +350,7 @@ May interfere with installation.
 :::{group-tab} macOS
 
 **Time Machine**<br/>
-Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks mounted using Apple File Protocol (AFP). See [Backup disks you can use with Time Machine](https://support.apple.com/en-us/HT202784).
+Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks to be mounted through Finder using the SMB network protocol. See [Backup disks you can use with Time Machine](https://support.apple.com/en-us/HT202784).
 
 :::
 :::{group-tab} Windows
