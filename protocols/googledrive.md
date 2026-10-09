@@ -23,7 +23,14 @@ Connect to your [Google Drive](http://drive.google.com/) to store plain files.
 :::{admonition} Advanced Protection Program
 :class: warning
 
-Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message: `400 admin_policy_enforced`.
+Using *[Advanced Protection Program](https://support.google.com/accounts/answer/7539956#non-goog_apps&zippy=%2Ccan-i-use-non-google-apps-services-or-apps-script-with-advanced-protection)* will cause the OAuth login flow to fail with the error message `400 admin_policy_enforced` unless an exeption is set within the API access settings.
+
+1. Sign in as an administrator to the Google Admin console.
+2. Navigate to _Security → Access and data control → API controls_
+3. Click on _Manage App Access_
+4. Click on _Configure new app_
+5. Add Cyberduck
+6. Set it to _Trusted_ and _API Block Exempt_
 :::
 
 ### Authentication
