@@ -61,7 +61,7 @@ Alternatively, you can reset the OAuth token by deleting the respective entries 
 ::::::{tabs}
 :::::{group-tab} macOS
 
-Remove the entries lated to `accounts.google.com` out of *Keychain Access.app*.
+Remove the entries related to `accounts.google.com` out of *Keychain Access.app*.
 
 :::::
 :::::{group-tab} Windows
