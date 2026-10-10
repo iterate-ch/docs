@@ -9,6 +9,9 @@ providers
 ../../tutorials/sftp_publickeyauth_1password
 ../../tutorials/sftp_publickeyauth_bitwarden
 ../../tutorials/sftp_publickeyauth_yubikey
+../../tutorials/sftp_publickeyauth_securitykey
+../../tutorials/sftp_publickeyauth_pkcs11
+../../tutorials/sftp_kerberos
 :::
 
 :::{image} ../_images/ftp.png
@@ -32,7 +35,7 @@ If you have access to a server using a secure shell ([SSH2](http://en.wikipedia.
 
 #### Public Key Fingerprints
 
-Public key fingerprints are checked against and written to `~/ssh/known_hosts` when accepted. This does not apply to the Mac App Store version which does store key fingerprints in the preferences.
+Public key fingerprints are checked against and written to `~/.ssh/known_hosts` when accepted. This does not apply to the Mac App Store version which does store key fingerprints in the preferences.
 
 #### Configuration File
 
@@ -41,10 +44,15 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *IdentityFile* for public key authentication.
 - *IdentityAgent* for public key authentication. Specifies the UNIX-domain socket used to communicate with the authentication agent.
 - *HostName* aliases.
+- *Port* to connect to.
 - *User* preference for login credentials.
 - *ProxyJump* to connect via SSH tunnel through bastion server.
-- *PreferredAuthentications* to limit authentication methods tried to login.
-- *IdentitiesOnly*. Only try explicitly set private keys to authenticate but not all identities found in SSH agent. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
+- *ProxyCommand* to connect through the standard input and output of a command.
+- *PreferredAuthentications* to set the order of authentication methods tried to login. Methods not listed are still tried afterwards.
+- *IdentitiesOnly*. Only try the private key set with *IdentityFile* in `~/.ssh/config` to authenticate but not all identities found in SSH agent. The key selected in the bookmark does not apply. With no *IdentityFile* set, no identity from the SSH agent is offered. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
+- *Include* to read other configuration files and *Match* blocks with the criteria `host` and `user`.
+- *SecurityKeyProvider* for the middleware library signing with a [FIDO2 security key](../../tutorials/sftp_publickeyauth_securitykey.md) for `sk-ecdsa-sha2-nistp256@openssh.com` and `sk-ssh-ed25519@openssh.com` keys.
+- *PKCS11Provider* for the module reading keys from a [smartcard](../../tutorials/sftp_publickeyauth_pkcs11.md).
 - A [bookmark](../../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
 
 Example `~/.ssh/config` configuration:
@@ -97,11 +105,11 @@ Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth.md) to
 
 #### PuTTY Key Format Interoperability
 
-PuTTY private keys (`.ppk`) are supported for `rsa` key types. `ed25519` is not supported.
+PuTTY private keys (`.ppk`) are supported for `rsa`, `dsa`, `ecdsa` and `ed25519` key types.
 
 #### OpenSSH Key Format Interoperability
 
-OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is only supported for `ecdsa` and `ed25519`.
+OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PEM` format) are supported. The new OpenSSH format (`openssh-key-v1`) is supported for `rsa`, `ecdsa` and `ed25519` but not for `dsa`.
 
 ##### OpenSSH User Certificate Authentication
 
@@ -112,8 +120,44 @@ OpenSSH private keys of type `rsa`, `dsa`, `ecdsa` and `ed25519` (in OpenSSL `PE
 
 Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://man.openbsd.org/sshd_config#TrustedUserCAKeys), refer to your software vendor for configuration. To configure authentication with a User CA signed private key, configure the private key as described in [Configure Public Key Authentication](#public-key-authentication) step 3. The signed public key file _must_ reside next to the private key file, suffixed `-cert.pub` or `.pub`. The [`CertificateFile`](https://man.openbsd.org/ssh_config#CertificateFile) configuration directive in `~/.ssh/config` is not supported. Pay attention to the server configuration and [`PubkeyAcceptedAlgorithms`](https://man.openbsd.org/sshd_config#PubkeyAcceptedAlgorithms) specifically which determines the allowed private key algorithms to authenticate with.
 
+#### Security Key (FIDO2) Authentication
+
+:::{important}
+* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+:::
+
+Keys of type `sk-ecdsa-sha2-nistp256@openssh.com` and `sk-ssh-ed25519@openssh.com` created with `ssh-keygen -t ecdsa-sk` respectively `ssh-keygen -t ed25519-sk` are supported. The private key of such a key never leaves the authenticator, which is either the Secure Enclave of a Mac unlocked with _Touch ID_ or a hardware token such as a _YubiKey_ touched to confirm. The key file selected in the [Bookmark](../../cyberduck/bookmarks.md) holds the credential handle only.
+
+Signing a login is delegated to the middleware library of the authenticator, set with the [`SecurityKeyProvider`](#configuration-file) directive in `~/.ssh/config` or the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.securitykey.provider`. It defaults to `/usr/lib/ssh-keychain.dylib` for keys in the Secure Enclave on macOS. This library is not available on other platforms, where the directive or option must be set to the middleware library of the authenticator. Alternatively add the key to an [SSH agent](#public-key-authentication-using-ssh-agent) which then prompts to confirm the login.
+
+:::{important}
+The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk-*` key types and ignore the entry in `authorized_keys`.
+:::
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth_securitykey.md) to create a key in the Secure Enclave or on a hardware token and connect with it.
+:::
+
+#### Smartcard (PKCS#11) Authentication
+
+:::{important}
+* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+:::
+
+Private keys kept on a smartcard are read with the _PKCS#11_ module of the card, the equivalent of `ssh -I`. Every key on the card with a matching certificate is offered to the server in turn and the PIN is prompted for when required by the card. A key on a card without a certificate is not found.
+
+Set the module with the [`PKCS11Provider`](#configuration-file) directive in `~/.ssh/config` or the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.pkcs11.library`. Set an absolute path to the module. On macOS, the file name `opensc-pkcs11.so` of the _OpenSC_ module bundled with the application is accepted as well. Set the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.pkcs11.enable` to `false` to disable authentication with a smartcard.
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth_pkcs11.md) to authenticate with a key on a smartcard.
+:::
+
 #### Public Key Authentication Using SSH Agent
-When connecting to a SSH server, Cyberduck will lookup matching private keys from the SSH agent when attempting to authenticate with the server if no password is available and no explicit private key to use is configured in the bookmark.
+When connecting to a SSH server, Cyberduck will try the identities from the SSH agent to authenticate with the server. When a password is saved for the bookmark, password authentication is attempted first. When a private or public key is selected in the bookmark, only the identity in the agent matching this key is offered. If no identity matches, all identities are offered. Disable the use of the SSH agent with the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.agent.enable=false`.
 
 :::{admonition} Mac App Store
 :class: attention
@@ -174,6 +218,22 @@ Host myhostname
 ```
 
 Alternatively you can select the public key file in the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark) configuration.
+
+### Kerberos (GSSAPI) Authentication
+
+:::{important}
+* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+:::
+
+Authentication with the method `gssapi-with-mic` using a _Kerberos_ ticket obtained with `kinit` is supported. The method is attempted after public key authentication and before prompting for a password when no password is saved for the bookmark. Without a valid ticket the login continues with the next authentication method. Connect using the fully qualified hostname matching the service principal of the server.
+
+The Kerberos configuration is read from the default location such as `/etc/krb5.conf`. Use the [hidden configuration options](../../tutorials/hidden_properties.md) `java.security.krb5.conf` to set a different configuration file or `java.security.krb5.realm` and `java.security.krb5.kdc` to set the realm and KDC without a configuration file.
+
+:::{admonition} Tutorial
+:class: tip
+
+Follow the [step-by-step instructions](../../tutorials/sftp_kerberos.md) to authenticate with a Kerberos ticket.
+:::
 
 ### One-Time Passcodes (2FA)
 
@@ -254,7 +314,7 @@ Use *View → Customize Toolbar...* to add the *Terminal.app* toolbar icon to yo
 You can change the SSH command using the [hidden configuration option](../../tutorials/hidden_properties.md)
 
 ```
-terminal.command.ssh=\"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\\\"\"
+terminal.command.ssh=\"ssh\ -t\ {0}\ {1}@{2}\ -p\ {3}\ \\\"cd\ {4}\ \&\&\ exec\ \\\\\$SHELL\ -l\\\"\"
 ```
 
 where
@@ -265,7 +325,7 @@ where
 - {3} is the port number of the remote host
 - {4} is the current working directory in the browser
 
-Because of all the escaping of characters, it might be easier to edit the key using *Property List Editor* if you have the developer tools installed. You can then set the string for the key `terminal.command.ssh to ssh -t {0} {1}@{2} -p {3} "cd {4} && exec \$SHELL"`. Test the string in *Terminal.app* first if it is valid.
+Because of all the escaping of characters, it might be easier to edit the key using *Property List Editor* if you have the developer tools installed. You can then set the string for the key `terminal.command.ssh` to `ssh -t {0} {1}@{2} -p {3} "cd {4} && exec \$SHELL -l"`. Test the string in *Terminal.app* first if it is valid.
 
 **Using [iTerm2](https://www.iterm2.com/)**
 
@@ -364,11 +424,11 @@ You can set Cyberduck or a third-party application as the default application (p
 
 ### Key Exchange
 
-`diffie-hellman-group1-sha1`, `diffie-hellman-group14-sha1`, `diffie-hellman-group14-sha256`, `diffie-hellman-group15-sha512`, `diffie-hellman-group16-sha512`, `diffie-hellman-group17-sha512`, `diffie-hellman-group18-sha512 diffie-hellman-group-exchange-sha1`, `diffie-hellman-group-exchange-sha256`, `ecdh-sha2-nistp256`, `ecdh-sha2-nistp384`, `ecdh-sha2-nistp521`, `curve25519-sha256@libssh.org`
+`curve25519-sha256`, `curve25519-sha256@libssh.org`, `diffie-hellman-group-exchange-sha256`, `ecdh-sha2-nistp521`, `ecdh-sha2-nistp384`, `ecdh-sha2-nistp256`, `diffie-hellman-group-exchange-sha1`, `diffie-hellman-group1-sha1`, `diffie-hellman-group14-sha1`, `diffie-hellman-group14-sha256`, `diffie-hellman-group15-sha512`, `diffie-hellman-group16-sha512`, `diffie-hellman-group17-sha512`, `diffie-hellman-group18-sha512`, `diffie-hellman-group14-sha256@ssh.com`, `diffie-hellman-group15-sha256`, `diffie-hellman-group15-sha256@ssh.com`, `diffie-hellman-group15-sha384@ssh.com`, `diffie-hellman-group16-sha256`, `diffie-hellman-group16-sha384@ssh.com`, `diffie-hellman-group16-sha512@ssh.com`, `diffie-hellman-group18-sha512@ssh.com`
 
 ### SSH Key Types
 
-`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`, `rsa-sha2-256`, `rsa-sha2-512`
+`ssh-rsa`, `ssh-dss`, `ecdsa-sha2-nistp256`, `ecdsa-sha2-nistp384`, `ecdsa-sha2-nistp521`, `ssh-ed25519`, `rsa-sha2-256`, `rsa-sha2-512`, `sk-ecdsa-sha2-nistp256@openssh.com`, `sk-ssh-ed25519@openssh.com`
 
 ### SSH Certificate Key Types
 
@@ -380,7 +440,7 @@ Compression with `zlib` and `zlib@openssh.com` is supported.
 
 ### Private Key Files
 
-`pkcs5`, `pkcs8`, `openssh-key-v1`
+`pkcs5`, `pkcs8`, `openssh-key-v1`, PuTTY `.ppk`
 
 ## Incompatibilities
 
@@ -399,7 +459,7 @@ Running an SSH agent with many added identities can lead to the server error _To
 
 Possible remedies using configuration in [OpenSSH configuration file](#openssh-configuration-interoperability):
 - [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try to authenticate with explicitly set private key instead of all identities retrieved from SSH agent.
-- Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to disable public key authentication for example.
+- Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to try another method such as `password` before public key authentication. Methods not listed are still tried afterwards.
 
 ### Illegal SFTP Packet Length: `Invalid packet: indicated length 1114795883 too large`
 
