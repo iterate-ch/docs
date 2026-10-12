@@ -124,7 +124,6 @@ It is not possible to create a top level folder in Mountain Duck or Cyberduck. I
 
 | Folder Name |
 |-------------|
-| Default     |
 | Drives      |
 | Groups      |
 | Sites       |

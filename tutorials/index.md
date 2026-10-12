@@ -20,6 +20,7 @@ sftp_publickeyauth_pkcs11
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
 sftp_publickeyauth_yubikey
+sftp_publickeyauth_pageant
 sftp_kerberos
 sftp_azure_blob_storage
 cli_github_action
@@ -74,6 +75,9 @@ Authenticate with SSH private key saved in Bitwarden.
 
 ### [Use YubiKey](sftp_publickeyauth_yubikey.md)
 Authenticate with SSH private key saved on YubiKey.
+
+### [Configure Pageant](sftp_publickeyauth_pageant.md)
+Authenticate with SSH private key loaded in Pageant.
 
 ## [Configure Kerberos Authentication for SFTP](sftp_kerberos.md)
 Authenticate with a Kerberos ticket obtained with `kinit` using GSSAPI.

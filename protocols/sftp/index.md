@@ -9,6 +9,7 @@ providers
 ../../tutorials/sftp_publickeyauth_1password
 ../../tutorials/sftp_publickeyauth_bitwarden
 ../../tutorials/sftp_publickeyauth_yubikey
+../../tutorials/sftp_publickeyauth_pageant
 ../../tutorials/sftp_publickeyauth_securitykey
 ../../tutorials/sftp_publickeyauth_pkcs11
 ../../tutorials/sftp_kerberos
@@ -191,14 +192,10 @@ Host myhostname
 	IdentityAgent ~/.bitwarden-ssh-agent.sock
 ```
 
-
 :::
 :::{group-tab} Windows
 
-The following agents are supported:
- * [Pageant](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Refer to [How To Use Pageant to Streamline SSH Key Authentication with PuTTY](https://www.digitalocean.com/community/tutorials/how-to-use-pageant-to-streamline-ssh-key-authentication-with-putty).
- * OpenSSH for Windows using the pipe (`\\.\pipe\openssh-ssh-agent`) by default. Use `IdentityAgent` to set a custom socket path for any other compatible agent if needed. 
- * [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck)
+SSH agents that provide a named pipe are supported, such as the OpenSSH agent, the [1Password SSH agent](https://developer.1password.com/docs/ssh/agent/compatibility/#cyberduck) and [Pageant](../../tutorials/sftp_publickeyauth_pageant.md). The OpenSSH agent pipe (`\\.\pipe\openssh-ssh-agent`) is used by default. Use `IdentityAgent` to set a different pipe if needed.
 
 :::
 ::::
