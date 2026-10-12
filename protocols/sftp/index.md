@@ -12,6 +12,7 @@ providers
 ../../tutorials/sftp_publickeyauth_securitykey
 ../../tutorials/sftp_publickeyauth_pkcs11
 ../../tutorials/sftp_kerberos
+../../tutorials/sftp_azure_blob_storage
 :::
 
 :::{image} ../_images/ftp.png
@@ -228,6 +229,8 @@ Alternatively you can select the public key file in the [bookmark](../../cyberdu
 Authentication with the method `gssapi-with-mic` using a _Kerberos_ ticket obtained with `kinit` is supported. The method is attempted after public key authentication and before prompting for a password when no password is saved for the bookmark. Without a valid ticket the login continues with the next authentication method. Connect using the fully qualified hostname matching the service principal of the server.
 
 The Kerberos configuration is read from the default location such as `/etc/krb5.conf`. Use the [hidden configuration options](../../tutorials/hidden_properties.md) `java.security.krb5.conf` to set a different configuration file or `java.security.krb5.realm` and `java.security.krb5.kdc` to set the realm and KDC without a configuration file.
+
+Set the realm of the server in _Kerberos Realm_ of the [bookmark](../../cyberduck/bookmarks.md#bookmark-options) when no default realm is configured or the server belongs to a different realm.
 
 :::{admonition} Tutorial
 :class: tip

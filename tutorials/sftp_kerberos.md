@@ -14,7 +14,8 @@ Authentication with Kerberos is attempted after public key authentication and be
 
 - The server running OpenSSH is configured with `GSSAPIAuthentication yes` in `sshd_config` and has a keytab with the service principal `host/server.example.com@EXAMPLE.COM` for its fully qualified hostname. Refer to your administrator.
 - Your principal such as `user@EXAMPLE.COM` is allowed to log in to the account on the server. By default the principal `user@EXAMPLE.COM` maps to the account `user`. Additional principals are listed in `~/.k5login` of the account on the server.
-- The Kerberos configuration with the default realm and the Key Distribution Center (KDC) of your organization is found in `/etc/krb5.conf` or can be looked up in DNS.
+- The Kerberos configuration with the default realm and the Key Distribution Center (KDC) of your organization is found in `/etc/krb5.conf` or can be looked up in DNS. Alternatively set the [realm in the bookmark](#kerberos-realm-per-bookmark).
+- On Windows, [MIT Kerberos for Windows](https://web.mit.edu/kerberos/dist/) is installed to obtain the ticket.
 
 ## Setup
 
@@ -48,10 +49,49 @@ Authentication with Kerberos is attempted after public key authentication and be
    The hostname must match the service principal in the keytab of the server. Connecting using an IP address or a short hostname may fail when it cannot be resolved to the fully qualified name.
    :::
 
-5. Connect to the server. No prompt is displayed when the ticket is accepted.
+5. Optionally enter the realm such as `EXAMPLE.COM` in _Kerberos Realm_ in the _More Options_ tab of the bookmark when no default realm is configured or the server belongs to a [different realm](#kerberos-realm-per-bookmark).
+
+6. Connect to the server. No prompt is displayed when the ticket is accepted.
+
+::::
+::::{group-tab} Windows
+
+The ticket of _MIT Kerberos for Windows_ is kept in memory by its credentials cache server and cannot be read directly.The ticket granting ticket is copied to a temporary credentials cache file for the login using the `klist.exe` and `kcpytkt.exe` tools of MIT Kerberos for Windows. The temporary file is deleted afterwards.
+
+1. Install [MIT Kerberos for Windows](https://web.mit.edu/kerberos/dist/). The tools are looked up in `%ProgramFiles%\MIT\Kerberos\bin`.
+
+2. Obtain a ticket for your principal with _MIT Kerberos Ticket Manager_ or from the command line. Enter the password of your Kerberos account when prompted.
+   ```
+   "%ProgramFiles%\MIT\Kerberos\bin\kinit.exe" user@EXAMPLE.COM
+   ```
+
+3. Verify a ticket for the realm is listed and has not expired.
+   ```
+   "%ProgramFiles%\MIT\Kerberos\bin\klist.exe"
+   ```
+
+4. Add a new [Bookmark](../cyberduck/bookmarks.md). Enter the fully qualified hostname `server.example.com` in _Server_ and your account in _Username_. You do **not** need to set a value for _Password_ or select a _SSH Private Key_.
+
+   :::{warning}
+   The hostname must match the service principal in the keytab of the server. Connecting using an IP address or a short hostname may fail when it cannot be resolved to the fully qualified name.
+   :::
+
+5. Check _Use MIT Kerberos_ in the bookmark.
+
+6. Enter the realm such as `EXAMPLE.COM` in _Kerberos Realm_. This is required unless the [Kerberos configuration](#kerberos-configuration) is found. The configuration `krb5.ini` of MIT Kerberos for Windows in `%ProgramData%\MIT\Kerberos5` is not read.
+
+7. Connect to the server. No prompt is displayed when the ticket is accepted.
 
 ::::
 :::::
+
+## Kerberos Realm per Bookmark
+
+Set the realm of the server such as `EXAMPLE.COM` in _Kerberos Realm_ of the [bookmark](../cyberduck/bookmarks.md#bookmark-options) when no default realm is configured on your computer or the server belongs to a different realm than the default realm. The field is found in the _More Options_ tab on macOS.
+
+For a connection with a realm set in the bookmark, a temporary Kerberos configuration with this default realm replaces any [configuration file](#kerberos-configuration). The KDC of the realm is looked up from DNS SRV records unless set with the hidden configuration option `java.security.krb5.kdc`. Other settings from your configuration file such as `[domain_realm]` mappings do not apply to this connection.
+
+The realm is saved in the bookmark as the property `ssh.authentication.gssapi.realm` and can also be set in a [`.duck` bookmark file](hidden_properties.md#in-duck-bookmark-files).
 
 ## Kerberos Configuration
 
@@ -71,7 +111,7 @@ The Kerberos configuration is read from `/etc/krb5.conf` or on macOS from `~/Lib
 
 Omit the `[realms]` section and add `dns_lookup_kdc = true` to `[libdefaults]` to look up the KDC from `_kerberos._tcp` and `_kerberos._udp` DNS SRV records of the realm instead.
 
-The following [hidden configuration options](hidden_properties.md) apply to all connections.
+The following [hidden configuration options](hidden_properties.md) apply to all connections. Options marked as per bookmark can be set for a single bookmark as well.
 
 | Option                                  | Description                                                                                                                                                                           |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,6 +119,9 @@ The following [hidden configuration options](hidden_properties.md) apply to all 
 | `java.security.krb5.realm`              | Default realm such as `EXAMPLE.COM` overriding the configuration file. Must be set together with `java.security.krb5.kdc`.                                                            |
 | `java.security.krb5.kdc`                | Hostname of the KDC for the default realm overriding the configuration file. Must be set together with `java.security.krb5.realm`. Separate multiple KDCs with `:`.                  |
 | `ssh.authentication.gssapi.ticketcache` | Path to a credentials cache file to read the ticket from instead of the default cache. Obtain a ticket written to the file with `kinit -c /path/to/file user@EXAMPLE.COM`.            |
+| `ssh.authentication.gssapi.realm`       | Per bookmark. Default realm for the connection set with _Kerberos Realm_ in the bookmark. Refer to [Kerberos Realm per Bookmark](#kerberos-realm-per-bookmark).                     |
+| `ssh.authentication.gssapi.mit`         | Per bookmark. Windows only. Set to `true` to copy the ticket from the credentials cache of MIT Kerberos for Windows. Set with _Use MIT Kerberos_ in the bookmark.                    |
+| `ssh.authentication.gssapi.mit.path`    | Windows only. Folder with `klist.exe` and `kcpytkt.exe` of MIT Kerberos for Windows when not installed in `%ProgramFiles%\MIT\Kerberos\bin`.                                       |
 
 Example to set the realm and KDC for Cyberduck on macOS.
 ```
@@ -89,6 +132,10 @@ defaults write ch.sudo.cyberduck java.security.krb5.kdc kdc.example.com
 :::{note}
 A KDC set with `java.security.krb5.kdc` is always contacted on the default port `88`. Use a configuration file with `kdc = kdc.example.com:port` for a KDC listening on a different port.
 :::
+
+## Connection Profiles
+
+The _Kerberos Realm_ field is shown in the bookmark for SFTP connections. Hide it for a [connection profile](../protocols/profiles/index.md) based on SFTP by setting `Kerberos Configurable` to `false`.
 
 ## Require Public Key and Kerberos Authentication
 
@@ -106,6 +153,10 @@ The message _Server not found in Kerberos database_ printed by `ssh -v` indicate
 
 :::{warning}
 Authentication fails when the clock of your computer differs by more than five minutes from the KDC or the server. Enable _Set time and date automatically_ in _System Settings → General → Date & Time_.
+:::
+
+:::{warning}
+On Windows, when you are prompted for a password, verify `klist.exe` of MIT Kerberos for Windows lists a ticket granting ticket `krbtgt/EXAMPLE.COM@EXAMPLE.COM` for your realm. When MIT Kerberos for Windows is installed in a different folder, set the hidden configuration option `ssh.authentication.gssapi.mit.path` to the folder containing `klist.exe` and `kcpytkt.exe`.
 :::
 
 :::{note}
