@@ -20,6 +20,7 @@ sftp_publickeyauth
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
 sftp_publickeyauth_yubikey
+sftp_azure_blob_storage
 cli_github_action
 :::
 
@@ -72,6 +73,9 @@ Authenticate with SSH private key saved in Bitwarden.
 
 ### [Use YubiKey](sftp_publickeyauth_yubikey.md)
 Authenticate with SSH private key saved on YubiKey.
+
+## [Connect to Azure Blob Storage with SFTP](sftp_azure_blob_storage.md)
+Authenticate with a local user using a password or private key, or with an SSH certificate issued by Microsoft Entra ID.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions
