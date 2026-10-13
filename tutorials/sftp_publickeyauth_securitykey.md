@@ -10,6 +10,10 @@ Configure Public Key Authentication for SFTP using a FIDO2 Security Key
 
 The key file in `~/.ssh` holds a reference to the credential on the authenticator but no private key. Signing a login is therefore delegated either to a _security key provider_ library talking to the authenticator or to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) holding the key.
 
+:::{note}
+A security key provider library is configured by default on macOS only, serving keys in the Secure Enclave. On Windows and Linux OpenSSH talks to a token with built-in USB HID support instead of a library, which Cyberduck cannot load. Leave the key to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) there, or set `SecurityKeyProvider` to a middleware library for your token.
+:::
+
 :::{important}
 The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk-*` key types and ignore the entry in `authorized_keys`. Verify the version of the server with `ssh -v user@remotehost` and look for the line `remote software version`.
 :::
@@ -67,7 +71,7 @@ The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk
    :::
 
    :::{note}
-   If `ssh-keygen` reports it cannot find a library to use the security key, install [libfido2](https://github.com/Yubico/libfido2) with `brew install libfido2` and repeat the command with the option `-w /opt/homebrew/lib/libsk-libfido2.dylib`.
+   `ssh-keygen` talks to the token with the USB HID support built into OpenSSH. No middleware library is required to create the key. Pass `-w <library>` only to use a middleware library of your own instead.
    :::
 
 2. Add the public key to the `authorized_keys` in your `~/.ssh` directory on the server running OpenSSH.
@@ -75,13 +79,17 @@ The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk
    ssh-copy-id -fi ~/.ssh/id_ed25519_sk.pub user@remotehost
    ```
 
-3. Refer to the middleware library of the token in your OpenSSH configuration file `~/.ssh/config` when it is not the default `/usr/lib/ssh-keychain.dylib` used for keys in the Secure Enclave.
+3. Refer to the middleware library for the token in your OpenSSH configuration file `~/.ssh/config`. The default `/usr/lib/ssh-keychain.dylib` set on macOS serves keys in the Secure Enclave only.
    ```
    Host *
-       SecurityKeyProvider /opt/homebrew/lib/libsk-libfido2.dylib
+       SecurityKeyProvider /path/to/middleware.so
    ```
 
-   This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck. Alternatively set the [hidden configuration option](hidden_properties.md) `ssh.authentication.securitykey.provider` to the path of the library.
+   This [configuration](https://docs.cyberduck.io/protocols/sftp/#openssh-configuration-interoperability) directive is supported by Cyberduck and Mountain Duck. A value beginning with `$` is read from the environment variable of that name. Alternatively set the [hidden configuration option](hidden_properties.md) `ssh.authentication.securitykey.provider` to the path of the library.
+
+   :::{important}
+   The USB HID support built into OpenSSH is not a library and cannot be loaded. Unless the token comes with a middleware library implementing the OpenSSH security key API, leave the security key to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) instead, which works with any token supported by OpenSSH.
+   :::
 
 4. In the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) window, in _SSH Private Key_ select `id_ed25519_sk` in your `~/.ssh` directory.
 
@@ -121,7 +129,7 @@ Other SSH agents manage keys of their own instead of a credential on a security 
 ## Troubleshooting
 
 :::{warning}
-When the connection fails with the message _Add the security key … to the SSH authentication agent_, the middleware library of the authenticator could not be loaded. Verify the path set with `SecurityKeyProvider` or add the key to an SSH agent instead.
+When the connection fails with the message _No security key provider configured_, no middleware library is set for your platform. A library is configured by default on macOS only. Set `SecurityKeyProvider` in `~/.ssh/config` or add the key to an SSH agent instead. A failure naming the library instead means it could not be loaded, in which case verify the path.
 :::
 
 :::{warning}
