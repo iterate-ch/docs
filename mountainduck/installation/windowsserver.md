@@ -70,10 +70,47 @@ Do not reset the setting after the installation. If `AllowAllTrustedApps` is set
 2. Verify [sideloading](#sideloading) and enable it if necessary (mandatory on Server 2019).
 3. **Sign out all other users from the server.** Provisioning fails while other users are signed in — the most common cause of failure on terminal servers.
 4. Download the *MSIX Installer Package* from the official download page (do not use the `.exe` installer).
+5. Verify that the [package signature](#machine-wide-installation) is trusted on the server.
 
 ### Machine-wide Installation
 
-In an elevated PowerShell:
+The MSIX package is signed with an Authenticode certificate. On fresh Windows Server installations (observed on Server 2022) the root certificate of the signature can be missing from the *Trusted Root Certification Authorities* store. Windows retrieves missing root certificates on demand only - installations run as *SYSTEM* (e.g. `psexec -s`) or by endpoint management agents do not trigger this, and provisioning fails with error [`0x800B0109`](https://learn.microsoft.com/en-us/windows/msix/msix-troubleshooting-guide#certificate-not-trusted-0x800b0109). Verify the signature before provisioning.
+
+**Systems with internet access:** Query the signature once in an elevated PowerShell. This retrieves the root certificate from *Windows Update*; the expected `Status` is `Valid`:
+
+```
+Get-AuthenticodeSignature -FilePath "Mountain Duck_x.x.x.xxxxx_x64.msix"
+```
+
+**Air-gapped systems:** Without access to *Windows Update*, trust the signer and timestamp certificates of the package in the *Trusted People* store of the local machine. Both certificates are required - with only the signer certificate trusted, the status remains `UnknownError` and provisioning fails. In an elevated PowerShell:
+
+```
+$Signature = Get-AuthenticodeSignature -FilePath "Mountain Duck_x.x.x.xxxxx_x64.msix"
+if ($Signature.Status -eq "Valid") {
+  Write-Host "Package signature is trusted"
+} elseif ($Signature.Status -eq "UnknownError" -and $Signature.SignerCertificate.Subject -eq "CN=iterate GmbH, O=iterate GmbH, S=Bern, C=CH") {
+  Write-Host "Root certificate not available, adding signer and timestamp certificates to Trusted People"
+  foreach ($Certificate in $Signature.SignerCertificate, $Signature.TimeStamperCertificate) {
+    $CertPath = "$env:Temp\$($Certificate.Thumbprint).cer"
+    $Certificate | Export-Certificate -FilePath $CertPath
+    Import-Certificate -FilePath $CertPath -CertStoreLocation Cert:\LocalMachine\TrustedPeople
+  }
+} else {
+  throw "Package signature invalid: $($Signature.Status) - do not install"
+}
+```
+
+Run `Get-AuthenticodeSignature` again - the status must now be `Valid`.
+
+:::{warning}
+Only trust a certificate issued to *iterate GmbH* (verify with `$Signature.SignerCertificate.Subject`). Never import the certificate if the status is `HashMismatch` or `NotSigned` - the package has been modified or is not the original. Download the package from the official download page only.
+:::
+
+:::{note}
+In managed environments (GPO/Intune), distribute the root certificate to *Trusted Root Certification Authorities* centrally instead. For disconnected systems, refer to [Configure trusted roots and disallowed certificates](https://learn.microsoft.com/windows-server/identity/ad-cs/configure-trusted-roots-disallowed-certificates) for the official guidance on distributing the trusted root list. Repeat the step above when a new version is signed with a renewed signing or timestamp certificate.
+:::
+
+Provision the package in an elevated PowerShell:
 
 ```
 Add-AppxProvisionedPackage -Online -SkipLicense -LogPath "$env:Temp\MountainDuck-msix.log" -PackagePath "Mountain Duck_x.x.x.xxxxx_x64.msix"
@@ -119,6 +156,7 @@ Sign in with a test user, wait for the app registration to complete, and verify 
 - In Citrix environments, update the gold image and redeploy.
 - When upgrading from 4.x to 5.x, the automatic updater also installs the support package without asking. To control this (e.g. for *Integrated* connect mode without the driver), uninstall 4.x and install 5.x manually using the MSIX package.
 - On *Windows Server 2019*, always use version *5.3.1* or later.
+- On air-gapped servers, verify the [package signature](#machine-wide-installation) of each new version before provisioning. Renewed signing or timestamp certificates must be trusted again.
 
 ## Recommendations
 
@@ -134,6 +172,8 @@ Sign in with a test user, wait for the app registration to complete, and verify 
 | --- | --- |
 | Installer briefly starts and exits without a message | The `.exe` bootstrapper fails at the MSIX deployment. Install the MSIX directly using [`Add-AppxProvisionedPackage`](#machine-wide-installation). |
 | `Add-AppxProvisionedPackage` fails | Other users are signed in to the server — sign out all sessions and retry. |
+| `Add-AppxProvisionedPackage` fails with error `0x800B0109` | The root certificate of the package signature is missing, typically on fresh installations or when installing as *SYSTEM*. [Verify the package signature](#machine-wide-installation) and trust the signer and timestamp certificates on air-gapped systems. |
+| `Add-AppxProvisionedPackage` fails with *Package could not be opened*; `Get-AuthenticodeSignature` still returns `UnknownError` | Only the signer certificate is trusted, the timestamp certificate is missing. Trust both certificates as described in [Machine-wide Installation](#machine-wide-installation). |
 | App only launches for the installing administrator; listed with a size of 0 for other users | `AllowAllTrustedApps` was reset after the installation or is overridden by a policy. Set the value permanently to `1`. |
 | App does not start automatically after signing out and back in | Verify the autostart of the app in desktop sessions; in special cases launch it from a logon script: `start shell:AppsFolder\<PackageFamilyName>!App` |
 | Error code `0x24C` when loading the file system driver | Uninstall the client, reboot the server, and reinstall. |
