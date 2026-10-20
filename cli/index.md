@@ -535,7 +535,13 @@ variables in your shell.
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment
 variables in your shell.
 
+In Command Prompt (`cmd.exe`), the variable stays set for the rest of the session. Clear it with `set "<property>="`.
+
 `set "<property>=<value>" & duck`
+
+In PowerShell, use the `env:` drive. Wrap property names containing dots in braces.
+
+`${env:<property>} = "<value>"; duck`
 
 :::
 :::{group-tab} Linux
