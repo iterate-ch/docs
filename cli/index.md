@@ -327,6 +327,12 @@ On Linux, credentials are stored in plain text in the [application support direc
 When connecting with SFTP you can give a file path to a private key with `--identity` for use with public key
 authentication.
 
+#### Client Certificate
+
+When the server requests a TLS client certificate, select it from the system certificate store with
+`--certificate <alias>`. Without the option, the first certificate matching the server's request is used. The
+certificate is only used for the TLS handshake. Login still requires a username, for example with `--username`.
+
 #### Tenant Name
 
 When connecting with `OpenStack Swift` you can set the tenant name (*OpenStack Identity Service, Keystone 2.0*) or
