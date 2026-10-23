@@ -45,15 +45,15 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop
 :::::{tabs}
 ::::{group-tab} Nextcloud
 
-Select the connection profile `Nextcloud` for _Protocol_ bundled by default.
+Select the connection profile `Nextcloud` for _Protocol_ bundled by default. Authenticate with app tokens or Basic authentication enabled on the server.
 
 ::::
 ::::{group-tab} ownCloud
 
-Select the connection profile `ownCloud` for _Protocol_ bundled by default. 
+Select the connection profile `ownCloud` for _Protocol_ bundled by default. Authenticate with app tokens or Basic authentication enabled on the server.
 
 ::::
-::::{group-tab} OpenCloud
+::::{group-tab} OpenCloud with OpenID Connect
 
 Connecting to *OpenCloud* the default authentication scheme is OpenID Connect. For deployments using the built-in identity provider, use the ready-made connection profile with the OAuth client registered by default.
 
@@ -69,7 +69,7 @@ For deployments using Keycloak or Microsoft Entra ID as the identity provider, f
 :::
 
 ::::
-::::{group-tab} ownCloud Infinite Scale (oCIS)
+::::{group-tab} ownCloud Infinite Scale (oCIS) with OpenID Connect
 
 Connecting to *ownCloud Infinite Scale* the default authentication scheme is OpenID Connect. For deployments using the built-in identity provider, use the ready-made connection profile with the OAuth client registered by default.
 
