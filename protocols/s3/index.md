@@ -163,6 +163,30 @@ to the network._
 
 Refer to [Connect to S3 authenticating with AWS IAM Identity Center](../../tutorials/s3_identitycenter.md)
 
+### Connecting with AWS Console Sign-In
+
+:::{important}
+
+- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
+  :::
+
+Sign in to S3 using the same credentials you use for the AWS Management Console. The web browser opens to authorize
+access and temporary credentials are issued for your IAM user, federated identity or root user. No access keys must be
+created or stored. The identity must have a permissions
+policy granting access to S3, such as _AmazonS3FullAccess_ or _AmazonS3ReadOnlyAccess_.
+
+1. Add a new [Bookmark](../../cyberduck/bookmarks.md) and choose *Amazon S3 (AWS Console Sign-In)* in the protocol
+   dropdown.
+2. Choose _Connect_. The default web browser opens the AWS sign-in page. Sign in to AWS and approve the authorization
+   request.
+
+   :::{tip}
+   The web browser redirects to a local address to continue with the connection setup. You can close the web browser
+   window afterwards.
+   :::
+
+
 ### Connecting with OpenID Connect (OIDC) Identity Provider
 
 :::{important}
