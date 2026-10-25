@@ -6,8 +6,8 @@ Connect to Azure Blob Storage with SFTP
 :::{admonition} Authentication with an SSH certificate
 :class: important
 
-- Cyberduck [8.9.0](https://cyberduck.io/changelog/) or later required
-- Mountain Duck [4.16.0](https://mountainduck.io/changelog/) or later required
+- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [5.4.0](https://mountainduck.io/changelog/) or later required
 :::
 
 ## Prerequisites
