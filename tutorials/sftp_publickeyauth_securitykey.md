@@ -37,6 +37,10 @@ The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk
    cd ~/.ssh && ssh-keygen -w /usr/lib/ssh-keychain.dylib -K
    ```
 
+   :::{note}
+   When prompted with `Enter PIN for authenticator:`, press _Enter_ to leave the PIN empty. A key in the Secure Enclave has no PIN and is protected by _Touch ID_ instead. The prompt is shown by OpenSSH for any authenticator.
+   :::
+
    This writes `id_ecdsa_sk_rk` and `id_ecdsa_sk_rk.pub`. Repeat the command with `-K` whenever you need the files again on another Mac with access to the same identity.
 
 3. Add the public key to the `authorized_keys` in your `~/.ssh` directory on the server running OpenSSH.
