@@ -69,7 +69,7 @@ Connection profiles not bundled by default can be installed from *Preferences â†
 
 |                                                                                         | Allows access to                                                                      | Remarks                                        | Bundled by default |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------|:------------------:|
-| Microsoft OneDrive                                                                      | Your Drive and shared files	                                                          | Works with your Personal and Business OneDrive |        Yes         |
+| Microsoft OneDrive                                                                      | Your Drive                                                                            | Works with your Personal and Business OneDrive |        Yes         |
 | [Microsoft SharePoint](sharepoint.md)                                                   | All sites document libraries and accessible group document libraries                  |                                                |        Yes         |
 | [Microsoft SharePoint Site](sharepoint.md#microsoft-sharepoint-site-connection-profile) | A single SharePoint Site which isn't listed within the *Microsoft SharePoint profile* |                                                |         No         |
 | Microsoft 365 China                                                                     |                                                                                       |                                                |         No         |
@@ -113,9 +113,12 @@ The following virtual top level folders are displayed:
 | Folder Name |    Contents    |
 |-------------|:--------------:|
 | My Files    | Personal files |
-| Shared      | Shared folders |
 
 It is not possible to create additional top level folders or files.
+
+:::{note}
+The *Shared* folder listing files shared with you is no longer available. Microsoft deprecated the Graph `/sharedWithMe` endpoint, which stops returning results in November 2026. To access files shared with you, add them to *My Files* in OneDrive on the web or connect to the [SharePoint](sharepoint.md) site that hosts them.
+:::
 
 ### Search
 
