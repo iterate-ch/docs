@@ -53,6 +53,17 @@ The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk
    ssh -o SecurityKeyProvider=/usr/lib/ssh-keychain.dylib -i ~/.ssh/id_ecdsa_sk_rk user@remotehost
    ```
 
+   :::{tip}
+   Set the provider in `~/.ssh/config` to omit the `-o` option and the `-i` option.
+   ```
+   Host remotehost
+       User user
+       IdentityFile ~/.ssh/id_ecdsa_sk_rk
+       SecurityKeyProvider /usr/lib/ssh-keychain.dylib
+   ```
+   Cyberduck and Mountain Duck use `/usr/lib/ssh-keychain.dylib` by default on macOS and do not require this directive.
+   :::
+
 5. In the [Bookmark](../cyberduck/bookmarks.md) or [Connection](../cyberduck/connection.md) window, in _SSH Private Key_ select `id_ecdsa_sk_rk` in your `~/.ssh` directory. You do **not** need to set a value for _Password_.
 
 6. Connect to the server and confirm the prompt with _Touch ID_ to allow the Secure Enclave to sign the login.
