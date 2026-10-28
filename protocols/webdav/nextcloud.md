@@ -129,6 +129,27 @@ Create different [shares](../../cyberduck/share.md#nextcloud--owncloud) using th
 
 ![Nextcloud Download Everyone](_images/Nextcloud_Download_Everyone.png)
 
+### Storage Spaces
+
+Connecting to *ownCloud Infinite Scale* or *OpenCloud*, the root folder lists virtual folders for the storage spaces available to your account:
+
+- *Personal*. Your personal space. Not available to users with the role *User Light*.
+- *Spaces*. Project spaces you are a member of, listed by name. Project spaces with clashing names are ignored.
+- *Shares*. Files and folders shared with you by other users.
+
+A bookmark with a default path opens relative to *Personal*. Quota is reported for the personal space.
+
+:::{note}
+The virtual folders cannot be renamed or moved. Server side move is not supported between spaces.
+:::
+
+To disable the display of spaces and connect to the WebDAV root as before, set the [hidden configuration option](../../tutorials/hidden_properties.md) `owncloud.spaces.enable` to `false`.
+
+:::{note}
+* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [5.4.0](https://mountainduck.io/changelog/) or later required
+:::
+
 ### Resumable Uploads
 
 Connecting to *ownCloud Infinite Scale*, interrupted uploads can be resumed at any time.
