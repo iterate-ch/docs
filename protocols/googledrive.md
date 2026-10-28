@@ -94,6 +94,10 @@ You can register a [custom OAuth 2.0 client ID](profiles/google_client_id.md) wi
 
 ## Cyberduck CLI
 
+:::{warning}
+Cyberduck CLI does not support the OAuth 2.0 authorization flow for Google Drive. Google no longer supports OAuth client registrations with [loopback redirect URIs](https://developers.google.com/identity/protocols/oauth2/resources/loopback-migration) and the [device flow](https://developers.google.com/identity/protocols/oauth2/limited-input-device#allowedscopes) is restricted to a limited set of scopes. Connecting only works with OAuth tokens already saved in the *Windows Credential Manager* or *macOS Keychain* by the Cyberduck or Mountain Duck desktop application. Connect once with the desktop application first, then use the same `--username` with Cyberduck CLI.
+:::
+
 You can list the root contents of your Google Drive with [Cyberduck CLI](https://duck.sh/) using
 
 ```
