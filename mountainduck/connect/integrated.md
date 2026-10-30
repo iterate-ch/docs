@@ -144,6 +144,20 @@ Choose _Remove Download_ instead.
 Choose _Free up space_ instead.
 :::
 
+### Do Not Sync
+
+::::{admonition} macOS
+:class: note
+
+Choose _Do Not Sync_ in the context menu of a file or folder in _Finder.app_ to exclude the item from syncing.
+::::
+
+:::{warning}
+Selecting _Do Not Sync_ in _Finder.app_ **deletes the file or folder on the remote storage**. macOS keeps the item on your local disk, downloading its contents first if it was _Online Only_, but requests its deletion from the server or cloud storage. Do not use this option to free up disk space. Choose [_Remove Download_](#delete-on-local-disk) instead.
+:::
+
+The option is only available for files and folders where you have permission to delete the item on the remote storage.
+
 ## Cache
 
 Delete the sync cache for a bookmark on delete or changing the connect mode:
