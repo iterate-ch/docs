@@ -84,7 +84,7 @@ Choose the language of the user interface. It defaults to the system language wh
 
 ## Update
 
-An auto update feature will alert you when a new version is available and self update the application. Choose *Preferences → Update → Automatically check for updates*. You can also get the latest builds by a [manual download](https://update.cyberduck.io/nightly/).
+An auto update feature will alert you when a new version is available and self update the application. Choose *Preferences → Update → Automatically check for updates*. You can also get the latest builds by a [manual download](https://nightly.link/iterate-ch/cyberduck/workflows/snapshot/master).
 
 ### Snapshot Builds
 
