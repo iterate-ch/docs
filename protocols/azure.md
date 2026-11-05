@@ -40,8 +40,8 @@ Authenticate with your Microsoft Entra ID account instead of using an access key
 
 :::{admonition} Requirements
 :class: warning
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-* The signed-in user must be assigned a data role such as *Storage Blob Data Contributor* and the permission to read the account information. Follow the steps in [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](../tutorials/azure_entra_id_permissions.md).
+- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
 :::
 
 1. Choose the *Azure (Microsoft Entra ID)* connection profile when creating a bookmark. The profile is bundled by default and can also be installed from *Preferences → Profiles*.
@@ -51,7 +51,7 @@ Authenticate with your Microsoft Entra ID account instead of using an access key
 The OAuth tokens are saved in your keychain separately for every storage account, using the storage account name as the username of the bookmark.
 
 :::{note}
-Cyberduck uses the permission *Get Account Information* to detect whether the storage account has a hierarchical namespace enabled. Without it, connecting fails with `AuthorizationPermissionMismatch`. See [Troubleshooting](../tutorials/azure_entra_id_permissions.md#troubleshooting).
+Cyberduck uses the permission *Get Account Information* to detect whether the storage account has a hierarchical namespace enabled. Without it, connecting fails with `AuthorizationPermissionMismatch`. The signed-in user must be assigned a data role such as *Storage Blob Data Contributor* and the permission to read the account information. Follow the steps in [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](../tutorials/azure_entra_id_permissions.md). See [Troubleshooting](../tutorials/azure_entra_id_permissions.md#troubleshooting).
 :::
 
 ### Cyberduck CLI

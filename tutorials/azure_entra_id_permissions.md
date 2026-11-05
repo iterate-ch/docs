@@ -6,7 +6,7 @@ Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage
 :::{admonition} Requirements
 :class: warning
 * Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-* You must be allowed to create role assignments on the storage account, for example with the *Owner* or *User Access Administrator* role. Creating the custom role in [step 1](#step-1-create-the-custom-role) requires the same permission on the subscription.
+- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
 :::
 
 Refer to [Azure Blob Storage](../protocols/azure.md#microsoft-entra-id) for how to connect.
