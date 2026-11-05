@@ -40,8 +40,8 @@ Authenticate with your Microsoft Entra ID account instead of using an access key
 
 :::{admonition} Requirements
 :class: warning
-- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
+- Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6](https://mountainduck.io/changelog/) or later required
 :::
 
 1. Choose the *Azure (Microsoft Entra ID)* connection profile when creating a bookmark. The profile is bundled by default and can also be installed from *Preferences → Profiles*.

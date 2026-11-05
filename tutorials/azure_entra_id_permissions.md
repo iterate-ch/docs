@@ -5,8 +5,8 @@ Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage
 
 :::{admonition} Requirements
 :class: warning
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
+* Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6](https://mountainduck.io/changelog/) or later required
 :::
 
 Refer to [Azure Blob Storage](../protocols/azure.md#microsoft-entra-id) for how to connect.

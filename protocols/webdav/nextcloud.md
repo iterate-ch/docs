@@ -145,9 +145,10 @@ The virtual folders cannot be renamed or moved. Server side move is not supporte
 
 To disable the display of spaces and connect to the WebDAV root as before, set the [hidden configuration option](../../tutorials/hidden_properties.md) `owncloud.spaces.enable` to `false`.
 
-:::{note}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-* Mountain Duck [5.4.0](https://mountainduck.io/changelog/) or later required
+:::{admonition} Requirements
+:class: warning
+* Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [6](https://mountainduck.io/changelog/) or later required
 :::
 
 ### Resumable Uploads

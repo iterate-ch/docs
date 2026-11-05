@@ -222,10 +222,10 @@ Refer to [Connect to S3 authenticating with AWS IAM Identity Center](../../tutor
 
 ### Connecting with AWS Console Sign-In
 
-:::{important}
-
-- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
-- Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
+:::{admonition} Requirements
+:class: warning
+- Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6](https://mountainduck.io/changelog/) or later required
   :::
 
 Sign in to S3 using the same credentials you use for the AWS Management Console. The web browser opens to authorize

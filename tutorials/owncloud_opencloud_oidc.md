@@ -1,11 +1,11 @@
 Connect to ownCloud Infinite Scale & OpenCloud with OpenID Connect
 ====
 
-:::{important}
-
-- Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+:::{admonition} Requirements
+:class: warning
+- Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
 - Mountain Duck [5.4.0](https://mountainduck.io/changelog/) or later required
-  :::
+:::
 
 > Authenticate with the OpenID Connect (OIDC) identity provider configured for your [ownCloud Infinite Scale (oCIS)](https://owncloud.dev/ocis/) or [OpenCloud](https://opencloud.eu/) deployment using a custom connection profile.
 
