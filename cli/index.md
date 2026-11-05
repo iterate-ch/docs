@@ -464,6 +464,10 @@ Transfer files with multiple concurrent connections to a server.
 
 You can move or rename remote files using the `--move` command. Use an absolute path for the target filename.
 
+:::{note}
+The target must be the full path including the file name. A directory as target does not derive the name from the source.
+:::
+
 - Rename file `<name>` in directory `<folder>` to `<newname>` using
 
 ```
@@ -480,6 +484,10 @@ duck --move protocol:/<folder>/<name> protocol:/<target>/<name>
 
 You can copy files using the `--copy` command. The first argument is the source and the second argument the target. Use
 an absolute path for the target filename. Server-side [copy support](../cyberduck/copy.md#copy-files-and-folders-between-servers) is limited to some protocols.
+
+:::{note}
+The target must be the full path including the file name. A directory as target does not derive the name from the source.
+:::
 
 - Copy file `<name>` within the same server to directory `<target>` using the full target path including the file name
 
