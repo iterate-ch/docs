@@ -11,6 +11,7 @@ s3_iam_role_mfa
 s3_iam_getsessiontoken_bucketpolicy_mfa
 s3_microsoft_entra_oidc
 s3_google_oidc
+azure_entra_id_permissions
 owncloud_opencloud_oidc
 iam
 vault_localdisk
@@ -43,6 +44,9 @@ Use Microsoft Entra ID to authenticate with S3 by configuring as an OpenID Conne
 
 ## [Authenticate with Google to connect to S3](s3_google_oidc.md)
 Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+
+## [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](azure_entra_id_permissions.md)
+Assign the Azure RBAC roles required to connect to [Azure Blob Storage](../protocols/azure.md) authenticating with Microsoft Entra ID, using the Azure CLI or the Azure portal.
 
 ## [Connect to ownCloud Infinite Scale & OpenCloud with OpenID Connect](owncloud_opencloud_oidc.md)
 Obtain the OAuth endpoints from the OpenID Connect discovery document of your ownCloud Infinite Scale or OpenCloud server and write a custom connection profile.

@@ -34,6 +34,26 @@ Connection profiles can be installed from *Preferences → Profiles*.
 
 - {download}`Download<https://profiles.cyberduck.io/Azure%20(Shared%20Access%20Signature%20Token).cyberduckprofile>` the *Azure (Shared Access Signature Token)* for preconfigured settings.
 
+#### Microsoft Entra ID
+
+Authenticate with your Microsoft Entra ID account instead of using an access key. Access to blob data is then authorized with [Azure role-based access control (Azure RBAC)](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory) and an OAuth 2.0 access token, so no storage account key must be shared.
+
+:::{admonition} Requirements
+:class: warning
+* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* The signed-in user must be assigned a data role such as *Storage Blob Data Contributor* and the permission to read the account information. Follow the steps in [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](../tutorials/azure_entra_id_permissions.md).
+:::
+
+1. Choose the *Azure (Microsoft Entra ID)* connection profile when creating a bookmark. The profile is bundled by default and can also be installed from *Preferences → Profiles*.
+2. Edit the hostname to connect to your account in the format `<account>.blob.core.windows.net`.
+3. No credentials must be entered for opening a connection, but instead you need to log in to your Microsoft account and grant access in your web browser after choosing _Connect_. Allow to _"Open Cyberduck"_ in your web browser to submit the authorization code. Subsequent connections will not require authorization, unless the refresh token expired due to inactivity.
+
+The OAuth tokens are saved in your keychain separately for every storage account, using the storage account name as the username of the bookmark.
+
+:::{note}
+Cyberduck uses the permission *Get Account Information* to detect whether the storage account has a hierarchical namespace enabled. Without it, connecting fails with `AuthorizationPermissionMismatch`. See [Troubleshooting](../tutorials/azure_entra_id_permissions.md#troubleshooting).
+:::
+
 ### Cyberduck CLI
 
 You can list all containers with [Cyberduck CLI](https://duck.sh/) using
