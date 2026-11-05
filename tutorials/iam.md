@@ -3,6 +3,10 @@ AWS Identity & Access Management (IAM)
 
 IAM allows you to create credentials for third parties accessing your S3 account with permission constraints.
 
+## Required Permissions
+
+See the [sample IAM policy](../protocols/s3/index.md#sample-iam-policy) with the minimum permissions required to connect to S3.
+
 ## Console
 
 You can manage IAM users using the [AWS Console](https://console.aws.amazon.com/iam/home).

@@ -30,8 +30,65 @@ in the login prompt.
 
 ### IAM User
 
-You can also connect using [IAM](../../tutorials/iam.md) credentials that have the `Amazon S3 Full Access` template
-policy permissions attached and optionally the `CloudFront Full Access`.
+You can also connect using [IAM](../../tutorials/iam.md) credentials. Attaching the `AmazonS3FullAccess` managed policy
+(and optionally `CloudFrontFullAccess`) is the simplest option. To follow the principle of least privilege, attach a
+custom policy granting only the permissions required.
+
+#### Sample IAM Policy
+
+The following policy grants the minimum permissions to list buckets, browse, upload, download, rename, copy and delete
+files in a single bucket. Replace `BUCKET` with the name of your bucket.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListAllBuckets",
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets", "s3:GetBucketLocation"],
+      "Resource": "arn:aws:s3:::*"
+    },
+    {
+      "Sid": "ListBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:ListBucketMultipartUploads"],
+      "Resource": "arn:aws:s3:::BUCKET"
+    },
+    {
+      "Sid": "ReadWriteObjects",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:AbortMultipartUpload",
+        "s3:ListMultipartUploadParts"
+      ],
+      "Resource": "arn:aws:s3:::BUCKET/*"
+    }
+  ]
+}
+```
+
+- `s3:ListAllMyBuckets` is only required to list all buckets after connecting. Omit it if you
+  [connect to a single bucket](#connecting-to-a-single-bucket), and set the *Default Path* to the bucket name.
+- `s3:GetBucketLocation` is required to determine the region of a bucket.
+- `s3:AbortMultipartUpload` and `s3:ListMultipartUploadParts` are required to clean up and resume
+  [multipart uploads](#multipart-uploads).
+
+Additional permissions are required for optional features:
+
+| Feature | Permissions |
+|---|---|
+| [Versions](#versions) | `s3:GetBucketVersioning`, `s3:PutBucketVersioning`, `s3:ListBucketVersions`, `s3:GetObjectVersion`, `s3:DeleteObjectVersion` |
+| [Access Control (ACL)](#access-control-acl) | `s3:GetObjectAcl`, `s3:PutObjectAcl`, `s3:GetBucketAcl`, `s3:PutBucketAcl`, `s3:GetBucketOwnershipControls` |
+| [Transfer Acceleration](#transfer-acceleration) | `s3:GetAccelerateConfiguration` |
+| [Bucket Access Logging](#bucket-access-logging) | `s3:GetBucketLogging`, `s3:PutBucketLogging` |
+| [Lifecycle Configuration](#lifecycle-configuration) | `s3:GetLifecycleConfiguration`, `s3:PutLifecycleConfiguration` |
+| [Storage Class](#storage-class) and [Restore from Glacier](#restore-from-glacier) | `s3:RestoreObject` |
+| [Creating a Bucket](#creating-a-bucket) | `s3:CreateBucket` |
+| [Server Side Encryption with AWS KMS](#server-side-encryption-with-aws-kms-managed-keys-sse-kms) | `kms:GenerateDataKey`, `kms:Decrypt` on the key |
 
 ### Generic S3 Profiles
 
