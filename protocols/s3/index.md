@@ -773,6 +773,10 @@ There are pre-signed URLs that expire in one hour, 24 hours (using the preferenc
 a month. You can change the [hidden preference](../../cyberduck/preferences.md#hidden-configuration-options)
 `s3.url.expire.seconds` from the default `86400` (24 hours).
 
+:::{seealso}
+Read the tutorial [Share Files from an S3 Bucket with Pre-Signed URLs](../../tutorials/s3_presigned_url.md) for step-by-step instructions, expiry limits and support in S3-compatible providers besides AWS.
+:::
+
 :::{important}
 It is required that your AWS credentials are saved in keychain. Refer
 to [Passwords](../../cyberduck/connection.md#passwords).
