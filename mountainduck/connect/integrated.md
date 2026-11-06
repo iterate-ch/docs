@@ -183,4 +183,4 @@ Delete the sync cache for a bookmark on delete or changing the connect mode:
 ## Limitations
 
 - Custom mount locations are not honoured.
-- *[Pseudo File locking](../locking.md)* is not supported.
+- [File locking](../locking.md) is disabled by default. When enabled, files locked on the server by others (native lock support) are set read-only, and opening files with a lock owner file not created locally is denied (pseudo locking).

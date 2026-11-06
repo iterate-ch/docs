@@ -151,6 +151,23 @@ To disable the display of spaces and connect to the WebDAV root as before, set t
 * Mountain Duck [6](https://mountainduck.io/changelog/) or later required
 :::
 
+### Locking
+
+Mountain Duck locks files on the server when opening documents for editing. Refer to [File Locking](../../mountainduck/locking.md) to enable it.
+
+| Server | Native locking |
+|---|---|
+| Nextcloud | Requires the *Files Lock* app (`files_lock`) installed and enabled on the server |
+| ownCloud Server | Built in |
+| ownCloud Infinite Scale & OpenCloud | Built in |
+
+:::{admonition} Requirements
+:class: warning
+* Mountain Duck [6](https://mountainduck.io/changelog/) or later required
+:::
+
+Without native lock support, select *Nextcloud & ownCloud* in the bookmark configuration to use [pseudo locking](../../mountainduck/locking.md#pseudo-locking-for-protocols-with-no-native-lock-support-using-lock-owner-files) with lock owner files.
+
 ### Resumable Uploads
 
 Connecting to *ownCloud Infinite Scale*, interrupted uploads can be resumed at any time.
