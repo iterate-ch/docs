@@ -143,6 +143,8 @@ A list of file versions can be viewed in the *Versions* tab of the *[Info](../cy
 
 ## ACLs
 
+New buckets are created with [uniform bucket-level access](https://cloud.google.com/storage/docs/uniform-bucket-level-access) enabled, which disables ACLs. Custom ACLs cannot be set on such buckets or their files; use IAM to grant access instead.
+
 ### Default ACLs
 
 You can choose *canned ACLs* to be added to uploaded files or created buckets per default. *Canned ACLs* are predefined sets of permissions. 

@@ -35,8 +35,8 @@ uploaded.
 ### S3
 
 For connections using [S3](../protocols/s3/index.md) protocol, make sure the bucket
-allows [ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console)
-and doesn't
+allows [ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html?icmpid=docs_amazons3_console).
+Newly created buckets have ACLs disabled by default, so you must enable them in the bucket's *Object Ownership* settings. The bucket also must not
 block [public access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html?icmpid=docs_amazons3_console).
 
 :::::{tabs}
