@@ -441,6 +441,12 @@ account, browse to the root and choose *File → New Folder... (macOS `⌘N` Win
 bucket location in *Preferences (macOS `⌘,` Windows `Ctrl+,`) → S3*. Note that Amazon has a different pricing scheme for
 different regions.
 
+New buckets are created with [Object Ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)
+set to *Bucket owner enforced*, which disables ACLs. Custom ACLs cannot be set on such buckets or their files, and the
+bucket ACL is shown read-only in the *Info* window. Use [bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
+to grant access instead. To use ACLs, enable them in the bucket's *Object Ownership* settings in the AWS console
+(*Bucket owner preferred* or *Object writer*).
+
 :::{admonition} Mountain Duck
 :class: note
 
@@ -722,7 +728,7 @@ The [default ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-over
 | `bucket-owner-full-control` |         ❌	         |        ✅         |
 
 You can [disable the ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) using the
-_Amazon S3 Object Ownership_.
+_Amazon S3 Object Ownership_. This is the default for newly created buckets.
 
 :::{note}
 You need to set _Preferences → S3 → Default ACL → None_ for uploads with disabled ACLs to succeed. Otherwise uploads
