@@ -4,7 +4,7 @@ Configure Kerberos Authentication for SFTP
 > Authentication with _Kerberos_ allows you to connect to a remote server without a password using the ticket you already obtained when logging in to your organization's realm with `kinit` or with your account on the Mac. The ticket is presented to the server using the SSH authentication method `gssapi-with-mic`, the equivalent of `ssh -o GSSAPIAuthentication=yes`.
 
 :::{important}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
 :::
 

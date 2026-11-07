@@ -4,7 +4,7 @@ Configure Public Key Authentication for SFTP using a FIDO2 Security Key
 > Public-key authentication with a _FIDO2_ security key allows you to connect to a remote server without a password. The private key never leaves the authenticator, which is either the Secure Enclave of your Mac unlocked with _Touch ID_ or a hardware token such as a _YubiKey_ you touch to confirm. OpenSSH calls these keys `sk-ecdsa-sha2-nistp256@openssh.com` and `sk-ssh-ed25519@openssh.com`.
 
 :::{important}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
 :::
 

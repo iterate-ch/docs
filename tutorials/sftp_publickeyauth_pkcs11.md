@@ -4,7 +4,7 @@ Configure Public Key Authentication for SFTP using a PKCS#11 Smartcard
 > Public-key authentication with a smartcard allows you to connect to a remote server without a password. The private key is kept on the card and never leaves it. A _PKCS#11_ module, the native library shipped with the driver of your card, is used to read the public keys from the card and to sign the login with the corresponding private key protected by a PIN. This is the equivalent of `ssh -I /path/to/module.so`.
 
 :::{important}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
 * Mountain Duck [6.0.0](https://mountainduck.io/changelog/) or later required
 :::
 
