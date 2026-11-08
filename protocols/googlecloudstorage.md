@@ -56,13 +56,33 @@ When connecting with a user with a viewer role only, attempting to list buckets 
 
 If you have accidentally logged in with the wrong Google Cloud Storage username or want to change the login of the Google Cloud Storage bookmark delete the current bookmark and create a new one to start a new authentication flow.
 
-Alternatively, you can reset the OAuth token by deleting the entries related to `duck:googlecloudstorage?user=(user)` out of the *Windows Credential Manager* or on macOS the entries related to `accounts.google.com` out of *Keychain Access.app*.
+Alternatively, you can reset the OAuth token by deleting the respective entries out of *Windows Credential Manager* or out of *Keychain Access.app* on macOS.
+
+::::::{tabs}
+:::::{group-tab} macOS
+
+Remove the entries related to `accounts.google.com` out of *Keychain Access.app*.
+
+:::::
+:::::{group-tab} Windows
+
+Remove the entries that correspond to the used application out of *Windows Credential Manager*.
+
+- *Cyberduck*: `duck:996125414232-s922bvdt21nceeh5dq1gb6av8plpj7hr.apps.googleusercontent.com?user=(user)`
+- *Mountain Duck*: `duck:996125414232-nk3icebd7k519k2bla2vsc9h50hfrgdk.apps.googleusercontent.com?user=(user)`
+
+:::::
+::::::
 
 #### Custom OAuth Client ID
 
 You can register a [custom OAuth 2.0 client ID](profiles/google_client_id.md) with Google to operate independently of our registered client ID.
 
 ## Cyberduck CLI
+
+:::{warning}
+Cyberduck CLI does not support the OAuth 2.0 authorization flow for Google Cloud Storage. Google no longer supports OAuth client registrations with [loopback redirect URIs](https://developers.google.com/identity/protocols/oauth2/resources/loopback-migration) and the [device flow](https://developers.google.com/identity/protocols/oauth2/limited-input-device#allowedscopes) is restricted to a limited set of scopes. Connecting only works with OAuth tokens already saved in the *Windows Credential Manager* or *macOS Keychain* by the Cyberduck or Mountain Duck desktop application. Connect once with the desktop application first, then use the same `--username` with Cyberduck CLI.
+:::
 
 You can list all buckets with [Cyberduck CLI](https://duck.sh/) using
 

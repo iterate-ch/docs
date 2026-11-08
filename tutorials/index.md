@@ -11,6 +11,8 @@ s3_iam_role_mfa
 s3_iam_getsessiontoken_bucketpolicy_mfa
 s3_microsoft_entra_oidc
 s3_google_oidc
+s3_presigned_url
+azure_entra_id_permissions
 owncloud_opencloud_oidc
 iam
 vault_localdisk
@@ -20,9 +22,9 @@ sftp_publickeyauth_pkcs11
 sftp_publickeyauth_1password
 sftp_publickeyauth_bitwarden
 sftp_publickeyauth_yubikey
+sftp_azure_blob_storage
 sftp_publickeyauth_pageant
 sftp_kerberos
-sftp_azure_blob_storage
 cli_github_action
 :::
 
@@ -48,6 +50,12 @@ Use Microsoft Entra ID to authenticate with S3 by configuring as an OpenID Conne
 
 ## [Authenticate with Google to connect to S3](s3_google_oidc.md)
 Use Google to authenticate with S3 by configuring as an OpenID Connect (OIDC) Identity Provider in AWS IAM.
+
+## [Share Files from an S3 Bucket with Pre-Signed URLs](s3_presigned_url.md)
+Share private objects with temporary links, choose the expiry and use pre-signed URLs with S3-compatible providers besides AWS.
+
+## [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](azure_entra_id_permissions.md)
+Assign the Azure RBAC roles required to connect to [Azure Blob Storage](../protocols/azure.md) authenticating with Microsoft Entra ID, using the Azure CLI or the Azure portal.
 
 ## [Connect to ownCloud Infinite Scale & OpenCloud with OpenID Connect](owncloud_opencloud_oidc.md)
 Obtain the OAuth endpoints from the OpenID Connect discovery document of your ownCloud Infinite Scale or OpenCloud server and write a custom connection profile.
@@ -76,14 +84,14 @@ Authenticate with SSH private key saved in Bitwarden.
 ### [Use YubiKey](sftp_publickeyauth_yubikey.md)
 Authenticate with SSH private key saved on YubiKey.
 
+## [Connect to Azure Blob Storage with SFTP](sftp_azure_blob_storage.md)
+Authenticate with a local user using a password or private key, or with an SSH certificate issued by Microsoft Entra ID.
+
 ### [Configure Pageant](sftp_publickeyauth_pageant.md)
 Authenticate with SSH private key loaded in Pageant.
 
 ## [Configure Kerberos Authentication for SFTP](sftp_kerberos.md)
 Authenticate with a Kerberos ticket obtained with `kinit` using GSSAPI.
-
-## [Connect to Azure Blob Storage with SFTP](sftp_azure_blob_storage.md)
-Authenticate with a local user using a password or private key, or with an SSH certificate issued by Microsoft Entra ID.
 
 ## [Use Cyberduck CLI GitHub Action](cli_github_action.md)
 Use Cyberduck CLI Docker Container in GitHub Actions

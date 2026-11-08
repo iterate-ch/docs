@@ -344,13 +344,20 @@ Be aware that Bitdefender may interfere with connections.
 
 May interfere with installation.
 
+#### Dokany File System Driver
+
+Using third-party applications with an old Dokany file system driver version may cause issues within Mountain Duck such as freezing of the menu. This has been reported for the following applications:
+
+- _MXFS_: Dokany version 1.0.3
+- _Air Life Drive_: Dokany version 2.0.3
+
 ### Backups
 
 ::::{tabs}
 :::{group-tab} macOS
 
 **Time Machine**<br/>
-Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks mounted using Apple File Protocol (AFP). See [Backup disks you can use with Time Machine](https://support.apple.com/en-us/HT202784).
+Backups to Time Machine do not work with volumes mounted from Mountain Duck. Time Machine requires disks to be mounted through Finder using the SMB network protocol. See [Backup disks you can use with Time Machine](https://support.apple.com/en-us/HT202784).
 
 :::
 :::{group-tab} Windows

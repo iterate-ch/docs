@@ -45,15 +45,15 @@ Download [Mountain Duck](https://mountainduck.io/) as an alternative to *Desktop
 :::::{tabs}
 ::::{group-tab} Nextcloud
 
-Select the connection profile `Nextcloud` for _Protocol_ bundled by default.
+Select the connection profile `Nextcloud` for _Protocol_ bundled by default. Authenticate with app tokens or Basic authentication enabled on the server.
 
 ::::
 ::::{group-tab} ownCloud
 
-Select the connection profile `ownCloud` for _Protocol_ bundled by default. 
+Select the connection profile `ownCloud` for _Protocol_ bundled by default. Authenticate with app tokens or Basic authentication enabled on the server.
 
 ::::
-::::{group-tab} OpenCloud
+::::{group-tab} OpenCloud with OpenID Connect
 
 Connecting to *OpenCloud* the default authentication scheme is OpenID Connect. For deployments using the built-in identity provider, use the ready-made connection profile with the OAuth client registered by default.
 
@@ -69,7 +69,7 @@ For deployments using Keycloak or Microsoft Entra ID as the identity provider, f
 :::
 
 ::::
-::::{group-tab} ownCloud Infinite Scale (oCIS)
+::::{group-tab} ownCloud Infinite Scale (oCIS) with OpenID Connect
 
 Connecting to *ownCloud Infinite Scale* the default authentication scheme is OpenID Connect. For deployments using the built-in identity provider, use the ready-made connection profile with the OAuth client registered by default.
 
@@ -128,6 +128,45 @@ Create different [shares](../../cyberduck/share.md#nextcloud--owncloud) using th
 - Use *File → Share…* to create download shares. Choose between a public link by selecting `Everyone` and a privat link for another user by choosing a specific email address. The user will be notified about the shared file by email.
 
 ![Nextcloud Download Everyone](_images/Nextcloud_Download_Everyone.png)
+
+### Storage Spaces
+
+Connecting to *ownCloud Infinite Scale* or *OpenCloud*, the root folder lists virtual folders for the storage spaces available to your account:
+
+- *Personal*. Your personal space. Not available to users with the role *User Light*.
+- *Spaces*. Project spaces you are a member of, listed by name. Project spaces with clashing names are ignored.
+- *Shares*. Files and folders shared with you by other users.
+
+A bookmark with a default path opens relative to *Personal*. Quota is reported for the personal space.
+
+:::{note}
+The virtual folders cannot be renamed or moved. Server side move is not supported between spaces.
+:::
+
+To disable the display of spaces and connect to the WebDAV root as before, set the [hidden configuration option](../../tutorials/hidden_properties.md) `owncloud.spaces.enable` to `false`.
+
+:::{admonition} Requirements
+:class: warning
+* Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+* Mountain Duck [6](https://mountainduck.io/changelog/) or later required
+:::
+
+### Locking
+
+Mountain Duck locks files on the server when opening documents for editing. Refer to [File Locking](../../mountainduck/locking.md) to enable it.
+
+| Server | Native locking |
+|---|---|
+| Nextcloud | Requires the *Files Lock* app (`files_lock`) installed and enabled on the server |
+| ownCloud Server | Built in |
+| ownCloud Infinite Scale & OpenCloud | Built in |
+
+:::{admonition} Requirements
+:class: warning
+* Mountain Duck [6](https://mountainduck.io/changelog/) or later required
+:::
+
+Without native lock support, select *Nextcloud & ownCloud* in the bookmark configuration to use [pseudo locking](../../mountainduck/locking.md#pseudo-locking-for-protocols-with-no-native-lock-support-using-lock-owner-files) with lock owner files.
 
 ### Resumable Uploads
 

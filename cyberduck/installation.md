@@ -37,9 +37,9 @@ There is also a [Chocolatey](http://chocolatey.org/packages?q=cyberduck) package
 - Cyberduck 4.7 or later requires *Mac OS X 10.7* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
 - Cyberduck 4.4 or later requires *Mac OS X 10.6* or later and a [64Bit Intel](http://support.apple.com/kb/ht3696) architecture
 - Cyberduck [3.3](https://trac.cyberduck.io/milestone/3.3) or later requires *Mac OS X 10.5* or later.
-- Cyberduck [3.0](https://trac.cyberduck.io/milestone/3.0) or later requires *Mac OS X 10.4* or later. The latest version [available](http://cyberduck.ch/changelog) is [3.2.1](http://update.cyberduck.ch/Cyberduck-3.2.1.dmg) supporting *Mac OS X 10.4*.
-- Cyberduck 2.5 or later requires *Mac OS X 10.3.9* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.8.5](http://update.cyberduck.ch/Cyberduck-2.8.5.dmg) supporting *Mac OS X 10.3.9*.
-- Cyberduck 2.3 or later requires *Mac OS X 10.2* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.3.3](http://update.cyberduck.ch/Cyberduck-2.3.3.dmg) supporting *Mac OS X 10.2*.
+- Cyberduck [3.0](https://trac.cyberduck.io/milestone/3.0) or later requires *Mac OS X 10.4* or later. The latest version [available](http://cyberduck.ch/changelog) is [3.2.1](https://update.cyberduck.io/Cyberduck-3.2.1.dmg) supporting *Mac OS X 10.4*.
+- Cyberduck 2.5 or later requires *Mac OS X 10.3.9* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.8.5](https://update.cyberduck.io/Cyberduck-2.8.5.dmg) supporting *Mac OS X 10.3.9*.
+- Cyberduck 2.3 or later requires *Mac OS X 10.2* or later. The latest version [available](http://cyberduck.ch/changelog) is [2.3.3](https://update.cyberduck.io/Cyberduck-2.3.3.dmg) supporting *Mac OS X 10.2*.
 
 :::
 :::{group-tab} Windows

@@ -392,6 +392,13 @@ duck --upload protocol://<hostname>/directory/ ~/*.jpg
 duck --synchronize protocol:/<name>/ folder/
 ```
 
+- Synchronize directory `<name>` on the server with directory `<folder>` on disk, overwriting existing files without
+  prompting
+
+```
+duck --synchronize --existing overwrite protocol:/<name>/ <folder>/
+```
+
 #### Custom Configuration Options for Uploads to S3
 
 Add default metadata for uploads using the [preferences option to read from the environment](#preferences). The property
@@ -412,10 +419,33 @@ env "s3.acl.default=public-read" duck --upload …
 Make sure to include a trailing `/` in the path argument to denote a directory. Use the `-L` option to print permission
 mask and modification date in addition to the filename.
 
+- List the contents of the directory `<folder>` using
+
+```
+duck --list protocol:/<folder>/
+```
+
+- List the contents with permission mask and modification date using
+
+```
+duck --longlist protocol:/<folder>/
+```
+
+- List the home directory of the user on the server using
+
+```
+duck --list sftp://user@example.net/~/
+```
+
 ### Edit with `--edit`
 
 You can edit remote files with your preferred editor on your local system using the `--edit` command. Use the optional
 `--application` option to specify the absolute path to the external editor you want to use.
+
+```
+duck --edit protocol:/<folder>/<name>
+duck --edit protocol:/<folder>/<name> --application /Applications/TextEdit.app
+```
 
 ### Purge Files in CDN with `--purge`
 
@@ -434,16 +464,89 @@ Transfer files with multiple concurrent connections to a server.
 
 You can move or rename remote files using the `--move` command. Use an absolute path for the target filename.
 
-```{code-block}
-duck  --move protocol:/<folder>/<name> <file>
+:::{note}
+The target must be the full path including the file name. A directory as target does not derive the name from the source.
+:::
+
+- Rename file `<name>` in directory `<folder>` to `<newname>` using
+
+```
+duck --move protocol:/<folder>/<name> protocol:/<folder>/<newname>
+```
+
+- Move file `<name>` to directory `<target>` using
+
+```
+duck --move protocol:/<folder>/<name> protocol:/<target>/<name>
 ```
 
 ### Copy files using `--copy`
 
-You can copy files using the `--copy` command. Use an absolute path for the target filename. Server-side [copy support](../cyberduck/copy.md#copy-files-and-folders-between-servers) is limited to some protocols.
+You can copy files using the `--copy` command. The first argument is the source and the second argument the target. Use
+an absolute path for the target filename. Server-side [copy support](../cyberduck/copy.md#copy-files-and-folders-between-servers) is limited to some protocols.
 
-```{code-block}
-duck  --copy protocol:/<folder>/<name> <file>
+:::{note}
+The target must be the full path including the file name. A directory as target does not derive the name from the source.
+:::
+
+- Copy file `<name>` within the same server to directory `<target>` using the full target path including the file name
+
+```
+duck --copy protocol:/<folder>/<name> protocol:/<target>/<name>
+```
+
+- Copy file `<name>` as `<newname>` within the same server using
+
+```
+duck --copy protocol:/<folder>/<name> protocol:/<folder>/<newname>
+```
+
+- Copy a directory with all its contents using a trailing `/` to denote a directory
+
+```
+duck --copy protocol:/<folder>/ protocol:/<newfolder>/
+```
+
+- Copy file `<name>` from one server to another server using
+
+```
+duck --copy sftp://user@example.net/<folder>/<name> s3:/<bucket>/<name>
+```
+
+- Copy file `<name>` in an S3 bucket to another bucket using
+
+```
+duck --username <Access Key ID> --copy s3:/<bucket>/<name> s3:/<other bucket>/<name>
+```
+
+### Delete files using `--delete`
+
+Delete remote files or folders. Use a trailing `/` to denote a directory.
+
+- Delete file `<name>` using
+
+```
+duck --delete protocol:/<folder>/<name>
+```
+
+- Delete directory `<folder>` including its contents using
+
+```
+duck --delete protocol:/<folder>/
+```
+
+### Create Folders and Files using `--mkdir` and `--touch`
+
+- Create the directory `<folder>` using
+
+```
+duck --mkdir protocol:/<folder>/
+```
+
+- Create an empty file `<name>` using
+
+```
+duck --touch protocol:/<folder>/<name>
 ```
 
 ### Cryptomator
@@ -454,6 +557,59 @@ Keychain.
 
 Use `--vault <path>` in conjunction with `--upload` to unlock a Vault. This allows uploading into a subdirectory of a
 Vault where the auto-detect feature does otherwise not work.
+
+#### List Contents of a Vault
+
+```
+duck --list "onedrive:/My Files/<vault name>/"
+```
+
+#### Download from a Vault
+
+- Download a single file `<file name>` from the vault to the local directory `~/Downloads/`
+
+```
+duck --download "onedrive:/My Files/<vault name>/<file name>" ~/Downloads/
+```
+
+- Download a file from a subdirectory of a vault, specifying the vault location explicitly with `--vault`
+
+```
+duck --download "onedrive:/My Files/<vault name>/<folder>/<file name>" ~/Downloads/ --vault "/My Files/<vault name>/"
+```
+
+- Download the contents of a folder in the vault
+
+```
+duck --download "onedrive:/My Files/<vault name>/<folder>/" ~/Downloads/
+```
+
+#### Upload to a Vault
+
+- Upload the local file `<file>` to the root of the vault
+
+```
+duck --upload "onedrive:/My Files/<vault name>/" <file>
+```
+
+- Upload the local file `<file>` into a subdirectory of the vault, specifying the vault location explicitly with
+  `--vault`
+
+```
+duck --upload "onedrive:/My Files/<vault name>/<folder>/" <file> --vault "/My Files/<vault name>/"
+```
+
+- Upload the local folder `<folder>` to the vault
+
+```
+duck --upload "onedrive:/My Files/<vault name>/<name>/" <folder>/ --vault "/My Files/<vault name>/"
+```
+
+#### Vault in Amazon S3
+
+```
+duck --username <Access Key ID> --upload s3:/<bucket>/<vault name>/ <file> --vault "/<bucket>/<vault name>/"
+```
 
 ## Samples
 
@@ -535,7 +691,13 @@ variables in your shell.
 You can override default [preferences](../cyberduck/preferences.md#hidden-configuration-options) by setting environment
 variables in your shell.
 
+In Command Prompt (`cmd.exe`), the variable stays set for the rest of the session. Clear it with `set "<property>="`.
+
 `set "<property>=<value>" & duck`
+
+In PowerShell, use the `env:` drive. Wrap property names containing dots in braces.
+
+`${env:<property>} = "<value>"; duck`
 
 :::
 :::{group-tab} Linux
