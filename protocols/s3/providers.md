@@ -20,6 +20,7 @@ ionos
 linode
 mega
 minio
+neon
 oraclecloud
 pilvio
 polycloud
