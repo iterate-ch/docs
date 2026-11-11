@@ -113,14 +113,14 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 /* The right sidebar is disabled, so hide its toggle in the breadcrumbs */
 .sy-breadcrumbs button[aria-controls="rside"] { display: none; }
 
-/* Hamburger menu (collapses the header navigation below 768px, like cyberduck.io) */
+/* Hamburger menu (collapses the header navigation below 992px, where the links no longer fit on one line, like cyberduck.io) */
 .cd-toggle { display: none; padding: 9px 10px; background: transparent; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; }
 .cd-toggle .cd-bar { display: block; width: 22px; height: 2px; border-radius: 1px; background: #888; }
 .cd-toggle .cd-bar + .cd-bar { margin-top: 4px; }
 .cd-toggle:hover { background: rgba(128, 128, 128, .15); }
 .cd-header .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .cd-navbar-inner { min-height: 0; padding-top: 12px; padding-bottom: 12px; }
   .cd-toggle { display: block; }
   .cd-nav { display: none; flex-direction: column; align-items: stretch; width: 100%; margin-left: 0; gap: 0; }
