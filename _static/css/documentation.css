@@ -104,7 +104,7 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 
 /* The right sidebar is disabled in conf.py (html_sidebars); release its space and use the full content width */
 .sy-rside, .rside-overlay { display: none; }
-.sy-main > div > div { max-width: none; }
+.sy-main > div > div { max-width: none; padding-right: 15px; } /* align with the header container padding */
 @media (min-width: 768px) {
   .sy-main { width: calc(100% - 18rem); max-width: none; }
 }
