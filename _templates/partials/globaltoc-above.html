@@ -1,0 +1,11 @@
+{#- Search field at the top of the left navigation -#}
+<div class="cd-sidebar-search print:hidden">
+  {%- include "components/searchbox.html" -%}
+</div>
+{%- if theme_discussion_url -%}
+<div class="sidebar-links">
+  <ul>
+    <li>{%- include "components/discussion-link.html" -%}</li>
+  </ul>
+</div>
+{%- endif -%}

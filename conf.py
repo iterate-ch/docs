@@ -70,6 +70,8 @@ html_context = {
 	"github_version": "main",
 	"conf_py_path": "/"
 }
+# Disable the right sidebar ("On this page")
+html_sidebars = {"**": []}
 html_show_sourcelink = False
 html_show_sphinx = True
 
@@ -80,6 +82,10 @@ html_static_path = ['_static']
 
 html_css_files = [
     'css/documentation.css',
+]
+
+html_js_files = [
+    'js/header.js',
 ]
 
 master_doc = 'index'

@@ -44,3 +44,93 @@ html[data-accent-color='blue'] {
 .yue ul > li > p {
     margin: 0;
 }
+
+/* Cyberduck site header (see _templates/partials/site-head.html) */
+:root {
+  --sy-s-navbar-height: 0px;
+  --sy-s-offset-top: 0px;
+}
+
+.cd-header { font-family: -apple-system, "Droid Sans", sans-serif; position: relative; } /* no z-index: the mobile sidebar (z-index 18) must cover the header */
+.cd-container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+
+.cd-navbar { background: #eee; }
+.cd-navbar-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; min-height: 90px; }
+.cd-brand img { display: block; width: 64px; height: 64px; }
+
+.cd-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 4px; margin-left: auto; }
+.cd-nav > a:not(.cd-btn) { color: #999; font-size: 18px; padding: 10px 8px; text-decoration: none; }
+.cd-nav > a:not(.cd-btn):hover { color: #333; }
+.cd-tools { display: flex; align-items: center; gap: 8px; }
+
+.cd-btn { display: inline-block; padding: 6px 12px; font-size: 14px; line-height: 1.43; border: 1px solid transparent; border-radius: 4px; text-decoration: none; cursor: pointer; list-style: none; }
+.cd-btn::-webkit-details-marker { display: none; }
+.cd-btn-default { background: #fff; color: #333; border-color: #ccc; }
+.cd-btn-default:hover { background: #e6e6e6; }
+.cd-btn-primary { background: #5a5a5a; color: #fff; border-color: #4a4a4a; margin-left: 6px; }
+.cd-btn-primary:hover { background: #444; color: #fff; }
+.cd-btn-success { background: #5cb85c; color: #fff; border-color: #4cae4c; margin-left: 6px; }
+.cd-btn-success:hover { background: #449d44; color: #fff; }
+.cd-caret { display: inline-block; border-top: 4px solid; border-left: 4px solid transparent; border-right: 4px solid transparent; vertical-align: middle; margin-left: 2px; }
+
+.cd-dropdown { position: relative; margin-left: 6px; }
+.cd-dropdown ul { position: absolute; top: 100%; left: 0; z-index: 1000; min-width: 200px; margin: 2px 0 0; padding: 5px 0; list-style: none; background: #fff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 6px 12px rgba(0,0,0,.175); }
+.cd-dropdown li a { display: block; padding: 3px 20px; color: #333; font-size: 14px; line-height: 1.43; white-space: nowrap; text-decoration: none; }
+.cd-dropdown li a:hover { background: #f5f5f5; }
+.cd-dropdown li.divider { height: 1px; margin: 9px 0; background: #e5e5e5; }
+
+.cd-products { background: #ffd54f; border-bottom: 2px solid #ccc; }
+.cd-products .cd-container { padding-top: 10px; padding-bottom: 10px; }
+.cd-products a { text-decoration: none; margin-right: 4px; }
+.cd-label { display: inline-block; background: #777; color: #fff; font-size: 13.5px; font-weight: 400; line-height: 1; padding: .2em .6em .3em; border-radius: .25em; white-space: nowrap; }
+.cd-label img { display: inline-block; height: 16px; width: auto; max-width: none; margin: 0 2px 0 0; vertical-align: text-bottom; }
+.cd-products-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.cd-product-links { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.cd-product-links a { margin-right: 0; }
+.cd-products a:hover .cd-label { background: #5e5e5e; }
+
+html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2a2a; }
+
+/* Theme switch inside the yellow product bar */
+.cd-tools .theme-switch { color: #333; }
+
+/* Search field at the top of the left navigation */
+.cd-sidebar-search { margin-bottom: 1.5rem; }
+.cd-sidebar-search .searchbox { position: relative; top: auto; left: auto; right: auto; }
+
+/* Match the content width of cyberduck.io (Bootstrap container) */
+.sy-container { max-width: 1170px; }
+
+.cd-tools .theme-switch { cursor: pointer; }
+
+/* The right sidebar is disabled in conf.py (html_sidebars); release its space and use the full content width */
+.sy-rside, .rside-overlay { display: none; }
+.sy-main > div > div { max-width: none; padding-right: 15px; } /* align with the header container padding */
+@media (min-width: 768px) {
+  .sy-main { width: calc(100% - 18rem); max-width: none; }
+}
+
+/* The right sidebar is disabled, so hide its toggle in the breadcrumbs */
+.sy-breadcrumbs button[aria-controls="rside"] { display: none; }
+
+/* Hamburger menu (collapses the header navigation below 992px, where the links no longer fit on one line, like cyberduck.io) */
+.cd-toggle { display: none; padding: 9px 10px; background: transparent; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; }
+.cd-toggle .cd-bar { display: block; width: 22px; height: 2px; border-radius: 1px; background: #888; }
+.cd-toggle .cd-bar + .cd-bar { margin-top: 4px; }
+.cd-toggle:hover { background: rgba(128, 128, 128, .15); }
+.cd-header .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+@media (max-width: 991px) {
+  .cd-navbar-inner { min-height: 0; padding-top: 12px; padding-bottom: 12px; }
+  .cd-toggle { display: block; }
+  .cd-nav { display: none; flex-direction: column; align-items: stretch; width: 100%; margin-left: 0; gap: 0; }
+  .cd-nav.cd-nav-open { display: flex; }
+  /* every item is a full-width, centered button */
+  .cd-nav > a:not(.cd-btn) { display: block; padding: 6px 12px; margin-top: 6px; font-size: 14px; line-height: 1.43; text-align: center; color: #333; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
+  .cd-nav > a:not(.cd-btn):hover { color: #333; background: #e6e6e6; }
+  .cd-nav .cd-btn { display: block; margin: 6px 0 0; text-align: center; }
+  .cd-dropdown { display: block; width: 100%; margin: 6px 0 0; }
+  .cd-dropdown summary { margin: 0; text-align: center; }
+  .cd-dropdown ul { position: static; width: 100%; box-shadow: none; margin-top: 6px; }
+  .cd-dropdown li a { text-align: center; }
+}
