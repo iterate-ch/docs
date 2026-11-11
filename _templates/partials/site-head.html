@@ -1,0 +1,62 @@
+{#- Cyberduck-style site header: logo, top navigation and product bar (matches https://cyberduck.io) -#}
+<header class="cd-header">
+  <div class="cd-navbar">
+    <div class="cd-container cd-navbar-inner">
+      <a class="cd-brand" href="https://cyberduck.io" title="Cyberduck">
+        <img src="https://cdn.cyberduck.io/img/cyberduck-icon-rect-1024.png" alt="Cyberduck" width="64" height="64">
+      </a>
+      <nav class="cd-nav" aria-label="Main">
+        <a href="https://cyberduck.io/changelog">Changelog</a>
+        <a href="https://cyberduck.io/cryptomator">Cryptomator</a>
+        <a href="https://cyberduck.io/help">Help</a>
+        <a href="https://cyberduck.io/profiles">Connection Profiles</a>
+        <a href="https://blog.cyberduck.io">Blog</a>
+        <details class="cd-dropdown">
+          <summary class="cd-btn cd-btn-default">Protocols <span class="cd-caret"></span></summary>
+          <ul>
+            <li><a href="https://cyberduck.io/ftp">FTP</a></li>
+            <li><a href="https://cyberduck.io/sftp">SFTP</a></li>
+            <li><a href="https://cyberduck.io/webdav">WebDAV</a></li>
+            <li><a href="https://cyberduck.io/smb">SMB</a></li>
+            <li><a href="https://cyberduck.io/nextcloud">Nextcloud &amp; ownCloud</a></li>
+            <li><a href="https://cyberduck.io/s3">Amazon S3</a></li>
+            <li><a href="https://cyberduck.io/googlestorage">Google Storage</a></li>
+            <li><a href="https://cyberduck.io/openstack">OpenStack Swift</a></li>
+            <li><a href="https://cyberduck.io/azure">Microsoft Azure</a></li>
+            <li class="divider"></li>
+            <li><a href="https://cyberduck.io/onedrive">Microsoft OneDrive</a></li>
+            <li><a href="https://cyberduck.io/onedrive">Microsoft SharePoint</a></li>
+            <li><a href="https://cyberduck.io/dropbox">Dropbox</a></li>
+            <li><a href="https://cyberduck.io/googledrive">Google Drive</a></li>
+            <li><a href="https://cyberduck.io/box">Box</a></li>
+            <li class="divider"></li>
+            <li><a href="https://cyberduck.io/wasabi">Wasabi</a></li>
+            <li><a href="https://cyberduck.io/backblaze">Backblaze B2</a></li>
+            <li><a href="https://cyberduck.io/dracoon">DRACOON</a></li>
+            <li><a href="https://cyberduck.io/files.com">Files.com</a></li>
+            <li class="divider"></li>
+            <li><a href="https://cyberduck.io/spectra">Spectra BlackPearl</a></li>
+            <li><a href="https://cyberduck.io/irods">iRODS</a></li>
+            <li class="divider"></li>
+            <li><a href="https://cyberduck.io/local">Local Filesystem</a></li>
+          </ul>
+        </details>
+        <a class="cd-btn cd-btn-primary" href="https://cyberduck.io/download">Download</a>
+        <a class="cd-btn cd-btn-success" href="https://cyberduck.io/donate" title="Receive a donation key that registers the installed application to your name and disables the donation prompt.">Donate</a>
+      </nav>
+    </div>
+  </div>
+  <div class="cd-products">
+    <div class="cd-container cd-products-inner">
+      <div class="cd-product-links">
+      <a title="Browse with Cyberduck on macOS and Windows" href="https://cyberduck.io/"><span class="cd-label"><img alt="" height="16" src="https://cdn.cyberduck.io/img/cyberduck-icon-rect-32.png"> Cyberduck</span></a>
+      <a title="Mount to your desktop with Mountain Duck" href="https://mountainduck.io/"><span class="cd-label"><img alt="" height="16" src="https://cdn.mountainduck.io/images/mountainduck_statusbar_white.png"> Mountain Duck</span></a>
+      <a title="Access using the command line interface on Linux, macOS and Windows with Cyberduck CLI" href="https://duck.sh/"><span class="cd-label"><img alt="" height="16" src="https://cdn.cyberduck.io/img/cli32.png"> CLI</span></a>
+      </div>
+      <div class="cd-tools print:hidden">
+        {%- include "components/searchbox.html" -%}
+        {%- include "components/theme-switch.html" -%}
+      </div>
+    </div>
+  </div>
+</header>

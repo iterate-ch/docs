@@ -82,6 +82,10 @@ html_css_files = [
     'css/documentation.css',
 ]
 
+html_js_files = [
+    'js/header.js',
+]
+
 master_doc = 'index'
 myst_heading_anchors = 4
 myst_enable_extensions = [
