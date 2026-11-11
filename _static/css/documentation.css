@@ -125,9 +125,12 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
   .cd-toggle { display: block; }
   .cd-nav { display: none; flex-direction: column; align-items: stretch; width: 100%; margin-left: 0; gap: 0; }
   .cd-nav.cd-nav-open { display: flex; }
-  .cd-nav > a:not(.cd-btn) { padding: 10px 0; }
-  .cd-nav .cd-btn { margin: 6px 0 0; text-align: center; }
-  .cd-dropdown { margin: 6px 0 0; }
-  .cd-dropdown summary { text-align: left; }
-  .cd-dropdown ul { position: static; box-shadow: none; margin-top: 6px; }
+  /* every item is a full-width, centered button */
+  .cd-nav > a:not(.cd-btn) { display: block; padding: 6px 12px; margin-top: 6px; font-size: 14px; line-height: 1.43; text-align: center; color: #333; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
+  .cd-nav > a:not(.cd-btn):hover { color: #333; background: #e6e6e6; }
+  .cd-nav .cd-btn { display: block; margin: 6px 0 0; text-align: center; }
+  .cd-dropdown { display: block; width: 100%; margin: 6px 0 0; }
+  .cd-dropdown summary { margin: 0; text-align: center; }
+  .cd-dropdown ul { position: static; width: 100%; box-shadow: none; margin-top: 6px; }
+  .cd-dropdown li a { text-align: center; }
 }
