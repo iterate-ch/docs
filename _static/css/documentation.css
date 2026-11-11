@@ -1,5 +1,23 @@
 @import url("https://cdn.cyberduck.io/css/custom.css");
 
+/* Match the typeface of cyberduck.io (-apple-system, Droid Sans).
+   html:root outranks the theme's inline Inter override in the page head. */
+html:root {
+  --sy-f-sys: -apple-system, "Droid Sans", sans-serif;
+  --sy-f-text: -apple-system, "Droid Sans", sans-serif;
+  --sy-f-heading: -apple-system, "Droid Sans", sans-serif;
+}
+
+/* Shibuya sets .yue to 1rem, overriding the site's 18px body size */
+.yue {
+  font-size: 18px;
+}
+
+.yue h1, .yue h2, .yue h3, .yue h4, .yue h5, .yue h6 {
+  font-family: var(--sy-f-heading);
+  font-weight: bold;
+}
+
 section ol.arabic, .rst-content section ol.arabic > li {
     list-style: none;
 }
