@@ -91,11 +91,12 @@ html[data-accent-color='blue'] {
 
 html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2a2a; }
 
-/* Search and theme switch inside the yellow product bar */
-.cd-tools .searchbox { background: #fff; border: 1px solid #ccc; border-radius: 4px; padding: 0 8px; height: 30px; }
-.cd-tools .searchbox input { color: #333; background: transparent; }
-.cd-tools .searchbox input::placeholder { color: #777; }
+/* Theme switch inside the yellow product bar */
 .cd-tools .theme-switch { color: #333; }
+
+/* Search field at the top of the left navigation */
+.cd-sidebar-search { margin-bottom: 1.5rem; }
+.cd-sidebar-search .searchbox { position: relative; top: auto; left: auto; right: auto; }
 
 /* Match the content width of cyberduck.io (Bootstrap container) */
 .sy-container { max-width: 1170px; }
