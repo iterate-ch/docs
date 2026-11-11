@@ -70,6 +70,8 @@ html_context = {
 	"github_version": "main",
 	"conf_py_path": "/"
 }
+# Disable the right sidebar ("On this page")
+html_sidebars = {"**": []}
 html_show_sourcelink = False
 html_show_sphinx = True
 

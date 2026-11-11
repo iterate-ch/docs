@@ -102,6 +102,9 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 
 .cd-tools .theme-switch { cursor: pointer; }
 
-/* Hide the "On this page" sidebar and its toggle in the breadcrumbs */
-.sy-rside, .rside-overlay, .sy-breadcrumbs button[aria-controls="rside"] { display: none !important; }
-.sy-breadcrumbs button[aria-controls="rside"] { visibility: hidden; }
+/* The right sidebar is disabled in conf.py (html_sidebars); release its space and use the full content width */
+.sy-rside, .rside-overlay { display: none; }
+.sy-main > div > div { max-width: none; }
+@media (min-width: 768px) {
+  .sy-main { width: calc(100% - 18rem); max-width: none; }
+}
