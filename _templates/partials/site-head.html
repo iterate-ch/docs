@@ -5,7 +5,11 @@
       <a class="cd-brand" href="https://cyberduck.io" title="Cyberduck">
         <img src="https://cdn.cyberduck.io/img/cyberduck-icon-rect-1024.png" alt="Cyberduck" width="64" height="64">
       </a>
-      <nav class="cd-nav" aria-label="Main">
+      <button class="cd-toggle" type="button" aria-controls="cd-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="cd-bar"></span><span class="cd-bar"></span><span class="cd-bar"></span>
+      </button>
+      <nav class="cd-nav" id="cd-nav" aria-label="Main">
         <a href="https://cyberduck.io/changelog">Changelog</a>
         <a href="https://cyberduck.io/cryptomator">Cryptomator</a>
         <a href="https://cyberduck.io/help">Help</a>

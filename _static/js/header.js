@@ -6,3 +6,16 @@ window.addEventListener("load", function () {
     window.scrollTo(0, 0);
   }
 });
+
+// Hamburger menu for the header navigation on small screens
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector(".cd-toggle");
+  var nav = document.getElementById("cd-nav");
+  if (!toggle || !nav) {
+    return;
+  }
+  toggle.addEventListener("click", function () {
+    var open = nav.classList.toggle("cd-nav-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+});
