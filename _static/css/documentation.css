@@ -96,3 +96,6 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 .cd-tools .searchbox input { color: #333; background: transparent; }
 .cd-tools .searchbox input::placeholder { color: #777; }
 .cd-tools .theme-switch { color: #333; }
+
+/* Match the content width of cyberduck.io (Bootstrap container) */
+.sy-container { max-width: 1170px; }
