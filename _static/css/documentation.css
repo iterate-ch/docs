@@ -108,3 +108,6 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 @media (min-width: 768px) {
   .sy-main { width: calc(100% - 18rem); max-width: none; }
 }
+
+/* The right sidebar is disabled, so hide its toggle in the breadcrumbs */
+.sy-breadcrumbs button[aria-controls="rside"] { display: none; }
