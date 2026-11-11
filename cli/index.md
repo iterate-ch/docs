@@ -132,8 +132,21 @@ To install *Cyberduck CLI* use
     ```
 
 :::{warning}
-You may get a conflict with another package named `duck`. As a workaround, install with a specific version number like
-`sudo apt-get install duck=6.7.1.28683`.
+Debian and Ubuntu ship an unrelated package named `duck`, which can conflict with *Cyberduck CLI*. Check which
+candidate apt selects with
+
+```
+apt-cache policy duck
+```
+
+The Cyberduck repository is listed as `repo.deb.cyberduck.io`. If the other package is preferred, install the version from our
+repository explicitly. Use the version number shown by
+
+```
+apt-cache madison duck
+```
+
+for example `sudo apt-get install duck=<version>`. Don't copy a version number from older documentation.
 :::
 
 **Arch Linux Package**
