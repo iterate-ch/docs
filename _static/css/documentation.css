@@ -101,3 +101,7 @@ html.dark .cd-navbar, html[data-color-mode="dark"] .cd-navbar { background: #2a2
 .sy-container { max-width: 1170px; }
 
 .cd-tools .theme-switch { cursor: pointer; }
+
+/* Hide the "On this page" sidebar and its toggle in the breadcrumbs */
+.sy-rside, .rside-overlay, .sy-breadcrumbs button[aria-controls="rside"] { display: none !important; }
+.sy-breadcrumbs button[aria-controls="rside"] { visibility: hidden; }
