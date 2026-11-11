@@ -51,7 +51,7 @@ html[data-accent-color='blue'] {
   --sy-s-offset-top: 0px;
 }
 
-.cd-header { font-family: -apple-system, "Droid Sans", sans-serif; position: relative; z-index: 20; }
+.cd-header { font-family: -apple-system, "Droid Sans", sans-serif; position: relative; } /* no z-index: the mobile sidebar (z-index 18) must cover the header */
 .cd-container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
 
 .cd-navbar { background: #eee; }
