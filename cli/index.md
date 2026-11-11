@@ -197,6 +197,10 @@ a [connection profile](../protocols/index.md#connection-profiles) file to use no
 Install connection profiles in [Cyberduck](../cyberduck/index.md) from _Preferences → Profiles_
 :::
 
+:::{note}
+The CLI bundles its own versions of the *Dropbox*, *Microsoft OneDrive* and *Microsoft SharePoint* connection profiles. These use a loopback redirect URI (`http://localhost/oauth/callback`) for the OAuth 2.0 authorization code flow instead of the custom URL scheme used by the profiles in the desktop applications.
+:::
+
 ### URI
 
 The `<url>` argument for `--copy`, `--download`, `--upload`, and `--synchronize` must satisfy following rules:
