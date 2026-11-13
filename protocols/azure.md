@@ -80,6 +80,34 @@ You can edit ACLs in *File → Info (macOS `⌘I` Windows `Alt+Return`) → Perm
 
 To create a new container in your account, browse to the root and choose *File → New Folder... (macOS `⇧⌘N` Windows `Ctrl+Shift+N`)*.
 
+## Hierarchical Namespace (Azure Data Lake Storage Gen2)
+
+Storage accounts with a [hierarchical namespace](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace) enabled are supported. Cyberduck detects this when connecting and uses the Data Lake Storage API for folder operations. No configuration is required.
+
+:::{admonition} Requirements
+:class: warning
+- Cyberduck [9.6](https://cyberduck.io/changelog/) or later required
+- Mountain Duck [6](https://mountainduck.io/changelog/) or later required
+:::
+
+Keep using the Blob Storage hostname `<account>.blob.core.windows.net`. The Data Lake Storage hostname `<account>.dfs.core.windows.net` is not required.
+
+With a hierarchical namespace, folders are real directories instead of placeholder blobs, so the following operations use the Data Lake Storage API:
+
+- Listing folders and reading attributes
+- Creating folders
+- Moving and renaming files and folders
+- Copying files and folders
+- Deleting folders including their contents
+
+Uploads, downloads and metadata still use the Blob Storage API.
+
+When connecting with [Microsoft Entra ID](#microsoft-entra-id), the permission *Get Account Information* is required to detect the hierarchical namespace. Access to files and folders is evaluated with Azure RBAC data roles first, and with [POSIX-like ACLs](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control) if no role grants access. See [Set Up Permissions for Microsoft Entra ID Authentication to Azure Blob Storage](../tutorials/azure_entra_id_permissions.md#hierarchical-namespace-azure-data-lake-storage).
+
+:::{note}
+Editing POSIX ACLs of files and folders is not supported. Assign a data role such as *Storage Blob Data Contributor* or manage ACLs in the Azure Portal or Azure Storage Explorer. To connect to the same account with SFTP, see [Connect to Azure Blob Storage with SFTP](../tutorials/sftp_azure_blob_storage.md).
+:::
+
 ## Blob Type
 
 Uploads are stored as append blob type by default. You can use the [hidden configuration option](../tutorials/hidden_properties.md) `azure.upload.blobtype` which allows the values `BLOCK_BLOB`, `PAGE_BLOB` and `APPEND_BLOB`.
@@ -118,6 +146,7 @@ Configure access logging for buckets in the *Info* panel.
 ## Limitations
 
 - Container and blob [naming conventions](https://docs.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata).
+- Editing POSIX ACLs is not supported for storage accounts with a [hierarchical namespace](#hierarchical-namespace-azure-data-lake-storage-gen2).
 - [CDN configuration](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint) is currently only possible using the web interface.
 
 ## Problems
