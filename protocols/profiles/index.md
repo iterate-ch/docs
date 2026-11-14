@@ -70,6 +70,7 @@ The value of `Vendor` must be unique among all installed connection profiles.
 - `Anonymous Configurable` Boolean if anonymous access is configurable.
 - `Path Configurable` Boolean if default path is configurable.
 - `Certificate Configurable` Boolean if client certificate is configurable.
+- `Kerberos Configurable` Boolean if the Kerberos realm is configurable in the bookmark. Defaults to `true` for [SFTP](../sftp/index.md) profiles.
 - `Role Configurable`. Boolean if role is configurable. Typically an ARN referencing the AWS IAM role to assume using AWS STS API.
 - `Region` Location constraint for [OpenStack Swift](../openstack/index.md) and [S3](../s3/index.md) profiles.
   :::{admonition} S3
