@@ -11,7 +11,7 @@ Configure Public Key Authentication for SFTP using a FIDO2 Security Key
 The key file in `~/.ssh` holds a reference to the credential on the authenticator but no private key. Signing a login is therefore delegated either to a _security key provider_ library talking to the authenticator or to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) holding the key.
 
 :::{note}
-A security key provider library is configured by default on macOS only, serving keys in the Secure Enclave. On Windows and Linux OpenSSH talks to a token with built-in USB HID support instead of a library, which Cyberduck cannot load. Leave the key to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) there, or set `SecurityKeyProvider` to a middleware library for your token.
+A security key provider library is configured by default on macOS only, serving keys in the Secure Enclave. On Windows and Linux OpenSSH talks to a token with built-in USB HID support instead of a library, which Cyberduck cannot load. Leave the key to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) there, or set `SecurityKeyProvider` to a middleware library for your token on Linux. Loading a middleware library is not supported on Windows.
 :::
 
 :::{important}
@@ -148,12 +148,20 @@ When the connection fails with the message _No security key provider configured_
 :::
 
 :::{warning}
+When the connection fails with the message _Security key authentication is not supported on Windows_, the security key selected in the bookmark is not held by an SSH agent. Loading a middleware library is not supported on Windows. Add the key to an [SSH agent](#let-an-ssh-agent-handle-the-security-key) instead.
+:::
+
+:::{warning}
+When the connection fails with the message _No security key found_, the hardware token holding the key is not connected. Insert the token and connect again.
+:::
+
+:::{warning}
 When the server refuses the key without prompting for a touch, the public key is not accepted. Verify the entry in `authorized_keys` and that the server runs _OpenSSH 8.2_ or later.
 :::
 
 ## References
 
-- [Cyberduck 9.6.0](https://cyberduck.io/changelog/) or later is required for authentication with a security key without an SSH agent.
+- [Cyberduck 9.7.0](https://cyberduck.io/changelog/) or later is required for authentication with a security key without an SSH agent.
 - [OpenSSH 8.2 release notes announcing FIDO/U2F support](https://www.openssh.com/txt/release-8.2)
 - [PROTOCOL.u2f describing the `sk-*` key types](https://github.com/openssh/openssh-portable/blob/master/PROTOCOL.u2f)
 - [Yubico Developers: Securing SSH with FIDO2](https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html)

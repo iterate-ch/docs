@@ -38,9 +38,9 @@ TLSv1 and TLSv1.1 are no longer supported as of
 
 ### Mutual TLS
 
-Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a private key that matches the given issuer name requested from the server. Matching certificates are searched for in the Keychain on macOS or the Windows Certificate Manager respectively.
+Mutual (two-way) TLS with a client certificate for authentication is supported. When a server requests a client certificate for authentication and no certificate is selected in the bookmark, a prompt is displayed to choose a certificate with a private key issued by an authority accepted by the server. The prompt lists the certificates from the Keychain on macOS or the Windows Certificate Manager respectively together with the certificates on a [smartcard](webdav/index.md#client-certificate-on-smartcard).
 
-![Windows Security Prompt](_images/Windows-Security-Prompt.png)
+![Choose Client Certificate](_images/Windows-Security-Prompt.png)
 
 ### Switch to Secure Connection
 

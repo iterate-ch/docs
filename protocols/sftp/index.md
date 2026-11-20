@@ -51,11 +51,13 @@ The following configuration options from `~/.ssh/config` are supported for SFTP 
 - *ProxyJump* to connect via SSH tunnel through bastion server.
 - *ProxyCommand* to connect through the standard input and output of a command.
 - *PreferredAuthentications* to set the order of authentication methods tried to login. Methods not listed are still tried afterwards.
-- *IdentitiesOnly*. Only try the private key set with *IdentityFile* in `~/.ssh/config` to authenticate but not all identities found in SSH agent. The key selected in the bookmark does not apply. With no *IdentityFile* set, no identity from the SSH agent is offered. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
+- *IdentitiesOnly*. Only try the private key set with *IdentityFile* in `~/.ssh/config` to authenticate but not all identities found in SSH agent or on a [smartcard](#smartcard-pkcs11-authentication). The key selected in the bookmark does not apply. With no *IdentityFile* set, no identity from the SSH agent or smartcard is offered. Resolves _Too many authentication failures_ errors with servers limiting the number of attempted authentication requests.
 - *Include* to read other configuration files and *Match* blocks with the criteria `host` and `user`.
 - *SecurityKeyProvider* for the middleware library signing with a [FIDO2 security key](../../tutorials/sftp_publickeyauth_securitykey.md) for `sk-ecdsa-sha2-nistp256@openssh.com` and `sk-ssh-ed25519@openssh.com` keys.
-- *PKCS11Provider* for the module reading keys from a [smartcard](../../tutorials/sftp_publickeyauth_pkcs11.md).
+- *PKCS11Provider* for the module reading keys from a [smartcard](../../tutorials/sftp_publickeyauth_pkcs11.md). Set to `none` to not use a smartcard for the host.
 - A [bookmark](../../cyberduck/bookmarks.md) will update its public key authentication setting from the *IdentityFile* configuration in `~/.ssh/config`. Also when opening a new [connection](../../cyberduck/connection.md#toolbar-button) using *File → Open Connection…, IdentityFile* and *User* parameters in the OpenSSH user config file are auto completed.
+
+Arguments with spaces such as a path can be enclosed in quotes or have the space escaped with a backslash. A `#` at the start of an argument begins a comment.
 
 Example `~/.ssh/config` configuration:
 
@@ -120,12 +122,12 @@ Applies to SSH servers, which are configured with [`TrustedUserCAKeys`](https://
 #### Security Key (FIDO2) Authentication
 
 :::{important}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
 :::
 
 Keys of type `sk-ecdsa-sha2-nistp256@openssh.com` and `sk-ssh-ed25519@openssh.com` created with `ssh-keygen -t ecdsa-sk` respectively `ssh-keygen -t ed25519-sk` are supported. The private key of such a key never leaves the authenticator, which is either the Secure Enclave of a Mac unlocked with _Touch ID_ or a hardware token such as a _YubiKey_ touched to confirm. The key file selected in the [Bookmark](../../cyberduck/bookmarks.md) holds the credential handle only.
 
-Signing a login is delegated to the middleware library of the authenticator, set with the [`SecurityKeyProvider`](#configuration-file) directive in `~/.ssh/config`, the `SSH_SK_PROVIDER` environment variable or the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.securitykey.provider`. A value of the configuration directive beginning with `$` is read from the environment variable of that name. It defaults to `/usr/lib/ssh-keychain.dylib` for keys in the Secure Enclave on macOS. There is no default on other platforms, where OpenSSH talks to a token with built-in USB HID support instead of a library that could be loaded. Add the key to an [SSH agent](#public-key-authentication-using-ssh-agent) there, which prompts to confirm the login and works with any token supported by OpenSSH, or set the directive or option to a middleware library for the token.
+Signing a login is delegated to the middleware library of the authenticator, set with the [`SecurityKeyProvider`](#configuration-file) directive in `~/.ssh/config`, the `SSH_SK_PROVIDER` environment variable or the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.securitykey.provider`. A value of the configuration directive beginning with `$` is read from the environment variable of that name. The value `internal` selecting the support built into OpenSSH is ignored. It defaults to `/usr/lib/ssh-keychain.dylib` for keys in the Secure Enclave on macOS. There is no default on Linux, where OpenSSH talks to a token with built-in USB HID support instead of a library that could be loaded. Add the key to an [SSH agent](#public-key-authentication-using-ssh-agent) there, which prompts to confirm the login and works with any token supported by OpenSSH, or set the directive or option to a middleware library for the token. Loading a middleware library is not supported on Windows, where the key must be added to an SSH agent.
 
 :::{important}
 The server must run _OpenSSH 8.2_ or later. Earlier versions do not know the `sk-*` key types and ignore the entry in `authorized_keys`.
@@ -140,12 +142,46 @@ Follow the [step-by-step instructions](../../tutorials/sftp_publickeyauth_securi
 #### Smartcard (PKCS#11) Authentication
 
 :::{important}
-* Cyberduck [9.6.0](https://cyberduck.io/changelog/) or later required
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
 :::
 
-Private keys kept on a smartcard are read with the _PKCS#11_ module of the card, the equivalent of `ssh -I`. Every key on the card with a matching certificate is offered to the server in turn and the PIN is prompted for when required by the card. A key on a card without a certificate is not found.
+Private keys kept on a smartcard or a hardware token such as a _YubiKey_ with the _PIV_ application are read with the _PKCS#11_ module of the card, the equivalent of `ssh -I`. Every key on the card with a matching certificate is offered to the server in turn and the PIN is prompted for when required by the card. There is no prompt to choose a key. A key on a card without a certificate is not found. When more than one card is connected, only the first one found is used.
 
-Set the module with the [`PKCS11Provider`](#configuration-file) directive in `~/.ssh/config` or the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.pkcs11.library`. Set an absolute path to the module. On macOS, the file name `opensc-pkcs11.so` of the _OpenSC_ module bundled with the application is accepted as well. Set the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.pkcs11.enable` to `false` to disable authentication with a smartcard.
+:::::{tabs}
+::::{group-tab} macOS
+
+The _OpenSC_ module bundled with the application is used by default and a supported card is found with no further configuration. Set a different module with the [`PKCS11Provider`](#configuration-file) directive in `~/.ssh/config` or the [hidden configuration option](../../tutorials/hidden_properties.md) `connection.keystore.pkcs11.library` to the absolute path of the module.
+
+:::{note}
+The module `/usr/lib/ssh-keychain.dylib` included with macOS for smartcards paired with `sc_auth` can only be loaded by `ssh` and is not supported. Use the bundled _OpenSC_ module or the module from the vendor of the card instead.
+:::
+
+::::
+::::{group-tab} Windows
+
+No module is bundled with the application and no card is used with the default configuration. Install the module for your card such as [OpenSC](https://github.com/OpenSC/OpenSC/releases) for Windows (64-bit) and set the [hidden configuration option](../../tutorials/hidden_properties.md) `connection.keystore.pkcs11.library` to the path of the module. Write the path with forward slashes.
+
+```
+connection.keystore.pkcs11.library=C:/Program Files/OpenSC Project/OpenSC/pkcs11/opensc-pkcs11.dll
+```
+
+:::{note}
+A card connected to the Windows computer is not available in a _Remote Desktop_ session. Connect the card to the computer running the Remote Desktop client instead and enable the redirection of smart cards.
+:::
+
+::::
+:::::
+
+Keys on the card are attempted after the identities from the [SSH agent](#public-key-authentication-using-ssh-agent) and before the private key file selected in the bookmark. When a password is saved for the bookmark, password authentication is attempted first.
+
+- When a public key file is selected for _SSH Private Key_ in the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark), only the matching key on the card is offered. No key is offered when none matches.
+- When a private key file is selected in the bookmark, the card is not used and there is no prompt for the PIN.
+- With [`IdentitiesOnly`](#configuration-file) in `~/.ssh/config`, only the key matching the public key file set with *IdentityFile* is offered. The card is not used when *IdentityFile* is missing or set to a private key file.
+- When the prompt for the PIN is canceled, the card is skipped and the login continues with the next authentication method.
+
+The option `connection.keystore.pkcs11.library` also sets the module used to read a [client certificate](../webdav/index.md#client-certificate-on-smartcard) from a smartcard.
+
+To not use a smartcard for a host, set `PKCS11Provider none` in `~/.ssh/config`. Set the [hidden configuration option](../../tutorials/hidden_properties.md) `ssh.authentication.pkcs11.enable` to `false` to disable authentication with a smartcard for all connections.
 
 :::{admonition} Tutorial
 :class: tip
@@ -447,13 +483,13 @@ Serv-U MFT does not fully implement SFTPv3. Files cannot be created, renamed, up
 
 ### Too Many Authentication Failures
 
-Running an SSH agent with many added identities can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
+Running an SSH agent with many added identities or using a [smartcard](#smartcard-pkcs11-authentication) holding several keys can lead to the server error _Too many authentication failures_ when trying to authenticate with all available identities. 
 
 - Select the identity in the [bookmark](../../cyberduck/bookmarks.md#edit-bookmark) with _SSH Private Key_.
 - Increase the allowed authentication tries on the *server* by adjusting [`MaxAuthTries`](https://man.openbsd.org/sshd_config.5#MaxAuthTries).
 
 Possible remedies using configuration in [OpenSSH configuration file](#openssh-configuration-interoperability):
-- [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try to authenticate with explicitly set private key instead of all identities retrieved from SSH agent.
+- [`IdentitiesOnly`](https://man.openbsd.org/ssh_config.5#IdentitiesOnly) in client configuration file `~/.ssh/config`. Only try to authenticate with explicitly set private key instead of all identities retrieved from SSH agent or smartcard.
 - Set [`PreferredAuthentications`](https://man.openbsd.org/ssh_config.5#PreferredAuthentications) in client configuration file `~/.ssh/config` to try another method such as `password` before public key authentication. Methods not listed are still tried afterwards.
 
 ### Illegal SFTP Packet Length: `Invalid packet: indicated length 1114795883 too large`
