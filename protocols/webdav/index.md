@@ -60,17 +60,103 @@ Mutual (two-way) TLS with a client certificate for authentication is supported.
 
 #### Prompt to Authenticate with Certificate When Negotiating Secure (TLS) Connection
 
-When a server requests a client certificate for authentication, a prompt is displayed to choose a certificate with a
-private key that matches the given issuer name requested from the server. Matching certificates are searched for in the
-*Keychain* on macOS or the *Windows Certificate Manager* respectively.
+When a server requests a client certificate for authentication and no certificate is selected in the bookmark, a prompt
+is displayed to choose a certificate with a private key issued by an authority accepted by the server. The prompt lists
+the certificates from the *Keychain* on macOS or the *Windows Certificate Manager* respectively together with the
+certificates on a [smartcard](#client-certificate-on-smartcard). The chosen certificate is saved in the bookmark.
 
-![Windows Security Prompt](_images/Windows-Security-Prompt.png)
+![Choose Client Certificate](_images/Windows-Security-Prompt.png)
 
 #### Select Client Certificate in Bookmark
 
-You can also preselect a certificate to use for authentication when editing the bookmark.
+You can also preselect a certificate to use for authentication when editing the bookmark. Certificates on a
+[smartcard](#client-certificate-on-smartcard) are listed as well.
 
 ![WebDAV Bookmark Client Certificate](_images/WebDAV_Bookmark_Client_Certificate.png)
+
+#### Client Certificate on Smartcard
+
+:::{important}
+* Cyberduck [9.7.0](https://cyberduck.io/changelog/) or later required
+:::
+
+A certificate with its private key on a smartcard or a hardware token such as a _YubiKey_ with the _PIV_ application can be
+used for authentication. The private key never leaves the card, which signs the TLS handshake after the PIN is entered.
+The certificates on the card are read with the _PKCS#11_ module set with the
+[hidden configuration option](../../tutorials/hidden_properties.md) `connection.keystore.pkcs11.library` and listed
+together with the certificates from the *Keychain* or the *Windows Certificate Manager* in the prompt when connecting and
+in *Client Certificate* when editing the bookmark.
+
+- You are prompted for the PIN of the card to read its certificates. The PIN is requested once and the card remains
+  unlocked until you quit the application. When the prompt for the PIN is canceled, only the certificates from the
+  *Keychain* or the *Windows Certificate Manager* are listed.
+- With a card inserted, opening a bookmark with the option to select a client certificate prompts for the PIN to list
+  the certificates on the card.
+- A certificate available from both the card and the *Keychain* or the *Windows Certificate Manager* is listed once.
+- The same option sets the module used for
+  [public key authentication with a smartcard](../sftp/index.md#smartcard-pkcs11-authentication) for SFTP connections.
+
+:::::{tabs}
+::::{group-tab} macOS
+
+A smartcard is not available in the *Keychain*. The card is read with the _OpenSC_ _PKCS#11_ module bundled with the
+application by default and a supported card is found with no further configuration. To use the module from the vendor of
+your card instead, set `connection.keystore.pkcs11.library` to the absolute path of the module.
+
+:::{note}
+With _OpenSC_, a certificate is listed with the name of its slot on the card such as *Certificate for PIV Authentication*
+instead of the subject of the certificate.
+:::
+
+:::{note}
+The module `/usr/lib/ssh-keychain.dylib` included with macOS for smartcards paired with `sc_auth` can only be loaded by
+`ssh` and is not supported.
+:::
+
+::::
+::::{group-tab} Windows
+
+A certificate on a smartcard is available in two ways, which can be combined.
+
+- **Windows Certificate Manager:** With the driver of the card installed, Windows copies the certificates on the card to
+  the personal certificate store of the user when the card is inserted. They are listed with no configuration in the
+  application and Windows prompts for the PIN of the card when signing. With the driver for _PIV_ cards included with
+  Windows, only the certificate for _PIV Authentication_ in slot 9a is available.
+- **_PKCS#11_ module:** No module is bundled with the application and none is used by default. Install the module for
+  your card such as [OpenSC](https://github.com/OpenSC/OpenSC/releases) for Windows (64-bit) and set
+  `connection.keystore.pkcs11.library` to the path of the module, written with forward slashes. All certificates on the
+  card are then listed, such as certificates with an EC key in other slots, and the application prompts for the PIN.
+  ```
+  connection.keystore.pkcs11.library=C:/Program Files/OpenSC Project/OpenSC/pkcs11/opensc-pkcs11.dll
+  ```
+
+When a certificate is available both ways, the card read with the module is used to sign and the PIN is only requested
+once.
+
+:::{note}
+When a certificate on the card is not listed with no module set, verify it is displayed in *Personal → Certificates* of
+the *Windows Certificate Manager* (`certmgr.msc`) with the card inserted. If missing, install the driver from the vendor
+of the card.
+:::
+
+:::{note}
+A card connected to the Windows computer is not available in a _Remote Desktop_ session. Connect the card to the
+computer running the Remote Desktop client instead and enable the redirection of smart cards.
+:::
+
+::::
+:::::
+
+:::{tip}
+Select *Anonymous Login* in the bookmark when the server does not require a username and password in addition to the
+certificate. You are prompted for login credentials before connecting otherwise.
+:::
+
+:::{note}
+When the prompt to choose a certificate is canceled, no certificate is sent and you are not asked again for the bookmark.
+Select the certificate in *Client Certificate* of the bookmark to use it. With a certificate from a smartcard selected in
+the bookmark, you are prompted for the PIN when connecting.
+:::
 
 ### Trust Certificate
 
